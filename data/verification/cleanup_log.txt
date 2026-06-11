@@ -1,0 +1,191 @@
+To search + verify: 185
+  [  1/185] ERROR  Key2 Futures Limited: 403 Client Error: Forbidden for url: https://api.firecrawl.d
+  [  2/185] KEEP            Alternative Futures Group  -> https://afgroup.org.uk/supported-li
+  [  3/185] KEEP            The Disabilities Trust  -> https://www.carechoices.co.uk/care-
+  [  4/185] KEEP            St Annes  -> https://www.st-annes.org.uk/celebra
+  [  5/185] KEEP            Walsingham Support  -> https://www.carechoices.co.uk/care-
+  [  6/185] KEEP            Moving Up Care  -> https://www.neverbounce.com/company
+  [  7/185] KEEP            Nottingham Community Housing Association  -> https://www.ncha.org.uk/care-and-su
+  [  8/185] KEEP            Caring Collective Ltd  -> https://www.caringcollective.org.uk
+  [  9/185] KEEP            Rethink  -> https://www.housinglin.org.uk/_asse
+  [ 10/185] UNCLEAR         Embrace Healthcare Ltd  -> https://embracehealthcare.co.uk/
+  [ 11/185] KEEP            Cherish UK  -> https://cherishuk.co.uk/supported-l
+  [ 12/185] KEEP            Embrace Group Ltd  -> https://www.comparably.com/companie
+  [ 13/185] KEEP            Anew  -> https://www.anew.org.uk/
+  [ 14/185] KEEP            Gb Healthcare Group Ltd  -> https://www.carehome.co.uk/care_sea
+  [ 15/185] NEEDS_SEARCH    Fouta Quality Care Ltd  -> https://foutaqualitycare.co.uk/inde
+  [ 16/185] KEEP            ExcelCare24  -> https://www.carechoices.co.uk/care-
+  [ 17/185] KEEP            Baca  -> https://bacacharity.org.uk/how-it-w
+  [ 18/185] KEEP            Access Community Services Ltd  -> https://nurselinecs.co.uk/domicilia
+  [ 19/185] KEEP            Jakaranda Care  -> https://www.carechoices.co.uk/care-
+  [ 20/185] KEEP            Naden Ltd  -> https://www.care-plus.org.uk/locati
+  [ 21/185] KEEP            RocSolid  -> https://landaid.org/project/rocsoli
+  [ 22/185] NEEDS_SEARCH    Sincerity Health Care Limited  -> https://sincerityhealthcare.com/
+  [ 23/185] KEEP            4 Futures  -> http://4-futures.co.uk/
+  [ 24/185] KEEP            4 Seasons Healthcare Professionals  -> https://www.consolidate.org.uk/data
+  [ 25/185] KEEP            AMJ Support Services LTD  -> https://www.nwadcs.org.uk/list-prov
+  [ 26/185] KEEP            Best for Care Limited  -> https://www.trustedcare.co.uk/our-p
+  [ 27/185] UNCLEAR         BAB Accommodation  -> https://violationtrackeruk.goodjobs
+  [ 28/185] KEEP            Bago Care Limited  -> https://www.healthwatchbucks.co.uk/
+  [ 29/185] KEEP            Community-Led Initiatives  -> https://www.scie.org.uk/housing/ind
+  [ 30/185] KEEP            Co-production Care Limited  -> https://coproductioncare.co.uk/
+  [ 31/185] KEEP            Emezzions Limited  -> https://connectedkingston.uk/organi
+  [ 32/185] KEEP            Break  -> https://www.break-charity.org/chari
+  [ 33/185] KEEP            Chapel House  -> https://www.yourcircle.org.uk/Servi
+  [ 34/185] KEEP            Goodwin Development Trust  -> https://goodwintrust.org/
+  [ 35/185] KEEP            Gilani Enterprises Ltd.  -> https://www.sandwell.gov.uk/downloa
+  [ 36/185] KEEP            Heantun Housing Association Limited  -> https://www.housinglin.org.uk/Topic
+  [ 37/185] KEEP            Healthcare Access Ltd  -> https://oathhealthcare.co.uk/what-i
+  [ 38/185] KEEP            Intercare Services Direct Ltd  -> https://healthgps.co.uk/care-home/1
+  [ 39/185] KEEP            Icons Group Ltd  -> https://www.carechoices.co.uk/care-
+  [ 40/185] UNCLEAR         Js Supported Living Services Ltd  -> https://www.trustpilot.com/review/j
+  [ 41/185] KEEP            Isabella's Homes Ltd  -> https://isabellashomes.co.uk/
+  [ 42/185] KEEP            Mango House Care Ltd  -> https://www.consolidate.org.uk/data
+  [ 43/185] KEEP            Marrissa care  -> https://www.carechoices.co.uk/care-
+  [ 44/185] KEEP            Mofor Care  -> https://www.consolidate.org.uk/data
+  [ 45/185] NEEDS_SEARCH    Melm Care Solutions Limited  -> https://www.melmcare.co.uk/
+  [ 46/185] UNCLEAR         Maybury Court  -> https://www.carechoices.co.uk/care-
+  [ 47/185] KEEP            New Horizons trust (South Yorkshire) ltd  -> https://www.consolidate.org.uk/data
+  [ 48/185] KEEP            P & T Care Solutions Ltd  -> https://www.simplyhired.co.uk/searc
+  [ 49/185] KEEP            Park Homes  -> https://parkhomesuk.co.uk/hf-suppor
+  [ 50/185] KEEP            Moniks Care Services Limited  -> https://monikscareservice.com/
+  [ 51/185] KEEP            Naid Project  -> https://naidproject.co.uk/services/
+  [ 52/185] UNCLEAR         Phoenix Carehomes Ltd  -> https://phoenixcarehomes.co.uk/
+  [ 53/185] ERROR  Statmap Ltd: 403 Client Error: Forbidden for url: https://api.firecrawl.d
+  [ 54/185] KEEP            RUN Healthcare ltd  -> https://www.homecareassociation.org
+  [ 55/185] KEEP            Onduty24 Ltd  -> https://onduty24.co.uk/index.php/su
+  [ 56/185] NO_URL  The Instrinsic Care Group
+  [ 57/185] KEEP            Pearl Residence LTD  -> https://pearl-residence.co.uk/
+  [ 58/185] KEEP            Rapha Healthcare  -> https://healthgps.co.uk/care-home/1
+  [ 59/185] KEEP            Select Lifestyles Ltd  -> https://selectlifestyles.co.uk/supp
+  [ 60/185] UNCLEAR         The Intrinsic Care Group Limited  -> https://theintrinsiccaregroup.com/
+  [ 61/185] KEEP            The Halfway Limited  -> https://esselio.co.uk/whats-a-halfw
+  [ 62/185] UNCLEAR         Without Exceptions Ltd  -> http://www.withoutexceptions.co.uk/
+  [ 63/185] KEEP            Alternative Approach ltd  -> https://nasap.org.uk/our-partners/
+  [ 64/185] KEEP            Valorum Care Group t/a Adjuvo Care and Sup  -> https://www.consolidate.org.uk/data
+  [ 65/185] UNCLEAR         Your Life Care Solutions  -> https://www.yourlifecaresolutions.c
+  [ 66/185] KEEP            YMCA Wearside Ltd  -> https://homeless.org.uk/homeless-en
+  [ 67/185] KEEP            16 Plus Care Support Solutions Limited  -> https://uk.indeed.com/q-16-plus-car
+  [ 68/185] KEEP            16pluscare Solutions Ltd  -> https://uk.indeed.com/q-semi-indepe
+  [ 69/185] KEEP            A G Supply Solutions Ltd  -> https://agsupplysolutions.co.uk/
+  [ 70/185] KEEP            9 Property Group  -> https://www.9pg.co.uk/
+  [ 71/185] DROP            24-7 Locks Ltd  -> https://www.livingwage.org.uk/conte
+  [ 72/185] KEEP            1st Class Care  -> https://www.carechoices.co.uk/care-
+  [ 73/185] KEEP            Able4Enterprise Ltd  -> https://housingcare.org/service/lis
+  [ 74/185] KEEP            Aspire Supported Accommodation Ltd  -> https://aspiresupportedaccommodatio
+  [ 75/185] KEEP            Acorn Care and Education Ltd  -> https://www.myfamilyourneeds.co.uk/
+  [ 76/185] KEEP            Addiction Recovery Agency  -> https://www.recovery4all.co.uk/
+  [ 77/185] NEEDS_SEARCH    Active Neuro Limited T/A Nottingham BIRU  -> https://www.consolidate.org.uk/data
+  [ 78/185] KEEP            Artelia UK  -> https://uk.arteliagroup.com/csr/
+  [ 79/185] KEEP            Avensis Support Ltd  -> https://nasap.org.uk/our_partner/av
+  [ 80/185] KEEP            Avenues London  -> https://greenwichcommunitydirectory
+  [ 81/185] DROP            BRJ Support Services  -> https://www.asklion.co.uk/kb5/notti
+  [ 82/185] KEEP            Back to Back Care Ltd  -> https://bidstats.uk/analysis/suppli
+  [ 83/185] KEEP            Bell Hill Housing Limited  -> https://procontract.due-north.com/C
+  [ 84/185] KEEP            Best in Class Support Services Ltd  -> https://www.consolidate.org.uk/data
+  [ 85/185] DROP            Best Western Plus Nottingham City Centre  -> https://www.momondo.co.uk/hotels/no
+  [ 86/185] DROP            BCH Property Limited  -> https://documents1.worldbank.org/cu
+  [ 87/185] KEEP            Autism at Kingwood  -> https://www.kingwood.org.uk/what-we
+  [ 88/185] UNCLEAR         Bridge Care Solutions  -> https://bridgecaresolutions.co.uk/
+  [ 89/185] KEEP            Bosun Care Limited  -> https://uk.indeed.com/cmp/Bosun-Car
+  [ 90/185] DROP            Bristol Family Care Ltd  -> https://www.secret-bases.co.uk/comp
+  [ 91/185] UNCLEAR         Christian Concern  -> https://christianconcern.com/commen
+  [ 92/185] KEEP            British Red Cross Society  -> https://www.redcross.org.uk/get-hel
+  [ 93/185] KEEP            Changing Lives & TCUK Homes Ltd  -> https://d3tenders.com/contract/?oci
+  [ 94/185] KEEP            Building Circles in Gloucestershire  -> https://www.visit-gloucestershire.c
+  [ 95/185] NO_URL  EMH Care and Support Limited (CQC Registered Non
+  [ 96/185] KEEP            Central and Southern Homes  -> https://www.centralandsouthern.com/
+  [ 97/185] KEEP            Clearsprings Ready Homes  -> https://en.wikipedia.org/wiki/Clear
+  [ 98/185] KEEP            Daisy Healthcare  -> https://daisyhealthltd.co.uk/
+  [ 99/185] KEEP            Copper Beach  -> https://www.belmonthealthcare.co.uk
+  [100/185] KEEP            Deuvick  -> https://deuvick.co.uk/
+  [101/185] KEEP            East Durham Community Initiatives Ltd  -> https://justentrepreneurs.co.uk/new
+  [102/185] KEEP            Eden Care Ltd  -> https://www.eden-care.co.uk/
+  [103/185] KEEP            Evoke 24  -> https://www.consolidate.org.uk/data
+  [104/185] KEEP            Focus Futures UK  -> https://mycovenant.org.uk/opportuni
+  [105/185] KEEP            Ebor Lodge  -> https://www.carechoices.co.uk/brows
+  [106/185] KEEP            Encounter Live in Care  -> https://encounterlivein.com/
+  [107/185] KEEP            Fdr Social Care Ltd  -> https://www.fdrsocialcare.co.uk/ser
+  [108/185] KEEP            Gain Healthcare Ltd  -> https://www.contractfinderpro.com/a
+  [109/185] KEEP            Favour Health Ltd  -> https://www.carechoices.co.uk/care-
+  [110/185] KEEP            Greenbrook Healthcare  -> https://www.nhs.uk/services/indepen
+  [111/185] KEEP            Greenways Hove Ltd  -> https://www.consolidate.org.uk/data
+  [112/185] KEEP            HSL Compliance Ltd  -> https://hslcompliance.com/news/
+  [113/185] KEEP            Hillcrest Childrens Services Limited  -> https://www.zoominfo.com/c/hillcres
+  [114/185] KEEP            H.O.P.E  Superjobs Ltd  -> https://hopesuperjobs.co.uk/support
+  [115/185] KEEP            Indigo Support Ltd  -> https://prospeo.io/c/indigo-support
+  [116/185] KEEP            Gentle Hands Care Agency Ltd  -> https://www.zoominfo.com/c/gentle-h
+  [117/185] UNCLEAR         Iyanla Supported LVG. Ltd  -> https://open.endole.co.uk/insight/c
+  [118/185] KEEP            Keys Group Progressive Care and Education  -> https://www.whatdotheyknow.com/requ
+  [119/185] KEEP            Kelerbay t/a Doree Bonner International  -> https://in-tendhost.co.uk/centralbe
+  [120/185] DROP            Jani Homes (Notts) Limited  -> https://www.consolidate.org.uk/data
+  [121/185] UNCLEAR         Marcus and Marcus  -> https://www.marcus-and-marcus.co.uk
+  [122/185] KEEP            Leicester YMCA  -> https://www.ymcaleics.org.uk/tag/ym
+  [123/185] DROP            Letombo Ltd (Life Skills Services)  -> https://www.consolidate.org.uk/data
+  [124/185] KEEP            Lodge House 20 Limited  -> https://www.worcestershire.gov.uk/s
+  [125/185] KEEP            MGL Demolition Ltd  -> https://www.mglgroup.co.uk/mgl-demo
+  [126/185] KEEP            My Health Care Support Ltd  -> https://myhealthcaresupport.co.uk/
+  [127/185] KEEP            MovingUp Care Ltd  -> http://bidstats.uk/tenders/2017/W01
+  [128/185] KEEP            National Care Providers Limited  -> http://nationalcareproviders.co.uk/
+  [129/185] KEEP            Milton Keynes YMCA Limited  -> https://milton-keynes.moderngov.co.
+  [130/185] KEEP            My3 Ltd  -> https://my3ltd.co.uk/
+  [131/185] NEEDS_SEARCH    Nestor Primecare Services Limited  -> https://www.consolidate.org.uk/data
+  [132/185] KEEP            National Management  -> https://nationalmanagement.co.uk/ab
+  [133/185] KEEP            New Concept Care  -> https://nccn.org.uk/
+  [134/185] DROP            Naid Projects Limited  -> https://www.consolidate.org.uk/data
+  [135/185] KEEP            New Outlook Housing Association Limited  -> https://www.newoutlookha.org/career
+  [136/185] KEEP            Optimas Solutions Limited  -> https://healthgps.co.uk/care-home/1
+  [137/185] KEEP            New Leaf Birmingham Limited  -> https://addictionfamilysupport.org.
+  [138/185] UNCLEAR         Pell Frischmann Consultants Ltd  -> http://www.nadr.co.uk/articles/publ
+  [139/185] KEEP            Osei Minkah Care Ltd.  -> https://www.cqc.org.uk/location/1-1
+  [140/185] KEEP            Prioritycare (shropshire)Ltd  -> https://www.consolidate.org.uk/data
+  [141/185] KEEP            Practice Plus Group Health and Rehabilitat  -> https://www.judiciary.uk/wp-content
+  [142/185] KEEP            Prayngel Healthcare Limited  -> https://prayngel.co.uk/
+  [143/185] KEEP            Radiantlife Care  -> https://radiantlife.co.uk/
+  [144/185] KEEP            Right to Care Ltd  -> https://www.learningdisabilityengla
+  [145/185] KEEP            Positive Culture Limited  -> https://theoutstandingsociety.co.uk
+  [146/185] KEEP            Sportfit Shortbreak Care Limited  -> https://www.consolidate.org.uk/data
+  [147/185] NO_URL  Salutem Shared Services Limited, for care provis
+  [148/185] DROP            Roland Hill Ltd  -> https://www.morganhorse.com/upload/
+  [149/185] NO_URL  Salutem Shared Services Limited, for care provis
+  [150/185] KEEP            Roseleigh Day Care  -> https://www.carechoices.co.uk/care-
+  [151/185] KEEP            S P Homes Ltd  -> https://files.ofsted.gov.uk/v1/file
+  [152/185] UNCLEAR         Strawberry Fields Training Cic  -> https://www.consolidate.org.uk/data
+  [153/185] KEEP            Shropshire Housing Limited  -> https://www.shropshirehomepoint.co.
+  [154/185] KEEP            Smile Foster Care Limited T/A Smile Care S  -> https://www.consolidate.org.uk/data
+  [155/185] KEEP            Royal National Institute for Deaf People T  -> https://raw.githubusercontent.com/w
+  [156/185] KEEP            Start For Life Ltd  -> https://www.togetherforchildren.org
+  [157/185] KEEP            Starwrick housing  -> https://www.consolidate.org.uk/data
+  [158/185] ERROR  Stay North East: 403 Client Error: Forbidden for url: https://api.firecrawl.d
+  [159/185] DROP            Sirius Demolition Ltd  -> https://s3-eu-west-2.amazonaws.com/
+  [160/185] KEEP            Staff Call UK Ltd  -> https://uk.indeed.com/cmp/Staff-Cal
+  [161/185] NO_URL  THW Way Care Services
+  [162/185] ERROR  Thompson's of Prudhoe Ltd: 403 Client Error: Forbidden for url: https://api.firecrawl.d
+  [163/185] KEEP            Style Acre  -> https://styleacre.org.uk/support/st
+  [164/185] KEEP            Tspro Ltd  -> https://bidstats.uk/tenders/?q=disa
+  [165/185] KEEP            Wynspire Limited  -> https://www.consolidate.org.uk/data
+  [166/185] KEEP            Trh Walsall Limited  -> https://www.sandwell.gov.uk/downloa
+  [167/185] KEEP            Woodland Initiative  -> https://www.woodlandinitiative.com/
+  [168/185] KEEP            YMCA Cambridgeshire & Peterborough  -> https://reachvolunteering.org.uk/or
+  [169/185] NEEDS_SEARCH    Youth Matters Limited  -> https://youthmatters.org.uk/service
+  [170/185] KEEP            Tm Healthcare Services Ltd  -> https://procontract.due-north.com/C
+  [171/185] KEEP            Your Homes Newcastle  -> https://redbrickblog.co.uk/tag/your
+  [172/185] NO_URL  London Borough of Islington Mental Health Accomm
+  [173/185] KEEP            angels abode  -> https://rocketreach.co/angels-abode
+  [174/185] KEEP            isw csc ltd  -> https://www.nwadcs.org.uk/list-prov
+  [175/185] KEEP            casi care  -> https://uk.indeed.com/cmp/Casi-Care
+  [176/185] KEEP            University College London Hospitals NHS Tr  -> https://bidstats.uk/tenders/?q=univ
+  [177/185] KEEP            Valley House  -> https://valleyhouse.org.uk/
+  [178/185] KEEP            Valley Housing  -> https://www.mtvh.co.uk/support-and-
+  [179/185] KEEP            Carebridge Healthcare  -> https://carebridgelimited.co.uk/
+  [180/185] KEEP            Cocoon Group Services  -> https://www.consolidate.org.uk/data
+  [181/185] NEEDS_SEARCH    UK Care Partnership  -> http://www.ukcarepartnership.com/ab
+  [182/185] KEEP            Atlantic Lodge Housing  -> http://www.atlantic-housing.com/
+  [183/185] KEEP            Promises of Care  -> https://www.birminghamchildrenstrus
+  [184/185] KEEP            Providence Linc United Services  -> https://arcengland.org.uk/providenc
+  [185/185] KEEP            Young Roots Care Services  -> http://youngroots.co.uk/services.ph
+
+Done. Processed: 185
+VERIFIED:  +144  (total 1694)
+DROPS:     +10  (total 163)
+Companies sheet: 1560 updated, 93 added

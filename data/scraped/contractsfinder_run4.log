@@ -1,0 +1,35 @@
+
+=== contractsfinder (ContractsFinderScraper) — awards from 2020-01-01 ===
+  [contractsfinder] starting from 2020-01-01T00:00:00
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 5 — 484 unique OCIDs seen, 4 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 10 — 971 unique OCIDs seen, 1 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 15 — 1454 unique OCIDs seen, 1 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  …50 rows so far
+  [contractsfinder] page 20 — 1937 unique OCIDs seen, 1 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 25 — 2425 unique OCIDs seen, 6 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 30 — 2895 unique OCIDs seen, 1 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 35 — 3369 unique OCIDs seen, 5 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+  …100 rows so far
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 40 — 3839 unique OCIDs seen, 3 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] page 45 — 4314 unique OCIDs seen, 0 housing rows from this page
+    (429 rate-limit hit; sleeping 305s and retrying)
+    (429 rate-limit hit; sleeping 305s and retrying)
+  [contractsfinder] no next cursor — end of feed
+  wrote 120 rows → C:\Users\paul_\OneDrive\Documents\claude\findahousingprovider\data\scraped\raw\contractsfinder_2026-06-06.json
+
+Done. Next: python scripts/normalise.py

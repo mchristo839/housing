@@ -1,0 +1,1092 @@
+{
+  "portal": "cf",
+  "year": 2020,
+  "month": 11,
+  "raw_count": 3270,
+  "filtered_count": 8,
+  "pages": 33,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-1d5634c4-f171-4d50-b3ce-44b21df86ad0",
+      "id": "c39cb860-490d-4077-92d6-9ceef700d1e1-395610",
+      "language": "en",
+      "date": "2020-11-24T15:23:02Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "NOTTCITY001-DN487056-62801108",
+        "title": "CPU2362 Mental Health Supported Accommodation Services",
+        "description": "Nottingham City Council has redesigned the pathway of services for citizens who require support as aresult of mental ill health. The new pathway will ensure a consistent offer of services for citizens andensure that they have access to the services which will best help to support them to live healthy lives in thecommunity. Services within the pathway will be strength based with a clear focus on supporting citizens to live independently. As a result of the above, Nottingham City Council is seeking to appoint a suitably experienced and knowledgeable service provider(s) for the provision of Mental Health Supported Accommodation which will provide accommodation based support for a period of up to 2 years to citizens who (at the point of need /entry to the service) are unable to access independent living arrangements due to problems with their menta lhealth, who are experiencing significant and varying barriers to regaining or accessing more independent living, including those with a history of recurring loss of independence (including in-patient admission or homelessness linked to a mental health difficulty) and non-engagement with services. People referred to the service may present with associated problems linked to substance misuse, offending, chaotic lifestyles and other issues.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 9793413,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-09T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2030-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49206",
+          "name": "Nottingham City Council",
+          "identifier": {
+            "legalName": "Nottingham City Council"
+          },
+          "address": {
+            "streetAddress": "Loxley House, Station Street",
+            "locality": "Nottingham",
+            "postalCode": "NG2 3NG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Julie Herrod",
+            "email": "julie.herrod@nottinghamcity.gov.uk",
+            "telephone": "+44 1158763563"
+          },
+          "details": {
+            "url": "http://www.nottinghamcity.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-156112",
+          "name": "Nottingham Community Housing Association",
+          "identifier": {
+            "legalName": "Nottingham Community Housing Association"
+          },
+          "address": {
+            "streetAddress": "12-14 Pelham Road\nNottingham\nNG5 1AP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-156113",
+          "name": "Framework Housing Association",
+          "identifier": {
+            "legalName": "Framework Housing Association"
+          },
+          "address": {
+            "streetAddress": "Val Roberts House\n25 Gregory Boulevard\nNottingham\nNG7 6NX"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49206",
+        "name": "Nottingham City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1d5634c4-f171-4d50-b3ce-44b21df86ad0-1",
+          "status": "active",
+          "date": "2020-11-24T00:00:00Z",
+          "datePublished": "2020-11-24T15:23:02Z",
+          "value": {
+            "amount": 9793413,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-156112",
+              "name": "Nottingham Community Housing Association"
+            },
+            {
+              "id": "GB-CFS-156113",
+              "name": "Framework Housing Association"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2030-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c39cb860-490d-4077-92d6-9ceef700d1e1",
+              "datePublished": "2020-11-24T15:23:02Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f715d12e-f462-43bd-95c6-d22e11e9dfe7",
+      "id": "5921f726-0d9c-42c5-a804-75308a0323f0-395553",
+      "language": "en",
+      "date": "2020-11-24T13:38:59Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "COV - 8392 - AWARD",
+        "title": "COV - Housing & Homelessness ICT Business Software System - AWARD",
+        "description": "The Authority is tendering to contract for one holistic hosted Housing and Homelessness IT software system. The contract will include within its scope the implementation, project management, hosting, subscription / licensing, ongoing support & maintenance and any relative development and/or upgrades required during the term.  Further details can be found in the Standard Questionnaire (SQ) and supporting appendices.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "48000000",
+          "description": "Software package and information systems"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "CV1 2GN"
+              },
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2020-01-08T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-10-01T01:00:00+01:00",
+          "endDate": "2025-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-92322",
+          "name": "Coventry - Solihull - Warwickshire",
+          "identifier": {
+            "legalName": "Coventry - Solihull - Warwickshire"
+          },
+          "address": {
+            "streetAddress": "Coventry, Coventry",
+            "locality": "Coventry",
+            "postalCode": "CV1 2GN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Michael Duffy",
+            "email": "michael.duffy@coventry.gov.uk",
+            "telephone": "024 7697 1414"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-156088",
+          "name": "Locata (Housing Services) Limited",
+          "identifier": {
+            "legalName": "Locata (Housing Services) Limited"
+          },
+          "address": {
+            "streetAddress": "2nd Floor, Jubilee House, 7-9 The Oaks, Ruislip, Middlesex, United Kingdom, HA4 7LF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-92322",
+        "name": "Coventry - Solihull - Warwickshire"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f715d12e-f462-43bd-95c6-d22e11e9dfe7-1",
+          "status": "active",
+          "date": "2020-11-09T00:00:00Z",
+          "datePublished": "2020-11-24T13:38:59Z",
+          "value": {
+            "amount": 850000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-156088",
+              "name": "Locata (Housing Services) Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-10-01T00:00:00+01:00",
+            "endDate": "2025-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5921f726-0d9c-42c5-a804-75308a0323f0",
+              "datePublished": "2020-11-24T13:38:59Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3543c2ee-e9dc-4734-ada1-5a81838a2f9c",
+      "id": "faeada73-7f63-4f3c-83c3-b1bcde24ab4b-395014",
+      "language": "en",
+      "date": "2020-11-21T08:55:07Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP540457528",
+        "title": "Greenfields Sheltered Housing Cleaning & Concierge Service",
+        "description": "Catalyst Housing Group Limited (CHL) is seeking to appoint a suitably qualified and experienced supplier to provide cleaning & concierge services located at Greenfield Sheltered Housing development.\r\n      \r\n      The service will be delivered at the following address: Greenfields, Theedway (off Billington Road), Leighton Buzzard, Bedfordshire, LU7 9SP.\r\n      Greenfields is a specialist housing development designed and built as a sheltered housing facility for mature customers aged 55 and over. The development is situated in the parish Leighton-Linslade, and offers 82 one and two bedroom apartments which offer independent living to its residents, in addition to onsite facilities such as a lift, lounge, restaurant (open to the public), Café, hair and beauty salon, guest facilities, hobby room. The facility is supported by a concierge service which helps to provide discrete security to add peace of mind. The contract will be for 3 with the possibility of a further extension of two (1+1) years.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "90911000",
+          "description": "Accommodation, building and window cleaning services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 149930.42,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-10-03T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-30T00:00:00Z",
+          "endDate": "2025-11-29T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-143285",
+          "name": "Greenfields Sheltered Housing Cleaning & Concierge Service",
+          "identifier": {
+            "legalName": "Greenfields Sheltered Housing Cleaning & Concierge Service"
+          },
+          "address": {
+            "streetAddress": "Catalyst Housing Group Counties, Houghton Regis",
+            "locality": "Dunstable",
+            "postalCode": "LU5 5UZ",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "email": "devon.carney@chg.org.uk",
+            "telephone": "+443004562099"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-155884",
+          "name": "Just Ask Estate Services Limited",
+          "identifier": {
+            "legalName": "Just Ask Estate Services Limited"
+          },
+          "address": {
+            "streetAddress": "UNIT 4A Wintersells Business Park\n        Wintersells Road\n        West Byfleet\n        KT14 7LF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-143285",
+        "name": "Greenfields Sheltered Housing Cleaning & Concierge Service"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3543c2ee-e9dc-4734-ada1-5a81838a2f9c-1",
+          "status": "active",
+          "date": "2020-10-03T00:00:00+01:00",
+          "datePublished": "2020-11-21T08:55:07Z",
+          "value": {
+            "amount": 149930.42,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-155884",
+              "name": "Just Ask Estate Services Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-30T00:00:00Z",
+            "endDate": "2025-11-29T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/faeada73-7f63-4f3c-83c3-b1bcde24ab4b",
+              "datePublished": "2020-11-21T08:55:07Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=540457528"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-27943422-951c-4912-ba58-8f665bdca00b",
+      "id": "6b63e859-fa09-4818-a09a-528738beef79-394559",
+      "language": "en",
+      "date": "2020-11-19T12:36:39Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SUN001-DN486389-67853687",
+        "title": "Affordable Housing - Albert Place and Boult Terrace",
+        "description": "Affordable housing projects:\r\nLot 1 - Albert Place (Washington) - 4nos. Doc. M Category 3 bungalows\r\nLot 2 - Boult Terrace (Houghton le Spring) - 5nos. over 55s bungalows\r\n\r\n\r\nAdditional information: \r\nProcurement via a further competition on the NEPO 207 Framework for Building Construction Works Lot 6 Housing - Northumberland, Tyne & Wear and Durham - Up to £2,500,000",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45211100",
+          "description": "Construction work for houses"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45211200",
+            "description": "Sheltered housing construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45211300",
+            "description": "Houses construction work"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1500000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 1657654,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-08-14T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-09-14T00:00:00+01:00",
+          "endDate": "2021-05-28T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-145183",
+          "name": "Sunderland City Council",
+          "identifier": {
+            "legalName": "Sunderland City Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Burdon Road",
+            "locality": "Sunderland",
+            "postalCode": "SR2 7SN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Andrew Raft",
+            "email": "andrew.raft@sunderland.gov.uk",
+            "telephone": "+44 1915611771"
+          },
+          "details": {
+            "url": "http://www.sunderland.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-146506",
+          "name": "Tolent Living Ltd",
+          "identifier": {
+            "legalName": "Tolent Living Ltd"
+          },
+          "address": {
+            "streetAddress": "Derwent House\nLakeside Court\nFifth Avenue Business Park\nTeam Valley\nGateshead\nNE11 0NL."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-145183",
+        "name": "Sunderland City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-27943422-951c-4912-ba58-8f665bdca00b-1",
+          "status": "active",
+          "date": "2020-09-11T00:00:00+01:00",
+          "datePublished": "2020-11-19T12:36:39Z",
+          "value": {
+            "amount": 1657654,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-146506",
+              "name": "Tolent Living Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-09-14T00:00:00+01:00",
+            "endDate": "2021-05-28T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/6b63e859-fa09-4818-a09a-528738beef79",
+              "datePublished": "2020-11-19T12:36:39Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-747b8bc4-5808-43e0-8de6-aa443437a4c4",
+      "id": "9fe68d71-85f3-4132-9728-410df1410918-393970",
+      "language": "en",
+      "date": "2020-11-17T12:17:34Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DAR001-DN494341-87420845",
+        "title": "DBC request bids for Supported Accommodation for ID: 305602",
+        "description": "DBC request bids for Supported Accommodation for ID: 305602",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-01T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-10-01T00:00:00+01:00",
+          "endDate": "2024-08-23T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50123",
+          "name": "Darlington Borough Council",
+          "identifier": {
+            "legalName": "Darlington Borough Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Feethams",
+            "locality": "Darlington",
+            "postalCode": "DL1 5QT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Bronwyn Lilley",
+            "email": "bronwyn.lilley@darlington.gov.uk",
+            "telephone": "+44 1325405498"
+          },
+          "details": {
+            "url": "http://www.darlington.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-143629",
+          "name": "TIGERLILY HEALTHCARE",
+          "identifier": {
+            "legalName": "TIGERLILY HEALTHCARE"
+          },
+          "address": {
+            "streetAddress": "SM1 2TT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50123",
+        "name": "Darlington Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-747b8bc4-5808-43e0-8de6-aa443437a4c4-1",
+          "status": "active",
+          "date": "2020-09-23T00:00:00+01:00",
+          "datePublished": "2020-11-17T12:17:34Z",
+          "value": {
+            "amount": 200000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-143629",
+              "name": "TIGERLILY HEALTHCARE"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-10-01T00:00:00+01:00",
+            "endDate": "2024-08-23T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/9fe68d71-85f3-4132-9728-410df1410918",
+              "datePublished": "2020-11-17T12:17:34Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=e61b0a42-cde2-ea11-8104-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-800644be-18ad-4422-be0d-c82ebda250f8",
+      "id": "d1e12af8-59a3-4618-aaae-2214d5714f6e-393565",
+      "language": "en",
+      "date": "2020-11-16T11:02:14Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "HEREFCC-DN491965-98971601",
+        "title": "Provision of Housing Support for Vulnerable Young People",
+        "description": "Herefordshire council is continuing its commitment to offer local high quality accommodation and support services to vulnerable young people aged 16 to 25 years.    This service will offer a housing related support service, complemented by an offer of targeted and universal prevention services.  New premises have been sourced through a registered housing provider and a specialist support provider is sought to offer varying levels of support to young people with different needs.  The services will offer young people in Herefordshire a safe, suitable and positive transition into adulthood.  \r\nThe specialist support will focus on accommodation based support, family mediation and a floating support/outreach service.\r\n\r\nAll the services will support young people to identify how they can manage their own needs, mitigate risks and take up opportunities. There will be a particular focus on supporting them to obtain or maintain accommodation, or where homelessness is inevitable, to support them in securing and maintaining suitable alternative accommodation. This service will be tendered under the Light Touch arrangements of the Public Contracts Regulations (PCR 2015) If you are interested in finding out more about this opportunity (including submitting a tender). Please go to our e tender portal at www.supplyingthesouthwest.org.uk  and search under Herefordshire Council.  \r\n",
+        "datePublished": "2020-08-13T15:50:29+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 3100000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-14T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-31T00:00:00Z",
+          "endDate": "2026-01-30T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-60507",
+          "name": "Herefordshire Council",
+          "identifier": {
+            "legalName": "Herefordshire Council"
+          },
+          "address": {
+            "streetAddress": "Council Offices, Plough Lane",
+            "locality": "Hereford",
+            "postalCode": "HR4 0LE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Mark Cage",
+            "email": "mark.cage@herefordshire.gov.uk",
+            "telephone": "+44 1432383605"
+          },
+          "details": {
+            "url": "https://www.herefordshire.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-155269",
+          "name": "Connexus Group",
+          "identifier": {
+            "legalName": "Connexus Group"
+          },
+          "address": {
+            "streetAddress": "SY7 9BW"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-60507",
+        "name": "Herefordshire Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-800644be-18ad-4422-be0d-c82ebda250f8-1",
+          "status": "active",
+          "date": "2020-11-03T00:00:00Z",
+          "datePublished": "2020-11-16T11:02:14Z",
+          "value": {
+            "amount": 2752100,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-155269",
+              "name": "Connexus Group"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-31T00:00:00Z",
+            "endDate": "2026-01-30T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d1e12af8-59a3-4618-aaae-2214d5714f6e",
+              "datePublished": "2020-11-16T11:02:14Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-6daf2769-6cad-4e61-bf80-f5e7689fccce",
+      "id": "a4f29e2f-00e4-4440-9488-626732651ec0-392616",
+      "language": "en",
+      "date": "2020-11-11T10:39:07Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "NHM002-DN489227-14436421",
+        "title": "NCC402 Temporary Accommodation",
+        "description": "NCC has a requirement to support homeless people in Northumberland and wishes to invite tenders from potential providers for the delivery of homeless accommodation support services to meet this need.\r\n\r\nThe NCC Homelessness & Housing Options Service is seeking to commission an accommodation based service for homeless people in Northumberland.",
+        "datePublished": "2020-08-10T13:34:48+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 450000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-11T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-10-12T00:00:00+01:00",
+          "endDate": "2022-10-11T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-51842",
+          "name": "Northumberland County Council",
+          "identifier": {
+            "legalName": "Northumberland County Council"
+          },
+          "address": {
+            "streetAddress": "County Hall",
+            "locality": "Morpeth",
+            "postalCode": "NE61 2EF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Leanne Stewart",
+            "email": "leanne.stewart@northumberland.gov.uk",
+            "telephone": "+44 7500065690"
+          },
+          "details": {
+            "url": "http://www.northumberland.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-149018",
+          "name": "The Cyrenians",
+          "identifier": {
+            "legalName": "The Cyrenians"
+          },
+          "address": {
+            "streetAddress": "NE11 0RU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-51842",
+        "name": "Northumberland County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-6daf2769-6cad-4e61-bf80-f5e7689fccce-1",
+          "status": "active",
+          "date": "2020-11-06T00:00:00Z",
+          "datePublished": "2020-11-11T10:39:07Z",
+          "value": {
+            "amount": 590000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-149018",
+              "name": "The Cyrenians"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-12-01T00:00:00Z",
+            "endDate": "2022-11-30T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a4f29e2f-00e4-4440-9488-626732651ec0",
+              "datePublished": "2020-11-11T10:39:07Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8fcdd130-7508-46c0-805d-f323d6b1e2d5",
+      "id": "e36ba975-f730-40bb-b460-7f674dbc42e2-391473",
+      "language": "en",
+      "date": "2020-11-06T09:51:37Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "FH373(l)",
+        "title": "Affordable Housing Developer",
+        "description": "Land and works package deal to secure a wholly affordable site in Stapleford",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 2600000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Single tender action (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2020-09-22T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-15T00:00:00Z",
+          "endDate": "2021-10-08T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-supplierregistration.cabinetoffice.gov.uk/j96c5VZ2",
+          "name": "FUTURES HOUSING GROUP LIMITED",
+          "identifier": {
+            "legalName": "FUTURES HOUSING GROUP LIMITED",
+            "scheme": "GB-SRS",
+            "id": "supplierregistration.cabinetoffice.gov.uk/j96c5VZ2"
+          },
+          "address": {
+            "streetAddress": "Asher House,Asher Lane Business Park Asher Lane",
+            "locality": "RIPLEY",
+            "postalCode": "DE53SW",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurementteam@futureshg.co.uk",
+            "telephone": "0845 094 8346"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-12344189",
+          "name": "MyPad 2020 Ltd",
+          "identifier": {
+            "legalName": "MyPad 2020 Ltd",
+            "scheme": "GB-COH",
+            "id": "12344189"
+          },
+          "address": {
+            "streetAddress": "1 Pinnacle Way\r\nPride Park\r\nDerby\r\nDE24 8ZS"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-supplierregistration.cabinetoffice.gov.uk/j96c5VZ2",
+        "name": "FUTURES HOUSING GROUP LIMITED"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8fcdd130-7508-46c0-805d-f323d6b1e2d5-1",
+          "status": "active",
+          "date": "2020-09-22T00:00:00+01:00",
+          "datePublished": "2020-11-06T09:51:37Z",
+          "value": {
+            "amount": 2567200,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-12344189",
+              "name": "MyPad 2020 Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-15T00:00:00Z",
+            "endDate": "2021-10-08T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e36ba975-f730-40bb-b460-7f674dbc42e2",
+              "datePublished": "2020-11-06T09:51:37Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+Starting Bidstats London scrape at 2026-06-07 08:38:25.851318
+  Targets: 40 boroughs/bodies
+
+[1/40] Searching: Barking and Dagenham
+   0 candidate notices
+
+[2/40] Searching: Barnet
+   0 candidate notices
+
+[3/40] Searching: Bexley
+   0 candidate notices
+
+[4/40] Searching: Brent
+   0 candidate notices
+
+[5/40] Searching: Bromley
+   0 candidate notices
+
+[6/40] Searching: Camden
+   0 candidate notices
+
+[7/40] Searching: Croydon
+   0 candidate notices
+
+[8/40] Searching: Ealing
+   0 candidate notices
+
+[9/40] Searching: Enfield
+   0 candidate notices
+
+[10/40] Searching: Greenwich
+   0 candidate notices
+
+[11/40] Searching: Hackney
+   0 candidate notices
+
+[12/40] Searching: Hammersmith and Fulham
+   0 candidate notices
+
+[13/40] Searching: Haringey
+   0 candidate notices
+
+[14/40] Searching: Harrow
+   0 candidate notices
+
+[15/40] Searching: Havering
+   0 candidate notices
+
+[16/40] Searching: Hillingdon
+   0 candidate notices
+
+[17/40] Searching: Hounslow
+   0 candidate notices
+
+[18/40] Searching: Islington
+   0 candidate notices
+
+[19/40] Searching: Kensington and Chelsea
+   0 candidate notices
+
+[20/40] Searching: Kingston upon Thames
+   0 candidate notices
+
+[21/40] Searching: Lambeth
+   0 candidate notices
+
+[22/40] Searching: Lewisham
+   0 candidate notices
+
+[23/40] Searching: Merton
+   0 candidate notices
+
+[24/40] Searching: Newham
+   0 candidate notices
+
+[25/40] Searching: Redbridge
+   0 candidate notices
+
+[26/40] Searching: Richmond upon Thames
+   0 candidate notices
+
+[27/40] Searching: Southwark
+   0 candidate notices
+
+[28/40] Searching: Sutton
+   0 candidate notices
+
+[29/40] Searching: Tower Hamlets
+   0 candidate notices
+
+[30/40] Searching: Waltham Forest
+   0 candidate notices
+
+[31/40] Searching: Wandsworth
+   0 candidate notices
+
+[32/40] Searching: Westminster
+   0 candidate notices
+
+[33/40] Searching: City of London
+   0 candidate notices
+
+[34/40] Searching: London Councils
+   0 candidate notices
+
+[35/40] Searching: Greater London Authority
+   0 candidate notices
+
+[36/40] Searching: MOPAC
+   0 candidate notices
+
+[37/40] Searching: Capital Letters
+   0 candidate notices
+
+[38/40] Searching: West London Alliance
+   0 candidate notices
+
+[39/40] Searching: Commissioning Alliance
+   0 candidate notices
+
+[40/40] Searching: LIIA
+   0 candidate notices
+
+DONE — 0 London supported-housing notices captured
+Output: data/scraped/raw/bidstats_london_2026-06-07.json

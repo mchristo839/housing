@@ -1,0 +1,29 @@
+
+=== contractsfinder (ContractsFinderScraper) — awards from 2020-01-01 ===
+  [contractsfinder] error keyword='supported living' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='supported accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='supported housing' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='extra care' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='sheltered housing' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='housing related support' page=26: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='emergency accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='temporary accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='homelessness' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='asylum accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='approved premises' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='community accommodation service' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='bail accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='section 117' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='continuing healthcare accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='Transforming Care' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='Building the Right Support' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='mental health supported living' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='learning disability supported living' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='step-down accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='floating support' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='complex needs accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='semi-independent accommodation' page=1: HTTP Error 429: Too Many Requests
+  [contractsfinder] error keyword='move-on accommodation' page=1: HTTP Error 429: Too Many Requests
+  wrote 2 rows → C:\Users\paul_\OneDrive\Documents\claude\findahousingprovider\data\scraped\raw\contractsfinder_2026-06-06.json
+
+Done. Next: python scripts/normalise.py

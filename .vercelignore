@@ -1,0 +1,12 @@
+# Source data + tooling — not needed in the deployment (the built site reads
+# public/providers.json + public/db.json, which ARE included via public/).
+data/
+*.xlsx
+*.csv
+build_data.py
+scrape_provider_websites.py
+CareProviderSearch.jsx
+DATA_UPDATE.md
+GUIDE.md
+references/
+.claude/

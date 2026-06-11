@@ -1,0 +1,2363 @@
+{
+  "portal": "cf",
+  "year": 2023,
+  "month": 11,
+  "raw_count": 5532,
+  "filtered_count": 17,
+  "pages": 56,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-746591a4-0ae3-42d6-95c8-d9da53fd8a9c",
+      "id": "0fb1bc80-fc91-4078-807e-04bcf842a666-701201",
+      "language": "en",
+      "date": "2023-11-23T13:35:05Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP825619266",
+        "title": "GB-Colchester: 0349 - Social Housing Decarbonisation Fund Wave 2.1",
+        "description": "Colchester City Homes on behalf of Colchester Borough Council (the Council) wished to commission a contractor to undertake Social Housing Decarbonisation, ensuring PAS2030/PAS2035-compliant retrofit of 105 Council-owned, occupied domestic properties as part of Social Housing Decarbonisation Fund Wave 2.1 funding for Colchester City Council.\r\n      \r\n      Bids are being sought utilising the Fusion 21 - Decarbonisation Works Framework and only companies that have previously expressed interest have been invited to tender.\r\n      \r\n      The tender is split into three separate package of work (35 properties per package), for which a tender may be submitted, and the Council will appoint separate contractors for each of the 3 packages.\r\n      \r\n      Full details of each package are contained within the tender document's.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45321000",
+          "description": "Thermal insulation work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 800000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Not specified",
+        "tenderPeriod": {
+          "endDate": "2023-11-15T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-01-08T00:00:00Z",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": true
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-232137",
+          "name": "Colchester City Council",
+          "identifier": {
+            "legalName": "Colchester City Council"
+          },
+          "address": {
+            "streetAddress": "Rowan House, 33 Sheepen Road",
+            "locality": "Colchester",
+            "postalCode": "CO3 3WG",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "name": "Matt Howe",
+            "email": "matthew.howe@colchester.gov.uk",
+            "telephone": "+447976794358"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-265385",
+          "name": "TSG Building Services Plc",
+          "identifier": {
+            "legalName": "TSG Building Services Plc"
+          },
+          "address": {
+            "streetAddress": "TSG House\n        Cranbourne Road\n        Potters Bar\n        EN6 3JN"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-232137",
+        "name": "Colchester City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-746591a4-0ae3-42d6-95c8-d9da53fd8a9c-1",
+          "status": "active",
+          "date": "2023-11-15T00:00:00Z",
+          "datePublished": "2023-11-23T13:35:05Z",
+          "value": {
+            "amount": 800000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-265385",
+              "name": "TSG Building Services Plc"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-01-08T00:00:00Z",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/0fb1bc80-fc91-4078-807e-04bcf842a666",
+              "datePublished": "2023-11-23T13:35:05Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=825619266"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5c25e7be-97c3-4f25-88f6-9ded1c3ce672",
+      "id": "0fbbcfda-7aef-4412-b498-4e4e1c0fd871-700070",
+      "language": "en",
+      "date": "2023-11-20T15:01:26Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231120150118-104102",
+        "title": "Provision of emergency accommodation set up / turnaround services",
+        "description": "Provision of emergency accommodation set up / turnaround services",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-01-31T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-04-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Nelson Bello",
+            "email": "nelson.bello@hullcc.gov.uk",
+            "telephone": "+44 1482615739"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-252700",
+          "name": "Unity in Community",
+          "identifier": {
+            "legalName": "Unity in Community"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5c25e7be-97c3-4f25-88f6-9ded1c3ce672-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2023-11-20T15:01:26Z",
+          "value": {
+            "amount": 25000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-252700",
+              "name": "Unity in Community"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-04-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/0fbbcfda-7aef-4412-b498-4e4e1c0fd871",
+              "datePublished": "2023-11-20T15:01:26Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75347&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3661d905-72b3-4768-bbcc-e70ea299bade",
+      "id": "c9e2a579-868e-41a9-96c7-57bb2a1ccf1c-700053",
+      "language": "en",
+      "date": "2023-11-20T14:45:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231120144524-104102",
+        "title": "Provision of emergency accommodation for the homeless",
+        "description": "Provision of emergency accommodation for the homeless",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-02-01T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-04-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Nelson Bello",
+            "email": "nelson.bello@hullcc.gov.uk",
+            "telephone": "+44 1482615739"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-259577",
+          "name": "Gilson Hotel",
+          "identifier": {
+            "legalName": "Gilson Hotel"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3661d905-72b3-4768-bbcc-e70ea299bade-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2023-11-20T14:45:32Z",
+          "value": {
+            "amount": 25000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-259577",
+              "name": "Gilson Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-04-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c9e2a579-868e-41a9-96c7-57bb2a1ccf1c",
+              "datePublished": "2023-11-20T14:45:32Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75342&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c6b9e2e4-7614-474b-b4d3-486296b7b6a9",
+      "id": "1250b7d7-51c1-4053-b996-a21b8d6b02bb-700043",
+      "language": "en",
+      "date": "2023-11-20T14:38:55Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231120143844-104102",
+        "title": "Provision of emergency accommodation for the homeless",
+        "description": "Provision of emergency accommodation for the homeless",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-01-26T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-04-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Nelson Bello",
+            "email": "nelson.bello@hullcc.gov.uk",
+            "telephone": "+44 1482615739"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-259577",
+          "name": "Gilson Hotel",
+          "identifier": {
+            "legalName": "Gilson Hotel"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c6b9e2e4-7614-474b-b4d3-486296b7b6a9-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2023-11-20T14:38:55Z",
+          "value": {
+            "amount": 25000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-259577",
+              "name": "Gilson Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-01-01T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1250b7d7-51c1-4053-b996-a21b8d6b02bb",
+              "datePublished": "2023-11-20T14:38:55Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75341&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c1c16cdb-c0fa-4f94-97cf-ae2d23e7238b",
+      "id": "45c00519-e499-471a-b17d-2c0981877082-700036",
+      "language": "en",
+      "date": "2023-11-20T14:29:36Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231120142928-104102",
+        "title": "Provision of emergency accommodation for the homeless",
+        "description": "Provision of emergency accommodation for the homeless",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-01-19T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-04-02T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Nelson Bello",
+            "email": "nelson.bello@hullcc.gov.uk",
+            "telephone": "+44 1482615739"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-259577",
+          "name": "Gilson Hotel",
+          "identifier": {
+            "legalName": "Gilson Hotel"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c1c16cdb-c0fa-4f94-97cf-ae2d23e7238b-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2023-11-20T14:29:36Z",
+          "value": {
+            "amount": 25000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-259577",
+              "name": "Gilson Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-04-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/45c00519-e499-471a-b17d-2c0981877082",
+              "datePublished": "2023-11-20T14:29:36Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75339&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-b985ca88-7267-4ccd-8a0b-53f4c7ee0d13",
+      "id": "6980d3b4-f21b-4418-a7fd-18a2ffbf3521-700028",
+      "language": "en",
+      "date": "2023-11-20T14:21:47Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231120142138-104102",
+        "title": "Provision of emergency accommodation for the homeless",
+        "description": "Provision of emergency accommodation for the homeless",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 30000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-02-01T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-04-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Nelson Bello",
+            "email": "nelson.bello@hullcc.gov.uk",
+            "telephone": "+44 1482615739"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-259577",
+          "name": "Gilson Hotel",
+          "identifier": {
+            "legalName": "Gilson Hotel"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b985ca88-7267-4ccd-8a0b-53f4c7ee0d13-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2023-11-20T14:21:47Z",
+          "value": {
+            "amount": 30000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-259577",
+              "name": "Gilson Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-04-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/6980d3b4-f21b-4418-a7fd-18a2ffbf3521",
+              "datePublished": "2023-11-20T14:21:47Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75336&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-95922e5e-d00d-4ef2-8a95-550275e96afb",
+      "id": "03e32441-baf6-4717-a2ca-b4f7558b2626-698515",
+      "language": "en",
+      "date": "2023-11-15T13:22:23Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IT-100-3937-P1190  - AWARD",
+        "title": "P1190 - MONITORING VISITS TO RESIDENTIAL CHILDREN'S HOMES AND SUPPORTED ACCOMMODATION - AWARD",
+        "description": "Birmingham Children's Trust is inviting you are invited to submit a quotation for Monitoring Visits to Residential Children's Homes and Supported Accommodation, no later than 12:00pm, on 5th May 2023. The Trust requires a number of suppliers for the provision of full quality assurance visits, thematic monitoring and safe and well visits to named residential homes or supported accommodation providers on a call off basis, in urgent situations (24-hour response time).  Birmingham Children's Trust will provide any pre visit intelligence and a brief about the purpose of the visit and the provider is to produce a report thereon.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "B7 4BL"
+              },
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-05-05T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-09-01T01:00:00+01:00",
+          "endDate": "2026-08-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-245662",
+          "name": "Birmingham City Council",
+          "identifier": {
+            "legalName": "Birmingham City Council"
+          },
+          "address": {
+            "streetAddress": "Woodcock Street, Aston",
+            "locality": "Birmingham",
+            "postalCode": "B7 4BL",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Nirmla Badhan",
+            "email": "Nirmla.badhan@birminghamchildrenstrust.co.uk",
+            "telephone": "0121 303 1209"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-264626",
+          "name": "dialogue",
+          "identifier": {
+            "legalName": "dialogue"
+          },
+          "address": {
+            "streetAddress": "Chimmels, Dartington Hall, Totnes, United Kingdom, TQ9 6EQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-264627",
+          "name": "National Youth Advocacy Service",
+          "identifier": {
+            "legalName": "National Youth Advocacy Service"
+          },
+          "address": {
+            "streetAddress": "Tower House House, Tower Road, Birkenhead, Merseyside, United Kingdom, CH41 1FF"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-245662",
+        "name": "Birmingham City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-95922e5e-d00d-4ef2-8a95-550275e96afb-1",
+          "status": "active",
+          "date": "2023-09-01T00:00:00+01:00",
+          "datePublished": "2023-11-15T13:22:23Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-264626",
+              "name": "dialogue"
+            },
+            {
+              "id": "GB-CFS-264627",
+              "name": "National Youth Advocacy Service"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-09-01T00:00:00+01:00",
+            "endDate": "2026-08-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/03e32441-baf6-4717-a2ca-b4f7558b2626",
+              "datePublished": "2023-11-15T13:22:23Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-09431980-c98e-4887-902a-70f737b7cc81",
+      "id": "a4f70ed3-621b-4cca-a194-ea4d5e776034-697639",
+      "language": "en",
+      "date": "2023-11-13T14:21:18Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LUTON001-DN692599-15460795",
+        "title": "BT1668 Upgrade of Warden Call System for Sheltered Housing",
+        "description": "Upgrade of Warden Call System for Sheltered Housing",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "LU1 2BQ"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 60000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-10-05T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-10-23T00:00:00+01:00",
+          "endDate": "2025-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-111581",
+          "name": "Luton Council",
+          "identifier": {
+            "legalName": "Luton Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, George Street",
+            "locality": "Luton",
+            "postalCode": "LU1 2BQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Katie Brewer",
+            "email": "Katie.brewer@luton.gov.uk",
+            "telephone": "+44 1582548082"
+          },
+          "details": {
+            "url": "http://www.luton.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-151359",
+          "name": "Legrand Electric Limited",
+          "identifier": {
+            "legalName": "Legrand Electric Limited"
+          },
+          "address": {
+            "streetAddress": "B19 2LF"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-95079",
+          "name": "Legrand Electric LTD",
+          "identifier": {
+            "legalName": "Legrand Electric LTD"
+          },
+          "address": {
+            "streetAddress": "NE24 3AF"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-111581",
+        "name": "Luton Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-09431980-c98e-4887-902a-70f737b7cc81-1",
+          "status": "active",
+          "date": "2023-10-20T00:00:00+01:00",
+          "datePublished": "2023-11-13T14:21:18Z",
+          "value": {
+            "amount": 60000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-151359",
+              "name": "Legrand Electric Limited"
+            },
+            {
+              "id": "GB-CFS-95079",
+              "name": "Legrand Electric LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-10-23T00:00:00+01:00",
+            "endDate": "2025-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a4f70ed3-621b-4cca-a194-ea4d5e776034",
+              "datePublished": "2023-11-13T14:21:18Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5ed0dbb9-283c-4d16-8598-6590c917ec90",
+      "id": "42dfd4ce-b689-4408-a2f1-cb27acbf7a4f-696992",
+      "language": "en",
+      "date": "2023-11-10T11:39:01Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231110113854-104514",
+        "title": "Supported Accommodation for Young single people aged 16 - 25 (Doncaster Foyer)",
+        "description": "Doncaster Borough Council invites tenders for experienced providers to provide a support service at Doncaster Foyer for 16 to 25 years olds.\r\n\r\nDoncaster Foyer forms part of Doncaster's Resettlement Pathway for people experiencing (or at risk of) homelessness including those with complex needs.\r\n\r\nThe accommodation supplied is a 40 unit purpose built Foyer style accommodation facility in Doncaster City centre. The Registered Housing Provider of the accommodation is Salvation\tArmy Housing Association.  \r\n\r\nThere may be Individuals placed within the Service via Doncaster's Childrens social care teams and Early Help.  Referrals from social care will receive the same support, access and opportunities within Doncaster Foyer as those placed by the Single Point of Access (SPOA).  There will be no distinction in the support provided.  The Council will cover the accommodation related costs such as rent and Service charge if Housing Benefit / Universal Credit is not applicable.\r\n\r\nThe Provider will offer a safe, supportive environment and be committed to providing a \tsensitive, non-judgemental and non-oppressive support Service. \r\nThe Provider will \tneed to \tclearly demonstrate a commitment to increasing the Individual's \tacademic achievement, \ttraining and employment opportunities and support Individual's to make a successful transition to sustainable independent living.\r\n\r\nThe Provider will be an accredited member of the Foyer Federation or achieve full accreditation within 12 months of Services Commencement Date. See link for further detail:   https://www.foyer.net/pages/accreditation\r\n\r\nIt is anticipated that the contract will commence on 01 April 2023 and run until 31/03/2026.   There is also an option to extend the contract by up to further 2 X 12 months at the sole discretion of the council.\r\n\r\nAdditional information: Contract value includes initial 3 year period and 2 x 12 month extensions\r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 685841,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 1150223,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-01-20T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-04-01T00:00:00+01:00",
+          "endDate": "2026-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-257613",
+          "name": "City of Doncaster Council",
+          "identifier": {
+            "legalName": "City of Doncaster Council"
+          },
+          "address": {
+            "streetAddress": "Civic Office, Waterdale",
+            "locality": "Doncaster",
+            "postalCode": "DN1 3BU",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Shaun Ferron",
+            "email": "Shaun.Ferron@doncaster.gov.uk",
+            "telephone": "+44 1302862405"
+          },
+          "details": {
+            "url": "https://www.doncaster.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-264109",
+          "name": "Salvation Army Housing Association",
+          "identifier": {
+            "legalName": "Salvation Army Housing Association"
+          },
+          "address": {
+            "streetAddress": "Doncaster Foyer\nDN1 2AA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-257613",
+        "name": "City of Doncaster Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5ed0dbb9-283c-4d16-8598-6590c917ec90-1",
+          "status": "active",
+          "date": "2023-04-15T00:00:00+01:00",
+          "datePublished": "2023-11-10T11:39:00Z",
+          "value": {
+            "amount": 1150223,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-264109",
+              "name": "Salvation Army Housing Association"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-04-01T00:00:00+01:00",
+            "endDate": "2026-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/42dfd4ce-b689-4408-a2f1-cb27acbf7a4f",
+              "datePublished": "2023-11-10T11:39:00Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104514"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-fc7723c1-d102-446d-9309-107a45f28b14",
+      "id": "e54ff6d7-2f0e-4564-a4a8-e173d41a824d-696228",
+      "language": "en",
+      "date": "2023-11-08T14:08:06Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "55748",
+        "title": "Block Purchase of Five Beds for the Provision of 16+ Supported Accommodation (24-7) Group Living",
+        "description": "Provision of support and accommodation for 16-25 year olds who in the care of the Council.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311300",
+          "description": "Welfare services for children and young people"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 245782,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 379848,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-10-31T17:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2024-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/9G5HgHzZ",
+          "name": "Sheffield City Council",
+          "identifier": {
+            "legalName": "Sheffield City Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/9G5HgHzZ"
+          },
+          "address": {
+            "streetAddress": "1 Moorfoot",
+            "locality": "SHEFFIELD",
+            "postalCode": "S14PL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "commercialservices@sheffield.gov.uk",
+            "telephone": "01142293041"
+          },
+          "details": {
+            "url": "http://sheffield.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-03313253",
+          "name": "Roundabout Ltd",
+          "identifier": {
+            "legalName": "Roundabout Ltd",
+            "scheme": "GB-COH",
+            "id": "03313253"
+          },
+          "address": {
+            "streetAddress": "Sheffield"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/9G5HgHzZ",
+        "name": "Sheffield City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-fc7723c1-d102-446d-9309-107a45f28b14-1",
+          "status": "active",
+          "date": "2023-10-23T00:00:00+01:00",
+          "datePublished": "2023-11-08T14:08:06Z",
+          "value": {
+            "amount": 379848,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-03313253",
+              "name": "Roundabout Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e54ff6d7-2f0e-4564-a4a8-e173d41a824d",
+              "datePublished": "2023-11-08T14:08:06Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-d11f7f80-f65c-41bb-9f7e-4eaffb83bee5",
+      "id": "fdda447c-e12b-4186-8bba-b626fa2a9f9d-696044",
+      "language": "en",
+      "date": "2023-11-08T11:43:38Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "con_23283",
+        "title": "Provision of temporary accommodation and associated services (con_23283)",
+        "description": "Provision of temporary accommodation and associated services to mitigate schools disruption due to rebuilding, condition and refurbishment programmes. This contract is one of three with an overall combined value of up to £35,000,000.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 11550000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2023-09-05T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-09-12T00:00:00+01:00",
+          "endDate": "2024-01-11T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+          "name": "Department For Education",
+          "identifier": {
+            "legalName": "Department For Education",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/QfDr2jb7"
+          },
+          "address": {
+            "streetAddress": "Piccadilly Gate,Store Street",
+            "locality": "MANCHESTER",
+            "postalCode": "M12WD",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "Contract-Grant.DATA@education.gov.uk"
+          },
+          "details": {
+            "url": "https://www.gov.uk/government/organisations/department-for-education/about/procurement"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-414489",
+          "name": "Wernick Buildings Ltd",
+          "identifier": {
+            "legalName": "Wernick Buildings Ltd",
+            "scheme": "GB-COH",
+            "id": "414489"
+          },
+          "address": {
+            "streetAddress": "Molineux House, Russell Gardens Wickford Essex SS11 8QG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+        "name": "Department For Education"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d11f7f80-f65c-41bb-9f7e-4eaffb83bee5-1",
+          "status": "active",
+          "date": "2023-09-12T00:00:00+01:00",
+          "datePublished": "2023-11-08T11:43:38Z",
+          "value": {
+            "amount": 11550000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-414489",
+              "name": "Wernick Buildings Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-09-12T00:00:00+01:00",
+            "endDate": "2024-01-11T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/fdda447c-e12b-4186-8bba-b626fa2a9f9d",
+              "datePublished": "2023-11-08T11:43:38Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1bf6b1a6-3d2e-410c-b9d5-7fa535afa639",
+      "id": "9e77b767-9b17-4c34-bc73-c75249598959-696045",
+      "language": "en",
+      "date": "2023-11-08T11:42:47Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "con_23284",
+        "title": "Provision of temporary accommodation and associated services (con_23284)",
+        "description": "Provision of temporary accommodation and associated services to mitigate schools disruption due to rebuilding, condition and refurbishment programmes. This contract is one of three with an overall combined value of up to £35,000,000.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 11550000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2023-09-05T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-09-12T00:00:00+01:00",
+          "endDate": "2024-01-11T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+          "name": "Department For Education",
+          "identifier": {
+            "legalName": "Department For Education",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/QfDr2jb7"
+          },
+          "address": {
+            "streetAddress": "Piccadilly Gate,Store Street",
+            "locality": "MANCHESTER",
+            "postalCode": "M12WD",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "Contract-Grant.DATA@education.gov.uk"
+          },
+          "details": {
+            "url": "https://www.gov.uk/government/organisations/department-for-education/about/procurement"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-00685303",
+          "name": "PORTAKABIN LIMITED",
+          "identifier": {
+            "legalName": "PORTAKABIN LIMITED",
+            "scheme": "GB-COH",
+            "id": "00685303"
+          },
+          "address": {
+            "streetAddress": "New Lane,Huntington\nYORK\nNorth Yorkshire\nYO32 9PT\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+        "name": "Department For Education"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1bf6b1a6-3d2e-410c-b9d5-7fa535afa639-1",
+          "status": "active",
+          "date": "2023-09-12T00:00:00+01:00",
+          "datePublished": "2023-11-08T11:42:47Z",
+          "value": {
+            "amount": 11550000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00685303",
+              "name": "PORTAKABIN LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-09-12T00:00:00+01:00",
+            "endDate": "2024-01-11T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/9e77b767-9b17-4c34-bc73-c75249598959",
+              "datePublished": "2023-11-08T11:42:47Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-cf166b22-3b27-4204-aced-760ae4d6b7dc",
+      "id": "478fbd1d-62b2-4342-8f90-948cbed59150-696048",
+      "language": "en",
+      "date": "2023-11-08T11:41:56Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "con_23285",
+        "title": "Provision of temporary accommodation and associated services (con_23285)",
+        "description": "Provision of temporary accommodation and associated services to mitigate schools disruption due to rebuilding, condition and refurbishment programmes. This contract is one of three with an overall combined value of up to £35,000,000.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 11550000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2023-09-05T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-09-12T00:00:00+01:00",
+          "endDate": "2024-01-11T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+          "name": "Department For Education",
+          "identifier": {
+            "legalName": "Department For Education",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/QfDr2jb7"
+          },
+          "address": {
+            "streetAddress": "Piccadilly Gate,Store Street",
+            "locality": "MANCHESTER",
+            "postalCode": "M12WD",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "Contract-Grant.DATA@education.gov.uk"
+          },
+          "details": {
+            "url": "https://www.gov.uk/government/organisations/department-for-education/about/procurement"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-00147207",
+          "name": "ALGECO UK LIMITED",
+          "identifier": {
+            "legalName": "ALGECO UK LIMITED",
+            "scheme": "GB-COH",
+            "id": "00147207"
+          },
+          "address": {
+            "streetAddress": "Manor Drive\r\nPETERBOROUGH\r\nCambridgeshire\r\nPE4 7AP\r\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+        "name": "Department For Education"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-cf166b22-3b27-4204-aced-760ae4d6b7dc-1",
+          "status": "active",
+          "date": "2023-09-12T00:00:00+01:00",
+          "datePublished": "2023-11-08T11:41:56Z",
+          "value": {
+            "amount": 11550000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00147207",
+              "name": "ALGECO UK LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-09-12T00:00:00+01:00",
+            "endDate": "2024-01-11T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/478fbd1d-62b2-4342-8f90-948cbed59150",
+              "datePublished": "2023-11-08T11:41:56Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8baced3d-4513-4c75-a558-b083b289a8f3",
+      "id": "40f454be-501d-42f6-9f2d-f888fd9d0eb2-696037",
+      "language": "en",
+      "date": "2023-11-08T09:33:46Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LPOOL001-DN675251-66956526",
+        "title": "Move On Accommodation Service",
+        "description": "The aim of the contract is to provide high quality Move On (Second Stage - Step Down) accommodation for homeless people who need a short period of support prior to rehousing into a range of community settings.  The accommodation will be aimed at people requiring low level support who have already completed a comprehensive support programme and are ready to move on to more independent accommodation.  It will be primarily aimed at those who have previously been placed in council commissioned Temporary Accommodation services or those placed into emergency hotel provision by the council. The service will be for those with low level support needs and will be provided on a temporary basis prior to a move into the community. \\r\r\n\\r\r\nObjectives of the contract: the objectives of the contract are as follows:\\r\r\n\\r\r\na)\tTo further prepare service users to move to independent accommodation in the community.\\r\r\n\\r\r\nb)\tTo increase the independence of service users and therefore levels of planned move on through the provision of a high-quality Move On accommodation and support service\\r\r\n\\r\r\nc)\tTo provide on-site support to increase and further develop long term independent living skills, reducing the cycle of repeat homelessness \\r\r\n\\r\r\nd)\tTo minimise the length of stay in the Move On service and achieve timely move on\\r\r\n\\r\r\ne)\tTo contribute to the shorter lengths of stay in wider temporary accommodation services commissioned by the council and a reduction in the use of emergency hotels for single people at risk of homelessness, by providing a suitable, supported alternative for people with low level needs\\r\r\n\\r\r\nf)\tTo ensure that the holistic needs and risks of service users are fully assessed and support plans addressing move on are put in place\\r\r\n\\r\r\ng)\tTo assist service users to access primary care & secondary Health provision, and Mental Health services, and any other service which meets their needs\\r\r\n\\r\r\nh)\tTo work with service users to increase their recovery options by identifying open, accessible and targeted drug and alcohol services available to all service users and ensuring they can be supported if they drop out of treatment, to reengage with appropriate provision\\r\r\n\\r\r\ni)\tTo offer opportunities for training, digital and social inclusion, meaningful occupation and to help individuals to prepare for employment\\r\r\n\\r\r\nj)\tTo deliver a non-judgemental and inclusive services which treats service users with dignity, respecting gender, gender identity, sexual orientation, age, physical or mental health ability, religion, culture, social background and lifestyle choice\\r\r\n\\r\r\nk)\tTo deliver added social value that will provide benefits to the local community and contribute to the economic, social and environmental wellbeing of Liverpool\\r\r\n\\r\r\nl)\tTo deliver efficiencies and offer best value for Liverpool City Council.\\r\r\n",
+        "datePublished": "2023-06-21T13:47:41+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1246715,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-07-21T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2028-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49324",
+          "name": "Liverpool City Council",
+          "identifier": {
+            "legalName": "Liverpool City Council"
+          },
+          "address": {
+            "streetAddress": "4th Floor, Cunard Building",
+            "locality": "Liverpool",
+            "postalCode": "L3 1DS",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Cathy Walsh",
+            "email": "cathy.walsh@liverpool.gov.uk",
+            "telephone": "+44 1512330591"
+          },
+          "details": {
+            "url": "http://www.liverpool.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-219194",
+          "name": "The Whitechapel Centre",
+          "identifier": {
+            "legalName": "The Whitechapel Centre"
+          },
+          "address": {
+            "streetAddress": "L3 8DU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49324",
+        "name": "Liverpool City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8baced3d-4513-4c75-a558-b083b289a8f3-1",
+          "status": "active",
+          "date": "2023-10-23T00:00:00+01:00",
+          "datePublished": "2023-11-08T09:33:46Z",
+          "value": {
+            "amount": 1246715,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-219194",
+              "name": "The Whitechapel Centre"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-07T00:00:00Z",
+            "endDate": "2028-11-06T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/40f454be-501d-42f6-9f2d-f888fd9d0eb2",
+              "datePublished": "2023-11-08T09:33:46Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-d24363a5-a705-438c-a3c3-285e2a4f53ff",
+      "id": "2f88d2a6-5eb4-47a6-860c-f6a94847c706-694380",
+      "language": "en",
+      "date": "2023-11-02T13:20:08Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOT001-DN680382-11604618",
+        "title": "Re-Provision of Care and Support to Extra Care Housing Schemes - ASC/2023/427*",
+        "description": "Stoke on Trent City Council wish to appoint a provider of care at 2 Non PFI Extra Care Schemes, Rowan Village and West End Village March 2025.",
+        "datePublished": "2023-08-04T11:06:54+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 832966,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-09-12T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-27T00:00:00Z",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-79129",
+          "name": "Stoke-on-Trent City Council",
+          "identifier": {
+            "legalName": "Stoke-on-Trent City Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Glebe Street",
+            "locality": "Stoke-on-Trent",
+            "postalCode": "ST4 1HH",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Kirsty Fairbanks",
+            "email": "kirsty.fairbanks@stoke.gov.uk",
+            "telephone": "+44 1782231187"
+          },
+          "details": {
+            "url": "https://www.stoke.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-80826",
+          "name": "Radis Community Care Ltd",
+          "identifier": {
+            "legalName": "Radis Community Care Ltd"
+          },
+          "address": {
+            "streetAddress": "B77 4AS"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-79129",
+        "name": "Stoke-on-Trent City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d24363a5-a705-438c-a3c3-285e2a4f53ff-1",
+          "status": "active",
+          "date": "2023-10-31T00:00:00Z",
+          "datePublished": "2023-11-02T13:20:08Z",
+          "value": {
+            "amount": 874290,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-80826",
+              "name": "Radis Community Care Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-27T00:00:00Z",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2f88d2a6-5eb4-47a6-860c-f6a94847c706",
+              "datePublished": "2023-11-02T13:20:08Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=32a1dbd7-ab32-ee11-8124-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f5c17acf-31c7-4b57-8f5f-1a9420e618f1",
+      "id": "d5254bdd-6d74-4893-a165-5e892f50f559-694350",
+      "language": "en",
+      "date": "2023-11-02T12:38:03Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20231102123753-104102",
+        "title": "Decarbonisation of Social Housing Scheme (Works)",
+        "description": "The Authority applied for a grant for Energy Efficiency Funding, Social Housing Decarbonisation Fund Wave 2 and Procurement of Energy Efficiency Retrofit Works.  In anticipation of being successfully awarded the grant, an assessment of all suppliers within Lot 16 (Whole House Internal & External Installation Works more than £1m) of the EN:Procure Installation & Repairs Framework were assessed by EN:Procure with EQUANS Services Limited demonstrating best value for money overall, they have therefore been awarded a direct award.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45453100",
+          "description": "Refurbishment work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 10000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-06-22T14:13:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-06-26T00:00:00+01:00",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Leila Oxtoby",
+            "email": "leila.oxtoby@hullcc.gov.uk",
+            "telephone": "+44 1482616367"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-263351",
+          "name": "EQUANS REGENERATION LIMITED",
+          "identifier": {
+            "legalName": "EQUANS REGENERATION LIMITED"
+          },
+          "address": {
+            "streetAddress": "First Floor, Neon, Q10 Quorum Business Park, Benton Lane, Newcastle Upon Tyne, NE12 8BU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f5c17acf-31c7-4b57-8f5f-1a9420e618f1-1",
+          "status": "active",
+          "date": "2023-06-23T00:00:00+01:00",
+          "datePublished": "2023-11-02T12:38:02Z",
+          "value": {
+            "amount": 10000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-263351",
+              "name": "EQUANS REGENERATION LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-06-26T00:00:00+01:00",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d5254bdd-6d74-4893-a165-5e892f50f559",
+              "datePublished": "2023-11-02T12:38:02Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=69926&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-bab4f9ec-2874-4334-8a3b-5dc2a260dd6d",
+      "id": "9c4e3efb-675f-4a73-922d-2b40e52eca40-694093",
+      "language": "en",
+      "date": "2023-11-01T16:20:28Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "RBG001-DN682397-16148609",
+        "title": "Delivery of the Social Housing Decarbonisation Fund",
+        "description": "Delivery of the Social Housing Decarbonisation Fund.  \r\n\r\nCall off contract from the South East Consortium Framework, I&E, Lot 1b.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71314000",
+          "description": "Energy and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 21598516.7,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2023-06-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-09-01T00:00:00+01:00",
+          "endDate": "2025-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-78044",
+          "name": "Royal Borough of Greenwich",
+          "identifier": {
+            "legalName": "Royal Borough of Greenwich"
+          },
+          "address": {
+            "streetAddress": "3rd Floor, The Woolwich Centre, 35 Wellington Street, Woolwich",
+            "locality": "London",
+            "postalCode": "SE18 6HQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "procurement@royalgreenwich.gov.uk"
+          },
+          "details": {
+            "url": "http://www.royalgreenwich.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-237553",
+          "name": "Wates Property Services Limited",
+          "identifier": {
+            "legalName": "Wates Property Services Limited"
+          },
+          "address": {
+            "streetAddress": "Wates House, Station Approach, Leatherhead, Surrey, England, KT22 7SW"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-78044",
+        "name": "Royal Borough of Greenwich"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-bab4f9ec-2874-4334-8a3b-5dc2a260dd6d-1",
+          "status": "active",
+          "date": "2023-08-30T00:00:00+01:00",
+          "datePublished": "2023-11-01T16:20:28Z",
+          "value": {
+            "amount": 21598516.7,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-237553",
+              "name": "Wates Property Services Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-09-01T00:00:00+01:00",
+            "endDate": "2025-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/9c4e3efb-675f-4a73-922d-2b40e52eca40",
+              "datePublished": "2023-11-01T16:20:28Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

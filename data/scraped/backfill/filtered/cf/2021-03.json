@@ -1,0 +1,801 @@
+{
+  "portal": "cf",
+  "year": 2021,
+  "month": 3,
+  "raw_count": 5450,
+  "filtered_count": 5,
+  "pages": 55,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-745c530d-68f2-4933-b0ee-b65ea26c478e",
+      "id": "19a0822d-d24b-41eb-89cd-02f80b6da3ad-425526",
+      "language": "en",
+      "date": "2021-03-31T19:51:13+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SKESTDC001-DN526744-25923489",
+        "title": "CCTV at Temporary Accommodation (South Kesteven District Council)",
+        "description": "South Kesteven District Council is seeking quotes for the supply of upgrades and/or new installations to their temporary accommodation CCTV systems to ensure that they are fit for purpose. \r\n\r\nThe CCTV system across the temporary accommodation needs to be sufficient to ensure the safety of Council officers attending the accommodation and provide evidence to the Police in the event of a criminal or anti-social incident. The CCTV system will be required to have a remote connection and is being installed to protect the premises and residents from theft, vandalism, anti-social behaviour. It will also be required to track and record accidental or wilful damage and to provide additional monitoring for health and safety purposes.\r\n\r\nThe detailed requirements are defined in the quotation documents, please formally register your interest in this opportunity to access the full documentation. \r\n\r\nThe deadline for completed tender submissions to be received on the eTendering Portal is 12:00 noon on 5th March 2021. \r\n\r\nThe Contract is due to commence on 1st April 2021. \r\n\r\nPLEASE NOTE: Bidders are required to make arrangements to undertake a supervised site visit to the sites which need the 230vac, to review wiring routes prior to the submission of quotations to ensure their accuracy (please see 2.8 of Document One for site details and further information). Attendance at a site visit is mandatory as part of this procurement process, and all site visits must be conducted in line with any local and national COVID legislation and guidance. The Council reserves the right to eliminate bids from the procurement process (without evaluation), that are received from any bidder that has not attended a site visit. Site visits must be arranged through the messaging function of the project on ProContract. The deadline for submitting a request for attending a site visit is 26th February 2021 (to ensure the Council is able to arrange a suitable site visit (in terms of date and time), we would encourage you to submit your request as early as possible).",
+        "datePublished": "2021-02-15T09:56:46Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "50610000",
+          "description": "Repair and maintenance services of security equipment"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "35125300",
+            "description": "Security cameras"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 13900,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-03-05T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-122547",
+          "name": "South Kesteven District Council",
+          "identifier": {
+            "legalName": "South Kesteven District Council"
+          },
+          "address": {
+            "streetAddress": "St Peters Hill",
+            "locality": "Grantham",
+            "postalCode": "NG31 6PZ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Amy Myers",
+            "email": "amyers@melton.gov.uk"
+          },
+          "details": {
+            "url": "http://www.southkesteven.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-97312",
+          "name": "Freedom Fire & Security Maintenance Ltd",
+          "identifier": {
+            "legalName": "Freedom Fire & Security Maintenance Ltd"
+          },
+          "address": {
+            "streetAddress": "LN5 8HJ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-122547",
+        "name": "South Kesteven District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-745c530d-68f2-4933-b0ee-b65ea26c478e-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-03-31T19:51:13+01:00",
+          "value": {
+            "amount": 12030,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-97312",
+              "name": "Freedom Fire & Security Maintenance Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/19a0822d-d24b-41eb-89cd-02f80b6da3ad",
+              "datePublished": "2021-03-31T19:51:13+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "ProContract Link",
+              "url": "https://procontract.due-north.com/Advert?advertId=3ec740f1-2c6d-eb11-8108-005056b64545&p=527b4bbd-5c58-e511-80ef-000c29c9ba21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-17f1c7df-a697-427c-a2d9-6ce121d92226",
+      "id": "d01da99b-7a4a-441b-a3bb-129971532c24-419530",
+      "language": "en",
+      "date": "2021-03-11T12:11:29Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "COV - 9912 - AWARD",
+        "title": "Cov - Supported Living Accommodation for Adults (DPS) - Call off against lot 7 - AWARD",
+        "description": "A requirement has arisen against the supported living accommodation for adults (DPS). This is a call for competition between providers accepted onto this agreement against lot 7",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85300000",
+            "description": "Social work and related services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "CV1 2GN"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-12-09T13:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-05-01T01:00:00+01:00",
+          "endDate": "2024-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162112",
+          "name": "Coventry City Council (COV)",
+          "identifier": {
+            "legalName": "Coventry City Council (COV)"
+          },
+          "address": {
+            "streetAddress": "Coventry, Coventry",
+            "locality": "Coventry",
+            "postalCode": "CV1 2GN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Coventry City Council Procurement Team",
+            "email": "procurement.services@coventry.gov.uk",
+            "telephone": "024 7683 3757"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-146411",
+          "name": "Individual Care Services Ltd",
+          "identifier": {
+            "legalName": "Individual Care Services Ltd"
+          },
+          "address": {
+            "streetAddress": "25 Alcester Road, Studley, Warwickshire, United Kingdom, B80 7LL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162112",
+        "name": "Coventry City Council (COV)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-17f1c7df-a697-427c-a2d9-6ce121d92226-1",
+          "status": "active",
+          "date": "2021-01-15T00:00:00Z",
+          "datePublished": "2021-03-11T12:11:29Z",
+          "value": {
+            "amount": 688167,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-146411",
+              "name": "Individual Care Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-05-01T00:00:00+01:00",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d01da99b-7a4a-441b-a3bb-129971532c24",
+              "datePublished": "2021-03-11T12:11:29Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9920951a-1e6b-4804-bd1a-89ef6f4c5b91",
+      "id": "af7c32dd-0bef-4e0b-997e-7f616e2d52ce-418024",
+      "language": "en",
+      "date": "2021-03-10T16:04:51Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "COV - 9911 - AWARD",
+        "title": "Cov - Supported Living Accommodation for Adult Services - Call off against Lot 7 - AWARD",
+        "description": "A requirement has arisen  against the Supported Living Accommodation for Adult Services (DPS) . This is a call for  competition between providers accepted onto this agreement against lot 7",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "CV1 2GN"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-12-02T13:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-03T00:00:00Z",
+          "endDate": "2024-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162112",
+          "name": "Coventry City Council (COV)",
+          "identifier": {
+            "legalName": "Coventry City Council (COV)"
+          },
+          "address": {
+            "streetAddress": "Coventry, Coventry",
+            "locality": "Coventry",
+            "postalCode": "CV1 2GN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Coventry City Council Procurement Team",
+            "email": "procurement.services@coventry.gov.uk",
+            "telephone": "024 7683 3757"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-146411",
+          "name": "Individual Care Services Ltd",
+          "identifier": {
+            "legalName": "Individual Care Services Ltd"
+          },
+          "address": {
+            "streetAddress": "25 Alcester Road, Studley, Warwickshire, United Kingdom, B80 7LL"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162112",
+        "name": "Coventry City Council (COV)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9920951a-1e6b-4804-bd1a-89ef6f4c5b91-1",
+          "status": "active",
+          "date": "2020-12-17T00:00:00Z",
+          "datePublished": "2021-03-10T16:04:51Z",
+          "value": {
+            "amount": 206396,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-146411",
+              "name": "Individual Care Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-02-03T00:00:00Z",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/af7c32dd-0bef-4e0b-997e-7f616e2d52ce",
+              "datePublished": "2021-03-10T16:04:51Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9920951a-1e6b-4804-bd1a-89ef6f4c5b91",
+      "id": "af7c32dd-0bef-4e0b-997e-7f616e2d52ce-419256",
+      "language": "en",
+      "date": "2021-03-10T16:21:48Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "COV - 9911 - AWARD",
+        "title": "Cov - Supported Living Accommodation for Adult Services - Call off against Lot 7 - AWARD",
+        "description": "A requirement has arisen  against the Supported Living Accommodation for Adult Services (DPS) . This is a call for  competition between providers accepted onto this agreement against lot 7",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "CV1 2GN"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-12-02T13:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-03T00:00:00Z",
+          "endDate": "2024-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162112",
+          "name": "Coventry City Council (COV)",
+          "identifier": {
+            "legalName": "Coventry City Council (COV)"
+          },
+          "address": {
+            "streetAddress": "Coventry, Coventry",
+            "locality": "Coventry",
+            "postalCode": "CV1 2GN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Coventry City Council Procurement Team",
+            "email": "procurement.services@coventry.gov.uk",
+            "telephone": "024 7683 3757"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-146411",
+          "name": "Individual Care Services Ltd",
+          "identifier": {
+            "legalName": "Individual Care Services Ltd"
+          },
+          "address": {
+            "streetAddress": "25 Alcester Road, Studley, Warwickshire, United Kingdom, B80 7LL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162112",
+        "name": "Coventry City Council (COV)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9920951a-1e6b-4804-bd1a-89ef6f4c5b91-1",
+          "status": "active",
+          "date": "2020-12-17T00:00:00Z",
+          "datePublished": "2021-03-10T16:04:51Z",
+          "value": {
+            "amount": 620088,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-146411",
+              "name": "Individual Care Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-02-03T00:00:00Z",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/af7c32dd-0bef-4e0b-997e-7f616e2d52ce",
+              "datePublished": "2021-03-10T16:04:51Z",
+              "dateModified": "2021-03-10T16:21:48Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-484dc3db-edd2-4e3e-bdf5-f4fd84360761",
+      "id": "d67bbe36-d63c-4de2-8c36-423780c9f1c5-418775",
+      "language": "en",
+      "date": "2021-03-09T15:30:41Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CWSCC - 031589 - AWARD",
+        "title": "Housing Related Support Services  - AWARD",
+        "description": "West Sussex County Council is seeking Service Providers to provide Housing Related Support Services to customers for the purpose of developing that person's capacity to live independently in accommodation or sustaining their capacity to do so. The Tender is split into the following lots: \r\n      \r\n      o Lot 1: Adur and Worthing Resettlement Service\r\n      o Lot 2: Arun Resettlement Service\r\n      o Lot 3: Chichester Resettlement Service\r\n      o Lot 4: Crawley Resettlement Service\r\n      o Lot 5: Horsham Resettlement Service\r\n      o Lot 6: Mid-Sussex Resettlement Service",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "70333000",
+            "description": "Housing services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "PO19 1RQ"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 400000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 2800000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-11-13T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T01:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162652",
+          "name": "West Sussex County Council (CAP)",
+          "identifier": {
+            "legalName": "West Sussex County Council (CAP)"
+          },
+          "address": {
+            "streetAddress": "West Street, Chicester",
+            "locality": "West Sussex",
+            "postalCode": "PO19 1RQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Alison Eastman (WSCC)",
+            "email": "alison.eastman@westsussex.gov.uk",
+            "telephone": "0330 224813"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-164726",
+          "name": "Peabody South East",
+          "identifier": {
+            "legalName": "Peabody South East"
+          },
+          "address": {
+            "streetAddress": "20 Queen Elizabeth Street, London, Greater London, United Kingdom, SE1 2RJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-85510",
+          "name": "Sanctuary Housing",
+          "identifier": {
+            "legalName": "Sanctuary Housing"
+          },
+          "address": {
+            "streetAddress": "Chamber Court, Castle Street, Worcester, Worcestershire, United Kingdom, WR1 3ZQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-164727",
+          "name": "Southdown Housing Association Limited",
+          "identifier": {
+            "legalName": "Southdown Housing Association Limited"
+          },
+          "address": {
+            "streetAddress": "2 Bell Lane, Lewes, East Sussex, East Sussex, United Kingdom, BN7 1JU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-164728",
+          "name": "Stonepillow",
+          "identifier": {
+            "legalName": "Stonepillow"
+          },
+          "address": {
+            "streetAddress": "39 Southgate, Chichester, west sussex, United Kingdom, PO19 1DP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162652",
+        "name": "West Sussex County Council (CAP)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-484dc3db-edd2-4e3e-bdf5-f4fd84360761-1",
+          "status": "active",
+          "date": "2021-03-09T00:00:00Z",
+          "datePublished": "2021-03-09T15:30:41Z",
+          "value": {
+            "amount": 400000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-164726",
+              "name": "Peabody South East"
+            },
+            {
+              "id": "GB-CFS-85510",
+              "name": "Sanctuary Housing"
+            },
+            {
+              "id": "GB-CFS-164727",
+              "name": "Southdown Housing Association Limited"
+            },
+            {
+              "id": "GB-CFS-164728",
+              "name": "Stonepillow"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d67bbe36-d63c-4de2-8c36-423780c9f1c5",
+              "datePublished": "2021-03-09T15:30:41Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

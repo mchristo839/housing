@@ -1,0 +1,727 @@
+07:11:45 Starting backfill — 78 months × 1 portals
+07:11:45 
+=== Portal: cf ===
+07:11:45   cf 2020-01: scraping...
+07:13:27   (429 lockout — sleeping 305s)
+07:14:52   (429 lockout — sleeping 305s)
+07:19:51   cf 2020-01: 3004 raw → 0 housing (31 pages)
+07:19:51   cf 2020-02: scraping...
+07:20:09   (429 lockout — sleeping 305s)
+07:20:09   (429 lockout — sleeping 305s)
+07:26:14   (429 lockout — sleeping 305s)
+07:26:14   (429 lockout — sleeping 305s)
+07:32:13   (429 lockout — sleeping 305s)
+07:32:14   (429 lockout — sleeping 305s)
+07:38:01   cf 2020-02: 2820 raw → 0 housing (29 pages)
+07:38:01   cf 2020-03: scraping...
+07:38:12   (429 lockout — sleeping 305s)
+07:38:13   (429 lockout — sleeping 305s)
+07:43:18   cf 2020-01: 3004 raw → 11 housing (31 pages)
+07:43:18   cf 2020-02: scraping...
+07:44:11   (429 lockout — sleeping 305s)
+07:44:12   (429 lockout — sleeping 305s)
+07:50:28   (429 lockout — sleeping 305s)
+07:50:29   (429 lockout — sleeping 305s)
+07:56:16   cf 2020-03: 2925 raw → 0 housing (30 pages)
+07:56:16   cf 2020-04: scraping...
+07:56:23   cf 2020-02: 2820 raw → 12 housing (29 pages)
+07:56:23   cf 2020-03: scraping...
+07:56:33   (429 lockout — sleeping 305s)
+07:56:34   (429 lockout — sleeping 305s)
+08:02:39   (429 lockout — sleeping 305s)
+08:02:39   (429 lockout — sleeping 305s)
+08:08:44   (429 lockout — sleeping 305s)
+08:08:44   (429 lockout — sleeping 305s)
+08:14:19   cf 2020-04: 2794 raw → 3 housing (28 pages)
+08:14:19   cf 2020-05: scraping...
+08:14:38   cf 2020-03: 2925 raw → 9 housing (30 pages)
+08:14:38   cf 2020-04: scraping...
+08:14:55   (429 lockout — sleeping 305s)
+08:14:55   (429 lockout — sleeping 305s)
+08:20:54   (429 lockout — sleeping 305s)
+08:20:54   (429 lockout — sleeping 305s)
+08:27:00   cf 2020-05: 2492 raw → 0 housing (25 pages)
+08:27:00   cf 2020-06: scraping...
+08:27:05   (429 lockout — sleeping 305s)
+08:27:06   (429 lockout — sleeping 305s)
+08:32:41   cf 2020-04: 2794 raw → 12 housing (28 pages)
+08:32:41   cf 2020-05: scraping...
+08:33:10   (429 lockout — sleeping 305s)
+08:33:11   (429 lockout — sleeping 305s)
+08:39:10   (429 lockout — sleeping 305s)
+08:39:15   (429 lockout — sleeping 305s)
+08:45:03   cf 2020-06: 2749 raw → 1 housing (28 pages)
+08:45:03   cf 2020-07: scraping...
+08:45:20   (429 lockout — sleeping 305s)
+08:45:21   (429 lockout — sleeping 305s)
+08:50:27   cf 2020-05: 2492 raw → 5 housing (25 pages)
+08:50:27   cf 2020-06: scraping...
+08:51:32   (429 lockout — sleeping 305s)
+08:51:32   (429 lockout — sleeping 305s)
+08:57:31   (429 lockout — sleeping 305s)
+08:57:31   (429 lockout — sleeping 305s)
+09:03:19   cf 2020-07: 2921 raw → 1 housing (30 pages)
+09:03:19   cf 2020-08: scraping...
+09:03:25   cf 2020-06: 2749 raw → 15 housing (28 pages)
+09:03:25   cf 2020-07: scraping...
+09:03:30   (429 lockout — sleeping 305s)
+09:03:30   (429 lockout — sleeping 305s)
+09:09:29   (429 lockout — sleeping 305s)
+09:09:29   (429 lockout — sleeping 305s)
+09:15:34   (429 lockout — sleeping 305s)
+09:15:34   (429 lockout — sleeping 305s)
+09:21:04   cf 2020-08: 2417 raw → 1 housing (25 pages)
+09:21:04   cf 2020-09: scraping...
+09:21:39   (429 lockout — sleeping 305s)
+09:21:39   (429 lockout — sleeping 305s)
+09:26:45   cf 2020-07: 2921 raw → 8 housing (30 pages)
+09:26:45   cf 2020-08: scraping...
+09:27:45   (429 lockout — sleeping 305s)
+09:27:50   (429 lockout — sleeping 305s)
+09:33:49   (429 lockout — sleeping 305s)
+09:33:50   (429 lockout — sleeping 305s)
+09:39:25   cf 2020-09: 3026 raw → 0 housing (31 pages)
+09:39:25   cf 2020-10: scraping...
+09:39:26   cf 2020-08: 2417 raw → 11 housing (25 pages)
+09:39:26   cf 2020-09: scraping...
+09:39:49   (429 lockout — sleeping 305s)
+09:39:49   (429 lockout — sleeping 305s)
+09:45:48   (429 lockout — sleeping 305s)
+09:45:48   (429 lockout — sleeping 305s)
+09:51:53   (429 lockout — sleeping 305s)
+09:51:53   (429 lockout — sleeping 305s)
+09:57:40   cf 2020-10: 2994 raw → 0 housing (30 pages)
+09:57:40   cf 2020-11: scraping...
+09:57:47   cf 2020-09: 3026 raw → 6 housing (31 pages)
+09:57:47   cf 2020-10: scraping...
+09:57:52   (429 lockout — sleeping 305s)
+09:57:52   (429 lockout — sleeping 305s)
+10:03:57   (429 lockout — sleeping 305s)
+10:03:57   (429 lockout — sleeping 305s)
+10:10:14   (429 lockout — sleeping 305s)
+10:10:15   (429 lockout — sleeping 305s)
+10:16:02   cf 2020-10: 2994 raw → 8 housing (30 pages)
+10:16:02   cf 2020-11: scraping...
+10:16:14   cf 2020-11: 3270 raw → 0 housing (33 pages)
+10:16:14   cf 2020-12: scraping...
+10:16:25   (429 lockout — sleeping 305s)
+10:16:26   (429 lockout — sleeping 305s)
+10:22:30   (429 lockout — sleeping 305s)
+10:22:31   (429 lockout — sleeping 305s)
+10:28:36   (429 lockout — sleeping 305s)
+10:28:36   (429 lockout — sleeping 305s)
+10:34:35   (429 lockout — sleeping 305s)
+10:34:35   (429 lockout — sleeping 305s)
+10:39:41   cf 2020-11: 3270 raw → 8 housing (33 pages)
+10:39:41   cf 2020-12: scraping...
+10:39:59   cf 2020-12: 3304 raw → 1 housing (34 pages)
+10:39:59   cf 2021-01: scraping...
+10:40:52   (429 lockout — sleeping 305s)
+10:40:52   (429 lockout — sleeping 305s)
+10:46:57   (429 lockout — sleeping 305s)
+10:46:58   (429 lockout — sleeping 305s)
+10:52:56   (429 lockout — sleeping 305s)
+10:52:57   (429 lockout — sleeping 305s)
+10:58:21   cf 2020-12: 3304 raw → 11 housing (34 pages)
+10:58:21   cf 2021-01: scraping...
+10:58:44   cf 2021-01: 3422 raw → 0 housing (35 pages)
+10:58:44   cf 2021-02: scraping...
+10:58:56   (429 lockout — sleeping 305s)
+10:58:56   (429 lockout — sleeping 305s)
+11:05:19   (429 lockout — sleeping 305s)
+11:05:19   (429 lockout — sleeping 305s)
+11:11:30   (429 lockout — sleeping 305s)
+11:11:30   (429 lockout — sleeping 305s)
+11:17:06   cf 2021-01: 3422 raw → 7 housing (35 pages)
+11:17:07   cf 2021-02: scraping...
+11:17:30   (429 lockout — sleeping 305s)
+11:17:35   (429 lockout — sleeping 305s)
+11:22:47   cf 2021-02: 3646 raw → 1 housing (37 pages)
+11:22:47   cf 2021-03: scraping...
+11:23:40   (429 lockout — sleeping 305s)
+11:23:41   (429 lockout — sleeping 305s)
+11:29:39   (429 lockout — sleeping 305s)
+11:29:40   (429 lockout — sleeping 305s)
+11:35:38   (429 lockout — sleeping 305s)
+11:35:39   (429 lockout — sleeping 305s)
+11:41:09   cf 2021-02: 3646 raw → 7 housing (37 pages)
+11:41:09   cf 2021-03: scraping...
+11:41:44   (429 lockout — sleeping 305s)
+11:41:49   (429 lockout — sleeping 305s)
+11:47:49   (429 lockout — sleeping 305s)
+11:47:54   (429 lockout — sleeping 305s)
+11:53:42   cf 2021-03: 5450 raw → 0 housing (55 pages)
+11:53:42   cf 2021-04: scraping...
+11:54:06   (429 lockout — sleeping 305s)
+11:54:07   (429 lockout — sleeping 305s)
+12:00:05   (429 lockout — sleeping 305s)
+12:00:06   (429 lockout — sleeping 305s)
+12:06:10   (429 lockout — sleeping 305s)
+12:06:11   (429 lockout — sleeping 305s)
+12:12:04   cf 2021-03: 5450 raw → 5 housing (55 pages)
+12:12:04   cf 2021-04: scraping...
+12:12:09   (429 lockout — sleeping 305s)
+12:12:10   (429 lockout — sleeping 305s)
+12:18:15   (429 lockout — sleeping 305s)
+12:18:20   (429 lockout — sleeping 305s)
+12:23:38   cf 2021-04: 4492 raw → 1 housing (45 pages)
+12:23:38   cf 2021-05: scraping...
+12:24:19   (429 lockout — sleeping 305s)
+12:24:20   (429 lockout — sleeping 305s)
+12:30:24   (429 lockout — sleeping 305s)
+12:30:25   (429 lockout — sleeping 305s)
+12:36:35   (429 lockout — sleeping 305s)
+12:36:36   (429 lockout — sleeping 305s)
+12:42:00   cf 2021-04: 4492 raw → 27 housing (45 pages)
+12:42:00   cf 2021-05: scraping...
+12:42:35   (429 lockout — sleeping 305s)
+12:42:40   (429 lockout — sleeping 305s)
+12:47:46   cf 2021-05: 3764 raw → 1 housing (38 pages)
+12:47:46   cf 2021-06: scraping...
+12:48:34   (429 lockout — sleeping 305s)
+12:48:39   (429 lockout — sleeping 305s)
+12:54:38   (429 lockout — sleeping 305s)
+12:54:40   (429 lockout — sleeping 305s)
+13:00:38   (429 lockout — sleeping 305s)
+13:00:39   (429 lockout — sleeping 305s)
+13:06:08   cf 2021-05: 3764 raw → 6 housing (38 pages)
+13:06:08   cf 2021-06: scraping...
+13:06:50   (429 lockout — sleeping 305s)
+13:06:55   (429 lockout — sleeping 305s)
+13:12:19   cf 2021-06: 4104 raw → 5 housing (42 pages)
+13:12:19   cf 2021-07: scraping...
+13:12:54   (429 lockout — sleeping 305s)
+13:12:55   (429 lockout — sleeping 305s)
+13:18:53   (429 lockout — sleeping 305s)
+13:18:54   (429 lockout — sleeping 305s)
+13:24:58   (429 lockout — sleeping 305s)
+13:24:59   (429 lockout — sleeping 305s)
+14:38:16   cf 2021-06: 4104 raw → 12 housing (42 pages)
+14:38:16   cf 2021-07: scraping...
+14:39:13   (429 lockout — sleeping 305s)
+14:45:12   (429 lockout — sleeping 305s)
+14:45:12   (429 lockout — sleeping 305s)
+14:50:31   cf 2021-07: 5199 raw → 0 housing (52 pages)
+14:50:31   cf 2021-08: scraping...
+14:51:11   (429 lockout — sleeping 305s)
+14:51:11   (429 lockout — sleeping 305s)
+14:57:17   (429 lockout — sleeping 305s)
+15:03:10   (429 lockout — sleeping 305s)
+15:03:10   (429 lockout — sleeping 305s)
+15:08:52   cf 2021-07: 5199 raw → 9 housing (52 pages)
+15:08:52   cf 2021-08: scraping...
+15:09:09   (429 lockout — sleeping 305s)
+15:09:09   (429 lockout — sleeping 305s)
+15:15:14   (429 lockout — sleeping 305s)
+15:15:14   (429 lockout — sleeping 305s)
+15:20:44   cf 2021-08: 4735 raw → 0 housing (48 pages)
+15:20:44   cf 2021-09: scraping...
+15:21:19   (429 lockout — sleeping 305s)
+15:21:19   (429 lockout — sleeping 305s)
+15:27:24   (429 lockout — sleeping 305s)
+15:27:30   (429 lockout — sleeping 305s)
+15:33:30   (429 lockout — sleeping 305s)
+15:33:30   (429 lockout — sleeping 305s)
+15:39:05   cf 2021-08: 4735 raw → 15 housing (48 pages)
+15:39:05   cf 2021-09: scraping...
+15:39:35   (429 lockout — sleeping 305s)
+15:39:35   (429 lockout — sleeping 305s)
+15:45:34   (429 lockout — sleeping 305s)
+15:45:34   (429 lockout — sleeping 305s)
+15:51:03   cf 2021-09: 4824 raw → 2 housing (49 pages)
+15:51:03   cf 2021-10: scraping...
+15:51:33   (429 lockout — sleeping 305s)
+15:51:33   (429 lockout — sleeping 305s)
+15:57:44   (429 lockout — sleeping 305s)
+15:57:44   (429 lockout — sleeping 305s)
+16:03:55   (429 lockout — sleeping 305s)
+16:03:55   (429 lockout — sleeping 305s)
+16:09:25   cf 2021-09: 4824 raw → 12 housing (49 pages)
+16:09:25   cf 2021-10: scraping...
+16:10:00   (429 lockout — sleeping 305s)
+16:10:00   (429 lockout — sleeping 305s)
+16:16:06   (429 lockout — sleeping 305s)
+16:16:06   (429 lockout — sleeping 305s)
+16:21:12   cf 2021-10: 4656 raw → 0 housing (47 pages)
+16:21:12   cf 2021-11: scraping...
+16:22:23   (429 lockout — sleeping 305s)
+16:22:23   (429 lockout — sleeping 305s)
+16:28:22   (429 lockout — sleeping 305s)
+16:28:22   (429 lockout — sleeping 305s)
+16:34:21   (429 lockout — sleeping 305s)
+16:34:21   (429 lockout — sleeping 305s)
+16:39:33   cf 2021-10: 4656 raw → 10 housing (47 pages)
+16:39:33   cf 2021-11: scraping...
+16:40:32   (429 lockout — sleeping 305s)
+16:40:32   (429 lockout — sleeping 305s)
+16:46:21   cf 2021-11: 4722 raw → 0 housing (48 pages)
+16:46:21   cf 2021-12: scraping...
+16:46:44   (429 lockout — sleeping 305s)
+16:46:44   (429 lockout — sleeping 305s)
+16:52:49   (429 lockout — sleeping 305s)
+16:52:49   (429 lockout — sleeping 305s)
+16:58:54   (429 lockout — sleeping 305s)
+16:58:54   (429 lockout — sleeping 305s)
+17:04:42   cf 2021-11: 4722 raw → 12 housing (48 pages)
+17:04:42   cf 2021-12: scraping...
+17:04:59   (429 lockout — sleeping 305s)
+17:04:59   (429 lockout — sleeping 305s)
+17:10:58   (429 lockout — sleeping 305s)
+17:10:58   (429 lockout — sleeping 305s)
+17:16:16   cf 2021-12: 4435 raw → 0 housing (45 pages)
+17:16:16   cf 2022-01: scraping...
+17:16:57   (429 lockout — sleeping 305s)
+17:16:57   (429 lockout — sleeping 305s)
+18:29:13   (429 lockout — sleeping 305s)
+18:35:12   (429 lockout — sleeping 305s)
+18:40:42   cf 2021-12: 4435 raw → 8 housing (45 pages)
+18:40:42   cf 2022-01: scraping...
+18:41:06   (429 lockout — sleeping 305s)
+18:41:06   (429 lockout — sleeping 305s)
+18:47:11   (429 lockout — sleeping 305s)
+18:47:11   (429 lockout — sleeping 305s)
+18:52:17   cf 2022-01: 4485 raw → 1 housing (45 pages)
+18:52:17   cf 2022-02: scraping...
+18:53:16   (429 lockout — sleeping 305s)
+18:53:16   (429 lockout — sleeping 305s)
+18:59:21   (429 lockout — sleeping 305s)
+19:05:20   (429 lockout — sleeping 305s)
+19:10:38   cf 2022-01: 4485 raw → 9 housing (45 pages)
+19:10:38   cf 2022-02: scraping...
+19:11:50   (429 lockout — sleeping 305s)
+19:11:50   (429 lockout — sleeping 305s)
+19:17:37   cf 2022-02: 4937 raw → 1 housing (50 pages)
+19:17:37   cf 2022-03: scraping...
+19:17:55   (429 lockout — sleeping 305s)
+19:17:55   (429 lockout — sleeping 305s)
+19:24:00   (429 lockout — sleeping 305s)
+19:24:00   (429 lockout — sleeping 305s)
+19:30:05   (429 lockout — sleeping 305s)
+19:35:59   cf 2022-02: 4937 raw → 14 housing (50 pages)
+19:35:59   cf 2022-03: scraping...
+19:36:05   (429 lockout — sleeping 305s)
+19:36:05   (429 lockout — sleeping 305s)
+19:42:04   (429 lockout — sleeping 305s)
+19:42:04   (429 lockout — sleeping 305s)
+19:48:15   (429 lockout — sleeping 305s)
+19:48:15   (429 lockout — sleeping 305s)
+19:54:10   cf 2022-03: 5972 raw → 0 housing (60 pages)
+19:54:10   cf 2022-04: scraping...
+19:54:26   (429 lockout — sleeping 305s)
+19:54:26   (429 lockout — sleeping 305s)
+20:00:19   (429 lockout — sleeping 305s)
+20:00:19   (429 lockout — sleeping 305s)
+20:06:25   (429 lockout — sleeping 305s)
+20:06:25   (429 lockout — sleeping 305s)
+20:12:30   (429 lockout — sleeping 305s)
+20:12:30   (429 lockout — sleeping 305s)
+20:17:36   cf 2022-03: 5972 raw → 13 housing (60 pages)
+20:17:36   cf 2022-04: scraping...
+20:18:35   (429 lockout — sleeping 305s)
+20:18:35   (429 lockout — sleeping 305s)
+20:24:40   (429 lockout — sleeping 305s)
+20:24:40   (429 lockout — sleeping 305s)
+20:29:52   cf 2022-04: 5192 raw → 1 housing (52 pages)
+20:29:52   cf 2022-05: scraping...
+20:30:45   (429 lockout — sleeping 305s)
+20:30:45   (429 lockout — sleeping 305s)
+20:36:44   (429 lockout — sleeping 305s)
+20:36:44   (429 lockout — sleeping 305s)
+20:42:49   (429 lockout — sleeping 305s)
+20:48:14   cf 2022-04: 5192 raw → 21 housing (52 pages)
+20:48:14   cf 2022-05: scraping...
+20:48:55   (429 lockout — sleeping 305s)
+20:48:55   (429 lockout — sleeping 305s)
+20:54:48   (429 lockout — sleeping 305s)
+21:00:06   cf 2022-05: 4794 raw → 1 housing (48 pages)
+21:00:06   cf 2022-06: scraping...
+21:00:59   (429 lockout — sleeping 305s)
+21:00:59   (429 lockout — sleeping 305s)
+21:07:04   (429 lockout — sleeping 305s)
+21:07:04   (429 lockout — sleeping 305s)
+21:13:10   (429 lockout — sleeping 305s)
+21:18:28   cf 2022-05: 4794 raw → 11 housing (48 pages)
+21:18:28   cf 2022-06: scraping...
+21:19:09   (429 lockout — sleeping 305s)
+21:19:09   (429 lockout — sleeping 305s)
+21:24:45   cf 2022-06: 4300 raw → 2 housing (43 pages)
+21:24:45   cf 2022-07: scraping...
+21:25:20   (429 lockout — sleeping 305s)
+21:25:20   (429 lockout — sleeping 305s)
+21:31:25   (429 lockout — sleeping 305s)
+21:37:36   (429 lockout — sleeping 305s)
+21:43:06   cf 2022-06: 4300 raw → 12 housing (43 pages)
+21:43:06   cf 2022-07: scraping...
+21:43:35   (429 lockout — sleeping 305s)
+21:43:35   (429 lockout — sleeping 305s)
+21:49:34   (429 lockout — sleeping 305s)
+21:49:34   (429 lockout — sleeping 305s)
+21:55:06   cf 2022-07: 4814 raw → 1 housing (49 pages)
+21:55:06   cf 2022-08: scraping...
+21:55:33   (429 lockout — sleeping 305s)
+21:55:33   (429 lockout — sleeping 305s)
+22:01:38   (429 lockout — sleeping 305s)
+22:01:38   (429 lockout — sleeping 305s)
+22:07:44   (429 lockout — sleeping 305s)
+22:13:26   cf 2022-07: 4814 raw → 9 housing (49 pages)
+22:13:26   cf 2022-08: scraping...
+22:13:49   (429 lockout — sleeping 305s)
+22:13:49   (429 lockout — sleeping 305s)
+22:20:00   (429 lockout — sleeping 305s)
+22:20:00   (429 lockout — sleeping 305s)
+22:25:19   cf 2022-08: 4751 raw → 1 housing (48 pages)
+22:25:19   cf 2022-09: scraping...
+22:26:11   (429 lockout — sleeping 305s)
+22:26:11   (429 lockout — sleeping 305s)
+22:32:10   (429 lockout — sleeping 305s)
+22:32:10   (429 lockout — sleeping 305s)
+22:38:10   (429 lockout — sleeping 305s)
+22:38:10   (429 lockout — sleeping 305s)
+22:43:40   cf 2022-08: 4751 raw → 20 housing (48 pages)
+22:43:40   cf 2022-09: scraping...
+22:44:15   (429 lockout — sleeping 305s)
+22:44:15   (429 lockout — sleeping 305s)
+22:50:21   cf 2022-09: 4663 raw → 1 housing (47 pages)
+22:50:21   cf 2022-10: scraping...
+22:50:26   (429 lockout — sleeping 305s)
+22:50:26   (429 lockout — sleeping 305s)
+22:56:31   (429 lockout — sleeping 305s)
+22:56:31   (429 lockout — sleeping 305s)
+23:02:36   (429 lockout — sleeping 305s)
+23:02:36   (429 lockout — sleeping 305s)
+23:08:41   (429 lockout — sleeping 305s)
+23:13:47   cf 2022-09: 4663 raw → 16 housing (47 pages)
+23:13:47   cf 2022-10: scraping...
+23:14:52   (429 lockout — sleeping 305s)
+23:14:52   (429 lockout — sleeping 305s)
+23:20:40   cf 2022-10: 4804 raw → 3 housing (49 pages)
+23:20:40   cf 2022-11: scraping...
+23:20:45   (429 lockout — sleeping 305s)
+23:20:45   (429 lockout — sleeping 305s)
+23:26:45   (429 lockout — sleeping 305s)
+23:26:45   (429 lockout — sleeping 305s)
+23:33:02   (429 lockout — sleeping 305s)
+23:39:01   cf 2022-10: 4804 raw → 21 housing (49 pages)
+23:39:01   cf 2022-11: scraping...
+23:39:13   (429 lockout — sleeping 305s)
+23:39:13   (429 lockout — sleeping 305s)
+23:45:24   (429 lockout — sleeping 305s)
+23:51:35   (429 lockout — sleeping 305s)
+23:51:35   (429 lockout — sleeping 305s)
+00:16:49   cf 2022-11: 5544 raw → 1 housing (56 pages)
+00:16:49   cf 2022-12: scraping...
+05:14:00   (429 lockout — sleeping 305s)
+05:14:00   (429 lockout — sleeping 305s)
+05:19:59   (429 lockout — sleeping 305s)
+05:25:59   cf 2022-11: 5544 raw → 16 housing (56 pages)
+05:25:59   cf 2022-12: scraping...
+05:26:11   (429 lockout — sleeping 305s)
+05:26:11   (429 lockout — sleeping 305s)
+05:32:16   (429 lockout — sleeping 305s)
+05:32:16   (429 lockout — sleeping 305s)
+05:37:22   cf 2022-12: 4213 raw → 2 housing (43 pages)
+05:37:22   cf 2023-01: scraping...
+05:38:15   (429 lockout — sleeping 305s)
+05:38:15   (429 lockout — sleeping 305s)
+05:44:20   (429 lockout — sleeping 305s)
+05:44:20   (429 lockout — sleeping 305s)
+05:50:19   (429 lockout — sleeping 305s)
+05:50:19   (429 lockout — sleeping 305s)
+05:55:43   cf 2022-12: 4213 raw → 16 housing (43 pages)
+05:55:43   cf 2023-01: scraping...
+05:56:36   (429 lockout — sleeping 305s)
+05:56:36   (429 lockout — sleeping 305s)
+06:02:35   (429 lockout — sleeping 305s)
+06:02:35   (429 lockout — sleeping 305s)
+08:50:40   cf 2023-01 page 18 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:50:40   cf 2023-01: FAILED
+08:50:40   cf 2023-02: scraping...
+08:50:41   cf 2023-01: FAILED
+08:50:41   cf 2023-02: scraping...
+08:51:07   cf 2023-02 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:07   cf 2023-02: FAILED
+08:51:07   cf 2023-03: scraping...
+08:51:07   cf 2023-02 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:07   cf 2023-02: FAILED
+08:51:07   cf 2023-03: scraping...
+08:51:33   cf 2023-03 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:33   cf 2023-03: FAILED
+08:51:33   cf 2023-04: scraping...
+08:51:33   cf 2023-03 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:33   cf 2023-03: FAILED
+08:51:33   cf 2023-04: scraping...
+08:51:59   cf 2023-04 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:59   cf 2023-04: FAILED
+08:51:59   cf 2023-05: scraping...
+08:51:59   cf 2023-04 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:51:59   cf 2023-04: FAILED
+08:51:59   cf 2023-05: scraping...
+08:52:25   cf 2023-05 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:52:25   cf 2023-05: FAILED
+08:52:25   cf 2023-05 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:52:25   cf 2023-05: FAILED
+08:52:25   cf 2023-06: scraping...
+08:52:25   cf 2023-06: scraping...
+08:52:51   cf 2023-06 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:52:51   cf 2023-06: FAILED
+08:52:51   cf 2023-06 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:52:51   cf 2023-07: scraping...
+08:52:51   cf 2023-06: FAILED
+08:52:51   cf 2023-07: scraping...
+08:53:17   cf 2023-07 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:53:17   cf 2023-07 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:53:17   cf 2023-07: FAILED
+08:53:17   cf 2023-07: FAILED
+08:53:17   cf 2023-08: scraping...
+08:53:17   cf 2023-08: scraping...
+08:53:43   cf 2023-08 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:53:43   cf 2023-08 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+08:53:43   cf 2023-08: FAILED
+08:53:43   cf 2023-08: FAILED
+08:53:43   cf 2023-09: scraping...
+08:53:43   cf 2023-09: scraping...
+08:54:38   (429 lockout — sleeping 305s)
+08:54:38   (429 lockout — sleeping 305s)
+09:00:37   (429 lockout — sleeping 305s)
+09:06:49   (429 lockout — sleeping 305s)
+09:13:00   (429 lockout — sleeping 305s)
+09:19:05   (429 lockout — sleeping 305s)
+09:24:24   cf 2023-09: 5213 raw → 1 housing (53 pages)
+09:24:24   cf 2023-10: scraping...
+09:24:24   cf 2023-09: 5213 raw → 18 housing (53 pages)
+09:24:24   cf 2023-10: scraping...
+09:25:10   (429 lockout — sleeping 305s)
+09:25:10   (429 lockout — sleeping 305s)
+09:31:16   (429 lockout — sleeping 305s)
+09:31:16   (429 lockout — sleeping 305s)
+09:37:15   (429 lockout — sleeping 305s)
+09:43:14   (429 lockout — sleeping 305s)
+09:49:25   (429 lockout — sleeping 305s)
+09:55:13   cf 2023-10: 5316 raw → 2 housing (54 pages)
+09:55:14   cf 2023-10: 5316 raw → 21 housing (54 pages)
+09:55:14   cf 2023-11: scraping...
+09:55:14   cf 2023-11: scraping...
+09:55:30   (429 lockout — sleeping 305s)
+10:01:35   (429 lockout — sleeping 305s)
+10:07:41   (429 lockout — sleeping 305s)
+10:13:47   (429 lockout — sleeping 305s)
+10:19:46   (429 lockout — sleeping 305s)
+10:25:45   (429 lockout — sleeping 305s)
+10:31:22   cf 2023-11: 5532 raw → 1 housing (56 pages)
+10:31:22   cf 2023-12: scraping...
+10:31:22   cf 2023-11: 5532 raw → 17 housing (56 pages)
+10:31:22   cf 2023-12: scraping...
+10:31:45   (429 lockout — sleeping 305s)
+10:31:45   (429 lockout — sleeping 305s)
+10:37:44   (429 lockout — sleeping 305s)
+10:43:49   (429 lockout — sleeping 305s)
+10:43:49   (429 lockout — sleeping 305s)
+10:50:00   (429 lockout — sleeping 305s)
+10:56:00   (429 lockout — sleeping 305s)
+11:01:24   cf 2023-12: 4561 raw → 2 housing (46 pages)
+11:01:24   cf 2024-01: scraping...
+11:01:24   cf 2023-12: 4561 raw → 11 housing (46 pages)
+11:01:24   cf 2024-01: scraping...
+11:02:05   (429 lockout — sleeping 305s)
+11:02:05   (429 lockout — sleeping 305s)
+11:08:04   (429 lockout — sleeping 305s)
+11:08:04   (429 lockout — sleeping 305s)
+11:14:09   (429 lockout — sleeping 305s)
+11:14:10   (429 lockout — sleeping 305s)
+11:20:33   (429 lockout — sleeping 305s)
+11:20:33   (429 lockout — sleeping 305s)
+11:26:38   (429 lockout — sleeping 305s)
+11:26:38   (429 lockout — sleeping 305s)
+11:32:39   cf 2024-01: 5730 raw → 0 housing (58 pages)
+11:32:39   cf 2024-02: scraping...
+11:32:41   cf 2024-01: 5730 raw → 19 housing (58 pages)
+11:32:41   cf 2024-02: scraping...
+11:32:50   (429 lockout — sleeping 305s)
+11:32:50   (429 lockout — sleeping 305s)
+11:38:43   (429 lockout — sleeping 305s)
+11:44:48   (429 lockout — sleeping 305s)
+11:50:53   (429 lockout — sleeping 305s)
+11:57:04   (429 lockout — sleeping 305s)
+12:03:10   (429 lockout — sleeping 305s)
+12:03:10   (429 lockout — sleeping 305s)
+12:08:58   cf 2024-02: 5742 raw → 0 housing (58 pages)
+12:08:58   cf 2024-03: scraping...
+12:08:58   cf 2024-02: 5742 raw → 18 housing (58 pages)
+12:08:58   cf 2024-03: scraping...
+12:09:21   (429 lockout — sleeping 305s)
+12:09:21   (429 lockout — sleeping 305s)
+12:15:20   (429 lockout — sleeping 305s)
+12:15:20   (429 lockout — sleeping 305s)
+12:21:25   (429 lockout — sleeping 305s)
+12:27:30   (429 lockout — sleeping 305s)
+12:33:36   (429 lockout — sleeping 305s)
+12:39:35   (429 lockout — sleeping 305s)
+12:45:17   cf 2024-03: 5717 raw → 16 housing (58 pages)
+12:45:17   cf 2024-04: scraping...
+12:45:17   cf 2024-03: 5717 raw → 1 housing (58 pages)
+12:45:17   cf 2024-04: scraping...
+12:45:40   (429 lockout — sleeping 305s)
+12:51:39   (429 lockout — sleeping 305s)
+12:57:45   (429 lockout — sleeping 305s)
+13:03:56   (429 lockout — sleeping 305s)
+13:10:01   (429 lockout — sleeping 305s)
+13:16:01   (429 lockout — sleeping 305s)
+13:22:00   (429 lockout — sleeping 305s)
+13:27:12   cf 2024-04: 6229 raw → 2 housing (63 pages)
+13:27:12   cf 2024-05: scraping...
+13:27:13   cf 2024-04: 6229 raw → 39 housing (63 pages)
+13:27:13   cf 2024-05: scraping...
+13:28:05   (429 lockout — sleeping 305s)
+13:34:05   (429 lockout — sleeping 305s)
+13:40:10   (429 lockout — sleeping 305s)
+13:46:15   (429 lockout — sleeping 305s)
+13:52:14   (429 lockout — sleeping 305s)
+13:57:45   cf 2024-05: 5096 raw → 0 housing (51 pages)
+13:57:46   cf 2024-06: scraping...
+13:57:46   cf 2024-06: scraping...
+13:58:13   (429 lockout — sleeping 305s)
+14:04:19   (429 lockout — sleeping 305s)
+14:04:19   (429 lockout — sleeping 305s)
+14:10:36   (429 lockout — sleeping 305s)
+14:16:35   (429 lockout — sleeping 305s)
+14:22:35   (429 lockout — sleeping 305s)
+14:27:46   cf 2024-06: 4538 raw → 2 housing (46 pages)
+14:27:47   cf 2024-07: scraping...
+14:27:47   cf 2024-06: 4538 raw → 20 housing (46 pages)
+14:27:47   cf 2024-07: scraping...
+14:28:34   (429 lockout — sleeping 305s)
+14:34:33   (429 lockout — sleeping 305s)
+14:40:38   (429 lockout — sleeping 305s)
+14:46:37   (429 lockout — sleeping 305s)
+14:52:31   (429 lockout — sleeping 305s)
+14:58:30   (429 lockout — sleeping 305s)
+15:04:41   (429 lockout — sleeping 305s)
+15:09:48   cf 2024-07: 6342 raw → 1 housing (64 pages)
+15:09:48   cf 2024-08: scraping...
+15:09:48   cf 2024-07: 6342 raw → 20 housing (64 pages)
+15:09:48   cf 2024-08: scraping...
+15:10:52   (429 lockout — sleeping 305s)
+15:10:52   (429 lockout — sleeping 305s)
+15:16:46   (429 lockout — sleeping 305s)
+15:16:46   (429 lockout — sleeping 305s)
+15:22:45   (429 lockout — sleeping 305s)
+15:28:44   (429 lockout — sleeping 305s)
+15:34:43   (429 lockout — sleeping 305s)
+15:34:43   (429 lockout — sleeping 305s)
+15:40:48   (429 lockout — sleeping 305s)
+15:46:01   cf 2024-08: 5632 raw → 4 housing (57 pages)
+15:46:01   cf 2024-09: scraping...
+15:46:01   cf 2024-08: 5632 raw → 20 housing (57 pages)
+15:46:01   cf 2024-09: scraping...
+15:46:54   (429 lockout — sleeping 305s)
+15:46:54   (429 lockout — sleeping 305s)
+15:52:55   (429 lockout — sleeping 305s)
+15:52:58   (429 lockout — sleeping 305s)
+15:58:55   (429 lockout — sleeping 305s)
+15:58:58   (429 lockout — sleeping 305s)
+16:04:57   (429 lockout — sleeping 305s)
+16:05:00   (429 lockout — sleeping 305s)
+16:11:05   (429 lockout — sleeping 305s)
+16:11:08   (429 lockout — sleeping 305s)
+16:16:54   cf 2024-09: 5122 raw → 15 housing (52 pages)
+16:16:54   cf 2024-10: scraping...
+16:17:02   cf 2024-09: 5122 raw → 1 housing (52 pages)
+16:17:02   cf 2024-10: scraping...
+16:17:05   (429 lockout — sleeping 305s)
+16:17:08   (429 lockout — sleeping 305s)
+16:23:22   (429 lockout — sleeping 305s)
+16:23:25   (429 lockout — sleeping 305s)
+16:29:30   (429 lockout — sleeping 305s)
+16:29:33   (429 lockout — sleeping 305s)
+17:09:09   cf 2024-10 page 23 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:09:09   cf 2024-10: FAILED
+17:09:09   cf 2024-11: scraping...
+17:09:12   cf 2024-10 page 24 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:09:12   cf 2024-10: FAILED
+17:09:12   cf 2024-11: scraping...
+17:09:36   cf 2024-11 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:09:36   cf 2024-11: FAILED
+17:09:36   cf 2024-12: scraping...
+17:09:38   cf 2024-11 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:09:38   cf 2024-11: FAILED
+17:09:38   cf 2024-12: scraping...
+17:10:02   cf 2024-12 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:02   cf 2024-12: FAILED
+17:10:02   cf 2025-01: scraping...
+17:10:04   cf 2024-12 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:04   cf 2024-12: FAILED
+17:10:04   cf 2025-01: scraping...
+17:10:28   cf 2025-01 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:28   cf 2025-01: FAILED
+17:10:28   cf 2025-02: scraping...
+17:10:30   cf 2025-01 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:30   cf 2025-01: FAILED
+17:10:30   cf 2025-02: scraping...
+17:10:54   cf 2025-02 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:54   cf 2025-02: FAILED
+17:10:54   cf 2025-03: scraping...
+17:10:56   cf 2025-02 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:10:56   cf 2025-02: FAILED
+17:10:56   cf 2025-03: scraping...
+17:11:20   cf 2025-03 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:11:20   cf 2025-03: FAILED
+17:11:20   cf 2025-04: scraping...
+17:11:22   cf 2025-03 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:11:22   cf 2025-03: FAILED
+17:11:23   cf 2025-04: scraping...
+17:11:46   cf 2025-04 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:11:46   cf 2025-04: FAILED
+17:11:46   cf 2025-05: scraping...
+17:11:49   cf 2025-04 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:11:49   cf 2025-04: FAILED
+17:11:49   cf 2025-05: scraping...
+17:12:12   cf 2025-05 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:12:12   cf 2025-05: FAILED
+17:12:12   cf 2025-06: scraping...
+17:12:15   cf 2025-05 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:12:15   cf 2025-05: FAILED
+17:12:15   cf 2025-06: scraping...
+17:12:38   cf 2025-06 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:12:38   cf 2025-06: FAILED
+17:12:38   cf 2025-07: scraping...
+17:12:41   cf 2025-06 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:12:41   cf 2025-06: FAILED
+17:12:41   cf 2025-07: scraping...
+17:13:04   cf 2025-07 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:04   cf 2025-07: FAILED
+17:13:04   cf 2025-08: scraping...
+17:13:07   cf 2025-07 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:07   cf 2025-07: FAILED
+17:13:07   cf 2025-08: scraping...
+17:13:30   cf 2025-08 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:30   cf 2025-08: FAILED
+17:13:30   cf 2025-09: scraping...
+17:13:33   cf 2025-08 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:33   cf 2025-08: FAILED
+17:13:33   cf 2025-09: scraping...
+17:13:56   cf 2025-09 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:56   cf 2025-09: FAILED
+17:13:56   cf 2025-10: scraping...
+17:13:59   cf 2025-09 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:13:59   cf 2025-09: FAILED
+17:13:59   cf 2025-10: scraping...
+17:14:22   cf 2025-10 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:14:22   cf 2025-10: FAILED
+17:14:22   cf 2025-11: scraping...
+17:14:25   cf 2025-10 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+17:14:25   cf 2025-10: FAILED
+17:14:25   cf 2025-11: scraping...
+21:43:26   cf 2025-11 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+21:43:26   cf 2025-11 page 1 failed: <urlopen error [Errno 11001] getaddrinfo failed>
+21:43:27   cf 2025-11: FAILED
+21:43:27   cf 2025-11: FAILED
+21:43:27   cf 2025-12: scraping...
+21:43:27   cf 2025-12: scraping...
+21:44:10   cf 2025-12: 796 raw → 0 housing (8 pages)
+21:44:10   cf 2026-01: scraping...
+21:44:12   cf 2025-12: 796 raw → 3 housing (8 pages)
+21:44:12   cf 2026-01: scraping...
+21:44:27   (429 lockout — sleeping 305s)
+21:44:29   (429 lockout — sleeping 305s)
+21:50:26   (429 lockout — sleeping 305s)
+21:50:28   (429 lockout — sleeping 305s)

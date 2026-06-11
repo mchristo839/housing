@@ -1,0 +1,2783 @@
+{
+  "portal": "cf",
+  "year": 2022,
+  "month": 8,
+  "raw_count": 4751,
+  "filtered_count": 20,
+  "pages": 48,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-7662e7e3-66ee-423f-bfa0-c16fe9c4dca9",
+      "id": "e4a3d2a5-5fd7-46c9-a81e-cbeb486eb889-567872",
+      "language": "en",
+      "date": "2022-08-31T15:59:20+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20220831155913-103835",
+        "title": "Provision of Social Housing Decarbonisation Fund (SHDF) Retrofit Insulation Works",
+        "description": "BMBC Contract to deliver a programme of works for their BEIS Social Housing Decarbonisation Funding (SHDF) for energy efficiency works in domestic properties to include the following; • External wall insulation systems  • Cavity wall insulation  • Room in Roof • Underfloor Insulation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71314000",
+          "description": "Energy and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "S70 2DR"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1585888,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 1585889,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-08-31T15:50:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-09-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-189872",
+          "name": "Barnsley Metropolitan Borough Council",
+          "identifier": {
+            "legalName": "Barnsley Metropolitan Borough Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "Barnsley, South Yorkshire",
+            "postalCode": "S70 2TA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Jane Lee",
+            "email": "janelee2@barnsley.gov.uk",
+            "telephone": "+44 01226770770"
+          },
+          "details": {
+            "url": "https://www.barnsley.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217975",
+          "name": "Everwarm Ltd",
+          "identifier": {
+            "legalName": "Everwarm Ltd"
+          },
+          "address": {
+            "streetAddress": "EH48 2EE."
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-189872",
+        "name": "Barnsley Metropolitan Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7662e7e3-66ee-423f-bfa0-c16fe9c4dca9-1",
+          "status": "active",
+          "date": "2022-06-29T00:00:00+01:00",
+          "datePublished": "2022-08-31T15:59:20+01:00",
+          "value": {
+            "amount": 1585888,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217975",
+              "name": "Everwarm Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-07-11T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e4a3d2a5-5fd7-46c9-a81e-cbeb486eb889",
+              "datePublished": "2022-08-31T15:59:20+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f6788f46-7fd2-49c3-a193-1d0a56b415cf",
+      "id": "ea77b469-1d12-436f-9b46-06510c6bffbf-567094",
+      "language": "en",
+      "date": "2022-08-26T13:28:54+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CAMBDC001-DN614688-02489237",
+        "title": "Cambridge City Council - Sheltered Housing Carpet Cleaning",
+        "description": "Cambridge City Council has 9 indoor Sheltered Housing schemes spread across the city, which providing housing and support to older people. Sheltered housing, is predominantly, for people aged over 60 who wish to carry on living independently but who require some support in order to do so. Our vision is to maximise opportunities for older people to live self-sufficiently by providing good quality accommodation. To provide support in line with individuals needs and to offer activities and social events helping prevent social isolation and to encourage active ageing.\r\n\r\nAll of the flats within the schemes are either one or two bedrooms, with their own kitchen, bathroom and living areas. The flats are all contained under one roof and have communal facilities such as a communal lounge, with individual flats leading out onto internal corridors.\r\n\r\nThe communal areas in each scheme are mostly carpeted. This contract is to provide the cleaning of the communal carpets in each scheme, on a yearly basis. Full details of each scheme and it's location can be found below in section 4.3.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "90910000",
+          "description": "Cleaning services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 10380,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-07-11T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-22T00:00:00+01:00",
+          "endDate": "2025-08-22T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-141569",
+          "name": "Cambridge City Council",
+          "identifier": {
+            "legalName": "Cambridge City Council"
+          },
+          "address": {
+            "streetAddress": "Cambridge City Council, Guildhall",
+            "locality": "Cambridge",
+            "postalCode": "CB2 3QJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Amy Kenny",
+            "email": "Amy.Kenny@cambridge.gov.uk",
+            "telephone": "+44 7718664779"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217675",
+          "name": "ServiceMaster (CS Mid Anglia)",
+          "identifier": {
+            "legalName": "ServiceMaster (CS Mid Anglia)"
+          },
+          "address": {
+            "streetAddress": "Unit 5 Greenham Park, Common Road, Witchford, ELY, Cambridgeshire, CB6 2HF"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-141569",
+        "name": "Cambridge City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f6788f46-7fd2-49c3-a193-1d0a56b415cf-1",
+          "status": "active",
+          "date": "2022-08-05T00:00:00+01:00",
+          "datePublished": "2022-08-26T13:28:54+01:00",
+          "value": {
+            "amount": 10380,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217675",
+              "name": "ServiceMaster (CS Mid Anglia)"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-22T00:00:00+01:00",
+            "endDate": "2025-08-22T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ea77b469-1d12-436f-9b46-06510c6bffbf",
+              "datePublished": "2022-08-26T13:28:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=bd63e817-f6dc-ec11-8114-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f01c358b-afdf-499b-bc89-6f26bad67a3f",
+      "id": "ba17c817-2249-416a-a27d-6d748fa5ea4b-566336",
+      "language": "en",
+      "date": "2022-08-24T12:40:36+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629884-86787585",
+        "title": "23369 - Emergency Accommodation",
+        "description": "23369 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-06-26T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-06-28T00:00:00+01:00",
+          "endDate": "2022-09-07T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f01c358b-afdf-499b-bc89-6f26bad67a3f-1",
+          "status": "active",
+          "date": "2022-06-27T00:00:00+01:00",
+          "datePublished": "2022-08-24T12:40:36+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-06-28T00:00:00+01:00",
+            "endDate": "2022-09-07T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ba17c817-2249-416a-a27d-6d748fa5ea4b",
+              "datePublished": "2022-08-24T12:40:36+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5b691cad-b69d-4bf7-8a2e-8ebc843f4708",
+      "id": "5c61e48f-fdac-43a8-b6af-eae1ccaf32be-566210",
+      "language": "en",
+      "date": "2022-08-24T09:33:44+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629786-98786980",
+        "title": "23245 - Emergency Accommodation",
+        "description": "23245 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-05-22T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-05-24T00:00:00+01:00",
+          "endDate": "2022-08-24T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5b691cad-b69d-4bf7-8a2e-8ebc843f4708-1",
+          "status": "active",
+          "date": "2022-05-23T00:00:00+01:00",
+          "datePublished": "2022-08-24T09:33:44+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-05-24T00:00:00+01:00",
+            "endDate": "2022-08-24T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5c61e48f-fdac-43a8-b6af-eae1ccaf32be",
+              "datePublished": "2022-08-24T09:33:44+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d770ce1-7ff0-4a03-abe0-991c3332f17c",
+      "id": "a938f1ac-dffb-43cb-a16a-e6260d1bb2d1-566206",
+      "language": "en",
+      "date": "2022-08-24T09:28:59+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629783-38571491",
+        "title": "23214 - Emergency Accommodation",
+        "description": "23214 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 30740,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-05-28T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-05-30T00:00:00+01:00",
+          "endDate": "2022-06-16T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d770ce1-7ff0-4a03-abe0-991c3332f17c-1",
+          "status": "active",
+          "date": "2022-05-29T00:00:00+01:00",
+          "datePublished": "2022-08-24T09:28:59+01:00",
+          "value": {
+            "amount": 30740,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-05-30T00:00:00+01:00",
+            "endDate": "2022-06-16T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a938f1ac-dffb-43cb-a16a-e6260d1bb2d1",
+              "datePublished": "2022-08-24T09:28:59+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c246392e-2cc0-466d-b50c-9627f324297c",
+      "id": "01c24c63-4a82-42c6-9c18-1d20bed34074-566080",
+      "language": "en",
+      "date": "2022-08-23T15:33:49+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629705-06749454",
+        "title": "23171 - Emergency Accommodation",
+        "description": "23171 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55100000",
+          "description": "Hotel services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 31520,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-05-08T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-05-10T00:00:00+01:00",
+          "endDate": "2022-06-22T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c246392e-2cc0-466d-b50c-9627f324297c-1",
+          "status": "active",
+          "date": "2022-05-09T00:00:00+01:00",
+          "datePublished": "2022-08-23T15:33:49+01:00",
+          "value": {
+            "amount": 31520,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-05-10T00:00:00+01:00",
+            "endDate": "2022-06-22T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/01c24c63-4a82-42c6-9c18-1d20bed34074",
+              "datePublished": "2022-08-23T15:33:49+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-e69b12e2-be38-4f68-aefd-c417c00d3a35",
+      "id": "44aa78a8-d7ca-4d91-a607-fe55acebf934-566045",
+      "language": "en",
+      "date": "2022-08-23T14:40:44+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629677-41611380",
+        "title": "21880 - Emergency Accommodation",
+        "description": "21880 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-02-19T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-02-21T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-e69b12e2-be38-4f68-aefd-c417c00d3a35-1",
+          "status": "active",
+          "date": "2022-02-20T00:00:00Z",
+          "datePublished": "2022-08-23T14:40:44+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-02-21T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/44aa78a8-d7ca-4d91-a607-fe55acebf934",
+              "datePublished": "2022-08-23T14:40:44+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-aaa8d536-ecf0-4362-82a2-95c96f58aceb",
+      "id": "f0d9af61-2c8b-4657-ba0f-51be49367fee-566034",
+      "language": "en",
+      "date": "2022-08-23T14:28:42+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629669-90413051",
+        "title": "21879 - Emergency Accommodation",
+        "description": "21879 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-02-19T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-02-21T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-aaa8d536-ecf0-4362-82a2-95c96f58aceb-1",
+          "status": "active",
+          "date": "2022-02-20T00:00:00Z",
+          "datePublished": "2022-08-23T14:28:42+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-02-21T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/f0d9af61-2c8b-4657-ba0f-51be49367fee",
+              "datePublished": "2022-08-23T14:28:42+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-d104b968-2883-454a-a5b0-319d718ee84b",
+      "id": "88b9ca40-6e28-48d7-91d0-b468b30dcf3c-565968",
+      "language": "en",
+      "date": "2022-08-23T12:19:06+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629612-56093602",
+        "title": "21714 - Emergency Accommodation",
+        "description": "21714 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55100000",
+          "description": "Hotel services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 28690,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-01-10T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-01-12T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d104b968-2883-454a-a5b0-319d718ee84b-1",
+          "status": "active",
+          "date": "2022-01-11T00:00:00Z",
+          "datePublished": "2022-08-23T12:19:06+01:00",
+          "value": {
+            "amount": 28690,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-01-12T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/88b9ca40-6e28-48d7-91d0-b468b30dcf3c",
+              "datePublished": "2022-08-23T12:19:06+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-17995b71-b71f-4107-9430-5f823b300519",
+      "id": "422fd771-fab5-47ff-a054-cea6bc6065a9-565949",
+      "language": "en",
+      "date": "2022-08-23T11:57:41+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629600-58510482",
+        "title": "21649 - Emergency Accommodation",
+        "description": "21649 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55100000",
+          "description": "Hotel services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-12-12T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-12-14T00:00:00Z",
+          "endDate": "2022-01-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-217251",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "N/A"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-17995b71-b71f-4107-9430-5f823b300519-1",
+          "status": "active",
+          "date": "2021-12-13T00:00:00Z",
+          "datePublished": "2022-08-23T11:57:41+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-217251",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-12-14T00:00:00Z",
+            "endDate": "2022-01-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/422fd771-fab5-47ff-a054-cea6bc6065a9",
+              "datePublished": "2022-08-23T11:57:41+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f3f80481-cb8d-4d38-ae99-48e4012dee21",
+      "id": "47b2168b-9600-45a2-acb7-b151479633dd-565896",
+      "language": "en",
+      "date": "2022-08-23T10:42:06+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN629548-44349296",
+        "title": "21606 - Emergency Accommodation",
+        "description": "21606 - Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-11-28T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-11-30T00:00:00Z",
+          "endDate": "2021-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Sarah Stevens",
+            "email": "sarah.stevens@plymouth.gov.uk",
+            "telephone": "+44 1752398477"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-9336",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "n/a"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f3f80481-cb8d-4d38-ae99-48e4012dee21-1",
+          "status": "active",
+          "date": "2021-11-29T00:00:00Z",
+          "datePublished": "2022-08-23T10:42:06+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-9336",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-11-30T00:00:00Z",
+            "endDate": "2021-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/47b2168b-9600-45a2-acb7-b151479633dd",
+              "datePublished": "2022-08-23T10:42:06+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f664bd51-1615-43c2-94e4-30d21397d815",
+      "id": "36b366a4-79bb-4270-a1d4-9d3a888da99b-564642",
+      "language": "en",
+      "date": "2022-08-18T08:47:32+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOL - 12309",
+        "title": "SOL - Housing Related Support for People with Disabilities",
+        "description": "Service overview:\r\n\r\n1.\tEnable a person to move to more independent housing, prevent a person being at risk of losing their home, preventing a move to less independent care, if this housing related support was not provided. A primary purpose of the service is to enable the person to live in more independent accommodation than they otherwise might, or to prevent the loss of this independent accommodation.\r\n2.\tFocus on developing sustainable independent living skills, over agreed timescales based on individual needs. The long-term development of more independent living skills, or the maintenance of skills which are critical to sustaining the independent living arrangement.\r\n3.\tAre provided to people with disabilities, in need of support services, who are at risk of losing their home due to an inability to cope with the demands and requirements of living independently (in a tenancy, as an owner-occupier, or as a lodger or other semi-independent arrangement).\r\n4.\tSupport people to build a support network to be able to maintain their long- term independence without paid support.\r\n5.\tSupport approximately 70 people at any one time with their housing related support needs.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 168846.44,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-10-27T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/AQpd2Zwp",
+          "name": "SOLIHULL METROPOLITAN BOROUGH COUNCIL",
+          "identifier": {
+            "legalName": "SOLIHULL METROPOLITAN BOROUGH COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/AQpd2Zwp"
+          },
+          "address": {
+            "streetAddress": "Council House, Manor Square",
+            "locality": "Solihull",
+            "postalCode": "B913QB",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "proc.team@solihull.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-10880866",
+          "name": "SANDANT CARE LIMITED",
+          "identifier": {
+            "legalName": "SANDANT CARE LIMITED",
+            "scheme": "GB-COH",
+            "id": "10880866"
+          },
+          "address": {
+            "streetAddress": "214 Cooks Lane\nBIRMINGHAM\nWest Midlands\nB37 6NH\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/AQpd2Zwp",
+        "name": "SOLIHULL METROPOLITAN BOROUGH COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f664bd51-1615-43c2-94e4-30d21397d815-1",
+          "status": "active",
+          "date": "2022-01-10T00:00:00Z",
+          "datePublished": "2022-08-18T08:47:32+01:00",
+          "value": {
+            "amount": 168846.44,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-10880866",
+              "name": "SANDANT CARE LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/36b366a4-79bb-4270-a1d4-9d3a888da99b",
+              "datePublished": "2022-08-18T08:47:32+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-89267ab4-cb0a-4594-adae-1ee7b573d34e",
+      "id": "14123322-ed9e-4f4a-89f4-3a975ddc6b66-564440",
+      "language": "en",
+      "date": "2022-08-17T12:31:36+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "HACK001-DN628691-48322526",
+        "title": "Delivery Hackney Affordable Housing Strategy",
+        "description": "Provide the Delivery of Hackney Affordable Housing Strategy",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70000000",
+          "description": "Real estate services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "70333000",
+            "description": "Housing services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-11-01T23:59:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-03-21T00:00:00Z",
+          "endDate": "2022-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50290",
+          "name": "London Borough of Hackney",
+          "identifier": {
+            "legalName": "London Borough of Hackney"
+          },
+          "address": {
+            "streetAddress": "Hackney Service Centre, 1 Hillman Street",
+            "locality": "Hackney",
+            "postalCode": "E8 1DY",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Stephen Haynes",
+            "email": "Stephen.Haynes@hackney.gov.uk",
+            "telephone": "+44 2083563000"
+          },
+          "details": {
+            "url": "http://www.hackney.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-216648",
+          "name": "Inner Circle Consulting",
+          "identifier": {
+            "legalName": "Inner Circle Consulting"
+          },
+          "address": {
+            "streetAddress": "Inner Circle Consulting, Unit 3, 9 Bell Yard Mews, London SE1 3UY"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50290",
+        "name": "London Borough of Hackney"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-89267ab4-cb0a-4594-adae-1ee7b573d34e-1",
+          "status": "active",
+          "date": "2021-11-30T00:00:00Z",
+          "datePublished": "2022-08-17T12:31:36+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-216648",
+              "name": "Inner Circle Consulting"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-03-21T00:00:00Z",
+            "endDate": "2022-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/14123322-ed9e-4f4a-89f4-3a975ddc6b66",
+              "datePublished": "2022-08-17T12:31:36+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-27c2ea8c-60ea-43d3-b159-7d00d6ab11d1",
+      "id": "cdb3d0bf-c3fa-45fd-a4f3-cb28b4237a01-564234",
+      "language": "en",
+      "date": "2022-08-16T16:38:27+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20220816163818-104102",
+        "title": "Housing Related Support Services (HRS) within the Hull City boundary",
+        "description": "Hull City Council (HCC) are now seeking tender submissions from providers who are able to provide HRS for one of (up to) 5 sub-lots.  Providers are advised to firstly read the \"covering letter\" within the attached tender documentation suite for further detail of the breakdown relating to each sub-lot.   There are 3 lots in total which comprise Lot A which is \"Adults\" (and contains 3 sub-lots). Lot B which is \"Young People\" which comprise 2 sub-lots. Finally, Lot C which is \"Families\" which comprise 2 sub-lots. \r\n\r\nPlease note this opportunity for all providers will be inclusive of a set rate of £19 per hour, regardless of which sub-lot (or sub-lots), this tender will be evaluated on quality alone. Precise values of the contract are therefore unclear.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70333000",
+          "description": "Housing services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85000000",
+            "description": "Health and social work services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85300000",
+            "description": "Social work and related services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312400",
+            "description": "Welfare services not delivered through residential institutions"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "HU1 2AA"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 2000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-03-04T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-05-02T00:00:00+01:00",
+          "endDate": "2031-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Lee Marshall",
+            "email": "lee.marshall@hullcc.gov.uk",
+            "telephone": "+44 1482613073"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-216575",
+          "name": "Hull Resettlement Project Ltd",
+          "identifier": {
+            "legalName": "Hull Resettlement Project Ltd"
+          },
+          "address": {
+            "streetAddress": "20 BOURNE STREET, HULL, HU2 8AE"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-216576",
+          "name": "Humbercare Ltd",
+          "identifier": {
+            "legalName": "Humbercare Ltd"
+          },
+          "address": {
+            "streetAddress": "81 Beverley Road\nHULL\nHU3 1XR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-216577",
+          "name": "The Riverside Group Ltd",
+          "identifier": {
+            "legalName": "The Riverside Group Ltd"
+          },
+          "address": {
+            "streetAddress": "FAO Business Development Team, Floor 1, Riverside Head Office, 2 Estuary Boulevard, Estuary Commerce Park, L24 8RF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-216578",
+          "name": "Sanctuary Housing Association t/a Sanctuary Supported Living",
+          "identifier": {
+            "legalName": "Sanctuary Housing Association t/a Sanctuary Supported Living"
+          },
+          "address": {
+            "streetAddress": "Sanctuary House\nChamber Court\nCastle Street\nWorcester\nWR1 3ZQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-216579",
+          "name": "Hull Churches Housing Association Limited",
+          "identifier": {
+            "legalName": "Hull Churches Housing Association Limited"
+          },
+          "address": {
+            "streetAddress": "Studio 701, 17 princess street, Hull, HU2 8BJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-216580",
+          "name": "Goodwin Development Trust",
+          "identifier": {
+            "legalName": "Goodwin Development Trust"
+          },
+          "address": {
+            "streetAddress": "Pod 5, The Octagon, Walker Street, Hull, HU3 2RA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-27c2ea8c-60ea-43d3-b159-7d00d6ab11d1-1",
+          "status": "active",
+          "date": "2022-08-15T00:00:00+01:00",
+          "datePublished": "2022-08-16T16:38:27+01:00",
+          "value": {
+            "amount": 2446654,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-216575",
+              "name": "Hull Resettlement Project Ltd"
+            },
+            {
+              "id": "GB-CFS-216576",
+              "name": "Humbercare Ltd"
+            },
+            {
+              "id": "GB-CFS-216577",
+              "name": "The Riverside Group Ltd"
+            },
+            {
+              "id": "GB-CFS-216578",
+              "name": "Sanctuary Housing Association t/a Sanctuary Supported Living"
+            },
+            {
+              "id": "GB-CFS-216579",
+              "name": "Hull Churches Housing Association Limited"
+            },
+            {
+              "id": "GB-CFS-216580",
+              "name": "Goodwin Development Trust"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-11-01T00:00:00Z",
+            "endDate": "2029-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/cdb3d0bf-c3fa-45fd-a4f3-cb28b4237a01",
+              "datePublished": "2022-08-16T16:38:27+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Interested providers should register with the Councils E-procurement portal for further details.",
+              "url": "https://uk.eu-supply.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-6aaf3de0-deb7-43e8-8717-9bd47d87ab9c",
+      "id": "2992c855-9929-40e4-a341-f17b6f1ff097-563313",
+      "language": "en",
+      "date": "2022-08-12T10:55:41+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DERBSCC001-DN627902-48220720",
+        "title": "Together Housing Association Extra Care Service",
+        "description": "Extra Care Housing is a form of housing with care and support that allows people generally aged 55 and over to live independently within a supportive setting. It includes care and support that is person centred and flexible, so the support is varied dependent on need and it can also be flexed to increase or decrease support so that an individual is appropriately supported. In some instances, this could involve changing the level of care and support available daily. The flexibility can help prevent both hospital and/ or residential care admissions and can also support someone to be effectively discharged from hospital. Residents are individually assessed and may be asked to contribute towards the service. The amount an individual pays depends on available income and capital.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1176008,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-04-12T23:59:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-21T00:00:00+01:00",
+          "endDate": "2030-08-20T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-126175",
+          "name": "Derbyshire County Council",
+          "identifier": {
+            "legalName": "Derbyshire County Council"
+          },
+          "address": {
+            "streetAddress": "County Hall",
+            "locality": "Matlock",
+            "postalCode": "DE4 3AG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Julie Cole",
+            "email": "julie.cole@derbyshire.gov.uk"
+          },
+          "details": {
+            "url": "http://www.derbyshire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-216196",
+          "name": "Together Housing Association Extra Care Service",
+          "identifier": {
+            "legalName": "Together Housing Association Extra Care Service"
+          },
+          "address": {
+            "streetAddress": "Bull Green House\nBull Green\nHalifax\nHX1 2EB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-126175",
+        "name": "Derbyshire County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-6aaf3de0-deb7-43e8-8717-9bd47d87ab9c-1",
+          "status": "active",
+          "date": "2022-04-13T00:00:00+01:00",
+          "datePublished": "2022-08-12T10:55:41+01:00",
+          "value": {
+            "amount": 1176008,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-216196",
+              "name": "Together Housing Association Extra Care Service"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-21T00:00:00+01:00",
+            "endDate": "2030-08-20T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2992c855-9929-40e4-a341-f17b6f1ff097",
+              "datePublished": "2022-08-12T10:55:41+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9d40a125-cea2-4df2-94ca-7a4ca1b65d53",
+      "id": "60dba379-15ea-4a1a-97af-d5528060012e-562835",
+      "language": "en",
+      "date": "2022-08-11T10:14:50+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN627666-53462585",
+        "title": "Emergency accommodation",
+        "description": "Emergency accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-08-04T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-11T00:00:00+01:00",
+          "endDate": "2022-10-10T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50580",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurement@plymouth.gov.uk",
+            "telephone": "+44 1752668000"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-9336",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "n/a"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50580",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9d40a125-cea2-4df2-94ca-7a4ca1b65d53-1",
+          "status": "active",
+          "date": "2022-08-07T00:00:00+01:00",
+          "datePublished": "2022-08-11T10:14:50+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-9336",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-11T00:00:00+01:00",
+            "endDate": "2022-10-10T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/60dba379-15ea-4a1a-97af-d5528060012e",
+              "datePublished": "2022-08-11T10:14:50+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c8919266-c7f0-4afd-a693-e14a63374e12",
+      "id": "db978341-ac53-4bf5-8adf-83ef91dc065a-562798",
+      "language": "en",
+      "date": "2022-08-11T09:30:18+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN627648-64622551",
+        "title": "Emergency accommodation",
+        "description": "emergency accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-08-04T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-11T00:00:00+01:00",
+          "endDate": "2022-10-10T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50580",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurement@plymouth.gov.uk",
+            "telephone": "+44 1752668000"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-9336",
+          "name": "n/a",
+          "identifier": {
+            "legalName": "n/a"
+          },
+          "address": {
+            "streetAddress": "n/a"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50580",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c8919266-c7f0-4afd-a693-e14a63374e12-1",
+          "status": "active",
+          "date": "2022-08-07T00:00:00+01:00",
+          "datePublished": "2022-08-11T09:30:18+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-9336",
+              "name": "n/a"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-11T00:00:00+01:00",
+            "endDate": "2022-10-10T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/db978341-ac53-4bf5-8adf-83ef91dc065a",
+              "datePublished": "2022-08-11T09:30:18+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-4918d721-cef2-4990-a76a-abd6ca9138e9",
+      "id": "5ddcd9cd-4e5e-4f1f-9756-3a1344f85256-562181",
+      "language": "en",
+      "date": "2022-08-09T15:00:25+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SHEPWAY001-DN620935-28434912",
+        "title": "Electrical Installation Condition Reports (EICR) for Social Housing 2022-25",
+        "description": "Electrical Inspection Condition Reports and Remedial Works to all domestic assets to meet 5 year requirements. 1/5th of housing stock to be inspected each year.\r\n\r\n1. To carry out Electrical Inspection Condition Reports for all properties.\r\n2. To carry out C1 & C2 remedial works.\r\n3. Priority rewiring of properties as agreed and approved by F&HDC's Compliance Specialist.\r\n\r\nContract awarded via a further competition under South East Consortium's Internal And External Building Works framework \r\nLot 5 (OJEU 2019/S 078-184728)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "50711000",
+          "description": "Repair and maintenance services of electrical building installations"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "71314100",
+            "description": "Electrical services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "71630000",
+            "description": "Technical inspection and testing services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1156000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-05-27T13:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-01T00:00:00+01:00",
+          "endDate": "2025-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-84980",
+          "name": "Folkestone and Hythe District Council",
+          "identifier": {
+            "legalName": "Folkestone and Hythe District Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre",
+            "locality": "Folkestone",
+            "postalCode": "CT20 2QY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Mhairi Richards",
+            "email": "mhairi.richards@folkestone-hythe.gov.uk",
+            "telephone": "+44 1303853401"
+          },
+          "details": {
+            "url": "https://www.folkestone-hythe.gov.uk/your-council/council-information/contracting"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-215839",
+          "name": "Aaron Services Ltd",
+          "identifier": {
+            "legalName": "Aaron Services Ltd"
+          },
+          "address": {
+            "streetAddress": "Broomvale Business Centre, Bramford Road, Ipswich, Suffolk, IP8 4JU, United Kingdom"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-84980",
+        "name": "Folkestone and Hythe District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-4918d721-cef2-4990-a76a-abd6ca9138e9-1",
+          "status": "active",
+          "date": "2022-06-30T00:00:00+01:00",
+          "datePublished": "2022-08-09T15:00:25+01:00",
+          "value": {
+            "amount": 1156000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-215839",
+              "name": "Aaron Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-01T00:00:00+01:00",
+            "endDate": "2025-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5ddcd9cd-4e5e-4f1f-9756-3a1344f85256",
+              "datePublished": "2022-08-09T15:00:25+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c6038151-f393-452a-9472-5e6b2940b95a",
+      "id": "737f56b4-ddb0-419f-9063-f3622017b2e3-559645",
+      "language": "en",
+      "date": "2022-08-02T10:13:44+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "con_15667",
+        "title": "The Hawthorns (Temporary Accommodation) - PCSA (con_15667)",
+        "description": "Temporary accommodation (works and hire)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71000000",
+          "description": "Architectural, construction, engineering and inspection services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 27016.76,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2022-07-13T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-07-20T00:00:00+01:00",
+          "endDate": "2022-09-06T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+          "name": "Department For Education",
+          "identifier": {
+            "legalName": "Department For Education",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/QfDr2jb7"
+          },
+          "address": {
+            "streetAddress": "Piccadilly Gate,Store Street",
+            "locality": "MANCHESTER",
+            "postalCode": "M12WD",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "Contract-Grant.DATA@education.gov.uk"
+          },
+          "details": {
+            "url": "https://www.gov.uk/government/organisations/department-for-education/about/procurement"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-2099533",
+          "name": "Kier Construction",
+          "identifier": {
+            "legalName": "Kier Construction",
+            "scheme": "GB-COH",
+            "id": "2099533"
+          },
+          "address": {
+            "streetAddress": "Suite 5, Sapphire House Rushden Northamptonshire NN10 6FB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/QfDr2jb7",
+        "name": "Department For Education"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c6038151-f393-452a-9472-5e6b2940b95a-1",
+          "status": "active",
+          "date": "2022-07-20T00:00:00+01:00",
+          "datePublished": "2022-08-02T10:13:44+01:00",
+          "value": {
+            "amount": 27016.76,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-2099533",
+              "name": "Kier Construction"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-07-20T00:00:00+01:00",
+            "endDate": "2022-09-06T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/737f56b4-ddb0-419f-9063-f3622017b2e3",
+              "datePublished": "2022-08-02T10:13:44+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-261a3c47-63e1-4c80-8121-7d9f267016cd",
+      "id": "2e31ec4b-22ff-48b7-bd5b-38c63592f74a-559458",
+      "language": "en",
+      "date": "2022-08-01T15:23:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LUTON001-DN584340-06105707",
+        "title": "AT1116 Universal Floating Support Service for Vulnerable People within Housing",
+        "description": "Full tender documents available on ProContract e-tendering portal.\r\nThe objective of the contract support is to ensure issues such as tenancy sustainment, budgeting and life skills are supported to enable the Service User to remain accommodated and/or avoid admission to hospital and consequent loss of their accommodation.\r\nLuton is committed to supporting citizens and vulnerable people to maintain their homes and their tenure, regardless of tenure type. This commitment is the main driver behind the commissioning of the Universal Floating Support Service that also supports the wellbeing and prevention and community safety agendas as well as complimenting the CARE ACT 2014. \r\n",
+        "datePublished": "2022-02-17T09:54:39Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 3420000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-04-22T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-10-01T00:00:00+01:00",
+          "endDate": "2027-09-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-111581",
+          "name": "Luton Council",
+          "identifier": {
+            "legalName": "Luton Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, George Street",
+            "locality": "Luton",
+            "postalCode": "LU1 2BQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Caroline Sturman",
+            "email": "caroline.sturman@luton.gov.uk"
+          },
+          "details": {
+            "url": "http://www.luton.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-153253",
+          "name": "Penrose Options",
+          "identifier": {
+            "legalName": "Penrose Options"
+          },
+          "address": {
+            "streetAddress": "N1 1TY"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-111581",
+        "name": "Luton Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-261a3c47-63e1-4c80-8121-7d9f267016cd-1",
+          "status": "active",
+          "date": "2022-07-27T00:00:00+01:00",
+          "datePublished": "2022-08-01T15:23:57+01:00",
+          "value": {
+            "amount": 3420000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-153253",
+              "name": "Penrose Options"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-10-01T00:00:00+01:00",
+            "endDate": "2027-09-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2e31ec4b-22ff-48b7-bd5b-38c63592f74a",
+              "datePublished": "2022-08-01T15:23:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

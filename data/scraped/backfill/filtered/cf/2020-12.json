@@ -1,0 +1,2363 @@
+{
+  "portal": "cf",
+  "year": 2020,
+  "month": 12,
+  "raw_count": 3304,
+  "filtered_count": 11,
+  "pages": 34,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-f24c4451-4b14-4a42-be3f-296479e45e6a",
+      "id": "e3a4f592-8d8a-432a-9f10-dfc6625be495-402857",
+      "language": "en",
+      "date": "2020-12-24T10:36:11Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "REDBR001-DN516634-36751265",
+        "title": "Affordable Housing Programme - Programme Support",
+        "description": "Affordable Housing Programme - Programme Support",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71500000",
+          "description": "Construction-related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "70330000",
+            "description": "Property management services of real estate on a fee or contract basis"
+          },
+          {
+            "scheme": "CPV",
+            "id": "71530000",
+            "description": "Construction consultancy services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "70331000",
+            "description": "Residential property services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "70332200",
+            "description": "Commercial property management services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "70332100",
+            "description": "Land management services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 100000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-12-23T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-04T00:00:00Z",
+          "endDate": "2021-04-04T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-159004",
+          "name": "London Borough of Redbridge",
+          "identifier": {
+            "legalName": "London Borough of Redbridge"
+          },
+          "address": {
+            "streetAddress": "Lynton House , 255-259 High Road",
+            "locality": "ILford",
+            "postalCode": "IG1 1NY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Christopher Michael",
+            "email": "Christopher.Michael@redbridge.gov.uk",
+            "telephone": "020 8708 6865"
+          },
+          "details": {
+            "url": "http://www.redbridge.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-103132",
+          "name": "Cadence Innova Ltd",
+          "identifier": {
+            "legalName": "Cadence Innova Ltd"
+          },
+          "address": {
+            "streetAddress": "EC4R 0AA"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-159004",
+        "name": "London Borough of Redbridge"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f24c4451-4b14-4a42-be3f-296479e45e6a-1",
+          "status": "active",
+          "date": "2020-12-24T00:00:00Z",
+          "datePublished": "2020-12-24T10:36:11Z",
+          "value": {
+            "amount": 99900,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-103132",
+              "name": "Cadence Innova Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-04T00:00:00Z",
+            "endDate": "2021-04-04T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e3a4f592-8d8a-432a-9f10-dfc6625be495",
+              "datePublished": "2020-12-24T10:36:11Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a26e48fc-4f9e-4ab8-bbb3-ba0dea583bc5",
+      "id": "e6b7c49f-f689-4b3a-b82c-17462e28ad50-402038",
+      "language": "en",
+      "date": "2020-12-21T11:22:33Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN516800",
+        "title": "Homeless Prevention Officer (Housing Service)",
+        "description": "Homeless Prevention Officer (Housing Service)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79600000",
+          "description": "Recruitment services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 26000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Exemption",
+        "tenderPeriod": {
+          "endDate": "2020-11-30T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-12-01T00:00:00Z",
+          "endDate": "2021-05-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-RCC",
+          "name": "Redcar & Cleveland Borough Council",
+          "identifier": {
+            "legalName": "Redcar & Cleveland Borough Council",
+            "scheme": "GB-LAE",
+            "id": "RCC"
+          },
+          "address": {
+            "streetAddress": "Redcar & Cleveland House,Kirkleatham Street",
+            "locality": "REDCAR",
+            "postalCode": "TS101RT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Michelle Gray",
+            "email": "procurement@redcar-cleveland.gov.uk",
+            "telephone": "01642 774774"
+          },
+          "details": {
+            "url": "http://www.redcar-cleveland.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-5020374",
+          "name": "THE OYSTER PARTNERSHIP LTD",
+          "identifier": {
+            "legalName": "THE OYSTER PARTNERSHIP LTD",
+            "scheme": "GB-COH",
+            "id": "5020374"
+          },
+          "address": {
+            "streetAddress": "ST ALBANS HOUSE,57 - 59 HAYMARKET\nLONDON\nSW1Y 4QX\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-RCC",
+        "name": "Redcar & Cleveland Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a26e48fc-4f9e-4ab8-bbb3-ba0dea583bc5-1",
+          "status": "active",
+          "date": "2020-11-30T00:00:00Z",
+          "datePublished": "2020-12-21T11:22:33Z",
+          "value": {
+            "amount": 26000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-5020374",
+              "name": "THE OYSTER PARTNERSHIP LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-12-01T00:00:00Z",
+            "endDate": "2021-05-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e6b7c49f-f689-4b3a-b82c-17462e28ad50",
+              "datePublished": "2020-12-21T11:22:33Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a8668de9-6c5a-4a03-8c93-f084f3e42892",
+      "id": "e74fc0c4-96d9-4be6-aaba-2ee4a8a8838c-401391",
+      "language": "en",
+      "date": "2020-12-17T14:43:39Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CHEAST001-DN428508-48390102",
+        "title": "Housing Related support and accommodation (16 & 17 year olds)",
+        "description": "Cheshire East Council are commissioning our Housing Related Support and Accommodation service for young people aged 16 and 17 years old, that deliver high quality accommodation-based support to;\r\n•\tCared for Children\r\n•\tCare Leavers\r\n•\tUnaccompanied Asylum-Seeking Children \r\nThe requirement is broken down into Lots, structured by geographical regions, North and South as detailed in the Specification.  The service delivery and design is provided through: Building based accommodation, Building based support, Dispersed single occupancy properties (mostly single occupancy but some shared occupancy) and Dispersed visiting support. There will be 8 units of accommodation in the NORTH (LOT 1) and 18 units in the SOUTH (LOT 2). Further details can be found in the Specification of Services.\r\nIn order to participate, providers must register, complete and upload completed ITT documentation and submit this via the Chest at http://www.the-chest.org.uk/ - the project reference on The Chest is DN428508 - the time limit for returning the completed ITT submission is 18th September at 1300 hours.",
+        "datePublished": "2020-08-13T20:15:03+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 2500000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-18T13:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-01T00:00:00Z",
+          "endDate": "2026-01-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-3938",
+          "name": "Cheshire East Borough Council",
+          "identifier": {
+            "legalName": "Cheshire East Borough Council"
+          },
+          "address": {
+            "streetAddress": "Westfields, Middlewich Road",
+            "locality": "Sandbach",
+            "postalCode": "CW11 1HZ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Tracy Roberts",
+            "email": "tracy.roberts@cheshireeast.gov.uk",
+            "telephone": "+44 1270686973"
+          },
+          "details": {
+            "url": "http://www.cheshireeast.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-158499",
+          "name": "People, Potential, Possibilities",
+          "identifier": {
+            "legalName": "People, Potential, Possibilities"
+          },
+          "address": {
+            "streetAddress": "Eagle House, Cotmanhay Road, \nIlkeston, \nDerbyshire,\nDE7 8HU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-158500",
+          "name": "Crewe YMCA",
+          "identifier": {
+            "legalName": "Crewe YMCA"
+          },
+          "address": {
+            "streetAddress": "189 Gresty Road\nCrewe CW2 6EL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-3938",
+        "name": "Cheshire East Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a8668de9-6c5a-4a03-8c93-f084f3e42892-1",
+          "status": "active",
+          "date": "2020-10-27T00:00:00Z",
+          "datePublished": "2020-12-17T14:43:39Z",
+          "value": {
+            "amount": 2457734,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-158499",
+              "name": "People, Potential, Possibilities"
+            },
+            {
+              "id": "GB-CFS-158500",
+              "name": "Crewe YMCA"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-02T00:00:00Z",
+            "endDate": "2026-01-01T23:59:59Z"
+          },
+          "description": "People, Potential, Possibilities: LOT 1 - NORTH £1,234,167\r\n\r\nCrewe YMCA: LOT 2 - SOUTH £1,223,567",
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e74fc0c4-96d9-4be6-aaba-2ee4a8a8838c",
+              "datePublished": "2020-12-17T14:43:39Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=dc541743-fed2-ea11-8104-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106",
+      "id": "2af57708-8584-41d6-9429-4a35509ac4c4-400086",
+      "language": "en",
+      "date": "2020-12-11T15:11:54Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BHCC - 029108 - AWARD",
+        "title": "BHCC MH Supported Accommodation for Young People (2020) - AWARD",
+        "description": "Children's Services and Adult Social Care (through the Housing Related Support (HRS) budget) commission a pathway of services for the prevention of homelessness for young people between the ages of 16 and 25.\r\n      \r\n      Our priority is to continue to deliver an integrated, preventative programme of support, for the best experience and outcomes for service users.   \r\n      \r\n      Brighton & Hove follow the principles of the 'Positive accommodation and support pathways to adulthood' framework, a national good practice model which advocates an integrated approach in terms of: achieving in education, economic independence, health, positive relationships, and involvement in meaningful activities.\r\n      \r\n      Development of these proposals has been considered in line with the objectives of the Council's Leaving Care Pledge, our Rough Sleepers Strategy and all provision for adults at risk of homelessness.\r\n      \r\n      Candidates who wish to become Accredited Service Providers will need to submit a Request to Participate. This is a hybrid procurement classified as Light Touch and contains some elements of the Dynamic Purchasing System procedure. Candidates may submit Request to Participate in eight weeks windows that open at a similar time each year.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "BN1 1JE"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 5400000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 8700000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-07-30T15:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-16T00:00:00Z",
+          "endDate": "2022-11-15T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-25863",
+          "name": "SE Shared Services",
+          "identifier": {
+            "legalName": "SE Shared Services"
+          },
+          "address": {
+            "streetAddress": "Bartholomew Square, Brighton",
+            "locality": "UK",
+            "postalCode": "BN1 1JE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Debbie Reed (BHCC)",
+            "email": "debbie.reed@brighton-hove.gov.uk",
+            "telephone": "+441273292372"
+          },
+          "details": {
+            "url": "https://www.brighton-hove.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-162242",
+          "name": "ACHIEVING HIGHER HEIGHTS LTD",
+          "identifier": {
+            "legalName": "ACHIEVING HIGHER HEIGHTS LTD"
+          },
+          "address": {
+            "streetAddress": "22 RYECROFT AVENUE, PENN, WOLVERHAMPTON, United Kingdom, WV4 5UQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162243",
+          "name": "Cranmead Ltd",
+          "identifier": {
+            "legalName": "Cranmead Ltd"
+          },
+          "address": {
+            "streetAddress": "28 Fourth Avenue, Hove, United Kingdom, United Kingdom, BN3 2PJ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162244",
+          "name": "Destiny International Care Ltd",
+          "identifier": {
+            "legalName": "Destiny International Care Ltd"
+          },
+          "address": {
+            "streetAddress": "101 Lockhurst Lane, Foleshill, COVENTRY, WEST MIDLANDS, United Kingdom, CV6 5SF"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162245",
+          "name": "Green Harvest Capital Consulting Ltd",
+          "identifier": {
+            "legalName": "Green Harvest Capital Consulting Ltd"
+          },
+          "address": {
+            "streetAddress": "Unit 12  2nd Floor Town Quay, Wharf, United Kingdom, IG11 7BZ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162246",
+          "name": "Net Pex Ltd",
+          "identifier": {
+            "legalName": "Net Pex Ltd"
+          },
+          "address": {
+            "streetAddress": "206 Court Road, United Kingdom, SE9 4TX"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162247",
+          "name": "Next Steps ltd",
+          "identifier": {
+            "legalName": "Next Steps ltd"
+          },
+          "address": {
+            "streetAddress": "26 Bridge Road east , United Kingdom, AL7 1HL"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162248",
+          "name": "Pathways To Independence Housing UK (PTI UK)",
+          "identifier": {
+            "legalName": "Pathways To Independence Housing UK (PTI UK)"
+          },
+          "address": {
+            "streetAddress": "45 Hanover Street, Brighton, East Sussex, United Kingdom, BN2 9ST"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162249",
+          "name": "Red Brick Care",
+          "identifier": {
+            "legalName": "Red Brick Care"
+          },
+          "address": {
+            "streetAddress": "21 Poppyfields, Kettering, Northamptonshire, United Kingdom, NN16 8UU"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162250",
+          "name": "The Caring Partners Ltd",
+          "identifier": {
+            "legalName": "The Caring Partners Ltd"
+          },
+          "address": {
+            "streetAddress": "Office 59-60, First floor, Trinity Court, Molly Millars Lane, Berkshire, United Kingdom, RG41 2PY"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-25863",
+        "name": "SE Shared Services"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106-1",
+          "status": "active",
+          "date": "2020-12-11T00:00:00Z",
+          "datePublished": "2020-12-11T15:11:54Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-162242",
+              "name": "ACHIEVING HIGHER HEIGHTS LTD"
+            },
+            {
+              "id": "GB-CFS-162243",
+              "name": "Cranmead Ltd"
+            },
+            {
+              "id": "GB-CFS-162244",
+              "name": "Destiny International Care Ltd"
+            },
+            {
+              "id": "GB-CFS-162245",
+              "name": "Green Harvest Capital Consulting Ltd"
+            },
+            {
+              "id": "GB-CFS-162246",
+              "name": "Net Pex Ltd"
+            },
+            {
+              "id": "GB-CFS-162247",
+              "name": "Next Steps ltd"
+            },
+            {
+              "id": "GB-CFS-162248",
+              "name": "Pathways To Independence Housing UK (PTI UK)"
+            },
+            {
+              "id": "GB-CFS-162249",
+              "name": "Red Brick Care"
+            },
+            {
+              "id": "GB-CFS-162250",
+              "name": "The Caring Partners Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-16T00:00:00Z",
+            "endDate": "2022-11-15T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2af57708-8584-41d6-9429-4a35509ac4c4",
+              "datePublished": "2020-12-11T15:11:54Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106",
+      "id": "2af57708-8584-41d6-9429-4a35509ac4c4-411840",
+      "language": "en",
+      "date": "2021-02-09T14:32:08Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BHCC - 029108 - AWARD",
+        "title": "BHCC MH Supported Accommodation for Young People (2020) - AWARD",
+        "description": "Children's Services and Adult Social Care (through the Housing Related Support (HRS) budget) commission a pathway of services for the prevention of homelessness for young people between the ages of 16 and 25.\r\n      \r\n      Our priority is to continue to deliver an integrated, preventative programme of support, for the best experience and outcomes for service users.   \r\n      \r\n      Brighton & Hove follow the principles of the 'Positive accommodation and support pathways to adulthood' framework, a national good practice model which advocates an integrated approach in terms of: achieving in education, economic independence, health, positive relationships, and involvement in meaningful activities.\r\n      \r\n      Development of these proposals has been considered in line with the objectives of the Council's Leaving Care Pledge, our Rough Sleepers Strategy and all provision for adults at risk of homelessness.\r\n      \r\n      Candidates who wish to become Accredited Service Providers will need to submit a Request to Participate. This is a hybrid procurement classified as Light Touch and contains some elements of the Dynamic Purchasing System procedure. Candidates may submit Request to Participate in eight weeks windows that open at a similar time each year.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "BN1 1JE"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 5400000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 8700000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-07-30T15:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-16T00:00:00Z",
+          "endDate": "2022-11-15T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162241",
+          "name": "Brighton and Hove City Council",
+          "identifier": {
+            "legalName": "Brighton and Hove City Council"
+          },
+          "address": {
+            "streetAddress": "Bartholomew Square, Brighton",
+            "locality": "UK",
+            "postalCode": "BN1 1JE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Debbie Reed (BHCC)",
+            "email": "debbie.reed@brighton-hove.gov.uk",
+            "telephone": "+441273292372"
+          },
+          "details": {
+            "url": "https://www.brighton-hove.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-162242",
+          "name": "ACHIEVING HIGHER HEIGHTS LTD",
+          "identifier": {
+            "legalName": "ACHIEVING HIGHER HEIGHTS LTD"
+          },
+          "address": {
+            "streetAddress": "22 RYECROFT AVENUE, PENN, WOLVERHAMPTON, United Kingdom, WV4 5UQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162243",
+          "name": "Cranmead Ltd",
+          "identifier": {
+            "legalName": "Cranmead Ltd"
+          },
+          "address": {
+            "streetAddress": "28 Fourth Avenue, Hove, United Kingdom, United Kingdom, BN3 2PJ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162244",
+          "name": "Destiny International Care Ltd",
+          "identifier": {
+            "legalName": "Destiny International Care Ltd"
+          },
+          "address": {
+            "streetAddress": "101 Lockhurst Lane, Foleshill, COVENTRY, WEST MIDLANDS, United Kingdom, CV6 5SF"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162245",
+          "name": "Green Harvest Capital Consulting Ltd",
+          "identifier": {
+            "legalName": "Green Harvest Capital Consulting Ltd"
+          },
+          "address": {
+            "streetAddress": "Unit 12  2nd Floor Town Quay, Wharf, United Kingdom, IG11 7BZ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162246",
+          "name": "Net Pex Ltd",
+          "identifier": {
+            "legalName": "Net Pex Ltd"
+          },
+          "address": {
+            "streetAddress": "206 Court Road, United Kingdom, SE9 4TX"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162247",
+          "name": "Next Steps ltd",
+          "identifier": {
+            "legalName": "Next Steps ltd"
+          },
+          "address": {
+            "streetAddress": "26 Bridge Road east , United Kingdom, AL7 1HL"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162248",
+          "name": "Pathways To Independence Housing UK (PTI UK)",
+          "identifier": {
+            "legalName": "Pathways To Independence Housing UK (PTI UK)"
+          },
+          "address": {
+            "streetAddress": "45 Hanover Street, Brighton, East Sussex, United Kingdom, BN2 9ST"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162249",
+          "name": "Red Brick Care",
+          "identifier": {
+            "legalName": "Red Brick Care"
+          },
+          "address": {
+            "streetAddress": "21 Poppyfields, Kettering, Northamptonshire, United Kingdom, NN16 8UU"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162250",
+          "name": "The Caring Partners Ltd",
+          "identifier": {
+            "legalName": "The Caring Partners Ltd"
+          },
+          "address": {
+            "streetAddress": "Office 59-60, First floor, Trinity Court, Molly Millars Lane, Berkshire, United Kingdom, RG41 2PY"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162241",
+        "name": "Brighton and Hove City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106-1",
+          "status": "active",
+          "date": "2020-12-11T00:00:00Z",
+          "datePublished": "2020-12-11T15:11:54Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-162242",
+              "name": "ACHIEVING HIGHER HEIGHTS LTD"
+            },
+            {
+              "id": "GB-CFS-162243",
+              "name": "Cranmead Ltd"
+            },
+            {
+              "id": "GB-CFS-162244",
+              "name": "Destiny International Care Ltd"
+            },
+            {
+              "id": "GB-CFS-162245",
+              "name": "Green Harvest Capital Consulting Ltd"
+            },
+            {
+              "id": "GB-CFS-162246",
+              "name": "Net Pex Ltd"
+            },
+            {
+              "id": "GB-CFS-162247",
+              "name": "Next Steps ltd"
+            },
+            {
+              "id": "GB-CFS-162248",
+              "name": "Pathways To Independence Housing UK (PTI UK)"
+            },
+            {
+              "id": "GB-CFS-162249",
+              "name": "Red Brick Care"
+            },
+            {
+              "id": "GB-CFS-162250",
+              "name": "The Caring Partners Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-16T00:00:00Z",
+            "endDate": "2022-11-15T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2af57708-8584-41d6-9429-4a35509ac4c4",
+              "datePublished": "2020-12-11T15:11:54Z",
+              "dateModified": "2021-02-09T14:40:22Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106",
+      "id": "2af57708-8584-41d6-9429-4a35509ac4c4-411842",
+      "language": "en",
+      "date": "2021-02-09T14:33:39Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BHCC - 029108 - AWARD",
+        "title": "BHCC MH Supported Accommodation for Young People (2020) - AWARD",
+        "description": "Children's Services and Adult Social Care (through the Housing Related Support (HRS) budget) commission a pathway of services for the prevention of homelessness for young people between the ages of 16 and 25.\r\n      \r\n      Our priority is to continue to deliver an integrated, preventative programme of support, for the best experience and outcomes for service users.   \r\n      \r\n      Brighton & Hove follow the principles of the 'Positive accommodation and support pathways to adulthood' framework, a national good practice model which advocates an integrated approach in terms of: achieving in education, economic independence, health, positive relationships, and involvement in meaningful activities.\r\n      \r\n      Development of these proposals has been considered in line with the objectives of the Council's Leaving Care Pledge, our Rough Sleepers Strategy and all provision for adults at risk of homelessness.\r\n      \r\n      Candidates who wish to become Accredited Service Providers will need to submit a Request to Participate. This is a hybrid procurement classified as Light Touch and contains some elements of the Dynamic Purchasing System procedure. Candidates may submit Request to Participate in eight weeks windows that open at a similar time each year.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "BN1 1JE"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 5400000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 8700000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-07-30T15:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-16T00:00:00Z",
+          "endDate": "2022-11-15T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162241",
+          "name": "Brighton and Hove City Council",
+          "identifier": {
+            "legalName": "Brighton and Hove City Council"
+          },
+          "address": {
+            "streetAddress": "Bartholomew Square, Brighton",
+            "locality": "UK",
+            "postalCode": "BN1 1JE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Debbie Reed (BHCC)",
+            "email": "debbie.reed@brighton-hove.gov.uk",
+            "telephone": "+441273292372"
+          },
+          "details": {
+            "url": "https://www.brighton-hove.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-162242",
+          "name": "ACHIEVING HIGHER HEIGHTS LTD",
+          "identifier": {
+            "legalName": "ACHIEVING HIGHER HEIGHTS LTD"
+          },
+          "address": {
+            "streetAddress": "22 RYECROFT AVENUE, PENN, WOLVERHAMPTON, United Kingdom, WV4 5UQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162243",
+          "name": "Cranmead Ltd",
+          "identifier": {
+            "legalName": "Cranmead Ltd"
+          },
+          "address": {
+            "streetAddress": "28 Fourth Avenue, Hove, United Kingdom, United Kingdom, BN3 2PJ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162244",
+          "name": "Destiny International Care Ltd",
+          "identifier": {
+            "legalName": "Destiny International Care Ltd"
+          },
+          "address": {
+            "streetAddress": "101 Lockhurst Lane, Foleshill, COVENTRY, WEST MIDLANDS, United Kingdom, CV6 5SF"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162245",
+          "name": "Green Harvest Capital Consulting Ltd",
+          "identifier": {
+            "legalName": "Green Harvest Capital Consulting Ltd"
+          },
+          "address": {
+            "streetAddress": "Unit 12  2nd Floor Town Quay, Wharf, United Kingdom, IG11 7BZ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162246",
+          "name": "Net Pex Ltd",
+          "identifier": {
+            "legalName": "Net Pex Ltd"
+          },
+          "address": {
+            "streetAddress": "206 Court Road, United Kingdom, SE9 4TX"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162247",
+          "name": "Next Steps ltd",
+          "identifier": {
+            "legalName": "Next Steps ltd"
+          },
+          "address": {
+            "streetAddress": "26 Bridge Road east , United Kingdom, AL7 1HL"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162248",
+          "name": "Pathways To Independence Housing UK (PTI UK)",
+          "identifier": {
+            "legalName": "Pathways To Independence Housing UK (PTI UK)"
+          },
+          "address": {
+            "streetAddress": "45 Hanover Street, Brighton, East Sussex, United Kingdom, BN2 9ST"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162249",
+          "name": "Red Brick Care",
+          "identifier": {
+            "legalName": "Red Brick Care"
+          },
+          "address": {
+            "streetAddress": "21 Poppyfields, Kettering, Northamptonshire, United Kingdom, NN16 8UU"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162250",
+          "name": "The Caring Partners Ltd",
+          "identifier": {
+            "legalName": "The Caring Partners Ltd"
+          },
+          "address": {
+            "streetAddress": "Office 59-60, First floor, Trinity Court, Molly Millars Lane, Berkshire, United Kingdom, RG41 2PY"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162241",
+        "name": "Brighton and Hove City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106-1",
+          "status": "active",
+          "date": "2020-12-11T00:00:00Z",
+          "datePublished": "2020-12-11T15:11:54Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-162242",
+              "name": "ACHIEVING HIGHER HEIGHTS LTD"
+            },
+            {
+              "id": "GB-CFS-162243",
+              "name": "Cranmead Ltd"
+            },
+            {
+              "id": "GB-CFS-162244",
+              "name": "Destiny International Care Ltd"
+            },
+            {
+              "id": "GB-CFS-162245",
+              "name": "Green Harvest Capital Consulting Ltd"
+            },
+            {
+              "id": "GB-CFS-162246",
+              "name": "Net Pex Ltd"
+            },
+            {
+              "id": "GB-CFS-162247",
+              "name": "Next Steps ltd"
+            },
+            {
+              "id": "GB-CFS-162248",
+              "name": "Pathways To Independence Housing UK (PTI UK)"
+            },
+            {
+              "id": "GB-CFS-162249",
+              "name": "Red Brick Care"
+            },
+            {
+              "id": "GB-CFS-162250",
+              "name": "The Caring Partners Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-16T00:00:00Z",
+            "endDate": "2022-11-15T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2af57708-8584-41d6-9429-4a35509ac4c4",
+              "datePublished": "2020-12-11T15:11:54Z",
+              "dateModified": "2021-02-09T14:40:22Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106",
+      "id": "2af57708-8584-41d6-9429-4a35509ac4c4-411850",
+      "language": "en",
+      "date": "2021-02-09T14:40:22Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BHCC - 029108 - AWARD",
+        "title": "BHCC MH Supported Accommodation for Young People (2020) - AWARD",
+        "description": "Children's Services and Adult Social Care (through the Housing Related Support (HRS) budget) commission a pathway of services for the prevention of homelessness for young people between the ages of 16 and 25.\r\n      \r\n      Our priority is to continue to deliver an integrated, preventative programme of support, for the best experience and outcomes for service users.   \r\n      \r\n      Brighton & Hove follow the principles of the 'Positive accommodation and support pathways to adulthood' framework, a national good practice model which advocates an integrated approach in terms of: achieving in education, economic independence, health, positive relationships, and involvement in meaningful activities.\r\n      \r\n      Development of these proposals has been considered in line with the objectives of the Council's Leaving Care Pledge, our Rough Sleepers Strategy and all provision for adults at risk of homelessness.\r\n      \r\n      Candidates who wish to become Accredited Service Providers will need to submit a Request to Participate. This is a hybrid procurement classified as Light Touch and contains some elements of the Dynamic Purchasing System procedure. Candidates may submit Request to Participate in eight weeks windows that open at a similar time each year.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "BN1 1JE"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 5400000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 8700000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-07-30T15:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-16T00:00:00Z",
+          "endDate": "2022-11-15T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162241",
+          "name": "Brighton and Hove City Council",
+          "identifier": {
+            "legalName": "Brighton and Hove City Council"
+          },
+          "address": {
+            "streetAddress": "Bartholomew Square, Brighton",
+            "locality": "UK",
+            "postalCode": "BN1 1JE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Debbie Reed (BHCC)",
+            "email": "debbie.reed@brighton-hove.gov.uk",
+            "telephone": "+441273292372"
+          },
+          "details": {
+            "url": "https://www.brighton-hove.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-162242",
+          "name": "ACHIEVING HIGHER HEIGHTS LTD",
+          "identifier": {
+            "legalName": "ACHIEVING HIGHER HEIGHTS LTD"
+          },
+          "address": {
+            "streetAddress": "22 RYECROFT AVENUE, PENN, WOLVERHAMPTON, United Kingdom, WV4 5UQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162243",
+          "name": "Cranmead Ltd",
+          "identifier": {
+            "legalName": "Cranmead Ltd"
+          },
+          "address": {
+            "streetAddress": "28 Fourth Avenue, Hove, United Kingdom, United Kingdom, BN3 2PJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162244",
+          "name": "Destiny International Care Ltd",
+          "identifier": {
+            "legalName": "Destiny International Care Ltd"
+          },
+          "address": {
+            "streetAddress": "101 Lockhurst Lane, Foleshill, COVENTRY, WEST MIDLANDS, United Kingdom, CV6 5SF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162245",
+          "name": "Green Harvest Capital Consulting Ltd",
+          "identifier": {
+            "legalName": "Green Harvest Capital Consulting Ltd"
+          },
+          "address": {
+            "streetAddress": "Unit 12  2nd Floor Town Quay, Wharf, United Kingdom, IG11 7BZ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162246",
+          "name": "Net Pex Ltd",
+          "identifier": {
+            "legalName": "Net Pex Ltd"
+          },
+          "address": {
+            "streetAddress": "206 Court Road, United Kingdom, SE9 4TX"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162247",
+          "name": "Next Steps ltd",
+          "identifier": {
+            "legalName": "Next Steps ltd"
+          },
+          "address": {
+            "streetAddress": "26 Bridge Road east , United Kingdom, AL7 1HL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162248",
+          "name": "Pathways To Independence Housing UK (PTI UK)",
+          "identifier": {
+            "legalName": "Pathways To Independence Housing UK (PTI UK)"
+          },
+          "address": {
+            "streetAddress": "45 Hanover Street, Brighton, East Sussex, United Kingdom, BN2 9ST"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162249",
+          "name": "Red Brick Care",
+          "identifier": {
+            "legalName": "Red Brick Care"
+          },
+          "address": {
+            "streetAddress": "21 Poppyfields, Kettering, Northamptonshire, United Kingdom, NN16 8UU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-162250",
+          "name": "The Caring Partners Ltd",
+          "identifier": {
+            "legalName": "The Caring Partners Ltd"
+          },
+          "address": {
+            "streetAddress": "Office 59-60, First floor, Trinity Court, Molly Millars Lane, Berkshire, United Kingdom, RG41 2PY"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162241",
+        "name": "Brighton and Hove City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8c3a8318-1f47-471c-8f03-edc5607df106-1",
+          "status": "active",
+          "date": "2020-12-11T00:00:00Z",
+          "datePublished": "2020-12-11T15:11:54Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-162242",
+              "name": "ACHIEVING HIGHER HEIGHTS LTD"
+            },
+            {
+              "id": "GB-CFS-162243",
+              "name": "Cranmead Ltd"
+            },
+            {
+              "id": "GB-CFS-162244",
+              "name": "Destiny International Care Ltd"
+            },
+            {
+              "id": "GB-CFS-162245",
+              "name": "Green Harvest Capital Consulting Ltd"
+            },
+            {
+              "id": "GB-CFS-162246",
+              "name": "Net Pex Ltd"
+            },
+            {
+              "id": "GB-CFS-162247",
+              "name": "Next Steps ltd"
+            },
+            {
+              "id": "GB-CFS-162248",
+              "name": "Pathways To Independence Housing UK (PTI UK)"
+            },
+            {
+              "id": "GB-CFS-162249",
+              "name": "Red Brick Care"
+            },
+            {
+              "id": "GB-CFS-162250",
+              "name": "The Caring Partners Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-16T00:00:00Z",
+            "endDate": "2022-11-15T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2af57708-8584-41d6-9429-4a35509ac4c4",
+              "datePublished": "2020-12-11T15:11:54Z",
+              "dateModified": "2021-02-09T14:40:22Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-bde9cca0-f76d-4446-a94a-342f944f27a4",
+      "id": "d7c34622-63b7-4864-8601-31b7db103858-398524",
+      "language": "en",
+      "date": "2020-12-07T09:13:12Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CBCCRAHS2020-",
+        "title": "Cannock Road Affordable Housing Scheme",
+        "description": "Tenders are invited for the conversion of an existing gymnasium into a terrace of five (5) ultra-low energy single-storey residential dwellings, including two (2) with full wheelchair user accessibility.",
+        "datePublished": "2020-08-25T16:40:48+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 525000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2020-09-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-26T00:00:00Z",
+          "endDate": "2021-07-25T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-COR",
+          "name": "CORBY BOROUGH COUNCIL",
+          "identifier": {
+            "legalName": "CORBY BOROUGH COUNCIL",
+            "scheme": "GB-LAE",
+            "id": "COR"
+          },
+          "address": {
+            "streetAddress": "George Street",
+            "locality": "CORBY",
+            "postalCode": "NN171QG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurement@corby.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-10319223",
+          "name": "Construction and Fit Out Solutions Ltd",
+          "identifier": {
+            "legalName": "Construction and Fit Out Solutions Ltd",
+            "scheme": "GB-COH",
+            "id": "10319223"
+          },
+          "address": {
+            "streetAddress": "1st Floor Neville House\r\nSteelpark Road\r\nB62 8HD"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-COR",
+        "name": "CORBY BOROUGH COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-bde9cca0-f76d-4446-a94a-342f944f27a4-1",
+          "status": "active",
+          "date": "2020-12-07T00:00:00Z",
+          "datePublished": "2020-12-07T09:13:12Z",
+          "value": {
+            "amount": 646868.31,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-10319223",
+              "name": "Construction and Fit Out Solutions Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-04T00:00:00Z",
+            "endDate": "2021-09-03T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d7c34622-63b7-4864-8601-31b7db103858",
+              "datePublished": "2020-12-07T09:13:12Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "biddingDocuments",
+              "description": "Instructions To Bidders",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/2a3b5574-2df6-4138-b864-5731a3c3f6e9",
+              "format": "application/pdf"
+            },
+            {
+              "id": "3",
+              "documentType": "biddingDocuments",
+              "description": "4 Ways To Create PDF Files",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/92a7c8ed-d726-4f36-a4e6-d7a7e607acb6",
+              "format": "application/pdf"
+            },
+            {
+              "id": "4",
+              "documentType": "biddingDocuments",
+              "description": "Specification",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/51187851-1cbf-464f-b10d-5ced9c246c74",
+              "format": "application/pdf"
+            },
+            {
+              "id": "5",
+              "documentType": "biddingDocuments",
+              "description": "Construction Charter",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/e46fa244-ca83-4579-879a-66a5e032e21c",
+              "format": "application/pdf"
+            },
+            {
+              "id": "6",
+              "documentType": "biddingDocuments",
+              "description": "01014-000 Site Location Plan",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/ac02c7b9-b833-4056-8937-a24a055df3b1",
+              "format": "application/pdf"
+            },
+            {
+              "id": "7",
+              "documentType": "biddingDocuments",
+              "description": "01014-001 Existing Plans and Elevations",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/dcb637ac-4211-4bbf-b2a7-4e4948811c76",
+              "format": "application/pdf"
+            },
+            {
+              "id": "8",
+              "documentType": "biddingDocuments",
+              "description": "01014-002 Proposed Elevations-Rev D (B+W)",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/c10e2a22-3ed0-49f6-809b-4fdb1bad3035",
+              "format": "application/pdf"
+            },
+            {
+              "id": "9",
+              "documentType": "biddingDocuments",
+              "description": "01014-002 Proposed Elevations-Rev D (Shaded)",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/4ded7af4-80e8-4021-89bb-3ef2c170e173",
+              "format": "application/pdf"
+            },
+            {
+              "id": "10",
+              "documentType": "biddingDocuments",
+              "description": "01014-002 Proposed Site Plan-Rev E",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/61282c4b-f138-4896-acf3-92a5518a3fad",
+              "format": "application/pdf"
+            },
+            {
+              "id": "11",
+              "documentType": "biddingDocuments",
+              "description": "01014-003 Detailed Layout-Rev F",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/14cae299-9766-4c69-b901-10580f364e8e",
+              "format": "application/pdf"
+            },
+            {
+              "id": "12",
+              "documentType": "biddingDocuments",
+              "description": "Stats.zip file",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/1cefb357-8f9e-4266-b236-b5d483931258",
+              "format": "application/zip"
+            },
+            {
+              "id": "13",
+              "documentType": "biddingDocuments",
+              "description": "Amended Design and Access Statement 95810",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/6801c9fd-73af-48a3-8ee2-6e4cc60e13e7",
+              "format": "application/pdf"
+            },
+            {
+              "id": "14",
+              "documentType": "biddingDocuments",
+              "description": "Location of Underground Services & Drains",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/dcf35fbd-b7e0-4525-9f4a-3c0ba2cb8d30",
+              "format": "application/pdf"
+            },
+            {
+              "id": "15",
+              "documentType": "biddingDocuments",
+              "description": "Planning Decision Notice 19.03.20",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/8885a46f-3d3d-4987-b3d3-190eafac8057",
+              "format": "application/pdf"
+            },
+            {
+              "id": "16",
+              "documentType": "biddingDocuments",
+              "description": "Refurbishment Asbestos Report Aug20",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/5f4391ef-30e0-4a95-a7f2-49707d167969",
+              "format": "application/pdf"
+            },
+            {
+              "id": "17",
+              "documentType": "biddingDocuments",
+              "description": "Standard ABI  - Performance Bond 2020",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/0c783c5d-dc1c-41cf-8fa4-987f4da95e8d",
+              "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            },
+            {
+              "id": "18",
+              "documentType": "biddingDocuments",
+              "description": "Parent Company Guarantee From Contractor's Parent Company V2",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/6e17fadc-beae-4184-b976-ff87ce20d7ee",
+              "format": "application/msword"
+            },
+            {
+              "id": "19",
+              "documentType": "biddingDocuments",
+              "description": "General Terms and Conditions",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/22bcf38e-d40c-407e-a051-612fd7575ad0",
+              "format": "application/pdf"
+            },
+            {
+              "id": "20",
+              "documentType": "biddingDocuments",
+              "description": "Preliminaries and General Conditions",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/ed13fc0c-6ee1-4b77-8ca2-a9751cd9be81",
+              "format": "application/pdf"
+            },
+            {
+              "id": "21",
+              "documentType": "biddingDocuments",
+              "description": "Tender Response Document",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/8665a164-cb1f-4109-b434-eadd1ce26db5",
+              "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-7ebdcb28-6453-4819-89a4-55a2d7271dcb",
+      "id": "97f70cdd-7330-414b-ac46-4bb76a96f3de-398461",
+      "language": "en",
+      "date": "2020-12-04T18:30:14Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MT221336",
+        "title": "Provision of Temporary Accommodation for Newcastle-under-Lyme Borough Council",
+        "description": "Newcastle-under-Lyme Borough Council invites suitably experienced providers to submit proposals with costings for the supply and management of temporary accommodation for homeless households. The required provision is split into 2 separate lots;\r\nLot 1\tShort term fully supported accommodation that can accommodate Rough Sleepers from the street with complex and high level support needs (a current 7 bed provision runs until September 2020).\r\nLot 2\tShared houses to provide lower level supported accommodation for single homeless people with complex needs (Current 2x4 bed provision runs until October 2020).",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "75122000",
+          "description": "Administrative healthcare services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "70333000",
+            "description": "Housing services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "75123000",
+            "description": "Administrative housing services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 28622,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 83997,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-04T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-01T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-69878",
+          "name": "Newcastle-under-Lyme Borough Council",
+          "identifier": {
+            "legalName": "Newcastle-under-Lyme Borough Council"
+          },
+          "address": {
+            "streetAddress": "Castle House, Barracks Road",
+            "locality": "Newcastle-under-Lyme",
+            "postalCode": "ST5 1BL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Gillian Taylor - Housing Team Leader",
+            "email": "gillian.taylor@newcastle-staffs.gov.uk",
+            "telephone": "+44 1782717717"
+          },
+          "details": {
+            "url": "http://www.newcastle-staffs.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01166393",
+          "name": "Open Door Stoke-On-Trent",
+          "identifier": {
+            "legalName": "Open Door Stoke-On-Trent",
+            "scheme": "GB-COH",
+            "id": "01166393"
+          },
+          "address": {
+            "streetAddress": "Church Street, Stoke, Stoke-On-Trent"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-69878",
+        "name": "Newcastle-under-Lyme Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7ebdcb28-6453-4819-89a4-55a2d7271dcb-1",
+          "status": "active",
+          "date": "2020-10-23T00:00:00+01:00",
+          "datePublished": "2020-12-04T18:30:14Z",
+          "value": {
+            "amount": 83997,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01166393",
+              "name": "Open Door Stoke-On-Trent"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-11-01T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/97f70cdd-7330-414b-ac46-4bb76a96f3de",
+              "datePublished": "2020-12-04T18:30:14Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "NOTE: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at the link provided.",
+              "url": "https://www.mytenders.co.uk/search/show/search_view.aspx?ID=DEC160944"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a72bc2e6-28d8-4a37-b47f-5cbfc27d5b6e",
+      "id": "e257394e-d97d-4202-a5e2-ac063e0dbfc3-397874",
+      "language": "en",
+      "date": "2020-12-03T09:27:06Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "WYRE002-DN398567-11202852",
+        "title": "Contract for the Inclusion on Wyre Forest District Council Temporary Accommodation Framework",
+        "description": "Awarded Contract.  Temporary emergency accommodation contract.  Values are based from the lowest cost per week to the highest cost per week for a 3 year contract (this is includes 1 year extension to the 2 year contract)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55200000",
+          "description": "Camping sites and other non-hotel accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "55100000",
+            "description": "Hotel services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 38220,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 54600,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-04-12T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-01-29T00:00:00Z",
+          "endDate": "2022-01-28T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56372",
+          "name": "Wyre Forest District Council",
+          "identifier": {
+            "legalName": "Wyre Forest District Council"
+          },
+          "address": {
+            "streetAddress": "Wyre Forest House, Finepoint Way",
+            "locality": "Kidderminster",
+            "postalCode": "DY11 7WF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jackie Reed",
+            "email": "procurement@wyreforestdc.gov.uk",
+            "telephone": "+44 1562732928"
+          },
+          "details": {
+            "url": "https://www.wyreforestdc.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-156920",
+          "name": "The Lion Hotel",
+          "identifier": {
+            "legalName": "The Lion Hotel"
+          },
+          "address": {
+            "streetAddress": "David Murdoch, The Lion Hotel, Bromsgrove Street, Kidderminster DY10 1PT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-156921",
+          "name": "Richmond Guest House",
+          "identifier": {
+            "legalName": "Richmond Guest House"
+          },
+          "address": {
+            "streetAddress": "Sarbjeet Singh, Richmond Guest House, Ombersley Street West, Droitwich WR9 8HZ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-156922",
+          "name": "Lodge House 20 Limited",
+          "identifier": {
+            "legalName": "Lodge House 20 Limited"
+          },
+          "address": {
+            "streetAddress": "18 Ombersley Street West, Droitwich, WR9 8HZ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56372",
+        "name": "Wyre Forest District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a72bc2e6-28d8-4a37-b47f-5cbfc27d5b6e-2",
+          "status": "active",
+          "date": "2019-09-11T00:00:00+01:00",
+          "datePublished": "2020-12-03T09:27:06Z",
+          "value": {
+            "amount": 38220,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-156920",
+              "name": "The Lion Hotel"
+            },
+            {
+              "id": "GB-CFS-156921",
+              "name": "Richmond Guest House"
+            },
+            {
+              "id": "GB-CFS-156922",
+              "name": "Lodge House 20 Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-01-29T00:00:00Z",
+            "endDate": "2022-01-28T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "3",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e257394e-d97d-4202-a5e2-ac063e0dbfc3",
+              "datePublished": "2020-12-03T09:27:06Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=1ffe0afd-7146-e911-80f3-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-be1b8dc7-3e20-4cbc-a782-645df5da9326",
+      "id": "b7e2b8a2-3879-456d-b435-bd64426b2c78-397312",
+      "language": "en",
+      "date": "2020-12-01T16:10:33Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CR20115",
+        "title": "CR20115 - Social Housing Landlords Research",
+        "description": "** THIS TENDER IS CLOSED ** \r\n\r\nAward of contract via the CCS DPS Agreement RM6018 via further competition. \r\n\r\nThe final date and time for the submission of bids is 16th November 2020 at 11:00. \r\n\r\nDO NOT apply directly to the buyer. All tender information MUST be submitted through the Delta eSourcing Portal.\r\n\r\nThis research project will inform how best to set up the TAF that will enable social landlords to make the most of the fund as well as contributing to meeting some of the UK's legally binding environmental and fuel poverty targets and be an important step on the path to net-zero carbon by 2050. It also has the potential to enrich the understanding of barriers and enablers to retrofit with tenants in the private housing sector.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "73200000",
+          "description": "Research and development consultancy services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SW1H 0ET"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a dynamic purchasing system",
+        "tenderPeriod": {
+          "endDate": "2020-11-16T11:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-12-01T00:00:00Z",
+          "endDate": "2021-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m",
+          "name": "UK SHARED BUSINESS SERVICES LIMITED",
+          "identifier": {
+            "legalName": "UK SHARED BUSINESS SERVICES LIMITED",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/dXGP288m"
+          },
+          "address": {
+            "streetAddress": "Polaris House, North Star Avenue",
+            "locality": "SWINDON",
+            "postalCode": "SN21FF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "resarch@uksbs.co.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-00849983",
+          "name": "I.F.F RESEARCH LIMITED",
+          "identifier": {
+            "legalName": "I.F.F RESEARCH LIMITED",
+            "scheme": "GB-COH",
+            "id": "00849983"
+          },
+          "address": {
+            "streetAddress": "5th Floor,St. Magnus House, 3 Lower Thames Street\nLONDON\nEC3R 6HD\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m",
+        "name": "UK SHARED BUSINESS SERVICES LIMITED"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-be1b8dc7-3e20-4cbc-a782-645df5da9326-1",
+          "status": "active",
+          "date": "2020-11-24T00:00:00Z",
+          "datePublished": "2020-12-01T16:10:33Z",
+          "value": {
+            "amount": 94087.79,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00849983",
+              "name": "I.F.F RESEARCH LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-12-01T00:00:00Z",
+            "endDate": "2021-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b7e2b8a2-3879-456d-b435-bd64426b2c78",
+              "datePublished": "2020-12-01T16:10:33Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "contractSigned",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/SupplierAttachment/171bbb80-009e-4786-a2e5-7970b5fa592f",
+              "format": "application/pdf"
+            },
+            {
+              "id": "3",
+              "documentType": "contractSigned",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/SupplierAttachment/cf7d4e5f-4622-4379-acb2-f01b294670ac",
+              "format": "application/pdf"
+            },
+            {
+              "id": "4",
+              "documentType": "contractSigned",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/SupplierAttachment/67bee9a5-37a2-4072-9c3c-782b5c301f2e",
+              "format": "application/pdf"
+            },
+            {
+              "id": "5",
+              "documentType": "contractSigned",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/SupplierAttachment/39c8df66-0b82-4b22-bdd8-90793898be6f",
+              "format": "application/pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

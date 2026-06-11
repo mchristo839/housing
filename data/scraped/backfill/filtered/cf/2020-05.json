@@ -1,0 +1,683 @@
+{
+  "portal": "cf",
+  "year": 2020,
+  "month": 5,
+  "raw_count": 2492,
+  "filtered_count": 5,
+  "pages": 25,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-969de11d-1b70-4681-b682-bcf62fc157de",
+      "id": "016c9827-5b11-404b-9c3a-8f7a2b69890f-360947",
+      "language": "en",
+      "date": "2020-05-27T15:39:41+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "GMCA001-DN479936-42803919",
+        "title": "Emergency Covid 19 Homelessness Accommodation - Secuirty services for Victoria House",
+        "description": "Security staff are required to support the Alternative Accommodation Support Team that will be providing an accommodation service to homeless people from across Greater Manchester relating to Covid19",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "66131000",
+          "description": "Security brokerage services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "75240000",
+            "description": "Public security, law and order services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "75241000",
+            "description": "Public security services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "79710000",
+            "description": "Security services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 155736,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Not applicable",
+        "tenderPeriod": {
+          "endDate": "2020-04-05T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-07T00:00:00+01:00",
+          "endDate": "2020-06-28T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-95483",
+          "name": "Greater Manchester Combined Authority",
+          "identifier": {
+            "legalName": "Greater Manchester Combined Authority"
+          },
+          "address": {
+            "streetAddress": "Greater Manchester Fire and Rescue Service Headquarters, 146 Bolton Road, Swinton",
+            "locality": "Salford",
+            "postalCode": "M27 8US",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Bushra Dawood",
+            "email": "dawoodb@manchesterfire.gov.uk",
+            "telephone": "+44 1616084120"
+          },
+          "details": {
+            "url": "http://www.manchesterfire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-144456",
+          "name": "Compact Secuity Services Ltd",
+          "identifier": {
+            "legalName": "Compact Secuity Services Ltd"
+          },
+          "address": {
+            "streetAddress": "Trafford Wharf Road , Stretford , Manchester UK M17 1AB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-95483",
+        "name": "Greater Manchester Combined Authority"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-969de11d-1b70-4681-b682-bcf62fc157de-1",
+          "status": "active",
+          "date": "2020-04-06T00:00:00+01:00",
+          "datePublished": "2020-05-27T15:39:41+01:00",
+          "value": {
+            "amount": 155736,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-144456",
+              "name": "Compact Secuity Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-07T00:00:00+01:00",
+            "endDate": "2020-06-28T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/016c9827-5b11-404b-9c3a-8f7a2b69890f",
+              "datePublished": "2020-05-27T15:39:41+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-d8c9372a-a972-4a0c-bd01-2e637d7d71ff",
+      "id": "1c100ca2-1b91-4c4f-b452-2866d65ad95c-359884",
+      "language": "en",
+      "date": "2020-05-20T17:33:31+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "19-165",
+        "title": "Rotherham Housing First Complex Needs Pathway",
+        "description": "Housing First is an established approach to long term homelessness supported by a wealth of evidence on its  effectiveness with the most complex and disengaged cohort within the homeless population.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 334000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Direct Award",
+        "tenderPeriod": {
+          "endDate": "2019-05-31T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2019-06-01T00:00:00+01:00",
+          "endDate": "2021-05-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-ROT",
+          "name": "Rotherham Metropolitan Borough Council",
+          "identifier": {
+            "legalName": "Rotherham Metropolitan Borough Council",
+            "scheme": "GB-LAE",
+            "id": "ROT"
+          },
+          "address": {
+            "streetAddress": "Riverside House",
+            "locality": "ROTHERHAM",
+            "postalCode": "S601QY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Lorna Byne",
+            "email": "lorna.byne@rotherham.gov.uk",
+            "telephone": "01709334159"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-IP20165R",
+          "name": "SOUTH YORKSHIRE HOUSING ASSOCIATION LIMITED",
+          "identifier": {
+            "legalName": "SOUTH YORKSHIRE HOUSING ASSOCIATION LIMITED",
+            "scheme": "GB-COH",
+            "id": "IP20165R"
+          },
+          "address": {
+            "streetAddress": "43-47 Wellington Street\nS1 4HF\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-ROT",
+        "name": "Rotherham Metropolitan Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d8c9372a-a972-4a0c-bd01-2e637d7d71ff-1",
+          "status": "active",
+          "date": "2019-05-31T00:00:00+01:00",
+          "datePublished": "2020-05-20T17:33:31+01:00",
+          "value": {
+            "amount": 334000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-IP20165R",
+              "name": "SOUTH YORKSHIRE HOUSING ASSOCIATION LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2019-06-01T00:00:00+01:00",
+            "endDate": "2021-05-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1c100ca2-1b91-4c4f-b452-2866d65ad95c",
+              "datePublished": "2020-05-20T17:33:31+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-620dfa92-01d0-4b9d-aaae-7c8dfd0a3d75",
+      "id": "ed256802-80be-4f54-99f0-ab602b0c6e6a-358684",
+      "language": "en",
+      "date": "2020-05-13T11:59:09+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "QU317 - AWARD",
+        "title": "QU317 - Review of Housing Options Homeless Service  - AWARD",
+        "description": "The Council requires a consultant to undertake a comprehensive evaluation and review of its Housing Options service with specific focus on how it manages its statutory homelessness functions.\r\n      \r\n      The Housing Options statutory homeless service in Birmingham is seeing unprecedented levels of homeless presentations and demand for temporary accommodation leading to increasing caseloads and pressures on staff and resources.\r\n      \r\n      A review is sought to provide an expert independent evaluation to assist the Council in its evaluation of the service and inform options for improvement.\r\n      \r\n      The review is to consider all aspects of the 'end to end' statutory homeless service including from prevention, customer presentation, case management, advice and securing accommodation etc. Organisations are required to demonstrate an expert in depth knowledge of each area of the service and customer requirements and provide relevant findings against each element.\r\n      \r\n      The contract period is for up to 4 months. \r\n      \r\n      Registration and use of in-tend is free. All correspondence for this procurement process must be via the in-tend correspondence function. If you are unable to register with in-tend please either email us at cps@birmingham.gov.uk or call 0121 464 8000. \r\n      \r\n      If you are interested in tendering please click on the following link to access the Council's tender Portal:- https://in-tendhost.co.uk/birminghamcc/ and submit your details to register as a bidder. We will send you a log on and password so you can download the tender documentation. \r\n      \r\n      Your completed tender documentation should be returned by noon on 7th January 2020 via the 'in-tend' system https://in-tendhost.co.uk/birminghamcc\r\n      \r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79419000",
+          "description": "Evaluation consultancy services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "79311300",
+            "description": "Survey analysis services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "71620000",
+            "description": "Analysis services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "B4 7WB"
+              },
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-01-07T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-11T00:00:00Z",
+          "endDate": "2020-07-10T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-41105",
+          "name": "Birmingham City Council",
+          "identifier": {
+            "legalName": "Birmingham City Council"
+          },
+          "address": {
+            "streetAddress": "10 Woodcock Street, Birmingham",
+            "locality": "West Midlands",
+            "postalCode": "B4 7WB",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Manjit Samrai",
+            "email": "manjit.samrai@birmingham.gov.uk",
+            "telephone": "0121 303 0349"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-143564",
+          "name": "Neil Morland Housing Consultant Ltd",
+          "identifier": {
+            "legalName": "Neil Morland Housing Consultant Ltd"
+          },
+          "address": {
+            "streetAddress": "78, Borough Road, Altrincham, Greater Manchester, United Kingdom, WA15 9EJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-41105",
+        "name": "Birmingham City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-620dfa92-01d0-4b9d-aaae-7c8dfd0a3d75-1",
+          "status": "active",
+          "date": "2020-03-10T00:00:00Z",
+          "datePublished": "2020-05-13T11:59:09+01:00",
+          "value": {
+            "amount": 32900,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-143564",
+              "name": "Neil Morland Housing Consultant Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-11T00:00:00Z",
+            "endDate": "2020-07-10T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ed256802-80be-4f54-99f0-ab602b0c6e6a",
+              "datePublished": "2020-05-13T11:59:09+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3de1be88-916a-4bf7-bb5b-efaf41a47640",
+      "id": "76da1ff1-61ce-4dfc-8a73-e416a04c8a5d-357967",
+      "language": "en",
+      "date": "2020-05-07T14:58:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "GMCA001-DN477515-08378730",
+        "title": "GM Security Provision - Homelessness Accommodation",
+        "description": "Contract for security services at two homelessness accommodation sites in GM - awarded under Regulation 32(2)c due to Coronavirus - extreme urgency.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79710000",
+          "description": "Security services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 253260,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2020-03-25T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-27T00:00:00Z",
+          "endDate": "2020-06-28T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-95385",
+          "name": "Greater Manchester Combined Authority",
+          "identifier": {
+            "legalName": "Greater Manchester Combined Authority"
+          },
+          "address": {
+            "streetAddress": "Greater Manchester Fire and Rescue Service Headquarters, 146 Bolton Road, Swinton",
+            "locality": "Salford",
+            "postalCode": "M27 8US",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Suzanne McCormack",
+            "email": "mccormacks@manchesterfire.gov.uk",
+            "telephone": "+44 1616083576"
+          },
+          "details": {
+            "url": "http://www.manchesterfire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-143284",
+          "name": "Unique Specialist Services Ltd",
+          "identifier": {
+            "legalName": "Unique Specialist Services Ltd"
+          },
+          "address": {
+            "streetAddress": "KEMP HOUSE\n160 CITY ROAD\nLONDON\nUNITED KINGDOM\nEC1V 2NX"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-95385",
+        "name": "Greater Manchester Combined Authority"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3de1be88-916a-4bf7-bb5b-efaf41a47640-1",
+          "status": "active",
+          "date": "2020-03-26T00:00:00Z",
+          "datePublished": "2020-05-07T14:58:57+01:00",
+          "value": {
+            "amount": 253260,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-143284",
+              "name": "Unique Specialist Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-27T00:00:00Z",
+            "endDate": "2020-06-28T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/76da1ff1-61ce-4dfc-8a73-e416a04c8a5d",
+              "datePublished": "2020-05-07T14:58:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-7da988e8-d4fe-4314-aad1-6ac47dcd0ef4",
+      "id": "1ec47c6c-c803-4e5b-98b6-7173653d72ad-357436",
+      "language": "en",
+      "date": "2020-05-05T10:43:48+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "ID22",
+        "title": "AWARDED contract for accommodation for homeless",
+        "description": "North Hertfordshire District Council (NHDC) has awarded a contract for an outreach and resettlement services for rough sleepers.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SG6 3JF"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 35000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Single tender action (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2020-03-03T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-01T00:00:00+01:00",
+          "endDate": "2021-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-NHE",
+          "name": "NORTH HERTFORDSHIRE DISTRICT COUNCIL",
+          "identifier": {
+            "legalName": "NORTH HERTFORDSHIRE DISTRICT COUNCIL",
+            "scheme": "GB-LAE",
+            "id": "NHE"
+          },
+          "address": {
+            "streetAddress": "North Hertfordshire District Council, Council Offices",
+            "locality": "Letchworth Garden City",
+            "postalCode": "SG6 3JF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Kirstie Wilson",
+            "email": "kirstie.wilson@north-herts.gov.uk",
+            "telephone": "01462 474284 ext 4284"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-03366848",
+          "name": "STEVENAGE HAVEN",
+          "identifier": {
+            "legalName": "STEVENAGE HAVEN",
+            "scheme": "GB-COH",
+            "id": "03366848"
+          },
+          "address": {
+            "streetAddress": "6 Ditchmore Lane\nSG1 3LJ\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-NHE",
+        "name": "NORTH HERTFORDSHIRE DISTRICT COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7da988e8-d4fe-4314-aad1-6ac47dcd0ef4-1",
+          "status": "active",
+          "date": "2020-03-17T00:00:00Z",
+          "datePublished": "2020-05-05T10:43:48+01:00",
+          "value": {
+            "amount": 35000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-03366848",
+              "name": "STEVENAGE HAVEN"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-01T00:00:00+01:00",
+            "endDate": "2021-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1ec47c6c-c803-4e5b-98b6-7173653d72ad",
+              "datePublished": "2020-05-05T10:43:48+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

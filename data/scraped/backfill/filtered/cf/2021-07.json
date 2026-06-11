@@ -1,0 +1,1780 @@
+{
+  "portal": "cf",
+  "year": 2021,
+  "month": 7,
+  "raw_count": 5199,
+  "filtered_count": 9,
+  "pages": 52,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-7acae59e-b94d-42b4-a026-3d17cd7d16db",
+      "id": "1fc29328-bdab-4ddd-bf44-40f5f1017bd6-455550",
+      "language": "en",
+      "date": "2021-07-28T15:13:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SUN001-DN464327-68184556",
+        "title": "Supported Accommodation for young people aged 16 - 25 years",
+        "description": "Supported Accommodation for young people aged 16 - 25 years",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 150000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 200000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-09-17T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-02T00:00:00Z",
+          "endDate": "2023-11-01T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-145050",
+          "name": "Sunderland City Council",
+          "identifier": {
+            "legalName": "Sunderland City Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Burdon Road",
+            "locality": "Sunderland",
+            "postalCode": "SR2 7SN",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Michelle Soppitt",
+            "email": "michelle.soppitt@sunderland.gov.uk"
+          },
+          "details": {
+            "url": "http://www.sunderland.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-178996",
+          "name": "Gentoo Group",
+          "identifier": {
+            "legalName": "Gentoo Group"
+          },
+          "address": {
+            "streetAddress": "Emperor House, 2 Emperor Way\nDoxford Park\nSunderland\nSR3 3XR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178997",
+          "name": "Changing Lives",
+          "identifier": {
+            "legalName": "Changing Lives"
+          },
+          "address": {
+            "streetAddress": "Changing Lives\nUnit D13, Marquis Court\nTenth Avenue West\nGateshead\nNE11 ORU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-145050",
+        "name": "Sunderland City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7acae59e-b94d-42b4-a026-3d17cd7d16db-1",
+          "status": "active",
+          "date": "2020-12-09T00:00:00Z",
+          "datePublished": "2021-07-28T15:13:57+01:00",
+          "value": {
+            "amount": 1698195,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-178996",
+              "name": "Gentoo Group"
+            },
+            {
+              "id": "GB-CFS-178997",
+              "name": "Changing Lives"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-01T00:00:00Z",
+            "endDate": "2023-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1fc29328-bdab-4ddd-bf44-40f5f1017bd6",
+              "datePublished": "2021-07-28T15:13:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=40ae334c-3ae1-ea11-8104-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9fbe1668-5406-4dbd-ae84-fcc0949c27e5",
+      "id": "ea7d5e66-e817-45f5-b274-2a13f1792613-455382",
+      "language": "en",
+      "date": "2021-07-28T10:54:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LPPCLCH1-DN539321-47591786",
+        "title": "Temporary Accommodation for Staff",
+        "description": "Central London Community Healthcare NHS Trust are looking to establish a framework for temporary accommodation to support new staff from either the UK or recruited internationally. Accommodation is required to between 1-5 rooms and available for a 1-2 month period, with an option for staff to continue their tenancy after this period. This opportunity has 3 lots covering: North London, South London and Hertfordshire. Bidders may submit a bid for as many lots as they feel able.\r\nThree suppliers will be appointed to each lot, based on their total score at the end of the evaluation. Each lot will be tiered on a first right of refusal basis, with the highest scoring supplier having the first right of refusal.\r\n",
+        "datePublished": "2021-04-21T09:53:09+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55000000",
+          "description": "Hotel, restaurant and retail trade services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "70000000",
+            "description": "Real estate services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 450000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 600000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-06-04T18:30:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-10T00:00:00+01:00",
+          "endDate": "2024-08-18T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-80515",
+          "name": "Central London Community Healthcare NHS Trust",
+          "identifier": {
+            "legalName": "Central London Community Healthcare NHS Trust"
+          },
+          "address": {
+            "streetAddress": "5-7 Parsons Green",
+            "locality": "London",
+            "postalCode": "SW6 4UL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Reuben McKeown",
+            "email": "reuben.mckeown@capita.co.uk",
+            "telephone": "+44 7740529800"
+          },
+          "details": {
+            "url": "http://www.clch.nhs.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-178921",
+          "name": "Catalyst Housing Ltd",
+          "identifier": {
+            "legalName": "Catalyst Housing Ltd"
+          },
+          "address": {
+            "streetAddress": "W5 2AU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-137570",
+          "name": "Concept Care Solutions Ltd",
+          "identifier": {
+            "legalName": "Concept Care Solutions Ltd"
+          },
+          "address": {
+            "streetAddress": "NN1 2BG"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178922",
+          "name": "Network Homes Ltd",
+          "identifier": {
+            "legalName": "Network Homes Ltd"
+          },
+          "address": {
+            "streetAddress": "HA9 0NU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178923",
+          "name": "Notting Hill Genesis Housing",
+          "identifier": {
+            "legalName": "Notting Hill Genesis Housing"
+          },
+          "address": {
+            "streetAddress": "N1 9FL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178924",
+          "name": "The Stay Club",
+          "identifier": {
+            "legalName": "The Stay Club"
+          },
+          "address": {
+            "streetAddress": "W1F 7JW"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178925",
+          "name": "Response Accommodation Ltd",
+          "identifier": {
+            "legalName": "Response Accommodation Ltd"
+          },
+          "address": {
+            "streetAddress": "LE16 8ES"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178926",
+          "name": "County Private Client Ltd",
+          "identifier": {
+            "legalName": "County Private Client Ltd"
+          },
+          "address": {
+            "streetAddress": "NW10 2JJ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-80515",
+        "name": "Central London Community Healthcare NHS Trust"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9fbe1668-5406-4dbd-ae84-fcc0949c27e5-1",
+          "status": "active",
+          "date": "2021-07-14T00:00:00+01:00",
+          "datePublished": "2021-07-28T10:54:57+01:00",
+          "value": {
+            "amount": 450000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-178921",
+              "name": "Catalyst Housing Ltd"
+            },
+            {
+              "id": "GB-CFS-137570",
+              "name": "Concept Care Solutions Ltd"
+            },
+            {
+              "id": "GB-CFS-178922",
+              "name": "Network Homes Ltd"
+            },
+            {
+              "id": "GB-CFS-178923",
+              "name": "Notting Hill Genesis Housing"
+            },
+            {
+              "id": "GB-CFS-178924",
+              "name": "The Stay Club"
+            },
+            {
+              "id": "GB-CFS-178925",
+              "name": "Response Accommodation Ltd"
+            },
+            {
+              "id": "GB-CFS-178926",
+              "name": "County Private Client Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-08-02T00:00:00+01:00",
+            "endDate": "2025-08-02T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ea7d5e66-e817-45f5-b274-2a13f1792613",
+              "datePublished": "2021-07-28T10:54:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=15989843-7ba2-eb11-810c-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-eb154f97-40d3-4dc5-aa90-527a48bdf3ca",
+      "id": "89fe723c-2663-47d7-9c09-6d67d42d2ce7-454956",
+      "language": "en",
+      "date": "2021-07-27T10:46:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DAR001-DN559179-77130729",
+        "title": "PB2021-00411- Supported Accommodation",
+        "description": "PB2021-00411- Provision of supported accommodation for a service user with mental health needs.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 133544.12,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2021-06-29T23:59:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-01T00:00:00+01:00",
+          "endDate": "2025-06-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50123",
+          "name": "Darlington Borough Council",
+          "identifier": {
+            "legalName": "Darlington Borough Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Feethams",
+            "locality": "Darlington",
+            "postalCode": "DL1 5QT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Danielle Lowcock",
+            "email": "danielle.lowcock@darlington.gov.uk",
+            "telephone": "+44 1325405495"
+          },
+          "details": {
+            "url": "http://www.darlington.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-75301",
+          "name": "Richmond Fellowship",
+          "identifier": {
+            "legalName": "Richmond Fellowship"
+          },
+          "address": {
+            "streetAddress": "N7 8JG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50123",
+        "name": "Darlington Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-eb154f97-40d3-4dc5-aa90-527a48bdf3ca-1",
+          "status": "active",
+          "date": "2021-06-30T00:00:00+01:00",
+          "datePublished": "2021-07-27T10:46:57+01:00",
+          "value": {
+            "amount": 133544.12,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-75301",
+              "name": "Richmond Fellowship"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-01T00:00:00+01:00",
+            "endDate": "2025-06-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/89fe723c-2663-47d7-9c09-6d67d42d2ce7",
+              "datePublished": "2021-07-27T10:46:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-31d37b34-87ec-4ce2-ba85-762af38a9f62",
+      "id": "11997033-8c54-47a2-94e6-67aa441c2c4e-453684",
+      "language": "en",
+      "date": "2021-07-22T12:41:09+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "STK001-DN539114-01677209",
+        "title": "Accommodation-based Housing-related Support Service for Homeless Families and Adults",
+        "description": "Accommodation-based Housing-related Support Service for Homeless Families and Adults",
+        "datePublished": "2021-04-23T09:18:23+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 3565224,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-05-20T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-10-01T00:00:00+01:00",
+          "endDate": "2024-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-54216",
+          "name": "Stockton Borough Council",
+          "identifier": {
+            "legalName": "Stockton Borough Council"
+          },
+          "address": {
+            "streetAddress": "Municipal Buildings, Church Road",
+            "locality": "Stockton-on-Tees",
+            "postalCode": "TS18 1LD",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Robert Welch",
+            "email": "robert.welch@stockton.gov.uk"
+          },
+          "details": {
+            "url": "http://www.stockton.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-178338",
+          "name": "Community CAmpus 87 (Cleevland) Ltd",
+          "identifier": {
+            "legalName": "Community CAmpus 87 (Cleevland) Ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 1UU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178339",
+          "name": "Community Campus 87 ltd",
+          "identifier": {
+            "legalName": "Community Campus 87 ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 1UU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-34751",
+          "name": "Sanctuary Home Care t/a Sanctuary Supported Living",
+          "identifier": {
+            "legalName": "Sanctuary Home Care t/a Sanctuary Supported Living"
+          },
+          "address": {
+            "streetAddress": "WR1 3ZQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-89505",
+          "name": "Sanctuary Housing Association trading as Sanctuary Supported Liv",
+          "identifier": {
+            "legalName": "Sanctuary Housing Association trading as Sanctuary Supported Liv"
+          },
+          "address": {
+            "streetAddress": "WR1 3ZQ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178340",
+          "name": "New Walk CIC",
+          "identifier": {
+            "legalName": "New Walk CIC"
+          },
+          "address": {
+            "streetAddress": "TS18 1HE"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178341",
+          "name": "SCMSH Ltd",
+          "identifier": {
+            "legalName": "SCMSH Ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 3AX"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178342",
+          "name": "Turnaround Homes",
+          "identifier": {
+            "legalName": "Turnaround Homes"
+          },
+          "address": {
+            "streetAddress": "TS18 1JP"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-54216",
+        "name": "Stockton Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-31d37b34-87ec-4ce2-ba85-762af38a9f62-2",
+          "status": "active",
+          "date": "2021-07-20T00:00:00+01:00",
+          "datePublished": "2021-07-22T12:41:09+01:00",
+          "value": {
+            "amount": 3565224,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-178338",
+              "name": "Community CAmpus 87 (Cleevland) Ltd"
+            },
+            {
+              "id": "GB-CFS-178339",
+              "name": "Community Campus 87 ltd"
+            },
+            {
+              "id": "GB-CFS-34751",
+              "name": "Sanctuary Home Care t/a Sanctuary Supported Living"
+            },
+            {
+              "id": "GB-CFS-89505",
+              "name": "Sanctuary Housing Association trading as Sanctuary Supported Liv"
+            },
+            {
+              "id": "GB-CFS-178340",
+              "name": "New Walk CIC"
+            },
+            {
+              "id": "GB-CFS-178341",
+              "name": "SCMSH Ltd"
+            },
+            {
+              "id": "GB-CFS-178342",
+              "name": "Turnaround Homes"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-10-01T00:00:00+01:00",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "3",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/11997033-8c54-47a2-94e6-67aa441c2c4e",
+              "datePublished": "2021-07-22T12:41:09+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=01ed171d-c6a1-eb11-810c-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-31d37b34-87ec-4ce2-ba85-762af38a9f62",
+      "id": "7d8bc07e-9dc6-455e-9240-4c1bdb06cfc0-452748",
+      "language": "en",
+      "date": "2021-07-20T11:07:44+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "STK001-DN539114-15447221",
+        "title": "Accommodation-based Housing-related Support Service for Homeless Families and Adults",
+        "description": "The Accommodation-based Housing-related Support Service for Homeless Families and Adults provided under this contract is to deliver housing-related support to assist service users to access and sustain independent living. The Service is designed to enable families and adults to transition from supported or temporary accommodation to independence and to maintain suitable, sustainable and settled accommodation.",
+        "datePublished": "2021-04-23T09:18:23+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 3884400,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-05-20T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-06-24T00:00:00+01:00",
+          "endDate": "2026-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-54216",
+          "name": "Stockton Borough Council",
+          "identifier": {
+            "legalName": "Stockton Borough Council"
+          },
+          "address": {
+            "streetAddress": "Municipal Buildings, Church Road",
+            "locality": "Stockton-on-Tees",
+            "postalCode": "TS18 1LD",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "Robert.welch@stockton.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-178338",
+          "name": "Community CAmpus 87 (Cleevland) Ltd",
+          "identifier": {
+            "legalName": "Community CAmpus 87 (Cleevland) Ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 1UU"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178339",
+          "name": "Community Campus 87 ltd",
+          "identifier": {
+            "legalName": "Community Campus 87 ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 1UU"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-34751",
+          "name": "Sanctuary Home Care t/a Sanctuary Supported Living",
+          "identifier": {
+            "legalName": "Sanctuary Home Care t/a Sanctuary Supported Living"
+          },
+          "address": {
+            "streetAddress": "WR1 3ZQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-89505",
+          "name": "Sanctuary Housing Association trading as Sanctuary Supported Liv",
+          "identifier": {
+            "legalName": "Sanctuary Housing Association trading as Sanctuary Supported Liv"
+          },
+          "address": {
+            "streetAddress": "WR1 3ZQ"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178340",
+          "name": "New Walk CIC",
+          "identifier": {
+            "legalName": "New Walk CIC"
+          },
+          "address": {
+            "streetAddress": "TS18 1HE"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178341",
+          "name": "SCMSH Ltd",
+          "identifier": {
+            "legalName": "SCMSH Ltd"
+          },
+          "address": {
+            "streetAddress": "TS18 3AX"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-178342",
+          "name": "Turnaround Homes",
+          "identifier": {
+            "legalName": "Turnaround Homes"
+          },
+          "address": {
+            "streetAddress": "TS18 1JP"
+          },
+          "details": {
+            "scale": "sme"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-54216",
+        "name": "Stockton Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-31d37b34-87ec-4ce2-ba85-762af38a9f62-1",
+          "status": "active",
+          "date": "2021-07-20T00:00:00+01:00",
+          "datePublished": "2021-07-20T11:07:44+01:00",
+          "value": {
+            "amount": 3565224,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-178338",
+              "name": "Community CAmpus 87 (Cleevland) Ltd"
+            },
+            {
+              "id": "GB-CFS-178339",
+              "name": "Community Campus 87 ltd"
+            },
+            {
+              "id": "GB-CFS-34751",
+              "name": "Sanctuary Home Care t/a Sanctuary Supported Living"
+            },
+            {
+              "id": "GB-CFS-89505",
+              "name": "Sanctuary Housing Association trading as Sanctuary Supported Liv"
+            },
+            {
+              "id": "GB-CFS-178340",
+              "name": "New Walk CIC"
+            },
+            {
+              "id": "GB-CFS-178341",
+              "name": "SCMSH Ltd"
+            },
+            {
+              "id": "GB-CFS-178342",
+              "name": "Turnaround Homes"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-10-01T00:00:00+01:00",
+            "endDate": "2024-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/7d8bc07e-9dc6-455e-9240-4c1bdb06cfc0",
+              "datePublished": "2021-07-20T11:07:44+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=01ed171d-c6a1-eb11-810c-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-67054405-e9e2-4d00-b29f-64ee577c113f",
+      "id": "248d13d4-5c74-4793-a3a3-584f1a061624-451191",
+      "language": "en",
+      "date": "2021-07-13T17:10:03+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP610301729",
+        "title": "GB-St Helens: Provision of 'person centred' IT training for tenants in sheltered accommodation",
+        "description": "Torus Foundation is seeking to appoint a single service provider to enter into a Contract for the provision of 'person centred' IT training for tenants in sheltered accommodation.\r\n      \r\n      The scope of the contract is to:\r\n      • Engage tenants aged 55 and over who live in sheltered and extra care accommodation in a 'person centred' and flexible IT training programme. The training should be practical and delivered in a very accessible way. The focus should be on what you can do with IT and the digital world rather than the technical aspects of IT.\r\n      • The training sessions should be enjoyable and engaging with many practical examples and applications. Training should aim to improve the efficacy of this group of tenants with regard to using the digital world.\r\n      • Carry out an IT skills confidence and needs assessments with tenants.\r\n      • Liaise with Torus Foundation and the Torus IT team to gain a thorough understanding of the IT infrastructure within the accommodation.\r\n      • Design an IT skills programme designed to help tenants gain entry level skills with the facility to enable tenants to progress onto further training. This training must be flexible to allow for tenants to get the skills and confidence that they need. A structured rigid programme may not suit older tenants.\r\n      • Recruit, train and retain volunteer digital champions in each sheltered scheme to support IT \r\n      learning and the ongoing experience of the digital world.\r\n\r\nAdditional information: The contracting authority considers that this contract may be suitable for economic operators that are small or medium enterprises (SMEs). However, any selection of tenderers will be based solely on the criteria set out for the procurement.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "80533000",
+          "description": "Computer-user familiarisation and training services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "80533100",
+            "description": "Computer training services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 124373,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-06-25T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-06-28T00:00:00+01:00",
+          "endDate": "2022-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-164076",
+          "name": "Torus Foundation",
+          "identifier": {
+            "legalName": "Torus Foundation"
+          },
+          "address": {
+            "streetAddress": "4 Corporation Street",
+            "locality": "St Helens",
+            "postalCode": "WA9 1LD",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "name": "Liam Bedson",
+            "email": "liam.bedson@torus.co.uk",
+            "telephone": "00"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-177520",
+          "name": "Citizens Online Limited",
+          "identifier": {
+            "legalName": "Citizens Online Limited"
+          },
+          "address": {
+            "streetAddress": "The Exchange\n        Brick Row\n        GL5 1DF"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-164076",
+        "name": "Torus Foundation"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-67054405-e9e2-4d00-b29f-64ee577c113f-1",
+          "status": "active",
+          "date": "2021-06-25T00:00:00+01:00",
+          "datePublished": "2021-07-13T17:10:03+01:00",
+          "value": {
+            "amount": 124373,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-177520",
+              "name": "Citizens Online Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-28T00:00:00+01:00",
+            "endDate": "2022-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/248d13d4-5c74-4793-a3a3-584f1a061624",
+              "datePublished": "2021-07-13T17:10:03+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=610301729"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c17da490-2101-4d11-85b6-dcfa07466898",
+      "id": "938480b9-b075-4572-b967-ddd7da44ae73-450487",
+      "language": "en",
+      "date": "2021-07-10T17:20:43+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BFDMDC001-DN555807-41168525",
+        "title": "Council Affordable Housing Programme and Houisng Revenue Account (HRA)",
+        "description": "Additional capability and capacity - Council Affordable Housing Programme and Houisng Revenue Account (HRA).",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71315210",
+          "description": "Building services consultancy services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 107200,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2020-11-27T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-12-01T00:00:00Z",
+          "endDate": "2021-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-145902",
+          "name": "Bradford Metropolitan District Council",
+          "identifier": {
+            "legalName": "Bradford Metropolitan District Council"
+          },
+          "address": {
+            "streetAddress": "8th Floor Margaret McMillan Tower, Prince's Way",
+            "locality": "Bradford",
+            "postalCode": "BD1 1NN",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Lorraine Wright",
+            "email": "Lorraine.Wright@bradford.gov.uk"
+          },
+          "details": {
+            "url": "http://www.bradford.gov.uk/bmdc"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-177281",
+          "name": "​Local Partnerships",
+          "identifier": {
+            "legalName": "​Local Partnerships"
+          },
+          "address": {
+            "streetAddress": "LAYDEN HOUSE, 76-86 TURNMILL STREET, LONDON EC1M 5LG"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-145902",
+        "name": "Bradford Metropolitan District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c17da490-2101-4d11-85b6-dcfa07466898-1",
+          "status": "active",
+          "date": "2020-11-30T00:00:00Z",
+          "datePublished": "2021-07-10T17:20:43+01:00",
+          "value": {
+            "amount": 107200,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-177281",
+              "name": "​Local Partnerships"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-12-01T00:00:00Z",
+            "endDate": "2021-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/938480b9-b075-4572-b967-ddd7da44ae73",
+              "datePublished": "2021-07-10T17:20:43+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f5b8a7b0-e5f3-47a0-9ef6-caad90ab7119",
+      "id": "4d483c44-9af0-4b5f-8bd6-f6150146ee49-449018",
+      "language": "en",
+      "date": "2021-07-06T12:03:07+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN518642",
+        "title": "Housing Related Support for Vulnerable Single People, Couples, and Families",
+        "description": "North East Lincolnshire Council (the Authority) is undertaking a procurement for a Housing Related Support (HRS) Framework for vulnerable single people, couples and families.\r\n\r\nThe Framework is split in to two lots:\r\n\r\nLot 1 - High Needs\r\nLot 2 - Moderate Needs\r\n\r\nTenderers can choose to submit a bid for one or both lots.\r\n\r\nThe Framework will be awarded to a maximum of eight (8) Tenderers for Lot 1, and a maximum of eight (8) Tenderers for Lot 2. This will be based on the award criteria stated in the Invitation to Tender documents.\r\n\r\nThe Framework aims to deliver flexible HRS and bespoke, outcome-focused support packages to service users who live and/or work in the North East Lincolnshire Borough. The service will be available to vulnerable single people, couples and families and expectant mothers over the age of 16 requiring HRS to access accommodation or maintain their accommodation independently.\r\n\r\nThis procurement is being run under the Light Touch Regime using a Light Touch Open Process.\r\n\r\nThe Framework has an initial duration of 36 months with the option to extend for 2 further 12 month periods. The Framework has an additional year to allow a transition from the old service delivery to the new service delivery.\r\n\r\nAll documents are only available via www.yortender.co.uk\r\n\r\nAll clarifications should be submitted via www.yortender.co.uk\r\n\r\nAdditional information: Please use the following link to access the opportunity https://procontract.due-north.com/Advert?advertId=55009000-a58c-eb11-810c-005056b64545&fromProjectDashboard=True",
+        "datePublished": "2021-03-29T17:18:08+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 7322635,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-05-05T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-06T00:00:00+01:00",
+          "endDate": "2024-07-05T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-NEL",
+          "name": "NORTH EAST LINCOLNSHIRE COUNCIL",
+          "identifier": {
+            "legalName": "NORTH EAST LINCOLNSHIRE COUNCIL",
+            "scheme": "GB-LAE",
+            "id": "NEL"
+          },
+          "address": {
+            "streetAddress": "Municipal Offices,Town Hall Square",
+            "locality": "GRIMSBY",
+            "postalCode": "DN311HU",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurement@nelincs.gov.uk",
+            "telephone": "01472 323018"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-27440R",
+          "name": "Creative Support",
+          "identifier": {
+            "legalName": "Creative Support",
+            "scheme": "GB-COH",
+            "id": "27440R"
+          },
+          "address": {
+            "streetAddress": "SK1 3TS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-3318404",
+          "name": "Framework Housing Association",
+          "identifier": {
+            "legalName": "Framework Housing Association",
+            "scheme": "GB-COH",
+            "id": "3318404"
+          },
+          "address": {
+            "streetAddress": "NG7 6NX"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-2494315",
+          "name": "Grimsby & Cleethorpes Area Doorstep",
+          "identifier": {
+            "legalName": "Grimsby & Cleethorpes Area Doorstep",
+            "scheme": "GB-COH",
+            "id": "2494315"
+          },
+          "address": {
+            "streetAddress": "DN32 9EE"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-1058613",
+          "name": "Grimsby Cleethorpes & Humber Region YMCA",
+          "identifier": {
+            "legalName": "Grimsby Cleethorpes & Humber Region YMCA",
+            "scheme": "GB-COH",
+            "id": "1058613"
+          },
+          "address": {
+            "streetAddress": "DN329ET"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-2432547",
+          "name": "Humbercare Ltd",
+          "identifier": {
+            "legalName": "Humbercare Ltd",
+            "scheme": "GB-COH",
+            "id": "2432547"
+          },
+          "address": {
+            "streetAddress": "HU3 1XR"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-8009",
+          "name": "Longhurst Group",
+          "identifier": {
+            "legalName": "Longhurst Group",
+            "scheme": "GB-COH",
+            "id": "8009"
+          },
+          "address": {
+            "streetAddress": "B1 3JN"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-07458926",
+          "name": "NAViGO Health and Social Care CIC",
+          "identifier": {
+            "legalName": "NAViGO Health and Social Care CIC",
+            "scheme": "GB-COH",
+            "id": "07458926"
+          },
+          "address": {
+            "streetAddress": "DN32 0QE"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-00259322",
+          "name": "The Salvation Army",
+          "identifier": {
+            "legalName": "The Salvation Army",
+            "scheme": "GB-COH",
+            "id": "00259322"
+          },
+          "address": {
+            "streetAddress": "SE1 6BN"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-NEL",
+        "name": "NORTH EAST LINCOLNSHIRE COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f5b8a7b0-e5f3-47a0-9ef6-caad90ab7119-1",
+          "status": "active",
+          "date": "2021-07-06T00:00:00+01:00",
+          "datePublished": "2021-07-06T12:03:07+01:00",
+          "value": {
+            "amount": 7322635,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-27440R",
+              "name": "Creative Support"
+            },
+            {
+              "id": "GB-COH-3318404",
+              "name": "Framework Housing Association"
+            },
+            {
+              "id": "GB-COH-2494315",
+              "name": "Grimsby & Cleethorpes Area Doorstep"
+            },
+            {
+              "id": "GB-COH-1058613",
+              "name": "Grimsby Cleethorpes & Humber Region YMCA"
+            },
+            {
+              "id": "GB-COH-2432547",
+              "name": "Humbercare Ltd"
+            },
+            {
+              "id": "GB-COH-8009",
+              "name": "Longhurst Group"
+            },
+            {
+              "id": "GB-COH-07458926",
+              "name": "NAViGO Health and Social Care CIC"
+            },
+            {
+              "id": "GB-COH-00259322",
+              "name": "The Salvation Army"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-06T00:00:00+01:00",
+            "endDate": "2024-07-05T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/4d483c44-9af0-4b5f-8bd6-f6150146ee49",
+              "datePublished": "2021-07-06T12:03:07+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5914da73-31b6-48c4-9084-7b588b1cbd22",
+      "id": "800a59b3-6343-4804-9535-36c5f07042b9-448791",
+      "language": "en",
+      "date": "2021-07-05T15:38:32+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SHEFCC001-DN530437-76793541",
+        "title": "DOMESTIC ABUSE - SAFE SUPPORTED ACCOMMODATION SERVICE",
+        "description": "The Safe Zones service will provide emergency, safe accommodation and whole family support for those who have suffered Domestic Abuse, within the last 6 months, or who are at risk of it.\r\n  \r\nThe service sits within commissioned pathways for supported housing and domestic abuse services in Sheffield and it will collaborate closely with other domestic abuse services.\r\n",
+        "datePublished": "2021-03-04T10:03:47Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 110000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-03-16T18:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-92550",
+          "name": "Sheffield City Council",
+          "identifier": {
+            "legalName": "Sheffield City Council"
+          },
+          "address": {
+            "streetAddress": "Level 8, East Wing, Moorfoot Building",
+            "locality": "Sheffield",
+            "postalCode": "S1 4PL",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Phil Williamson",
+            "email": "philip.williamson@sheffield.gov.uk",
+            "telephone": "+44 1142053368"
+          },
+          "details": {
+            "url": "https://www.sheffield.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-176555",
+          "name": "IDAS",
+          "identifier": {
+            "legalName": "IDAS"
+          },
+          "address": {
+            "streetAddress": "YO26 OAS"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-92550",
+        "name": "Sheffield City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5914da73-31b6-48c4-9084-7b588b1cbd22-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-07-05T15:38:32+01:00",
+          "value": {
+            "amount": 110000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-176555",
+              "name": "IDAS"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-10T00:00:00+01:00",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/800a59b3-6343-4804-9535-36c5f07042b9",
+              "datePublished": "2021-07-05T15:38:32+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

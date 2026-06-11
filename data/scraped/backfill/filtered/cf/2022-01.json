@@ -1,0 +1,2168 @@
+{
+  "portal": "cf",
+  "year": 2022,
+  "month": 1,
+  "raw_count": 4485,
+  "filtered_count": 9,
+  "pages": 45,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-e5f9100d-f0c9-4caa-a0d2-4d3a19adadf8",
+      "id": "4caef13b-47bb-4769-b246-09d8d8758796-505462",
+      "language": "en",
+      "date": "2022-01-31T15:20:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Provision of Housing Related Support - Single Homeless Pathway Services",
+        "title": "Provision of Housing Related Support - Single Homeless Pathway Services",
+        "description": "Accommodation and support services for people experiencing homelessness with support needs aged over 18.",
+        "datePublished": "2021-06-14T12:52:41+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 11440850,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-08-02T13:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-03-11T00:00:00Z",
+          "endDate": "2029-03-10T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-HRY",
+          "name": "LONDON BOROUGH OF HARINGEY",
+          "identifier": {
+            "legalName": "LONDON BOROUGH OF HARINGEY",
+            "scheme": "GB-LAE",
+            "id": "HRY"
+          },
+          "address": {
+            "streetAddress": "Civic Centre,High Road, Wood Green",
+            "locality": "LONDON",
+            "postalCode": "N228HQ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Mercy Arinaitwe",
+            "email": "Mercy.Arinaitwe@haringey.gov.uk",
+            "telephone": "0208 489 3178"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-02440093",
+          "name": "DEPAUL UK",
+          "identifier": {
+            "legalName": "DEPAUL UK",
+            "scheme": "GB-COH",
+            "id": "02440093"
+          },
+          "address": {
+            "streetAddress": "34 Decima Street\nSE1 4QQ\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-196299",
+          "name": "St Mungo'S",
+          "identifier": {
+            "legalName": "St Mungo'S"
+          },
+          "address": {
+            "streetAddress": "3 Thomas More Square\nE1W 1YW\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-196300",
+          "name": "Causeway Irish Housing Association",
+          "identifier": {
+            "legalName": "Causeway Irish Housing Association"
+          },
+          "address": {
+            "streetAddress": "Haringey Irish Centre\r\nPretoria Road\r\nLondon, N17 8DX"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-HRY",
+        "name": "LONDON BOROUGH OF HARINGEY"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-e5f9100d-f0c9-4caa-a0d2-4d3a19adadf8-1",
+          "status": "active",
+          "date": "2021-12-30T00:00:00Z",
+          "datePublished": "2022-01-31T15:20:32Z",
+          "value": {
+            "amount": 7593503,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-02440093",
+              "name": "DEPAUL UK"
+            },
+            {
+              "id": "GB-CFS-196299",
+              "name": "St Mungo'S"
+            },
+            {
+              "id": "GB-CFS-196300",
+              "name": "Causeway Irish Housing Association"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-03-11T00:00:00Z",
+            "endDate": "2029-03-10T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/4caef13b-47bb-4769-b246-09d8d8758796",
+              "datePublished": "2022-01-31T15:20:32Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a8b8be4c-83c2-4ee0-8500-a8898e2a59ed",
+      "id": "919908ab-f355-498d-8f75-ade341fa0b20-501825",
+      "language": "en",
+      "date": "2022-01-18T11:44:46Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "ESCC - 013352",
+        "title": "Award of ESCC Housing -Related Floating Support",
+        "description": "An award of an ESCC contract to support vulnerable people aged 16 years and over to find accommodation and/or to live independently in their own homes and to promote individual wellbeing and prevent, reduce, or delay the need for care and support.\r\n\r\nAdditional information: There is an extension option of up to 60 months.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 38470000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-07-14T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-11-23T00:00:00Z",
+          "endDate": "2026-11-22T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-ESX",
+          "name": "East Sussex County Council",
+          "identifier": {
+            "legalName": "East Sussex County Council",
+            "scheme": "GB-LAE",
+            "id": "ESX"
+          },
+          "address": {
+            "streetAddress": "County Hall,St. Annes Crescent",
+            "locality": "LEWES",
+            "postalCode": "BN71UE",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Amy Wilkinson",
+            "email": "amy.wilkinson@eastsussex.gov.uk",
+            "telephone": "+447701394756"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01618610",
+          "name": "BRIGHTON HOUSING TRUST",
+          "identifier": {
+            "legalName": "BRIGHTON HOUSING TRUST",
+            "scheme": "GB-COH",
+            "id": "01618610"
+          },
+          "address": {
+            "streetAddress": "144 LONDON ROAD\nBN1 4PH\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-ESX",
+        "name": "East Sussex County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a8b8be4c-83c2-4ee0-8500-a8898e2a59ed-1",
+          "status": "active",
+          "date": "2021-08-24T00:00:00+01:00",
+          "datePublished": "2022-01-18T11:44:46Z",
+          "value": {
+            "amount": 3847000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01618610",
+              "name": "BRIGHTON HOUSING TRUST"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-11-23T00:00:00Z",
+            "endDate": "2026-11-22T23:59:59Z"
+          },
+          "description": "The value includes the extension period.",
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/919908ab-f355-498d-8f75-ade341fa0b20",
+              "datePublished": "2022-01-18T11:44:46Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ec5fa255-e40e-4d48-af12-98ce34ba1a20",
+      "id": "04343c18-f5a4-44a8-91a4-f8cd9ba340ac-501270",
+      "language": "en",
+      "date": "2022-01-17T08:28:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BUCKSH001-DN590441-84941015",
+        "title": "Desborough Road - Temporary Accommodation",
+        "description": "General contract for continuation of Clerk of Works at Desborough Road project",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71000000",
+          "description": "Architectural, construction, engineering and inspection services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 29000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2021-09-19T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-09-21T00:00:00+01:00",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-151153",
+          "name": "Buckinghamshire Council",
+          "identifier": {
+            "legalName": "Buckinghamshire Council"
+          },
+          "address": {
+            "streetAddress": "Walton Street Offices",
+            "locality": "Aylesbury",
+            "postalCode": "HP20 1UA",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Melanie Quaile",
+            "email": "Melanie.Quaile@buckinghamshire.gov.uk",
+            "telephone": "+44 1296382965"
+          },
+          "details": {
+            "url": "https://www.buckinghamshire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-194879",
+          "name": "04466163",
+          "identifier": {
+            "legalName": "04466163"
+          },
+          "address": {
+            "streetAddress": "110/112 Lancaster Road, New Barnet, Herts, EN4 8AL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-151153",
+        "name": "Buckinghamshire Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ec5fa255-e40e-4d48-af12-98ce34ba1a20-1",
+          "status": "active",
+          "date": "2021-09-20T00:00:00+01:00",
+          "datePublished": "2022-01-17T08:28:32Z",
+          "value": {
+            "amount": 29000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-194879",
+              "name": "04466163"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-09-21T00:00:00+01:00",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/04343c18-f5a4-44a8-91a4-f8cd9ba340ac",
+              "datePublished": "2022-01-17T08:28:32Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1dd3fe4a-3fd2-4b8a-a77d-835f8364bb8e",
+      "id": "64197fdc-8a4b-4337-948e-353054be2b72-500765",
+      "language": "en",
+      "date": "2022-01-14T11:45:39Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "NRW/HSG/10142/B",
+        "title": "10142 - Installation of thermodynamic hot water and photovoltaic (PV) systems to social housing properties",
+        "description": "NPS Norwich Ltd (NPSN), on behalf of Norwich City Council (the council), manages the maintenance and repair of the social housing property portfolio that comprises of approx. 14,600 homes . In order to maintain the property stock in good condition it is necessary to undertake repairs and maintenance as appropriate.  The council also seeks to invest in eco retrofit solutions where appropriate.\r\nThe council is looking for a single contractor to complete the installation of as many thermodynamic hot water and photovoltaic (PV) systems to its social housing within the value of the contact.\r\nHomes must be left with fully operational systems. \r\nThe value of the contract works shall be to the maximum value of £425,000.  \r\nProperties may receive one or both technologies.\r\nFor the purposes of this tender, we are working on the basis the value of works will be split approximately 50% for PV Solar systems and 50% for thermodynamic systems.  \r\nThis work will be carried out in an effort to reduce fuel poverty, assist in the reduction of the cities carbon footprint and increase individual properties standard assessment procedure (SAP) scores. \r\nNorwich has a very varied demographic.  It is home to the Aviva Head Office, Norwich Research Park and the University of East Anglia; but there are pockets of deprivation across the city where four in every ten children live in poverty, a low educational attainment record, high unemployment and 25% of housing is council rented (taken from the 2011 Census).  The contractor must understand the complexities that working with such a diverse community may bring.\r\nThere might be some properties with vulnerable occupants.  These properties may require particular attention in that they will require work or resource over and above the standard specification.\r\n\r\nAdditional information: Please download tender documents and upload completed tenders using the link: \r\nhttps://in-tendhost.co.uk/norwich/aspx/Home",
+        "datePublished": "2021-08-20T13:21:04+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "09321000",
+          "description": "Hot water"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "09331000",
+            "description": "Solar panels"
+          },
+          {
+            "scheme": "CPV",
+            "id": "09332000",
+            "description": "Solar installation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 425000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-09-17T14:30:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-10-11T00:00:00+01:00",
+          "endDate": "2022-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-NOW",
+          "name": "Norwich City Council",
+          "identifier": {
+            "legalName": "Norwich City Council",
+            "scheme": "GB-LAE",
+            "id": "NOW"
+          },
+          "address": {
+            "streetAddress": "City Hall",
+            "locality": "NORWICH",
+            "postalCode": "NR21NH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Charlotte Spragg",
+            "email": "procurement@norwich.gov.uk",
+            "telephone": "01603 987696"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-08050130",
+          "name": "IMPACT RENEWABLE ENERGY LIMITED",
+          "identifier": {
+            "legalName": "IMPACT RENEWABLE ENERGY LIMITED",
+            "scheme": "GB-COH",
+            "id": "08050130"
+          },
+          "address": {
+            "streetAddress": "Terminus Building,Postwick Park And Ride\nNORWICH\nNorfolk\nNR13 5NP\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-NOW",
+        "name": "Norwich City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1dd3fe4a-3fd2-4b8a-a77d-835f8364bb8e-1",
+          "status": "active",
+          "date": "2021-11-26T00:00:00Z",
+          "datePublished": "2022-01-14T11:45:39Z",
+          "value": {
+            "amount": 425000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-08050130",
+              "name": "IMPACT RENEWABLE ENERGY LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-10-11T00:00:00+01:00",
+            "endDate": "2022-04-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/64197fdc-8a4b-4337-948e-353054be2b72",
+              "datePublished": "2022-01-14T11:45:39Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "biddingDocuments",
+              "description": "Please download tender documents and upload completed tenders using the link",
+              "url": "https://in-tendhost.co.uk/norwich/aspx/Home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04",
+      "id": "85899b6c-7f5e-486c-b683-6de30e6a4c74-499961",
+      "language": "en",
+      "date": "2022-01-12T14:01:07Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EC09/01/3155",
+        "title": "Housing Related Support Services Framework",
+        "description": "A review into the current provision of housing related support for vulnerable single adults, young people and young parents has been carried out and provides the basis for the services set out in the Framework specification (Annex A).\r\n      \r\n      To deliver these requirements, Southampton City Council (hereby The Council) wishes to work with a number of providers who can demonstrate that they have the ability to deliver high quality housing related support services to vulnerable single adults, young people and young parents.",
+        "datePublished": "2021-10-12T15:56:24+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85300000",
+            "description": "Social work and related services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85310000",
+            "description": "Social work services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SO14 7LY"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25629644,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Not specified",
+        "tenderPeriod": {
+          "endDate": "2021-11-19T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-01-10T00:00:00Z",
+          "endDate": "2025-01-09T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+          "name": "SOUTHAMPTON CITY COUNCIL",
+          "identifier": {
+            "legalName": "SOUTHAMPTON CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/jxfb36Bw"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Civic Centre, Southampton, , ,",
+            "locality": "Southampton",
+            "postalCode": "SO14 7LY",
+            "countryName": "UNITED KINGDOM"
+          },
+          "contactPoint": {
+            "name": "Kate Tarrant",
+            "email": "tendermanagement@southampton.gov.uk",
+            "telephone": "023 8083 3000"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-223360",
+          "name": "No Limits South",
+          "identifier": {
+            "legalName": "No Limits South"
+          },
+          "address": {
+            "streetAddress": "35 The Avenue, Southampton, SO17 1XN, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-223361",
+          "name": "Two Saints Ltd",
+          "identifier": {
+            "legalName": "Two Saints Ltd"
+          },
+          "address": {
+            "streetAddress": "Fareham House , 69 High Street, Fareham , PO16 7BB, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-223362",
+          "name": "YMCA Fairthorne Group",
+          "identifier": {
+            "legalName": "YMCA Fairthorne Group"
+          },
+          "address": {
+            "streetAddress": "El Taylor-Jenks, George WIlliams House, Southampton, SO14 0LG, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-223363",
+          "name": "Step by Step",
+          "identifier": {
+            "legalName": "Step by Step"
+          },
+          "address": {
+            "streetAddress": "36 36 Crimea Road, Aldershot , GU11 1UD, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-223364",
+          "name": "The Salvation Army",
+          "identifier": {
+            "legalName": "The Salvation Army"
+          },
+          "address": {
+            "streetAddress": "The Salvation Army, 101 Newington Causeway, Elephant & Castle, London, London, SE1 6BN, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-223365",
+          "name": "The Society of St James",
+          "identifier": {
+            "legalName": "The Society of St James"
+          },
+          "address": {
+            "streetAddress": "125 Albert Road South, Southampton, Hampshire, SO14 3FR, UNITED KINGDOM"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+        "name": "SOUTHAMPTON CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04-2",
+          "status": "active",
+          "date": "2022-01-12T00:00:00Z",
+          "datePublished": "2022-01-12T14:01:07Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-223360",
+              "name": "No Limits South"
+            },
+            {
+              "id": "GB-CFS-223361",
+              "name": "Two Saints Ltd"
+            },
+            {
+              "id": "GB-CFS-223362",
+              "name": "YMCA Fairthorne Group"
+            },
+            {
+              "id": "GB-CFS-223363",
+              "name": "Step by Step"
+            },
+            {
+              "id": "GB-CFS-223364",
+              "name": "The Salvation Army"
+            },
+            {
+              "id": "GB-CFS-223365",
+              "name": "The Society of St James"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-01-10T00:00:00Z",
+            "endDate": "2025-01-09T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "2",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/85899b6c-7f5e-486c-b683-6de30e6a4c74",
+              "datePublished": "2022-01-12T14:01:07Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "3",
+              "documentType": "tenderNotice",
+              "description": "Proactis Supplier Network",
+              "url": "https://supplierlive.proactisp2p.com/Account/Login?cid=sout019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04",
+      "id": "85899b6c-7f5e-486c-b683-6de30e6a4c74-499963",
+      "language": "en",
+      "date": "2022-01-12T14:11:58Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EC09/01/3155",
+        "title": "Housing Related Support Services Framework",
+        "description": "A review into the current provision of housing related support for vulnerable single adults, young people and young parents has been carried out and provides the basis for the services set out in the Framework specification (Annex A).\r\n      \r\n      To deliver these requirements, Southampton City Council (hereby The Council) wishes to work with a number of providers who can demonstrate that they have the ability to deliver high quality housing related support services to vulnerable single adults, young people and young parents.",
+        "datePublished": "2021-10-12T15:56:24+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85300000",
+            "description": "Social work and related services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85310000",
+            "description": "Social work services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SO14 7LY"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25629644,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-11-19T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-01-10T00:00:00Z",
+          "endDate": "2025-01-09T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+          "name": "SOUTHAMPTON CITY COUNCIL",
+          "identifier": {
+            "legalName": "SOUTHAMPTON CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/jxfb36Bw"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Civic Centre, Southampton, , ,",
+            "locality": "Southampton",
+            "postalCode": "SO14 7LY",
+            "countryName": "UNITED KINGDOM"
+          },
+          "contactPoint": {
+            "name": "Kate Tarrant",
+            "email": "tendermanagement@southampton.gov.uk",
+            "telephone": "023 8083 3000"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-4183173",
+          "name": "No Limits South",
+          "identifier": {
+            "legalName": "No Limits South",
+            "scheme": "GB-COH",
+            "id": "4183173"
+          },
+          "address": {
+            "streetAddress": "35 The Avenue, Southampton, SO17 1XN, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-26511R",
+          "name": "Two Saints Ltd",
+          "identifier": {
+            "legalName": "Two Saints Ltd",
+            "scheme": "GB-COH",
+            "id": "26511R"
+          },
+          "address": {
+            "streetAddress": "Fareham House , 69 High Street, Fareham , PO16 7BB, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-4336719",
+          "name": "YMCA Fairthorne Group",
+          "identifier": {
+            "legalName": "YMCA Fairthorne Group",
+            "scheme": "GB-COH",
+            "id": "4336719"
+          },
+          "address": {
+            "streetAddress": "El Taylor-Jenks, George WIlliams House, Southampton, SO14 0LG, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-2431825",
+          "name": "Step by Step",
+          "identifier": {
+            "legalName": "Step by Step",
+            "scheme": "GB-COH",
+            "id": "2431825"
+          },
+          "address": {
+            "streetAddress": "36 36 Crimea Road, Aldershot , GU11 1UD, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-259322",
+          "name": "The Salvation Army",
+          "identifier": {
+            "legalName": "The Salvation Army",
+            "scheme": "GB-COH",
+            "id": "259322"
+          },
+          "address": {
+            "streetAddress": "The Salvation Army, 101 Newington Causeway, Elephant & Castle, London, London, SE1 6BN, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-3009700",
+          "name": "The Society of St James",
+          "identifier": {
+            "legalName": "The Society of St James",
+            "scheme": "GB-COH",
+            "id": "3009700"
+          },
+          "address": {
+            "streetAddress": "125 Albert Road South, Southampton, Hampshire, SO14 3FR, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+        "name": "SOUTHAMPTON CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04-3",
+          "status": "active",
+          "date": "2022-01-12T00:00:00Z",
+          "datePublished": "2022-01-12T14:01:07Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-4183173",
+              "name": "No Limits South"
+            },
+            {
+              "id": "GB-COH-26511R",
+              "name": "Two Saints Ltd"
+            },
+            {
+              "id": "GB-COH-4336719",
+              "name": "YMCA Fairthorne Group"
+            },
+            {
+              "id": "GB-COH-2431825",
+              "name": "Step by Step"
+            },
+            {
+              "id": "GB-COH-259322",
+              "name": "The Salvation Army"
+            },
+            {
+              "id": "GB-COH-3009700",
+              "name": "The Society of St James"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-01-10T00:00:00Z",
+            "endDate": "2025-01-09T23:59:59Z"
+          },
+          "description": "No Limits South: Awarded Lot 5\r\n\r\nTwo Saints Ltd: Awarded Lots 2, 3 & 4\r\n\r\nYMCA Fairthorne Group: Awarded Lots 1 & 2\r\n\r\nStep by Step: Awarded Lot 5\r\n\r\nThe Salvation Army: Awarded Lot 1\r\n\r\nThe Society of St James: Awarded Lots 1, 2 & 5",
+          "documents": [
+            {
+              "id": "2",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/85899b6c-7f5e-486c-b683-6de30e6a4c74",
+              "datePublished": "2022-01-12T14:01:07Z",
+              "dateModified": "2022-01-12T14:20:23Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "3",
+              "documentType": "tenderNotice",
+              "description": "Proactis Supplier Network",
+              "url": "https://supplierlive.proactisp2p.com/Account/Login?cid=sout019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04",
+      "id": "85899b6c-7f5e-486c-b683-6de30e6a4c74-499972",
+      "language": "en",
+      "date": "2022-01-12T14:20:23Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EC09/01/3155",
+        "title": "Housing Related Support Services Framework",
+        "description": "A review into the current provision of housing related support for vulnerable single adults, young people and young parents has been carried out and provides the basis for the services set out in the Framework specification (Annex A).\r\n      \r\n      To deliver these requirements, Southampton City Council (hereby The Council) wishes to work with a number of providers who can demonstrate that they have the ability to deliver high quality housing related support services to vulnerable single adults, young people and young parents.",
+        "datePublished": "2021-10-12T15:56:24+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85300000",
+            "description": "Social work and related services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85310000",
+            "description": "Social work services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85311000",
+            "description": "Social work services with accommodation"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SO14 7LY"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25629644,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-11-19T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-01-10T00:00:00Z",
+          "endDate": "2025-01-09T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+          "name": "SOUTHAMPTON CITY COUNCIL",
+          "identifier": {
+            "legalName": "SOUTHAMPTON CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/jxfb36Bw"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Civic Centre, Southampton, , ,",
+            "locality": "Southampton",
+            "postalCode": "SO14 7LY",
+            "countryName": "UNITED KINGDOM"
+          },
+          "contactPoint": {
+            "name": "Kate Tarrant",
+            "email": "tendermanagement@southampton.gov.uk",
+            "telephone": "023 8083 3000"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-4183173",
+          "name": "No Limits South",
+          "identifier": {
+            "legalName": "No Limits South",
+            "scheme": "GB-COH",
+            "id": "4183173"
+          },
+          "address": {
+            "streetAddress": "35 The Avenue, Southampton, SO17 1XN, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-26511R",
+          "name": "Two Saints Ltd",
+          "identifier": {
+            "legalName": "Two Saints Ltd",
+            "scheme": "GB-COH",
+            "id": "26511R"
+          },
+          "address": {
+            "streetAddress": "Fareham House , 69 High Street, Fareham , PO16 7BB, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-4336719",
+          "name": "YMCA Fairthorne Group",
+          "identifier": {
+            "legalName": "YMCA Fairthorne Group",
+            "scheme": "GB-COH",
+            "id": "4336719"
+          },
+          "address": {
+            "streetAddress": "El Taylor-Jenks, George WIlliams House, Southampton, SO14 0LG, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-2431825",
+          "name": "Step by Step",
+          "identifier": {
+            "legalName": "Step by Step",
+            "scheme": "GB-COH",
+            "id": "2431825"
+          },
+          "address": {
+            "streetAddress": "36 36 Crimea Road, Aldershot , GU11 1UD, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-259322",
+          "name": "The Salvation Army",
+          "identifier": {
+            "legalName": "The Salvation Army",
+            "scheme": "GB-COH",
+            "id": "259322"
+          },
+          "address": {
+            "streetAddress": "The Salvation Army, 101 Newington Causeway, Elephant & Castle, London, London, SE1 6BN, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-3009700",
+          "name": "The Society of St James",
+          "identifier": {
+            "legalName": "The Society of St James",
+            "scheme": "GB-COH",
+            "id": "3009700"
+          },
+          "address": {
+            "streetAddress": "125 Albert Road South, Southampton, Hampshire, SO14 3FR, UNITED KINGDOM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-22981R",
+          "name": "Home Group Limited",
+          "identifier": {
+            "legalName": "Home Group Limited",
+            "scheme": "GB-COH",
+            "id": "22981R"
+          },
+          "address": {
+            "streetAddress": "2 Gosforth Park Way\r\nNE12 8ET"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+        "name": "SOUTHAMPTON CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04-4",
+          "status": "active",
+          "date": "2022-01-12T00:00:00Z",
+          "datePublished": "2022-01-12T14:01:07Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-4183173",
+              "name": "No Limits South"
+            },
+            {
+              "id": "GB-COH-26511R",
+              "name": "Two Saints Ltd"
+            },
+            {
+              "id": "GB-COH-4336719",
+              "name": "YMCA Fairthorne Group"
+            },
+            {
+              "id": "GB-COH-2431825",
+              "name": "Step by Step"
+            },
+            {
+              "id": "GB-COH-259322",
+              "name": "The Salvation Army"
+            },
+            {
+              "id": "GB-COH-3009700",
+              "name": "The Society of St James"
+            },
+            {
+              "id": "GB-COH-22981R",
+              "name": "Home Group Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-01-10T00:00:00Z",
+            "endDate": "2025-01-09T23:59:59Z"
+          },
+          "description": "No Limits South: Awarded Lot 5\r\n\r\nTwo Saints Ltd: Awarded Lots 2, 3 & 4\r\n\r\nYMCA Fairthorne Group: Awarded Lots 1 & 2\r\n\r\nStep by Step: Awarded Lot 5\r\n\r\nThe Salvation Army: Awarded Lot 1\r\n\r\nThe Society of St James: Awarded Lots 1, 2 & 5",
+          "documents": [
+            {
+              "id": "2",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/85899b6c-7f5e-486c-b683-6de30e6a4c74",
+              "datePublished": "2022-01-12T14:01:07Z",
+              "dateModified": "2022-01-12T14:20:23Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "3",
+              "documentType": "tenderNotice",
+              "description": "Proactis Supplier Network",
+              "url": "https://supplierlive.proactisp2p.com/Account/Login?cid=sout019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-138b9950-b080-4ac1-a3c9-f6cb67bea054",
+      "id": "588cf7b3-a866-45ab-8f3e-0df5f389b46e-498561",
+      "language": "en",
+      "date": "2022-01-06T17:45:09Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MT224860",
+        "title": "Social Housing Emerging Disruptors (SHED) Framework",
+        "description": "Established in 2004, Procurement for Housing (PfH) is a national procurement consortium dedicated to the social housing sector and supported by the National Housing Federation (NHF), Chartered Institute of Housing (CIH) and HouseMark.  Collectively our Members manage more than 75% of UK' social housing stock, with PfH helping them to achieve efficiency savings using a wide range of services including framework agreements, spend analyses, strategy reviews, consolidated billing and comprehensive reporting.PfH is a contracting authority under Regulation 2 of the Public Contracts Regulations 2015 (\"PCR 2015\") and a central purchasing body under regulation 37 PCR 2015.Please refer to www.pfh.co.uk for additional information.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79900000",
+          "description": "Miscellaneous business and business-related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 100000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-09-30T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-12-13T00:00:00Z",
+          "endDate": "2024-12-16T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-26226",
+          "name": "Procurement for Housing",
+          "identifier": {
+            "legalName": "Procurement for Housing"
+          },
+          "address": {
+            "streetAddress": "2 Olympic Way, Woolston Grange Avenue",
+            "locality": "Birchwood, Warrington",
+            "postalCode": "WA2 0YL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jane Brighouse",
+            "email": "jbrighouse@pfh.co.uk",
+            "telephone": "+44 7971266217"
+          },
+          "details": {
+            "url": "http://www.procurementforhousing.co.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-12950455",
+          "name": "Bimdl Limited",
+          "identifier": {
+            "legalName": "Bimdl Limited",
+            "scheme": "GB-COH",
+            "id": "12950455"
+          },
+          "address": {
+            "streetAddress": "Central Research Facility Blyth Road, Hayes"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-03197379",
+          "name": "SMS Energy Services Ltd",
+          "identifier": {
+            "legalName": "SMS Energy Services Ltd",
+            "scheme": "GB-COH",
+            "id": "03197379"
+          },
+          "address": {
+            "streetAddress": "Prennau House, Copse Walk, Cardiff Gate Business Park, Cardiff, Cardiff Gate Business Park, Cardiff"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-OC361169",
+          "name": "PRP",
+          "identifier": {
+            "legalName": "PRP",
+            "scheme": "GB-COH",
+            "id": "OC361169"
+          },
+          "address": {
+            "streetAddress": "10 Lindsey Street, London"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-193983",
+          "name": "XMReality AB",
+          "identifier": {
+            "legalName": "XMReality AB",
+            "scheme": "GB-COH"
+          },
+          "address": {
+            "streetAddress": "Gr?nden Duvan 3, Link?ping"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-07330658",
+          "name": "DATAport Media Limited",
+          "identifier": {
+            "legalName": "DATAport Media Limited",
+            "scheme": "GB-COH",
+            "id": "07330658"
+          },
+          "address": {
+            "streetAddress": "14 Heritage Park, Hayes Way, Cannock"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-07972299",
+          "name": "Q-Bot Limited",
+          "identifier": {
+            "legalName": "Q-Bot Limited",
+            "scheme": "GB-COH",
+            "id": "07972299"
+          },
+          "address": {
+            "streetAddress": "Block G, Riverside Business Centre, Haldane Place, London"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-12417319",
+          "name": "Illumar",
+          "identifier": {
+            "legalName": "Illumar",
+            "scheme": "GB-COH",
+            "id": "12417319"
+          },
+          "address": {
+            "streetAddress": "Unit 2 Olympic Way , Birchwood, Warrington"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-10310566",
+          "name": "Bimsense",
+          "identifier": {
+            "legalName": "Bimsense",
+            "scheme": "GB-COH",
+            "id": "10310566"
+          },
+          "address": {
+            "streetAddress": "31-358 Queen Street, Hull"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-SC531429",
+          "name": "iOpt Limited",
+          "identifier": {
+            "legalName": "iOpt Limited",
+            "scheme": "GB-COH",
+            "id": "SC531429"
+          },
+          "address": {
+            "streetAddress": "1/3  82 Mitchell Street, Glasgow"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-SC015341",
+          "name": "Green Action Trust",
+          "identifier": {
+            "legalName": "Green Action Trust",
+            "scheme": "GB-COH",
+            "id": "SC015341"
+          },
+          "address": {
+            "streetAddress": "Hillhouseridge, Shottskirk Road, Shotts"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-06912451",
+          "name": "Crystal Clear Window Works",
+          "identifier": {
+            "legalName": "Crystal Clear Window Works",
+            "scheme": "GB-COH",
+            "id": "06912451"
+          },
+          "address": {
+            "streetAddress": "1 Summerfield Bussines Units, 535 Bradford Road, Brighouse"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-11905862",
+          "name": "Huume Limited",
+          "identifier": {
+            "legalName": "Huume Limited",
+            "scheme": "GB-COH",
+            "id": "11905862"
+          },
+          "address": {
+            "streetAddress": "Suite LP43274, 20-22 Wenlock Road, London"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-11567209",
+          "name": "Rubixx Solutions Ltd",
+          "identifier": {
+            "legalName": "Rubixx Solutions Ltd",
+            "scheme": "GB-COH",
+            "id": "11567209"
+          },
+          "address": {
+            "streetAddress": "Suite 3 Beacon House (Unit Qa) , Beacon Business Park, Weston Road, Stafford"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-08301810",
+          "name": "Propeller Powered Ltd",
+          "identifier": {
+            "legalName": "Propeller Powered Ltd",
+            "scheme": "GB-COH",
+            "id": "08301810"
+          },
+          "address": {
+            "streetAddress": "272 Manchester Road, Droylsden, Manchester"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-SC663219",
+          "name": "Power Circle Projects Ltd",
+          "identifier": {
+            "legalName": "Power Circle Projects Ltd",
+            "scheme": "GB-COH",
+            "id": "SC663219"
+          },
+          "address": {
+            "streetAddress": "17 Kenilworth Road, Bridge of Allan, Stirling"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-07946947",
+          "name": "Manifest",
+          "identifier": {
+            "legalName": "Manifest",
+            "scheme": "GB-COH",
+            "id": "07946947"
+          },
+          "address": {
+            "streetAddress": "140 Lynmouth Road, London"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-SC536328",
+          "name": "Chameleon Digitization",
+          "identifier": {
+            "legalName": "Chameleon Digitization",
+            "scheme": "GB-COH",
+            "id": "SC536328"
+          },
+          "address": {
+            "streetAddress": "McDermott House, Perth"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-10947573",
+          "name": "Vantage UAV Ltd",
+          "identifier": {
+            "legalName": "Vantage UAV Ltd",
+            "scheme": "GB-COH",
+            "id": "10947573"
+          },
+          "address": {
+            "streetAddress": "86-90 Paul St, London"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-26226",
+        "name": "Procurement for Housing"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-138b9950-b080-4ac1-a3c9-f6cb67bea054-1",
+          "status": "active",
+          "date": "2021-12-13T00:00:00Z",
+          "datePublished": "2022-01-06T17:45:09Z",
+          "value": {
+            "amount": 100000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-12950455",
+              "name": "Bimdl Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-12-13T00:00:00Z",
+            "endDate": "2024-12-16T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/588cf7b3-a866-45ab-8f3e-0df5f389b46e",
+              "datePublished": "2022-01-06T17:45:09Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "NOTE: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at the link provided.",
+              "url": "https://www.mytenders.co.uk/search/show/search_view.aspx?ID=JAN163466"
+            }
+          ]
+        },
+        {
+          "id": "ocds-b5fd17-138b9950-b080-4ac1-a3c9-f6cb67bea054-2",
+          "status": "active",
+          "date": "2021-12-13T00:00:00Z",
+          "datePublished": "2022-01-06T17:45:09Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-03197379",
+              "name": "SMS Energy Services Ltd"
+            },
+            {
+              "id": "GB-COH-OC361169",
+              "name": "PRP"
+            },
+            {
+              "id": "GB-CFS-193983",
+              "name": "XMReality AB"
+            },
+            {
+              "id": "GB-COH-07330658",
+              "name": "DATAport Media Limited"
+            },
+            {
+              "id": "GB-COH-07972299",
+              "name": "Q-Bot Limited"
+            },
+            {
+              "id": "GB-COH-12417319",
+              "name": "Illumar"
+            },
+            {
+              "id": "GB-COH-10310566",
+              "name": "Bimsense"
+            },
+            {
+              "id": "GB-COH-SC531429",
+              "name": "iOpt Limited"
+            },
+            {
+              "id": "GB-COH-SC015341",
+              "name": "Green Action Trust"
+            },
+            {
+              "id": "GB-COH-06912451",
+              "name": "Crystal Clear Window Works"
+            },
+            {
+              "id": "GB-COH-11905862",
+              "name": "Huume Limited"
+            },
+            {
+              "id": "GB-COH-11567209",
+              "name": "Rubixx Solutions Ltd"
+            },
+            {
+              "id": "GB-COH-08301810",
+              "name": "Propeller Powered Ltd"
+            },
+            {
+              "id": "GB-COH-SC663219",
+              "name": "Power Circle Projects Ltd"
+            },
+            {
+              "id": "GB-COH-07946947",
+              "name": "Manifest"
+            },
+            {
+              "id": "GB-COH-SC536328",
+              "name": "Chameleon Digitization"
+            },
+            {
+              "id": "GB-COH-10947573",
+              "name": "Vantage UAV Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-12-13T00:00:00Z",
+            "endDate": "2024-12-16T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/588cf7b3-a866-45ab-8f3e-0df5f389b46e",
+              "datePublished": "2022-01-06T17:45:09Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "NOTE: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at the link provided.",
+              "url": "https://www.mytenders.co.uk/search/show/search_view.aspx?ID=JAN163466"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a91b24ee-7c54-4448-b03f-3ff0a01ff3d6",
+      "id": "9a380eea-e504-4d8f-8ef9-5b74990fc377-498339",
+      "language": "en",
+      "date": "2022-01-06T11:41:47Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN577128",
+        "title": "Sheltered Housing Fire Alarm Upgrade",
+        "description": "Contract awarded for \"Sheltered Housing Fire Alarm Upgrade\"",
+        "datePublished": "2021-10-20T13:16:57+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45312100",
+          "description": "Fire-alarm system installation work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 960000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-11-12T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-01-01T00:00:00Z",
+          "endDate": "2024-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-DAR",
+          "name": "Dartford Borough Council",
+          "identifier": {
+            "legalName": "Dartford Borough Council",
+            "scheme": "GB-LAE",
+            "id": "DAR"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Home Gardens",
+            "locality": "Dartford",
+            "postalCode": "DA1 1DR",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Dartford Borough Council Procurement Team",
+            "email": "procurement@dartford.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-2504054",
+          "name": "Sureserve Fire & Electrical Limited",
+          "identifier": {
+            "legalName": "Sureserve Fire & Electrical Limited",
+            "scheme": "GB-COH",
+            "id": "2504054"
+          },
+          "address": {
+            "streetAddress": "Regent Business Centre, 6 Jubilee Road, Burgess Hill, West Sussex, RH15 9TL"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-DAR",
+        "name": "Dartford Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a91b24ee-7c54-4448-b03f-3ff0a01ff3d6-1",
+          "status": "active",
+          "date": "2021-12-23T00:00:00Z",
+          "datePublished": "2022-01-06T11:41:47Z",
+          "value": {
+            "amount": 852093,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-2504054",
+              "name": "Sureserve Fire & Electrical Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-01-17T00:00:00Z",
+            "endDate": "2024-01-16T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/9a380eea-e504-4d8f-8ef9-5b74990fc377",
+              "datePublished": "2022-01-06T11:41:47Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

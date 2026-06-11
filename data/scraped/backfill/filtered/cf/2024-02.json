@@ -1,0 +1,2996 @@
+{
+  "portal": "cf",
+  "year": 2024,
+  "month": 2,
+  "raw_count": 5742,
+  "filtered_count": 18,
+  "pages": 58,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-7745b9d9-8809-40a0-9495-8ed26f7e21c9",
+      "id": "0fea6e53-5b96-493c-8dda-9d76c18e5cc6-727783",
+      "language": "en",
+      "date": "2024-02-29T12:09:34Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20240229120929-104102",
+        "title": "RKH - 1501363 Supported Living - Enhanced Accommodation based services",
+        "description": "To provide Supported Living Services to a member of Hull's public done through the Adult Residential / Supported Living DPS. Please note the cost figure is for the annual cost of the contract. The contract length varies due to the nature of the service and may be shorter or longer then the published duration.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 63627,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2024-01-23T11:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-02-28T00:00:00Z",
+          "endDate": "2034-02-24T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-188416",
+          "name": "Hull City Council",
+          "identifier": {
+            "legalName": "Hull City Council"
+          },
+          "address": {
+            "streetAddress": "The Guildhall, Alfred Gelder Street",
+            "locality": "Hull",
+            "postalCode": "HU1 2AA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Billy Cowlam",
+            "email": "billy.cowlam@hullcc.gov.uk",
+            "telephone": "+44 1482613582"
+          },
+          "details": {
+            "url": "https://www.hull.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-261802",
+          "name": "LPTC SOLUTIONS LTD",
+          "identifier": {
+            "legalName": "LPTC SOLUTIONS LTD"
+          },
+          "address": {
+            "streetAddress": "CEME Campus, Marsh way\nRM13 8EU\nRainham\nUnited Kingdom"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-188416",
+        "name": "Hull City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7745b9d9-8809-40a0-9495-8ed26f7e21c9-1",
+          "status": "active",
+          "date": "2024-02-29T00:00:00Z",
+          "datePublished": "2024-02-29T12:09:34Z",
+          "value": {
+            "amount": 63627,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-261802",
+              "name": "LPTC SOLUTIONS LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-02-28T00:00:00Z",
+            "endDate": "2034-02-24T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/0fea6e53-5b96-493c-8dda-9d76c18e5cc6",
+              "datePublished": "2024-02-29T12:09:34Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=77045&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104102"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3fd69acb-152b-492e-8d71-6c366d731c75",
+      "id": "da69c9d0-e488-4e4b-aeb6-967fd55de8e0-727779",
+      "language": "en",
+      "date": "2024-02-29T12:05:49Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "tender_377477/1320065",
+        "title": "Roof Void Fire Break Compartmentation  Works - Sheltered Housing Blocks (x2)",
+        "description": "Following a competitive exercise this contract has been awarded to IFP. \r\n\r\nFollowing SQ, Technical and Commercial Evaluations with a 60% Quality and 40% Pricing split. IFP submitted the most economical advantageous tender. \r\n\r\n This project is part of an upgrade to lofts to improve the fire stopping between properties within x2 Sheltered Housing Blocks to stop the spread of fire. \r\n\r\nThe Works include the Installation of fire breaks within roof voids to continue compartmentation from top floor flats vertically and all other associated works.\r\n\r\nThe works will satisfy the requirements of all recent relevant Building Regulations such as Approved Document B Fire Safety, Approved Document K Protection from Falling and Approved Document F Ventilation.\r\n\r\nThe Contractor is to ensure all designs are compliant with all recent relevant British Standards such as BS 5250 Management of Moisture in Buildings, BS 5839 Fire Detection and BS 9999 Fire Safety in Design of Buildings, BS 9991 Fire Safety in the design, management and use of residential buildings.\r\n\r\nContractors are to be fully aware of the complexities and requirements of working within Sheltered Housing Schemes.\r\n\r\nInterested bidders must submit their proposal via our Sourcing platform - Capitalesourcing. Contractors must register with CapE to submit a proposal if they have not already done so. \r\n\r\nMore information is available in the link below \r\n\r\nhttps://www.capitalesourcing.com/esop/guest/go/opportunity/detail?opportunityId=56794\r\n\r\nAdditional information: \r\nThis project is part of an upgrade to lofts to improve the fire stopping between properties within x2 Sheltered Housing Blocks to stop the spread of fire. Contractors",
+        "datePublished": "2023-08-09T12:35:17+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45343000",
+          "description": "Fire-prevention installation works"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45343100",
+            "description": "Fireproofing work"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "W10 6SQ"
+              },
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 442570.23,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2023-09-06T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2024-02-19T00:00:00Z",
+          "endDate": "2024-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-222102",
+          "name": "capitalEsourcing",
+          "identifier": {
+            "legalName": "capitalEsourcing"
+          },
+          "address": {
+            "streetAddress": "Kensington Town Hall, Hornton Street,",
+            "locality": "London",
+            "postalCode": "W8 7NX",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Caroline Stone",
+            "email": "Caroline.Stone@rbkc.gov.uk",
+            "telephone": "784015878"
+          },
+          "details": {
+            "url": "https://www.rbkc.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-275386",
+          "name": "Infinity Fire Prevention Limited",
+          "identifier": {
+            "legalName": "Infinity Fire Prevention Limited"
+          },
+          "address": {
+            "streetAddress": "Flat 1 Sir Matt Busby Way, Old Trafford, Manchester, UK, M16 0QG"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-222102",
+        "name": "capitalEsourcing"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3fd69acb-152b-492e-8d71-6c366d731c75-1",
+          "status": "active",
+          "date": "2024-02-19T00:00:00Z",
+          "datePublished": "2024-02-29T12:05:48Z",
+          "value": {
+            "amount": 442570.23,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-275386",
+              "name": "Infinity Fire Prevention Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-02-15T00:00:00Z",
+            "endDate": "2024-04-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/da69c9d0-e488-4e4b-aeb6-967fd55de8e0",
+              "datePublished": "2024-02-29T12:05:48Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Roof Void Fire Break Compartmentation Works",
+              "url": "https://www.capitalesourcing.com/esop/guest/go/opportunity/detail?opportunityId=56794"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-50f5b7cd-92e5-4566-bbe3-a11214935d0f",
+      "id": "c1ef1ae0-6173-45b9-9e51-06078fae9dfc-726738",
+      "language": "en",
+      "date": "2024-02-26T17:05:25Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN677298-41003284",
+        "title": "G&R/HLN/Emergency Accommodation Framework",
+        "description": "G&R/HLN/Emergency Accommodation Framework\\r\r\n\\r\r\nBristol City Council in collaboration with South Gloucestershire Council intends to let an Open Framework for the provision of its Emergency Accommodation Service. \\r\r\n\\r\r\nThe procurement process being used for this project is that of a revised Dynamic Purchasing System (DPS), referred to as an \"Open Framework\".  The Open Framework will be open for tenderers to join throughout the life of the contract.\\r\r\n\\r\r\nThis process has been undertaken on a voluntary basis with the Services being exempt from Part 2 of the Public Contracts Regulations 2015 by virtue of Regulation 10(1)(a), but with a view to attracting as many Service Providers as possible.\\r\r\n\\r\r\nThis is an award notice relating to the establishment of this Framework. \\r\r\n\\r\r\nProviders wishing to apply can do so via - https://procontract.due-north.com/Advert?advertId=e5643a26-ce53-ee11-8124-005056b64545\\r\r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 96000000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2023-10-16T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2027-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        }
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-256960",
+          "name": "Access2Homes Ltd",
+          "identifier": {
+            "legalName": "Access2Homes Ltd"
+          },
+          "address": {
+            "streetAddress": "BS35LY"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274796",
+          "name": "Auvelle Limited",
+          "identifier": {
+            "legalName": "Auvelle Limited"
+          },
+          "address": {
+            "streetAddress": "W1W 7LT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274797",
+          "name": "Bell Hill Housing Limited",
+          "identifier": {
+            "legalName": "Bell Hill Housing Limited"
+          },
+          "address": {
+            "streetAddress": "BS16 5TN"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274798",
+          "name": "Caridon property",
+          "identifier": {
+            "legalName": "Caridon property"
+          },
+          "address": {
+            "streetAddress": "Surrey"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274799",
+          "name": "GLR Care and Support Ltd",
+          "identifier": {
+            "legalName": "GLR Care and Support Ltd"
+          },
+          "address": {
+            "streetAddress": "BS8 2AG"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-116867",
+          "name": "The Housing Network",
+          "identifier": {
+            "legalName": "The Housing Network"
+          },
+          "address": {
+            "streetAddress": "lu1 3lu"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-198260",
+          "name": "Elim Housing",
+          "identifier": {
+            "legalName": "Elim Housing"
+          },
+          "address": {
+            "streetAddress": "BS35 3QH"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-50f5b7cd-92e5-4566-bbe3-a11214935d0f-2",
+          "status": "active",
+          "date": "2023-12-01T00:00:00Z",
+          "datePublished": "2024-02-26T17:05:24Z",
+          "value": {
+            "amount": 96000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-256960",
+              "name": "Access2Homes Ltd"
+            },
+            {
+              "id": "GB-CFS-274796",
+              "name": "Auvelle Limited"
+            },
+            {
+              "id": "GB-CFS-274797",
+              "name": "Bell Hill Housing Limited"
+            },
+            {
+              "id": "GB-CFS-274798",
+              "name": "Caridon property"
+            },
+            {
+              "id": "GB-CFS-274799",
+              "name": "GLR Care and Support Ltd"
+            },
+            {
+              "id": "GB-CFS-116867",
+              "name": "The Housing Network"
+            },
+            {
+              "id": "GB-CFS-198260",
+              "name": "Elim Housing"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-12-04T00:00:00Z",
+            "endDate": "2027-12-03T23:59:59Z"
+          },
+          "description": "Access2Homes Ltd: Round 1\r\n\r\nAuvelle Limited: Round 1\r\n\r\nBell Hill Housing Limited: Round 1\r\n\r\nCaridon property: Round 1\r\n\r\nGLR Care and Support Ltd: Round 1\r\n\r\nThe Housing Network: Round 1\r\n\r\nElim Housing: Round 1",
+          "documents": [
+            {
+              "id": "3",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c1ef1ae0-6173-45b9-9e51-06078fae9dfc",
+              "datePublished": "2024-02-26T17:05:24Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=e5643a26-ce53-ee11-8124-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-50f5b7cd-92e5-4566-bbe3-a11214935d0f",
+      "id": "5fc0b232-62dc-4b1d-be6a-ec07307fe3cd-726373",
+      "language": "en",
+      "date": "2024-02-24T14:23:18Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN677298-41003284",
+        "title": "G&R/HLN/Emergency Accommodation Framework",
+        "description": "G&R/HLN/Emergency Accommodation Framework\r\n\r\nBristol City Council in collaboration with South Gloucestershire Council intends to let an Open Framework for the provision of its Emergency Accommodation Service. \r\n\r\nThe procurement process being used for this project is that of a revised Dynamic Purchasing System (DPS), referred to as an \"Open Framework\".  The Open Framework will be open for tenderers to join throughout the life of the contract.\r\n\r\nThis process has been undertaken on a voluntary basis with the Services being exempt from Part 2 of the Public Contracts Regulations 2015 by virtue of Regulation 10(1)(a), but with a view to attracting as many Service Providers as possible.\r\n\r\nThis is an award notice relating to the establishment of this Framework. \r\n\r\nProviders wishing to apply can do so via - https://procontract.due-north.com/Advert?advertId=e5643a26-ce53-ee11-8124-005056b64545\r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 96000000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2023-10-16T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2027-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        }
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-256960",
+          "name": "Access2Homes Ltd",
+          "identifier": {
+            "legalName": "Access2Homes Ltd"
+          },
+          "address": {
+            "streetAddress": "BS35LY"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274796",
+          "name": "Auvelle Limited",
+          "identifier": {
+            "legalName": "Auvelle Limited"
+          },
+          "address": {
+            "streetAddress": "W1W 7LT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274797",
+          "name": "Bell Hill Housing Limited",
+          "identifier": {
+            "legalName": "Bell Hill Housing Limited"
+          },
+          "address": {
+            "streetAddress": "BS16 5TN"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274798",
+          "name": "Caridon property",
+          "identifier": {
+            "legalName": "Caridon property"
+          },
+          "address": {
+            "streetAddress": "Surrey"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274799",
+          "name": "GLR Care and Support Ltd",
+          "identifier": {
+            "legalName": "GLR Care and Support Ltd"
+          },
+          "address": {
+            "streetAddress": "BS8 2AG"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-116867",
+          "name": "The Housing Network",
+          "identifier": {
+            "legalName": "The Housing Network"
+          },
+          "address": {
+            "streetAddress": "lu1 3lu"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-50f5b7cd-92e5-4566-bbe3-a11214935d0f-1",
+          "status": "active",
+          "date": "2023-12-01T00:00:00Z",
+          "datePublished": "2024-02-24T14:23:17Z",
+          "value": {
+            "amount": 96000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-256960",
+              "name": "Access2Homes Ltd"
+            },
+            {
+              "id": "GB-CFS-274796",
+              "name": "Auvelle Limited"
+            },
+            {
+              "id": "GB-CFS-274797",
+              "name": "Bell Hill Housing Limited"
+            },
+            {
+              "id": "GB-CFS-274798",
+              "name": "Caridon property"
+            },
+            {
+              "id": "GB-CFS-274799",
+              "name": "GLR Care and Support Ltd"
+            },
+            {
+              "id": "GB-CFS-116867",
+              "name": "The Housing Network"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-12-04T00:00:00Z",
+            "endDate": "2027-12-03T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5fc0b232-62dc-4b1d-be6a-ec07307fe3cd",
+              "datePublished": "2024-02-24T14:23:17Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=e5643a26-ce53-ee11-8124-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-98fca168-de7a-465d-9dcf-48dbf855f3c4",
+      "id": "6ed25fdb-1f9a-4ea3-958a-fbcea84af6f9-726275",
+      "language": "en",
+      "date": "2024-02-23T15:41:58Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PF/PH/23/1437",
+        "title": "LPS CARE - Provision of Short Term Accommodation Services for People With Complex Needs - LCC25848",
+        "description": "The Complex Needs Housing Contract aims to provide opportunities for behaviour change, health improvements and to deliver positive outcomes for individuals with Complex Needs, families and communities.\r\n\r\nA person with 'complex needs' is someone with two or more needs which typically interact with and exacerbate one another affecting their physical, mental, social or financial wellbeing. An estimated 60,000 people across England experience at least two of the following: homelessness, reoffending, problematic substance misuse and mental ill health.\r\n\r\nThe intended target group require a range of support needs including mental health, substance misuse, a history of offending behaviour, other diagnosed and undiagnosed conditions and/or challenging behaviours. The target population includes many who are often found at the margins of society; who experience repeat homelessness; rough sleeping and those who find it difficult to secure and maintain independent living because of the level of their compounded or complex needs. The Service will be expected to deliver support effectively to individuals who are in crisis, present challenging behaviour issues and who may struggle to live within boundaries and engage in support.  \r\n\r\nStaff will work with residents to help them identify their own strengths and goals, learn new skills, gain knowledge and increase self-awareness.  This conditional support enables complex and entrenched behaviours to be addressed, with a view to leading stable independent lives.\r\n\r\nThe success of the Service will be judged by the extent to which it meaningfully engages with service users; The Service will directly address underlying issues and develop personal capacity and recovery capital.\r\n\r\nAs part of their tender submission, it will be the provider's responsibility to source all accommodation and ensure this accommodation meets with minimum and maximum requirements stated.\r\n\r\nThe contracts are to be procured to commence for 1 April 2024.",
+        "datePublished": "2023-10-03T14:48:58+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 9900000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2023-11-10T11:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-04-01T00:00:00+01:00",
+          "endDate": "2028-03-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/v2gr32H4",
+          "name": "Lancashire County Council",
+          "identifier": {
+            "legalName": "Lancashire County Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/v2gr32H4"
+          },
+          "address": {
+            "streetAddress": "County Hall",
+            "locality": "Preston",
+            "postalCode": "PR1 0LD",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jessica Brindle",
+            "email": "caphprocurement@lancashire.gov.uk",
+            "telephone": "01772 534966  ext 3"
+          },
+          "details": {
+            "url": "https://www.lancashire.gov.uk/iSupplier/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-274732",
+          "name": "ACORN RECOVERY PROJECTS",
+          "identifier": {
+            "legalName": "ACORN RECOVERY PROJECTS"
+          },
+          "address": {
+            "streetAddress": "Centenary Court, Croft Street, Burnley, Lancashire, BB11 2ED"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274733",
+          "name": "CALICO HOMES LTD",
+          "identifier": {
+            "legalName": "CALICO HOMES LTD"
+          },
+          "address": {
+            "streetAddress": "Centenary Court, Croft Street, Burnley, Lancashire, BB11 2ED"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274734",
+          "name": "CREATIVE SUPPORT LTD",
+          "identifier": {
+            "legalName": "CREATIVE SUPPORT LTD"
+          },
+          "address": {
+            "streetAddress": "Wellington House, 131, Wellington Road South, Stockport, SK1 3TS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274726",
+          "name": "EMERGING FUTURES",
+          "identifier": {
+            "legalName": "EMERGING FUTURES"
+          },
+          "address": {
+            "streetAddress": "Glen Valley House, 634 Bacup Road,  Waterfoot, Rossendale, Lancashire, BB4 7AM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274735",
+          "name": "EXCEL HOUSING SOLUTIONS",
+          "identifier": {
+            "legalName": "EXCEL HOUSING SOLUTIONS"
+          },
+          "address": {
+            "streetAddress": "Unit 6b, Vesty Business Park, Vesty Road, Bootle, England, L30 1NY."
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274736",
+          "name": "WEST LANCS CRISIS & INFORMATION CENTRE",
+          "identifier": {
+            "legalName": "WEST LANCS CRISIS & INFORMATION CENTRE"
+          },
+          "address": {
+            "streetAddress": "Birchwood Foyer, Hartland, Birch Green, Skelmersdale"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/v2gr32H4",
+        "name": "Lancashire County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-98fca168-de7a-465d-9dcf-48dbf855f3c4-1",
+          "status": "active",
+          "date": "2024-01-05T00:00:00Z",
+          "datePublished": "2024-02-23T15:41:56Z",
+          "value": {
+            "amount": 8702598,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-274732",
+              "name": "ACORN RECOVERY PROJECTS"
+            },
+            {
+              "id": "GB-CFS-274733",
+              "name": "CALICO HOMES LTD"
+            },
+            {
+              "id": "GB-CFS-274734",
+              "name": "CREATIVE SUPPORT LTD"
+            },
+            {
+              "id": "GB-CFS-274726",
+              "name": "EMERGING FUTURES"
+            },
+            {
+              "id": "GB-CFS-274735",
+              "name": "EXCEL HOUSING SOLUTIONS"
+            },
+            {
+              "id": "GB-CFS-274736",
+              "name": "WEST LANCS CRISIS & INFORMATION CENTRE"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-04-01T00:00:00+01:00",
+            "endDate": "2028-03-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/6ed25fdb-1f9a-4ea3-958a-fbcea84af6f9",
+              "datePublished": "2024-02-23T15:41:56Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c275cc3b-64eb-4d69-b2ea-74d223b3768a",
+      "id": "3b444edc-74bf-4579-af8d-315b6b4c7a3f-726259",
+      "language": "en",
+      "date": "2024-02-23T15:08:40Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LCC30324",
+        "title": "Provision of Short Term Accommodation Services for People With Complex Needs in Preston",
+        "description": "\"The Complex Needs Housing Contract aims to provide opportunities for behaviour change, health improvements and to deliver positive outcomes for individuals with Complex Needs, families and communities.\r\n\r\nThis notice concerns sercvice provison in Preston only.\r\n\r\nA person with 'complex needs' is someone with two or more needs which typically interact with and exacerbate one another affecting their physical, mental, social or financial wellbeing. An estimated 60,000 people across England experience at least two of the following: homelessness, reoffending, problematic substance misuse and mental ill health.\r\n\r\nThe intended target group require a range of support needs including mental health, substance misuse, a history of offending behaviour, other diagnosed and undiagnosed conditions and/or challenging behaviours. The target population includes many who are often found at the margins of society; who experience repeat homelessness; rough sleeping and those who find it difficult to secure and maintain independent living because of the level of their compounded or complex needs. The Service will be expected to deliver support effectively to individuals who are in crisis, present challenging behaviour issues and who may struggle to live within boundaries and engage in support.  \r\n\r\nStaff will work with residents to help them identify their own strengths and goals, learn new skills, gain knowledge and increase self-awareness.  This conditional support enables complex and entrenched behaviours to be addressed, with a view to leading stable independent lives.\r\n\r\nThe success of the Service will be judged by the extent to which it meaningfully engages with service users; The Service will directly address underlying issues and develop personal capacity and recovery capital.\r\n\r\nAs part of their tender submission, it will be the provider's responsibility to source all accommodation and ensure this accommodation meets with minimum and maximum requirements stated.\r\n\r\nThe Service is anticipated to commence in June 2024.\"\r\n\r\nAdditional information: Christmas/New Year Support Hours\r\nPlease note the e-tendering help line will be closed from 4.00pm on Friday 22nd December 2023 and will reopen at 10.00am on Wednesday 3rd January 2024. \r\nEmails sent to PIM@lancashire.gov.uk may be responded to between 10.00am on Thursday 28th December 2023 and 4.00pm on Friday 29th December 2023.",
+        "datePublished": "2023-12-22T12:39:59Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 101000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2024-01-12T11:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-06-01T00:00:00+01:00",
+          "endDate": "2028-05-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/v2gr32H4",
+          "name": "Lancashire County Council",
+          "identifier": {
+            "legalName": "Lancashire County Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/v2gr32H4"
+          },
+          "address": {
+            "streetAddress": "Fishergate",
+            "locality": "Preston",
+            "postalCode": "PR18XJ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jessica Brindle",
+            "email": "caphprocurement@lancashire.gov.uk",
+            "telephone": "01772 534966"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-274726",
+          "name": "EMERGING FUTURES",
+          "identifier": {
+            "legalName": "EMERGING FUTURES"
+          },
+          "address": {
+            "streetAddress": "Glen Valley House, 634 Bacup Road,  Waterfoot, Rossendale, Lancashire, BB4 7AM"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/v2gr32H4",
+        "name": "Lancashire County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c275cc3b-64eb-4d69-b2ea-74d223b3768a-1",
+          "status": "active",
+          "date": "2024-02-13T00:00:00Z",
+          "datePublished": "2024-02-23T15:08:39Z",
+          "value": {
+            "amount": 863404,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-274726",
+              "name": "EMERGING FUTURES"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-06-01T00:00:00+01:00",
+            "endDate": "2028-05-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/3b444edc-74bf-4579-af8d-315b6b4c7a3f",
+              "datePublished": "2024-02-23T15:08:39Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-87a95217-223a-48a0-95c0-a0c72bebd879",
+      "id": "d4db1574-1869-46bc-8957-2de263cc2a8f-724993",
+      "language": "en",
+      "date": "2024-02-20T13:12:09Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "256/KH/js",
+        "title": "H1786 - Retrofit Assessments Social Housing Decarbonisation Fund (SHDF) Wave 2.1, Retrofit Assessor",
+        "description": "Contract award notice only",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71324000",
+          "description": "Quantity surveying services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "GL5 4UB"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 127130,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a dynamic purchasing system",
+        "tenderPeriod": {
+          "endDate": "2023-08-11T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2024-01-18T00:00:00Z",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/JF9Hs7eD",
+          "name": "Stroud District Council",
+          "identifier": {
+            "legalName": "Stroud District Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/JF9Hs7eD"
+          },
+          "address": {
+            "streetAddress": "Ebley Mill, Ebley Wharf",
+            "locality": "STROUD",
+            "postalCode": "GL5 4UB",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jo Spain",
+            "email": "jo.spain@stroud.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-1300409",
+          "name": "Currie and Brown UK Limited",
+          "identifier": {
+            "legalName": "Currie and Brown UK Limited",
+            "scheme": "GB-COH",
+            "id": "1300409"
+          },
+          "address": {
+            "streetAddress": "150 Holborn\r\nLondon\r\nEC1N 2NS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/JF9Hs7eD",
+        "name": "Stroud District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-87a95217-223a-48a0-95c0-a0c72bebd879-1",
+          "status": "active",
+          "date": "2023-11-10T00:00:00Z",
+          "datePublished": "2024-02-20T13:12:09Z",
+          "value": {
+            "amount": 127130,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-1300409",
+              "name": "Currie and Brown UK Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-01-18T00:00:00Z",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d4db1574-1869-46bc-8957-2de263cc2a8f",
+              "datePublished": "2024-02-20T13:12:09Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8b3b8d8a-e502-4927-9fb0-e260684e30f5",
+      "id": "4c06978e-bd20-405d-b193-fb0873b22def-724708",
+      "language": "en",
+      "date": "2024-02-19T15:16:39Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "WILTS001-DN690084-09302906",
+        "title": "AC1570 Housing Related Support Services Wiltshire Council 2023",
+        "description": "Wiltshire Council currently funds housing related support services which support vulnerable people to sustain and maintain tenancies. These services ensure that families and single people, including young people who are homeless or have had a history of unsettled housing, are able to access stable and secure accommodation and are supported to sustain their tenancies.\\r\r\n Lot 1 Single Homeless \\r\r\nThis contract relates to the provision of individually tailored housing related support that will be offered to single homeless people aged 18+ who have a wide range of often very complex needs.   Service users may have mental health problems or learning difficulties, they may have offended, used drugs and/or alcohol, may be young people leaving care, they may have social exclusion issues, or they may belong to minority groups.     Accommodation should ideally be distributed in and around the three mains hubs of Salisbury, Trowbridge/Devizes and Chippenham/Calne.  The annual budget is in the region of £710,000 and we are seeking to commission approximately 30,800 of support hours per annum.  \\r\r\n Lot 2 Young Parent \\r\r\nThis contract relates to the provision of individually tailored housing related support that will be offered to young parents aged 16 - 24 years.  The service would not require Ofsted registration.  This service aims to support young women from their 24th week of pregnancy and single young mothers, fathers and couples with their babies up to their child's first birthday.  \\r\r\n  The annual budget is in the region of £54,000 and we are seeking to commission approximately 2,300 of support hours per annum. \\r\r\nThis contract relates to the provision of individually tailored housing related support that will be offered to vulnerable young people aged 16 - 21 years and care leavers aged 18+ up to the age of 24 who have a wide range of often very complex needs.  this service does not require Ofsted registration. Providers will be expected to have access to suitable and affordable accommodation that will be used by service users as their main or principle home when receiving the support from this contract. Providers will be expected to have access to suitable and affordable accommodation that will be used by service users as their main or principle home when receiving the support from this contract.  Accommodation should ideally be distributed in and around the three mains hubs of Salisbury, Trowbridge/Devizes and Chippenham/Calne.  The annual budget is in the region of £430,000 and we are seeking to commission approximately 18,600 of support hours per annum.",
+        "datePublished": "2023-09-25T15:36:37+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1200000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-11-07T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-04-01T00:00:00+01:00",
+          "endDate": "2029-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-57170",
+          "name": "Wiltshire Council",
+          "identifier": {
+            "legalName": "Wiltshire Council"
+          },
+          "address": {
+            "streetAddress": "Wiltshire Council, County Hall, Bythesea Road",
+            "locality": "Trowbridge",
+            "postalCode": "BA14 8JN",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Dave Gillett",
+            "email": "david.gillett@wiltshire.gov.uk",
+            "telephone": "+44 1255713371"
+          },
+          "details": {
+            "url": "http://www.wiltshire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-274095",
+          "name": "Alabare Christian Care & Support",
+          "identifier": {
+            "legalName": "Alabare Christian Care & Support"
+          },
+          "address": {
+            "streetAddress": "Riverside House\n2 Watt Road\nSalisbury\nWiltshire\nUnited Kingdom\nSP2 7UD"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274096",
+          "name": "Julian House",
+          "identifier": {
+            "legalName": "Julian House"
+          },
+          "address": {
+            "streetAddress": "1 Kelso Place\nUpper Bristol Road\nBath\nSomerset\nUnited Kingdom\nBA1 3AU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274097",
+          "name": "Sanctuary Housing Association",
+          "identifier": {
+            "legalName": "Sanctuary Housing Association"
+          },
+          "address": {
+            "streetAddress": "Sanctuary House\nChamber Court, Castle Street\nWorcester\nWorcestershire\nUnited Kingdom\nWR1 3ZQ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-274098",
+          "name": "GREENSQUAREACCORD LIMITED",
+          "identifier": {
+            "legalName": "GREENSQUAREACCORD LIMITED"
+          },
+          "address": {
+            "streetAddress": "178 Birmingham Road\nWest Bromwich\nWest Midlands\nUnited Kingdom\nB70 6QG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-57170",
+        "name": "Wiltshire Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8b3b8d8a-e502-4927-9fb0-e260684e30f5-1",
+          "status": "active",
+          "date": "2024-02-12T00:00:00Z",
+          "datePublished": "2024-02-19T15:16:39Z",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-274095",
+              "name": "Alabare Christian Care & Support"
+            },
+            {
+              "id": "GB-CFS-274096",
+              "name": "Julian House"
+            },
+            {
+              "id": "GB-CFS-274097",
+              "name": "Sanctuary Housing Association"
+            },
+            {
+              "id": "GB-CFS-274098",
+              "name": "GREENSQUAREACCORD LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-04-01T00:00:00+01:00",
+            "endDate": "2029-03-31T23:59:59+01:00"
+          },
+          "description": "Alabare Christian Care & Support: Awarded Lot 1 - Single Homeless\r\nAwarded Lot 3 - Young People\r\n\r\nJulian House: Awarded Lot 1 - Single Homeless\r\n\r\nSanctuary Housing Association: Awarded Lot 1 - Single Homeless\r\n\r\nGREENSQUAREACCORD LIMITED: Awarded Lot 2 - Young Parents",
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/4c06978e-bd20-405d-b193-fb0873b22def",
+              "datePublished": "2024-02-19T15:16:39Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-7196312e-1eb3-4445-9fa1-b8f69610dccb",
+      "id": "ba41fd4a-86cd-4119-8099-f03fa23cc1fb-723707",
+      "language": "en",
+      "date": "2024-02-15T12:03:58Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOURN001-DN711499-70722984",
+        "title": "Housing Related Support Homeless Pathway - RSI Funding 2022 to 2025 (Additional funding awarded October 2023)",
+        "description": "Housing Related Support Homeless Pathway - RSI Funding 2022 to 2025 (Additional funding awarded October 2023)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 44000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2023-11-16T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-12-01T00:00:00Z",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-207906",
+          "name": "Bournemouth Christchurch and Poole Council",
+          "identifier": {
+            "legalName": "Bournemouth Christchurch and Poole Council"
+          },
+          "address": {
+            "streetAddress": "BCP Council, Civic Centre, Bourne Avenue",
+            "locality": "Bournemouth",
+            "postalCode": "BH2 6DY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Strategic Procurement Team",
+            "email": "procurement@bcpcouncil.gov.uk",
+            "telephone": "+44 1202128989"
+          },
+          "details": {
+            "url": "https://www.bcpcouncil.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-29688",
+          "name": "Bournemouth Churches Housing Association",
+          "identifier": {
+            "legalName": "Bournemouth Churches Housing Association"
+          },
+          "address": {
+            "streetAddress": "BH1 3NS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-273805",
+          "name": "Faithworks Wessex",
+          "identifier": {
+            "legalName": "Faithworks Wessex"
+          },
+          "address": {
+            "streetAddress": "BH9 1DE"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-207906",
+        "name": "Bournemouth Christchurch and Poole Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-7196312e-1eb3-4445-9fa1-b8f69610dccb-1",
+          "status": "active",
+          "date": "2023-11-23T00:00:00Z",
+          "datePublished": "2024-02-15T12:03:57Z",
+          "value": {
+            "amount": 44000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-29688",
+              "name": "Bournemouth Churches Housing Association"
+            },
+            {
+              "id": "GB-CFS-273805",
+              "name": "Faithworks Wessex"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-12-01T00:00:00Z",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ba41fd4a-86cd-4119-8099-f03fa23cc1fb",
+              "datePublished": "2024-02-15T12:03:57Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-198b08dc-bb99-4891-b92b-3d69239613fd",
+      "id": "ad7b0e4e-b2cf-408c-99af-9a009ce66add-722886",
+      "language": "en",
+      "date": "2024-02-13T12:23:24Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SHDF (Social Housing Decarbonisation Fund)",
+        "title": "SHDF (Social Housing Decarbonisation Fund)",
+        "description": "Activities of construction holding companies",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "44100000",
+          "description": "Construction materials and associated items"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 7500000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2023-11-10T17:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-01-01T00:00:00Z",
+          "endDate": "2025-01-01T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/N39T6fym",
+          "name": "BROMFORD HOUSING GROUP LIMITED",
+          "identifier": {
+            "legalName": "BROMFORD HOUSING GROUP LIMITED",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/N39T6fym"
+          },
+          "address": {
+            "streetAddress": "Exchange Court,Brabourne Avenue Wolverhampton Business Park",
+            "locality": "WOLVERHAMPTON",
+            "postalCode": "WV106AU",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Laura Ahmed",
+            "email": "procurement.team@bromford.co.uk",
+            "telephone": "01902396887"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01824828",
+          "name": "WATES GROUP LIMITED",
+          "identifier": {
+            "legalName": "WATES GROUP LIMITED",
+            "scheme": "GB-COH",
+            "id": "01824828"
+          },
+          "address": {
+            "streetAddress": "Wates House, Station Approach, Leatherhead, Surrey, KT22 7SW"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/N39T6fym",
+        "name": "BROMFORD HOUSING GROUP LIMITED"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-198b08dc-bb99-4891-b92b-3d69239613fd-1",
+          "status": "active",
+          "date": "2023-12-29T00:00:00Z",
+          "datePublished": "2024-02-13T12:23:24Z",
+          "value": {
+            "amount": 7500000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01824828",
+              "name": "WATES GROUP LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-01-01T00:00:00Z",
+            "endDate": "2025-01-01T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/ad7b0e4e-b2cf-408c-99af-9a009ce66add",
+              "datePublished": "2024-02-13T12:23:24Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ba926899-93a7-4f83-8a27-4bf7776c6d1d",
+      "id": "a8ac0e42-78e2-45f1-8c0f-520b6df0a6b1-722648",
+      "language": "en",
+      "date": "2024-02-12T15:51:08Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MHL001-DN693219-78385058",
+        "title": "Provision for Temporary Accommodation Services",
+        "description": "Provision for Temporary Accommodation Services",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341100",
+          "description": "Accommodation management services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1400000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-10-16T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2024-12-01T00:00:00Z",
+          "endDate": "2026-11-30T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-231063",
+          "name": "Moat Homes Limited",
+          "identifier": {
+            "legalName": "Moat Homes Limited"
+          },
+          "address": {
+            "streetAddress": "Mariner House, Galleon Boulevard, Crossways",
+            "locality": "Dartford",
+            "postalCode": "DA2 6QE",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "rosella.ngeh@moat.co.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-273431",
+          "name": "Jigsaw Conferences Limited",
+          "identifier": {
+            "legalName": "Jigsaw Conferences Limited"
+          },
+          "address": {
+            "streetAddress": "3rd Floor, 45 Albemarle Street, Mayfair, London W15 4JL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-231063",
+        "name": "Moat Homes Limited"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ba926899-93a7-4f83-8a27-4bf7776c6d1d-1",
+          "status": "active",
+          "date": "2023-11-30T00:00:00Z",
+          "datePublished": "2024-02-12T15:51:08Z",
+          "value": {
+            "amount": 1400000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-273431",
+              "name": "Jigsaw Conferences Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-12-01T00:00:00Z",
+            "endDate": "2026-11-30T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a8ac0e42-78e2-45f1-8c0f-520b6df0a6b1",
+              "datePublished": "2024-02-12T15:51:08Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ca525bf6-9ae6-4888-9ca7-6fcf643a4ec3",
+      "id": "96a76eea-d786-4e1f-83ac-a7ff4b011ed4-722212",
+      "language": "en",
+      "date": "2024-02-09T15:03:31Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20240209150325-104123",
+        "title": "115 Denby Dale Road Refurbishment - Move On Accommodation",
+        "description": "This contract is for refurbishment works to 115 Denby Dale Road, Wakefield, WF2 8EB, to the specifications as stated in the tender documents provided.  Works will commence on 19/02/24 and will be completed on or around 19/04/24.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45453100",
+            "description": "Refurbishment work"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-12-15T16:30:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-02-06T00:00:00Z",
+          "endDate": "2024-04-19T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-185592",
+          "name": "Wakefield Council",
+          "identifier": {
+            "legalName": "Wakefield Council"
+          },
+          "address": {
+            "streetAddress": "Wakefield One, Burton street",
+            "locality": "Wakefield",
+            "postalCode": "WF1 2EB",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Natalie  Taylor",
+            "email": "ntaylor@wakefield.gov.uk"
+          },
+          "details": {
+            "url": "https://www.wakefield.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-273257",
+          "name": "STM360 Limited",
+          "identifier": {
+            "legalName": "STM360 Limited"
+          },
+          "address": {
+            "streetAddress": "Unit 4, Martree Business Park\nThunderhead Ridge\nGlasshoughton\nWF10 4UA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-185592",
+        "name": "Wakefield Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ca525bf6-9ae6-4888-9ca7-6fcf643a4ec3-1",
+          "status": "active",
+          "date": "2024-01-04T00:00:00Z",
+          "datePublished": "2024-02-09T15:03:31Z",
+          "value": {
+            "amount": 116865.6,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-273257",
+              "name": "STM360 Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-02-06T00:00:00Z",
+            "endDate": "2024-04-19T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/96a76eea-d786-4e1f-83ac-a7ff4b011ed4",
+              "datePublished": "2024-02-09T15:03:31Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=75257&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f8898804-0248-4072-8bbc-5879d59a424f",
+      "id": "c10e6c46-63ea-4c5d-b1ac-18b20d4b7c5f-722143",
+      "language": "en",
+      "date": "2024-02-09T14:01:37Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "58077",
+        "title": "Emergency accommodation",
+        "description": "Provision of an Emergency Accommodation service for the residents of the Wakefiled district.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70333000",
+          "description": "Housing services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 106150,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Direct Award Exception Process",
+        "tenderPeriod": {
+          "endDate": "2023-07-04T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-11-01T00:00:00Z",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/mNZE2gBB",
+          "name": "WAKEFIELD COUNCIL",
+          "identifier": {
+            "legalName": "WAKEFIELD COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/mNZE2gBB"
+          },
+          "address": {
+            "streetAddress": "Wakefield One Po Box 700,Burton Street",
+            "locality": "WAKEFIELD",
+            "postalCode": "WF12EB",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Cloe Cunniff",
+            "email": "ccunniff@wakefield.gov.uk",
+            "telephone": "07919300411"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-273223",
+          "name": "Bridge-it Housing",
+          "identifier": {
+            "legalName": "Bridge-it Housing"
+          },
+          "address": {
+            "streetAddress": "Napoleon House, 343 Wakefield Road, Bradford, BD4 7NB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/mNZE2gBB",
+        "name": "WAKEFIELD COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f8898804-0248-4072-8bbc-5879d59a424f-1",
+          "status": "active",
+          "date": "2023-11-01T00:00:00Z",
+          "datePublished": "2024-02-09T14:01:37Z",
+          "value": {
+            "amount": 106150,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-273223",
+              "name": "Bridge-it Housing"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-11-01T00:00:00Z",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c10e6c46-63ea-4c5d-b1ac-18b20d4b7c5f",
+              "datePublished": "2024-02-09T14:01:37Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f89b4eab-dcd2-4cf2-8f44-29fc9ef667a0",
+      "id": "753afed9-2eb2-4c7f-bde9-1ebc98d2eb5f-721773",
+      "language": "en",
+      "date": "2024-02-08T15:22:25Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "WARRINGTONLIVE001-DN710583-76100131",
+        "title": "Provision of refuge accommodation for women fleeing domestic violence.",
+        "description": "Provision of refuge accommodation for women fleeing domestic violence.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85320000",
+          "description": "Social services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 349428,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2023-01-09T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2023-04-14T00:00:00+01:00",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-164057",
+          "name": "Warrington Borough Council",
+          "identifier": {
+            "legalName": "Warrington Borough Council"
+          },
+          "address": {
+            "streetAddress": "1 Time Square, Bewsey & Whitecross",
+            "locality": "Warrington",
+            "postalCode": "WA1 2NT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Kirsty Rhodes",
+            "email": "kirsty.rhodes@warrington.gov.uk"
+          },
+          "details": {
+            "url": "http://www.warrington.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-273095",
+          "name": "Warrington Womens Aid",
+          "identifier": {
+            "legalName": "Warrington Womens Aid"
+          },
+          "address": {
+            "streetAddress": "The Gateway \n85 Sankey Street \nWarrington\nWA1 1SR"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-164057",
+        "name": "Warrington Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f89b4eab-dcd2-4cf2-8f44-29fc9ef667a0-1",
+          "status": "active",
+          "date": "2023-01-09T00:00:00Z",
+          "datePublished": "2024-02-08T15:22:25Z",
+          "value": {
+            "amount": 524142,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-273095",
+              "name": "Warrington Womens Aid"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-04-01T00:00:00+01:00",
+            "endDate": "2026-05-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/753afed9-2eb2-4c7f-bde9-1ebc98d2eb5f",
+              "datePublished": "2024-02-08T15:22:25Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1112a2ec-b146-4c14-a44b-0212dd59a267",
+      "id": "d415964c-f0bb-4426-b064-27add3b49821-720739",
+      "language": "en",
+      "date": "2024-02-06T11:45:04Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP840799081",
+        "title": "2023-2024-012 : Housing Tenancy Fraud Investigation Services",
+        "description": "Scope of Requirements •Manage the referrals submitted via MTVH standard template, which demonstrates approval from the MTVH budget holder. •Provide a secure area for the exchange of information between each stakeholder. •For live cases, provide a case log of all the actions undertaken by investigator(s). •Carry out external data checks including searching for open-source intelligence, public government data, credit agency searches, in addition to checking publicly available data. •Undertake site and property visits to carry out the necessary actions to conduct investigations, keeping clear records, whilst adhering to any legal and regulatory guidelines and requirements. •Produce a preliminary report of initial findings disclosing all records and material discovered, to obtain approval from MTVH to continue with any proposed actions. •Produce a written plan of action for approval which may include interviewing persons, obtaining witness statements, carrying out surveillance",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79720000",
+          "description": "Investigation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 565000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2024-02-05T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-02-12T00:00:00Z",
+          "endDate": "2026-12-19T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-261260",
+          "name": "METROPOLITAN THAMES VALLEY HOUSING",
+          "identifier": {
+            "legalName": "METROPOLITAN THAMES VALLEY HOUSING"
+          },
+          "address": {
+            "streetAddress": "The Grange",
+            "locality": "London",
+            "postalCode": "N14 6PW",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "email": "adam.bevan@mtvh.co.uk",
+            "telephone": "+447701388562"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-272749",
+          "name": "HTFI Ltd",
+          "identifier": {
+            "legalName": "HTFI Ltd"
+          },
+          "address": {
+            "streetAddress": "HTFI Ltd\n        Eastborne"
+          },
+          "details": {
+            "scale": "large"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-261260",
+        "name": "METROPOLITAN THAMES VALLEY HOUSING"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1112a2ec-b146-4c14-a44b-0212dd59a267-1",
+          "status": "active",
+          "date": "2024-02-05T00:00:00Z",
+          "datePublished": "2024-02-06T11:45:04Z",
+          "value": {
+            "amount": 565000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-272749",
+              "name": "HTFI Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-02-12T00:00:00Z",
+            "endDate": "2026-12-19T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d415964c-f0bb-4426-b064-27add3b49821",
+              "datePublished": "2024-02-06T11:45:04Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=840799081"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5f91443e-4b36-42fe-bfb3-7b162f1ecbf1",
+      "id": "81a31855-ded7-453f-a263-c8ed02b1a190-720250",
+      "language": "en",
+      "date": "2024-02-05T11:01:22Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LPOOL001-DN658473-41613729",
+        "title": "Emergency Accommodation and Support for Vulnerable Groups",
+        "description": "The Authority is seeking expressions of interest from suitably experienced and competent providers of accommodation services and support, including emergency accommodation.\\r\r\n\\r\r\nThe purpose of this procurement is to create a Framework Agreement under the 'Light Touch Regime' for the following six Lots:\\r\r\nâ€¢\tAccommodation and Support for Unaccompanied Asylum Seeker Children (UASC) aged 16 -18 and beyond age 18 where their asylum claim is still pending\\r\r\nâ€¢\tAdults with No Recourse to Public Funds with Eligible Care Needs\\r\r\nâ€¢\tSupported Lodgings for Young People aged 16 to 17 Preparing to Leave Care\\r\r\nâ€¢\tEmergency Accommodation for Single People and Families (same day)\\r\r\nâ€¢\tEmergency Accommodation for Adults with Care and Support Needs (Care Act Eligible)  \\r\r\nâ€¢\tEmergency Accommodation for young people at risk of being made homeless (same day)\\r\r\n\\r\r\n\\r\r\nThe scope and objectives of this service is to:\\r\r\nâ€¢\tProvide good quality accommodation.\\r\r\nâ€¢\tProvide support, which enables Service Users to maintain their accommodation where appropriate.\\r\r\nâ€¢\tPromote independent living skills that will enable Service Users to live with the minimum level of support.\\r\r\nâ€¢\tProvide services in a flexible and responsive way to achieve the agreed outcomes for individual Service Users.\\r\r\nâ€¢\tPromote social inclusion and cohesion to enable Service Users to engage fully with the community.\\r\r\nâ€¢\tProvide practical and emotional support to Service Users.\\r\r\nâ€¢\tEnsure access to mainstream and specialist services, which meet Service User needs, where appropriate \\r\r\n\\r\r\nProviders will be required to provide a selection of fully furnished and maintained property types, which meets the assessed needs of the Service Users. The Provider will put in place the necessary arrangements to provide the accommodation. The range of accommodation should include a range of size and types of accommodation. This should include access to accommodation, which is ground floor for those with mobility difficulties.  \\r\r\n",
+        "datePublished": "2023-08-24T18:00:52+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 26000000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 26803000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-09-22T16:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2024-01-01T00:00:00Z",
+          "endDate": "2028-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-26061",
+          "name": "Liverpool City Council",
+          "identifier": {
+            "legalName": "Liverpool City Council"
+          },
+          "address": {
+            "streetAddress": "4th Floor, Cunard Building",
+            "locality": "Liverpool",
+            "postalCode": "L3 1DS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Gill Astill",
+            "email": "gill.astill@liverpool.gov.uk",
+            "telephone": "+44 1513510461"
+          },
+          "details": {
+            "url": "http://www.liverpool.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-267462",
+          "name": "Bedspace Ltd",
+          "identifier": {
+            "legalName": "Bedspace Ltd"
+          },
+          "address": {
+            "streetAddress": "M16 9HF"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-98947",
+          "name": "cambridge care company",
+          "identifier": {
+            "legalName": "cambridge care company"
+          },
+          "address": {
+            "streetAddress": "cb8 7sg"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-86817",
+          "name": "Local Solutions",
+          "identifier": {
+            "legalName": "Local Solutions"
+          },
+          "address": {
+            "streetAddress": "L7 8TF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-272595",
+          "name": "Serviced Living Liverpool",
+          "identifier": {
+            "legalName": "Serviced Living Liverpool"
+          },
+          "address": {
+            "streetAddress": "L20 9ET"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-116867",
+          "name": "The Housing Network",
+          "identifier": {
+            "legalName": "The Housing Network"
+          },
+          "address": {
+            "streetAddress": "lu1 3lu"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-26061",
+        "name": "Liverpool City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5f91443e-4b36-42fe-bfb3-7b162f1ecbf1-1",
+          "status": "active",
+          "date": "2023-12-11T00:00:00Z",
+          "datePublished": "2024-02-05T11:01:22Z",
+          "value": {
+            "amount": 26000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-267462",
+              "name": "Bedspace Ltd"
+            },
+            {
+              "id": "GB-CFS-98947",
+              "name": "cambridge care company"
+            },
+            {
+              "id": "GB-CFS-86817",
+              "name": "Local Solutions"
+            },
+            {
+              "id": "GB-CFS-272595",
+              "name": "Serviced Living Liverpool"
+            },
+            {
+              "id": "GB-CFS-116867",
+              "name": "The Housing Network"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-01-01T00:00:00Z",
+            "endDate": "2028-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/81a31855-ded7-453f-a263-c8ed02b1a190",
+              "datePublished": "2024-02-05T11:01:22Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=cfe1f0c2-7bc2-ed11-8120-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-23e10e46-ea67-4d26-ae6d-d0a23527f6a3",
+      "id": "570696bd-a360-47d5-9c41-4931e446a2a6-719960",
+      "language": "en",
+      "date": "2024-02-02T15:28:15Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN709799-58388990",
+        "title": "PEP/CYP/Commissioning 1625ip to deliver Supported Accommodation at City Road for children seeking Asylum under the current High Support DPS Framework.",
+        "description": "Commissioning 1625ip to deliver Supported Accommodation at City Road for children seeking Asylum under the current High Support DPS Framework.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 136648,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2023-10-26T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-10-30T00:00:00Z",
+          "endDate": "2024-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Andrew Doig",
+            "email": "Andrew.Doig@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-74285",
+          "name": "1625 Independent People",
+          "identifier": {
+            "legalName": "1625 Independent People"
+          },
+          "address": {
+            "streetAddress": "BS2 0ER"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-23e10e46-ea67-4d26-ae6d-d0a23527f6a3-1",
+          "status": "active",
+          "date": "2023-10-27T00:00:00+01:00",
+          "datePublished": "2024-02-02T15:28:15Z",
+          "value": {
+            "amount": 136648,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-74285",
+              "name": "1625 Independent People"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-10-30T00:00:00Z",
+            "endDate": "2024-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/570696bd-a360-47d5-9c41-4931e446a2a6",
+              "datePublished": "2024-02-02T15:28:15Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-be729692-cbe0-43e4-8c7d-040e21db0afc",
+      "id": "18e69b49-7d96-44dd-b3e4-46c5e5b88a7f-719515",
+      "language": "en",
+      "date": "2024-02-01T15:35:58Z",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20240124094552-103835",
+        "title": "Provision of roofing replacement works to social housing stock owned by the Council",
+        "description": "Provision of roofing replacement works to social housing stock owned by the Council",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45210000",
+            "description": "Building construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45211100",
+            "description": "Construction work for houses"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45211300",
+            "description": "Houses construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45260000",
+            "description": "Roof works and other special trade construction works"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261211",
+            "description": "Roof-tiling work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261212",
+            "description": "Roof-slating work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261215",
+            "description": "Solar panel roof-covering work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261900",
+            "description": "Roof repair and maintenance work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261910",
+            "description": "Roof repair"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45261920",
+            "description": "Roof maintenance work"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "S70 2TA"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1685153,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Other",
+        "tenderPeriod": {
+          "endDate": "2023-08-23T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2023-10-30T00:00:00Z",
+          "endDate": "2024-11-01T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/rFBk7FPE",
+          "name": "EU SUPPLY LIMITED",
+          "identifier": {
+            "legalName": "EU SUPPLY LIMITED",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/rFBk7FPE"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "Barnsley, South Yorkshire",
+            "postalCode": "S70 2TA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Jane Lee",
+            "email": "janelee2@barnsley.gov.uk",
+            "telephone": "+44 01226770770"
+          },
+          "details": {
+            "url": "https://www.barnsley.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-185778",
+          "name": "BAAS Construction Ltd",
+          "identifier": {
+            "legalName": "BAAS Construction Ltd"
+          },
+          "address": {
+            "streetAddress": "BB11 3PR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/rFBk7FPE",
+        "name": "EU SUPPLY LIMITED"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-be729692-cbe0-43e4-8c7d-040e21db0afc-1",
+          "status": "active",
+          "date": "2023-09-26T00:00:00+01:00",
+          "datePublished": "2024-01-24T09:45:59Z",
+          "value": {
+            "amount": 1685153,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-185778",
+              "name": "BAAS Construction Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2023-07-24T00:00:00+01:00",
+            "endDate": "2024-11-01T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/18e69b49-7d96-44dd-b3e4-46c5e5b88a7f",
+              "datePublished": "2024-01-24T09:45:59Z",
+              "dateModified": "2024-02-01T15:35:58Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "4",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=59947&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/103835"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

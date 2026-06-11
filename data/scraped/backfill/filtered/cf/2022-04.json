@@ -1,0 +1,2956 @@
+{
+  "portal": "cf",
+  "year": 2022,
+  "month": 4,
+  "raw_count": 5192,
+  "filtered_count": 21,
+  "pages": 52,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-832d2a35-d0f7-417d-a331-7291f4e23bf9",
+      "id": "aba0a06b-09ac-4880-a4e8-133b753913b2-530587",
+      "language": "en",
+      "date": "2022-04-21T12:10:27+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608792-52780999",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Ashlea Court)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Ashlea Court)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 263036,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-71612",
+          "name": "Agincare Group Ltd",
+          "identifier": {
+            "legalName": "Agincare Group Ltd"
+          },
+          "address": {
+            "streetAddress": "DT5 1BB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-832d2a35-d0f7-417d-a331-7291f4e23bf9-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T12:10:27+01:00",
+          "value": {
+            "amount": 263036,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-71612",
+              "name": "Agincare Group Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/aba0a06b-09ac-4880-a4e8-133b753913b2",
+              "datePublished": "2022-04-21T12:10:27+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-6ad6f4ab-d618-4b25-b828-7ca3fd1c4a65",
+      "id": "c868344b-4084-4fc0-97b1-16b180cf372d-530581",
+      "language": "en",
+      "date": "2022-04-21T12:02:26+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608788-77133219",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (ABC Centre)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (ABC Centre)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 433926,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-74226",
+          "name": "Brunelcare",
+          "identifier": {
+            "legalName": "Brunelcare"
+          },
+          "address": {
+            "streetAddress": "BS5 9FF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-6ad6f4ab-d618-4b25-b828-7ca3fd1c4a65-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T12:02:26+01:00",
+          "value": {
+            "amount": 433926,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-74226",
+              "name": "Brunelcare"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c868344b-4084-4fc0-97b1-16b180cf372d",
+              "datePublished": "2022-04-21T12:02:26+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-b39c8dd9-f89e-44e1-9045-a97824252157",
+      "id": "a168a171-1c3c-4c75-9071-8fb13b35d08a-530527",
+      "language": "en",
+      "date": "2022-04-21T11:14:22+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608762-93500696",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Waverley Gardens)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Waverley Gardens)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 426240,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 730697,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-74226",
+          "name": "Brunelcare",
+          "identifier": {
+            "legalName": "Brunelcare"
+          },
+          "address": {
+            "streetAddress": "BS5 9FF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b39c8dd9-f89e-44e1-9045-a97824252157-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T11:14:22+01:00",
+          "value": {
+            "amount": 730697,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-74226",
+              "name": "Brunelcare"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a168a171-1c3c-4c75-9071-8fb13b35d08a",
+              "datePublished": "2022-04-21T11:14:22+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-4c197dea-8ade-4b46-a58e-aa54e5eeec64",
+      "id": "a9bcb483-c60d-42cb-b0e3-c6c5012eef35-530518",
+      "language": "en",
+      "date": "2022-04-21T11:08:32+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608760-17970481",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (The Knowle Complex)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (The Knowle Complex)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 318338,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 545721,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-132516",
+          "name": "Guinness Care & Support Ltd",
+          "identifier": {
+            "legalName": "Guinness Care & Support Ltd"
+          },
+          "address": {
+            "streetAddress": "NW1 3FG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-4c197dea-8ade-4b46-a58e-aa54e5eeec64-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T11:08:32+01:00",
+          "value": {
+            "amount": 545721,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-132516",
+              "name": "Guinness Care & Support Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a9bcb483-c60d-42cb-b0e3-c6c5012eef35",
+              "datePublished": "2022-04-21T11:08:32+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ce50e813-023d-4081-957d-85f5e645a0cf",
+      "id": "81463a17-8404-4528-9827-52873d5967c6-530510",
+      "language": "en",
+      "date": "2022-04-21T11:00:12+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608742-59662943",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Sommerville)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Sommerville)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 349982,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 599969,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-83822",
+          "name": "St Monica Trust",
+          "identifier": {
+            "legalName": "St Monica Trust"
+          },
+          "address": {
+            "streetAddress": "BS9 3UN"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ce50e813-023d-4081-957d-85f5e645a0cf-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T11:00:12+01:00",
+          "value": {
+            "amount": 599969,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-83822",
+              "name": "St Monica Trust"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/81463a17-8404-4528-9827-52873d5967c6",
+              "datePublished": "2022-04-21T11:00:12+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5746da62-518d-41d3-8867-d341c06a1b09",
+      "id": "f84147ee-6d8e-46a7-b47b-c2260c19d152-530480",
+      "language": "en",
+      "date": "2022-04-21T10:35:26+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608734-02561587",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Monica Wills House)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Monica Wills House)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 315313,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145646",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "B16 8TP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5746da62-518d-41d3-8867-d341c06a1b09-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T10:35:26+01:00",
+          "value": {
+            "amount": 315313,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145646",
+              "name": "Housing 21"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/f84147ee-6d8e-46a7-b47b-c2260c19d152",
+              "datePublished": "2022-04-21T10:35:26+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-22075a3b-8448-4504-9d3c-8c17684e3156",
+      "id": "11d96106-7dcd-449d-a93f-a12ad51130eb-530466",
+      "language": "en",
+      "date": "2022-04-21T10:27:47+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608731-53267769",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Lincoln Gardens)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Lincoln Gardens)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 216403,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 370977,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T23:59:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-132516",
+          "name": "Guinness Care & Support Ltd",
+          "identifier": {
+            "legalName": "Guinness Care & Support Ltd"
+          },
+          "address": {
+            "streetAddress": "NW1 3FG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-22075a3b-8448-4504-9d3c-8c17684e3156-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T10:27:47+01:00",
+          "value": {
+            "amount": 370977,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-132516",
+              "name": "Guinness Care & Support Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/11d96106-7dcd-449d-a93f-a12ad51130eb",
+              "datePublished": "2022-04-21T10:27:47+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8010a4e1-9d6c-4b55-993a-9134848d348d",
+      "id": "66a09ba2-3db9-425a-9a09-247f7b849af3-530461",
+      "language": "en",
+      "date": "2022-04-21T10:21:32+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608725-07223135",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Hillside Court)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Hillside Court)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 211146,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 361965,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145646",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "B16 8TP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8010a4e1-9d6c-4b55-993a-9134848d348d-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T10:21:32+01:00",
+          "value": {
+            "amount": 361965,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145646",
+              "name": "Housing 21"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/66a09ba2-3db9-425a-9a09-247f7b849af3",
+              "datePublished": "2022-04-21T10:21:32+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1fcc2a6d-00ad-4f91-a699-34908cc1744d",
+      "id": "4e083d55-bc25-4740-a0f7-96f00f455d20-530455",
+      "language": "en",
+      "date": "2022-04-21T10:12:13+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608717-07450985",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Haberfield House)",
+        "description": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Haberfield House)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 212555,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 364379,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145646",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "B16 8TP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1fcc2a6d-00ad-4f91-a699-34908cc1744d-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T10:12:13+01:00",
+          "value": {
+            "amount": 364379,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145646",
+              "name": "Housing 21"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/4e083d55-bc25-4740-a0f7-96f00f455d20",
+              "datePublished": "2022-04-21T10:12:13+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3d5b15aa-dcf8-4776-aa7f-075111fb57d7",
+      "id": "2891d0dc-c043-480c-9a0c-b64900168e6b-530429",
+      "language": "en",
+      "date": "2022-04-21T09:48:47+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608710-37215030",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Colliers Gardens)",
+        "description": "Extension of BCC contract with Brunelcare for Care and Support services in Extra Care Housing (ECH) at the Bluebell Gardens",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 308128,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 528219,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-74226",
+          "name": "Brunelcare",
+          "identifier": {
+            "legalName": "Brunelcare"
+          },
+          "address": {
+            "streetAddress": "BS5 9FF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3d5b15aa-dcf8-4776-aa7f-075111fb57d7-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T09:48:47+01:00",
+          "value": {
+            "amount": 528219,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-74226",
+              "name": "Brunelcare"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2891d0dc-c043-480c-9a0c-b64900168e6b",
+              "datePublished": "2022-04-21T09:48:47+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-dab2ef2f-1085-458b-a27f-68fa57c46cf1",
+      "id": "fe87077d-ea0e-4223-b7ed-c3851ba1db12-530419",
+      "language": "en",
+      "date": "2022-04-21T09:41:25+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608704-28611050",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Bluebell Gardens)",
+        "description": "Direct award of a contract to Housing 21 for Care and Support services in Extra Care Housing (ECH) at Bluebell Gardens",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 209100,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 358458,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145646",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "B16 8TP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-dab2ef2f-1085-458b-a27f-68fa57c46cf1-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T09:41:25+01:00",
+          "value": {
+            "amount": 358458,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145646",
+              "name": "Housing 21"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/fe87077d-ea0e-4223-b7ed-c3851ba1db12",
+              "datePublished": "2022-04-21T09:41:25+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ae1572f5-78e4-4468-bdf2-6baab5591434",
+      "id": "01b54d09-3ce5-4efc-bcb6-ec68e4065311-530414",
+      "language": "en",
+      "date": "2022-04-21T09:37:24+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN608690-62501775",
+        "title": "CSI/ASC/Contract Extensions for Care and support in Extra Care Housing (Blaise Weston)",
+        "description": "Extension of BCC contract with Mears for Care and Support services in Extra Care Housing (ECH) at Blaise Weston",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 340216,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 583228,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2022-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2022-10-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-107820",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tom Lynes",
+            "email": "Tom.Lynes@bristol.gov.uk",
+            "telephone": "+44 0"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-103995",
+          "name": "Mears Care",
+          "identifier": {
+            "legalName": "Mears Care"
+          },
+          "address": {
+            "streetAddress": "AL7 3UQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-107820",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ae1572f5-78e4-4468-bdf2-6baab5591434-1",
+          "status": "active",
+          "date": "2022-03-31T00:00:00+01:00",
+          "datePublished": "2022-04-21T09:37:24+01:00",
+          "value": {
+            "amount": 583228,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-103995",
+              "name": "Mears Care"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2022-10-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/01b54d09-3ce5-4efc-bcb6-ec68e4065311",
+              "datePublished": "2022-04-21T09:37:24+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04",
+      "id": "bc70c2c5-86ce-4689-920f-00ee3953f980-528126",
+      "language": "en",
+      "date": "2022-04-13T10:23:34+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EC09/01/3155 (A)",
+        "title": "Housing Related Support Services Framework call-off: Lot 2c",
+        "description": "Providers previously accepted onto the  Housing Related Support Framework were invited to submit bids for this mini-competition within the framework. This service will deliver housing related support for adults in Southampton.",
+        "datePublished": "2021-10-12T15:56:24+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 471744,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 825552,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2022-03-24T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-07-01T00:00:00+01:00",
+          "endDate": "2026-06-03T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+          "name": "SOUTHAMPTON CITY COUNCIL",
+          "identifier": {
+            "legalName": "SOUTHAMPTON CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/jxfb36Bw"
+          },
+          "address": {
+            "streetAddress": "Civic Centre,Civic Centre Road",
+            "locality": "SOUTHAMPTON",
+            "postalCode": "SO147LY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "tendermanagement@southampton.gov.uk",
+            "telephone": "02380833000"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-IP26511R",
+          "name": "TWO SAINTS LIMITED",
+          "identifier": {
+            "legalName": "TWO SAINTS LIMITED",
+            "scheme": "GB-COH",
+            "id": "IP26511R"
+          },
+          "address": {
+            "streetAddress": "35 WATERSIDE GARDENS\nPO16 8SD\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+        "name": "SOUTHAMPTON CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04-1",
+          "status": "active",
+          "date": "2022-04-11T00:00:00+01:00",
+          "datePublished": "2022-04-13T10:23:34+01:00",
+          "value": {
+            "amount": 471744,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-IP26511R",
+              "name": "TWO SAINTS LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-07-01T00:00:00+01:00",
+            "endDate": "2026-06-03T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bc70c2c5-86ce-4689-920f-00ee3953f980",
+              "datePublished": "2022-04-13T10:23:34+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04",
+      "id": "bc70c2c5-86ce-4689-920f-00ee3953f980-528335",
+      "language": "en",
+      "date": "2022-04-13T13:47:31+01:00",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EC09/01/3155 (A)",
+        "title": "Housing Related Support Services Framework call-off: Lot 2c",
+        "description": "Providers previously accepted onto the  Housing Related Support Framework were invited to submit bids for this mini-competition within the framework. This service will deliver housing related support for adults in Southampton.",
+        "datePublished": "2021-10-12T15:56:24+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 471744,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 825552,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2022-03-24T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-07-01T00:00:00+01:00",
+          "endDate": "2026-06-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+          "name": "SOUTHAMPTON CITY COUNCIL",
+          "identifier": {
+            "legalName": "SOUTHAMPTON CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/jxfb36Bw"
+          },
+          "address": {
+            "streetAddress": "Civic Centre,Civic Centre Road",
+            "locality": "SOUTHAMPTON",
+            "postalCode": "SO147LY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "tendermanagement@southampton.gov.uk",
+            "telephone": "02380833000"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-IP26511R",
+          "name": "TWO SAINTS LIMITED",
+          "identifier": {
+            "legalName": "TWO SAINTS LIMITED",
+            "scheme": "GB-COH",
+            "id": "IP26511R"
+          },
+          "address": {
+            "streetAddress": "35 WATERSIDE GARDENS\nPO16 8SD\nGB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/jxfb36Bw",
+        "name": "SOUTHAMPTON CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0d59da25-0eae-4514-9c06-24cdf8a87c04-1",
+          "status": "active",
+          "date": "2022-04-11T00:00:00+01:00",
+          "datePublished": "2022-04-13T10:23:34+01:00",
+          "value": {
+            "amount": 471744,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-IP26511R",
+              "name": "TWO SAINTS LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-07-01T00:00:00+01:00",
+            "endDate": "2026-06-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bc70c2c5-86ce-4689-920f-00ee3953f980",
+              "datePublished": "2022-04-13T10:23:34+01:00",
+              "dateModified": "2022-04-13T13:47:31+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c875ca13-7e5b-4b53-8d74-c81a4d2b4605",
+      "id": "b676e999-201b-4a6e-ae86-d04eb8690874-528140",
+      "language": "en",
+      "date": "2022-04-13T09:58:26+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "NOTTSCC001-DN339479-65002552",
+        "title": "Supported Living Housing - Competitive Dialogue",
+        "description": "Four Lots were tendered but only two of those concluded in a succesful award:\\r\r\nLot 1: One scheme of 'Move-on' Supported Accommodation Service: 12 units in total Gedling or Rushcliffe or Broxtowe (County South) - Progress Housing Association\\r\r\nLot 4: One scheme of Highly specialist housing for a minimum of 5 people accessing NHS capital ('plus-plus') Mansfield or Ashfield or Broxtowe - Choice Support",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70000000",
+          "description": "Real estate services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85000000",
+            "description": "Health and social work services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 5000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Competitive dialog",
+        "tenderPeriod": {
+          "endDate": "2018-06-18T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-05-01T00:00:00+01:00",
+          "endDate": "2031-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-227",
+          "name": "Nottinghamshire County Council",
+          "identifier": {
+            "legalName": "Nottinghamshire County Council"
+          },
+          "address": {
+            "streetAddress": "County Hall, West Bridgford",
+            "locality": "Nottingham",
+            "postalCode": "NG2 7QP",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Jennifer Rosenbaum",
+            "email": "jennifer.rosenbaum@nottscc.gov.uk",
+            "telephone": "+44 1159772830"
+          },
+          "details": {
+            "url": "http://www.nottinghamshire.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-204274",
+          "name": "Progress Housing Association Limited",
+          "identifier": {
+            "legalName": "Progress Housing Association Limited"
+          },
+          "address": {
+            "streetAddress": "PR25 2LW"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-91794",
+          "name": "Choice Support",
+          "identifier": {
+            "legalName": "Choice Support"
+          },
+          "address": {
+            "streetAddress": "SE1 7XA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-227",
+        "name": "Nottinghamshire County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c875ca13-7e5b-4b53-8d74-c81a4d2b4605-1",
+          "status": "active",
+          "date": "2018-12-05T00:00:00Z",
+          "datePublished": "2022-04-13T09:58:26+01:00",
+          "value": {
+            "amount": 5000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-204274",
+              "name": "Progress Housing Association Limited"
+            },
+            {
+              "id": "GB-CFS-91794",
+              "name": "Choice Support"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-05-01T00:00:00+01:00",
+            "endDate": "2031-04-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b676e999-201b-4a6e-ae86-d04eb8690874",
+              "datePublished": "2022-04-13T09:58:26+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=b1eef127-bb59-e811-80eb-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f5014f07-ad4c-4a6f-bdd3-90164d16ab13",
+      "id": "c2b39e5c-9d6b-4b86-9e77-2221ce9080af-527281",
+      "language": "en",
+      "date": "2022-04-11T13:23:36+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "HACK001-DN607007-65182744",
+        "title": "Young Parents Supported Accommodation Service",
+        "description": "Supported accommodation for care leavers who are also young parents, aged 16-21.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70333000",
+          "description": "Housing services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 469327.5,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-03-01T23:59:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2023-08-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50288",
+          "name": "London Borough of Hackney",
+          "identifier": {
+            "legalName": "London Borough of Hackney"
+          },
+          "address": {
+            "streetAddress": "Hackney Service Centre, 1 Hillman Street",
+            "locality": "Hackney",
+            "postalCode": "E8 1DY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Maria Zazovskaya",
+            "email": "maria.zazovskaya@hackney.gov.uk",
+            "telephone": "+44 2083563000"
+          },
+          "details": {
+            "url": "http://www.hackney.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-203977",
+          "name": "ONE HOUSING GROUP",
+          "identifier": {
+            "legalName": "ONE HOUSING GROUP"
+          },
+          "address": {
+            "streetAddress": "Atelier House, 64 Pratt Street, London, NW1 0DL"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50288",
+        "name": "London Borough of Hackney"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f5014f07-ad4c-4a6f-bdd3-90164d16ab13-1",
+          "status": "active",
+          "date": "2022-03-18T00:00:00Z",
+          "datePublished": "2022-04-11T13:23:36+01:00",
+          "value": {
+            "amount": 469327.5,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-203977",
+              "name": "ONE HOUSING GROUP"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2023-08-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c2b39e5c-9d6b-4b86-9e77-2221ce9080af",
+              "datePublished": "2022-04-11T13:23:36+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-2df70133-a5cd-482a-85f4-516a8261fac1",
+      "id": "bb86dea5-fc02-4cb9-a0c3-884cbdb33bae-527258",
+      "language": "en",
+      "date": "2022-04-11T12:42:15+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IT-100-3537-P0871 - AWARD",
+        "title": "P0871 - Accommodation and support to address homelessness at point of discharge service - AWARD",
+        "description": "The Council wishes to establish a Contract for the provision of Accommodation and Support to citizens who are homeless at the point of discharge.  This will include but not limited to:\r\n      \r\n      o Provide good quality accommodation that meets the needs of the citizens including those who are bariatric, and wheelchair users.\r\n      o Provide flexible person-centred support ensuring that support is delivered in response to the client's needs and allows them to maintain accommodation and improve their health and wellbeing \r\n              outcomes.\r\n      o Provide the lead and support which will assist clients to navigate and gain access to appropriate services, including but not limited to health care, substance misuse, education and/or support to gain \r\n              employment.\r\n      o Follow the principles of the No Wrong Door Network to ensure that all service users are enabled to access the correct support by referring or enabling access (including getting clients to appointments) to \r\n              other services as appropriate.\r\n      o Provide support that promotes social integration and financial stability.\r\n      o Regularly review the person-centred support agreement to up-date, record and monitor the progress of each client.\r\n      o Developing the skills and capabilities of individuals and raise their aspirations, enabling them to be independent and self-sustaining. \r\n      o Provide a service that is timely and available at the point of need.\r\n      o Develop, maintain and coordinate effective working relationships with external agencies\r\n      o Maintain and develop support knowledge and expertise.\r\n      \r\n      The Contract will last for 5 years (unless terminated under the terms and conditions of contract) with the provision to extend for up to an additional 2 years subject to requirements, funding and satisfactory performance.\r\n      \r\n      The contract will be awarded on the following basis to one provider for the whole contract.\r\n      \r\n      The Council will be using its free to use e-tendering system (in-tend) for the administration of this procurement process and potential suppliers must register with the system to be able to express an interest. If you wish to express an interest in this opportunity please click on the following link to access https://in-tendhost.co.uk/birminghamcc/ and submit your details to register. You will then be sent details on how to log on which will enable you to download all relevant Invitation to Tender (ITT) documentation.  \r\n      \r\n      If you are unable to register with In-tend or have any questions or problems on how to use this web site please either email us at: cps@birmingham.gov.uk or call CPS Helpdesk on 0121 464 8000.\r\n      \r\n      Your completed tender submission should be returned by noon on 5th January 2022 via the 'in-tend' system https://in-tendhost.co.uk/birminghamcc",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85311000",
+          "description": "Social work services with accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "70333000",
+            "description": "Housing services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "98341000",
+            "description": "Accommodation services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "B4 7WB"
+              },
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-01-05T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T01:00:00+01:00",
+          "endDate": "2027-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-41105",
+          "name": "Birmingham City Council",
+          "identifier": {
+            "legalName": "Birmingham City Council"
+          },
+          "address": {
+            "streetAddress": "10 Woodcock Street, Birmingham",
+            "locality": "West Midlands",
+            "postalCode": "B4 7WB",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Henrietta Jacobs",
+            "email": "Henrietta.Jacobs@birmingham.gov.uk",
+            "telephone": "07506791427"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-203969",
+          "name": "Claremont living",
+          "identifier": {
+            "legalName": "Claremont living"
+          },
+          "address": {
+            "streetAddress": "unit 25, 55 Holloway road, birmingham, United Kingdom, B1 1HR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-41105",
+        "name": "Birmingham City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-2df70133-a5cd-482a-85f4-516a8261fac1-1",
+          "status": "active",
+          "date": "2022-02-17T00:00:00Z",
+          "datePublished": "2022-04-11T12:42:15+01:00",
+          "value": {
+            "amount": 1400000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-203969",
+              "name": "Claremont living"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2027-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bb86dea5-fc02-4cb9-a0c3-884cbdb33bae",
+              "datePublished": "2022-04-11T12:42:15+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9bce2a1e-0023-4bbd-bb90-b1a9ae57c586",
+      "id": "c835c991-683b-49e1-a08b-82e1b2dddd11-526868",
+      "language": "en",
+      "date": "2022-04-08T17:10:08+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN606886-80593971",
+        "title": "21979 - Emergency Accommodation",
+        "description": "Emergency Accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98341000",
+          "description": "Accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 50000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-04-07T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-09T00:00:00+01:00",
+          "endDate": "2022-04-14T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50127",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Ballard House, West Hoe Road",
+            "locality": "Plymouth",
+            "postalCode": "PL1 3BJ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "procurement@plymouth.gov.uk",
+            "telephone": "01752 668000"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-203878",
+          "name": "Private & Confidential",
+          "identifier": {
+            "legalName": "Private & Confidential"
+          },
+          "address": {
+            "streetAddress": "n/a"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50127",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9bce2a1e-0023-4bbd-bb90-b1a9ae57c586-1",
+          "status": "active",
+          "date": "2022-04-08T00:00:00+01:00",
+          "datePublished": "2022-04-08T17:10:08+01:00",
+          "value": {
+            "amount": 50000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-203878",
+              "name": "Private & Confidential"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-09T00:00:00+01:00",
+            "endDate": "2022-04-15T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/c835c991-683b-49e1-a08b-82e1b2dddd11",
+              "datePublished": "2022-04-08T17:10:08+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-baaa2f4a-2c23-470d-a4b1-f146c49853a9",
+      "id": "6c914072-7d85-4c46-a7ef-b1be70456eb4-526712",
+      "language": "en",
+      "date": "2022-04-08T14:22:45+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOURN001-DN606798-08946085",
+        "title": "The Provision of 12 bed accommodation for young people age 18-24 years",
+        "description": "The Provision of 12 bed accommodation for young people age 18-24 years",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 176580,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-03-25T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-04-01T00:00:00+01:00",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-116471",
+          "name": "Bournemouth Christchurch and Poole Council",
+          "identifier": {
+            "legalName": "Bournemouth Christchurch and Poole Council"
+          },
+          "address": {
+            "streetAddress": "Bournemouth Christchurch and Poole Council, Town Hall",
+            "locality": "Bournemouth",
+            "postalCode": "BH2 6DY",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Procurement Team",
+            "email": "procurement@bcpcouncil.gov.uk",
+            "telephone": "+44 1202451417"
+          },
+          "details": {
+            "url": "https://www.bcpcouncil.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-29688",
+          "name": "Bournemouth Churches Housing Association",
+          "identifier": {
+            "legalName": "Bournemouth Churches Housing Association"
+          },
+          "address": {
+            "streetAddress": "BH1 3NS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-116471",
+        "name": "Bournemouth Christchurch and Poole Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-baaa2f4a-2c23-470d-a4b1-f146c49853a9-1",
+          "status": "active",
+          "date": "2022-03-28T00:00:00+01:00",
+          "datePublished": "2022-04-08T14:22:45+01:00",
+          "value": {
+            "amount": 176580,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-29688",
+              "name": "Bournemouth Churches Housing Association"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/6c914072-7d85-4c46-a7ef-b1be70456eb4",
+              "datePublished": "2022-04-08T14:22:45+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8fb0f662-14b0-462e-98a0-52da7cae662f",
+      "id": "65acdac2-276b-47e3-b358-c76bd0de775a-525004",
+      "language": "en",
+      "date": "2022-04-05T08:45:57+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LPOOL001-DN454629-07231689",
+        "title": "Temporary Accommodation Services for Homeless People",
+        "description": "The Authority is seeking expressions of interest from suitably experienced and competent providers to provide temporary accommodation services.\r\n\r\nThe purpose of this procurement is to recommission the following temporary accommodation services:\r\n•\tAccommodation for single men\r\n•\tAccommodation for single women\r\n•\tAccommodation for families   \r\n\r\nThe aim of this contract(s) is to provide temporary accommodation for homeless people with support to address the underlying reasons for their homelessness and empower them to live independently in the community.\r\n",
+        "datePublished": "2021-09-14T10:07:35+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 4158525,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-10-11T16:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-12-01T00:00:00Z",
+          "endDate": "2026-11-30T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-26061",
+          "name": "Liverpool City Council",
+          "identifier": {
+            "legalName": "Liverpool City Council"
+          },
+          "address": {
+            "streetAddress": "4th Floor, Cunard Building",
+            "locality": "Liverpool",
+            "postalCode": "L3 1DS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Gill Astill",
+            "email": "gill.astill@liverpool.gov.uk",
+            "telephone": "+44 1512330591"
+          },
+          "details": {
+            "url": "http://www.liverpool.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-203216",
+          "name": "New Start",
+          "identifier": {
+            "legalName": "New Start"
+          },
+          "address": {
+            "streetAddress": "L7 6QD"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-122045",
+          "name": "Shap Ltd",
+          "identifier": {
+            "legalName": "Shap Ltd"
+          },
+          "address": {
+            "streetAddress": "WA10 3TT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-26061",
+        "name": "Liverpool City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8fb0f662-14b0-462e-98a0-52da7cae662f-1",
+          "status": "active",
+          "date": "2022-02-23T00:00:00Z",
+          "datePublished": "2022-04-05T08:45:57+01:00",
+          "value": {
+            "amount": 2915085,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-203216",
+              "name": "New Start"
+            },
+            {
+              "id": "GB-CFS-122045",
+              "name": "Shap Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-04-01T00:00:00+01:00",
+            "endDate": "2027-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/65acdac2-276b-47e3-b358-c76bd0de775a",
+              "datePublished": "2022-04-05T08:45:57+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=435f3df6-7a22-ea11-80fc-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-965c7d83-bd59-4bf3-a24e-f2c14fecfee3",
+      "id": "b573afab-0ef9-4dc6-99f5-055107d7f659-524889",
+      "language": "en",
+      "date": "2022-04-04T16:40:03+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP681326946",
+        "title": "Temporary and Emergency Accommodation",
+        "description": "To provide a value for money temporary accommodation and support service for Catalyst customers. The service\r\n      must cover the provision of hotel, serviced accommodation; transport and removal services and facilities to support\r\n      customers remain in their home in the event of an emergency where possible. The supplier must be innovative in its\r\n      approach to delivering the service by providing a number of options to meet the requirements of our customers.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55250000",
+          "description": "Letting services of short-stay furnished accommodation"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 32000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-02-28T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-03-01T00:00:00Z",
+          "endDate": "2027-02-27T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-172424",
+          "name": "Catalyst Housing Limited",
+          "identifier": {
+            "legalName": "Catalyst Housing Limited"
+          },
+          "address": {
+            "streetAddress": "26-30 Uxbridge Road, Ealing",
+            "locality": "London",
+            "postalCode": "W5 2AU",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "email": "nasreen.tayab@chg.org.uk",
+            "telephone": "+442088323140"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-203198",
+          "name": "Jigsaw Conference Ltd",
+          "identifier": {
+            "legalName": "Jigsaw Conference Ltd"
+          },
+          "address": {
+            "streetAddress": "4 th Floor,\n        Dudley House,\n        169 Piccadilly,\n        London,\n        W1J 9EH"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-172424",
+        "name": "Catalyst Housing Limited"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-965c7d83-bd59-4bf3-a24e-f2c14fecfee3-1",
+          "status": "active",
+          "date": "2022-02-28T00:00:00Z",
+          "datePublished": "2022-04-04T16:40:03+01:00",
+          "value": {
+            "amount": 32000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-203198",
+              "name": "Jigsaw Conference Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-03-01T00:00:00Z",
+            "endDate": "2027-02-27T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b573afab-0ef9-4dc6-99f5-055107d7f659",
+              "datePublished": "2022-04-04T16:40:03+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=681326946"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

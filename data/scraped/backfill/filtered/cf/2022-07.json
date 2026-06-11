@@ -1,0 +1,1534 @@
+{
+  "portal": "cf",
+  "year": 2022,
+  "month": 7,
+  "raw_count": 4814,
+  "filtered_count": 9,
+  "pages": 49,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-175a056d-3f51-4491-b8b3-4ed946fdbf45",
+      "id": "2dd6883d-1c96-4ce0-8910-92344448ed94-558259",
+      "language": "en",
+      "date": "2022-07-27T16:00:03+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP693323279",
+        "title": "Care and Support in Extra Care Housing",
+        "description": "The Councils are seeking suitably experienced Providers for the provision of Care and Support Service in Extra Care Housing within the London Borough of Richmond upon Thames and the London Borough of Wandsworth.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 10857600,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-03-02T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-07-04T00:00:00+01:00",
+          "endDate": "2030-07-03T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-8478",
+          "name": "London Borough of Wandsworth",
+          "identifier": {
+            "legalName": "London Borough of Wandsworth"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Wandsworth High Street",
+            "locality": "London",
+            "postalCode": "SW18 2PU",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "name": "Taiwo Adelano",
+            "email": "T.Adelano@richmond.gov.uk",
+            "telephone": "+4488917580"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-214470",
+          "name": "Care Outlook Ltd",
+          "identifier": {
+            "legalName": "Care Outlook Ltd"
+          },
+          "address": {
+            "streetAddress": "168 Church Road\n        Hove\n        BN3 2DL"
+          },
+          "details": {
+            "scale": "large"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-214471",
+          "name": "Care Away Limited",
+          "identifier": {
+            "legalName": "Care Away Limited"
+          },
+          "address": {
+            "streetAddress": "1a Claughton Road\n        Plaistow\n        London"
+          },
+          "details": {
+            "scale": "large"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-8478",
+        "name": "London Borough of Wandsworth"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-175a056d-3f51-4491-b8b3-4ed946fdbf45-1",
+          "status": "active",
+          "date": "2022-03-02T00:00:00Z",
+          "datePublished": "2022-07-27T16:00:03+01:00",
+          "value": {
+            "amount": 10857600,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-214470",
+              "name": "Care Outlook Ltd"
+            },
+            {
+              "id": "GB-CFS-214471",
+              "name": "Care Away Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-07-04T00:00:00+01:00",
+            "endDate": "2030-07-03T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2dd6883d-1c96-4ce0-8910-92344448ed94",
+              "datePublished": "2022-07-27T16:00:03+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=693323279"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-237a8209-78bb-4ad3-9fb9-d3ea31e5a819",
+      "id": "82f40c3a-8be9-426e-aefa-65de5882d676-555644",
+      "language": "en",
+      "date": "2022-07-19T11:15:35+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN535340",
+        "title": "Refurbishment of YMCA temporary accommodation",
+        "description": "Refurbishment of temporary accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "TA6 3AR"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 45000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Single tender action (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2020-12-01T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-01T00:00:00Z",
+          "endDate": "2022-08-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-SEG",
+          "name": "Sedgemoor District Council",
+          "identifier": {
+            "legalName": "Sedgemoor District Council",
+            "scheme": "GB-LAE",
+            "id": "SEG"
+          },
+          "address": {
+            "streetAddress": "Bridgwater House, King Square",
+            "locality": "Bridgwater",
+            "postalCode": "TA63AR",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jo Hutchins",
+            "email": "joanna.hutchins@sedgemoor.gov.uk",
+            "telephone": "01278 435217"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-3746771",
+          "name": "YMCA Dulverton Group",
+          "identifier": {
+            "legalName": "YMCA Dulverton Group",
+            "scheme": "GB-COH",
+            "id": "3746771"
+          },
+          "address": {
+            "streetAddress": "TA1 1SH"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-SEG",
+        "name": "Sedgemoor District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-237a8209-78bb-4ad3-9fb9-d3ea31e5a819-1",
+          "status": "active",
+          "date": "2021-03-29T00:00:00+01:00",
+          "datePublished": "2022-07-19T11:15:35+01:00",
+          "value": {
+            "amount": 45000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-3746771",
+              "name": "YMCA Dulverton Group"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-01T00:00:00Z",
+            "endDate": "2022-08-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/82f40c3a-8be9-426e-aefa-65de5882d676",
+              "datePublished": "2022-07-19T11:15:35+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-72b457d9-e08a-4b73-8b3e-a2f3cf3896b0",
+      "id": "6ae557b7-28a4-4df6-bea1-9baa391361ce-554811",
+      "language": "en",
+      "date": "2022-07-14T19:02:39+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20220714190233-104130",
+        "title": "Extra Care Housing: Care and Support",
+        "description": "The aim of the Service is to support people who require care or support to help them live in the Extra Care setting. The model of Service will be one that enables people to achieve as much independence as they can by working with them to make the most of their skills and abilities in relation to their physical, intellectual, emotional and social capacity.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85100000",
+            "description": "Health services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "S1 4PL"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-06-10T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-10-01T00:00:00+01:00",
+          "endDate": "2027-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-187357",
+          "name": "Sheffield City Council",
+          "identifier": {
+            "legalName": "Sheffield City Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Pinstone Street,",
+            "locality": "Sheffield",
+            "postalCode": "S1 2HH",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Adam Elwis",
+            "email": "adam.elwis@sheffield.gov.uk",
+            "telephone": "+44 01142053372"
+          },
+          "details": {
+            "url": "https://www.sheffield.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-213192",
+          "name": "Premium Care",
+          "identifier": {
+            "legalName": "Premium Care"
+          },
+          "address": {
+            "streetAddress": "39-42 Bridge Street\n\tSwinton\n\tS64 8AP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-187357",
+        "name": "Sheffield City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-72b457d9-e08a-4b73-8b3e-a2f3cf3896b0-1",
+          "status": "active",
+          "date": "2022-07-08T00:00:00+01:00",
+          "datePublished": "2022-07-14T19:02:39+01:00",
+          "value": {
+            "amount": 6867245.19,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-213192",
+              "name": "Premium Care"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-10-01T00:00:00+01:00",
+            "endDate": "2027-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/6ae557b7-28a4-4df6-bea1-9baa391361ce",
+              "datePublished": "2022-07-14T19:02:39+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Additional data",
+              "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=46993&B=UK"
+            },
+            {
+              "id": "3",
+              "description": "User / Company",
+              "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/104130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f507da60-baa5-4060-99bd-de8cdb03fb21",
+      "id": "091f758f-356c-429f-86a2-db277758e243-554591",
+      "language": "en",
+      "date": "2022-07-14T12:00:11+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN615816",
+        "title": "Provision of Choice Based Lettings, Housing Needs, Homelessness solution via CCS framework RM1557 G-Cloud 12 - Cloud Software",
+        "description": "Southend City Council is looking for a new contract for continued and improved provision of Housing Allocations and Homelessness CRM and Choice Based Lettings Solution. \r\nThis procurement was conducted via the Crown Commercial Digital Marketplace.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "48100000",
+          "description": "Industry specific software package"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "48600000",
+            "description": "Database and operating software package"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "SS2 6ER"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 156437.76,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2022-05-26T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-01T00:00:00+01:00",
+          "endDate": "2026-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-SOS",
+          "name": "Southend-on-sea Borough Council",
+          "identifier": {
+            "legalName": "Southend-on-sea Borough Council",
+            "scheme": "GB-LAE",
+            "id": "SOS"
+          },
+          "address": {
+            "streetAddress": "Civic Centre",
+            "locality": "SOUTHEND-ON-SEA",
+            "postalCode": "SS26EN",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Sharon Cohen",
+            "email": "sharoncohen@southend.gov.uk",
+            "telephone": "+441702534810"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01628868",
+          "name": "CIVICA UK LIMITED",
+          "identifier": {
+            "legalName": "CIVICA UK LIMITED",
+            "scheme": "GB-COH",
+            "id": "01628868"
+          },
+          "address": {
+            "streetAddress": "30 Stamford Street\nLONDON\nSE1 9LQ\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-SOS",
+        "name": "Southend-on-sea Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f507da60-baa5-4060-99bd-de8cdb03fb21-1",
+          "status": "active",
+          "date": "2022-07-13T00:00:00+01:00",
+          "datePublished": "2022-07-14T12:00:11+01:00",
+          "value": {
+            "amount": 156437.76,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01628868",
+              "name": "CIVICA UK LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-01T00:00:00+01:00",
+            "endDate": "2026-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/091f758f-356c-429f-86a2-db277758e243",
+              "datePublished": "2022-07-14T12:00:11+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f38eb7de-c7ae-4fff-878e-3ed7cb8a187c",
+      "id": "bba3f58b-b4c1-450b-9f39-81a4257d57e9-553196",
+      "language": "en",
+      "date": "2022-07-08T13:19:20+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IT-234-33780-CWSCC - 033780 - AWARD",
+        "title": "WSCC AA Extra Care Housing Lots 1-8 - AWARD",
+        "description": "This is a call off from the Extra Care DPS",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "PO19 1RQ"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2022-01-24T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-10-01T01:00:00+01:00",
+          "endDate": "2025-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162652",
+          "name": "West Sussex County Council (CAP)",
+          "identifier": {
+            "legalName": "West Sussex County Council (CAP)"
+          },
+          "address": {
+            "streetAddress": "West Street, Chicester",
+            "locality": "West Sussex",
+            "postalCode": "PO19 1RQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Abigael Akinla (WSCC)",
+            "email": "Abigael.Akinla@westsussex.gov.uk",
+            "telephone": "+44 3302224772"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-190825",
+          "name": "Care Outlook Ltd",
+          "identifier": {
+            "legalName": "Care Outlook Ltd"
+          },
+          "address": {
+            "streetAddress": "1 Penerley Road, London, United Kingdom, SE6 2LQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-212559",
+          "name": "CAREPOINT SERVICES Ltd",
+          "identifier": {
+            "legalName": "CAREPOINT SERVICES Ltd"
+          },
+          "address": {
+            "streetAddress": "The White House, 6 Laud Street, CROYDON, Surrey, United Kingdom, CR0 1ST"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-212560",
+          "name": "Cera Care Operations Ltd",
+          "identifier": {
+            "legalName": "Cera Care Operations Ltd"
+          },
+          "address": {
+            "streetAddress": "219 Kensington High Street, United Kingdom, W8 6BD"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-181002",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "10th Floor, Tricorn House, 51-53 Hagley Road, Birmingham, West Midlands, United Kingdom, B16 8TP"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-181003",
+          "name": "London Care Plc",
+          "identifier": {
+            "legalName": "London Care Plc"
+          },
+          "address": {
+            "streetAddress": "Cardinal House, Abbeyfield Court, Abbeyfield Road, Nottingham, Nottinghamshire, United Kingdom, NG72SZ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162652",
+        "name": "West Sussex County Council (CAP)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f38eb7de-c7ae-4fff-878e-3ed7cb8a187c-1",
+          "status": "active",
+          "date": "2022-06-24T00:00:00+01:00",
+          "datePublished": "2022-07-08T13:19:20+01:00",
+          "value": {
+            "amount": 7935867.91,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-190825",
+              "name": "Care Outlook Ltd"
+            },
+            {
+              "id": "GB-CFS-212559",
+              "name": "CAREPOINT SERVICES Ltd"
+            },
+            {
+              "id": "GB-CFS-212560",
+              "name": "Cera Care Operations Ltd"
+            },
+            {
+              "id": "GB-CFS-181002",
+              "name": "Housing 21"
+            },
+            {
+              "id": "GB-CFS-181003",
+              "name": "London Care Plc"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-10-01T00:00:00+01:00",
+            "endDate": "2025-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bba3f58b-b4c1-450b-9f39-81a4257d57e9",
+              "datePublished": "2022-07-08T13:19:20+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-f38eb7de-c7ae-4fff-878e-3ed7cb8a187c",
+      "id": "bba3f58b-b4c1-450b-9f39-81a4257d57e9-553202",
+      "language": "en",
+      "date": "2022-07-08T13:23:04+01:00",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IT-234-33780-CWSCC - 033780 - AWARD",
+        "title": "WSCC AA Extra Care Housing Lots 1-8 - AWARD",
+        "description": "This is a call off from the Extra Care DPS",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "PO19 1RQ"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2022-01-24T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-10-01T01:00:00+01:00",
+          "endDate": "2025-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162652",
+          "name": "West Sussex County Council (CAP)",
+          "identifier": {
+            "legalName": "West Sussex County Council (CAP)"
+          },
+          "address": {
+            "streetAddress": "West Street, Chicester",
+            "locality": "West Sussex",
+            "postalCode": "PO19 1RQ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Abigael Akinla (WSCC)",
+            "email": "Abigael.Akinla@westsussex.gov.uk",
+            "telephone": "+44 3302224772"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-190825",
+          "name": "Care Outlook Ltd",
+          "identifier": {
+            "legalName": "Care Outlook Ltd"
+          },
+          "address": {
+            "streetAddress": "1 Penerley Road, London, United Kingdom, SE6 2LQ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-212559",
+          "name": "CAREPOINT SERVICES Ltd",
+          "identifier": {
+            "legalName": "CAREPOINT SERVICES Ltd"
+          },
+          "address": {
+            "streetAddress": "The White House, 6 Laud Street, CROYDON, Surrey, United Kingdom, CR0 1ST"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-212560",
+          "name": "Cera Care Operations Ltd",
+          "identifier": {
+            "legalName": "Cera Care Operations Ltd"
+          },
+          "address": {
+            "streetAddress": "219 Kensington High Street, United Kingdom, W8 6BD"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-181002",
+          "name": "Housing 21",
+          "identifier": {
+            "legalName": "Housing 21"
+          },
+          "address": {
+            "streetAddress": "10th Floor, Tricorn House, 51-53 Hagley Road, Birmingham, West Midlands, United Kingdom, B16 8TP"
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-181003",
+          "name": "London Care Plc",
+          "identifier": {
+            "legalName": "London Care Plc"
+          },
+          "address": {
+            "streetAddress": "Cardinal House, Abbeyfield Court, Abbeyfield Road, Nottingham, Nottinghamshire, United Kingdom, NG72SZ"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162652",
+        "name": "West Sussex County Council (CAP)"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-f38eb7de-c7ae-4fff-878e-3ed7cb8a187c-1",
+          "status": "active",
+          "date": "2022-06-24T00:00:00+01:00",
+          "datePublished": "2022-07-08T13:19:20+01:00",
+          "value": {
+            "amount": 7935867.91,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-190825",
+              "name": "Care Outlook Ltd"
+            },
+            {
+              "id": "GB-CFS-212559",
+              "name": "CAREPOINT SERVICES Ltd"
+            },
+            {
+              "id": "GB-CFS-212560",
+              "name": "Cera Care Operations Ltd"
+            },
+            {
+              "id": "GB-CFS-181002",
+              "name": "Housing 21"
+            },
+            {
+              "id": "GB-CFS-181003",
+              "name": "London Care Plc"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-10-01T00:00:00+01:00",
+            "endDate": "2025-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bba3f58b-b4c1-450b-9f39-81a4257d57e9",
+              "datePublished": "2022-07-08T13:19:20+01:00",
+              "dateModified": "2022-07-08T13:23:04+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a7a9f034-6146-4a61-b156-1698a5738f82",
+      "id": "d5524af8-e16f-41ef-bbd9-89e6dbe986c5-553185",
+      "language": "en",
+      "date": "2022-07-08T12:47:12+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "20220708124707-103835",
+        "title": "Local Authority Delivery (LAD2) Programme for the installation of energy efficiency measures in private and social housing.",
+        "description": "Local Authority Delivery (LAD2) Programme for the installation of energy efficiency measures in private and social housing across the following measures;\r\nLot 1 - PSH - Insulation\tExternal wall insulation systems \r\nLot 1 - PSH - Insulation\tCavity wall insulation \r\nLot 1 - PSH - Insulation\tS Type Hybrid Wall Insulation\r\nLot 1 - PSH - Insulation\tLoft Insulation\r\nLot 1 - PSH - Insulation\tUnderfloor Insulation\r\nLot 7 - PSH - Windows and Doors\tSingle Glazing Upgrades\r\nLot 5 - PSH - Renewable Technologies\tAir Source Heat Pumps",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71314000",
+          "description": "Energy and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "S70 2DR"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1567000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 1567001,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2022-07-08T12:43:21+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2022-07-11T00:00:00+01:00",
+          "endDate": "2022-07-12T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-189872",
+          "name": "Barnsley Metropolitan Borough Council",
+          "identifier": {
+            "legalName": "Barnsley Metropolitan Borough Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "Barnsley, South Yorkshire",
+            "postalCode": "S70 2TA",
+            "countryName": "ENG"
+          },
+          "contactPoint": {
+            "name": "Jane Lee",
+            "email": "janelee2@barnsley.gov.uk",
+            "telephone": "+44 01226770770"
+          },
+          "details": {
+            "url": "https://www.barnsley.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-212549",
+          "name": "Everwarm Ltd Cocuun Ltd",
+          "identifier": {
+            "legalName": "Everwarm Ltd Cocuun Ltd"
+          },
+          "address": {
+            "streetAddress": "EH48 2EE\nHU13 0GD"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-189872",
+        "name": "Barnsley Metropolitan Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a7a9f034-6146-4a61-b156-1698a5738f82-1",
+          "status": "active",
+          "date": "2021-05-17T00:00:00+01:00",
+          "datePublished": "2022-07-08T12:47:12+01:00",
+          "value": {
+            "amount": 1567000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-212549",
+              "name": "Everwarm Ltd Cocuun Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-01T00:00:00+01:00",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d5524af8-e16f-41ef-bbd9-89e6dbe986c5",
+              "datePublished": "2022-07-08T12:47:12+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-352cdf2c-fb0c-4a5d-9a6e-d726b6d07433",
+      "id": "2f83f7c3-eb6a-4151-b0ac-66315570531f-552478",
+      "language": "en",
+      "date": "2022-07-06T13:26:51+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOMRTD001-DN572756-56707189",
+        "title": "Provision of Care and Support in Learning Disability and/or Mental Health  Supported Accommodation",
+        "description": "Somerset County Council is looking for a provider(s) to provide care and support in four brand new purpose built developments for people with learning disabilities and mental health needs in Somerset.\r\nLot 1 - LD Minehead\r\nLot 2 - LD Taunton\r\nLot 3 - LD Yeovil\r\nLot 4 - MH Yeovil",
+        "datePublished": "2021-11-15T13:34:28Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 7000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2021-12-13T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-05-01T00:00:00+01:00",
+          "endDate": "2027-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49347",
+          "name": "Somerset County Council",
+          "identifier": {
+            "legalName": "Somerset County Council"
+          },
+          "address": {
+            "streetAddress": "County Hall",
+            "locality": "Taunton",
+            "postalCode": "TA1 4DY",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Kate Williams",
+            "email": "ktwilliams@somerset.gov.uk",
+            "telephone": "+44 1823356712"
+          },
+          "details": {
+            "url": "https://www.supplyingthesouthwest.org.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-212177",
+          "name": "Dimensions Somerset SEV Ltd",
+          "identifier": {
+            "legalName": "Dimensions Somerset SEV Ltd"
+          },
+          "address": {
+            "streetAddress": "Discovery, 2nd Floor, Building 1430, Arlington Business Park, Theale, Reading"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-212178",
+          "name": "GP Homecare Ltd (T/A Radis Community Care)",
+          "identifier": {
+            "legalName": "GP Homecare Ltd (T/A Radis Community Care)"
+          },
+          "address": {
+            "streetAddress": "Mercia House 15 Galena Close Tamworth Staffordshire\nB77 4AS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49347",
+        "name": "Somerset County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-352cdf2c-fb0c-4a5d-9a6e-d726b6d07433-1",
+          "status": "active",
+          "date": "2022-06-23T00:00:00+01:00",
+          "datePublished": "2022-07-06T13:26:51+01:00",
+          "value": {
+            "amount": 5139920,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-212177",
+              "name": "Dimensions Somerset SEV Ltd"
+            },
+            {
+              "id": "GB-CFS-212178",
+              "name": "GP Homecare Ltd (T/A Radis Community Care)"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-09-01T00:00:00+01:00",
+            "endDate": "2027-08-31T23:59:59+01:00"
+          },
+          "description": "Dimensions Somerset SEV Ltd: Awarded Lot 1 and Lot 2\r\n\r\nGP Homecare Ltd (T/A Radis Community Care): Awarded Lot 3",
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2f83f7c3-eb6a-4151-b0ac-66315570531f",
+              "datePublished": "2022-07-06T13:26:51+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=fdebbe1d-1446-ec11-810e-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-fe0452f5-f1a3-4d4e-bc0d-83b3e3d5b901",
+      "id": "30933fdb-8e3d-4c15-9fba-329463abb523-551359",
+      "language": "en",
+      "date": "2022-07-01T13:53:54+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IT-230-5919-SMBC 21153 - AWARD",
+        "title": "ITT for Void Repairs and Post Tenancy Repairs to Housing - AWARD",
+        "description": "The Council has a requirement to establish a Framework to carry out necessary repairs to void properties and any resultant post tenancy repair works and to identify and appoint 6 suitably qualified and experienced contractors to provide a 4-year term service to supply the goods and services specified within the Requirement & Specification.  Works will be divided into Lots by area. Each of the successful contractors will be appointed to a maximum of one Lot. Contractors may be required to work in other areas in accordance with the call off process set out below;  The 6 towns will be split into Lots as follows:  Lot 1 West Bromwich,  Lot 2 Tipton (Which may include work in properties which are owned by Sandwell Council but managed by   Cotterills Tenant Management Association), Lot 3 Wednesbury, Lot 4 Rowley Regis, Lot 5 Oldbury and Lot 6 Smethwick",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "50000000",
+          "description": "Repair and maintenance services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "50800000",
+            "description": "Miscellaneous repair and maintenance services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "70333000",
+            "description": "Housing services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "50700000",
+            "description": "Repair and maintenance services of building installations"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "B69 3DB"
+              },
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 5203608,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 6504510,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2022-03-25T15:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2022-08-01T01:00:00+01:00",
+          "endDate": "2026-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-16",
+          "name": "Sandwell Metropolitan Borough Council",
+          "identifier": {
+            "legalName": "Sandwell Metropolitan Borough Council"
+          },
+          "address": {
+            "streetAddress": "Freeth Street, Oldbury",
+            "locality": "West Midlands",
+            "postalCode": "B69 3DB",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Carole Le Roux",
+            "email": "carole_leroux@sandwell.gov.uk",
+            "telephone": "0121 569 3628"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-211713",
+          "name": "Axis Europe Plc",
+          "identifier": {
+            "legalName": "Axis Europe Plc"
+          },
+          "address": {
+            "streetAddress": "Tramway House, 3 Tramway Avenue, Stratford, Greater London, United Kingdom, E15 4PN"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-130857",
+          "name": "Bryant Electrical (Midlands) Limited",
+          "identifier": {
+            "legalName": "Bryant Electrical (Midlands) Limited"
+          },
+          "address": {
+            "streetAddress": "1b Barnfield Road, Tipton, United Kingdom, DY4 9DE"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-37242",
+          "name": "Hardyman Group Limited",
+          "identifier": {
+            "legalName": "Hardyman Group Limited"
+          },
+          "address": {
+            "streetAddress": "Oakfield House , United Kingdom, B93 8HE"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-211714",
+          "name": "M C P Property Services Ltd",
+          "identifier": {
+            "legalName": "M C P Property Services Ltd"
+          },
+          "address": {
+            "streetAddress": "Building B, The Chase, Foxholes Business Park, Foxholes Business Park, John Tate Road, Hertford, United Kingdom, SG13 7YH"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-211715",
+          "name": "Tyrer Building Contractors",
+          "identifier": {
+            "legalName": "Tyrer Building Contractors"
+          },
+          "address": {
+            "streetAddress": "Fairgate House, 205 Kings Road, Birmingham, West Midlands, United Kingdom, B98 7NP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-103878",
+          "name": "VINCI Construction UK Limited trading as VINCI Facilities",
+          "identifier": {
+            "legalName": "VINCI Construction UK Limited trading as VINCI Facilities"
+          },
+          "address": {
+            "streetAddress": "86-92 Worcester Road, Bromsgrove, Worcestershire, United Kingdom, B61 7AQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-16",
+        "name": "Sandwell Metropolitan Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-fe0452f5-f1a3-4d4e-bc0d-83b3e3d5b901-1",
+          "status": "active",
+          "date": "2022-07-01T00:00:00+01:00",
+          "datePublished": "2022-07-01T13:53:54+01:00",
+          "value": {
+            "amount": 4179880,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-211713",
+              "name": "Axis Europe Plc"
+            },
+            {
+              "id": "GB-CFS-130857",
+              "name": "Bryant Electrical (Midlands) Limited"
+            },
+            {
+              "id": "GB-CFS-37242",
+              "name": "Hardyman Group Limited"
+            },
+            {
+              "id": "GB-CFS-211714",
+              "name": "M C P Property Services Ltd"
+            },
+            {
+              "id": "GB-CFS-211715",
+              "name": "Tyrer Building Contractors"
+            },
+            {
+              "id": "GB-CFS-103878",
+              "name": "VINCI Construction UK Limited trading as VINCI Facilities"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2022-08-01T00:00:00+01:00",
+            "endDate": "2026-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/30933fdb-8e3d-4c15-9fba-329463abb523",
+              "datePublished": "2022-07-01T13:53:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

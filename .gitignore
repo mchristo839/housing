@@ -1,0 +1,41 @@
+# Dependencies / build artefacts
+node_modules/
+dist/
+*.local
+.DS_Store
+
+# Vercel
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code workspace (developer's own; not portable)
+.claude/
+
+# Firecrawl temp dir
+.firecrawl/
+
+# Scratch / experiments
+.scratch/
+
+# Large reference files not needed for build
+references/
+
+# Local secrets — NEVER commit
+.env
+.env.local
+.env.production
+*.key
+secret*
+
+# Editor + OS
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# Verification logs (regeneratable)
+data/verification/*.log
+data/verification/run_log.txt

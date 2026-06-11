@@ -1,0 +1,940 @@
+{
+  "portal": "cf",
+  "year": 2021,
+  "month": 1,
+  "raw_count": 3422,
+  "filtered_count": 7,
+  "pages": 35,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-fb5e745b-c22b-4f37-9541-7f84f17c1bca",
+      "id": "1a1f43d9-093e-4e4c-b750-d58b31ba4fb8-409326",
+      "language": "en",
+      "date": "2021-01-29T10:09:57Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOURN001-DN451484-81977725",
+        "title": "Cynthia House Affordable Housing Scheme",
+        "description": "Construction of 22 homes comprising of 12 flats and 10 houses. The homes will form part of the portfolio of properties managed by Poole Housing Partnership.\r\n\r\nA notice was sent to the European Journal regarding this opportunity on 11/06/2020\r\n\r\nAdditional information: \r\nSuppliers interested in this opportunity can access the full procurement documentation by visiting BCP Council's Tendering system www.supplyingthesouthwest.org.uk \r\n \r\nSuppliers should search for the opportunity through Supplying the South West. There are further details of the opportunity on the advert published on www.supplyingthesouthwest.org.uk and instructions on how suppliers can access the procurement documentation for completion.  \r\n \r\nResponses to the opportunity must be submitted electronically through www.supplyingthesouthwest.org.uk before the deadline shown on the system.  \r\n \r\nIf you are unable to access the advert for the opportunity through www.supplyingthesouthwest.org.uk please contact the Council using the contact details provided.",
+        "datePublished": "2020-06-15T16:50:40+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45211000",
+          "description": "Construction work for multi-dwelling buildings and individual houses"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 4000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-08-19T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-11-01T00:00:00Z",
+          "endDate": "2022-11-01T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-116471",
+          "name": "Bournemouth Christchurch and Poole Council",
+          "identifier": {
+            "legalName": "Bournemouth Christchurch and Poole Council"
+          },
+          "address": {
+            "streetAddress": "Bournemouth Christchurch and Poole Council, Town Hall",
+            "locality": "Bournemouth",
+            "postalCode": "BH2 6DY",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "procurement@bcpcouncil.gov.uk",
+            "telephone": "+44 1202451410"
+          },
+          "details": {
+            "url": "https://www.bcpcouncil.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-158067",
+          "name": "Parsons and Joyce Contractors Limited",
+          "identifier": {
+            "legalName": "Parsons and Joyce Contractors Limited"
+          },
+          "address": {
+            "streetAddress": "BH14  9BN"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-116471",
+        "name": "Bournemouth Christchurch and Poole Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-fb5e745b-c22b-4f37-9541-7f84f17c1bca-1",
+          "status": "active",
+          "date": "2021-01-22T00:00:00Z",
+          "datePublished": "2021-01-29T10:09:57Z",
+          "value": {
+            "amount": 3806189.54,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-158067",
+              "name": "Parsons and Joyce Contractors Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-02-08T00:00:00Z",
+            "endDate": "2023-02-07T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1a1f43d9-093e-4e4c-b750-d58b31ba4fb8",
+              "datePublished": "2021-01-29T10:09:57Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Link to Advert for Suppliers to Access Tender Documents",
+              "url": "https://procontract.due-north.com/Advert?advertId=1bd2b05b-95ac-ea11-8103-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-52238f74-aa89-41bc-841e-d55a831be3e1",
+      "id": "324bdef7-1f24-4895-9650-e52f6fb4a0c5-408726",
+      "language": "en",
+      "date": "2021-01-27T11:48:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "KNOWS001-DN501477-09654029",
+        "title": "Homeless Prevention and Accommodation Service - Alt Bank House",
+        "description": "The overall purpose of the service is to deliver support to adults who are homeless or at risk of homelessness, and also have multiple and complex support needs.  The provision is delivered principally at Alt Bank House Hostel, Field Lane, Fazakerley, Liverpool L10 4XQ in Knowsley.\r\n\r\nAccess to the service is 24 hours a day and will operate every night/day including Public Holidays.\r\n\r\nThe service will have access to up 36 units of accommodation for adults who are homeless or at risk of homelessness and have medium and high support needs.  The majority of the residents will have drugs, alcohol, mental health issues and debt management problems.\r\n\r\nThe service will also operate a 'sit up' service at night and a daytime service for up to three individuals who would otherwise be rough sleeping. Individuals who have low, medium or high support needs can also access to the 'sit up'. \r\n\r\nThe support the individuals receive will help them to develop their confidence and skills to prepare them for independent living and to sustain a tenancy.\r\n",
+        "datePublished": "2020-10-02T09:45:39+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1800000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-11-02T09:30:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-144991",
+          "name": "Knowsley Council",
+          "identifier": {
+            "legalName": "Knowsley Council"
+          },
+          "address": {
+            "streetAddress": "2nd Floor, Municipal Building, Archway Road",
+            "locality": "Huyton",
+            "postalCode": "L36 9UX",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Carol Glover",
+            "email": "carol.glover@knowsley.gov.uk",
+            "telephone": "+44 1514434939"
+          },
+          "details": {
+            "url": "http://www.knowsley.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-131503",
+          "name": "Liverpool YMCA",
+          "identifier": {
+            "legalName": "Liverpool YMCA"
+          },
+          "address": {
+            "streetAddress": "L3 6HU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-144991",
+        "name": "Knowsley Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-52238f74-aa89-41bc-841e-d55a831be3e1-1",
+          "status": "active",
+          "date": "2021-01-11T00:00:00Z",
+          "datePublished": "2021-01-27T11:48:32Z",
+          "value": {
+            "amount": 917116,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-131503",
+              "name": "Liverpool YMCA"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/324bdef7-1f24-4895-9650-e52f6fb4a0c5",
+              "datePublished": "2021-01-27T11:48:32Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1f017b03-6c7f-4e2e-8b99-77dc3b3d8826",
+      "id": "5970ce6a-2716-441a-808f-1d35126fe98a-407412",
+      "language": "en",
+      "date": "2021-01-21T13:07:45Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LEEDSCITY001-DN484842-78457346",
+        "title": "Supported Accommodation for People with Mental Health Problems at Foundry Mill",
+        "description": "Supported Accommodation for People with Mental Health Problems at Foundry Mill",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "80000000",
+          "description": "Education and training services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 40069,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Not specified",
+        "tenderPeriod": {
+          "endDate": "2020-03-25T23:59:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-01T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50806",
+          "name": "Leeds City Council",
+          "identifier": {
+            "legalName": "Leeds City Council"
+          },
+          "address": {
+            "streetAddress": "St George House, 2nd Floor, 40 Great George Street",
+            "locality": "Leeds",
+            "postalCode": "LS1 3DL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Paul Doherty",
+            "email": "paul.1.doherty@leeds.gov.uk",
+            "telephone": "+44 1133785904"
+          },
+          "details": {
+            "url": "http://www.leeds.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-160697",
+          "name": "Catholic Care (Diocese of Leeds)",
+          "identifier": {
+            "legalName": "Catholic Care (Diocese of Leeds)"
+          },
+          "address": {
+            "streetAddress": "11 North Grange Road, Leeds LS6 2BR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50806",
+        "name": "Leeds City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1f017b03-6c7f-4e2e-8b99-77dc3b3d8826-1",
+          "status": "active",
+          "date": "2021-01-21T00:00:00Z",
+          "datePublished": "2021-01-21T13:07:45Z",
+          "value": {
+            "amount": 40069,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-160697",
+              "name": "Catholic Care (Diocese of Leeds)"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-02-01T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5970ce6a-2716-441a-808f-1d35126fe98a",
+              "datePublished": "2021-01-21T13:07:45Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-1f627617-5316-4b0f-bb56-1516cc879a2f",
+      "id": "37de800b-953b-447e-b201-1401d5f73fb0-406673",
+      "language": "en",
+      "date": "2021-01-19T10:28:34Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LEEDSCITY001-DN484838-76767387",
+        "title": "Housing Related Support Services Providing Specialist Mental Health Support at The Maltings And Rose Villa",
+        "description": "Housing Related Support Services Providing Specialist Mental Health Support at The Maltings And Rose Villa",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 264804,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Not specified",
+        "tenderPeriod": {
+          "endDate": "2020-03-25T23:59:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-01T00:00:00Z",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50806",
+          "name": "Leeds City Council",
+          "identifier": {
+            "legalName": "Leeds City Council"
+          },
+          "address": {
+            "streetAddress": "St George House, 2nd Floor, 40 Great George Street",
+            "locality": "Leeds",
+            "postalCode": "LS1 3DL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Paul Doherty",
+            "email": "paul.1.doherty@leeds.gov.uk",
+            "telephone": "+44 1133785904"
+          },
+          "details": {
+            "url": "http://www.leeds.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-160506",
+          "name": "Community Links (Northern) Limited",
+          "identifier": {
+            "legalName": "Community Links (Northern) Limited"
+          },
+          "address": {
+            "streetAddress": "3 Limewood Way, Leeds LS14 1AB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50806",
+        "name": "Leeds City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-1f627617-5316-4b0f-bb56-1516cc879a2f-1",
+          "status": "active",
+          "date": "2021-01-19T00:00:00Z",
+          "datePublished": "2021-01-19T10:28:34Z",
+          "value": {
+            "amount": 264804,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-160506",
+              "name": "Community Links (Northern) Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-02-01T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/37de800b-953b-447e-b201-1401d5f73fb0",
+              "datePublished": "2021-01-19T10:28:34Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-37027af8-ee5d-494c-8af6-e26dc52e47dc",
+      "id": "5ae3e9e7-0835-4f49-8498-9801de6a4450-405974",
+      "language": "en",
+      "date": "2021-01-15T09:58:41Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "FM20159",
+        "title": "FM20159 - Delivery Support for the Social Housing Decarbonisation Fund Demonstrator",
+        "description": "**Please note this is an Award Notice and not a call for competition, this Contract has been awarded via the CCS RM3824 Heat Networks and Electricity Generation Assets Dynamic Purchasing System.**\r\n\r\nThis work package is for a delivery partner to provide support to the Social Housing Decarbonisation Fund Demonstrator programme.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "73000000",
+          "description": "Research and development services and related consultancy services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "79310000",
+            "description": "Market research services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 350000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a dynamic purchasing system",
+        "tenderPeriod": {
+          "endDate": "2020-08-28T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-09-14T00:00:00+01:00",
+          "endDate": "2021-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m",
+          "name": "UK SHARED BUSINESS SERVICES LIMITED",
+          "identifier": {
+            "legalName": "UK SHARED BUSINESS SERVICES LIMITED",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/dXGP288m"
+          },
+          "address": {
+            "streetAddress": "Polaris House, North Star Avenue",
+            "locality": "SWINDON",
+            "postalCode": "SN21FL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "FM Procurement",
+            "email": "fmprocurement@uksbs.co.uk",
+            "telephone": "01793 867005"
+          },
+          "details": {
+            "url": "http://www.uksbs.co.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-08229264",
+          "name": "RICARDO-AEA LIMITED",
+          "identifier": {
+            "legalName": "RICARDO-AEA LIMITED",
+            "scheme": "GB-COH",
+            "id": "08229264"
+          },
+          "address": {
+            "streetAddress": "Gemini Building \r\nFemi Avenue \r\nHarwell\r\nOxon \r\nOX11 0QR"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/dXGP288m",
+        "name": "UK SHARED BUSINESS SERVICES LIMITED"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-37027af8-ee5d-494c-8af6-e26dc52e47dc-1",
+          "status": "active",
+          "date": "2020-09-14T00:00:00+01:00",
+          "datePublished": "2021-01-15T09:58:41Z",
+          "value": {
+            "amount": 222218.35,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-08229264",
+              "name": "RICARDO-AEA LIMITED"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-09-14T00:00:00+01:00",
+            "endDate": "2021-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5ae3e9e7-0835-4f49-8498-9801de6a4450",
+              "datePublished": "2021-01-15T09:58:41Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "contractSchedule",
+              "description": "DPF31 Terms and Conditions for Services",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/9a79288f-6164-4c3c-8787-037b60f896f5",
+              "format": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-29ca68ae-664b-42ea-b69f-f7174fa13cb3",
+      "id": "f96b9a5b-ee3b-4252-8156-33930b4c9c17-404146",
+      "language": "en",
+      "date": "2021-01-06T17:20:02Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP558297638",
+        "title": "GB-Leighton Buzzard: Greenfields Sheltered Housing Grounds Maintenance Contract",
+        "description": "Catalyst Housing Group (CHG) is seeking a suitably experienced grounds maintenance contractor to tender for a 3 year contract for the Greenfields Sheltered Housing site situated at Greenfields, Theedway (off Billington Road), Leighton Buzzard, Bedfordshire, LU7 9SP\r\n      \r\n      At the end of the initial contract period, CHG may choose to extend the Contract for a further period of up-to 2 years in yearly intervals (3+1+1), according to the performance of the supplier/s during the initial Contract period, prevailing market conditions and our requirements. Any such extension shall be at the originally tendered prices. \r\n      \r\n      Greenfields is a specialist housing development designed and built as a sheltered housing facility for mature adults aged 55 and over. The development is situated in the parish Leighton-Linslade, and offers 82 one and two bedroom apartments which offer independent living to its residents.\r\n      \r\n      The grounds maintenance work will include grass cutting and edging, weeding control; management of shrubs including seasonal pruning and dead-heading; pest and disease control; tree trimming; the maintenance of hard surfaces including parking bays, foot paths, bin store, cycle store; management of the salt bins including supply and replacement of salt (assume 100 litre bins), and removal of litter from landscaping area etc. Detail requirements are set out in section 3 of the ITT. CHG reserve the right to add additional geographical site(s) within the contract period.\r\n\r\nAdditional information: The contracting authority considers that this contract may be suitable for economic operators that are small or medium enterprises (SMEs). However, any selection of tenderers will be based solely on the criteria set out for the procurement.. For more information about the opportunity, please visit the Delta eSourcing Portal at: https://www.delta-esourcing.com/delta/viewNotice.html?noticeId=485125837 or login to Delta Tender via  www.deltaesourcing.com and Delta Access Code: D59V6X6H96 . The contract is for 3 years with the  possibility of a 2 year (1+1) extension based on performance.\r\n        \r\n        CHL reserve the right  to vary the Employer's Requirements /Specification and /or add additional geographical sites, taking into account value for money, during  the Contract period.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71421000",
+          "description": "Landscape gardening services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 31233.41,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-11-03T00:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-04T00:00:00Z",
+          "endDate": "2024-01-03T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-145488",
+          "name": "Greenfields Sheltered Housing Grounds Maintenance Contract",
+          "identifier": {
+            "legalName": "Greenfields Sheltered Housing Grounds Maintenance Contract"
+          },
+          "address": {
+            "streetAddress": "Catalyst Housing Limited, Ealing Gateway",
+            "locality": "London,",
+            "postalCode": "W5 2AU",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "name": "Stephanie Turner",
+            "email": "stephanie.turner@chg.org.uk",
+            "telephone": "01582869220"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-159519",
+          "name": "Aspire Community Works Community Interest Company",
+          "identifier": {
+            "legalName": "Aspire Community Works Community Interest Company"
+          },
+          "address": {
+            "streetAddress": "10 Minerva Street\n        London\n        E2 9EH"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-145488",
+        "name": "Greenfields Sheltered Housing Grounds Maintenance Contract"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-29ca68ae-664b-42ea-b69f-f7174fa13cb3-1",
+          "status": "active",
+          "date": "2020-11-03T00:00:00Z",
+          "datePublished": "2021-01-06T17:20:02Z",
+          "value": {
+            "amount": 31233.41,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-159519",
+              "name": "Aspire Community Works Community Interest Company"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-04T00:00:00Z",
+            "endDate": "2024-01-03T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/f96b9a5b-ee3b-4252-8156-33930b4c9c17",
+              "datePublished": "2021-01-06T17:20:02Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=558297638"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-903fcd37-2c58-4e85-855f-8a737f4a343f",
+      "id": "92793fc9-37b0-4c19-bcf2-7e39753c473b-403821",
+      "language": "en",
+      "date": "2021-01-05T14:49:44Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CHEAST001-DN505904-97812167",
+        "title": "20 115 Provision of Fresh Start emergency accommodation and support",
+        "description": "Cheshire East Council are seeking a provider who will contribute towards the strategic objective of reducing rough sleeping within Cheshire East. This project is known as Fresh Start, funded by MCHLG and will provide 6 units of self-contained emergency accommodation and support for residents with the most complex needs, those who have repeatedly failed in previous accommodation placements. Residents will receive intensive support in the short term to engage with this project and other relevant services and to be supported until they are in a position to move into Fresh Start move-on accommodation or other supported accommodation identified as being able to meet the needs of the residents. \r\n\r\nAdditional information: \r\nPlease find all necessary documentation on 'the Chest' system: www.the-chest.org.uk ref.: DN505904",
+        "datePublished": "2020-10-23T14:07:32+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 232000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-11-18T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-01T00:00:00Z",
+          "endDate": "2021-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-3938",
+          "name": "Cheshire East Borough Council",
+          "identifier": {
+            "legalName": "Cheshire East Borough Council"
+          },
+          "address": {
+            "streetAddress": "Westfields, Middlewich Road",
+            "locality": "Sandbach",
+            "postalCode": "CW11 1HZ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Lydia Russell",
+            "email": "procurement@cheshireeast.gov.uk",
+            "telephone": "+44 1270686454"
+          },
+          "details": {
+            "url": "http://www.cheshireeast.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-187167",
+          "name": "People Potential Possibilties t/a P3",
+          "identifier": {
+            "legalName": "People Potential Possibilties t/a P3"
+          },
+          "address": {
+            "streetAddress": "Eagle House, Cotmanhay Road, Ilkeston, Derbyshire DE7 8HU"
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-3938",
+        "name": "Cheshire East Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-903fcd37-2c58-4e85-855f-8a737f4a343f-1",
+          "status": "active",
+          "date": "2020-12-18T00:00:00Z",
+          "datePublished": "2021-01-05T14:49:44Z",
+          "value": {
+            "amount": 232000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-187167",
+              "name": "People Potential Possibilties t/a P3"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-01T00:00:00Z",
+            "endDate": "2021-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/92793fc9-37b0-4c19-bcf2-7e39753c473b",
+              "datePublished": "2021-01-05T14:49:44Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

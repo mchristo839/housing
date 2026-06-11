@@ -1,0 +1,920 @@
+{
+  "portal": "cf",
+  "year": 2021,
+  "month": 5,
+  "raw_count": 3764,
+  "filtered_count": 6,
+  "pages": 38,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-dfe2470d-1058-46a9-b120-c41cb7c9aa06",
+      "id": "94096ab6-af3a-44f0-8aa1-79ab371847ef-438562",
+      "language": "en",
+      "date": "2021-05-24T12:40:41+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "TD1527 / 4",
+        "title": "Call offs from DPS TD1527 - Young People0s Supported Accommodation Q4 2020/21",
+        "description": "To advise of call offs over £25k from the DPS TD1527 Young People's Supported Accommodation for Q4 2020/21.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 499783.25,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a dynamic purchasing system",
+        "tenderPeriod": {
+          "endDate": "2020-12-31T23:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-01-01T00:00:00Z",
+          "endDate": "2021-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-DER",
+          "name": "Derby City Council",
+          "identifier": {
+            "legalName": "Derby City Council",
+            "scheme": "GB-LAE",
+            "id": "DER"
+          },
+          "address": {
+            "streetAddress": "Corporation Street",
+            "locality": "Derby",
+            "postalCode": "DE12FS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Paul Hallsworth",
+            "email": "paul.hallsworth2@derby.gov.uk",
+            "telephone": "01332 643119"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-172501",
+          "name": "See breakdown pdf",
+          "identifier": {
+            "legalName": "See breakdown pdf"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-DER",
+        "name": "Derby City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-dfe2470d-1058-46a9-b120-c41cb7c9aa06-1",
+          "status": "active",
+          "date": "2020-12-31T00:00:00Z",
+          "datePublished": "2021-05-24T12:40:41+01:00",
+          "value": {
+            "amount": 499783.25,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-172501",
+              "name": "See breakdown pdf"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-01-01T00:00:00Z",
+            "endDate": "2021-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/94096ab6-af3a-44f0-8aa1-79ab371847ef",
+              "datePublished": "2021-05-24T12:40:41+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "awardNotice",
+              "description": "Spend Breakdown",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/60d80a37-b0ba-46c0-af3a-376cfa8ed6e5",
+              "format": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-d1391e2b-cd2d-4e8c-85ab-a0d611613b0e",
+      "id": "7ece3b4f-7799-4a83-a0e1-50215487093f-438419",
+      "language": "en",
+      "date": "2021-05-23T11:45:53+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "EALING001-DN528841-47779232",
+        "title": "EC1355 Temporary Accommodation - Northolt High School",
+        "description": "This Project is for relocation of the existing temporary modular two storey building from\r\nexisting location situated currently at Ealing Fields, Wyke Gardens, Ealing, London W7 2BB, to Northolt High School, Eastcote Lane Northolt, UB5 4HP. This project will be procured using the Design and Build 2016 JCT form of Contract. There will be items of work which will be designed by the contractor such as foundations, drainage, external work and services including M+E modification work and internal remodelling.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "UB5 4HP"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1289169,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Competitive dialog",
+        "tenderPeriod": {
+          "endDate": "2021-03-23T23:59:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-05-23T00:00:00+01:00",
+          "endDate": "2021-05-29T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56120",
+          "name": "London Borough of Ealing",
+          "identifier": {
+            "legalName": "London Borough of Ealing"
+          },
+          "address": {
+            "streetAddress": "Perceval House, 14/16 Uxbridge Road",
+            "locality": "Ealing",
+            "postalCode": "W5 2HL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "John Papaloizou",
+            "email": "papaloizouj@ealing.gov.uk",
+            "telephone": "+44 2088258391"
+          },
+          "details": {
+            "url": "http://www.ealing.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-172438",
+          "name": "CMS Accommodating People Limited",
+          "identifier": {
+            "legalName": "CMS Accommodating People Limited"
+          },
+          "address": {
+            "streetAddress": "22 Lowbell Lane, London Colney, St Albans, Hertfordshire, AL2 1AXZ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56120",
+        "name": "London Borough of Ealing"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d1391e2b-cd2d-4e8c-85ab-a0d611613b0e-1",
+          "status": "active",
+          "date": "2021-05-23T00:00:00+01:00",
+          "datePublished": "2021-05-23T11:45:53+01:00",
+          "value": {
+            "amount": 1289189,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-172438",
+              "name": "CMS Accommodating People Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-04T00:00:00+01:00",
+            "endDate": "2021-10-11T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/7ece3b4f-7799-4a83-a0e1-50215487093f",
+              "datePublished": "2021-05-23T11:45:53+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-535c93ad-9d10-4a75-aaf9-71d1b0cc678d",
+      "id": "654dc1bc-d9a7-4879-8c51-e4de87157e2d-437513",
+      "language": "en",
+      "date": "2021-05-19T15:53:34+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LEEDSCITY001-DN544975-53613444",
+        "title": "Continuation of hotel security at Covid 19 temporary supported accommodation",
+        "description": "Continuation of previous contract for ongoing security. Direct award to existing contractor. Opportunity N/A.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "79000000",
+          "description": "Business services: law, marketing, consulting, recruitment, printing and security"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 85000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2021-03-30T23:59:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2021-06-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-172128",
+          "name": "Leeds City Council",
+          "identifier": {
+            "legalName": "Leeds City Council"
+          },
+          "address": {
+            "streetAddress": "Leeds City Council Adults and Health Directorate, 5th Floor East Merrion House",
+            "locality": "Leeds",
+            "postalCode": "LS2 8BB",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Simon Pickering",
+            "email": "simon.pickering@leeds.gov.uk"
+          },
+          "details": {
+            "url": "http://www.leeds.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-172129",
+          "name": "GCA Security and Facilities Management",
+          "identifier": {
+            "legalName": "GCA Security and Facilities Management"
+          },
+          "address": {
+            "streetAddress": "Wakefield"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-172128",
+        "name": "Leeds City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-535c93ad-9d10-4a75-aaf9-71d1b0cc678d-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-05-19T15:53:34+01:00",
+          "value": {
+            "amount": 85000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-172129",
+              "name": "GCA Security and Facilities Management"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2021-06-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/654dc1bc-d9a7-4879-8c51-e4de87157e2d",
+              "datePublished": "2021-05-19T15:53:34+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ea9bbf19-e96c-475b-9865-51c602c0d0fd",
+      "id": "5fe51499-c17a-4ad6-bdfe-1d7715fe7da8-436357",
+      "language": "en",
+      "date": "2021-05-14T12:05:04+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOURN001-DN544062-84806353",
+        "title": "Housing Related Support",
+        "description": "Housing Related Support - Housing, Edward May Court",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 37065,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-03-26T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2022-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-116471",
+          "name": "Bournemouth Christchurch and Poole Council",
+          "identifier": {
+            "legalName": "Bournemouth Christchurch and Poole Council"
+          },
+          "address": {
+            "streetAddress": "Bournemouth Christchurch and Poole Council, Town Hall",
+            "locality": "Bournemouth",
+            "postalCode": "BH2 6DY",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Strategic Procurement Team",
+            "email": "procurement@bcpcouncil.gov.uk",
+            "telephone": "+44 1202451417"
+          },
+          "details": {
+            "url": "https://www.bcpcouncil.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-71606",
+          "name": "East Boro Housing Trust",
+          "identifier": {
+            "legalName": "East Boro Housing Trust"
+          },
+          "address": {
+            "streetAddress": "BH21 1JS"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-116471",
+        "name": "Bournemouth Christchurch and Poole Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ea9bbf19-e96c-475b-9865-51c602c0d0fd-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-05-14T12:05:04+01:00",
+          "value": {
+            "amount": 37065,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-71606",
+              "name": "East Boro Housing Trust"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2022-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/5fe51499-c17a-4ad6-bdfe-1d7715fe7da8",
+              "datePublished": "2021-05-14T12:05:04+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a5a62679-7090-41ba-bd91-6eb58a10aff0",
+      "id": "e2aabd20-ac65-43f2-8c1b-d82d6ac242ed-435423",
+      "language": "en",
+      "date": "2021-05-12T14:44:35+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP592975447",
+        "title": "GB-Epping: Provision of bed and breakfast accommodation to homeless persons",
+        "description": "Epping Forest District Council is carrying out a Light Touch procurement exercise to seek suppliers to help achieve the Council's statutory duties to provide temporary accommodation for homeless applicants, to fulfil our duties under Section 188 and/or Section 193 of the Housing Act 1996. \r\n      \r\n      Estimated total value of this requirement is in the range of £0 - £600,000.\r\n\r\nAdditional information: The contracting authority considers that this contract may be suitable for economic operators that are small or medium enterprises (SMEs). However, any selection of tenderers will be based solely on the criteria set out for the procurement.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55000000",
+          "description": "Hotel, restaurant and retail trade services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (below threshold)",
+        "tenderPeriod": {
+          "endDate": "2021-05-05T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-06-01T00:00:00+01:00",
+          "endDate": "2023-06-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-171293",
+          "name": "Epping Forest District Council",
+          "identifier": {
+            "legalName": "Epping Forest District Council"
+          },
+          "address": {
+            "streetAddress": "Civic Offices, 323 High Street",
+            "locality": "GLASGOW",
+            "postalCode": "CM16 4BZ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Epping Forest District Council",
+            "email": "dan.montague@braintree.gov.uk",
+            "telephone": "01376551414"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-171294",
+          "name": "Metro Properties Ltd T/A Cranbrook Hotel",
+          "identifier": {
+            "legalName": "Metro Properties Ltd T/A Cranbrook Hotel"
+          },
+          "address": {
+            "streetAddress": "252 Ilford Lane, Ilford, \n        IG1 2SB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-171295",
+          "name": "Landmark Housing Group LTD T/A Park Hotel",
+          "identifier": {
+            "legalName": "Landmark Housing Group LTD T/A Park Hotel"
+          },
+          "address": {
+            "streetAddress": "251 Ilford Lane, Ilford,\n         IG1 2SB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-171296",
+          "name": "The Thatched House Hotel",
+          "identifier": {
+            "legalName": "The Thatched House Hotel"
+          },
+          "address": {
+            "streetAddress": "236 High Street, Epping, Essex \n        CM16 4AP"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-171297",
+          "name": "The Oasis Hotel",
+          "identifier": {
+            "legalName": "The Oasis Hotel"
+          },
+          "address": {
+            "streetAddress": "2/4 Hart Road, Old Harlow, Essex, \n        CM17 0HL"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-171298",
+          "name": "Metro Properties Ltd T/A Woodlands Lodge",
+          "identifier": {
+            "legalName": "Metro Properties Ltd T/A Woodlands Lodge"
+          },
+          "address": {
+            "streetAddress": "252 Ilford Lane, Ilford, \n        IG1 2SB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-171299",
+          "name": "Metro Properties Ltd T/A York Hotel",
+          "identifier": {
+            "legalName": "Metro Properties Ltd T/A York Hotel"
+          },
+          "address": {
+            "streetAddress": "251 Ilford Lane, Ilford, \n        IG1 2SB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-171293",
+        "name": "Epping Forest District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a5a62679-7090-41ba-bd91-6eb58a10aff0-1",
+          "status": "active",
+          "date": "2021-05-05T00:00:00+01:00",
+          "datePublished": "2021-05-12T14:44:35+01:00",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-171294",
+              "name": "Metro Properties Ltd T/A Cranbrook Hotel"
+            },
+            {
+              "id": "GB-CFS-171295",
+              "name": "Landmark Housing Group LTD T/A Park Hotel"
+            },
+            {
+              "id": "GB-CFS-171296",
+              "name": "The Thatched House Hotel"
+            },
+            {
+              "id": "GB-CFS-171297",
+              "name": "The Oasis Hotel"
+            },
+            {
+              "id": "GB-CFS-171298",
+              "name": "Metro Properties Ltd T/A Woodlands Lodge"
+            },
+            {
+              "id": "GB-CFS-171299",
+              "name": "Metro Properties Ltd T/A York Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-01T00:00:00+01:00",
+            "endDate": "2023-06-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e2aabd20-ac65-43f2-8c1b-d82d6ac242ed",
+              "datePublished": "2021-05-12T14:44:35+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=592975447"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-0ded9bcb-554f-4334-9508-ab312e635ef2",
+      "id": "f6631d15-5963-437c-8070-1286aa1c657b-435220",
+      "language": "en",
+      "date": "2021-05-11T09:48:24+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN540649",
+        "title": "Homelessness Case Management System  (Housing Jigsaw)",
+        "description": "Award Notice for Homelessness Case Management System (Housing Jigsaw)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "48000000",
+          "description": "Software package and information systems"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2021-03-31T00:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-RCC",
+          "name": "Redcar & Cleveland Borough Council",
+          "identifier": {
+            "legalName": "Redcar & Cleveland Borough Council",
+            "scheme": "GB-LAE",
+            "id": "RCC"
+          },
+          "address": {
+            "streetAddress": "Redcar & Cleveland House,Kirkleatham Street",
+            "locality": "REDCAR",
+            "postalCode": "TS101RT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Debbie Seaman",
+            "email": "procurement@redcar-cleveland.gov.uk",
+            "telephone": "01642 774774"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-04667857",
+          "name": "Housing Partners Ltd",
+          "identifier": {
+            "legalName": "Housing Partners Ltd",
+            "scheme": "GB-COH",
+            "id": "04667857"
+          },
+          "address": {
+            "streetAddress": "9 King Street\r\nLondon\r\nEC2V 8EA"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-RCC",
+        "name": "Redcar & Cleveland Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-0ded9bcb-554f-4334-9508-ab312e635ef2-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-05-11T09:48:24+01:00",
+          "value": {
+            "amount": 21548,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-04667857",
+              "name": "Housing Partners Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/f6631d15-5963-437c-8070-1286aa1c657b",
+              "datePublished": "2021-05-11T09:48:24+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

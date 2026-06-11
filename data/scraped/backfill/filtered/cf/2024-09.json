@@ -1,0 +1,142 @@
+{
+  "portal": "cf",
+  "year": 2024,
+  "month": 9,
+  "raw_count": 5122,
+  "filtered_count": 1,
+  "pages": 52,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-d44c0c18-7ec5-42f4-a3a0-8f98928b99f8",
+      "id": "90ab4612-3500-420f-aa05-426876192d25-789307",
+      "language": "en",
+      "date": "2024-09-27T18:10:00+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "tender_404176/1409503",
+        "title": "Provision of Supported Accommodation at the Vineries for 16- to 19-year-old Looked after Children, Care Leavers and Vulnerable Homeless Young People",
+        "description": "Award of contract for accommodation-based support only, to young people living at The Vineries which is a Supported Accommodation Provision located in Dagenham.\r\nThe service will provide low to medium support to homeless young people aged between 16- to 19-years-old that LBBD have assessed as being in housing need and requiring additional support to live independently.\r\nThe service will be delivered directly from The Vineries which is a 31 bed Supported Accommodation Provision. The Service commissioned by LBBD will provide short-term accommodation-based support for up to 25 young people, focusing on delivering a life skills programme that supports young people to gain essential skills for living independently and maintaining a tenancy.\r\nThe Service will require the Provider to sign a Housing Management Agreement with the building Landlord - Clarion Housing Association.\r\nThe support offered to young people will be tailored to each young person's individual needs and should include, but is not limited to:\r\n- Maintaining health and well-being\r\n- How to access health services\r\n- Budgeting and Finance Management\r\n- Self-help and domestic skills\r\n- What support services they are entitled to and can access\r\n- How to look after a property, and sustain a tenancy\r\n- Support in finding education and employment opportunities\r\n- Finding and securing 'Move-On' accommodation",
+        "datePublished": "2024-01-19T16:16:52Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "IG11 7LU"
+              },
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2024-03-11T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-09-01T00:00:00+01:00",
+          "endDate": "2028-08-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-48821",
+          "name": "London Borough of Barking and Dagenham",
+          "identifier": {
+            "legalName": "London Borough of Barking and Dagenham"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "Barking",
+            "postalCode": "IG11 7LU",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "London Borough of Barking and Dagenham",
+            "email": "Procurement@lbbd.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-00995799",
+          "name": "The Cyrenians (Trading as Changing Lives)",
+          "identifier": {
+            "legalName": "The Cyrenians (Trading as Changing Lives)",
+            "scheme": "GB-COH",
+            "id": "00995799"
+          },
+          "address": {
+            "streetAddress": "H26, The Avenues, Eleventh Avenue North, Team Valley, Gateshead, NE11 0NJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-48821",
+        "name": "London Borough of Barking and Dagenham"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-d44c0c18-7ec5-42f4-a3a0-8f98928b99f8-1",
+          "status": "active",
+          "date": "2024-08-29T00:00:00+01:00",
+          "datePublished": "2024-09-27T18:10:00+01:00",
+          "value": {
+            "amount": 1316471.11,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00995799",
+              "name": "The Cyrenians (Trading as Changing Lives)"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-09-01T00:00:00+01:00",
+            "endDate": "2028-08-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/90ab4612-3500-420f-aa05-426876192d25",
+              "datePublished": "2024-09-27T18:10:00+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

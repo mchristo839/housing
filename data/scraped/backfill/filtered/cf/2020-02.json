@@ -1,0 +1,1635 @@
+{
+  "portal": "cf",
+  "year": 2020,
+  "month": 2,
+  "raw_count": 2820,
+  "filtered_count": 12,
+  "pages": 29,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-a72bc2e6-28d8-4a37-b47f-5cbfc27d5b6e",
+      "id": "bd9fa978-97c9-40f5-8af2-08c4c73e740f-346764",
+      "language": "en",
+      "date": "2020-02-28T12:06:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "WYRE002-DN398567-11202852",
+        "title": "Contract for the Inclusion on Wyre Forest District Council Temporary Accommodation Framework",
+        "description": "Awarded Contract.  Temporary emergency accommodation contract.  Values are based from the lowest cost per week to the highest cost per week for a 3 year contract (this is includes 1 year extension to the 2 year contract)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55200000",
+          "description": "Camping sites and other non-hotel accommodation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "55100000",
+            "description": "Hotel services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 38220,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 54600,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-04-12T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-01-29T00:00:00Z",
+          "endDate": "2022-01-28T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56372",
+          "name": "Wyre Forest District Council",
+          "identifier": {
+            "legalName": "Wyre Forest District Council"
+          },
+          "address": {
+            "streetAddress": "Wyre Forest House, Finepoint Way",
+            "locality": "Kidderminster",
+            "postalCode": "DY11 7WF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jackie Reed",
+            "email": "procurement@wyreforestdc.gov.uk",
+            "telephone": "+44 1562732928"
+          },
+          "details": {
+            "url": "https://www.wyreforestdc.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-156920",
+          "name": "The Lion Hotel",
+          "identifier": {
+            "legalName": "The Lion Hotel"
+          },
+          "address": {
+            "streetAddress": "David Murdoch, The Lion Hotel, Bromsgrove Street, Kidderminster DY10 1PT"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-156921",
+          "name": "Richmond Guest House",
+          "identifier": {
+            "legalName": "Richmond Guest House"
+          },
+          "address": {
+            "streetAddress": "Sarbjeet Singh, Richmond Guest House, Ombersley Street West, Droitwich WR9 8HZ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56372",
+        "name": "Wyre Forest District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a72bc2e6-28d8-4a37-b47f-5cbfc27d5b6e-1",
+          "status": "active",
+          "date": "2019-09-11T00:00:00+01:00",
+          "datePublished": "2020-02-28T12:06:32Z",
+          "value": {
+            "amount": 38220,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-156920",
+              "name": "The Lion Hotel"
+            },
+            {
+              "id": "GB-CFS-156921",
+              "name": "Richmond Guest House"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-01-29T00:00:00Z",
+            "endDate": "2022-01-28T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bd9fa978-97c9-40f5-8af2-08c4c73e740f",
+              "datePublished": "2020-02-28T12:06:32Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=1ffe0afd-7146-e911-80f3-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-a68afc9a-e98e-475c-ab7f-b1a9218a5f05",
+      "id": "b75c4e10-8017-45dd-b982-3aaf98bbd1f0-346657",
+      "language": "en",
+      "date": "2020-02-28T09:30:01Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "TD1153 xii",
+        "title": "Call off from Framework TD1153 Young People Supported Accommodation Q3 2019/2020",
+        "description": "To advise of call offs over £25k from Framework TD1153 - Young People's Supported Accommodation for Q3 2019/20.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 184007.29,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2019-09-30T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2019-10-01T00:00:00+01:00",
+          "endDate": "2019-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-DER",
+          "name": "Derby City Council",
+          "identifier": {
+            "legalName": "Derby City Council",
+            "scheme": "GB-LAE",
+            "id": "DER"
+          },
+          "address": {
+            "streetAddress": "Corporation Street",
+            "locality": "Derby",
+            "postalCode": "DE12FS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Paul Hallsworth",
+            "email": "paul.hallsworth2@derby.gov.uk",
+            "telephone": "01332 643119"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-94383",
+          "name": "See attachment",
+          "identifier": {
+            "legalName": "See attachment"
+          },
+          "address": {
+            "streetAddress": "."
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-DER",
+        "name": "Derby City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-a68afc9a-e98e-475c-ab7f-b1a9218a5f05-1",
+          "status": "active",
+          "date": "2019-09-30T00:00:00+01:00",
+          "datePublished": "2020-02-28T09:30:01Z",
+          "value": {
+            "amount": 184007.29,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-94383",
+              "name": "See attachment"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2019-10-01T00:00:00+01:00",
+            "endDate": "2019-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b75c4e10-8017-45dd-b982-3aaf98bbd1f0",
+              "datePublished": "2020-02-28T09:30:01Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/315ee88b-e067-404d-864e-f3ac4042f1b4",
+              "format": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-242def38-a552-46f8-9ea0-10699cc510d5",
+      "id": "8a287dc1-0359-417a-ade9-4b759ba61b39-346075",
+      "language": "en",
+      "date": "2020-02-25T16:51:57Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "WIGN001-DN453379-90955294",
+        "title": "(Lot 6 - Housing with Care for Adults) Supported Accommodation - Hyndelle Lodge",
+        "description": "The Housing with Care provider will deliver a transformed model of ethical, asset based care and support, meeting the needs and aspirations of individuals to live fulfilled lives in their own home avoiding inappropriate admissions to hospital and residential care. The care and support will be delivered by skilled and compassionate workers, employed by a provider who offers excellent services based on responsible and supportive employment practice.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1213412,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 1800000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2020-01-10T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-02T00:00:00Z",
+          "endDate": "2021-03-01T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-94328",
+          "name": "Wigan Council",
+          "identifier": {
+            "legalName": "Wigan Council"
+          },
+          "address": {
+            "streetAddress": "PO Box 100",
+            "locality": "Wigan",
+            "postalCode": "WN1 3DS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Vicki Calderbank",
+            "email": "Victoria.Calderbank@wigan.gov.uk",
+            "telephone": "+44 1942489404"
+          },
+          "details": {
+            "url": "http://www.wigan.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-138127",
+          "name": "Community Integrated Care",
+          "identifier": {
+            "legalName": "Community Integrated Care"
+          },
+          "address": {
+            "streetAddress": "2 Old Market Court\nMiners Way\nWidnes\nCheshire. WA8 7SP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-94328",
+        "name": "Wigan Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-242def38-a552-46f8-9ea0-10699cc510d5-1",
+          "status": "active",
+          "date": "2020-02-25T00:00:00Z",
+          "datePublished": "2020-02-25T16:51:57Z",
+          "value": {
+            "amount": 1213412,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-138127",
+              "name": "Community Integrated Care"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-02T00:00:00Z",
+            "endDate": "2021-03-01T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/8a287dc1-0359-417a-ade9-4b759ba61b39",
+              "datePublished": "2020-02-25T16:51:57Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c6e55296-46b7-4833-9415-cda273fd93b1",
+      "id": "e8b037dd-300b-4263-896f-ae5277744663-346016",
+      "language": "en",
+      "date": "2020-02-25T14:38:01Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "NEP001-DN451637-15714450",
+        "title": "Gentoo Group - New Build (Affordable Housing): Avenue Vivian",
+        "description": "Gentoo Group Ltd has a requirement for the construction of 44 residential units for affordable rent with associated infrastructure and landscaping on land on Avenue Vivian/Rose Avenue, Fence-houses, Sunderland.\r\n\r\nProsper Procurement Ltd (\"PROSPER\") is managing this procurement on behalf of the Contracting Body.\r\n\r\nPLEASE NOTE: This is an award notice following a Call for Competition under a Dynamic Purchasing System and this contract has been let.\r\n\r\n\r\n\r\nAdditional information: \r\nThis is an award notice following a call for competition under\r\nDynamic Purchasing System Ref DN387749 - DPS for Construction and Development Works [OJEU Ref 2019/S 028-061447]\r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2020-01-31T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-02T00:00:00Z",
+          "endDate": "2021-05-23T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-113711",
+          "name": "PROSPER",
+          "identifier": {
+            "legalName": "PROSPER"
+          },
+          "address": {
+            "streetAddress": "Mistral House, Kingfisher Way, Silverlink Business Park",
+            "locality": "Newcastle upon Tyne",
+            "postalCode": "NE28 9NX",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Tim Jennett",
+            "email": "tim.jennett@prosper.uk.com",
+            "telephone": "+44 1912594645"
+          },
+          "details": {
+            "url": "http://prosper.uk.com/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-138111",
+          "name": "Tolent Construction Ltd",
+          "identifier": {
+            "legalName": "Tolent Construction Ltd"
+          },
+          "address": {
+            "streetAddress": "Derwent House, 5th Avenue Business Park, Team Valley, Gateshead, NE11 0NL"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-113711",
+        "name": "PROSPER"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c6e55296-46b7-4833-9415-cda273fd93b1-1",
+          "status": "active",
+          "date": "2020-02-12T00:00:00Z",
+          "datePublished": "2020-02-25T14:38:01Z",
+          "value": {
+            "amount": 5096473,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-138111",
+              "name": "Tolent Construction Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-02T00:00:00Z",
+            "endDate": "2021-05-23T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/e8b037dd-300b-4263-896f-ae5277744663",
+              "datePublished": "2020-02-25T14:38:01Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-4d910304-83b0-44c6-bf12-b4df7bd88605",
+      "id": "720303bc-5644-4fdd-b2ac-0a5eb3953dcc-345925",
+      "language": "en",
+      "date": "2020-02-25T11:01:08Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN437340-56810192",
+        "title": "Contract to supply and install corresponding solar PV and battery equipment on Bristol City Council social housing properties",
+        "description": "Supply and install corresponding solar PV and battery equipment on Bristol City Council social housing properties.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "09332000",
+          "description": "Solar installation"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45261215",
+            "description": "Solar panel roof-covering work"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 100000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2019-10-31T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2019-12-02T00:00:00Z",
+          "endDate": "2020-06-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-58064",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, P O Box 3176",
+            "locality": "BRISTOL",
+            "postalCode": "BS3 9FS",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Penny Sharp",
+            "email": "penny.sharp@bristol.gov.uk"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-138089",
+          "name": "Sunlight Future Ltd",
+          "identifier": {
+            "legalName": "Sunlight Future Ltd"
+          },
+          "address": {
+            "streetAddress": "BS1 6XN"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-58064",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-4d910304-83b0-44c6-bf12-b4df7bd88605-1",
+          "status": "active",
+          "date": "2019-11-25T00:00:00Z",
+          "datePublished": "2020-02-25T11:01:08Z",
+          "value": {
+            "amount": 100000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-138089",
+              "name": "Sunlight Future Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2019-12-02T00:00:00Z",
+            "endDate": "2020-06-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/720303bc-5644-4fdd-b2ac-0a5eb3953dcc",
+              "datePublished": "2020-02-25T11:01:08Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-fed7ab91-2c7f-4000-99ee-76a02696de69",
+      "id": "0f9204dd-6306-4557-a038-51f6adedba2f-345064",
+      "language": "en",
+      "date": "2020-02-20T09:43:01Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "IOW001-DN466091-66760578",
+        "title": "Support and Hosting of database to manage housing register, housing advice and homelessness",
+        "description": "Support and Hosting of a web based database to manage housing register, housing advice and homelessness.  Awarded through gcloud following a filtering process to only one provider.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "48000000",
+          "description": "Software package and information systems"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 148278,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2020-02-17T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-01T00:00:00Z",
+          "endDate": "2022-02-28T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49319",
+          "name": "Isle of Wight Council",
+          "identifier": {
+            "legalName": "Isle of Wight Council"
+          },
+          "address": {
+            "streetAddress": "County Hall, High Street",
+            "locality": "Newport",
+            "postalCode": "PO30 1UD",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Jason Barrett",
+            "email": "jason.barrett@iow.gov.uk",
+            "telephone": "+44 1983821000"
+          },
+          "details": {
+            "url": "http://www.iwight.com"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-137817",
+          "name": "Civica Uk Limited",
+          "identifier": {
+            "legalName": "Civica Uk Limited"
+          },
+          "address": {
+            "streetAddress": "Southbank Central, 30 Stamford street, London, SE1 9LQ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49319",
+        "name": "Isle of Wight Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-fed7ab91-2c7f-4000-99ee-76a02696de69-1",
+          "status": "active",
+          "date": "2020-02-20T00:00:00Z",
+          "datePublished": "2020-02-20T09:43:01Z",
+          "value": {
+            "amount": 148278,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-137817",
+              "name": "Civica Uk Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-01T00:00:00Z",
+            "endDate": "2022-02-28T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/0f9204dd-6306-4557-a038-51f6adedba2f",
+              "datePublished": "2020-02-20T09:43:01Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-636fe6f4-3813-46fa-8dac-2d9b246820dc",
+      "id": "dd1aff0e-65bc-4f60-8b6a-2ab6ed7b1262-344704",
+      "language": "en",
+      "date": "2020-02-18T16:34:37Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOT001-DN403911-93593600",
+        "title": "Housing Related Support for Homeless Families",
+        "description": "The service will provide housing related support to homeless families in the city. The model of support will provide accommodation based provision and follow on resettlement support where appropriate for vulnerable couples with children, expectant mothers and male and female lone parents who are homeless. The service will be outcomes focused and support will be geared towards readiness for work and /or training and education and preparation for independent living.",
+        "datePublished": "2019-12-05T14:00:09Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "15000000",
+          "description": "Food, beverages, tobacco and related products"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "West Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 560000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-01-14T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-06T00:00:00+01:00",
+          "endDate": "2025-04-05T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-77988",
+          "name": "Stoke-on-Trent City Council",
+          "identifier": {
+            "legalName": "Stoke-on-Trent City Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, Glebe Street",
+            "locality": "Stoke-on-Trent",
+            "postalCode": "ST4 1HH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Tina Capewell",
+            "email": "tina.capewell@stoke.gov.uk",
+            "telephone": "+44 1782232952"
+          },
+          "details": {
+            "url": "https://www.stoke.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-137513",
+          "name": "Gingerbread Centre Ltd",
+          "identifier": {
+            "legalName": "Gingerbread Centre Ltd"
+          },
+          "address": {
+            "streetAddress": "Rothesay Court, Furnace Road, Longton, Stoke on Trent, ST3 4LY"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-77988",
+        "name": "Stoke-on-Trent City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-636fe6f4-3813-46fa-8dac-2d9b246820dc-1",
+          "status": "active",
+          "date": "2020-02-07T00:00:00Z",
+          "datePublished": "2020-02-18T00:00:00Z",
+          "value": {
+            "amount": 560000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-137513",
+              "name": "Gingerbread Centre Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-06T00:00:00+01:00",
+            "endDate": "2025-04-05T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/dd1aff0e-65bc-4f60-8b6a-2ab6ed7b1262",
+              "datePublished": "2020-02-18T00:00:00Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-56bb4881-782e-4bd6-bca9-0f19a2bf072e",
+      "id": "35bfa683-85e9-46e6-83fe-5ed3b30b48b4-343244",
+      "language": "en",
+      "date": "2020-02-12T09:52:53Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CUM001-DN442613-28070409",
+        "title": "Cumbria County Council Mini Competition under Framework Agreement of Care & Support Services in Extra Care Housing: Duddon Mews, Millom",
+        "description": "Cumbria County Council is undertaking a mini competition under the Framework Agreement for the Provision of Care & Support Services in Extra Care Housing to appoint a Framework Provider to provide Care & Support Services at Duddon Mews, Devonshire Road, Millom LA18 4AQ.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 785000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2019-11-22T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-05-02T00:00:00+01:00",
+          "endDate": "2024-05-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56001",
+          "name": "Cumbria County Council",
+          "identifier": {
+            "legalName": "Cumbria County Council"
+          },
+          "address": {
+            "streetAddress": "Cumbria House, 107-117 Botchergate",
+            "locality": "Carlisle",
+            "postalCode": "CA1 1RZ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Neil Warwick",
+            "email": "neil.warwick@cumbria.gov.uk",
+            "telephone": "+44 1228226943"
+          },
+          "details": {
+            "url": "http://www.cumbria.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-136962",
+          "name": "Lakeland Care and Support Limited",
+          "identifier": {
+            "legalName": "Lakeland Care and Support Limited"
+          },
+          "address": {
+            "streetAddress": "The Office at Bortree Stile, Osmotherley, Ulverston, Cumbria LA12 7PB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56001",
+        "name": "Cumbria County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-56bb4881-782e-4bd6-bca9-0f19a2bf072e-1",
+          "status": "active",
+          "date": "2020-01-31T00:00:00Z",
+          "datePublished": "2020-02-12T09:52:53Z",
+          "value": {
+            "amount": 785000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-136962",
+              "name": "Lakeland Care and Support Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-05-02T00:00:00+01:00",
+            "endDate": "2024-05-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/35bfa683-85e9-46e6-83fe-5ed3b30b48b4",
+              "datePublished": "2020-02-12T09:52:53Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-769d64e1-872f-4ef1-867d-831325f29876",
+      "id": "7f06731b-2e48-4990-94f0-4b3f7eb9ee37-342184",
+      "language": "en",
+      "date": "2020-02-06T15:20:21Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "LEICSCITY02-DN330675-36814944",
+        "title": "PAN1921 - Housing Related Support for Offenders",
+        "description": "PAN1921 - Housing Related Support for Offenders",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1027000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-01-22T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2019-02-07T00:00:00Z",
+          "endDate": "2024-02-06T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-51118",
+          "name": "Leicester City Council",
+          "identifier": {
+            "legalName": "Leicester City Council"
+          },
+          "address": {
+            "streetAddress": "City Hall (4th Floor), 115 Charles Street",
+            "locality": "Leicester",
+            "postalCode": "LE1 1FZ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Lisa Brownbridge",
+            "email": "lisa.brownbridge@leicester.gov.uk",
+            "telephone": "+44 1164544033"
+          },
+          "details": {
+            "url": "http://www.leicester.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-136570",
+          "name": "Adullam Homes Housing Association Ltd",
+          "identifier": {
+            "legalName": "Adullam Homes Housing Association Ltd"
+          },
+          "address": {
+            "streetAddress": "Walter Moore House, \n34 Dudley Street, West Bromwich, \nWest Midlands, \nB70 9LS"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-51118",
+        "name": "Leicester City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-769d64e1-872f-4ef1-867d-831325f29876-1",
+          "status": "active",
+          "date": "2020-02-06T00:00:00Z",
+          "datePublished": "2020-02-06T15:20:21Z",
+          "value": {
+            "amount": 978403,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-136570",
+              "name": "Adullam Homes Housing Association Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-02-07T00:00:00Z",
+            "endDate": "2024-02-06T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/7f06731b-2e48-4990-94f0-4b3f7eb9ee37",
+              "datePublished": "2020-02-06T15:20:21Z",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=d06a18c0-dee1-e811-80ef-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-cc525d45-08c4-4b76-9713-ea5397c08cbf",
+      "id": "bb1748e5-4f80-46a5-b772-ada991190070-341517",
+      "language": "en",
+      "date": "2020-02-04T11:37:22Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CUM001-DN442625-00968650",
+        "title": "Cumbria County Council Mini Competition under Framework Agreement of Care & Support Services in Extra Care Housing: Station View, Barrow-in-Furness",
+        "description": "Cumbria County Council has undertaken a mini compeition under the Framework Agreement for the Provision of Care & Support Services in Extra Care Housing to appoint a Framework Provider to provide Care & Support Services at Station View, Holker Street, Barrow-in-Furness, Cumbria LA14 5RB.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1962000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2019-11-26T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-05-02T00:00:00+01:00",
+          "endDate": "2024-05-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56001",
+          "name": "Cumbria County Council",
+          "identifier": {
+            "legalName": "Cumbria County Council"
+          },
+          "address": {
+            "streetAddress": "Cumbria House, 107-117 Botchergate",
+            "locality": "Carlisle",
+            "postalCode": "CA1 1RZ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Neil Warwick",
+            "email": "neil.warwick@cumbria.gov.uk",
+            "telephone": "+44 1228226943"
+          },
+          "details": {
+            "url": "http://www.cumbria.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-136273",
+          "name": "Creative Support Limited",
+          "identifier": {
+            "legalName": "Creative Support Limited"
+          },
+          "address": {
+            "streetAddress": "Wellington House, 131 Wellington Road South, Stockport, Greater Manchester SK1 3TS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56001",
+        "name": "Cumbria County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-cc525d45-08c4-4b76-9713-ea5397c08cbf-1",
+          "status": "active",
+          "date": "2020-01-21T00:00:00Z",
+          "datePublished": "2020-02-04T11:37:22Z",
+          "value": {
+            "amount": 1962000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-136273",
+              "name": "Creative Support Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-05-02T00:00:00+01:00",
+            "endDate": "2024-05-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/bb1748e5-4f80-46a5-b772-ada991190070",
+              "datePublished": "2020-02-04T11:37:22Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-5cc7e467-7f34-4f21-abf5-0de34474e796",
+      "id": "d8266c76-d3c3-4bca-a1e1-af43314099d4-341489",
+      "language": "en",
+      "date": "2020-02-04T10:31:24Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CUM001-DN436751-76113661",
+        "title": "Cumbria County Council Mini Competition under Framework Agreement of Care & Support Services in Extra Care Housing: Burnside Court, Carlisle.",
+        "description": "Cumbria County Council has undertaken a mini competition under the Framework Agreement for the Provision of Care & Support Services in Extra Care Housing to appoint a Framework Provider to provide Care & Support Services at Burnside Court, Rosebery Road, Stanwix, Carlisle CA3 9HP. \r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1136000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2019-10-25T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-01T00:00:00+01:00",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-56001",
+          "name": "Cumbria County Council",
+          "identifier": {
+            "legalName": "Cumbria County Council"
+          },
+          "address": {
+            "streetAddress": "Cumbria House, 107-117 Botchergate",
+            "locality": "Carlisle",
+            "postalCode": "CA1 1RZ",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Neil Warwick",
+            "email": "neil.warwick@cumbria.gov.uk",
+            "telephone": "+44 1228226943"
+          },
+          "details": {
+            "url": "http://www.cumbria.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-136273",
+          "name": "Creative Support Limited",
+          "identifier": {
+            "legalName": "Creative Support Limited"
+          },
+          "address": {
+            "streetAddress": "Wellington House, 131 Wellington Road South, Stockport, Greater Manchester SK1 3TS"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-56001",
+        "name": "Cumbria County Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-5cc7e467-7f34-4f21-abf5-0de34474e796-1",
+          "status": "active",
+          "date": "2020-02-04T00:00:00Z",
+          "datePublished": "2020-02-04T10:31:24Z",
+          "value": {
+            "amount": 1136000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-136273",
+              "name": "Creative Support Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-01T00:00:00+01:00",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d8266c76-d3c3-4bca-a1e1-af43314099d4",
+              "datePublished": "2020-02-04T10:31:24Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-8a7875db-4db1-4e11-941b-5732b0963c59",
+      "id": "2f351274-9008-4a6f-be8f-ccb61f73fba7-341479",
+      "language": "en",
+      "date": "2020-02-04T10:13:19Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DAR001-DN462331-61583586",
+        "title": "P2019/2152/CO- Urgent Supported Accommodation for a Young Person",
+        "description": "P2019/2152/CO- Provision of 24/7 supported accommodation for a young person with high support needs and requirements.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 34200,
+          "currency": "GBP"
+        },
+        "procurementMethod": "direct",
+        "procurementMethodDetails": "Direct award",
+        "tenderPeriod": {
+          "endDate": "2019-11-30T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2019-12-02T00:00:00Z",
+          "endDate": "2020-02-02T23:59:59Z"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-50123",
+          "name": "Darlington Borough Council",
+          "identifier": {
+            "legalName": "Darlington Borough Council"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Feethams",
+            "locality": "Darlington",
+            "postalCode": "DL1 5QT",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Bronwyn Lilley",
+            "email": "bronwyn.lilley@darlington.gov.uk",
+            "telephone": "+44 1325405495"
+          },
+          "details": {
+            "url": "http://www.darlington.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-136267",
+          "name": "Supporting Independence",
+          "identifier": {
+            "legalName": "Supporting Independence"
+          },
+          "address": {
+            "streetAddress": "Foxhaven, Easington Road, TS24 9RE"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-50123",
+        "name": "Darlington Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-8a7875db-4db1-4e11-941b-5732b0963c59-1",
+          "status": "active",
+          "date": "2019-12-01T00:00:00Z",
+          "datePublished": "2020-02-04T10:13:19Z",
+          "value": {
+            "amount": 34200,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-136267",
+              "name": "Supporting Independence"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2019-12-02T00:00:00Z",
+            "endDate": "2020-02-02T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/2f351274-9008-4a6f-be8f-ccb61f73fba7",
+              "datePublished": "2020-02-04T10:13:19Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

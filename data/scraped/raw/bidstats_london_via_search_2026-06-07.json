@@ -1,0 +1,1120 @@
+{
+  "records": [
+    {
+      "source_url": "https://bidstats.uk/notice/731512888",
+      "status": "Award",
+      "title": "Hounslow Home Care — Select Providers",
+      "boroughs": [
+        "Hounslow",
+        "London Borough of Hounslow",
+        "Harrow",
+        "Ealing"
+      ],
+      "value": "10M",
+      "duration": "3 year",
+      "dates": "To 24 Jul 2023",
+      "published": "24 Jul 2020",
+      "cpv_codes": [
+        "85000000",
+        "85320000"
+      ],
+      "suppliers": [
+        {
+          "name": "Capital Homecare",
+          "location": "Hounslow"
+        },
+        {
+          "name": "Open Heart Care",
+          "location": "London"
+        },
+        {
+          "name": "Ami Home Care",
+          "location": "Isleworth"
+        },
+        {
+          "name": "KRG Care",
+          "location": "Harrow"
+        },
+        {
+          "name": "Thames Homecare Services",
+          "location": "Ealing"
+        },
+        {
+          "name": "Mna Home Care Services",
+          "location": "Greenford"
+        },
+        {
+          "name": "Graceful Care Hounslow",
+          "location": "London"
+        },
+        {
+          "name": "Ahs Franchise Partners Avant Healthcare Services",
+          "location": "Hounslow"
+        }
+      ],
+      "notice_id": "731512888"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/733085769",
+      "status": "Notice",
+      "title": "Supported Living Services for People With Needs Arising From Learning Disability, Autism, Mental Health, Physical and…",
+      "boroughs": [
+        "London Borough of Waltham Forest",
+        "Waltham Forest",
+        "London Borough of Redbridge",
+        "London Borough of Enfield",
+        "London Borough of Hackney"
+      ],
+      "value": "170M",
+      "duration": "4 year",
+      "dates": "21 Dec 2020 to 20 Dec 2024",
+      "published": "17 Aug 2020",
+      "cpv_codes": [
+        "85310000"
+      ],
+      "suppliers": [],
+      "notice_id": "733085769"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/791412853",
+      "status": "Award",
+      "title": "Supported Living for People With Learning Disabilities",
+      "boroughs": [
+        "Ealing",
+        "Bromley",
+        "Enfield",
+        "Croydon",
+        "Barnet"
+      ],
+      "value": "",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "24 Jan 2023",
+      "cpv_codes": [
+        "75200000",
+        "85100000",
+        "98000000"
+      ],
+      "suppliers": [
+        {
+          "name": "Accomplish Group Support",
+          "location": "Birmingham"
+        },
+        {
+          "name": "Advance Housing & Support",
+          "location": "Witney"
+        },
+        {
+          "name": "Aspiration Care",
+          "location": "Gloucester"
+        },
+        {
+          "name": "Bedfordshire Supported Housing",
+          "location": "Bedford"
+        },
+        {
+          "name": "Best Choice Global",
+          "location": "Dagenham"
+        },
+        {
+          "name": "Care Solutions Group",
+          "location": "London"
+        },
+        {
+          "name": "Catalyst Housing",
+          "location": "Ealing"
+        },
+        {
+          "name": "Chosen Care Group",
+          "location": "Ilford"
+        },
+        {
+          "name": "Churchill Health Care",
+          "location": "Luton"
+        },
+        {
+          "name": "Comfort Zone Care Services",
+          "location": "Luton"
+        },
+        {
+          "name": "Deway Care",
+          "location": "Harold Wood"
+        },
+        {
+          "name": "Dimensions",
+          "location": "Reading"
+        },
+        {
+          "name": "Ejc Group",
+          "location": "Corby"
+        },
+        {
+          "name": "Gateway Care Services",
+          "location": "Erith"
+        },
+        {
+          "name": "Gray Healthcare",
+          "location": "Liverpool"
+        },
+        {
+          "name": "Hillside Care Services CIC",
+          "location": "London"
+        },
+        {
+          "name": "Itrust Agency",
+          "location": "Luton"
+        },
+        {
+          "name": "Jakaranda Care",
+          "location": "Leicester"
+        },
+        {
+          "name": "Jakky Care Group",
+          "location": "Corby"
+        },
+        {
+          "name": "Lilibet Court Care",
+          "location": "Northampton"
+        },
+        {
+          "name": "Luton Friendship Homecarers",
+          "location": "Luton"
+        },
+        {
+          "name": "Mary Seacole Housing Association",
+          "location": "Luton"
+        },
+        {
+          "name": "Mega Resources",
+          "location": "Bedford"
+        },
+        {
+          "name": "Midco Care",
+          "location": "Peterborough"
+        },
+        {
+          "name": "Nwando Domiciliary Care",
+          "location": "Bromley"
+        },
+        {
+          "name": "Penrose Options",
+          "location": "London"
+        },
+        {
+          "name": "Profad Care Agency",
+          "location": "London"
+        },
+        {
+          "name": "Quality Care Surrey",
+          "location": "Luton"
+        },
+        {
+          "name": "Royal Mencap Society",
+          "location": "London"
+        },
+        {
+          "name": "S & P Care Services",
+          "location": "Aylesbury"
+        },
+        {
+          "name": "SGSL",
+          "location": "Enfield"
+        },
+        {
+          "name": "Sunrise Rehabilitation Centre",
+          "location": "Croydon"
+        },
+        {
+          "name": "Turning Point Services",
+          "location": "London"
+        },
+        {
+          "name": "Voyage 1",
+          "location": "Lichfield"
+        },
+        {
+          "name": "Walsingham",
+          "location": "Barnet"
+        },
+        {
+          "name": "Winray Care Housing",
+          "location": "London"
+        }
+      ],
+      "notice_id": "791412853"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/795738542",
+      "status": "Award",
+      "title": "Support at Home - Spot Providers",
+      "boroughs": [
+        "Hillingdon",
+        "Enfield",
+        "Lewisham",
+        "Harrow",
+        "Bexley",
+        "Haringey"
+      ],
+      "value": "128M-",
+      "duration": "14 month",
+      "dates": "01 Dec 2022 to 31 Jan 2024",
+      "published": "31 Mar 2023",
+      "cpv_codes": [
+        "85000000",
+        "85100000",
+        "85300000"
+      ],
+      "suppliers": [
+        {
+          "name": "A&A Homecare",
+          "location": "Luton"
+        },
+        {
+          "name": "Abacus Care & Support",
+          "location": "None"
+        },
+        {
+          "name": "Abbey Care Solutions",
+          "location": "Waltham Abbey"
+        },
+        {
+          "name": "Abbots Care",
+          "location": "Watford"
+        },
+        {
+          "name": "Adolphus Care",
+          "location": "Pinner"
+        },
+        {
+          "name": "Afresh Healthcare",
+          "location": "Luton"
+        },
+        {
+          "name": "Agincare Group",
+          "location": "Portland"
+        },
+        {
+          "name": "Airmid Staffing",
+          "location": "London"
+        },
+        {
+          "name": "Ajit",
+          "location": "Letchworth"
+        },
+        {
+          "name": "Alina Homecare",
+          "location": "Leatherhead"
+        },
+        {
+          "name": "Ambergreen Health & Social Care",
+          "location": "Luton"
+        },
+        {
+          "name": "Anchusa Care",
+          "location": "Hitchin"
+        },
+        {
+          "name": "Anglo Support & Housing",
+          "location": "High Wycombe"
+        },
+        {
+          "name": "Authum Care",
+          "location": "Hitchin"
+        },
+        {
+          "name": "Axiom Home Care",
+          "location": "Hemel Hempstead"
+        },
+        {
+          "name": "Bankplus Recruitment & Training",
+          "location": "West Midland"
+        },
+        {
+          "name": "Baobab Social Care",
+          "location": "Bedford"
+        },
+        {
+          "name": "Bestchoice Global",
+          "location": "Dagenham"
+        },
+        {
+          "name": "Biggs Beit",
+          "location": "Luton"
+        },
+        {
+          "name": "Blue Ocean Services",
+          "location": "Catford"
+        },
+        {
+          "name": "Blueberry Hill Care",
+          "location": "Welwyn Garden City"
+        },
+        {
+          "name": "Bluebird Care",
+          "location": "Watford"
+        },
+        {
+          "name": "Bluebird Care St Albans",
+          "location": "St Albans"
+        },
+        {
+          "name": "Care by Us",
+          "location": "Bishops Stortford"
+        },
+        {
+          "name": "Care for Freedom",
+          "location": "St Albans"
+        },
+        {
+          "name": "Care Sante",
+          "location": "London"
+        },
+        {
+          "name": "Care Support Empower",
+          "location": "None"
+        },
+        {
+          "name": "Care with Pride",
+          "location": "Luton"
+        },
+        {
+          "name": "Caremark Three Rivers & Chiltern",
+          "location": "Chesham"
+        },
+        {
+          "name": "Caremark East Hertfordshire & Broxbourne",
+          "location": "Ware"
+        },
+        {
+          "name": "Caremark Watford & Hertsmere",
+          "location": "Watford"
+        },
+        {
+          "name": "Carers in Hertfordshire",
+          "location": "Hertford"
+        },
+        {
+          "name": "Central Care Recruitment",
+          "location": "Harlow"
+        },
+        {
+          "name": "Cera Care Operations",
+          "location": "London"
+        },
+        {
+          "name": "Chalk Hills Healthcare",
+          "location": "Luton"
+        },
+        {
+          "name": "Chelmscare",
+          "location": "None"
+        },
+        {
+          "name": "Cherish Social Care",
+          "location": "Hatfield"
+        },
+        {
+          "name": "Choice Global",
+          "location": "Watford"
+        },
+        {
+          "name": "City Home Care",
+          "location": "East Avenue Hayes"
+        },
+        {
+          "name": "Compassion Plus Health Care",
+          "location": "Hitchin"
+        },
+        {
+          "name": "Concept Care Solutions",
+          "location": "London"
+        },
+        {
+          "name": "Crossroads Caring for Life",
+          "location": "Hitchin"
+        },
+        {
+          "name": "Dependability",
+          "location": "Perivale"
+        },
+        {
+          "name": "Destiny Support Care",
+          "location": "Stevenage"
+        },
+        {
+          "name": "Deway Care",
+          "location": "Romford"
+        },
+        {
+          "name": "Doves Care Agency",
+          "location": "Hemel Hempstead"
+        },
+        {
+          "name": "DX Caring Services",
+          "location": "Letchworth Garden City"
+        },
+        {
+          "name": "Dynamic Community Care",
+          "location": "Waltham Cross"
+        },
+        {
+          "name": "Eaglecrest Ventures",
+          "location": "Hertfordshireprivate"
+        },
+        {
+          "name": "Eamal",
+          "location": "Hemel Hempstead"
+        },
+        {
+          "name": "Emergency Personnel Homecare",
+          "location": "London"
+        },
+        {
+          "name": "Empathy Care24",
+          "location": "Milton Keynes"
+        },
+        {
+          "name": "Ethica Services",
+          "location": "London"
+        },
+        {
+          "name": "Eureka Care Services",
+          "location": "Hertford"
+        },
+        {
+          "name": "Exceptional Care At Home",
+          "location": "None"
+        },
+        {
+          "name": "Fields Care",
+          "location": "Kenton"
+        },
+        {
+          "name": "First Choice Medical Solutions",
+          "location": "Cheshunt"
+        },
+        {
+          "name": "Firstpoint Homecare",
+          "location": "Manchester"
+        },
+        {
+          "name": "Future Care Enable",
+          "location": "Water Eaton Ins Est"
+        },
+        {
+          "name": "Gable Healthcare Services",
+          "location": "Walton"
+        },
+        {
+          "name": "Green Force Healthcare",
+          "location": "Leeds"
+        },
+        {
+          "name": "Hales Group",
+          "location": "Peterborough"
+        },
+        {
+          "name": "Hatwel",
+          "location": "The Common"
+        },
+        {
+          "name": "Heriitage Care",
+          "location": "Stevenage"
+        },
+        {
+          "name": "Heritage Care Place",
+          "location": "Edgware"
+        },
+        {
+          "name": "Hertsmere Valley Care Services",
+          "location": "London"
+        },
+        {
+          "name": "Holistic Housing & Care",
+          "location": "None"
+        },
+        {
+          "name": "Home Instead Hemel & Chilterns",
+          "location": "Hemel Hempstead"
+        },
+        {
+          "name": "Hometouch Care",
+          "location": "London"
+        },
+        {
+          "name": "Homewatch Care",
+          "location": "None"
+        },
+        {
+          "name": "I Care Recruitment Services",
+          "location": "Enfield"
+        },
+        {
+          "name": "Impeccable Healthcare Service",
+          "location": "None"
+        },
+        {
+          "name": "Iris Care Services",
+          "location": "Hemel Hemsptead"
+        },
+        {
+          "name": "Ison Nursing Agency & Care Services",
+          "location": "Edgware"
+        },
+        {
+          "name": "Join Hands Care",
+          "location": "Luton"
+        },
+        {
+          "name": "Joy Caring Services",
+          "location": "Stevenage"
+        },
+        {
+          "name": "Julee Care",
+          "location": "Harpenden"
+        },
+        {
+          "name": "Kemfa Services",
+          "location": "Basildon"
+        },
+        {
+          "name": "Knightingles Healthcare",
+          "location": "Stevenage"
+        },
+        {
+          "name": "Lead Care Services",
+          "location": "Stevenage"
+        },
+        {
+          "name": "Legend Integrated Care",
+          "location": "Luton"
+        },
+        {
+          "name": "Life Care Plus",
+          "location": "Uxbridge"
+        },
+        {
+          "name": "Lima Homecare",
+          "location": "Park Road Sandy"
+        },
+        {
+          "name": "Living Plus Care Services",
+          "location": "Hatfield"
+        },
+        {
+          "name": "London Teaching Pool",
+          "location": "Hainault"
+        },
+        {
+          "name": "Luna Care Services",
+          "location": "Potters Bar"
+        },
+        {
+          "name": "Lynn Care Service",
+          "location": "London"
+        },
+        {
+          "name": "Manuella Care",
+          "location": "Moonlane"
+        },
+        {
+          "name": "Mariama Care",
+          "location": "Enfield"
+        },
+        {
+          "name": "Medcom Personnel",
+          "location": "Harlow"
+        },
+        {
+          "name": "Medow Care Services",
+          "location": "Hatfield"
+        }
+      ],
+      "notice_id": "795738542"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/797049025",
+      "status": "PIN",
+      "title": "Supported Living Accommodation for Service Users With Learning Disabilities – Windsor Street",
+      "boroughs": [
+        "Islington"
+      ],
+      "value": "",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "20 Apr 2023",
+      "cpv_codes": [
+        "85311000"
+      ],
+      "suppliers": [],
+      "notice_id": "797049025"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/807469553",
+      "status": "Notice",
+      "title": "Residential Respite for Adults With Learning Disability (Hotel in the Park)",
+      "boroughs": [
+        "Tower Hamlets",
+        "London Borough of Tower",
+        "London Borough of Tower Hamlets"
+      ],
+      "value": "",
+      "duration": "3 year",
+      "dates": "To 14 Oct 2026",
+      "published": "26 Sep 2023",
+      "cpv_codes": [
+        "85300000"
+      ],
+      "suppliers": [],
+      "notice_id": "807469553"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/808386840",
+      "status": "Award",
+      "title": "Aids and Adaptations",
+      "boroughs": [
+        "Harrow",
+        "Enfield"
+      ],
+      "value": "11M-",
+      "duration": "4 year",
+      "dates": "To 19 Sep 2027",
+      "published": "10 Oct 2023",
+      "cpv_codes": [
+        "45000000",
+        "50000000"
+      ],
+      "suppliers": [
+        {
+          "name": "C & C Builders",
+          "location": "London"
+        },
+        {
+          "name": "Ce Flynn",
+          "location": "London"
+        },
+        {
+          "name": "David Martin Carpentry Contractors",
+          "location": "London"
+        },
+        {
+          "name": "DCK Construction",
+          "location": "Essex"
+        },
+        {
+          "name": "Effectable Construction Services",
+          "location": "Enfield"
+        },
+        {
+          "name": "Frederick George Mileham",
+          "location": "Londonderry"
+        },
+        {
+          "name": "G & M Builders",
+          "location": "Buckinghamshire"
+        },
+        {
+          "name": "H Carolan Construction",
+          "location": "London"
+        },
+        {
+          "name": "HD Property Services",
+          "location": "Bedfordshire"
+        },
+        {
+          "name": "King Adaptations Building Services",
+          "location": "Berkshire"
+        },
+        {
+          "name": "Mullin",
+          "location": "Greater London"
+        },
+        {
+          "name": "Terry & Stephens",
+          "location": "Borehamwood"
+        },
+        {
+          "name": "R & R Builders",
+          "location": "Middlesex"
+        }
+      ],
+      "notice_id": "808386840"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/816119896",
+      "status": "Award",
+      "title": "Emergency Accommodation and Support for Vulnerable Groups",
+      "boroughs": [],
+      "value": "26M-",
+      "duration": "5 year",
+      "dates": "01 Jan 2024 to 31 Dec 2028",
+      "published": "05 Feb 2024",
+      "cpv_codes": [
+        "41613729",
+        "85000000"
+      ],
+      "suppliers": [
+        {
+          "name": "Bedspace",
+          "location": "None"
+        },
+        {
+          "name": "Cambridge Care",
+          "location": "None"
+        },
+        {
+          "name": "Local Solutions",
+          "location": "None"
+        },
+        {
+          "name": "Serviced Living Liverpool",
+          "location": "None"
+        },
+        {
+          "name": "Housing Network",
+          "location": "None"
+        }
+      ],
+      "notice_id": "816119896"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/819855587",
+      "status": "Pipeline",
+      "title": "Market Engagement Tower Hamlets Single Homeless Hostels",
+      "boroughs": [
+        "Tower Hamlets"
+      ],
+      "value": "3M",
+      "duration": "5 year",
+      "dates": "02 Dec 2024 to 30 Nov 2029",
+      "published": "02 Apr 2024",
+      "cpv_codes": [
+        "44889248",
+        "85311000",
+        "89221829"
+      ],
+      "suppliers": [],
+      "notice_id": "819855587"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/820904113",
+      "status": "PIN",
+      "title": "Developing an Accommodation Booking System at Newham Council",
+      "boroughs": [
+        "Newham",
+        "London Borough of Newham"
+      ],
+      "value": "",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "18 Apr 2024",
+      "cpv_codes": [
+        "48000000",
+        "85000000"
+      ],
+      "suppliers": [],
+      "notice_id": "820904113"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/823066774",
+      "status": "Award",
+      "title": "Mental Health Supported Accommodation Services in Southwark– Multi Lot",
+      "boroughs": [
+        "Southwark"
+      ],
+      "value": "10M",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "21 May 2024",
+      "cpv_codes": [
+        "85000000",
+        "85100000"
+      ],
+      "suppliers": [
+        {
+          "name": "Southside Partnership",
+          "location": "London"
+        },
+        {
+          "name": "Turning Point Services",
+          "location": "London"
+        }
+      ],
+      "notice_id": "823066774"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/823132319",
+      "status": "Award",
+      "title": "Better Homes, Better Health Scheme’",
+      "boroughs": [
+        "Hounslow",
+        "London Borough of Hounslow"
+      ],
+      "value": "80K-",
+      "duration": "5 year",
+      "dates": "To 22 May 2029",
+      "published": "22 May 2024",
+      "cpv_codes": [
+        "71314300"
+      ],
+      "suppliers": [
+        {
+          "name": "Groundworks London",
+          "location": "London"
+        }
+      ],
+      "notice_id": "823132319"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/825950347",
+      "status": "Award",
+      "title": "Supported Living Block Contracts 2023: Lot 1 - Homes for Living (Learning Disability/Autism). Lot 2 -…",
+      "boroughs": [],
+      "value": "24M",
+      "duration": "5 year",
+      "dates": "01 Apr 2024 to 31 Mar 2029",
+      "published": "04 Jul 2024",
+      "cpv_codes": [
+        "45025800",
+        "85300000"
+      ],
+      "suppliers": [
+        {
+          "name": "Hightown Housing Association",
+          "location": "Hemel Hempstead"
+        }
+      ],
+      "notice_id": "825950347"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/825950492",
+      "status": "Award",
+      "title": "Supported Living Block Contracts 2023: Lot 1 – Homes for Living (Learning Disability/Autism). Lot 2 -…",
+      "boroughs": [],
+      "value": "34M",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "04 Jul 2024",
+      "cpv_codes": [
+        "85000000",
+        "85300000"
+      ],
+      "suppliers": [
+        {
+          "name": "Hightown Housing Association",
+          "location": "Hemel Hempstead"
+        }
+      ],
+      "notice_id": "825950492"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/830865528",
+      "status": "Award",
+      "title": "Support to Live at Home Fixed Framework",
+      "boroughs": [],
+      "value": "70M",
+      "duration": "2 year",
+      "dates": "01 Feb 2024 to 31 Jan 2026",
+      "published": "17 Sep 2024",
+      "cpv_codes": [
+        "85000000"
+      ],
+      "suppliers": [
+        {
+          "name": "Fusco Browne Healthcare",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Focal Care",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Trust Home Care",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Midco Care",
+          "location": "Peterborough"
+        },
+        {
+          "name": "Ease Healthcare",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Mary Ruth Care Services",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Elder Years Care",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Cera Care Operations",
+          "location": "London"
+        },
+        {
+          "name": "TLC Homecare",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Manu Integrity Services",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Creative Care & Support",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Caring Bird Consultancy",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Care Angels Batley",
+          "location": "Batley"
+        },
+        {
+          "name": "Optimum Healthcare",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Forever Independent",
+          "location": "Nottingham"
+        },
+        {
+          "name": "Elite Care & Comfort",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Patience Care Solutions",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Sure Healthcare & Supported Living",
+          "location": "Hull"
+        },
+        {
+          "name": "Heritage Healthcare Wakefield & Kirklees",
+          "location": "Wakefield"
+        },
+        {
+          "name": "Care Relief Team",
+          "location": "London"
+        },
+        {
+          "name": "Samfos Health & Trading",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Lotus Home Care",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Paramount24 Healthcare",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Hallam24 Healthcare",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Heritage Homecare",
+          "location": "Selby"
+        },
+        {
+          "name": "Honest Home Care",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Juventa 4 Care",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Destiney Social Care Provider",
+          "location": "Sheffield"
+        },
+        {
+          "name": "Mcdev Healthcare",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Crossroads Barnsley",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Eleanor Nursing & Social Care",
+          "location": "London"
+        },
+        {
+          "name": "Light Health Care",
+          "location": "Sheffield"
+        },
+        {
+          "name": "New Horizons Homecare Services",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Nucare Agency",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Orison Healh",
+          "location": "Barnsley"
+        },
+        {
+          "name": "Pova Care",
+          "location": "Bradford"
+        },
+        {
+          "name": "Precedo Healthcare Services",
+          "location": "Dronfield"
+        },
+        {
+          "name": "Routes Healthcare North",
+          "location": "Macclesfield"
+        },
+        {
+          "name": "Rubies",
+          "location": "Rotherham"
+        }
+      ],
+      "notice_id": "830865528"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/833355895",
+      "status": "PIN",
+      "title": "London Borough of Newham Supported Housing - Victoria Street - Market Engagement",
+      "boroughs": [
+        "London Borough of Newham Supported Housing",
+        "London Borough of Newham",
+        "Newham"
+      ],
+      "value": "",
+      "duration": "not specified",
+      "dates": "not specified",
+      "published": "25 Oct 2024",
+      "cpv_codes": [
+        "85000000"
+      ],
+      "suppliers": [],
+      "notice_id": "833355895"
+    },
+    {
+      "source_url": "https://bidstats.uk/notice/842924590",
+      "status": "Notice",
+      "title": "",
+      "boroughs": [
+        "London Borough of Camden",
+        "Camden"
+      ],
+      "value": "",
+      "duration": "4.5 year",
+      "dates": "01 Oct 2025 to 31 Mar 2030",
+      "published": "20 Mar 2025",
+      "cpv_codes": [
+        "85312000"
+      ],
+      "suppliers": [],
+      "notice_id": "842924590"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "portal": "cf",
+  "year": 2024,
+  "month": 3,
+  "raw_count": 5717,
+  "filtered_count": 1,
+  "pages": 58,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-238c4d10-912a-4cde-a86b-0f48784e3383",
+      "id": "a2232e51-ce7c-467d-b05f-088df3b1e986-736098",
+      "language": "en",
+      "date": "2024-03-27T16:32:14Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MRTN001-DN659987-95108920",
+        "title": "Housing Related Support Services",
+        "description": "The London Borough of Merton (\"the Council\") is inviting tenders to provide Housing Related Support to residents in the Borough.\\r\r\n\\r\r\nThe objective of this contract is to provide Housing Related Support for homeless people from an established supported housing scheme, who are at risk of homelessness and aged between16 - 25 year olds.  \\r\r\n\\r\r\nThe service will:\\r\r\n\\r\r\n- maximise the ability of service users with mental health and other complex needs, including substance misuse issues to live independently within the community,\\r\r\n\\r\r\n- ensure effective coordination between health and community support agencies in delivering a comprehensive support framework for service users,\\r\r\n\\r\r\n- enable service users to identify and make appropriate health, safety and lifestyle choices to maximise their well-being,\\r\r\n\\r\r\n- support service users to develop their independent living skills to maintain independence in their homes and reduce the risk of breakdown of tenancy and homelessness.",
+        "datePublished": "2023-10-27T14:56:17+01:00",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2023-12-05T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2024-04-01T00:00:00+01:00",
+          "endDate": "2029-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-18525",
+          "name": "London Borough of Merton",
+          "identifier": {
+            "legalName": "London Borough of Merton"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, London Rd",
+            "locality": "Morden",
+            "postalCode": "SM4 5DX",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "Commercial.Services@merton.gov.uk"
+          },
+          "details": {
+            "url": "http://www.merton.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-278436",
+          "name": "Southcroft Health Care Lodge",
+          "identifier": {
+            "legalName": "Southcroft Health Care Lodge"
+          },
+          "address": {
+            "streetAddress": "Flat 2, 97 Windermere Road\nLondon\nSW16 5HE"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-18525",
+        "name": "London Borough of Merton"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-238c4d10-912a-4cde-a86b-0f48784e3383-1",
+          "status": "active",
+          "date": "2024-03-12T00:00:00Z",
+          "datePublished": "2024-03-27T16:32:14Z",
+          "value": {
+            "amount": 803405,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-278436",
+              "name": "Southcroft Health Care Lodge"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2024-08-01T00:00:00+01:00",
+            "endDate": "2029-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a2232e51-ce7c-467d-b05f-088df3b1e986",
+              "datePublished": "2024-03-27T16:32:14Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

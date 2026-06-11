@@ -1,0 +1,1846 @@
+{
+  "portal": "cf",
+  "year": 2021,
+  "month": 6,
+  "raw_count": 4104,
+  "filtered_count": 12,
+  "pages": 42,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-683d7960-69ee-485e-b75b-a606597c6482",
+      "id": "4383abc7-7f27-4f45-b565-2712ee389732-446934",
+      "language": "en",
+      "date": "2021-06-28T15:54:30+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOUTHWARK-DN547765-76126883",
+        "title": "Batch 7 - Aylesbury Temporary Accommodation Voids",
+        "description": "Remedial and refurbishment works void flats",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 78827,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-06-04T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-02T00:00:00+01:00",
+          "endDate": "2021-10-20T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49530",
+          "name": "London Borough of Southwark",
+          "identifier": {
+            "legalName": "London Borough of Southwark"
+          },
+          "address": {
+            "streetAddress": "Southwark Council, 160 Tooley Street",
+            "locality": "London",
+            "postalCode": "SE1 2QH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "engineeringqs@southwark.gov.uk"
+          },
+          "details": {
+            "url": "http://www.southwark.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175804",
+          "name": "GC Construct Limited",
+          "identifier": {
+            "legalName": "GC Construct Limited"
+          },
+          "address": {
+            "streetAddress": "SE9 1EH"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49530",
+        "name": "London Borough of Southwark"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-683d7960-69ee-485e-b75b-a606597c6482-1",
+          "status": "active",
+          "date": "2021-06-11T00:00:00+01:00",
+          "datePublished": "2021-06-28T15:54:30+01:00",
+          "value": {
+            "amount": 78827,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175804",
+              "name": "GC Construct Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-02T00:00:00+01:00",
+            "endDate": "2021-10-20T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/4383abc7-7f27-4f45-b565-2712ee389732",
+              "datePublished": "2021-06-28T15:54:30+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-65b0b535-0a51-4186-bbc5-cc60eed27363",
+      "id": "a3f212db-0027-48c9-b5b8-9385fdc028f2-446924",
+      "language": "en",
+      "date": "2021-06-28T15:46:07+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOUTHWARK-DN547770-55502906",
+        "title": "Batch 9 - Aylesbury Temporary Accommodation Voids",
+        "description": "Remedial and refurbishment works void flats",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 75931.8,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-06-04T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-02T00:00:00+01:00",
+          "endDate": "2021-10-20T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49530",
+          "name": "London Borough of Southwark",
+          "identifier": {
+            "legalName": "London Borough of Southwark"
+          },
+          "address": {
+            "streetAddress": "Southwark Council, 160 Tooley Street",
+            "locality": "London",
+            "postalCode": "SE1 2QH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "engineeringqs@southwark.gov.uk",
+            "telephone": "+44 207525"
+          },
+          "details": {
+            "url": "http://www.southwark.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175800",
+          "name": "C&C Builders Ltd.",
+          "identifier": {
+            "legalName": "C&C Builders Ltd."
+          },
+          "address": {
+            "streetAddress": "NW9 8AU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49530",
+        "name": "London Borough of Southwark"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-65b0b535-0a51-4186-bbc5-cc60eed27363-1",
+          "status": "active",
+          "date": "2021-06-11T00:00:00+01:00",
+          "datePublished": "2021-06-28T15:46:07+01:00",
+          "value": {
+            "amount": 75931.8,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175800",
+              "name": "C&C Builders Ltd."
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-02T00:00:00+01:00",
+            "endDate": "2021-10-20T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a3f212db-0027-48c9-b5b8-9385fdc028f2",
+              "datePublished": "2021-06-28T15:46:07+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-2847a094-3634-4766-849d-817facc151b6",
+      "id": "94bcfa72-92ae-47d3-94fe-82816bd384e2-446923",
+      "language": "en",
+      "date": "2021-06-28T15:43:56+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "PLYM001-DN507360-20774009",
+        "title": "16+ Supported Accommodation Framework and Block Contract",
+        "description": "Framework let, contracts for 11 providers",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 4000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-03-30T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2025-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49294",
+          "name": "Plymouth City Council",
+          "identifier": {
+            "legalName": "Plymouth City Council"
+          },
+          "address": {
+            "streetAddress": "Floor 2, Windsor House",
+            "locality": "Plymouth",
+            "postalCode": "PL6 5UF",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Phil Bees",
+            "email": "philip.bees@plymouth.gov.uk",
+            "telephone": "+44 1752307532"
+          },
+          "details": {
+            "url": "http://www.plymouth.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175789",
+          "name": "Parallel",
+          "identifier": {
+            "legalName": "Parallel"
+          },
+          "address": {
+            "streetAddress": "Victoria House, Victoria St, Taunton, TA1 3FA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175790",
+          "name": "Acorn Independence Ltd",
+          "identifier": {
+            "legalName": "Acorn Independence Ltd"
+          },
+          "address": {
+            "streetAddress": "22 The Crescent, Taunton, TA1 4EB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175791",
+          "name": "Birchwood Independence Ltd",
+          "identifier": {
+            "legalName": "Birchwood Independence Ltd"
+          },
+          "address": {
+            "streetAddress": "Rumwell Hall, Taunton, TA2 6BJ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175792",
+          "name": "Caring for Communities and People",
+          "identifier": {
+            "legalName": "Caring for Communities and People"
+          },
+          "address": {
+            "streetAddress": "340 High Street, Chletenham, Gloucestershire, GL50 3JF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175793",
+          "name": "CSM Independent",
+          "identifier": {
+            "legalName": "CSM Independent"
+          },
+          "address": {
+            "streetAddress": "3 Halsdon Lane, Exmouth, EX8 3NF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175794",
+          "name": "Key 2 Futures",
+          "identifier": {
+            "legalName": "Key 2 Futures"
+          },
+          "address": {
+            "streetAddress": "James Street, Cowley, Oxford, OX4 1EU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175795",
+          "name": "Keys PCE Limited",
+          "identifier": {
+            "legalName": "Keys PCE Limited"
+          },
+          "address": {
+            "streetAddress": "2nd Floor Maybank House, Queensway, Halesowen, West Midlands, B63 3AH"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175796",
+          "name": "Next Step Management Ltd",
+          "identifier": {
+            "legalName": "Next Step Management Ltd"
+          },
+          "address": {
+            "streetAddress": "Katherine House, 11 Wyllotts Place, Potters Bar, EN6 2JD"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175797",
+          "name": "The Halfway Limited",
+          "identifier": {
+            "legalName": "The Halfway Limited"
+          },
+          "address": {
+            "streetAddress": "31 Albion St, Exmouth, EX8 1JJ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175798",
+          "name": "Young Devon",
+          "identifier": {
+            "legalName": "Young Devon"
+          },
+          "address": {
+            "streetAddress": "10 Erme Road, Ivybridge, PL21 0AB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-175799",
+          "name": "LiveWest Homes Ltd",
+          "identifier": {
+            "legalName": "LiveWest Homes Ltd"
+          },
+          "address": {
+            "streetAddress": "1 Wellington Way, Skypark Business Park, Clyst Honiton, Exeter, EX5 2FZ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49294",
+        "name": "Plymouth City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-2847a094-3634-4766-849d-817facc151b6-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-06-28T15:43:56+01:00",
+          "value": {
+            "amount": 4000000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175789",
+              "name": "Parallel"
+            },
+            {
+              "id": "GB-CFS-175790",
+              "name": "Acorn Independence Ltd"
+            },
+            {
+              "id": "GB-CFS-175791",
+              "name": "Birchwood Independence Ltd"
+            },
+            {
+              "id": "GB-CFS-175792",
+              "name": "Caring for Communities and People"
+            },
+            {
+              "id": "GB-CFS-175793",
+              "name": "CSM Independent"
+            },
+            {
+              "id": "GB-CFS-175794",
+              "name": "Key 2 Futures"
+            },
+            {
+              "id": "GB-CFS-175795",
+              "name": "Keys PCE Limited"
+            },
+            {
+              "id": "GB-CFS-175796",
+              "name": "Next Step Management Ltd"
+            },
+            {
+              "id": "GB-CFS-175797",
+              "name": "The Halfway Limited"
+            },
+            {
+              "id": "GB-CFS-175798",
+              "name": "Young Devon"
+            },
+            {
+              "id": "GB-CFS-175799",
+              "name": "LiveWest Homes Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2025-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/94bcfa72-92ae-47d3-94fe-82816bd384e2",
+              "datePublished": "2021-06-28T15:43:56+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=fc400dae-a430-eb11-8105-005056b64545"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-72904125-29c8-4251-b16f-362b722147cb",
+      "id": "db8d7fc3-d10c-4b0c-9718-c25a6a561965-446918",
+      "language": "en",
+      "date": "2021-06-28T15:37:21+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOUTHWARK-DN547780-34773046",
+        "title": "Batch 13 - Aylesbury Temporary Accommodation Voids",
+        "description": "The works comprise remedial and refurbishment works to all the flats detailed. The properties comprise of a ground floor purpose-built flats that were decanted as part of a regeneration scheme.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 70902.49,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-06-04T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-02T00:00:00+01:00",
+          "endDate": "2021-10-20T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49530",
+          "name": "London Borough of Southwark",
+          "identifier": {
+            "legalName": "London Borough of Southwark"
+          },
+          "address": {
+            "streetAddress": "Southwark Council, 160 Tooley Street",
+            "locality": "London",
+            "postalCode": "SE1 2QH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "engineeringqs@southwark.gov.uk",
+            "telephone": "+44 207525"
+          },
+          "details": {
+            "url": "http://www.southwark.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175788",
+          "name": "Spokemead Maintenance Limited",
+          "identifier": {
+            "legalName": "Spokemead Maintenance Limited"
+          },
+          "address": {
+            "streetAddress": "HP3 9QU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49530",
+        "name": "London Borough of Southwark"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-72904125-29c8-4251-b16f-362b722147cb-1",
+          "status": "active",
+          "date": "2021-06-11T00:00:00+01:00",
+          "datePublished": "2021-06-28T15:37:21+01:00",
+          "value": {
+            "amount": 70902,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175788",
+              "name": "Spokemead Maintenance Limited"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-02T00:00:00+01:00",
+            "endDate": "2021-10-20T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/db8d7fc3-d10c-4b0c-9718-c25a6a561965",
+              "datePublished": "2021-06-28T15:37:21+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-92a157f1-e355-430e-83fc-c32c36810ccd",
+      "id": "8460db93-7114-47fe-ab9f-a9e69c13bb51-446913",
+      "language": "en",
+      "date": "2021-06-28T15:30:09+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SOUTHWARK-DN547775-57846515",
+        "title": "Batch 11 - Aylesbury Temporary Accommodation Voids",
+        "description": "Remedial and refurbishment works to void flats",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45000000",
+          "description": "Construction work"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 74470.28,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-06-04T14:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-02T00:00:00+01:00",
+          "endDate": "2021-10-20T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49530",
+          "name": "London Borough of Southwark",
+          "identifier": {
+            "legalName": "London Borough of Southwark"
+          },
+          "address": {
+            "streetAddress": "Southwark Council, 160 Tooley Street",
+            "locality": "London",
+            "postalCode": "SE1 2QH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "engineeringqs@southwark.gov.uk",
+            "telephone": "+44 207525"
+          },
+          "details": {
+            "url": "http://www.southwark.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-124123",
+          "name": "Sandersons Building Services Ltd",
+          "identifier": {
+            "legalName": "Sandersons Building Services Ltd"
+          },
+          "address": {
+            "streetAddress": "SE8 5HD"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49530",
+        "name": "London Borough of Southwark"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-92a157f1-e355-430e-83fc-c32c36810ccd-1",
+          "status": "active",
+          "date": "2021-06-11T00:00:00+01:00",
+          "datePublished": "2021-06-28T15:30:09+01:00",
+          "value": {
+            "amount": 74470.28,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-124123",
+              "name": "Sandersons Building Services Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-02T00:00:00+01:00",
+            "endDate": "2021-10-20T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/8460db93-7114-47fe-ab9f-a9e69c13bb51",
+              "datePublished": "2021-06-28T15:30:09+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-3f55de4b-3ac2-4cbf-ae89-5ab2b99910ee",
+      "id": "49cee2e1-f5d8-4278-8894-1d72974cffb2-446131",
+      "language": "en",
+      "date": "2021-06-24T11:30:08+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MSDC - 032266 - AWARD",
+        "title": "Mid Sussex District Council - Housing Support Services for Vulnerable Childless Households (Temporary Accommodation) - AWARD",
+        "description": "Mid Sussex District Council (the Council) invites tenders for the provision of a housing support service for vulnerable childless households in (Temporary Accommodation).\r\n      \r\n      The Council has a maximum budget of £35,000 per annum to deliver this service. The Commencement Date for the delivery of the services is scheduled to be on 30th June 2021 at 00:00 hours.  The Contract will be awarded for a period of 3 years until 2024, with an option to extend for up to a further 2 year period subject to performance and at the absolute discretion of the Council.  \r\n      \r\n      The Council is procuring this contract following the Open Procedure under the UK Public Contract Regulations 2015 and the Council's Procurement Code.  The Council will be awarding one Contract for the provision of all services detailed in the Specification. \r\n      \r\n      Further information can be found within the tender document set which can be downloaded from the ITT tab.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85312310",
+            "description": "Guidance services"
+          },
+          {
+            "scheme": "CPV",
+            "id": "85312000",
+            "description": "Social work services without accommodation"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "RH16 1SS"
+              },
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 125000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 175000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-04-12T12:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-06-30T01:00:00+01:00",
+          "endDate": "2024-06-29T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-162234",
+          "name": "Mid Sussex District Council",
+          "identifier": {
+            "legalName": "Mid Sussex District Council"
+          },
+          "address": {
+            "streetAddress": "Haywards Heath, West Sussex",
+            "locality": "West Sussex",
+            "postalCode": "RH16 1SS",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Mid Sussex District Council",
+            "email": "procurement@horsham.gov.uk",
+            "telephone": "01444 458166"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175486",
+          "name": "Turning Tides Homelessness",
+          "identifier": {
+            "legalName": "Turning Tides Homelessness"
+          },
+          "address": {
+            "streetAddress": "Town Hall, Worthing, West Sussex, United Kingdom, BN11 1HA"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-162234",
+        "name": "Mid Sussex District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-3f55de4b-3ac2-4cbf-ae89-5ab2b99910ee-1",
+          "status": "active",
+          "date": "2021-06-22T00:00:00+01:00",
+          "datePublished": "2021-06-24T11:30:08+01:00",
+          "value": {
+            "amount": 175000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175486",
+              "name": "Turning Tides Homelessness"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-30T00:00:00+01:00",
+            "endDate": "2024-06-29T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/49cee2e1-f5d8-4278-8894-1d72974cffb2",
+              "datePublished": "2021-06-24T11:30:08+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c44ed52a-5090-42be-a311-274dc3809453",
+      "id": "7d1d47c2-a1cf-4cf6-abfd-c3c0f4abfc81-445727",
+      "language": "en",
+      "date": "2021-06-23T10:15:53+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "TOWER001-DN510623-66496173",
+        "title": "P5644 FC002 17 NEW BUILD HOMES AND SUPPORTED ACCOMMODATION AT NORMAN GROVE",
+        "description": "17 NEW BUILD HOMES AND SUPPORTED ACCOMMODATION AT NORMAN GROVE\r\n\r\nThis is a contract award notice.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "45211000",
+          "description": "Construction work for multi-dwelling buildings and individual houses"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "45211200",
+            "description": "Sheltered housing construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45211350",
+            "description": "Multi-functional buildings construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45211360",
+            "description": "Urban development construction work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45233100",
+            "description": "Construction work for highways, roads"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45214200",
+            "description": "Construction work for school buildings"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 8000000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-01-18T12:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-07-01T00:00:00+01:00",
+          "endDate": "2023-06-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-49285",
+          "name": "Tower Hamlets",
+          "identifier": {
+            "legalName": "Tower Hamlets"
+          },
+          "address": {
+            "streetAddress": "Mulberry Place",
+            "locality": "London",
+            "postalCode": "E14 2BG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Gohar Lecordier",
+            "email": "procurement@towerhamlets.gov.uk",
+            "telephone": "+44 2073644795"
+          },
+          "details": {
+            "url": "http://www.towerhamlets.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-175324",
+          "name": "Kind & Co (Builders) Ltd",
+          "identifier": {
+            "legalName": "Kind & Co (Builders) Ltd"
+          },
+          "address": {
+            "streetAddress": "Bridge House, 530 High Road, Leystonstone, London E11 3EQ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-49285",
+        "name": "Tower Hamlets"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c44ed52a-5090-42be-a311-274dc3809453-1",
+          "status": "active",
+          "date": "2021-06-18T00:00:00+01:00",
+          "datePublished": "2021-06-23T10:15:53+01:00",
+          "value": {
+            "amount": 6443930.37,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-175324",
+              "name": "Kind & Co (Builders) Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-07-01T00:00:00+01:00",
+            "endDate": "2023-06-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/7d1d47c2-a1cf-4cf6-abfd-c3c0f4abfc81",
+              "datePublished": "2021-06-23T10:15:53+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-07e25b0f-a4c4-49a0-b8e9-e29d220d8b11",
+      "id": "b6955bd5-3122-4064-af7a-97fa6ea5e434-445503",
+      "language": "en",
+      "date": "2021-06-22T13:18:07+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "F7926",
+        "title": "Affordable Housing Direct Delivery - Site Investigation",
+        "description": "South Tyneside Homes is  to appoint an experienced and appropriately qualified Site Investigation Consultant to undertake and provide sSite Investigation services for a proposed pipeline of 220 properties (12 schemes)",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71510000",
+          "description": "Site-investigation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 288500,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2021-04-12T17:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2021-06-01T00:00:00+01:00",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/BpB93Ch9",
+          "name": "South Tyneside Council",
+          "identifier": {
+            "legalName": "South Tyneside Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/BpB93Ch9"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "South Shields",
+            "postalCode": "NE33 2RL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Kerry Tate",
+            "email": "kerry.tate@southtyneside.gov.uk",
+            "telephone": "07796337844"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145442",
+          "name": "Bloom Procurement Services",
+          "identifier": {
+            "legalName": "Bloom Procurement Services"
+          },
+          "address": {
+            "streetAddress": "Point 5, New Eden House, Fletcher Road, Gateshead, NE8 2ET"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/BpB93Ch9",
+        "name": "South Tyneside Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-07e25b0f-a4c4-49a0-b8e9-e29d220d8b11-1",
+          "status": "active",
+          "date": "2021-05-28T00:00:00+01:00",
+          "datePublished": "2021-06-22T13:18:07+01:00",
+          "value": {
+            "amount": 288500,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145442",
+              "name": "Bloom Procurement Services"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-01T00:00:00+01:00",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b6955bd5-3122-4064-af7a-97fa6ea5e434",
+              "datePublished": "2021-06-22T13:18:07+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-42d10bd6-58da-47b5-82c5-9469a126c407",
+      "id": "04978265-943d-40cc-b6df-b277952d2eb7-444151",
+      "language": "en",
+      "date": "2021-06-16T13:06:21+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOURN001-DN550535-94316488",
+        "title": "Supported Accommodation for People with a Learning Disability",
+        "description": "Supported Accommodation for People with a Learning Disability",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 230887,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - ",
+        "tenderPeriod": {
+          "endDate": "2021-03-26T14:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-04-01T00:00:00+01:00",
+          "endDate": "2022-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-118569",
+          "name": "Bournemouth Christchurch and Poole Council",
+          "identifier": {
+            "legalName": "Bournemouth Christchurch and Poole Council"
+          },
+          "address": {
+            "streetAddress": "Bournemouth Christchurch and Poole Council, Town Hall",
+            "locality": "Bournemouth",
+            "postalCode": "BH2 6DY",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Strategic Procurement Team",
+            "email": "procurement@bcpcouncil.gov.uk",
+            "telephone": "+44 1202451417"
+          },
+          "details": {
+            "url": "https://www.bcpcouncil.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-174744",
+          "name": "2 Care",
+          "identifier": {
+            "legalName": "2 Care"
+          },
+          "address": {
+            "streetAddress": "********"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-118569",
+        "name": "Bournemouth Christchurch and Poole Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-42d10bd6-58da-47b5-82c5-9469a126c407-1",
+          "status": "active",
+          "date": "2021-03-31T00:00:00+01:00",
+          "datePublished": "2021-06-16T13:06:21+01:00",
+          "value": {
+            "amount": 230887,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-174744",
+              "name": "2 Care"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-04-01T00:00:00+01:00",
+            "endDate": "2022-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/04978265-943d-40cc-b6df-b277952d2eb7",
+              "datePublished": "2021-06-16T13:06:21+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-9b414548-3120-4115-9d39-b35c41704f74",
+      "id": "1d5d8dbc-9a3a-4cb0-aa17-0bea2b7bf3ef-443966",
+      "language": "en",
+      "date": "2021-06-15T17:55:02+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BUCKSH001-DN550436-82957993",
+        "title": "Chilterns Crematorium - Temporary Accommodation provision",
+        "description": "Temporary office accommodation",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "44000000",
+          "description": "Construction structures and materials; auxiliary products to construction (except electric apparatus)"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "postalCode": "HP7 0ND"
+              },
+              {
+                "countryName": "British Oversea Territories"
+              },
+              {
+                "countryName": "Channel Islands"
+              },
+              {
+                "countryName": "Europe"
+              },
+              {
+                "countryName": "Isle of Man"
+              },
+              {
+                "countryName": "Rest of the World"
+              },
+              {
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 38854,
+          "currency": "GBP"
+        },
+        "procurementMethod": "limited",
+        "procurementMethodDetails": "Negotiated without a call for competition",
+        "tenderPeriod": {
+          "endDate": "2020-08-17T23:59:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-08-19T00:00:00+01:00",
+          "endDate": "2022-12-31T23:59:59Z"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "goods"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-141162",
+          "name": "Buckinghamshire Council",
+          "identifier": {
+            "legalName": "Buckinghamshire Council"
+          },
+          "address": {
+            "streetAddress": "1) NCO, Walton Street",
+            "locality": "Aylesbury",
+            "postalCode": "HP20 1YQ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "David Frost",
+            "email": "david.frost@buckinghamshire.gov.uk",
+            "telephone": "+44 1494732091"
+          },
+          "details": {
+            "url": "https://www.buckinghamshire.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-174612",
+          "name": "Portakabin",
+          "identifier": {
+            "legalName": "Portakabin"
+          },
+          "address": {
+            "streetAddress": "Oxford"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-141162",
+        "name": "Buckinghamshire Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-9b414548-3120-4115-9d39-b35c41704f74-1",
+          "status": "active",
+          "date": "2020-08-18T00:00:00+01:00",
+          "datePublished": "2021-06-15T17:55:02+01:00",
+          "value": {
+            "amount": 38854,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-174612",
+              "name": "Portakabin"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-08-19T00:00:00+01:00",
+            "endDate": "2022-12-31T23:59:59Z"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1d5d8dbc-9a3a-4cb0-aa17-0bea2b7bf3ef",
+              "datePublished": "2021-06-15T17:55:02+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-15fcca0a-851a-451b-a641-96d81b5b1443",
+      "id": "d2237a5a-c250-4609-aa4a-7b3c56bd3a1c-442492",
+      "language": "en",
+      "date": "2021-06-09T15:54:02+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "F7890",
+        "title": "Affordable Housing Direct Delivery - Architect",
+        "description": "South Tyneside Homes appointed an experienced and appropriately qualified Architectural Consultant to undertake and provide  architectural services for a proposed pipeline of 220 properties (12 schemes) to deliver over a five year period",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "71200000",
+          "description": "Architectural and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 379673,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2021-03-12T16:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-05-15T00:00:00+01:00",
+          "endDate": "2024-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/BpB93Ch9",
+          "name": "South Tyneside Council",
+          "identifier": {
+            "legalName": "South Tyneside Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/BpB93Ch9"
+          },
+          "address": {
+            "streetAddress": "Town Hall",
+            "locality": "South Shields",
+            "postalCode": "NE33 2RL",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Kerry Tate",
+            "email": "kerry.tate@southtyneside.gov.uk",
+            "telephone": "07796337844"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145442",
+          "name": "Bloom Procurement Services",
+          "identifier": {
+            "legalName": "Bloom Procurement Services"
+          },
+          "address": {
+            "streetAddress": "Point 5, New Eden House, Fletcher Road, Gateshead, NE8 2ET"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/BpB93Ch9",
+        "name": "South Tyneside Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-15fcca0a-851a-451b-a641-96d81b5b1443-1",
+          "status": "active",
+          "date": "2021-06-09T00:00:00+01:00",
+          "datePublished": "2021-06-09T15:54:02+01:00",
+          "value": {
+            "amount": 379673,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145442",
+              "name": "Bloom Procurement Services"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-06-14T00:00:00+01:00",
+            "endDate": "2024-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/d2237a5a-c250-4609-aa4a-7b3c56bd3a1c",
+              "datePublished": "2021-06-09T15:54:02+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-fe1ceff7-63f7-4714-9ec6-eafb7de1e849",
+      "id": "a7831887-1725-4eaa-a398-dcfafe4b69fa-442082",
+      "language": "en",
+      "date": "2021-06-08T14:43:48+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "HALT001-DN528724-38586021",
+        "title": "Provision of Short Term Supported Accommodation Service for Homeless Families at Grangeway Court",
+        "description": "Provision of Short Term Supported Accommodation Service for Homeless Families at Grangeway Court.   To view the full specification and requirements and to express your interest in this opportunity and access the RFQ documentation, please visit www.the-chest.org.uk and search Project ID DN528724.\r\n\r\nQuestions relating to this document must be submitted via the Chest messaging facility only and telephone calls will not be answered during the live process.\r\n",
+        "datePublished": "2021-02-24T17:18:38Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 654000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2021-03-23T16:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2021-08-02T00:00:00+01:00",
+          "endDate": "2024-08-01T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-52945",
+          "name": "Halton Borough Council",
+          "identifier": {
+            "legalName": "Halton Borough Council"
+          },
+          "address": {
+            "streetAddress": "Kingsway House, Kingsway",
+            "locality": "Widnes",
+            "postalCode": "WA8 7EA",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Nicki Brooks",
+            "email": "nicki.brooks@halton.gov.uk"
+          },
+          "details": {
+            "url": "http://www2.halton.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-70774",
+          "name": "People, Potential, Possibilities",
+          "identifier": {
+            "legalName": "People, Potential, Possibilities"
+          },
+          "address": {
+            "streetAddress": "DE7 8HU"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-52945",
+        "name": "Halton Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-fe1ceff7-63f7-4714-9ec6-eafb7de1e849-1",
+          "status": "active",
+          "date": "2021-05-04T00:00:00+01:00",
+          "datePublished": "2021-06-08T14:43:48+01:00",
+          "value": {
+            "amount": 489362,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-70774",
+              "name": "People, Potential, Possibilities"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2021-08-02T00:00:00+01:00",
+            "endDate": "2024-08-01T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a7831887-1725-4eaa-a398-dcfafe4b69fa",
+              "datePublished": "2021-06-08T14:43:48+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Advert",
+              "url": "https://procontract.due-north.com/Advert?advertId=f74063ba-be76-eb11-810a-005056b64545"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

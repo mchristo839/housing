@@ -1,0 +1,1888 @@
+{
+  "portal": "cf",
+  "year": 2020,
+  "month": 4,
+  "raw_count": 2794,
+  "filtered_count": 12,
+  "pages": 28,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7",
+      "id": "1653b2ef-9f8c-4cf4-a327-b11741ab208e-356729",
+      "language": "en",
+      "date": "2020-04-30T14:11:08+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Temp Accomm (Hotels) C19",
+        "title": "Award of Contracts: Provision of Emergency Accommodation for residents in Temporary Accommodation during Covid -19 Pandemic",
+        "description": "Context\r\nDue to the Covid 19 Pandemic some (approximately 150 -220) residents of Camden Hostels that share facilitiese.g. shower, sinks, bathrooms and kitchen areas may be particularly vulnerable to contracting Covid 19.\r\n\r\nThe procurement has, following a negotiation, directly purchased temporary hotel accommodation for theseresidents which is better suited to living safely during the pandemic.\r\n.The preferred option was to source using regulation 32(2)(c) under the Public Contract Regulations 2015 whichhas now been completed.\r\n\r\nPass/fail health and safety measures /rectifications have been met therefore the award criteria is 100% price.However inspections will take place before agreement to ensure the provider has in place correct health andsafety measures, good facilities, fully PAT tested to ensure fire risks is minimised and to keep residents awayfrom Covid 19. Any discrepancies to safety will result in the council not using the provider until rectification.Rooms may be made available for council staff should this be required.\r\n\r\nAward of a contract without prior publication of a call for competition in the Official Journal of the European Union in the cases listed below. \r\n\r\nExtreme urgency brought about by events unforeseeable for the contracting authority and in accordance with the strict conditions stated in the directive\r\nExplanation:\r\n\r\nDue to the sudden spread of the Corona Virus resulting in a Pandemic some Camden Council hostel residents that share living facilities such as bathrooms, kitchens etc were deemed to have a high risk of contracting the corona virus and developing potentially life threatening symptoms. Please note that the Covid 19 transmission rate in London is the highest in the uk. Due to the pandemic there was no time to procure using the regulation time scales as lives were at risk. Moving hostel residents within days being the primary way of reducing the risk of infection and subsequent life threatening symptoms.\r\n\r\nPlease note the start date of both contracts in this notice is 1st April 2020. \r\n\r\n\r\nAdditional information: Please note the start date of both contracts awarded is 1st April 2020. \r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1000000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Regulation 32(2)(c) under the Public Contract Regulations 2015",
+        "tenderPeriod": {
+          "endDate": "2020-05-04T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-05-08T00:00:00+01:00",
+          "endDate": "2020-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+          "name": "London Borough of Camden Council",
+          "identifier": {
+            "legalName": "London Borough of Camden Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/ecqA6349"
+          },
+          "address": {
+            "streetAddress": "5 Pancras Square",
+            "locality": "LONDON",
+            "postalCode": "N1C4AG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Stephen Blantz",
+            "email": "stephen.blantz@camden.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01343600",
+          "name": "Britannia Hotel",
+          "identifier": {
+            "legalName": "Britannia Hotel",
+            "scheme": "GB-COH",
+            "id": "01343600"
+          },
+          "address": {
+            "streetAddress": "253 Hale Road\nNG1 6BN\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-00769170",
+          "name": "Travel lodge Hotels Ltd",
+          "identifier": {
+            "legalName": "Travel lodge Hotels Ltd",
+            "scheme": "GB-COH",
+            "id": "00769170"
+          },
+          "address": {
+            "streetAddress": "Sleepy Hollow\r\nAylesbury Road\r\nThame\r\nOxon"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+        "name": "London Borough of Camden Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-1",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 810000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01343600",
+              "name": "Britannia Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-2",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 540000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00769170",
+              "name": "Travel lodge Hotels Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7",
+      "id": "1653b2ef-9f8c-4cf4-a327-b11741ab208e-356743",
+      "language": "en",
+      "date": "2020-04-30T14:17:05+01:00",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Temp Accomm (Hotels) C19",
+        "title": "Award of Contracts: Provision of Emergency Accommodation for residents in Temporary Accommodation during Covid -19 Pandemic",
+        "description": "Context\r\nDue to the Covid 19 Pandemic some (approximately 150 -220) residents of Camden Hostels that share facilitiese.g. shower, sinks, bathrooms and kitchen areas may be particularly vulnerable to contracting Covid 19.\r\n\r\nThe procurement has, following a negotiation, directly purchased temporary hotel accommodation for theseresidents which is better suited to living safely during the pandemic.\r\n.The preferred option was to source using regulation 32(2)(c) under the Public Contract Regulations 2015 whichhas now been completed.\r\n\r\nPass/fail health and safety measures /rectifications have been met therefore the award criteria is 100% price.However inspections will take place before agreement to ensure the provider has in place correct health andsafety measures, good facilities, fully PAT tested to ensure fire risks is minimised and to keep residents awayfrom Covid 19. Any discrepancies to safety will result in the council not using the provider until rectification.Rooms may be made available for council staff should this be required.\r\n\r\nAward of a contract without prior publication of a call for competition in the Official Journal of the European Union in the cases listed below. \r\n\r\nExtreme urgency brought about by events unforeseeable for the contracting authority and in accordance with the strict conditions stated in the directive\r\nExplanation:\r\n\r\nDue to the sudden spread of the Corona Virus resulting in a Pandemic some Camden Council hostel residents that share living facilities such as bathrooms, kitchens etc were deemed to have a high risk of contracting the corona virus and developing potentially life threatening symptoms. Please note that the Covid 19 transmission rate in London is the highest in the uk. Due to the pandemic there was no time to procure using the regulation time scales as lives were at risk. Moving hostel residents within days being the primary way of reducing the risk of infection and subsequent life threatening symptoms.\r\n\r\nPlease note the start date of both contracts in this notice is 1st April 2020. \r\n\r\n\r\nAdditional information: Please note the start date of both contracts awarded is 1st April 2020. \r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1350000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Regulation 32(2)(c) under the Public Contract Regulations 2015",
+        "tenderPeriod": {
+          "endDate": "2020-05-04T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-05-08T00:00:00+01:00",
+          "endDate": "2020-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+          "name": "London Borough of Camden Council",
+          "identifier": {
+            "legalName": "London Borough of Camden Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/ecqA6349"
+          },
+          "address": {
+            "streetAddress": "5 Pancras Square",
+            "locality": "LONDON",
+            "postalCode": "N1C4AG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Stephen Blantz",
+            "email": "stephen.blantz@camden.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01343600",
+          "name": "Britannia Hotel",
+          "identifier": {
+            "legalName": "Britannia Hotel",
+            "scheme": "GB-COH",
+            "id": "01343600"
+          },
+          "address": {
+            "streetAddress": "253 Hale Road\nNG1 6BN\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-00769170",
+          "name": "Travel lodge Hotels Ltd",
+          "identifier": {
+            "legalName": "Travel lodge Hotels Ltd",
+            "scheme": "GB-COH",
+            "id": "00769170"
+          },
+          "address": {
+            "streetAddress": "Sleepy Hollow\r\nAylesbury Road\r\nThame\r\nOxon"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+        "name": "London Borough of Camden Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-1",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 810000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01343600",
+              "name": "Britannia Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "dateModified": "2020-06-08T10:17:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-2",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 540000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00769170",
+              "name": "Travel lodge Hotels Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "dateModified": "2020-06-08T10:17:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7",
+      "id": "1653b2ef-9f8c-4cf4-a327-b11741ab208e-362620",
+      "language": "en",
+      "date": "2020-06-08T10:17:54+01:00",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Temp Accomm (Hotels) C19",
+        "title": "Award of Contracts: Provision of Emergency Accommodation for residents in Temporary Accommodation during Covid -19 Pandemic",
+        "description": "Context\r\nDue to the Covid 19 Pandemic some (approximately 150 -220) residents of Camden Hostels that share facilitiese.g. shower, sinks, bathrooms and kitchen areas may be particularly vulnerable to contracting Covid 19.\r\n\r\nThe procurement has, following a negotiation, directly purchased temporary hotel accommodation for theseresidents which is better suited to living safely during the pandemic.\r\n.The preferred option was to source using regulation 32(2)(c) under the Public Contract Regulations 2015 whichhas now been completed.\r\n\r\nPass/fail health and safety measures /rectifications have been met therefore the award criteria is 100% price.However inspections will take place before agreement to ensure the provider has in place correct health andsafety measures, good facilities, fully PAT tested to ensure fire risks is minimised and to keep residents awayfrom Covid 19. Any discrepancies to safety will result in the council not using the provider until rectification.Rooms may be made available for council staff should this be required.\r\n\r\nAward of a contract without prior publication of a call for competition in the Official Journal of the European Union in the cases listed below. \r\n\r\nExtreme urgency brought about by events unforeseeable for the contracting authority and in accordance with the strict conditions stated in the directive\r\nExplanation:\r\n\r\nDue to the sudden spread of the Corona Virus resulting in a Pandemic some Camden Council hostel residents that share living facilities such as bathrooms, kitchens etc were deemed to have a high risk of contracting the corona virus and developing potentially life threatening symptoms. Please note that the Covid 19 transmission rate in London is the highest in the uk. Due to the pandemic there was no time to procure using the regulation time scales as lives were at risk. Moving hostel residents within days being the primary way of reducing the risk of infection and subsequent life threatening symptoms.\r\n\r\nPlease note the start date of both contracts in this notice is 1st April 2020.\r\n\r\nAdditional information: Please note the start date of both contracts awarded is 1st April 2020.\r\n\r\nPlease further note that this Award Notice was originally published with figures including VAT. These figures have now been amended and are now correct.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "55110000",
+          "description": "Hotel accommodation services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "London",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 1100000,
+          "currency": "GBP"
+        },
+        "procurementMethodDetails": "Other - Regulation 32(2)(c) under the Public Contract Regulations 2015",
+        "tenderPeriod": {
+          "endDate": "2020-05-04T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-05-08T00:00:00+01:00",
+          "endDate": "2020-09-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+          "name": "London Borough of Camden Council",
+          "identifier": {
+            "legalName": "London Borough of Camden Council",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/ecqA6349"
+          },
+          "address": {
+            "streetAddress": "5 Pancras Square",
+            "locality": "LONDON",
+            "postalCode": "N1C4AG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Stephen Blantz",
+            "email": "stephen.blantz@camden.gov.uk",
+            "telephone": "020 7974 3535"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-01343600",
+          "name": "Britannia Hotel",
+          "identifier": {
+            "legalName": "Britannia Hotel",
+            "scheme": "GB-COH",
+            "id": "01343600"
+          },
+          "address": {
+            "streetAddress": "253 Hale Road\nNG1 6BN\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-COH-00769170",
+          "name": "Travel lodge Hotels Ltd",
+          "identifier": {
+            "legalName": "Travel lodge Hotels Ltd",
+            "scheme": "GB-COH",
+            "id": "00769170"
+          },
+          "address": {
+            "streetAddress": "Sleepy Hollow\r\nAylesbury Road\r\nThame\r\nOxon"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/ecqA6349",
+        "name": "London Borough of Camden Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-1",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 720000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-01343600",
+              "name": "Britannia Hotel"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "dateModified": "2020-06-08T10:17:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "id": "ocds-b5fd17-b5c615a2-31f6-48ee-b571-b6fc4f5be4b7-2",
+          "status": "active",
+          "date": "2020-04-02T00:00:00+01:00",
+          "datePublished": "2020-04-30T14:11:08+01:00",
+          "value": {
+            "amount": 390000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00769170",
+              "name": "Travel lodge Hotels Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-09-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/1653b2ef-9f8c-4cf4-a327-b11741ab208e",
+              "datePublished": "2020-04-30T14:11:08+01:00",
+              "dateModified": "2020-06-08T10:17:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-27da7824-0777-46cd-a9b7-65a373c92899",
+      "id": "47ae00b2-d587-4da5-8ab8-d72733f8a497-356556",
+      "language": "en",
+      "date": "2020-04-30T09:17:46+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "HARBC001-DN464983-94226855",
+        "title": "SUPPLY AND FIT OF 2 SETS OF STAIRCASES, HANDRAILS AND BALUSTRADES AT A TEMPORARY ACCOMMODATION SCHEME, SPA LANE, HARROGATE HG2 7JF",
+        "description": "The Council is seeking a suitably qualified manufacturer and installer of wooden stair cases, handrails and balustrades for a 19 bed homeless temporary accommodation scheme at Spa Lane, Harrogate. To manufacture and install Stairs 1 & 2 see drawings and specification. Please note Fire compartmentation work is to be carried out by others. To manufacture and install balustrades and handrails to Stairs 1 & 2. Harrogate Borough Council will ensure that the area surrounding the staircases will be isolated from other workers/contractors during the installation as specified in the contractor RAMS. See www.yortender.co.uk for details",
+        "datePublished": "2020-02-14T14:53:39Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "44000000",
+          "description": "Construction structures and materials; auxiliary products to construction (except electric apparatus)"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "44200000",
+            "description": "Structural products"
+          },
+          {
+            "scheme": "CPV",
+            "id": "45420000",
+            "description": "Joinery and carpentry installation work"
+          },
+          {
+            "scheme": "CPV",
+            "id": "44233000",
+            "description": "Staircases"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "Yorkshire and the Humber",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 25000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-02-28T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-03T00:00:00Z",
+          "endDate": "2020-04-10T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "works"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-105311",
+          "name": "Harrogate Borough Council",
+          "identifier": {
+            "legalName": "Harrogate Borough Council"
+          },
+          "address": {
+            "streetAddress": "Civic Centre, St Luke's Avenue",
+            "locality": "Harrogate",
+            "postalCode": "HG1 2AE",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "procurement@harrogate.gov.uk",
+            "telephone": "+44 1423500600"
+          },
+          "details": {
+            "url": "http://www.harrogate.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-142852",
+          "name": "Quality Construction & Scaffolding Ltd",
+          "identifier": {
+            "legalName": "Quality Construction & Scaffolding Ltd"
+          },
+          "address": {
+            "streetAddress": "DN1 2SU"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-105311",
+        "name": "Harrogate Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-27da7824-0777-46cd-a9b7-65a373c92899-1",
+          "status": "active",
+          "date": "2020-03-02T00:00:00Z",
+          "datePublished": "2020-04-30T00:00:00+01:00",
+          "value": {
+            "amount": 25000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-142852",
+              "name": "Quality Construction & Scaffolding Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-03T00:00:00Z",
+            "endDate": "2020-04-10T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/47ae00b2-d587-4da5-8ab8-d72733f8a497",
+              "datePublished": "2020-04-30T00:00:00+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-cce9a460-0e20-4f6c-8fec-f33563e84dac",
+      "id": "800f719f-c300-4ea8-9d38-4dcdc9604101-356399",
+      "language": "en",
+      "date": "2020-04-29T13:32:33+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "DN108431",
+        "title": "Care and Support in Extra Care Housing",
+        "description": "In 2016 Torbay Council, in partnership with Torbay and South Devon NHS Foundation Trust, procured a supplier for the provision of an integrated care and support, person centred, service for people living in Dunboyne Court and Whitley Court Extra Care Housing, Torbay. This contract commenced on 1 July 2016 and is due to expire on 30 June 2020.\r\nExtra Care Housing (ECH) combines care and support to maximise the independence of older people and other vulnerable people, by supporting them to live independently for as long as possible in their own home within the community. The service provides person-centred care and support, to those living in affordable accommodation, that is owned by Sanctuary Housing Group. This enables people to enjoy living independently, with purpose, to build relationships and to be able to live life to the full. The accommodation is a mix of rental and shared ownership units.\r\nThe supplier provides 24 hour / 7 day per week staffing on-site to residents The onsite care is funded jointly by the Council and Torbay and South Devon NHS Foundation Trust, with a contribution from residents in shared ownership flats to provide 107 hours per week of support across the 2 sites. In addition the supplier also delivers separate packages of care to individual residents under a spot purchase arrangement with Torbay and South Devon NHS Foundation Trust, where the resident has chosen to have their care provided by the supplier.\r\nExplanation: \r\nThe Council's current contract with the supplier is due to expire on 30 June 2020. Alongside the 2 existing sites the Council and Torbay and South Devon NHS Foundation Trust are intending to develop further extra care provision. The current model for the provision of 24 hour / 7 day per week on site staffing is not sustainable in the longer term on the current sites or any developed in the future. The source of future funding for the service is uncertain and consultation with key stakeholders is underway to establish a more sustainable and practical model. This process will not be completed by 30 June 2020 and the Council needs to continue to maintain provision, at its current levels, on the 2 sites until such time as the new model can be implemented. In order to maintain stability for the residents of Dunboyne Court and Whitley Court the preference is to continue to contract with the existing supplier for a period of up to 12 further months. As there are a number of staff employed on this contract it is expected that TUPE regulations would apply in the event the contract transferred to a new employer. Due to the short term nature of the proposed contract it is not considered to be in the best interests of the Council, the residents or the staff to tender for this provision at this time. The current supplier has an established relationship with the residents and the decision has therefore been taken to continue to contract with them, on the basis of the previously tendered contract, for 12 months.\r\n\r\n\r\nAdditional information: Negotiated procedure without prior publication\r\n•\r\nThe works, supplies or services can be provided only by a particular economic operator for the following reason:\r\n•\r\nabsence of competition for technical reasons\r\n•\r\nNew works/services, constituting a repetition of existing works/services and ordered in accordance with thestrict conditions stated in the directive\r\nExplanation:\r\nThe Council's current contract with the supplier is due to expire on 30 June 2020. Alongside the 2 existing sitesthe Council and Torbay and South Devon NHS Foundation Trust are intending to develop further extra careprovision. The current model for the provision of 24 hour / 7 day per week on site staffing is not sustainable inthe longer term on the current sites or any developed in the future. The source of future funding for the serviceis uncertain and consultation with key stakeholders is underway to establish a more sustainable and practicalmodel. This process will not be completed by 30 June 2020 and the Council needs to continue to maintainprovision, at its current levels, on the 2 sites until such time as the new model can be implemented. In order tomaintain stability for the residents of Dunboyne Court and Whitley Court the preference is to continue to contractwith the existing supplier for a period of up to 12 further months. As there are a number of staff employed onthis contract it is expected that TUPE regulations would apply in the event the contract transferred to a newemployer. Due to the short term nature of the proposed contract it is not considered to be in the best interests of the Council, the residents or the staff to tender for this provision at this time. The current supplier has an established relationship with the residents and the decision has therefore been taken to continue to contract with them, on the basis of the previously tendered contract, for 12 months.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 100400,
+          "currency": "GBP"
+        },
+        "procurementMethod": "limited",
+        "procurementMethodDetails": "Negotiated procedure without prior publication (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2020-04-15T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-07-01T00:00:00+01:00",
+          "endDate": "2021-06-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-112165",
+          "name": "Torbay Council - Childrens Services",
+          "identifier": {
+            "legalName": "Torbay Council - Childrens Services"
+          },
+          "address": {
+            "streetAddress": "TOWN HALL,CASTLE CIRCUS",
+            "locality": "TORQUAY",
+            "postalCode": "TQ13DR",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Tracey Field",
+            "email": "tracey.field@torbay.gov.uk",
+            "telephone": "01803 208391"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-07888191",
+          "name": "Care-Away Ltd Trading as Care Support",
+          "identifier": {
+            "legalName": "Care-Away Ltd Trading as Care Support",
+            "scheme": "GB-COH",
+            "id": "07888191"
+          },
+          "address": {
+            "streetAddress": "1a Claughton Road,\r\nPlaistow,\r\nLondon\r\nE13 9PN"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-112165",
+        "name": "Torbay Council - Childrens Services"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-cce9a460-0e20-4f6c-8fec-f33563e84dac-1",
+          "status": "active",
+          "date": "2020-04-28T00:00:00+01:00",
+          "datePublished": "2020-04-29T13:32:33+01:00",
+          "value": {
+            "amount": 100400,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-07888191",
+              "name": "Care-Away Ltd Trading as Care Support"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-07-01T00:00:00+01:00",
+            "endDate": "2021-06-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/800f719f-c300-4ea8-9d38-4dcdc9604101",
+              "datePublished": "2020-04-29T13:32:33+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "url": "https://ted.europa.eu/udl?uri=TED:NOTICE:129841-2020:TEXT:EN:HTML"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-b66b4bee-09e5-4546-a910-2704023e713a",
+      "id": "60a238f5-c99d-46ad-acd8-caaab37a8f99-356314",
+      "language": "en",
+      "date": "2020-04-29T08:35:11+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "MANC001-DN439513-67198690",
+        "title": "TC1048 Young Person's Housing Related Support",
+        "description": "The Provision of young person's housing related support which is split into 2 lots:\r\nLot 1\r\nSupport accommodation for young people who are homeless or threatened with homelessness, including young people with complex needs and people who are sleeping rough.\r\nLot 2\r\nShort term resettlement and floating support for young people who are moving on from temporary and supported accommodation or who may be at risk of losing their tenancy, including young people with complex needs.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70000000",
+          "description": "Real estate services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85000000",
+            "description": "Health and social work services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 6975000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-11-11T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-88027",
+          "name": "Manchester City Council",
+          "identifier": {
+            "legalName": "Manchester City Council"
+          },
+          "address": {
+            "streetAddress": "Level 3, Town Hall Extention",
+            "locality": "Manchester",
+            "postalCode": "M60 2LA",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Deborah Fitton",
+            "email": "d.fitton@manchester.gov.uk",
+            "telephone": "+44 1616008700"
+          },
+          "details": {
+            "url": "http://www.manchester.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-142782",
+          "name": "Depaul UK",
+          "identifier": {
+            "legalName": "Depaul UK"
+          },
+          "address": {
+            "streetAddress": "34 Decima Street, London, SE1 4QQ"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-142783",
+          "name": "Centrepoint Soho",
+          "identifier": {
+            "legalName": "Centrepoint Soho"
+          },
+          "address": {
+            "streetAddress": "Cebtral House, 25 Camperdown Street, London, E1 8DZ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-88027",
+        "name": "Manchester City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-b66b4bee-09e5-4546-a910-2704023e713a-1",
+          "status": "active",
+          "date": "2020-02-25T00:00:00Z",
+          "datePublished": "2020-04-29T08:35:11+01:00",
+          "value": {
+            "amount": 6975000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-142782",
+              "name": "Depaul UK"
+            },
+            {
+              "id": "GB-CFS-142783",
+              "name": "Centrepoint Soho"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/60a238f5-c99d-46ad-acd8-caaab37a8f99",
+              "datePublished": "2020-04-29T08:35:11+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-473263e9-48d8-441e-945e-6354c3b6959d",
+      "id": "b739aa8c-3da8-40a8-8015-6cf66c3225d5-355354",
+      "language": "en",
+      "date": "2020-04-23T07:13:42+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN415479-09674232",
+        "title": "Open Framework for the Provision of `Help When You Need It` Support Services for people living in Registered Social Landlord Sheltered Housing Schemes",
+        "description": "Open Framework for the Provision of `Help When You Need It` Support Services for people living in Registered Social Landlord Sheltered Housing Schemes.\r\n\r\nThe help will have City wide impact and will support older people to continue to remain living as independently as they are able to. These services will support the Council`s 3 Tier model by intervening and offering help `when people need it` that is time limited and targeted at older people. This help would be for older people encountering some difficulties and might need support to help them to access health care, maximise their finances, budget successfully or access their community.   The service will work with people who are in sheltered accommodation for people 55+.\r\n",
+        "datePublished": "2019-11-06T13:28:34Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 1476603,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 2953206,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-11-29T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-71687",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, City Hall, College Green",
+            "locality": "Bristol",
+            "postalCode": "BS1 5TR",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Gina Smalley",
+            "email": "gina.smalley@bristol.gov.uk",
+            "telephone": "+44 1179224619"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-132516",
+          "name": "Guinness Care & Support Ltd",
+          "identifier": {
+            "legalName": "Guinness Care & Support Ltd"
+          },
+          "address": {
+            "streetAddress": "NW1 3FG"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-111350",
+          "name": "LiveWest Homes Limited",
+          "identifier": {
+            "legalName": "LiveWest Homes Limited"
+          },
+          "address": {
+            "streetAddress": "BS24 7JP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-74226",
+          "name": "Brunelcare",
+          "identifier": {
+            "legalName": "Brunelcare"
+          },
+          "address": {
+            "streetAddress": "BS5 9FF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-83819",
+          "name": "bristol Charities",
+          "identifier": {
+            "legalName": "bristol Charities"
+          },
+          "address": {
+            "streetAddress": "bs1 4ul"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-71687",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-473263e9-48d8-441e-945e-6354c3b6959d-1",
+          "status": "active",
+          "date": "2020-03-01T00:00:00Z",
+          "datePublished": "2020-04-23T00:00:00+01:00",
+          "value": {
+            "amount": 2953206,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-132516",
+              "name": "Guinness Care & Support Ltd"
+            },
+            {
+              "id": "GB-CFS-111350",
+              "name": "LiveWest Homes Limited"
+            },
+            {
+              "id": "GB-CFS-74226",
+              "name": "Brunelcare"
+            },
+            {
+              "id": "GB-CFS-83819",
+              "name": "bristol Charities"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/b739aa8c-3da8-40a8-8015-6cf66c3225d5",
+              "datePublished": "2020-04-23T00:00:00+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-6b701a07-1cb7-47c7-b10b-19bcb5fc7638",
+      "id": "38ab917e-5dd7-4572-ad4b-e992db2c02fe-354273",
+      "language": "en",
+      "date": "2020-04-15T13:24:13+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Quote - 12 Feb 2020",
+        "title": "Provision of services to help create a Manydown Affordable Housing Prospectus",
+        "description": "Provision of services to help create a Manydown Affordable Housing Prospectus",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70333000",
+          "description": "Housing services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethodDetails": "Other - RFQ",
+        "tenderPeriod": {
+          "endDate": "2020-02-12T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-02T00:00:00+01:00",
+          "endDate": "2020-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-BAN",
+          "name": "Basingstoke & Deane Borough Council",
+          "identifier": {
+            "legalName": "Basingstoke & Deane Borough Council",
+            "scheme": "GB-LAE",
+            "id": "BAN"
+          },
+          "address": {
+            "streetAddress": "Civic Offices",
+            "locality": "BASINGSTOKE",
+            "postalCode": "RG214AH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Procurement Team",
+            "email": "procurement@basingstoke.gov.uk",
+            "telephone": "01256 844844"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-4713939",
+          "name": "CAMPBELL TICKELL LTD",
+          "identifier": {
+            "legalName": "CAMPBELL TICKELL LTD",
+            "scheme": "GB-COH",
+            "id": "4713939"
+          },
+          "address": {
+            "streetAddress": "OLYMPIC OFFICE CENTRE,8 FULTON ROAD\nWEMBLEY\nMIDDLESEX\nHA9 0NU\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-BAN",
+        "name": "Basingstoke & Deane Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-6b701a07-1cb7-47c7-b10b-19bcb5fc7638-1",
+          "status": "active",
+          "date": "2020-03-03T00:00:00Z",
+          "datePublished": "2020-04-15T13:24:13+01:00",
+          "value": {
+            "amount": 0,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-4713939",
+              "name": "CAMPBELL TICKELL LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/38ab917e-5dd7-4572-ad4b-e992db2c02fe",
+              "datePublished": "2020-04-15T13:24:13+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-6b701a07-1cb7-47c7-b10b-19bcb5fc7638",
+      "id": "38ab917e-5dd7-4572-ad4b-e992db2c02fe-360396",
+      "language": "en",
+      "date": "2020-05-22T11:14:21+01:00",
+      "tag": [
+        "awardUpdate"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "Quote - 12 Feb 2020",
+        "title": "Provision of services to help create a Manydown Affordable Housing Prospectus",
+        "description": "Provision of services to help create a Manydown Affordable Housing Prospectus",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70333000",
+          "description": "Housing services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "procurementMethodDetails": "Other - RFQ",
+        "tenderPeriod": {
+          "endDate": "2020-02-12T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-02T00:00:00+01:00",
+          "endDate": "2020-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-BAN",
+          "name": "Basingstoke & Deane Borough Council",
+          "identifier": {
+            "legalName": "Basingstoke & Deane Borough Council",
+            "scheme": "GB-LAE",
+            "id": "BAN"
+          },
+          "address": {
+            "streetAddress": "Civic Offices",
+            "locality": "BASINGSTOKE",
+            "postalCode": "RG214AH",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Procurement Team",
+            "email": "procurement@basingstoke.gov.uk",
+            "telephone": "01256 844844"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-4713939",
+          "name": "CAMPBELL TICKELL LTD",
+          "identifier": {
+            "legalName": "CAMPBELL TICKELL LTD",
+            "scheme": "GB-COH",
+            "id": "4713939"
+          },
+          "address": {
+            "streetAddress": "OLYMPIC OFFICE CENTRE,8 FULTON ROAD\nWEMBLEY\nMIDDLESEX\nHA9 0NU\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-BAN",
+        "name": "Basingstoke & Deane Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-6b701a07-1cb7-47c7-b10b-19bcb5fc7638-1",
+          "status": "active",
+          "date": "2020-03-03T00:00:00Z",
+          "datePublished": "2020-04-15T13:24:13+01:00",
+          "value": {
+            "amount": 34855,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-4713939",
+              "name": "CAMPBELL TICKELL LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-02T00:00:00+01:00",
+            "endDate": "2020-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/38ab917e-5dd7-4572-ad4b-e992db2c02fe",
+              "datePublished": "2020-04-15T13:24:13+01:00",
+              "dateModified": "2020-05-22T11:14:21+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-ddfc31df-1e21-49fe-9f35-0ec8c4c52fd5",
+      "id": "7014098f-cd91-4f35-9a06-6a256624196b-353911",
+      "language": "en",
+      "date": "2020-04-11T11:00:24+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BIP486753590",
+        "title": "Housing Management Services for Temporary Accommodation",
+        "description": "Provision of Property Management Services",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "70330000",
+          "description": "Property management services of real estate on a fee or contract basis"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East of England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 126000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-04-06T23:59:59+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-07T00:00:00+01:00",
+          "endDate": "2023-04-05T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-62797",
+          "name": "Rochford District Council",
+          "identifier": {
+            "legalName": "Rochford District Council"
+          },
+          "address": {
+            "streetAddress": "Council Offices, South Street",
+            "locality": "Rochford",
+            "postalCode": "SS4 1BW",
+            "countryName": "UK"
+          },
+          "contactPoint": {
+            "email": "lauren.quigley@rochford.gov.uk",
+            "telephone": "+441702318023"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-141811",
+          "name": "Prolite Ltd",
+          "identifier": {
+            "legalName": "Prolite Ltd"
+          },
+          "address": {
+            "streetAddress": "Unit H Radford Business Centre\n        Radford Way\n        Billericay\n        CM12 0BZ"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-62797",
+        "name": "Rochford District Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-ddfc31df-1e21-49fe-9f35-0ec8c4c52fd5-1",
+          "status": "active",
+          "date": "2020-04-06T00:00:00+01:00",
+          "datePublished": "2020-04-11T11:00:24+01:00",
+          "value": {
+            "amount": 126000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-141811",
+              "name": "Prolite Ltd"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-07T00:00:00+01:00",
+            "endDate": "2023-04-05T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/7014098f-cd91-4f35-9a06-6a256624196b",
+              "datePublished": "2020-04-11T11:00:24+01:00",
+              "format": "text/html",
+              "language": "en"
+            },
+            {
+              "id": "2",
+              "documentType": "tenderNotice",
+              "description": "Please follow this link to view the notice.",
+              "url": "https://www.delta-esourcing.com/delta/respondToList.html?noticeId=486753590"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-e0f894df-33d4-4cc1-95e0-ff3593a25bd1",
+      "id": "a80d0cd6-17d1-4826-8f84-63b9c8562d0e-352931",
+      "language": "en",
+      "date": "2020-04-03T11:14:40+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CHEAST001-DN421756-98135371",
+        "title": "19 104 Housing Related Support services (HRS)",
+        "description": "Cheshire East Council wishes to commission a range of Housing Related Support Services, essentially the provision of short - term hostel accommodation, or support that maintains independent living through support at a client's home. The requirement is split into 8 lots, to cover the North and South areas of the Cheshire East region providers will be required to support: Single homeless and rough sleepers, Homeless families, YoungPeople, Older people with support needs, Teenage parents, People affected with drug and alcohol misuse,People with disabilities, Offenders or people at risk of offending, People affected with mental health issues,Resettlement from supported housing. New Contracts are required to start from 1st April 2020 and note TUPE may apply.\r\n\r\nAdditional information: CHEST REF: DN421756 electronic tendering only\r\n",
+        "datePublished": "2019-11-01T10:58:12Z",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85300000",
+          "description": "Social work and related services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "minValue": {
+          "amount": 3500000,
+          "currency": "GBP"
+        },
+        "value": {
+          "amount": 4000000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2019-12-04T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-04-01T00:00:00+01:00",
+          "endDate": "2023-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-3938",
+          "name": "Cheshire East Borough Council",
+          "identifier": {
+            "legalName": "Cheshire East Borough Council"
+          },
+          "address": {
+            "streetAddress": "Westfields, Middlewich Road",
+            "locality": "Sandbach",
+            "postalCode": "CW11 1HZ",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Louise Fenn",
+            "email": "louise.fenn@cheshireeast.gov.uk",
+            "telephone": "+44 1270686454"
+          },
+          "details": {
+            "url": "http://www.cheshireeast.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-141261",
+          "name": "Honeycomb Charitable Services Ltd",
+          "identifier": {
+            "legalName": "Honeycomb Charitable Services Ltd"
+          },
+          "address": {
+            "streetAddress": "ST4 5AB"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-141262",
+          "name": "Emerging Futures CIC",
+          "identifier": {
+            "legalName": "Emerging Futures CIC"
+          },
+          "address": {
+            "streetAddress": "BN14 9NH"
+          },
+          "details": {
+            "scale": "sme",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        },
+        {
+          "id": "GB-CFS-133556",
+          "name": "Plus Dane Housing Group Ltd.",
+          "identifier": {
+            "legalName": "Plus Dane Housing Group Ltd."
+          },
+          "address": {
+            "streetAddress": "L1 9EF"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-3938",
+        "name": "Cheshire East Borough Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-e0f894df-33d4-4cc1-95e0-ff3593a25bd1-1",
+          "status": "active",
+          "date": "2020-03-02T00:00:00Z",
+          "datePublished": "2020-04-03T00:00:00+01:00",
+          "value": {
+            "amount": 3566405,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-141261",
+              "name": "Honeycomb Charitable Services Ltd"
+            },
+            {
+              "id": "GB-CFS-141262",
+              "name": "Emerging Futures CIC"
+            },
+            {
+              "id": "GB-CFS-133556",
+              "name": "Plus Dane Housing Group Ltd."
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-04-01T00:00:00+01:00",
+            "endDate": "2023-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/a80d0cd6-17d1-4826-8f84-63b9c8562d0e",
+              "datePublished": "2020-04-03T00:00:00+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-aa7ce0cc-a888-46ec-aa98-a9dc6a72a7f0",
+      "id": "659e439a-ead5-490b-8b28-d83a04c76168-352820",
+      "language": "en",
+      "date": "2020-04-02T14:21:54+01:00",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BRISTOLCC001-DN473376-02727835",
+        "title": "Rough Sleepers Emergency Accommodation COVID 19",
+        "description": "Eclipse Hotels Bristol Trading as Holiday Inn.  Providing accommodation for people sleeping rough in Bristol during the Covid 19 lock down period.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "80000000",
+          "description": "Education and training services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "85000000",
+            "description": "Health and social work services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "South West",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 120000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure",
+        "tenderPeriod": {
+          "endDate": "2020-03-23T23:59:59Z"
+        },
+        "contractPeriod": {
+          "startDate": "2020-03-25T00:00:00Z",
+          "endDate": "2020-04-30T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": false,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-53257",
+          "name": "Bristol City Council",
+          "identifier": {
+            "legalName": "Bristol City Council"
+          },
+          "address": {
+            "streetAddress": "Bristol City Council, P O Box 3176",
+            "locality": "BRISTOL",
+            "postalCode": "BS3 9FS",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "name": "Wanda Knight",
+            "email": "wanda.knight@bristol.gov.uk",
+            "telephone": "+44 1179223556"
+          },
+          "details": {
+            "url": "https://www.bristol.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-145261",
+          "name": "Eclipse Hotels Bristol",
+          "identifier": {
+            "legalName": "Eclipse Hotels Bristol"
+          },
+          "address": {
+            "streetAddress": "SW6 6AW"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-53257",
+        "name": "Bristol City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-aa7ce0cc-a888-46ec-aa98-a9dc6a72a7f0-1",
+          "status": "active",
+          "date": "2020-03-24T00:00:00Z",
+          "datePublished": "2020-04-02T14:21:54+01:00",
+          "value": {
+            "amount": 120000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-145261",
+              "name": "Eclipse Hotels Bristol"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2020-03-25T00:00:00Z",
+            "endDate": "2020-04-30T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/659e439a-ead5-490b-8b28-d83a04c76168",
+              "datePublished": "2020-04-02T14:21:54+01:00",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "portal": "cf",
+  "year": 2025,
+  "month": 12,
+  "raw_count": 796,
+  "filtered_count": 3,
+  "pages": 8,
+  "releases": [
+    {
+      "ocid": "ocds-b5fd17-16147e5a-549a-4358-8e58-34c8056fd89d",
+      "id": "30e46fe3-d486-456e-b86e-5c0bda6c0cef-877719",
+      "language": "en",
+      "date": "2025-12-31T14:28:41Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "BOLT001-DN774746-37907504",
+        "title": "TC061 - Homeless Household Supported Accommodation",
+        "description": "Further Competition under Framework Agreement TC130: COMMUNITY SERVICES FRAMEWORK AGREEMENT - LOT 1C\r\n\r\nThe tender is to commission a short to medium-term accommodation service to support vulnerable homeless households including specifically homeless adult single females and couples (18 years plus) who may have younger dependent children and/or fleeing domestic abuse, to help them regain their independence, live independently within their communities, maintain or improve their health and wellbeing, and participate in meaningful activities including work, training, volunteering and personal interests/hobbies.\r\n\r\nThis is to be used by the Council's Community Housing Services within Department of People.\r\n\r\nThe Authority will appoint one Provider for the Contract.\r\n",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "98000000",
+          "description": "Other community, social and personal services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "England",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 263020,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Restricted procedure",
+        "tenderPeriod": {
+          "endDate": "2025-06-06T16:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2025-08-01T00:00:00+01:00",
+          "endDate": "2028-07-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-CFS-67010",
+          "name": "Bolton Council",
+          "identifier": {
+            "legalName": "Bolton Council"
+          },
+          "address": {
+            "streetAddress": "3rd Floor Bolton Town Hall, Victoria Square",
+            "locality": "Bolton",
+            "postalCode": "BL1 1RU",
+            "countryName": "United Kingdom"
+          },
+          "contactPoint": {
+            "email": "corporate.procurement@bolton.gov.uk"
+          },
+          "details": {
+            "url": "http://www.bolton.gov.uk/"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-CFS-329404",
+          "name": "Great Places Housing Association",
+          "identifier": {
+            "legalName": "Great Places Housing Association"
+          },
+          "address": {
+            "streetAddress": "2A Derwent Avenue\nManchester\nM21 7QP"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-CFS-67010",
+        "name": "Bolton Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-16147e5a-549a-4358-8e58-34c8056fd89d-1",
+          "status": "active",
+          "date": "2025-07-07T00:00:00+01:00",
+          "datePublished": "2025-12-31T14:28:41Z",
+          "value": {
+            "amount": 263020,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-CFS-329404",
+              "name": "Great Places Housing Association"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2025-08-01T00:00:00+01:00",
+            "endDate": "2028-07-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/30e46fe3-d486-456e-b86e-5c0bda6c0cef",
+              "datePublished": "2025-12-31T14:28:41Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-eb85eb5c-7d43-4c6d-bcb7-7a6fb64bbbcb",
+      "id": "fd0ca4a2-fc6c-4334-a38e-e5dcb8174283-877356",
+      "language": "en",
+      "date": "2025-12-23T14:47:05Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "CPU7991",
+        "title": "Homeless Adults Supported Temporary Accommodation (HASTA)",
+        "description": "Provision of direct access, emergency and temporary accommodation for homeless individuals. Accommodation is only available for those homeless individuals who have support needs preventing them from accessing or sustaining independent living arrangements.",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "CPV",
+            "id": "98000000",
+            "description": "Other community, social and personal services"
+          }
+        ],
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "East Midlands",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 360000,
+          "currency": "GBP"
+        },
+        "procurementMethod": "selective",
+        "procurementMethodDetails": "Call-off from a framework agreement",
+        "tenderPeriod": {
+          "endDate": "2025-12-05T17:00:00Z"
+        },
+        "contractPeriod": {
+          "startDate": "2026-04-01T00:00:00+01:00",
+          "endDate": "2027-03-31T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": true
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/5JM9tyCn",
+          "name": "NOTTINGHAM CITY COUNCIL",
+          "identifier": {
+            "legalName": "NOTTINGHAM CITY COUNCIL",
+            "scheme": "GB-SRS",
+            "id": "sid4gov.cabinetoffice.gov.uk/5JM9tyCn"
+          },
+          "address": {
+            "streetAddress": "LOXLEY HOUSE",
+            "locality": "NOTTINGHAM",
+            "postalCode": "NG23NG",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "name": "Elisa Flintoff",
+            "email": "Elisa.Flintoff@nottinghamcity.gov.uk",
+            "telephone": "01158762737"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-7104",
+          "name": "NOTTINGHAM COMMUNITY HOUSING ASSOCIATION LTD",
+          "identifier": {
+            "legalName": "NOTTINGHAM COMMUNITY HOUSING ASSOCIATION LTD",
+            "scheme": "GB-COH",
+            "id": "7104"
+          },
+          "address": {
+            "streetAddress": "1 EUCALYPTUS AVE\r\nNG11 8SW\r\nGB"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": true
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/5JM9tyCn",
+        "name": "NOTTINGHAM CITY COUNCIL"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-eb85eb5c-7d43-4c6d-bcb7-7a6fb64bbbcb-1",
+          "status": "active",
+          "date": "2025-12-17T00:00:00Z",
+          "datePublished": "2025-12-23T14:47:05Z",
+          "value": {
+            "amount": 360000,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-7104",
+              "name": "NOTTINGHAM COMMUNITY HOUSING ASSOCIATION LTD"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2026-04-01T00:00:00+01:00",
+            "endDate": "2027-03-31T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/fd0ca4a2-fc6c-4334-a38e-e5dcb8174283",
+              "datePublished": "2025-12-23T14:47:05Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ocid": "ocds-b5fd17-c043bf06-c375-45ae-994b-cd39be33dd72",
+      "id": "14942bac-74e2-4b1b-99b4-96a2d2d8e1f2-876895",
+      "language": "en",
+      "date": "2025-12-19T14:49:32Z",
+      "tag": [
+        "award"
+      ],
+      "initiationType": "tender",
+      "tender": {
+        "id": "SHAP01",
+        "title": "Short Term, Temporary Supported Housing for Single Homeless Clients in Sunderland Aged 18-25 Years (Washington)",
+        "description": "Provision of intensive temporary homeless supported accommodation. The service commencement was advertised to be subject to acquisition of a property, services have now commenced from 6th October 2025",
+        "status": "complete",
+        "classification": {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+        },
+        "items": [
+          {
+            "id": "1",
+            "deliveryAddresses": [
+              {
+                "region": "North East",
+                "countryName": "United Kingdom"
+              }
+            ]
+          }
+        ],
+        "value": {
+          "amount": 744668,
+          "currency": "GBP"
+        },
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open procedure (above threshold)",
+        "tenderPeriod": {
+          "endDate": "2023-05-15T16:00:00+01:00"
+        },
+        "contractPeriod": {
+          "startDate": "2025-10-06T00:00:00+01:00",
+          "endDate": "2028-10-05T23:59:59+01:00"
+        },
+        "suitability": {
+          "sme": true,
+          "vcse": false
+        },
+        "mainProcurementCategory": "services"
+      },
+      "parties": [
+        {
+          "id": "GB-LAE-SND",
+          "name": "Sunderland City Council",
+          "identifier": {
+            "legalName": "Sunderland City Council",
+            "scheme": "GB-LAE",
+            "id": "SND"
+          },
+          "address": {
+            "streetAddress": "City Hall, Plater Way",
+            "locality": "SUNDERLAND",
+            "postalCode": "SR1 3AD",
+            "countryName": "England"
+          },
+          "contactPoint": {
+            "email": "corporate.procurement@sunderland.gov.uk"
+          },
+          "roles": [
+            "buyer"
+          ]
+        },
+        {
+          "id": "GB-COH-00995799",
+          "name": "The Cyrenians (Changing Lives)",
+          "identifier": {
+            "legalName": "The Cyrenians (Changing Lives)",
+            "scheme": "GB-COH",
+            "id": "00995799"
+          },
+          "address": {
+            "streetAddress": "26 The Avenues Eleventh Avenue North, Team Valley Trading Estate, Gateshead"
+          },
+          "details": {
+            "scale": "large",
+            "vcse": false
+          },
+          "roles": [
+            "supplier"
+          ]
+        }
+      ],
+      "buyer": {
+        "id": "GB-LAE-SND",
+        "name": "Sunderland City Council"
+      },
+      "awards": [
+        {
+          "id": "ocds-b5fd17-c043bf06-c375-45ae-994b-cd39be33dd72-1",
+          "status": "active",
+          "date": "2023-08-18T00:00:00+01:00",
+          "datePublished": "2025-12-19T14:49:32Z",
+          "value": {
+            "amount": 744668,
+            "currency": "GBP"
+          },
+          "suppliers": [
+            {
+              "id": "GB-COH-00995799",
+              "name": "The Cyrenians (Changing Lives)"
+            }
+          ],
+          "contractPeriod": {
+            "startDate": "2025-10-06T00:00:00+01:00",
+            "endDate": "2028-10-05T23:59:59+01:00"
+          },
+          "documents": [
+            {
+              "id": "1",
+              "documentType": "awardNotice",
+              "description": "Awarded contract notice on Contracts Finder",
+              "url": "https://www.contractsfinder.service.gov.uk/Notice/14942bac-74e2-4b1b-99b4-96a2d2d8e1f2",
+              "datePublished": "2025-12-19T14:49:32Z",
+              "format": "text/html",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
