@@ -27,20 +27,55 @@
 let _kv = null;
 async function getKv() {
   if (_kv) return _kv;
-  // Only use real KV when env vars are present
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-    _kv = makeMemoryKv();
-    return _kv;
+  // Preference order:
+  //   1. Vercel KV REST vars (KV_REST_API_URL/TOKEN) → @vercel/kv
+  //   2. REDIS_URL (what the Vercel Marketplace Redis integration actually
+  //      provides — this is what production has) → ioredis over TCP
+  //   3. In-memory fallback for local dev without either
+  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+    try {
+      const { kv } = await import('@vercel/kv');
+      _kv = kv;
+      return _kv;
+    } catch { /* fall through */ }
   }
-  try {
-    const { kv } = await import('@vercel/kv');
-    _kv = kv;
-    return _kv;
-  } catch (e) {
-    // Fall back to memory if SDK fails to import (e.g. local dev without install)
-    _kv = makeMemoryKv();
-    return _kv;
+  if (process.env.REDIS_URL) {
+    try {
+      _kv = await makeIoredisKv(process.env.REDIS_URL);
+      return _kv;
+    } catch { /* fall through */ }
   }
+  _kv = makeMemoryKv();
+  return _kv;
+}
+
+// ioredis adapter exposing the same get/set/sadd/smembers/del surface as
+// @vercel/kv. Raw Redis stores strings, so values are JSON-encoded here —
+// callers keep working with plain objects either way.
+async function makeIoredisKv(url) {
+  const { default: Redis } = await import('ioredis');
+  // Reuse one connection across warm serverless invocations.
+  const client = globalThis.__fahp_redis__ || (globalThis.__fahp_redis__ =
+    new Redis(url, {
+      maxRetriesPerRequest: 2,
+      connectTimeout: 5000,
+      lazyConnect: false,
+      enableOfflineQueue: true,
+      // Upstash/managed Redis URLs are rediss:// (TLS) — ioredis handles via URL scheme
+    }));
+  return {
+    async get(key) {
+      const raw = await client.get(key);
+      if (raw == null) return null;
+      try { return JSON.parse(raw); } catch { return raw; }
+    },
+    async set(key, val) {
+      return client.set(key, typeof val === 'string' ? val : JSON.stringify(val));
+    },
+    async sadd(key, ...members) { return client.sadd(key, ...members); },
+    async smembers(key) { return client.smembers(key); },
+    async del(key) { return client.del(key); },
+  };
 }
 
 function makeMemoryKv() {

@@ -56,6 +56,34 @@ export const PRICING = {
   },
 };
 
+// ── recurring monthly plans (Stripe subscription mode) ───────────────────
+// Sold alongside the one-off purchase on the paywall. An active subscriber
+// unlocks any area they search while their plan is live.
+export const MONTHLY_PLANS = {
+  monthly_starter: {
+    key: "monthly_starter",
+    amount: 4999,
+    currency: "gbp",
+    interval: "month",
+    label: "£49.99",
+    name: "Monthly · Starter",
+    blurb: "10 area searches every month",
+    description: "10 area unlocks every month — postcode, borough or county. Cancel anytime.",
+    searches: 10,
+  },
+  monthly_full: {
+    key: "monthly_full",
+    amount: 7999,
+    currency: "gbp",
+    interval: "month",
+    label: "£79.99",
+    name: "Monthly · Full access",
+    blurb: "Unlimited area searches",
+    description: "Unlimited area unlocks — postcode, borough or county. Cancel anytime.",
+    searches: Infinity,
+  },
+};
+
 // Back-compat shim while we migrate any callers expecting SUBSCRIPTION shape
 export const SUBSCRIPTION = PRICING.postcode;
 
@@ -174,6 +202,48 @@ export function matchResolved(api) {
   };
 }
 
+// ── Council-name → db key resolution (shared) ──────────────────────────────
+// Two passes: exact match wins outright; only fall back to substring fuzz
+// if nothing matched exactly (otherwise iteration order picks a wrong
+// fuzzy hit before reaching the exact one).
+function resolveCouncilDbKey(q) {
+  let matchedKey = null, dbKeyHit = null;
+  const findIn = (map, exactOnly) => {
+    for (const [normKey, dbKeys] of Object.entries(map)) {
+      const hit = exactOnly ? normKey === q : (normKey.includes(q) || q.includes(normKey));
+      if (hit) {
+        for (const k of dbKeys) if (db.c[k]) { matchedKey = normKey; dbKeyHit = k; return; }
+      }
+    }
+  };
+  findIn(COUNCIL_MAP, true);
+  if (!dbKeyHit) findIn(COUNCIL_NORM_MAP, true);
+  if (!dbKeyHit) findIn(COUNCIL_MAP, false);
+  if (!dbKeyHit) findIn(COUNCIL_NORM_MAP, false);
+  return { matchedKey, dbKeyHit };
+}
+
+// Metropolitan "counties" are groupings of unitary councils, not admin
+// counties — they never appear in db.county. Resolve them as a union of
+// their constituent councils so "Greater Manchester" or "West Yorkshire"
+// behave the way a customer expects.
+const METRO_COUNTIES = {
+  "greater manchester": { region: "North West",
+    councils: ["Manchester","Bolton","Bury","Oldham","Rochdale","Salford","Stockport","Tameside","Trafford","Wigan"] },
+  "west yorkshire": { region: "Yorkshire & The Humber",
+    councils: ["Leeds","Bradford","Calderdale","Kirklees","Wakefield"] },
+  "south yorkshire": { region: "Yorkshire & The Humber",
+    councils: ["Sheffield","Barnsley","Doncaster","Rotherham"] },
+  "west midlands": { region: "West Midlands",
+    councils: ["Birmingham","Coventry","Dudley","Sandwell","Solihull","Walsall","Wolverhampton"] },
+  "merseyside": { region: "North West",
+    councils: ["Liverpool","Knowsley","Sefton","St Helens","Wirral"] },
+  "tyne and wear": { region: "North East",
+    councils: ["Newcastle upon Tyne","Gateshead","North Tyneside","South Tyneside","Sunderland"] },
+  "greater london": { region: "London", councils: [] },
+  "london": { region: "London", councils: [] },
+};
+
 // ── Borough / Council direct lookup (no postcode needed) ───────────────────
 // User types a council/borough name e.g. "Camden" or "Brighton and Hove" and
 // we return everyone who holds a contract there, plus the relevant
@@ -182,31 +252,32 @@ export function matchByCouncil(councilQuery) {
   const q = normCouncilKey(councilQuery);
   if (!q) { const e = new Error("empty"); e.code = "notfound"; throw e; }
 
-  // Find the canonical council key matching the query
-  let matchedKey = null, dbKeyHit = null;
-  const findIn = (map) => {
-    for (const [normKey, dbKeys] of Object.entries(map)) {
-      if (normKey === q || normKey.includes(q) || q.includes(normKey)) {
-        for (const k of dbKeys) if (db.c[k]) { matchedKey = normKey; dbKeyHit = k; return; }
-      }
-    }
-  };
-  findIn(COUNCIL_MAP);
-  if (!dbKeyHit) findIn(COUNCIL_NORM_MAP);
+  const { matchedKey, dbKeyHit } = resolveCouncilDbKey(q);
   if (!dbKeyHit) { const e = new Error("notfound"); e.code = "notfound"; throw e; }
 
   const used = new Set();
   const take = (ids) => { const out=[]; for (const id of ids||[]) if (!used.has(id)) { used.add(id); out.push(id); } return out; };
   const local = take(db.c[dbKeyHit] || []);
 
-  // Find which county + region this council belongs to (best effort)
-  let regionKey = "", countyKey = "";
-  for (const [reg, ids] of Object.entries(db.r || {})) {
-    if ((ids || []).some((id) => local.includes(id))) { regionKey = reg; break; }
+  // Derive region + county from this council's OWN contract entries.
+  // (The previous approach — "which county list shares any provider with this
+  // council" — leaked unrelated counties: a provider serving both Hounslow and
+  // an Essex framework made Hounslow report countyName "essex" and pull in all
+  // 112 Essex county providers.)
+  const regionVotes = new Map(), countyVotes = new Map();
+  for (const id of local) {
+    const p = byId.get(id);
+    for (const g of (p?.contracts_list || [])) {
+      const gk = normCouncilKey(g.council);
+      if (!(gk === matchedKey || gk.includes(matchedKey) || matchedKey.includes(gk))) continue;
+      if (g.region) regionVotes.set(g.region, (regionVotes.get(g.region) || 0) + 1);
+      if (g.county) countyVotes.set(g.county, (countyVotes.get(g.county) || 0) + 1);
+    }
   }
-  for (const [cty, ids] of Object.entries(db.county || {})) {
-    if ((ids || []).some((id) => (db.c[dbKeyHit] || []).includes(id))) { countyKey = cty; break; }
-  }
+  const top = (m) => [...m.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || "";
+  const regionKey = top(regionVotes);
+  const countyName = top(countyVotes);
+  const countyKey = normCouncilKey(countyName);
 
   const countyIds = countyKey ? take(db.county[countyKey] || []) : [];
   const regional = regionKey ? take(db.r[regionKey] || []) : [];
@@ -225,7 +296,7 @@ export function matchByCouncil(councilQuery) {
     return { ...p, tier, contracts_list: relevant(p.contracts_list) };
   });
   return {
-    council: councilQuery, countyName: countyKey, region: regionKey, postcode: "",
+    council: councilQuery, countyName, region: regionKey, postcode: "",
     local: hyd(local, "local"), county: hyd(countyIds, "county"),
     regional: hyd(regional, "regional"), national: hyd(national, "national"),
     total: local.length + countyIds.length + regional.length + national.length,
@@ -239,6 +310,40 @@ export function matchByCouncil(councilQuery) {
 export function matchByCounty(countyQuery) {
   const cty = normCouncilKey(countyQuery);
   if (!cty) { const e = new Error("empty"); e.code = "notfound"; throw e; }
+
+  // Metropolitan counties: union the constituent councils' local providers.
+  const metro = METRO_COUNTIES[cty];
+  if (metro && !db.county[cty]) {
+    const used = new Set();
+    const take = (ids) => { const out=[]; for (const id of ids||[]) if (!used.has(id)) { used.add(id); out.push(id); } return out; };
+    const local = [];
+    const memberKeys = [];
+    for (const name of metro.councils) {
+      const { matchedKey, dbKeyHit } = resolveCouncilDbKey(normCouncilKey(name));
+      if (dbKeyHit) { memberKeys.push(matchedKey); local.push(...take(db.c[dbKeyHit] || [])); }
+    }
+    const regionKey = metro.region;
+    const regional = regionKey ? take(db.r[regionKey] || []) : [];
+    const national = take(db.n);
+    const relevant = (list) => (list || []).filter((g) => {
+      const gk = normCouncilKey(g.council);
+      const councilMatch = memberKeys.some((mk) => gk === mk || gk.includes(mk) || mk.includes(gk));
+      const regionalMatch = g.scope === "Regional" && g.region === regionKey;
+      return councilMatch || regionalMatch || g.scope === "National";
+    });
+    const hyd = (ids, tier) => ids.map((id) => {
+      const p = byId.get(id);
+      return { ...p, tier, contracts_list: relevant(p.contracts_list) };
+    });
+    return {
+      council: "", countyName: countyQuery, region: regionKey, postcode: "",
+      local: hyd(local, "local"), county: [],
+      regional: hyd(regional, "regional"), national: hyd(national, "national"),
+      total: local.length + regional.length + national.length,
+      lha: null,
+    };
+  }
+
   if (!db.county[cty]) {
     // Tolerant: look for the closest county key
     const keys = Object.keys(db.county || {});
@@ -249,19 +354,25 @@ export function matchByCounty(countyQuery) {
 
   const used = new Set();
   const take = (ids) => { const out=[]; for (const id of ids||[]) if (!used.has(id)) { used.add(id); out.push(id); } return out; };
-  // Local: union of every council in this county
-  const local = [];
-  for (const [dbKey, ids] of Object.entries(db.c || {})) {
-    // a council belongs to this county if any of its providers are also in db.county[cty]
-    const setCty = new Set(db.county[cty] || []);
-    if ((ids || []).some((id) => setCty.has(id))) local.push(...take(ids));
-  }
   const countyIds = take(db.county[cty]);
-  // Find region by sampling
-  let regionKey = "";
-  for (const [reg, ids] of Object.entries(db.r || {})) {
-    if ((ids || []).some((id) => local.includes(id) || countyIds.includes(id))) { regionKey = reg; break; }
+
+  // No Local tier on a county search: Local contract entries don't carry a
+  // county field, so any council→county inference would be provider-overlap
+  // guesswork (the same class of bug that made Hounslow report Essex).
+  // County search = county-wide + regional + national; borough-level detail
+  // comes from the postcode and borough searches.
+  const local = [];
+
+  // Region: vote from the county providers' own County-scope contract entries.
+  const regionVotes = new Map();
+  for (const id of countyIds) {
+    const p = byId.get(id);
+    for (const g of (p?.contracts_list || [])) {
+      if (g.scope !== "County" || normCouncilKey(g.county || "") !== cty) continue;
+      if (g.region) regionVotes.set(g.region, (regionVotes.get(g.region) || 0) + 1);
+    }
   }
+  const regionKey = [...regionVotes.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || "";
   const regional = regionKey ? take(db.r[regionKey] || []) : [];
   const national = take(db.n);
 
@@ -293,6 +404,7 @@ export function previewOf(m) {
     total: m.total,
     tiers: { local: m.local.length, county: m.county.length, regional: m.regional.length, national: m.national.length },
     pricing: PRICING,
+    monthly: MONTHLY_PLANS,
     subscription: SUBSCRIPTION,  // back-compat for any older clients
     lha: m.lha,
   };

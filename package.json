@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vercel/kv": "^3.0.0",
+    "ioredis": "^5.11.1",
     "pdfmake": "^0.3.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
