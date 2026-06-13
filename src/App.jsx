@@ -333,14 +333,16 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
       <section className="hero">
         <div className="wrap hero-grid">
           <div className="hero-left">
-          <span className="eyebrow"><span className="dot" /> Postcode-level provider data · England · Updated monthly</span>
+          <span className="eyebrow"><span className="dot" /> For property developers · Supported Living &amp; Social Housing · England</span>
           <h1 className="display">
-            Connect with <span className="em">Supported Living &amp; Social&nbsp;Housing providers</span> in your area.
+            Know which providers will <span className="em">lease your development</span> — before you build it.
           </h1>
           <p className="sub">
-            Built for property developers and landlords. Turn any postcode into a working
-            list of commissioned providers — names, contracts and verified contacts —
-            <b> from £29.99</b>.
+            In supported housing your end customer is a provider — an organisation that
+            leases whole schemes on long, guaranteed-rent terms, not individual renters.
+            Enter any English postcode and see exactly which providers operate there, who
+            commissions them, and how to reach them — so you build for a buyer you&rsquo;ve
+            already lined up.
           </p>
 
           <div className="search-card">
