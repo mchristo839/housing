@@ -227,6 +227,17 @@ function resolveCouncilDbKey(q) {
 // counties — they never appear in db.county. Resolve them as a union of
 // their constituent councils so "Greater Manchester" or "West Yorkshire"
 // behave the way a customer expects.
+// The 32 London boroughs + the City of London. "Greater London" aggregates
+// every borough's local providers (London data is tagged by borough, not by a
+// single "greater london" key).
+const LONDON_BOROUGHS = [
+  "Barking and Dagenham","Barnet","Bexley","Brent","Bromley","Camden","Croydon",
+  "Ealing","Enfield","Greenwich","Hackney","Hammersmith and Fulham","Haringey",
+  "Harrow","Havering","Hillingdon","Hounslow","Islington","Kensington and Chelsea",
+  "Kingston upon Thames","Lambeth","Lewisham","Merton","Newham","Redbridge",
+  "Richmond upon Thames","Southwark","Sutton","Tower Hamlets","Waltham Forest",
+  "Wandsworth","Westminster","City of London",
+];
 const METRO_COUNTIES = {
   "greater manchester": { region: "North West",
     councils: ["Manchester","Bolton","Bury","Oldham","Rochdale","Salford","Stockport","Tameside","Trafford","Wigan"] },
@@ -240,8 +251,8 @@ const METRO_COUNTIES = {
     councils: ["Liverpool","Knowsley","Sefton","St Helens","Wirral"] },
   "tyne and wear": { region: "North East",
     councils: ["Newcastle upon Tyne","Gateshead","North Tyneside","South Tyneside","Sunderland"] },
-  "greater london": { region: "London", councils: [] },
-  "london": { region: "London", councils: [] },
+  "greater london": { region: "London", councils: LONDON_BOROUGHS },
+  "london": { region: "London", councils: LONDON_BOROUGHS },
   // ── Shire / unitary ceremonial counties ──────────────────────────────────
   // Mapped to their constituent local authorities + region so the name always
   // resolves. Councils with no contract data yet contribute nothing (the county
