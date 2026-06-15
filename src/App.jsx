@@ -414,7 +414,6 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
             <div className="field"><div className="ic">⌂</div><h3>Type of care or housing</h3><p>What each provider delivers — client groups and accommodation type.</p></div>
             <div className="field"><div className="ic">✉</div><h3>Verified contact details</h3><p>Phone, email and website, checked against live sources — not a stale scrape.</p></div>
             <div className="field"><div className="ic">✦</div><h3>Outreach templates &amp; guide</h3><p>Proven email templates and a usage guide, included with every search.</p></div>
-            <div className="field"><div className="ic">£</div><h3>Local Housing Allowance rates</h3><p>The benefit rates that underpin the rent in each area.</p></div>
           </div>
         </div>
       </section>
@@ -622,7 +621,6 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
             </>
           )}
         </div>
-        {preview.lha ? <LhaTeaser lha={preview.lha} /> : null}
       </div>
     </main>
   );
@@ -666,36 +664,6 @@ function NotifySignup({ scope, scopeLabel }) {
       </div>
       <p className="notify-consent">By signing up you consent to monthly provider-update emails for your chosen areas. Unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.</p>
       {err ? <p className="searcherror">{err}</p> : null}
-    </div>
-  );
-}
-
-function LhaTeaser({ lha }) {
-  const rows = [["Shared room", lha.shared], ["1 bedroom", lha.bed1], ["2 bedrooms", lha.bed2],
-    ["3 bedrooms", lha.bed3], ["4 bedrooms", lha.bed4]].filter(([, v]) => v != null);
-  return (
-    <div className="lha-teaser">
-      <h3>Local Housing Allowance — {lha.council}</h3>
-      <p className="meta">{lha.brma} BRMA · 2026/27 monthly rates</p>
-      <table className="lha-table">
-        <thead><tr><th>Room entitlement</th><th>LHA / mo</th><th>+10%</th><th>+20%</th></tr></thead>
-        <tbody>
-          {rows.map(([label, v]) => (
-            <tr key={label}>
-              <td>{label}</td>
-              <td className="tnum">£{Math.round(v).toLocaleString()}</td>
-              <td className="tnum">£{Math.round(v * 1.1).toLocaleString()}</td>
-              <td className="tnum">£{Math.round(v * 1.2).toLocaleString()}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="lha-note">
-        Social housing providers typically pay rent in line with LHA. Where demand is high, you can often
-        negotiate <b>LHA plus 10–20%</b> (shown above). The full categorised provider list — housing
-        associations, asylum & homelessness providers, and supported-living providers by client group — is
-        included in your downloadable report.
-      </p>
     </div>
   );
 }
