@@ -62,26 +62,43 @@ export const PRICING = {
 export const MONTHLY_PLANS = {
   monthly_starter: {
     key: "monthly_starter",
-    amount: 4999,
+    amount: 4900,
     currency: "gbp",
     interval: "month",
-    label: "£49.99",
-    name: "Monthly · Starter",
-    blurb: "10 area searches every month",
-    description: "10 area unlocks every month — postcode, borough or county. Cancel anytime.",
+    label: "£49",
+    name: "Starter",
+    blurb: "5 area unlocks every month",
+    description: "Unlock up to 5 areas every month — postcode, borough or county. Cancel anytime.",
+    searches: 5,
+  },
+  monthly_plus: {
+    key: "monthly_plus",
+    amount: 9900,
+    currency: "gbp",
+    interval: "month",
+    label: "£99",
+    name: "Plus",
+    blurb: "10 area unlocks every month",
+    description: "Unlock up to 10 areas every month — postcode, borough or county. Cancel anytime.",
     searches: 10,
   },
   monthly_full: {
     key: "monthly_full",
-    amount: 7999,
+    amount: 19900,
     currency: "gbp",
     interval: "month",
-    label: "£79.99",
-    name: "Monthly · Full access",
-    blurb: "Unlimited area searches",
-    description: "Unlimited area unlocks — postcode, borough or county. Cancel anytime.",
+    label: "£199",
+    name: "Unlimited",
+    blurb: "Unlimited area unlocks",
+    description: "Unlock unlimited areas every month — postcode, borough or county. Cancel anytime.",
     searches: Infinity,
   },
+};
+// Monthly allowance (distinct area unlocks per calendar month) by plan key.
+export const PLAN_ALLOWANCE = {
+  monthly_starter: 5,
+  monthly_plus: 10,
+  monthly_full: Infinity,
 };
 
 // Back-compat shim while we migrate any callers expecting SUBSCRIPTION shape

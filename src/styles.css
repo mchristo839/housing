@@ -620,13 +620,14 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .pm-divider { display: flex; align-items: center; text-align: center; gap: var(--s16); color: var(--muted); font-size: .85rem; font-weight: 600; margin-bottom: var(--s16); }
 .pm-divider::before, .pm-divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .pm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s12); }
+.pm-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
 .pm-card {
   position: relative; display: flex; flex-direction: column; gap: 4px; text-align: left;
   background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
   padding: var(--s16) var(--s16) var(--s12); cursor: pointer;
   transition: border-color .15s, box-shadow .15s, transform .12s var(--ease);
 }
-.pm-card:first-child { border-color: var(--accent); box-shadow: 0 6px 18px -10px rgba(45,107,255,.3); }
+.pm-card.featured { border-color: var(--accent); box-shadow: 0 6px 18px -10px rgba(45,107,255,.3); }
 .pm-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 26px -12px rgba(45,107,255,.35); }
 .pm-card:disabled { opacity: .6; cursor: default; transform: none; }
 .pm-flag { position: absolute; top: -10px; right: 14px; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; }
@@ -634,7 +635,7 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .pm-price { font-size: 1.05rem; color: var(--text); }
 .pm-price b { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--accent); }
 .pm-blurb { font-size: .82rem; color: var(--muted); line-height: 1.4; }
-@media (max-width: 560px) { .pm-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .pm-grid, .pm-grid-3 { grid-template-columns: 1fr; } }
 .email-unlock { display: flex; gap: var(--s8); margin-top: var(--s16); }
 .email-unlock input { flex: 1; border: 1px solid var(--border); border-radius: var(--r); padding: var(--s12) var(--s16); font: inherit; font-size: .95rem; }
 .email-unlock input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
@@ -852,7 +853,9 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 @media(max-width:820px){ .v2home .who{ grid-template-columns:1fr; } }
 
 /* pricing */
-.v2home .prices{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:48px; align-items:stretch; }
+.v2home .prices{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:48px; align-items:stretch; }
+.v2home .amt-per{ font-size:1rem; font-weight:700; color:var(--muted); letter-spacing:0; }
+@media(max-width:1000px){ .v2home .prices{ grid-template-columns:repeat(2,1fr); } }
 .v2home .price-card{ position:relative; border:1px solid var(--line-2); border-radius:18px; padding:30px 26px; background:#fff; display:flex; flex-direction:column; }
 .v2home .price-card.feat{ background:var(--blue-deep); color:#fff; border-color:var(--blue-deep); transform:scale(1.03); }
 .v2home .price-card .tag{ font-size:.74rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }

@@ -30,11 +30,12 @@ export async function purchasesForEmail(stripe, email) {
   if (!clean) return { active: false, purchases: [] };
   const customers = await stripe.customers.list({ email: clean, limit: 20 });
   const purchases = [];
-  let subscription = false;
+  let subscription = false, customerId = null, tier = null;
   for (const c of customers.data) {
-    // Active monthly plan?
+    // Active monthly plan? Capture which plan + the customer id for metering.
     const subs = await stripe.subscriptions.list({ customer: c.id, status: "all", limit: 20 });
-    if (subs.data.some((s) => ACTIVE_SUB.has(s.status))) subscription = true;
+    const activeSub = subs.data.find((s) => ACTIVE_SUB.has(s.status));
+    if (activeSub) { subscription = true; customerId = activeSub.customer; tier = activeSub.metadata?.tier || "monthly_starter"; }
     // One-off purchases?
     const intents = await stripe.paymentIntents.list({ customer: c.id, limit: 100 });
     for (const pi of intents.data) {
@@ -47,7 +48,7 @@ export async function purchasesForEmail(stripe, email) {
       }
     }
   }
-  return { active: subscription || purchases.length > 0, subscription, email: clean, purchases };
+  return { active: subscription || purchases.length > 0, subscription, customerId, tier, email: clean, purchases };
 }
 
 // Verify a one-off payment checkout session. Returns the tier + postcode + email

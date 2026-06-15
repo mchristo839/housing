@@ -142,6 +142,44 @@ export async function getPurchasesByEmail(email) {
   return out;
 }
 
+// ── Monthly unlock metering (enforces capped subscription allowances) ─────────
+// Tracks the DISTINCT areas a subscriber unlocks in a calendar month so we can
+// enforce plan allowances (Starter 5 / Plus 10 / Unlimited ∞). Re-opening an
+// area you already unlocked this month does not count again.
+//   usage:<customer>:<YYYY-MM> → set of area keys unlocked that month
+function currentMonth() {
+  const d = new Date();
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+export function areaKeyOf(scope) {
+  // One unlock = one area. Postcodes collapse to their council so re-opening the
+  // same area via a different postcode doesn't burn a second allowance.
+  const raw = scope.council || scope.county || scope.postcode || "";
+  return String(raw).toLowerCase().replace(/\s+/g, " ").trim();
+}
+// Returns { count, areas, has } for the customer's current month.
+export async function unlockUsage(customer, month = currentMonth()) {
+  const kv = await getKv();
+  const areas = await kv.smembers(`usage:${customer}:${month}`);
+  return { count: areas.length, areas, month };
+}
+// Decide + record an unlock against a monthly allowance.
+//   allowance = Infinity for unlimited plans.
+// Returns { allowed, count, allowance, repeat } where `repeat` means the area
+// was already unlocked this month (always allowed, never recounted).
+export async function meterUnlock(customer, allowance, areaKey, month = currentMonth()) {
+  const kv = await getKv();
+  const key = `usage:${customer}:${month}`;
+  const existing = await kv.smembers(key);
+  const repeat = existing.includes(areaKey);
+  if (repeat) return { allowed: true, count: existing.length, allowance, repeat: true };
+  if (existing.length >= allowance) {
+    return { allowed: false, count: existing.length, allowance, repeat: false };
+  }
+  if (areaKey) await kv.sadd(key, areaKey);
+  return { allowed: true, count: existing.length + 1, allowance, repeat: false };
+}
+
 // ── Leads (free-tier sign-ups from the home page, future) ─────────────────────
 export async function saveLead(email, source, area) {
   const kv = await getKv();

@@ -151,7 +151,11 @@ export default function App() {
             savedEmail.set(full.email); setUnlocked(full); setStatus("idle");
             window.scrollTo({ top: 0, behavior: "smooth" });
             return;
-          } catch { /* fall through to subscribe gate */ }
+          } catch (e) {
+            // Subscriber hit their monthly area allowance — show the paywall with a note.
+            if (e.code === "monthly_limit") setNotice("You've used all your area unlocks for this month. Upgrade for more, or your allowance resets next month.");
+            /* fall through to subscribe gate */
+          }
         }
         setPreview(pv); setStatus("idle");
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -190,6 +194,8 @@ export default function App() {
     } catch (e) {
       setNotice(e.code === "no_purchase"
         ? "No active purchase found for that email. Buy below, or check the email you used."
+        : e.code === "monthly_limit"
+        ? "You've used all your area unlocks for this month. Upgrade to Plus or Unlimited for more — or your allowance resets next month."
         : "Couldn't verify that email. Please try again.");
     }
     setEmailBusy(false);
@@ -472,24 +478,35 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
               </ul>
               <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search an area</button>
             </div>
+            <div className="price-card">
+              <span className="tag">Monthly · Starter</span>
+              <div className="amt">£49<span className="amt-per">/mo</span></div>
+              <div className="per">5 area unlocks a month</div>
+              <ul>
+                <li>Unlock up to 5 areas / month</li>
+                <li>Postcode, borough or county</li>
+                <li>Cancel anytime</li>
+              </ul>
+              <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search an area</button>
+            </div>
             <div className="price-card feat">
               <span className="ribbon">Most popular</span>
-              <span className="tag">Monthly · Starter</span>
-              <div className="amt">£49.99</div>
-              <div className="per">per month</div>
+              <span className="tag">Monthly · Plus</span>
+              <div className="amt">£99<span className="amt-per">/mo</span></div>
+              <div className="per">10 area unlocks a month</div>
               <ul>
-                <li>10 area searches every month</li>
+                <li>Unlock up to 10 areas / month</li>
                 <li>Postcode, borough or county</li>
                 <li>Cancel anytime</li>
               </ul>
               <button className="btn btn-blue" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Start monthly</button>
             </div>
             <div className="price-card">
-              <span className="tag">Monthly · Full access</span>
-              <div className="amt">£79.99</div>
-              <div className="per">per month</div>
+              <span className="tag">Monthly · Unlimited</span>
+              <div className="amt">£199<span className="amt-per">/mo</span></div>
+              <div className="per">unlimited unlocks</div>
               <ul>
-                <li>Unlimited area searches</li>
+                <li>Unlock as many areas as you like</li>
                 <li>Best for active sourcing</li>
                 <li>Cancel anytime</li>
               </ul>
@@ -585,20 +602,25 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
               {/* Searching more than one area? Offer the monthly plans. */}
               <div className="paywall-monthly">
                 <div className="pm-divider"><span>Searching more than one area?</span></div>
-                <div className="pm-grid">
+                <div className="pm-grid pm-grid-3">
                   <button className="pm-card" onClick={() => onSubscribe("monthly_starter")} disabled={busy}>
+                    <span className="pm-name">{P.monthly?.monthly_starter?.name || "Starter"}</span>
+                    <span className="pm-price"><b>{P.monthly?.monthly_starter?.label || "£49"}</b>/mo</span>
+                    <span className="pm-blurb">{P.monthly?.monthly_starter?.blurb || "5 area unlocks every month"}</span>
+                  </button>
+                  <button className="pm-card featured" onClick={() => onSubscribe("monthly_plus")} disabled={busy}>
                     <span className="pm-flag">Most popular</span>
-                    <span className="pm-name">{P.monthly?.monthly_starter?.name || "Monthly · Starter"}</span>
-                    <span className="pm-price"><b>{P.monthly?.monthly_starter?.label || "£49.99"}</b>/mo</span>
-                    <span className="pm-blurb">{P.monthly?.monthly_starter?.blurb || "10 area searches every month"}</span>
+                    <span className="pm-name">{P.monthly?.monthly_plus?.name || "Plus"}</span>
+                    <span className="pm-price"><b>{P.monthly?.monthly_plus?.label || "£99"}</b>/mo</span>
+                    <span className="pm-blurb">{P.monthly?.monthly_plus?.blurb || "10 area unlocks every month"}</span>
                   </button>
                   <button className="pm-card" onClick={() => onSubscribe("monthly_full")} disabled={busy}>
-                    <span className="pm-name">{P.monthly?.monthly_full?.name || "Monthly · Full access"}</span>
-                    <span className="pm-price"><b>{P.monthly?.monthly_full?.label || "£79.99"}</b>/mo</span>
-                    <span className="pm-blurb">{P.monthly?.monthly_full?.blurb || "Unlimited area searches"}</span>
+                    <span className="pm-name">{P.monthly?.monthly_full?.name || "Unlimited"}</span>
+                    <span className="pm-price"><b>{P.monthly?.monthly_full?.label || "£199"}</b>/mo</span>
+                    <span className="pm-blurb">{P.monthly?.monthly_full?.blurb || "Unlimited area unlocks"}</span>
                   </button>
                 </div>
-                <p className="paywall-fine">Monthly plans unlock every area you search while active. Cancel anytime. Secure billing via Stripe.</p>
+                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe.</p>
               </div>
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
