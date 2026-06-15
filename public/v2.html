@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Find a Housing Provider — the directory of supported living & social housing providers</title>
+<meta name="description" content="The online directory of Supported Living & Social Housing providers in England. Search any postcode, borough or county for commissioned providers, the commissioners behind them, and verified contact details." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  /* ===========================================================
+     ALT DIRECTION B (light) — "Online directory".
+     White canvas, electric-blue accent, clean and data-forward.
+     Positioned as a searchable directory of supported-living
+     providers, not a developer deal-sourcing pitch.
+     =========================================================== */
+  :root{
+    --paper:#FFFFFF;
+    --bg-alt:#F4F7FC;        /* cool light band */
+    --ink:#0C1322;           /* near-black, cool */
+    --muted:#5A6377;
+    --blue:#2D6BFF;          /* electric blue accent */
+    --blue-hover:#1E4FD6;
+    --blue-deep:#0E2A66;     /* deep navy for solid fills */
+    --blue-soft:#EAF1FF;     /* tint: chips, hovers, featured */
+    --line:rgba(12,19,34,.10);
+    --line-2:rgba(12,19,34,.16);
+    --ok-bg:#E8F5E9;--ok-tx:#1B5E20;--ok-bd:#A5D6A7;
+    --maxw:1180px;--r:14px;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --s8:8px;--s12:12px;--s16:16px;--s24:24px;--s32:32px;--s40:40px;--s48:48px;--s64:64px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;line-height:1.55;font-size:17px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--blue);color:#fff}
+  b{font-weight:800}
+
+  h1,h2,h3{letter-spacing:-.035em;line-height:1;font-weight:900}
+  .display{font-size:clamp(2.6rem,6.6vw,5rem);line-height:.98}
+  h2{font-size:clamp(1.9rem,4vw,3rem)}
+  h3{font-size:1.14rem;letter-spacing:-.02em;font-weight:800;line-height:1.15}
+  .eyebrow{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+  .lead{font-size:clamp(1.04rem,1.5vw,1.28rem);line-height:1.5;font-weight:500;color:var(--muted)}
+  .mark{color:var(--blue)}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:.5em;font-weight:800;font-size:1rem;
+    padding:15px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;
+    transition:transform .18s var(--ease),background .18s,color .18s,box-shadow .18s;letter-spacing:-.01em}
+  .btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 28px -12px rgba(45,107,255,.6)}
+  .btn-blue:hover{background:var(--blue-hover);transform:translateY(-2px)}
+  .btn-ink{background:var(--ink);color:#fff}
+  .btn-ink:hover{transform:translateY(-2px);background:#000}
+  .btn-out{background:#fff;color:var(--ink);border-color:var(--line-2)}
+  .btn-out:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+  .btn-lg{padding:18px 34px;font-size:1.06rem}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.03em;font-size:1.05rem}
+  .brand .glyph{width:30px;height:30px;border-radius:8px;background:var(--blue);display:grid;place-items:center;
+    color:#fff;font-weight:900;font-size:1.05rem}
+  .nav nav{display:flex;align-items:center;gap:26px}
+  .nav nav a{color:var(--muted);font-weight:600;font-size:.95rem}
+  .nav nav a:hover{color:var(--ink)}
+  .nav .btn{padding:10px 20px;font-size:.92rem}
+  .nav .btn-blue{color:#fff}   /* override the muted nav-link colour so CTA text stays white */
+  @media(max-width:760px){.nav nav a:not(.btn){display:none}}
+
+  /* hero */
+  .hero{padding:clamp(48px,7vw,86px) 0 clamp(40px,6vw,64px);position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+    background:radial-gradient(70% 60% at 88% 0%, rgba(45,107,255,.08), transparent 60%)}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--blue);
+    background:var(--blue-soft);padding:8px 16px;border-radius:999px;margin-bottom:26px;
+    font-size:.78rem;font-weight:800;letter-spacing:.04em}
+  .hero-eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .hero h1{max-width:17ch}
+  .hero .lead{max-width:56ch;margin-top:24px}
+
+  /* search */
+  .searchbox{margin-top:36px;max-width:660px}
+  .tabs{display:flex;gap:6px;margin-bottom:12px}
+  .tab{background:#fff;color:var(--muted);border:1px solid var(--line-2);
+    font-weight:700;font-size:.86rem;padding:9px 16px;border-radius:999px;cursor:pointer;transition:.15s}
+  .tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .tab:hover:not(.on){color:var(--ink);border-color:var(--ink)}
+  .searchrow{display:flex;gap:10px;background:#fff;padding:8px;border-radius:16px;
+    border:2px solid var(--blue);box-shadow:0 24px 50px -28px rgba(45,107,255,.5)}
+  .searchrow input{flex:1;border:0;font-size:1.08rem;font-weight:600;padding:14px 16px;color:var(--ink);background:transparent;min-width:0}
+  .searchrow input:focus{outline:none}
+  .searchrow input::placeholder{color:#9aa2b4;font-weight:500}
+  .searchrow .btn{white-space:nowrap}
+  .hint{margin-top:14px;color:var(--muted);font-size:.92rem}
+  .hint .ex{color:var(--blue);font-weight:700;cursor:pointer;border-bottom:1px dashed rgba(45,107,255,.4)}
+  .hint .ex:hover{color:var(--blue-hover)}
+  #result{margin-top:20px;display:none}
+  .resultcard{background:#fff;border:1px solid var(--line-2);border-left:5px solid var(--blue);
+    border-radius:14px;padding:22px 24px;animation:rise .5s var(--ease);box-shadow:0 18px 40px -28px rgba(12,19,34,.4)}
+  .resultcard.err{border-left-color:#E0314B}
+  .resultcard .big{font-size:clamp(2rem,5vw,2.9rem);font-weight:900;letter-spacing:-.04em;line-height:1}
+  .resultcard .big .mark{color:var(--blue)}
+  .resultcard .sub{color:var(--muted);margin-top:6px;font-weight:500}
+  .resultcard .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .resultcard .price{color:var(--muted);font-size:.9rem}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  /* stat band */
+  .band{background:var(--blue-deep);color:#fff;border-radius:0}
+  .band .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:34px 24px}
+  .stat b{display:block;font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+  .stat span{color:rgba(255,255,255,.78);font-weight:600;font-size:.94rem}
+  @media(max-width:680px){.band .wrap{grid-template-columns:repeat(2,1fr);gap:28px 18px}}
+
+  section.pad{padding:clamp(56px,8vw,92px) 0}
+  .alt{background:var(--bg-alt)}
+  .sec-head{max-width:64ch}
+  .sec-head .eyebrow{display:block;margin-bottom:14px}
+  .sec-head p.lead{margin-top:16px}
+
+  /* listing fields grid */
+  .fields{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px}
+  .field{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;transition:transform .2s var(--ease),box-shadow .2s,border-color .2s}
+  .field:hover{transform:translateY(-4px);box-shadow:0 22px 44px -28px rgba(45,107,255,.5);border-color:var(--blue)}
+  .field .ic{width:40px;height:40px;border-radius:10px;background:var(--blue-soft);color:var(--blue);
+    display:grid;place-items:center;font-weight:900;font-size:1.1rem;margin-bottom:16px}
+  .field h3{margin-bottom:6px}
+  .field p{color:var(--muted);font-size:.95rem;line-height:1.5}
+  @media(max-width:860px){.fields{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:540px){.fields{grid-template-columns:1fr}}
+
+  /* how it works steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+  .alt .step{background:#fff}
+  .step .num{font-size:.78rem;font-weight:900;color:var(--blue);letter-spacing:.08em}
+  .step h3{margin:12px 0 8px}
+  .step p{color:var(--muted);font-size:.94rem;line-height:1.5}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:540px){.steps{grid-template-columns:1fr}}
+
+  /* who uses */
+  .who{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+  .whocard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+  .whocard b{display:block;font-size:1.08rem;font-weight:800;margin-bottom:8px}
+  .whocard span{color:var(--muted);font-size:.96rem}
+  @media(max-width:820px){.who{grid-template-columns:1fr}}
+
+  /* pricing */
+  .prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px;align-items:stretch}
+  .price-card{position:relative;border:1px solid var(--line-2);border-radius:18px;padding:30px 26px;background:#fff;display:flex;flex-direction:column}
+  .price-card.feat{background:var(--blue-deep);color:#fff;border-color:var(--blue-deep);transform:scale(1.03)}
+  .price-card .tag{font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .price-card.feat .tag{color:#9DC0FF}
+  .price-card .amt{font-size:2.8rem;font-weight:900;letter-spacing:-.04em;margin:10px 0 2px;font-variant-numeric:tabular-nums}
+  .price-card .per{color:var(--muted);font-weight:600;font-size:.95rem}
+  .price-card.feat .per{color:rgba(255,255,255,.72)}
+  .price-card ul{list-style:none;margin:22px 0;display:flex;flex-direction:column;gap:11px}
+  .price-card li{display:flex;gap:10px;align-items:flex-start;font-size:.96rem;font-weight:500}
+  .price-card li::before{content:"✓";color:var(--blue);font-weight:900}
+  .price-card.feat li::before{color:#9DC0FF}
+  .price-card .btn{width:100%;justify-content:center;margin-top:auto}
+  .price-card .ribbon{position:absolute;top:18px;right:18px;background:var(--blue);color:#fff;
+    font-size:.66rem;font-weight:900;letter-spacing:.08em;padding:5px 11px;border-radius:999px}
+  @media(max-width:860px){.prices{grid-template-columns:1fr}.price-card.feat{transform:none}}
+
+  /* faq */
+  .faq{max-width:820px;margin-top:40px}
+  details{border-top:1px solid var(--line);padding:20px 0}
+  details summary{font-weight:800;font-size:1.06rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;letter-spacing:-.01em}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";color:var(--blue);font-weight:900;font-size:1.4rem;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:12px;line-height:1.6}
+
+  /* closing */
+  .closing{background:var(--blue-deep);color:#fff;text-align:center;padding:clamp(56px,8vw,92px) 0}
+  .closing h2{max-width:20ch;margin:0 auto 12px}
+  .closing p{color:rgba(255,255,255,.85);font-weight:500;max-width:52ch;margin:0 auto 28px;font-size:1.08rem}
+  .closing .btn-blue{box-shadow:0 12px 34px -12px rgba(0,0,0,.5)}
+
+  footer{background:var(--paper);color:var(--muted);padding:40px 0;font-size:.9rem;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+  footer a:hover{color:var(--ink)}
+  .compare-pill{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;
+    background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;font-size:.85rem;font-weight:700;
+    box-shadow:0 14px 40px -12px rgba(0,0,0,.4)}
+  .compare-pill a{color:#7FA9FF;text-decoration:underline}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+  .rv{opacity:0;transform:translateY(16px)}
+  .rv.in{opacity:1;transform:none;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="glyph">F</span> Find a Housing Provider</a>
+    <nav>
+      <a href="#listing">What's listed</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn btn-blue" href="#top">Search the directory</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="hero-eyebrow"><span class="dot"></span> Online directory · England · Updated monthly</span>
+      <h1 class="display">The directory of <span class="mark">supported living</span> &amp; social housing providers.</h1>
+      <p class="lead">Search any postcode, borough or county and see every commissioned provider operating there — the commissioners behind them, the care they deliver, and verified contact details. England-wide, refreshed every month.</p>
+
+      <div class="searchbox">
+        <div class="tabs">
+          <button class="tab on" data-mode="postcode">Postcode</button>
+          <button class="tab" data-mode="borough">Borough / Council</button>
+          <button class="tab" data-mode="county">County</button>
+        </div>
+        <div class="searchrow">
+          <input id="q" type="text" placeholder="e.g. M1 1AE" autocomplete="off" spellcheck="false" aria-label="Search the directory" />
+          <button class="btn btn-blue" id="go">Search</button>
+        </div>
+        <p class="hint" id="hint">Free to search — see how many providers are listed before you pay. Try
+          <span class="ex" data-ex="M1 1AE">M1 1AE</span> ·
+          <span class="ex" data-ex="LS1 4AW">LS1 4AW</span> ·
+          <span class="ex" data-ex="B1 1AA">B1 1AA</span></p>
+
+        <div id="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <div class="band">
+    <div class="wrap" id="statband">
+      <div class="stat"><b id="s-prov">1,900+</b><span>providers listed</span></div>
+      <div class="stat"><b id="s-coun">300+</b><span>councils covered</span></div>
+      <div class="stat"><b id="s-con">1,300+</b><span>supported-living contracts processed</span></div>
+      <div class="stat"><b>Monthly</b><span>data refresh</span></div>
+    </div>
+  </div>
+
+  <!-- WHAT'S IN A LISTING -->
+  <section class="pad" id="listing">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">What's in every listing</span>
+        <h2>One entry. Everything you need to make contact.</h2>
+        <p class="lead">Each provider in the directory comes with the detail that turns a name into a conversation.</p>
+      </div>
+      <div class="fields">
+        <div class="field rv"><div class="ic">◉</div><h3>Providers active in the area</h3><p>The supported-living and social-housing operators commissioned where you’re searching.</p></div>
+        <div class="field rv"><div class="ic">⚐</div><h3>The commissioners behind them</h3><p>Which councils, NHS bodies and consortia fund each provider.</p></div>
+        <div class="field rv"><div class="ic">⌂</div><h3>Type of care or housing</h3><p>What each provider delivers — client groups and accommodation type.</p></div>
+        <div class="field rv"><div class="ic">✉</div><h3>Verified contact details</h3><p>Phone, email and website, checked against live sources — not a stale scrape.</p></div>
+        <div class="field rv"><div class="ic">✦</div><h3>Outreach templates &amp; guide</h3><p>Proven email templates and a usage guide, included with every search.</p></div>
+        <div class="field rv"><div class="ic">£</div><h3>Local Housing Allowance rates</h3><p>The benefit rates that underpin the rent in each area.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="pad alt" id="how">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">How the sector works</span>
+        <h2>Four parties make every supported-housing deal.</h2>
+        <p class="lead">The directory maps the part you care about — who operates where, and how to reach them.</p>
+      </div>
+      <div class="steps">
+        <div class="step rv"><span class="num">01 · COMMISSIONERS</span><h3>Councils &amp; NHS bodies</h3><p>Fund the care and refer service users to approved providers. Demand starts here.</p></div>
+        <div class="step rv"><span class="num">02 · PROVIDERS</span><h3>Supported-living operators</h3><p>Approved to deliver care, and tasked with sourcing the housing for every referral.</p></div>
+        <div class="step rv"><span class="num">03 · THE LEASE</span><h3>Long, guaranteed rent</h3><p>A registered provider leases the property, sets the rent and handles housing benefit.</p></div>
+        <div class="step rv"><span class="num">04 · THE LANDLORD</span><h3>Owners &amp; developers</h3><p>Supply the homes the sector is short of — on long, fixed-term leases to a company, not an individual.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO USES IT -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">Who uses the directory</span>
+        <h2>Anyone who needs to reach providers — fast.</h2>
+      </div>
+      <div class="who">
+        <div class="whocard rv"><b>Property developers</b><span>Find which providers are active before committing to a scheme, and build for a buyer already in the area.</span></div>
+        <div class="whocard rv"><b>Landlords &amp; investors</b><span>Identify the operators who lease whole properties on long, guaranteed-rent terms near your stock.</span></div>
+        <div class="whocard rv"><b>Agents &amp; brokers</b><span>Match property to the right commissioned providers without cold-guessing who operates where.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pad alt" id="pricing">
+    <div class="wrap">
+      <div class="sec-head rv" style="text-align:center;margin:0 auto">
+        <span class="eyebrow">Pricing</span>
+        <h2>Search one area, or browse all month.</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">Pay once to unlock a specific area, or subscribe to search across several. Every option includes the usage guide.</p>
+      </div>
+      <div class="prices">
+        <div class="price-card rv">
+          <span class="tag">One-off</span>
+          <div class="amt">£29.99</div>
+          <div class="per">per area, paid once</div>
+          <ul>
+            <li>One postcode, borough or county</li>
+            <li>Full provider listings + contacts</li>
+            <li>Outreach templates &amp; guide</li>
+          </ul>
+          <a class="btn btn-out" href="#top">Search an area</a>
+        </div>
+        <div class="price-card feat rv">
+          <span class="ribbon">Most popular</span>
+          <span class="tag">Monthly · Starter</span>
+          <div class="amt">£49.99</div>
+          <div class="per">per month</div>
+          <ul>
+            <li>10 area searches every month</li>
+            <li>Postcode, borough or county</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <a class="btn btn-blue" href="#top">Start monthly</a>
+        </div>
+        <div class="price-card rv">
+          <span class="tag">Monthly · Full access</span>
+          <div class="amt">£79.99</div>
+          <div class="per">per month</div>
+          <ul>
+            <li>Unlimited area searches</li>
+            <li>Best for active sourcing</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <a class="btn btn-out" href="#top">Go unlimited</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
+      <div class="faq">
+        <details class="rv"><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
+        <details class="rv"><summary>What do I get for £29.99?</summary><p>Full access to every provider listing in your chosen area — names, commissioners, care type and verified contacts — plus outreach templates and a usage guide.</p></details>
+        <details class="rv"><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
+        <details class="rv"><summary>Do you broker deals between me and a provider?</summary><p>No — we’re a directory and research tool, not a broker. We show you who’s active and how to reach them; any agreement is between you and the provider.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <div class="wrap">
+      <h2>Search the directory free.</h2>
+      <p>Enter any postcode, borough or county and see how many providers are listed before you pay a penny.</p>
+      <a class="btn btn-blue btn-lg" href="#top">Search the directory →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Find a Housing Provider · England · Directory refreshed monthly</span>
+    <span><a href="/">View the current site →</a></span>
+  </div>
+</footer>
+
+<div class="compare-pill">Design B · white directory · <a href="/">compare with current →</a></div>
+
+<script>
+  let mode = "postcode";
+  const placeholders = {postcode:"e.g. M1 1AE", borough:"e.g. Manchester", county:"e.g. Kent"};
+  const examples = {
+    postcode:[["M1 1AE","M1 1AE"],["LS1 4AW","LS1 4AW"],["B1 1AA","B1 1AA"]],
+    borough:[["Manchester","Manchester"],["Leeds","Leeds"],["Birmingham","Birmingham"]],
+    county:[["Kent","Kent"],["Essex","Essex"],["Lancashire","Lancashire"]]
+  };
+  const q = document.getElementById("q"), hint = document.getElementById("hint"), result = document.getElementById("result");
+  document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+    t.classList.add("on"); mode = t.dataset.mode; q.placeholder = placeholders[mode];
+    hint.innerHTML = 'Free to search — see how many providers are listed before you pay. Try ' +
+      examples[mode].map(e => `<span class="ex" data-ex="${e[1]}">${e[0]}</span>`).join(' · ');
+    bindEx(); result.style.display = "none";
+  }));
+  function bindEx(){ document.querySelectorAll(".ex").forEach(e => e.onclick = () => { q.value = e.dataset.ex; search(); }); }
+  bindEx();
+
+  async function search(){
+    const v = q.value.trim(); if(!v){ q.focus(); return; }
+    const param = mode === "postcode" ? "postcode" : mode === "borough" ? "council" : "county";
+    result.style.display = "block";
+    result.innerHTML = '<div class="resultcard"><div class="sub">Searching ' + v + '…</div></div>';
+    try{
+      const r = await fetch(`/api/preview?${param}=${encodeURIComponent(v)}`);
+      const d = await r.json();
+      if(!r.ok || d.error || typeof d.total !== "number"){
+        result.innerHTML = '<div class="resultcard err"><div class="sub">We couldn’t find that area. Check the spelling, or try a postcode like <b>M1 1AE</b>.</div></div>';
+        return;
+      }
+      const where = d.council || d.countyName || d.region || v;
+      const price = (d.pricing && d.pricing.postcode && d.pricing.postcode.label) || "£29.99";
+      result.innerHTML = `<div class="resultcard">
+        <div class="big"><span class="mark">${d.total.toLocaleString()}</span> provider${d.total===1?"":"s"} listed</div>
+        <div class="sub">in <b>${where}</b> — unlock names, commissioners and verified contacts from ${price}.</div>
+        <div class="cta">
+          <a class="btn btn-blue" href="/">Open this listing →</a>
+          <span class="price">Free to search · pay only to reveal contacts</span>
+        </div>
+      </div>`;
+    }catch(e){
+      result.innerHTML = '<div class="resultcard err"><div class="sub">Something went wrong reaching the server. Try again in a moment.</div></div>';
+    }
+  }
+  document.getElementById("go").addEventListener("click", search);
+  q.addEventListener("keydown", e => { if(e.key === "Enter") search(); });
+
+  fetch("/stats.json").then(r => r.json()).then(s => {
+    if(s.providers) document.getElementById("s-prov").textContent = s.providers.toLocaleString() + "+";
+    if(s.councils) document.getElementById("s-coun").textContent = s.councils + "+";
+    if(s.contracts) document.getElementById("s-con").textContent = s.contracts.toLocaleString() + "+";
+  }).catch(()=>{});
+
+  const io = new IntersectionObserver((es) => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }), {threshold:.12});
+  document.querySelectorAll(".rv").forEach((el,i) => { el.style.transitionDelay = (i%4*60) + "ms"; io.observe(el); });
+</script>
+</body>
+</html>

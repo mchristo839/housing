@@ -1465,11 +1465,19 @@ with open(os.path.join(OUT,"councilmap.json"),"w",encoding="utf-8") as f:
     json.dump(councilmap, f, ensure_ascii=False, separators=(",",":"))
 
 # ── write public aggregate-safe stats (no names / contacts) ───────────────────
+# distinct supported-living / social-housing contracts processed across the dataset
+_contract_titles = set()
+for p in providers:
+    for row in (p.get("contracts_list") or []):
+        for t in (row.get("titles") or []):
+            if t and t.strip():
+                _contract_titles.add(t.strip())
 stats = {
     "providers": len(providers),
     "councils": len({c for p in providers for c in p["councils"]}),
     "regions": len({r for p in providers for r in p["regions"]}),
     "in_network": sum(1 for p in providers if p["in_network"]),
+    "contracts": len(_contract_titles),
 }
 with open(os.path.join(PUB,"stats.json"),"w",encoding="utf-8") as f:
     json.dump(stats, f)

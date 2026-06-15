@@ -329,360 +329,174 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
                        : setCounty(v);
 
   return (
-    <main>
+    <main className="v2home" id="top">
       <section className="hero">
-        <div className="wrap hero-grid">
-          <div className="hero-left">
-          <span className="eyebrow"><span className="dot" /> For property developers · Supported Living &amp; Social Housing · England</span>
-          <h1 className="display">
-            Know which providers will <span className="em">lease your development</span> — before you build it.
-          </h1>
-          <p className="sub">
-            In supported housing your end customer is a provider — an organisation that
-            leases whole schemes on long, guaranteed-rent terms, not individual renters.
-            Enter any English postcode and see exactly which providers operate there, who
-            commissions them, and how to reach them — so you build for a buyer you&rsquo;ve
-            already lined up.
-          </p>
+        <div className="wrap">
+          <span className="hero-eyebrow"><span className="dot" /> Online directory · England · Updated monthly</span>
+          <h1 className="display">The directory of <span className="mark">supported living</span> &amp; social housing providers.</h1>
+          <p className="lead">Search any postcode, borough or county and see every commissioned provider operating there — the commissioners behind them, the care they deliver, and verified contact details. England-wide, refreshed every month.</p>
 
-          <div className="search-card">
-            <div className="search-tabs" role="tablist" aria-label="Search by">
+          <div className="searchbox">
+            <div className="tabs" role="tablist" aria-label="Search by">
               {["postcode","borough","county"].map((m) => (
-                <button key={m}
-                  role="tab"
-                  aria-selected={searchMode === m}
-                  className={`search-tab ${searchMode === m ? "on" : ""}`}
+                <button key={m} role="tab" aria-selected={searchMode === m}
+                  className={`tab ${searchMode === m ? "on" : ""}`}
                   onClick={() => setSearchMode(m)}>
                   {m === "postcode" ? "Postcode" : m === "borough" ? "Borough / Council" : "County"}
                 </button>
               ))}
             </div>
-            <div className="searchbar" role="search">
+            <div className="searchrow" role="search">
               <input ref={inputRef} value={value}
                 onChange={(e) => setValue(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && onSearch()}
                 placeholder={placeholders[searchMode]}
-                aria-label={`Search by ${searchMode}`}
+                aria-label={`Search the directory by ${searchMode}`}
                 spellCheck={false}
                 autoCapitalize={searchMode === "postcode" ? "characters" : "words"} />
-              <button className="btn btn-primary" onClick={() => onSearch()} disabled={status === "loading"}>
-                {status === "loading" ? <span className="spinner" aria-label="Searching" /> : "Find providers"}
+              <button className="btn btn-blue" onClick={() => onSearch()} disabled={status === "loading"}>
+                {status === "loading" ? <span className="spinner" aria-label="Searching" /> : "Search"}
               </button>
             </div>
             {error ? <p className="searcherror">{error}</p> : (
-              <p className="searchhint">
-                Free to search — see the provider count before you pay. Try{" "}
+              <p className="hint">
+                Free to search — see how many providers are listed before you pay. Try{" "}
                 {examples[searchMode].map((ex, i) => (
                   <span key={ex}><span className="ex" onClick={() => onSearch(ex)}>{ex}</span>{i < examples[searchMode].length - 1 ? " · " : ""}</span>
                 ))}
               </p>
             )}
           </div>
+        </div>
+      </section>
 
-          <ul className="hero-checks" aria-label="What's included">
-            <li>Providers active in your area</li>
-            <li>The commissioners they work with</li>
-            <li>Type of care or housing delivered</li>
-            <li>Verified contact details</li>
-            <li>Outreach templates &amp; usage guide</li>
-            <li>Local Housing Allowance rates</li>
-          </ul>
+      {/* ────── Stat band ────── */}
+      <div className="band">
+        <div className="wrap">
+          <div className="stat"><b className="tnum">{stats ? stats.providers.toLocaleString() + "+" : "1,900+"}</b><span>providers listed</span></div>
+          <div className="stat"><b className="tnum">{stats ? stats.councils + "+" : "300+"}</b><span>councils covered</span></div>
+          <div className="stat"><b className="tnum">{stats && stats.contracts ? stats.contracts.toLocaleString() + "+" : "1,300+"}</b><span>supported-living contracts processed</span></div>
+          <div className="stat"><b className="tnum">Monthly</b><span>data refresh</span></div>
+        </div>
+      </div>
+
+      {/* ────── What's in every listing ────── */}
+      <section className="pad" id="listing">
+        <div className="wrap">
+          <div className="sec-head">
+            <span className="eyebrow">What&rsquo;s in every listing</span>
+            <h2>One entry. Everything you need to make contact.</h2>
+            <p className="lead">Each provider in the directory comes with the detail that turns a name into a conversation.</p>
           </div>
-
-          <div className="hero-right">
-            <div className="hero-stats-card" role="presentation">
-              {stats && (
-                <>
-                  <div className="hs-row">
-                    <div className="hs-stat"><b className="tnum">{stats.providers.toLocaleString()}</b><span>commissioned providers</span></div>
-                    <div className="hs-stat"><b className="tnum">{stats.councils}</b><span>councils covered</span></div>
-                  </div>
-                  <div className="hs-row">
-                    <div className="hs-stat"><b className="tnum">98%</b><span>contact-verified</span></div>
-                    <div className="hs-stat"><b className="tnum">Monthly</b><span>data refresh</span></div>
-                  </div>
-                </>
-              )}
-              <div className="hs-foot">Every provider checked and verified before listing</div>
-            </div>
-            <div className="hero-skyline" aria-hidden="true"><Skyline /></div>
+          <div className="fields">
+            <div className="field"><div className="ic">◉</div><h3>Providers active in the area</h3><p>The supported-living and social-housing operators commissioned where you&rsquo;re searching.</p></div>
+            <div className="field"><div className="ic">⚐</div><h3>The commissioners behind them</h3><p>Which councils, NHS bodies and consortia fund each provider.</p></div>
+            <div className="field"><div className="ic">⌂</div><h3>Type of care or housing</h3><p>What each provider delivers — client groups and accommodation type.</p></div>
+            <div className="field"><div className="ic">✉</div><h3>Verified contact details</h3><p>Phone, email and website, checked against live sources — not a stale scrape.</p></div>
+            <div className="field"><div className="ic">✦</div><h3>Outreach templates &amp; guide</h3><p>Proven email templates and a usage guide, included with every search.</p></div>
+            <div className="field"><div className="ic">£</div><h3>Local Housing Allowance rates</h3><p>The benefit rates that underpin the rent in each area.</p></div>
           </div>
         </div>
       </section>
 
-      {/* ────── How Supported Living & Social Housing works ────── */}
-      <section className="explain-section" id="how-it-works">
+      {/* ────── How the sector works ────── */}
+      <section className="pad alt" id="how-it-works">
         <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow"><span className="dot" /> The sector, explained</div>
-            <h2 className="section-h2 center">How Supported Living &amp; Social Housing works</h2>
-            <p className="section-p lead center">Four parties make every deal. Once you see how they fit together, you&rsquo;ll see exactly where your property comes in.</p>
+          <div className="sec-head">
+            <span className="eyebrow">How the sector works</span>
+            <h2>Four parties make every supported-housing deal.</h2>
+            <p className="lead">The directory maps the part you care about — who operates where, and how to reach them.</p>
           </div>
-
-          <div className="role-grid">
-            <div className="role-card">
-              <div className="role-num">01</div>
-              <h3>Care Commissioners</h3>
-              <p>Councils, NHS bodies and consortia. Responsible for delivering the right care and housing — they refer service users to approved providers and fund the care.</p>
-            </div>
-            <div className="role-card">
-              <div className="role-num">02</div>
-              <h3>Supported Living Providers</h3>
-              <p>Approved to deliver specialist care, and tasked with finding housing that meets each individual&rsquo;s needs. They need property for every referral they receive.</p>
-            </div>
-            <div className="role-card">
-              <div className="role-num">03</div>
-              <h3>Registered Providers</h3>
-              <p>Registered social landlords. They lease the property, set the rent, handle housing benefit and manage maintenance for the lease term.</p>
-            </div>
-            <div className="role-card you">
-              <div className="role-num">04</div>
-              <h3>You — the property owner</h3>
-              <p>Developers and landlords supply the homes the sector is short of, on long fixed-term leases. Your counterparty is a company, not an individual tenant.</p>
-            </div>
-          </div>
-
-          <DealFlowDiagram />
-
-          <p className="diagram-note">
-            Care and housing stay under separate agreements throughout. Social housing providers work within
-            Local Housing Allowance rates and can typically move quickly for the right property. Some larger
-            care companies hold RP status themselves.
-          </p>
-        </div>
-      </section>
-
-      {/* ────── What's in your list — 2 cards ────── */}
-      <section className="lists-section">
-        <div className="wrap">
-          <h2 className="section-h2 center">What&rsquo;s in your list</h2>
-          <div className="list-cards">
-            <div className="list-card">
-              <div className="list-card-label">Active on commissioner frameworks</div>
-              <h3 className="list-card-h3">Supported Living &amp; Social Housing Providers</h3>
-              <p>The operators active in the area, approved to deliver care and housing for local service users.</p>
-              <ul>
-                <li>Provider and location name</li>
-                <li>Address and postcode</li>
-                <li>The commissioners and bodies they work with</li>
-                <li>Regulated activities (the type of care or housing)</li>
-                <li>Phone, website and contact page or email, where available</li>
-              </ul>
-            </div>
-            <div className="list-card">
-              <div className="list-card-label">Registered social landlords · the facilitator</div>
-              <h3 className="list-card-h3">Registered Providers</h3>
-              <p>In some but not all cases the provider brings in a Registered Provider to lease the property and handle housing benefit, bringing the deal together. Some larger providers hold RP status themselves.</p>
-              <ul>
-                <li>Provider name and registration number</li>
-                <li>Designation: private registered provider or local authority</li>
-                <li>Registration designation and status</li>
-                <li>Contact details where available from public sources</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ────── Using the data — 3 steps ────── */}
-      <section className="explain-section alt-bg">
-        <div className="wrap">
-          <div className="eyebrow"><span className="dot" /> How it works</div>
-          <h2 className="section-h2">Postcode in, partners out.</h2>
           <div className="steps">
-            <div className="step">
-              <div className="n">Step 1 — Enter a postcode</div>
-              <p>Type any English postcode. We return the providers active in and around it, sorted into the two lists.</p>
-            </div>
-            <div className="step">
-              <div className="n">Step 2 — Get both lists</div>
-              <p>The supported living &amp; social housing providers on one side, the registered providers that facilitate the lease and benefits on the other, with the details you need to reach them.</p>
-            </div>
-            <div className="step">
-              <div className="n">Step 3 — Reach out and partner</div>
-              <p>Use the free guide and the outreach templates to approach the right organisation, the right way, before the competition does.</p>
-            </div>
+            <div className="step"><span className="num">01 · COMMISSIONERS</span><h3>Councils &amp; NHS bodies</h3><p>Fund the care and refer service users to approved providers. Demand starts here.</p></div>
+            <div className="step"><span className="num">02 · PROVIDERS</span><h3>Supported-living operators</h3><p>Approved to deliver care, and tasked with sourcing the housing for every referral.</p></div>
+            <div className="step"><span className="num">03 · THE LEASE</span><h3>Long, guaranteed rent</h3><p>A registered provider leases the property, sets the rent and handles housing benefit.</p></div>
+            <div className="step"><span className="num">04 · THE LANDLORD</span><h3>Owners &amp; developers</h3><p>Supply the homes the sector is short of — on long, fixed-term leases to a company, not an individual.</p></div>
           </div>
         </div>
       </section>
 
-      {/* ────── Why it's valuable ────── */}
-      <section className="explain-section">
-        <div className="wrap narrow-wrap">
-          <div className="eyebrow"><span className="dot" /> Why it&rsquo;s valuable</div>
-          <h2 className="section-h2">Find the customer before you commit to a development.</h2>
-          <p className="section-p lead">In this sector your paying customer is the provider, not the resident. Knowing who operates in an area changes a speculative buy into a deal with a buyer already in mind.</p>
-          <ul className="section-ul">
-            <li><b>Line up a pre-let:</b> Approach a provider before you buy or convert. A lease lined up in advance is what lenders and the best deals are built on.</li>
-            <li><b>See who is active in an area:</b> Map the supported living and registered providers operating in and around a postcode. Provider activity is a useful starting signal; confirm actual commissioned demand with the local authority.</li>
-            <li><b>Choose a solid counterparty:</b> See who is active so you can check them against the public register before you sign a long lease with anyone.</li>
-            <li><b>Move before the market:</b> A ready list is a warm pipeline. Get to the conversation first instead of cold-guessing your way around an area.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* ────── For small developers ────── */}
-      <section className="explain-section alt-bg">
-        <div className="wrap narrow-wrap">
-          <div className="eyebrow"><span className="dot" /> For small developers</div>
-          <h2 className="section-h2">You can build exactly what providers struggle to source.</h2>
-          <p className="section-p">
-            Supported living providers are often looking for small blocks of self-contained 1 and 2 bed flats, ideally with a little office space and parking. Larger developers tend to focus on big schemes, which leaves a real gap. Smaller developers, and those specialising in commercial conversions and small developments, are well placed to deliver the blocks providers find hardest to source.
-          </p>
-          <h3 className="section-h3">What&rsquo;s wanted:</h3>
-          <ul className="section-ul">
-            <li>Small blocks of self-contained 1 and 2 bed flats, ideally with office space and parking</li>
-            <li>Bungalows, which are in high demand for accessible, single-storey living</li>
-            <li>Commercial conversions and small developments, a strong fit for what providers need</li>
-            <li>Social housing across all property types, where there is need for everything</li>
-          </ul>
-          <p className="section-p">If you build or convert at this scale, you are building what the sector is short of. findahousingprovider shows you which providers in your area to approach.</p>
-        </div>
-      </section>
-
-      {/* ────── Leasing vs AST ────── */}
-      <section className="explain-section">
-        <div className="wrap narrow-wrap">
-          <div className="eyebrow"><span className="dot" /> Leasing vs an AST</div>
-          <h2 className="section-h2">Why a lease to a provider can beat a standard tenancy.</h2>
-          <p className="section-p">
-            The Renters&rsquo; Rights Act 2025 came into force on 1 May 2026, the biggest change to private renting in over 30 years. Section 21 &ldquo;no fault&rdquo; evictions are gone, fixed-term assured shorthold tenancies (ASTs) are abolished, and tenancies are now open-ended periodic agreements. Leasing to a provider works differently, and for many landlords it now looks the better option.
-          </p>
-          <h3 className="section-h3">Why a lease is different</h3>
-          <p className="section-p">
-            A tenancy granted to a company is not an assured tenancy, so a lease to a registered provider or supported living provider sits outside the Renters&rsquo; Rights Act. You keep a fixed term with agreed break clauses, the provider runs the resident relationship, and the provider gives the resident their own occupancy agreement with the rights the sector requires.
-          </p>
-          <h3 className="section-h3">Lease to a provider vs a standard AST</h3>
-          <ul className="section-ul">
-            <li><b>Term:</b> A lease runs for an agreed fixed period with break clauses. New ASTs are open-ended, and a tenant can leave on as little as two months&rsquo; notice.</li>
-            <li><b>Possession:</b> With an AST you now rely on grounds-based Section 8 and the courts, with no Section 21 route. A lease ends on its own agreed terms.</li>
-            <li><b>Income:</b> The provider pays the rent whether or not the unit is occupied, so no voids or arrears to chase. For supported living, rent can be set at exempt accommodation rates rather than capped at LHA.</li>
-            <li><b>Management:</b> The provider handles the resident, maintenance during the lease, and the compliance duties that now fall on AST landlords.</li>
-            <li><b>Scale:</b> A provider can take a whole block on one lease, instead of you running multiple individual tenancies.</li>
-          </ul>
-          <h3 className="section-h3">Types of property that lease well</h3>
-          <ul className="section-ul">
-            <li>Small blocks of self-contained 1 and 2 bed flats, ideally taken on a single lease</li>
-            <li>Bungalows and accessible, single-storey homes</li>
-            <li>Commercial conversions and small developments</li>
-            <li>Shared houses for supported living, and family homes for general-needs social housing</li>
-          </ul>
-          <p className="section-fine"><em>This is general information, not legal advice. Have a solicitor draft or review any lease.</em></p>
-        </div>
-      </section>
-
-      {/* ────── What's included ────── */}
-      <section className="explain-section alt-bg">
-        <div className="wrap narrow-wrap">
-          <div className="eyebrow"><span className="dot" /> What comes with the data</div>
-          <h2 className="section-h2">The list is the start. We help you use it.</h2>
-          <div className="included-cards">
-            <div className="included-card">
-              <span className="included-tag">Free with every purchase</span>
-              <h3>The usage guide</h3>
-              <p>A short, practical guide to reading the lists: how to tell genuine commissioned demand from noise, which provider to approach first, and how the supported living provider and registered provider fit together on a deal.</p>
-              <b className="included-price">Included, no extra cost</b>
-            </div>
-            <div className="included-card">
-              <span className="included-tag">Optional add-on</span>
-              <h3>Outreach email templates</h3>
-              <p>Three ready-to-send first-contact email templates for each user type, written for the provider you are approaching. Developer, landlord and estate-agent versions, so your first message lands like someone who knows the sector.</p>
-              <b className="included-price">£12.00 per pack</b>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ────── Pricing — 3 plans ────── */}
-      <section className="explain-section pricing-section">
+      {/* ────── Who uses the directory ────── */}
+      <section className="pad">
         <div className="wrap">
-          <div className="eyebrow"><span className="dot" /> Pricing</div>
-          <h2 className="section-h2 center">Buy a postcode, or search all month.</h2>
-          <p className="section-p lead center">Pay once for a specific area, or subscribe if you are sourcing across several. Every option includes the free usage guide.</p>
-          <div className="pricing-grid">
-            <div className="pricing-card">
-              <div className="pricing-card-name">Pay as you go</div>
-              <div className="pricing-card-price"><b>£29.99</b><span>first postcode</span></div>
+          <div className="sec-head">
+            <span className="eyebrow">Who uses the directory</span>
+            <h2>Anyone who needs to reach providers — fast.</h2>
+          </div>
+          <div className="who">
+            <div className="whocard"><b>Property developers</b><span>Find which providers are active before committing to a scheme, and build for a buyer already in the area.</span></div>
+            <div className="whocard"><b>Landlords &amp; investors</b><span>Identify the operators who lease whole properties on long, guaranteed-rent terms near your stock.</span></div>
+            <div className="whocard"><b>Agents &amp; brokers</b><span>Match property to the right commissioned providers without cold-guessing who operates where.</span></div>
+          </div>
+        </div>
+      </section>
+
+      {/* ────── Pricing ────── */}
+      <section className="pad alt" id="pricing">
+        <div className="wrap">
+          <div className="sec-head" style={{ textAlign: "center", margin: "0 auto" }}>
+            <span className="eyebrow">Pricing</span>
+            <h2>Search one area, or browse all month.</h2>
+            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Pay once to unlock a specific area, or subscribe to search across several. Every option includes the usage guide.</p>
+          </div>
+          <div className="prices">
+            <div className="price-card">
+              <span className="tag">One-off</span>
+              <div className="amt">£29.99</div>
+              <div className="per">per area, paid once</div>
               <ul>
-                <li>Both provider lists for the postcode</li>
-                <li>£19.99 for each extra postcode in the same checkout</li>
-                <li>Free usage guide included</li>
+                <li>One postcode, borough or county</li>
+                <li>Full provider listings + contacts</li>
+                <li>Outreach templates &amp; guide</li>
               </ul>
-              <button className="btn btn-primary" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}>Search a postcode</button>
+              <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search an area</button>
             </div>
-            <div className="pricing-card featured">
-              <span className="pricing-badge">Most popular</span>
-              <div className="pricing-card-name">Monthly · Starter</div>
-              <div className="pricing-card-price"><b>£49.99</b><span>per month</span></div>
+            <div className="price-card feat">
+              <span className="ribbon">Most popular</span>
+              <span className="tag">Monthly · Starter</span>
+              <div className="amt">£49.99</div>
+              <div className="per">per month</div>
               <ul>
-                <li>10 postcode searches every month</li>
-                <li>Both provider lists on every search</li>
-                <li>Free usage guide included</li>
+                <li>10 area searches every month</li>
+                <li>Postcode, borough or county</li>
                 <li>Cancel anytime</li>
               </ul>
-              <button className="btn btn-primary" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}>Start monthly</button>
+              <button className="btn btn-blue" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Start monthly</button>
             </div>
-            <div className="pricing-card">
-              <div className="pricing-card-name">Monthly · Full access</div>
-              <div className="pricing-card-price"><b>£79.99</b><span>per month</span></div>
+            <div className="price-card">
+              <span className="tag">Monthly · Full access</span>
+              <div className="amt">£79.99</div>
+              <div className="per">per month</div>
               <ul>
-                <li>Unlimited postcode searches</li>
-                <li>Both provider lists on every search</li>
-                <li>Free usage guide included</li>
+                <li>Unlimited area searches</li>
+                <li>Best for active sourcing</li>
                 <li>Cancel anytime</li>
               </ul>
-              <button className="btn btn-primary" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}>Get full access</button>
+              <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Go unlimited</button>
             </div>
           </div>
-          <p className="section-fine center">Prices in GBP. Additional-postcode rate applies to postcodes added in the same checkout session.</p>
         </div>
       </section>
 
       {/* ────── FAQ ────── */}
-      <section className="explain-section">
-        <div className="wrap narrow-wrap">
-          <h2 className="section-h2">FAQ</h2>
+      <section className="pad">
+        <div className="wrap">
+          <div className="sec-head"><span className="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
           <div className="faq">
-            <details>
-              <summary>What counts as one search?</summary>
-              <p>One postcode lookup, which returns both the supported living &amp; social housing provider list and the registered provider list for that postcode.</p>
-            </details>
-            <details>
-              <summary>How does the additional-postcode price work?</summary>
-              <p>Your first postcode is £29.99. Any further postcodes added in the same checkout are £19.99 each.</p>
-            </details>
-            <details>
-              <summary>Where does the data come from?</summary>
-              <p>We compile provider information from public records, organise it by postcode, and verify it through our own checking process. The data is refreshed monthly.</p>
-            </details>
-            <details>
-              <summary>Which areas are covered?</summary>
-              <p>England, where supported living and registered-provider regulation applies.</p>
-            </details>
-            <details>
-              <summary>Do you guarantee a phone or email for every provider?</summary>
-              <p>No. Not every provider publishes full contact details. We include contact details where they are publicly available — and where there is no email, we link the provider’s contact page instead. We never invent contact details.</p>
-            </details>
-            <details>
-              <summary>Can I cancel a subscription?</summary>
-              <p>Yes. Monthly plans are rolling and you can cancel anytime before your next renewal.</p>
-            </details>
-            <details>
-              <summary>Do I get the templates automatically?</summary>
-              <p>The usage guide is free with every purchase. The outreach email templates are an optional add-on at checkout.</p>
-            </details>
+            <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
+            <details><summary>What do I get for £29.99?</summary><p>Full access to every provider listing in your chosen area — names, commissioners, care type and verified contacts — plus outreach templates and a usage guide.</p></details>
+            <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
+            <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
           </div>
         </div>
       </section>
 
       {/* ────── Closing CTA ────── */}
-      <section className="closing-cta">
-        <div className="wrap narrow-wrap center">
-          <h2 className="section-h2">Start with one postcode.</h2>
-          <p className="section-p">See exactly who is operating in your target area and who you could be partnering with this month.</p>
-          <button className="btn btn-primary big" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>
-            Search a postcode · £29.99
-          </button>
+      <section className="closing">
+        <div className="wrap">
+          <h2>Search the directory free.</h2>
+          <p>Enter any postcode, borough or county and see how many providers are listed before you pay a penny.</p>
+          <button className="btn btn-blue btn-lg" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search the directory →</button>
         </div>
       </section>
     </main>
