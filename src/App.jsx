@@ -237,7 +237,7 @@ function Header({ route, navigate }) {
     <header className="site-header">
       <div className="wrap">
         <button className="brand" onClick={() => go("/")} aria-label="Find a Housing Provider — home">
-          <span className="mark" aria-hidden="true" />
+          <span className="mark" aria-hidden="true">F</span>
           Find a Housing Provider
         </button>
         <nav className="nav">
@@ -816,7 +816,7 @@ function Footer({ navigate, onManage }) {
       <div className="wrap">
         <div className="foot-col">
           <button className="brand small" onClick={() => navigate("/")}>
-            <span className="mark" aria-hidden="true" /> Find a Housing Provider
+            <span className="mark" aria-hidden="true">F</span> Find a Housing Provider
           </button>
           <p className="foot-note">An independent directory connecting landlords and developers with supported living and social housing providers. Pay per postcode from £29.99 — one-off, no subscription.</p>
         </div>
