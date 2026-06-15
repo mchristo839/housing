@@ -424,6 +424,24 @@ export function matchByCounty(countyQuery) {
 }
 
 // counts + (public) LHA rates + subscription price — safe to return before payment
+// ── Results-based one-off pricing ────────────────────────────────────────────
+// Price scales with how many providers the search returns. The count is shown
+// free before paying, so this is transparent — and it's computed server-side
+// (preview + checkout) so it can't be tampered with from the client.
+export const PRICE_BANDS = [
+  { max: 15,       amount: 1999,  label: "£19.99",  range: "1–15 providers" },
+  { max: 30,       amount: 2999,  label: "£29.99",  range: "16–30 providers" },
+  { max: 50,       amount: 4999,  label: "£49.99",  range: "31–50 providers" },
+  { max: 100,      amount: 9999,  label: "£99.99",  range: "51–100 providers" },
+  { max: Infinity, amount: 14999, label: "£149.99", range: "101+ providers" },
+];
+export function priceForCount(n) {
+  const count = Number(n) || 0;
+  if (count <= 0) return null; // nothing to unlock
+  const band = PRICE_BANDS.find((b) => count <= b.max);
+  return { key: "area", currency: "gbp", count, amount: band.amount, label: band.label, range: band.range };
+}
+
 export function previewOf(m) {
   return {
     council: m.council,
@@ -432,9 +450,11 @@ export function previewOf(m) {
     postcode: m.postcode,
     total: m.total,
     tiers: { local: m.local.length, county: m.county.length, regional: m.regional.length, national: m.national.length },
-    pricing: PRICING,
+    price: priceForCount(m.total),   // results-based one-off price for this area
+    bands: PRICE_BANDS.map(({ amount, label, range }) => ({ amount, label, range })),
+    pricing: PRICING,                // legacy flat tiers (back-compat)
     monthly: MONTHLY_PLANS,
-    subscription: SUBSCRIPTION,  // back-compat for any older clients
+    subscription: SUBSCRIPTION,
     lha: m.lha,
   };
 }

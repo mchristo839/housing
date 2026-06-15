@@ -23,7 +23,7 @@ function showDevUnlock() {
 
 const HOME_META = {
   title: "Find a Housing Provider — Connect with Supported Living & Social Housing providers in your area",
-  description: "We help Property Developers & Landlords partner with Supported Living and Social Housing providers, direct. Turn any postcode into a working list of providers, from £29.99.",
+  description: "We help Property Developers & Landlords partner with Supported Living and Social Housing providers, direct. Turn any postcode into a working list of providers, from £19.99.",
 };
 const ABOUT_META = {
   title: "About — Find a Housing Provider",
@@ -455,18 +455,20 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
         <div className="wrap">
           <div className="sec-head" style={{ textAlign: "center", margin: "0 auto" }}>
             <span className="eyebrow">Pricing</span>
-            <h2>Search one area, or browse all month.</h2>
-            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Pay once to unlock a specific area, or subscribe to search across several. Every option includes the usage guide.</p>
+            <h2>Pay for what you get.</h2>
+            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>One-off areas are priced by how many providers you unlock — see the count free before you pay. Or subscribe to search across several. Every option includes the usage guide.</p>
           </div>
           <div className="prices">
             <div className="price-card">
-              <span className="tag">One-off</span>
-              <div className="amt">£29.99</div>
+              <span className="tag">One-off · priced by results</span>
+              <div className="amt">From £19.99</div>
               <div className="per">per area, paid once</div>
               <ul>
-                <li>One postcode, borough or county</li>
-                <li>Full provider listings + contacts</li>
-                <li>Outreach templates &amp; guide</li>
+                <li>1–15 providers — £19.99</li>
+                <li>16–30 providers — £29.99</li>
+                <li>31–50 providers — £49.99</li>
+                <li>51–100 providers — £99.99</li>
+                <li>101+ providers — £149.99</li>
               </ul>
               <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search an area</button>
             </div>
@@ -503,7 +505,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="sec-head"><span className="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
           <div className="faq">
             <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
-            <details><summary>What do I get for £29.99?</summary><p>Full access to every provider listing in your chosen area — names, commissioners, care type and verified contacts — plus outreach templates and a usage guide.</p></details>
+            <details><summary>How much does an area cost?</summary><p>One-off areas are priced by how many providers you unlock: £19.99 for 1–15, £29.99 for 16–30, £49.99 for 31–50, £99.99 for 51–100, and £149.99 for 101+. You always see the provider count free before you pay. Each unlock includes names, commissioners, care type, verified contacts, outreach templates and the usage guide.</p></details>
             <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
             <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
           </div>
@@ -530,13 +532,12 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
   const P = { ...(pricing || {}), monthly: monthly || {} };
   const scope = _scope || {};
   const isCounty = !!scope.county;
-  const activeTier = isCounty ? (P.county || { label: "£49.99", name: "County" })
-                              : (P.postcode || { label: "£29.99", name: "Postcode" });
+  // Results-based price for this area (computed server-side from the count).
+  const areaPrice = preview.price || { amount: 2999, label: "£29.99", count: total, range: "" };
   const scopeLabel = scope.county || scope.council || scope.postcode || council;
   const TEMPLATES_PRICE = "£12.00";
-  const totalLabel = addTemplates
-    ? (isCounty ? "£61.99" : "£41.99")
-    : activeTier.label;
+  const fmt = (cents) => "£" + (cents / 100).toFixed(2);
+  const totalLabel = fmt(areaPrice.amount + (addTemplates ? 1200 : 0));
   return (
     <main className="paywall">
       <div className="wrap narrow">
@@ -573,10 +574,10 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
               <div className="paywall-buy">
                 <div className="paywall-price">
                   <b className="tnum">{totalLabel}</b>
-                  <span>one-off · PDF + {addTemplates ? "email templates" : "download the PDF"}</span>
+                  <span>one-off · unlock all {total} {total === 1 ? "provider" : "providers"}{addTemplates ? " + email templates" : ""}</span>
                 </div>
-                <button className="btn btn-primary" onClick={() => onSubscribe(isCounty ? "county" : "postcode")} disabled={busy}>
-                  {busy ? <span className="spinner" /> : `Unlock — ${totalLabel}`}
+                <button className="btn btn-primary" onClick={() => onSubscribe("area")} disabled={busy}>
+                  {busy ? <span className="spinner" /> : `Unlock all ${total} — ${totalLabel}`}
                 </button>
               </div>
               <p className="paywall-fine">One-off payment. Every provider in this area — names, contracts, councils, service users, and verified direct contacts. Yours to keep. Secure billing via Stripe.</p>
@@ -806,7 +807,7 @@ function Footer({ navigate, onManage }) {
           <button className="brand small" onClick={() => navigate("/")}>
             <span className="mark" aria-hidden="true">F</span> Find a Housing Provider
           </button>
-          <p className="foot-note">An independent directory connecting landlords and developers with supported living and social housing providers. Pay per postcode from £29.99 — one-off, no subscription.</p>
+          <p className="foot-note">An independent directory connecting landlords and developers with supported living and social housing providers. Pay per area from £19.99 — priced by how many providers you unlock.</p>
         </div>
         <div className="foot-col">
           <h4>Guides</h4>

@@ -4,7 +4,7 @@
 //   tier "monthly_starter"/"monthly_full" → recurring monthly subscription
 //   addTemplates                       → £12 add-on (one-off purchases only)
 // The searched scope is kept in metadata so /result can load it after payment.
-import { PRICING, MONTHLY_PLANS } from "./_lib/match.js";
+import { MONTHLY_PLANS, priceForCount, resolvePostcode, matchResolved, matchByCouncil, matchByCounty } from "./_lib/match.js";
 import { getStripe } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
 
@@ -62,18 +62,30 @@ export default async function handler(req, res) {
       return sendJson(res, 200, { url: session.url });
     }
 
-    // ── one-off area purchase ───────────────────────────────────────────────
-    const tier = PRICING[tierKey];
-    if (!tier) return sendJson(res, 400, { error: "invalid_tier" });
+    // ── one-off area purchase — price scales with the result count ───────────
+    // Recompute the area's provider count server-side so the charge always
+    // matches what the buyer saw on the free preview (and can't be tampered with).
+    let m;
+    try {
+      if (pc) m = matchResolved(await resolvePostcode(pc));
+      else if (council) m = matchByCouncil(council);
+      else if (county) m = matchByCounty(county);
+    } catch (e) {
+      return sendJson(res, 404, { error: "area_not_found" });
+    }
+    const price = priceForCount(m && m.total);
+    if (!price) return sendJson(res, 400, { error: "nothing_to_unlock" });
+    metadata.count = String(price.count);
+    metadata.price = price.label;
 
     const line_items = [{
       quantity: 1,
       price_data: {
-        currency: tier.currency,
-        unit_amount: tier.amount,
+        currency: price.currency,
+        unit_amount: price.amount,
         product_data: {
-          name: `Find a Housing Provider — ${tier.name} (${tier.label})`,
-          description: `${tier.description} (${scopeLabel})`,
+          name: `Find a Housing Provider — ${scopeLabel} (${price.count} providers)`,
+          description: `Unlock all ${price.count} providers in ${scopeLabel} — names, commissioners, contracts and verified direct contacts.`,
         },
       },
     }];
