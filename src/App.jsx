@@ -111,37 +111,57 @@ export default function App() {
   }
 
   async function search(overrideValue) {
-    const scope = overrideValue
-      ? (searchMode === "postcode" ? { postcode: overrideValue }
-         : searchMode === "borough" ? { council: overrideValue }
-         : { county: overrideValue })
-      : activeScope();
-    if (!scope) return;
-    if (scope.postcode) setPostcode(scope.postcode);
-    if (scope.council)  setBorough(scope.council);
-    if (scope.county)   setCounty(scope.county);
+    const raw = String(
+      overrideValue != null ? overrideValue
+      : searchMode === "postcode" ? postcode
+      : searchMode === "borough" ? borough
+      : county
+    ).trim();
+    if (!raw) return;
+
+    // Try the active tab's interpretation first, then fall back to the others
+    // so a term like "Manchester" (a council, not a county) still resolves
+    // whatever tab the user happens to be on. Postcodes contain a digit, so we
+    // only attempt a postcode lookup for digit-bearing terms.
+    const asPostcode = { postcode: raw }, asCouncil = { council: raw }, asCounty = { county: raw };
+    const hasDigit = /\d/.test(raw);
+    let candidates;
+    if (searchMode === "postcode")      candidates = [asPostcode, asCouncil, asCounty];
+    else if (searchMode === "borough")  candidates = [asCouncil, ...(hasDigit ? [asPostcode] : []), asCounty];
+    else                                candidates = [asCounty, asCouncil, ...(hasDigit ? [asPostcode] : [])];
+
     setStatus("loading"); setError(""); setNotice("");
     setPreview(null); setUnlocked(null);
-    try {
-      const pv = await getPreview(scope);
-      pv._scope = scope; // remember which query produced these counts
-      const em = savedEmail.get();
-      if (em) {
-        try {
-          const full = await unlockByEmail(em, scope);
-          savedEmail.set(full.email); setUnlocked(full); setStatus("idle");
-          window.scrollTo({ top: 0, behavior: "smooth" });
-          return;
-        } catch { /* fall through to subscribe gate */ }
-      }
-      setPreview(pv); setStatus("idle");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } catch (e) {
-      setStatus("error");
-      setError(e.code === "not_found" || e.code === "postcode_not_found"
-        ? `We couldn't find ${scope.postcode ? "that postcode" : "that area"}. Check it and try again.`
-        : "Something went wrong. Please try again.");
+
+    let lastErr = null;
+    for (const scope of candidates) {
+      try {
+        const pv = await getPreview(scope);
+        pv._scope = scope; // remember which query produced these counts
+        // Reflect the interpretation that actually worked, so the tab + field match.
+        const mode = scope.postcode ? "postcode" : scope.council ? "borough" : "county";
+        setSearchMode(mode);
+        if (scope.postcode) setPostcode(scope.postcode);
+        if (scope.council)  setBorough(scope.council);
+        if (scope.county)   setCounty(scope.county);
+        const em = savedEmail.get();
+        if (em) {
+          try {
+            const full = await unlockByEmail(em, scope);
+            savedEmail.set(full.email); setUnlocked(full); setStatus("idle");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+          } catch { /* fall through to subscribe gate */ }
+        }
+        setPreview(pv); setStatus("idle");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      } catch (e) { lastErr = e; }
     }
+    setStatus("error");
+    setError(lastErr && (lastErr.code === "not_found" || lastErr.code === "postcode_not_found")
+      ? `We couldn't find “${raw}”. Try a postcode, council or county in England.`
+      : "Something went wrong. Please try again.");
   }
 
   async function subscribe(tier) {
