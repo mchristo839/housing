@@ -853,9 +853,8 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 @media(max-width:820px){ .v2home .who{ grid-template-columns:1fr; } }
 
 /* pricing */
-.v2home .prices{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:48px; align-items:stretch; }
+.v2home .prices{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:48px; align-items:stretch; }
 .v2home .amt-per{ font-size:1rem; font-weight:700; color:var(--muted); letter-spacing:0; }
-@media(max-width:1000px){ .v2home .prices{ grid-template-columns:repeat(2,1fr); } }
 .v2home .price-card{ position:relative; border:1px solid var(--line-2); border-radius:18px; padding:30px 26px; background:#fff; display:flex; flex-direction:column; }
 .v2home .price-card.feat{ background:var(--blue-deep); color:#fff; border-color:var(--blue-deep); transform:scale(1.03); }
 .v2home .price-card .tag{ font-size:.74rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }

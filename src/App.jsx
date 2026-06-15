@@ -23,7 +23,7 @@ function showDevUnlock() {
 
 const HOME_META = {
   title: "Find a Housing Provider — Connect with Supported Living & Social Housing providers in your area",
-  description: "We help Property Developers & Landlords partner with Supported Living and Social Housing providers, direct. Turn any postcode into a working list of providers, from £19.99.",
+  description: "We help Property Developers & Landlords partner with Supported Living and Social Housing providers, direct. Search the directory free; subscribe from £49/month to unlock verified contacts.",
 };
 const ABOUT_META = {
   title: "About — Find a Housing Provider",
@@ -36,6 +36,10 @@ const RESOURCES_META = {
 const PRIVACY_META = {
   title: "Privacy Policy — Find a Housing Provider",
   description: "How we collect, use and protect personal data, and your rights under UK GDPR.",
+};
+const TERMS_META = {
+  title: "Terms & Conditions — Find a Housing Provider",
+  description: "The terms governing your use of Find a Housing Provider, including subscriptions, billing, data use and liability.",
 };
 function applyMeta({ title, description }) {
   if (title) document.title = title;
@@ -75,6 +79,7 @@ export default function App() {
     else if (route === "/about") applyMeta(ABOUT_META);
     else if (route === "/resources") applyMeta(RESOURCES_META);
     else if (route === "/privacy") applyMeta(PRIVACY_META);
+    else if (route === "/terms") applyMeta(TERMS_META);
     else applyMeta(HOME_META);
   }, [route, guide]);
 
@@ -213,7 +218,7 @@ export default function App() {
     catch { setNotice("Dev unlock failed (set ALLOW_DEV_UNLOCK=1)."); }
   }
 
-  const isHome = route === "/" || (!guide && !["/about", "/result", "/resources", "/privacy"].includes(route));
+  const isHome = route === "/" || (!guide && !["/about", "/result", "/resources", "/privacy", "/terms"].includes(route));
 
   return (
     <>
@@ -240,6 +245,8 @@ export default function App() {
         <Resources navigate={navigate} />
       ) : route === "/privacy" ? (
         <Privacy />
+      ) : route === "/terms" ? (
+        <Terms />
       ) : guide ? (
         <GuidePage guide={guide} onNav={navigate} onSearchCta={() => navigate("/")} />
       ) : null}
@@ -461,23 +468,10 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
         <div className="wrap">
           <div className="sec-head" style={{ textAlign: "center", margin: "0 auto" }}>
             <span className="eyebrow">Pricing</span>
-            <h2>Pay for what you get.</h2>
-            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>One-off areas are priced by how many providers you unlock — see the count free before you pay. Or subscribe to search across several. Every option includes the usage guide.</p>
+            <h2>Simple monthly plans.</h2>
+            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Subscribe to unlock provider listings across the areas you search. Search the directory free — you only pay to reveal the names and verified contacts. Cancel anytime.</p>
           </div>
           <div className="prices">
-            <div className="price-card">
-              <span className="tag">One-off · priced by results</span>
-              <div className="amt">From £19.99</div>
-              <div className="per">per area, paid once</div>
-              <ul>
-                <li>1–15 providers — £19.99</li>
-                <li>16–30 providers — £29.99</li>
-                <li>31–50 providers — £49.99</li>
-                <li>51–100 providers — £99.99</li>
-                <li>101+ providers — £149.99</li>
-              </ul>
-              <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search an area</button>
-            </div>
             <div className="price-card">
               <span className="tag">Monthly · Starter</span>
               <div className="amt">£49<span className="amt-per">/mo</span></div>
@@ -522,7 +516,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="sec-head"><span className="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
           <div className="faq">
             <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
-            <details><summary>How much does an area cost?</summary><p>One-off areas are priced by how many providers you unlock: £19.99 for 1–15, £29.99 for 16–30, £49.99 for 31–50, £99.99 for 51–100, and £149.99 for 101+. You always see the provider count free before you pay. Each unlock includes names, commissioners, care type, verified contacts, outreach templates and the usage guide.</p></details>
+            <details><summary>How much does it cost?</summary><p>Searching the directory is free — you see how many providers cover an area before paying anything. To unlock the names and verified contacts you subscribe: Starter £49/month (5 area unlocks), Plus £99/month (10 unlocks), or Unlimited £199/month. Re-opening an area you've already unlocked that month doesn't count against your allowance. Cancel anytime.</p></details>
             <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
             <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
           </div>
@@ -549,12 +543,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
   const P = { ...(pricing || {}), monthly: monthly || {} };
   const scope = _scope || {};
   const isCounty = !!scope.county;
-  // Results-based price for this area (computed server-side from the count).
-  const areaPrice = preview.price || { amount: 2999, label: "£29.99", count: total, range: "" };
   const scopeLabel = scope.county || scope.council || scope.postcode || council;
-  const TEMPLATES_PRICE = "£12.00";
-  const fmt = (cents) => "£" + (cents / 100).toFixed(2);
-  const totalLabel = fmt(areaPrice.amount + (addTemplates ? 1200 : 0));
   return (
     <main className="paywall">
       <div className="wrap narrow">
@@ -570,7 +559,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
           ) : (
             <>
               <h1 className="paywall-count"><b className="tnum">{total}</b> {total === 1 ? "provider" : "providers"} cover {council}</h1>
-              <p className="sub">Names, contracts and direct contacts are unlocked when you buy. Pick the area you want.</p>
+              <p className="sub">Subscribe to unlock every provider here — and every other area you search — with names, contracts and verified direct contacts.</p>
 
               <ul className="paywall-tiers">
                 <li><b className="tnum">{tiers.local}</b> hold a contract with {council}</li>
@@ -579,29 +568,9 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 <li><b className="tnum">{tiers.national}</b> UK-wide providers</li>
               </ul>
 
-              <label className="upsell" htmlFor="add-templates">
-                <input id="add-templates" type="checkbox"
-                  checked={addTemplates} onChange={(e) => setAddTemplates(e.target.checked)} />
-                <div className="upsell-body">
-                  <b>Add 3 outreach email templates — {TEMPLATES_PRICE}</b>
-                  <span>Three proven scripts for approaching supported-living and social-housing providers — direct lease offer, portfolio partnership pitch, off-market building conversion. Sent to you immediately after checkout.</span>
-                </div>
-              </label>
-
-              <div className="paywall-buy">
-                <div className="paywall-price">
-                  <b className="tnum">{totalLabel}</b>
-                  <span>one-off · unlock all {total} {total === 1 ? "provider" : "providers"}{addTemplates ? " + email templates" : ""}</span>
-                </div>
-                <button className="btn btn-primary" onClick={() => onSubscribe("area")} disabled={busy}>
-                  {busy ? <span className="spinner" /> : `Unlock all ${total} — ${totalLabel}`}
-                </button>
-              </div>
-              <p className="paywall-fine">One-off payment. Every provider in this area — names, contracts, councils, service users, and verified direct contacts. Yours to keep. Secure billing via Stripe.</p>
-
-              {/* Searching more than one area? Offer the monthly plans. */}
-              <div className="paywall-monthly">
-                <div className="pm-divider"><span>Searching more than one area?</span></div>
+              {/* Subscription-only — choose a plan to unlock. */}
+              <div className="paywall-monthly paywall-plans">
+                <div className="pm-divider"><span>Choose a plan to unlock</span></div>
                 <div className="pm-grid pm-grid-3">
                   <button className="pm-card" onClick={() => onSubscribe("monthly_starter")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_starter?.name || "Starter"}</span>
@@ -620,7 +589,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                     <span className="pm-blurb">{P.monthly?.monthly_full?.blurb || "Unlimited area unlocks"}</span>
                   </button>
                 </div>
-                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe.</p>
+                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
@@ -820,6 +789,94 @@ function Privacy() {
   );
 }
 
+function Terms() {
+  return (
+    <main className="page">
+      <div className="wrap narrow">
+        <h1>Terms &amp; Conditions</h1>
+        <div className="prose">
+          <p className="prose-note"><em>Last updated: 15 June 2026</em></p>
+
+          <p>These terms govern your use of findahousingprovider.co.uk (the &ldquo;Service&rdquo;), operated by
+            Find a Housing Provider (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). By searching the directory or
+            subscribing, you agree to these terms. If you do not agree, do not use the Service.</p>
+
+          <h2>1. What we provide</h2>
+          <p>The Service is an online directory of supported-living and social-housing providers operating in
+            England, compiled from publicly available information and our own research. We provide
+            <b> information only</b>. We are not a broker, agent or introducer; we do not arrange, negotiate or
+            guarantee any lease, contract or transaction, and we take no commission or success fee on any deal
+            you reach with a provider.</p>
+
+          <h2>2. Searching and subscriptions</h2>
+          <ul>
+            <li>Searching the directory and seeing provider counts is free.</li>
+            <li>To unlock provider names and contact details you take a monthly subscription:
+              <b> Starter</b> (£49/month, unlock up to 5 areas per month), <b>Plus</b> (£99/month, up to 10 areas)
+              or <b>Unlimited</b> (£199/month, no limit). An &ldquo;area&rdquo; is one postcode, borough or county you
+              unlock. Re-opening an area you have already unlocked in the same monthly billing period does not
+              count again toward your allowance.</li>
+            <li>Allowances are per monthly billing period and do not roll over.</li>
+          </ul>
+
+          <h2>3. Billing, renewal and cancellation</h2>
+          <ul>
+            <li>Subscriptions are billed monthly in advance through our payment provider, Stripe, and renew
+              automatically until cancelled. Prices are in GBP.</li>
+            <li>You can cancel at any time; cancellation takes effect at the end of your current billing period,
+              and you keep access until then. We do not provide pro-rata refunds for part-months except where
+              required by law.</li>
+            <li>We may change prices or plan features on at least 30 days&rsquo; notice before your next renewal.
+              Continued use after a change takes effect constitutes acceptance.</li>
+          </ul>
+
+          <h2>4. Acceptable use</h2>
+          <p>Your subscription is for your own business use. You must not resell, sub-licence, publish,
+            redistribute or bulk-export the directory data, nor scrape, harvest or systematically copy it, nor
+            use it to build or train a competing product or database. You must not use the data to send unlawful
+            communications, and you are responsible for complying with UK GDPR, PECR and any marketing rules when
+            you contact providers.</p>
+
+          <h2>5. Data accuracy</h2>
+          <p>Provider information is compiled from public sources and refreshed monthly. While we verify contact
+            details where we can, we provide the data <b>&ldquo;as is&rdquo; and make no warranty that it is complete,
+            accurate or up to date</b>. The directory is a research aid, not a substitute for your own due
+            diligence — you should independently verify any provider and confirm commissioned demand with the
+            relevant local authority before relying on it or entering any agreement. Any guides on the Service are
+            general information, not legal, financial or professional advice.</p>
+
+          <h2>6. Intellectual property</h2>
+          <p>The Service, its compilation of data, design and content are owned by us or our licensors and are
+            protected by law. Your subscription grants you a limited, non-exclusive, non-transferable right to
+            access and use the data for your own business purposes only, subject to section 4.</p>
+
+          <h2>7. Liability</h2>
+          <p>Nothing in these terms limits liability for death or personal injury caused by negligence, for fraud,
+            or for anything that cannot be limited by law. Subject to that, we are not liable for any indirect or
+            consequential loss, or for loss of profit, business, opportunity or data, arising from your use of the
+            Service or reliance on the data; and our total liability to you in any 12-month period is limited to
+            the subscription fees you paid us in that period.</p>
+
+          <h2>8. Suspension and termination</h2>
+          <p>We may suspend or terminate your access if you breach these terms (in particular section 4), without
+            refund where the breach is material. You may stop using the Service and cancel at any time.</p>
+
+          <h2>9. Governing law</h2>
+          <p>These terms are governed by the laws of England and Wales, and the courts of England and Wales have
+            exclusive jurisdiction.</p>
+
+          <h2>10. Contact</h2>
+          <p>Questions about these terms: <a href="mailto:hello@findahousingprovider.co.uk">hello@findahousingprovider.co.uk</a>.
+            See also our <a href="/privacy" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/privacy"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Privacy Policy</a>.</p>
+
+          <p className="prose-note"><em>These terms are provided as a starting point and do not constitute legal
+            advice. We recommend having them reviewed by a solicitor before relying on them.</em></p>
+        </div>
+      </div>
+    </main>
+  );
+}
+
 /* ── Footer ──────────────────────────────────────────────────────────────── */
 function Footer({ navigate, onManage }) {
   return (
@@ -829,7 +886,7 @@ function Footer({ navigate, onManage }) {
           <button className="brand small" onClick={() => navigate("/")}>
             <span className="mark" aria-hidden="true">F</span> Find a Housing Provider
           </button>
-          <p className="foot-note">An independent directory connecting landlords and developers with supported living and social housing providers. Pay per area from £19.99 — priced by how many providers you unlock.</p>
+          <p className="foot-note">An independent directory connecting landlords and developers with supported living and social housing providers. Search free; subscribe from £49/month to unlock verified contacts.</p>
         </div>
         <div className="foot-col">
           <h4>Guides</h4>
@@ -841,7 +898,8 @@ function Footer({ navigate, onManage }) {
           <button className="foot-link" onClick={() => navigate("/resources")}>Email templates</button>
           <button className="foot-link" onClick={() => navigate("/about")}>About &amp; get listed</button>
           <button className="foot-link" onClick={() => navigate("/privacy")}>Privacy policy &amp; GDPR</button>
-          <button className="foot-link" onClick={onManage}>Manage purchases</button>
+          <button className="foot-link" onClick={() => navigate("/terms")}>Terms &amp; Conditions</button>
+          <button className="foot-link" onClick={onManage}>Manage subscription</button>
         </div>
       </div>
       <div className="wrap foot-base"><span>© {new Date().getFullYear()} findahousingprovider.co.uk</span></div>
