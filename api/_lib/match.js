@@ -242,6 +242,24 @@ const METRO_COUNTIES = {
     councils: ["Newcastle upon Tyne","Gateshead","North Tyneside","South Tyneside","Sunderland"] },
   "greater london": { region: "London", councils: [] },
   "london": { region: "London", councils: [] },
+  // ── Shire / unitary ceremonial counties ──────────────────────────────────
+  // Mapped to their constituent local authorities + region so the name always
+  // resolves. Councils with no contract data yet contribute nothing (the county
+  // then surfaces the regional + national operators that cover it); local
+  // providers light up automatically once data for those councils is ingested.
+  "bedfordshire": { region: "East of England", councils: ["Bedford","Central Bedfordshire","Luton"] },
+  "berkshire": { region: "South East", councils: ["Bracknell Forest","Reading","Slough","West Berkshire","Windsor and Maidenhead","Wokingham"] },
+  "bristol": { region: "South West", councils: ["Bristol"] },
+  "cheshire": { region: "North West", councils: ["Cheshire East","Cheshire West and Chester","Halton","Warrington"] },
+  "cornwall": { region: "South West", councils: ["Cornwall","Isles of Scilly"] },
+  "dorset": { region: "South West", councils: ["Dorset","Bournemouth Christchurch and Poole"] },
+  "east riding yorkshire": { region: "Yorkshire & The Humber", councils: ["East Riding of Yorkshire","Kingston upon Hull"] },
+  "herefordshire": { region: "West Midlands", councils: ["Herefordshire"] },
+  "isle wight": { region: "South East", councils: ["Isle of Wight"] },
+  "middlesex": { region: "London", councils: ["Barnet","Brent","Ealing","Enfield","Haringey","Harrow","Hillingdon","Hounslow"] },
+  "rutland": { region: "East Midlands", councils: ["Rutland"] },
+  "shropshire": { region: "West Midlands", councils: ["Shropshire","Telford and Wrekin"] },
+  "wiltshire": { region: "South West", councils: ["Wiltshire","Swindon"] },
 };
 
 // ── Borough / Council direct lookup (no postcode needed) ───────────────────
