@@ -885,7 +885,7 @@ function Footer({ navigate, onManage }) {
           <button className="foot-link" onClick={onManage}>Manage subscription</button>
         </div>
       </div>
-      <div className="wrap foot-base"><span>© {new Date().getFullYear()} findahousingprovider.co.uk</span></div>
+      <div className="wrap foot-base"><span>© {new Date().getFullYear()} findahousingprovider.co.uk · Operated by M.S. Project Zeus CY Limited (Cyprus reg. no. HE 430641)</span></div>
     </footer>
   );
 }
