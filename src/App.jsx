@@ -431,23 +431,6 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
         </div>
       </section>
 
-      {/* ────── How the sector works ────── */}
-      <section className="pad alt" id="how-it-works">
-        <div className="wrap">
-          <div className="sec-head">
-            <span className="eyebrow">How the sector works</span>
-            <h2>Four parties make every supported-housing deal.</h2>
-            <p className="lead">The directory maps the part you care about — who operates where, and how to reach them.</p>
-          </div>
-          <div className="steps">
-            <div className="step"><span className="num">01 · COMMISSIONERS</span><h3>Councils &amp; NHS bodies</h3><p>Fund the care and refer service users to approved providers. Demand starts here.</p></div>
-            <div className="step"><span className="num">02 · PROVIDERS</span><h3>Supported-living operators</h3><p>Approved to deliver care, and tasked with sourcing the housing for every referral.</p></div>
-            <div className="step"><span className="num">03 · THE LEASE</span><h3>Long, guaranteed rent</h3><p>A registered provider leases the property, sets the rent and handles housing benefit.</p></div>
-            <div className="step"><span className="num">04 · THE LANDLORD</span><h3>Owners &amp; developers</h3><p>Supply the homes the sector is short of — on long, fixed-term leases to a company, not an individual.</p></div>
-          </div>
-        </div>
-      </section>
-
       {/* ────── Who uses the directory ────── */}
       <section className="pad">
         <div className="wrap">
