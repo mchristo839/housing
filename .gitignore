@@ -39,3 +39,4 @@ desktop.ini
 # Verification logs (regeneratable)
 data/verification/*.log
 data/verification/run_log.txt
+.vercel

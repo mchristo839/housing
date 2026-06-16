@@ -77,7 +77,6 @@ export default function App() {
   useEffect(() => {
     if (guide) applyMeta(guide.meta);
     else if (route === "/about") applyMeta(ABOUT_META);
-    else if (route === "/resources") applyMeta(RESOURCES_META);
     else if (route === "/privacy") applyMeta(PRIVACY_META);
     else if (route === "/terms") applyMeta(TERMS_META);
     else applyMeta(HOME_META);
@@ -218,7 +217,7 @@ export default function App() {
     catch { setNotice("Dev unlock failed (set ALLOW_DEV_UNLOCK=1)."); }
   }
 
-  const isHome = route === "/" || (!guide && !["/about", "/result", "/resources", "/privacy", "/terms"].includes(route));
+  const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms"].includes(route));
 
   return (
     <>
@@ -241,8 +240,6 @@ export default function App() {
               status={status} error={error} stats={stats} navigate={navigate} />
       ) : route === "/about" ? (
         <About navigate={navigate} />
-      ) : route === "/resources" ? (
-        <Resources navigate={navigate} />
       ) : route === "/privacy" ? (
         <Privacy />
       ) : route === "/terms" ? (
@@ -286,7 +283,6 @@ function Header({ route, navigate }) {
               </div>
             )}
           </div>
-          <button className={route === "/resources" ? "active" : ""} onClick={() => go("/resources")}>Resources</button>
           <button className={route === "/about" ? "active" : ""} onClick={() => go("/about")}>About</button>
           <button className="nav-cta" onClick={() => { go("/"); setTimeout(() => window.scrollTo({ top: 0 }), 50); }}>
             Search a postcode
@@ -878,7 +874,6 @@ function Footer({ navigate, onManage }) {
         <div className="foot-col">
           <h4>Site</h4>
           <button className="foot-link" onClick={() => navigate("/")}>Search by postcode</button>
-          <button className="foot-link" onClick={() => navigate("/resources")}>Email templates</button>
           <button className="foot-link" onClick={() => navigate("/about")}>About &amp; get listed</button>
           <button className="foot-link" onClick={() => navigate("/privacy")}>Privacy policy &amp; GDPR</button>
           <button className="foot-link" onClick={() => navigate("/terms")}>Terms &amp; Conditions</button>
