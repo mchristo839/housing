@@ -1,0 +1,8 @@
+# Find a Housing Provider — robots.txt
+User-agent: *
+Allow: /
+# Gated/serverless paths — no value to crawlers
+Disallow: /api/
+Disallow: /result
+
+Sitemap: https://www.findahousingprovider.co.uk/sitemap.xml
