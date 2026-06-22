@@ -805,6 +805,10 @@ function Terms() {
             <li>You can cancel at any time; cancellation takes effect at the end of your current billing period,
               and you keep access until then. We do not provide pro-rata refunds for part-months except where
               required by law.</li>
+            <li>The Service supplies digital content and access immediately on subscribing. Where you have a
+              statutory 14-day right to cancel, you expressly request that we begin providing it straight away and
+              acknowledge that you lose that right once you unlock any area. This does not affect your right to
+              cancel future renewals as set out above, or any rights you have where the data is faulty.</li>
             <li>We may change prices or plan features on at least 30 days&rsquo; notice before your next renewal.
               Continued use after a change takes effect constitutes acceptance.</li>
           </ul>

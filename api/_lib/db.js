@@ -180,6 +180,26 @@ export async function meterUnlock(customer, allowance, areaKey, month = currentM
   return { allowed: true, count: existing.length + 1, allowance, repeat: false };
 }
 
+// ── Health probe ──────────────────────────────────────────────────────────────
+// Verifies the active KV backend can round-trip a value, so /api/health can tell
+// us whether persistence is real (Vercel KV / Redis) or the in-memory fallback
+// (which does NOT survive across serverless invocations — fine for local dev,
+// not acceptable in production because subscription metering would silently reset).
+export async function kvHealth() {
+  const backend = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) ? "vercel-kv"
+    : process.env.REDIS_URL ? "redis" : "memory";
+  const kv = await getKv();
+  const token = `probe-${Date.now()}`;
+  let ok = false;
+  try {
+    await kv.set("health:probe", token);
+    const back = await kv.get("health:probe");
+    ok = String(back) === token;
+    await kv.del("health:probe");
+  } catch { ok = false; }
+  return { backend, persistent: backend !== "memory", ok };
+}
+
 // ── Leads (free-tier sign-ups from the home page, future) ─────────────────────
 export async function saveLead(email, source, area) {
   const kv = await getKv();

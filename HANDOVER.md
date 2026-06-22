@@ -11,13 +11,18 @@ Stack: **Vite + React** (frontend) → **Vercel** (hosting + serverless API) →
 ## 1. What this product is
 
 A paid postcode-search engine that returns every supported-living and social-housing
-provider commissioned in a UK area, with verified contact details. Customers
-(landlords + property developers) pay:
-- **£29.99** per postcode unlock — one-off
-- **£49.99** per county unlock — one-off
-- **+£12.00** optional add-on: 3 outreach email templates
+provider commissioned in a UK area, with verified contact details. Searching and
+seeing provider counts is free; unlocking names + verified contacts requires a
+monthly subscription (Stripe `subscription` mode):
+- **Starter** — £49/mo, unlock up to 5 areas per month
+- **Plus** — £99/mo, up to 10 areas per month
+- **Unlimited** — £199/mo, no limit
 
-Live site: <https://findahousingprovider.vercel.app>
+(The codebase also still supports results-based one-off area purchases — price
+scales with provider count, £19.99–£149.99 — for back-compat; the live frontend
+sells subscriptions only. See `PRICE_BANDS` / `MONTHLY_PLANS` in `api/_lib/match.js`.)
+
+Live site: <https://www.findahousingprovider.co.uk>
 
 Currently in the database:
 - ~1,900 providers
@@ -113,7 +118,13 @@ Currently in the database:
 
 | Variable | Set by |
 |---|---|
-| `KV_URL`, `KV_REST_API_URL`, `KV_REST_API_TOKEN`, `KV_REST_API_READ_ONLY_TOKEN` | Vercel Dashboard → Storage → Create KV Database → Connect Project |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` (+ `KV_URL`, `KV_REST_API_READ_ONLY_TOKEN`) | Vercel Dashboard → Storage → Create KV Database → Connect Project |
+| `REDIS_URL` | Alternative the code also accepts — what the Vercel Marketplace Redis (Upstash) integration provides. `api/_lib/db.js` prefers `KV_REST_API_*`, then `REDIS_URL`, then an in-memory fallback. |
+
+> **Verify the database is connected before driving real traffic.** Without one of
+> the above, `db.js` silently falls back to an in-memory store that does NOT persist
+> across serverless invocations — subscription metering (Starter 5 / Plus 10) would
+> reset and signups would be lost. `GET /api/health` reports the live state.
 
 **Admin readout endpoint:**
 
@@ -286,4 +297,4 @@ session leaves off:
 
 ---
 
-*Generated 2026-06-11. Latest live state: 1,910 providers, 1,883 Verified.*
+*Generated 2026-06-11. Latest live state: 1,919 providers.*
