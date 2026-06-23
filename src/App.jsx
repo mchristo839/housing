@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
@@ -221,6 +222,7 @@ export default function App() {
 
   return (
     <>
+      <Analytics />
       <Header route={route} navigate={navigate} />
 
       {unlocked ? (
@@ -860,7 +862,7 @@ function Terms() {
   );
 }
 
-/* ── Footer ──────────────────────────────────────────────────────────────── */
+/* ── Footer ────────────────────────────────────────────────────────���─────── */
 function Footer({ navigate, onManage }) {
   return (
     <footer className="site-footer">
