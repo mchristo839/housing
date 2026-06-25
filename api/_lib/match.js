@@ -62,10 +62,10 @@ export const PRICING = {
 export const MONTHLY_PLANS = {
   monthly_starter: {
     key: "monthly_starter",
-    amount: 4900,
+    amount: 100,
     currency: "gbp",
     interval: "month",
-    label: "£49",
+    label: "£1",
     name: "Starter",
     blurb: "5 area unlocks every month",
     description: "Unlock up to 5 areas every month — postcode, borough or county. Cancel anytime.",
