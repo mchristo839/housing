@@ -446,7 +446,7 @@ export function matchByCounty(countyQuery) {
 // free before paying, so this is transparent — and it's computed server-side
 // (preview + checkout) so it can't be tampered with from the client.
 export const PRICE_BANDS = [
-  { max: 15,       amount: 1999,  label: "£19.99",  range: "1–15 providers" },
+  { max: 15,       amount: 100,   label: "£1.00",   range: "1–15 providers" },
   { max: 30,       amount: 2999,  label: "£29.99",  range: "16–30 providers" },
   { max: 50,       amount: 4999,  label: "£49.99",  range: "31–50 providers" },
   { max: 100,      amount: 9999,  label: "£99.99",  range: "51–100 providers" },
