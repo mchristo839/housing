@@ -7,6 +7,7 @@
 import { MONTHLY_PLANS, priceForCount, resolvePostcode, matchResolved, matchByCouncil, matchByCounty } from "./_lib/match.js";
 import { getStripe } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
+import { getAffiliate } from "./_lib/affiliate.js";
 
 const TEMPLATES_ADD_ON = {
   amount: 1200,
@@ -26,6 +27,7 @@ export default async function handler(req, res) {
     const council = (body.council || body.borough || "").trim();
     const county  = (body.county || "").trim();
     const tierKey = String(body.tier || "postcode").toLowerCase();
+    const refCode = String(body.ref || "").trim().toUpperCase() || null;
     if (!pc && !council && !county) return sendJson(res, 400, { error: "missing_scope" });
 
     const origin = originOf(req);
@@ -35,6 +37,12 @@ export default async function handler(req, res) {
       tier: tierKey, scope: tierKey,
       addTemplates: body.addTemplates ? "1" : "0",
     };
+
+    // Attach affiliate code to metadata if the code is valid
+    if (refCode) {
+      const aff = await getAffiliate(refCode);
+      if (aff) metadata.affiliate_code = aff.code;
+    }
 
     // ── recurring monthly subscription ──────────────────────────────────────
     const plan = MONTHLY_PLANS[tierKey];
