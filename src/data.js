@@ -33,14 +33,14 @@ export async function startCheckout(scope, opts = {}) {
 }
 
 export async function requestAffiliateLink(email) {
-  return asJson(await fetch("/api/affiliate/send-link", {
+  return asJson(await fetch("/api/affiliate/auth?action=send-link", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email }),
   }));
 }
 
 export async function getAffiliatePortal(token) {
-  return asJson(await fetch(`/api/affiliate/portal?token=${encodeURIComponent(token)}`));
+  return asJson(await fetch(`/api/affiliate/auth?action=portal&token=${encodeURIComponent(token)}`));
 }
 
 // Affiliate referral code — persisted for the browser session via sessionStorage.
