@@ -21,9 +21,9 @@ export async function getPreview(scope) {
 
 export async function startCheckout(scope, opts = {}) {
   // scope = { postcode } | { council } | { county }
-  // opts  = { tier, addTemplates }
+  // opts  = { tier, addTemplates, ref }
   const body = { ...scope, tier: opts.tier || (scope.county ? "county" : "postcode"),
-                 addTemplates: !!opts.addTemplates };
+                 addTemplates: !!opts.addTemplates, ref: opts.ref || affiliateRef.get() || undefined };
   const res = await fetch("/api/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -31,6 +31,23 @@ export async function startCheckout(scope, opts = {}) {
   });
   return asJson(res); // { url }
 }
+
+export async function requestAffiliateLink(email) {
+  return asJson(await fetch("/api/affiliate/auth?action=send-link", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  }));
+}
+
+export async function getAffiliatePortal(token) {
+  return asJson(await fetch(`/api/affiliate/auth?action=portal&token=${encodeURIComponent(token)}`));
+}
+
+// Affiliate referral code — persisted for the browser session via sessionStorage.
+export const affiliateRef = {
+  get() { try { return sessionStorage.getItem("fahp_ref") || ""; } catch { return ""; } },
+  set(code) { try { if (code) sessionStorage.setItem("fahp_ref", code.toUpperCase()); } catch { /* ignore */ } },
+};
 
 export async function getResult(params) {
   const qs = new URLSearchParams(params).toString();

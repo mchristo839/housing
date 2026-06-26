@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup } from "./data.js";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -64,6 +64,12 @@ export default function App() {
   const [notice, setNotice] = useState("");
 
   useEffect(() => { getStats().then(setStats); }, []);
+
+  // Capture ?ref=CODE affiliate referral code and persist for this session
+  useEffect(() => {
+    const ref = new URLSearchParams(window.location.search).get("ref");
+    if (ref) affiliateRef.set(ref);
+  }, []);
 
   useEffect(() => {
     const onPop = () => { setRoute(window.location.pathname); };
@@ -217,7 +223,7 @@ export default function App() {
     catch { setNotice("Dev unlock failed (set ALLOW_DEV_UNLOCK=1)."); }
   }
 
-  const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms"].includes(route));
+  const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms", "/affiliate", "/affiliate/portal"].includes(route));
 
   return (
     <>
@@ -244,6 +250,10 @@ export default function App() {
         <Privacy />
       ) : route === "/terms" ? (
         <Terms />
+      ) : route === "/affiliate" ? (
+        <AffiliateLogin />
+      ) : route === "/affiliate/portal" ? (
+        <AffiliatePortal />
       ) : guide ? (
         <GuidePage guide={guide} onNav={navigate} onSearchCta={() => navigate("/")} />
       ) : null}
@@ -1003,6 +1013,145 @@ function BuildingsBack() {
         <rect x="512" y="106" width="74" height="94" />
       </g>
     </svg>
+  );
+}
+
+/* ── Affiliate login (magic link) ────────────────────────────────────────── */
+function AffiliateLogin() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle"); // idle | busy | sent | error
+  async function submit(e) {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setStatus("busy");
+    try {
+      await requestAffiliateLink(email.trim().toLowerCase());
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
+  return (
+    <main className="wrap" style={{ maxWidth: 480, margin: "80px auto", padding: "0 20px" }}>
+      <h1 style={{ fontSize: "1.5rem", marginBottom: 8 }}>Affiliate portal</h1>
+      {status === "sent" ? (
+        <p>Check your inbox — we've sent you a sign-in link.</p>
+      ) : (
+        <form onSubmit={submit} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <p style={{ color: "var(--c-muted, #666)", marginBottom: 4 }}>Enter your email address and we'll send you a link to access your dashboard.</p>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@example.com"
+            required
+            style={{ padding: "10px 14px", border: "1px solid #ccc", borderRadius: 6, fontSize: "1rem" }}
+          />
+          <button type="submit" disabled={status === "busy"}
+            style={{ padding: "10px 20px", background: "var(--c-accent, #2a5fd1)", color: "#fff", border: "none", borderRadius: 6, fontSize: "1rem", cursor: "pointer" }}>
+            {status === "busy" ? "Sending…" : "Send sign-in link"}
+          </button>
+          {status === "error" && <p style={{ color: "#c00" }}>Something went wrong. Please try again.</p>}
+        </form>
+      )}
+    </main>
+  );
+}
+
+/* ── Affiliate portal dashboard ──────────────────────────────────────────── */
+function AffiliatePortal() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState("");
+  useEffect(() => {
+    const token = new URLSearchParams(window.location.search).get("token");
+    if (!token) { setError("No token found. Use the link from your email."); return; }
+    getAffiliatePortal(token)
+      .then(setData)
+      .catch((e) => setError(e.code === "invalid_or_expired_token" ? "This link has expired. Please request a new one." : "Couldn't load your portal. Please try again."));
+  }, []);
+
+  if (error) return (
+    <main className="wrap" style={{ maxWidth: 600, margin: "80px auto", padding: "0 20px" }}>
+      <p style={{ color: "#c00" }}>{error}</p>
+      <a href="/affiliate">Request a new link →</a>
+    </main>
+  );
+  if (!data) return (
+    <main className="wrap" style={{ maxWidth: 600, margin: "80px auto", padding: "0 20px" }}>
+      <p>Loading…</p>
+    </main>
+  );
+
+  const { affiliate, commissions, payouts, total_earned, total_paid, balance_owed } = data;
+  const fmtGBP = (pence) => `£${(pence / 100).toFixed(2)}`;
+  const fmtType = (t) => ({ one_off: "One-off", subscription_first: "Sub (first)", subscription_renewal: "Sub (renewal)" }[t] || t);
+
+  return (
+    <main className="wrap" style={{ maxWidth: 700, margin: "60px auto", padding: "0 20px" }}>
+      <h1 style={{ fontSize: "1.5rem", marginBottom: 4 }}>Affiliate portal</h1>
+      <p style={{ color: "var(--c-muted, #666)", marginBottom: 28 }}>Hi {affiliate.name} · Code: <strong>{affiliate.code}</strong> · Rate: {(affiliate.rate_bps / 100).toFixed(0)}%{affiliate.max_months ? ` · Cap: ${affiliate.max_months} month${affiliate.max_months === 1 ? "" : "s"}` : " · Lifetime"}</p>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginBottom: 32 }}>
+        {[["Total earned", fmtGBP(total_earned)], ["Total paid out", fmtGBP(total_paid)], ["Balance owed", fmtGBP(balance_owed)]].map(([label, val]) => (
+          <div key={label} style={{ background: "#f5f6fa", borderRadius: 8, padding: "16px 20px" }}>
+            <div style={{ fontSize: "0.8rem", color: "#666", marginBottom: 4 }}>{label}</div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{val}</div>
+          </div>
+        ))}
+      </div>
+
+      <h2 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: 12 }}>Commissions ({commissions.length})</h2>
+      {commissions.length === 0 ? <p style={{ color: "#666" }}>No commissions yet.</p> : (
+        <div style={{ overflowX: "auto", marginBottom: 32 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+            <thead>
+              <tr style={{ borderBottom: "2px solid #e2e4ea", textAlign: "left" }}>
+                {["Date", "Type", "Sale", "Commission", "Status"].map((h) => (
+                  <th key={h} style={{ padding: "8px 10px", fontWeight: 600 }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {commissions.map((c) => (
+                <tr key={c.id} style={{ borderBottom: "1px solid #eef0f5" }}>
+                  <td style={{ padding: "8px 10px" }}>{c.created_at.slice(0, 10)}</td>
+                  <td style={{ padding: "8px 10px" }}>{fmtType(c.type)}</td>
+                  <td style={{ padding: "8px 10px" }}>{fmtGBP(c.gross_pence)}</td>
+                  <td style={{ padding: "8px 10px", fontWeight: 600 }}>{fmtGBP(c.commission_pence)}</td>
+                  <td style={{ padding: "8px 10px", color: c.paid_at ? "#27ae60" : "#e67e22" }}>{c.paid_at ? "Paid" : "Pending"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {payouts.length > 0 && (
+        <>
+          <h2 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: 12 }}>Payouts ({payouts.length})</h2>
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "2px solid #e2e4ea", textAlign: "left" }}>
+                  {["Date", "Amount", "Notes"].map((h) => (
+                    <th key={h} style={{ padding: "8px 10px", fontWeight: 600 }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {payouts.map((p) => (
+                  <tr key={p.id} style={{ borderBottom: "1px solid #eef0f5" }}>
+                    <td style={{ padding: "8px 10px" }}>{p.paid_at.slice(0, 10)}</td>
+                    <td style={{ padding: "8px 10px", fontWeight: 600 }}>{fmtGBP(p.amount_pence)}</td>
+                    <td style={{ padding: "8px 10px", color: "#666" }}>{p.notes || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+    </main>
   );
 }
 
