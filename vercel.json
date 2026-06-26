@@ -5,8 +5,7 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "functions": {
-    "api/*.js": { "includeFiles": "api/_data/**" },
-    "api/**/*.js": {}
+    "api/*.js": { "includeFiles": "api/_data/**" }
   },
   "rewrites": [
     { "source": "/((?!api/|assets/|.*\\.[a-zA-Z0-9]+$).*)", "destination": "/" }
