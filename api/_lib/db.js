@@ -25,7 +25,7 @@
 // Add new keys here as the product grows.
 
 let _kv = null;
-async function getKv() {
+export async function getKv() {
   if (_kv) return _kv;
   // Preference order:
   //   1. Vercel KV REST vars (KV_REST_API_URL/TOKEN) → @vercel/kv
@@ -140,6 +140,31 @@ export async function getPurchasesByEmail(email) {
     if (r) out.push(r);
   }
   return out;
+}
+
+// ── Sales ledger (written by the Stripe webhook for every successful payment) ──
+//   sale:<id>     → { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at }
+//   sales_index   → set of sale ids
+export async function recordSale({ stripe_id, email = null, amount_pence = 0, type, tier = null, affiliate_code = null }) {
+  const kv = await getKv();
+  // Idempotent per Stripe object — webhooks can be delivered more than once.
+  const id = `sale_${stripe_id}`;
+  const existing = await kv.get(`sale:${id}`);
+  if (existing) return existing;
+  const row = { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at: new Date().toISOString() };
+  await kv.set(`sale:${id}`, row);
+  await kv.sadd("sales_index", id);
+  return row;
+}
+export async function listSales() {
+  const kv = await getKv();
+  const ids = await kv.smembers("sales_index");
+  const rows = [];
+  for (const id of ids) {
+    const r = await kv.get(`sale:${id}`);
+    if (r) rows.push(r);
+  }
+  return rows.sort((a, b) => b.created_at.localeCompare(a.created_at));
 }
 
 // ── Monthly unlock metering (enforces capped subscription allowances) ─────────

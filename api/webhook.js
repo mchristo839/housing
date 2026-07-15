@@ -9,6 +9,7 @@
 // For each attributed payment, records a commission row and checks max_months cap.
 import { getStripe } from "./_lib/billing.js";
 import { getAffiliate, saveCommission, getRenewalCount, incrementRenewalCount } from "./_lib/affiliate.js";
+import { recordSale } from "./_lib/db.js";
 
 function readRawBody(req) {
   return new Promise((resolve, reject) => {
@@ -79,8 +80,23 @@ async function handleCheckoutSession(stripe, session) {
   if (session.payment_status !== "paid" && session.mode !== "subscription") return;
   const md = session.metadata || {};
   const affiliate_code = md.affiliate_code;
-  if (!affiliate_code) return;
 
+  // Record every one-off sale in the admin ledger (subscription revenue is
+  // recorded from invoice.payment_succeeded to avoid double-counting).
+  if (session.mode !== "subscription") {
+    try {
+      await recordSale({
+        stripe_id: session.payment_intent || session.id,
+        email: session.customer_details?.email || session.customer_email || null,
+        amount_pence: session.amount_total || 0,
+        type: "one_off",
+        tier: md.tier || null,
+        affiliate_code: affiliate_code || null,
+      });
+    } catch (e) { console.error("recordSale failed:", e); }
+  }
+
+  if (!affiliate_code) return;
   const affiliate = await getAffiliate(affiliate_code);
   if (!affiliate) return;
 
@@ -109,6 +125,18 @@ async function handleInvoice(stripe, invoice) {
   if (invoice.status !== "paid" || !invoice.subscription) return;
   const md = invoice.subscription_details?.metadata || {};
   const affiliate_code = md.affiliate_code;
+
+  try {
+    await recordSale({
+      stripe_id: invoice.id,
+      email: invoice.customer_email || null,
+      amount_pence: invoice.amount_paid || 0,
+      type: "subscription",
+      tier: md.tier || null,
+      affiliate_code: affiliate_code || null,
+    });
+  } catch (e) { console.error("recordSale failed:", e); }
+
   if (!affiliate_code) return;
 
   const affiliate = await getAffiliate(affiliate_code);

@@ -75,6 +75,25 @@ export async function getAffiliate(code) {
   return kv.get(`affiliate:${code.toUpperCase()}`);
 }
 
+// Patch an existing affiliate. Only the provided fields change; code is fixed.
+export async function updateAffiliate(code, patch) {
+  const kv = await getKv();
+  const existing = await kv.get(`affiliate:${code.toUpperCase()}`);
+  if (!existing) return null;
+  const row = { ...existing };
+  if (patch.name != null) row.name = String(patch.name);
+  if (patch.notes != null) row.notes = String(patch.notes);
+  if (patch.rate_bps != null) row.rate_bps = Number(patch.rate_bps);
+  if ("max_months" in patch) row.max_months = patch.max_months == null ? null : Number(patch.max_months);
+  if (patch.email != null && patch.email.toLowerCase() !== existing.email) {
+    await kv.del(`affiliate_email:${existing.email}`);
+    row.email = String(patch.email).toLowerCase();
+    await kv.set(`affiliate_email:${row.email}`, row.code);
+  }
+  await kv.set(`affiliate:${row.code}`, row);
+  return row;
+}
+
 export async function getAffiliateByEmail(email) {
   const kv = await getKv();
   const code = await kv.get(`affiliate_email:${email.toLowerCase()}`);

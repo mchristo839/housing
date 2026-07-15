@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal } from "./data.js";
+import { Fragment, useState, useEffect, useRef, useMemo } from "react";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -223,7 +223,7 @@ export default function App() {
     catch { setNotice("Dev unlock failed (set ALLOW_DEV_UNLOCK=1)."); }
   }
 
-  const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms", "/affiliate", "/affiliate/portal"].includes(route));
+  const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms", "/affiliate", "/affiliate/portal", "/admin"].includes(route));
 
   return (
     <>
@@ -250,6 +250,8 @@ export default function App() {
         <Privacy />
       ) : route === "/terms" ? (
         <Terms />
+      ) : route === "/admin" ? (
+        <AdminArea />
       ) : route === "/affiliate" ? (
         <AffiliateLogin />
       ) : route === "/affiliate/portal" ? (
@@ -1013,6 +1015,283 @@ function BuildingsBack() {
         <rect x="512" y="106" width="74" height="94" />
       </g>
     </svg>
+  );
+}
+
+/* ── Admin backend (Mario + Paul) ────────────────────────────────────────── */
+const adminInput = { padding: "10px 14px", border: "1px solid var(--border, #ccc)", borderRadius: 6, fontSize: "1rem" };
+const adminBtn = { padding: "8px 16px", background: "var(--accent, #2D6BFF)", color: "#fff", border: "none", borderRadius: 6, fontSize: "0.9rem", cursor: "pointer" };
+const adminBtnGhost = { ...adminBtn, background: "transparent", color: "var(--accent, #2D6BFF)", border: "1px solid var(--accent, #2D6BFF)" };
+const fmtGBP = (pence) => `£${((pence || 0) / 100).toFixed(2)}`;
+
+function AdminArea() {
+  const [session, setSession] = useState(adminSession.get());
+  if (!session) return <AdminLogin onLogin={(s) => { adminSession.set(s); setSession(s); }} />;
+  return <AdminDashboard session={session} onLogout={() => { adminSession.clear(); setSession(null); }} />;
+}
+
+function AdminLogin({ onLogin }) {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [status, setStatus] = useState("idle");
+  async function submit(e) {
+    e.preventDefault();
+    setStatus("busy");
+    try {
+      const r = await adminLogin(username.trim(), password);
+      onLogin({ token: r.token, username: r.username });
+    } catch (e2) {
+      setStatus(e2.code === "bad_credentials" ? "bad" : "error");
+    }
+  }
+  return (
+    <main className="wrap" style={{ maxWidth: 420, margin: "80px auto", padding: "0 20px" }}>
+      <h1 style={{ fontSize: "1.5rem", marginBottom: 8 }}>Admin</h1>
+      <form onSubmit={submit} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" autoComplete="username" required style={adminInput} />
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" autoComplete="current-password" required style={adminInput} />
+        <button type="submit" disabled={status === "busy"} style={{ ...adminBtn, padding: "10px 20px", fontSize: "1rem" }}>
+          {status === "busy" ? "Signing in…" : "Sign in"}
+        </button>
+        {status === "bad" && <p style={{ color: "#c00" }}>Wrong username or password.</p>}
+        {status === "error" && <p style={{ color: "#c00" }}>Something went wrong. Please try again.</p>}
+      </form>
+    </main>
+  );
+}
+
+function AdminDashboard({ session, onLogout }) {
+  const [overview, setOverview] = useState(null);
+  const [affiliates, setAffiliates] = useState(null);
+  const [tab, setTab] = useState("affiliates"); // affiliates | sales | signups
+  const [error, setError] = useState("");
+
+  const load = () => {
+    Promise.all([adminOverview(), adminAffiliates("list")])
+      .then(([o, a]) => { setOverview(o); setAffiliates(a.affiliates); })
+      .catch((e) => {
+        if (e.status === 401) { onLogout(); return; }
+        setError("Couldn't load the dashboard. Please try again.");
+      });
+  };
+  useEffect(load, []);
+
+  if (error) return <main className="wrap" style={{ maxWidth: 900, margin: "80px auto", padding: "0 20px" }}><p style={{ color: "#c00" }}>{error}</p></main>;
+  if (!overview || !affiliates) return <main className="wrap" style={{ maxWidth: 900, margin: "80px auto", padding: "0 20px" }}><p>Loading…</p></main>;
+
+  const owed = affiliates.reduce((s, a) => s + (a.balance_owed || 0), 0);
+  const cards = [
+    ["Sales", overview.sales.count],
+    ["Revenue", fmtGBP(overview.sales.revenue_pence)],
+    ["Signups", overview.signups.count],
+    ["Commission owed", fmtGBP(owed)],
+  ];
+
+  return (
+    <main className="wrap" style={{ maxWidth: 960, margin: "60px auto", padding: "0 20px" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 24 }}>
+        <h1 style={{ fontSize: "1.5rem" }}>Admin</h1>
+        <span style={{ color: "var(--muted, #666)", fontSize: "0.9rem" }}>
+          {session.username} · <button onClick={onLogout} style={{ background: "none", border: "none", color: "var(--accent, #2D6BFF)", cursor: "pointer", padding: 0, fontSize: "0.9rem" }}>Sign out</button>
+        </span>
+      </div>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 16, marginBottom: 32 }}>
+        {cards.map(([label, val]) => (
+          <div key={label} style={{ background: "var(--surface-alt, #f5f6fa)", borderRadius: 8, padding: "16px 20px" }}>
+            <div style={{ fontSize: "0.8rem", color: "var(--muted, #666)", marginBottom: 4 }}>{label}</div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{val}</div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["signups", "Signups"]].map(([k, label]) => (
+          <button key={k} onClick={() => setTab(k)} style={tab === k ? adminBtn : adminBtnGhost}>{label}</button>
+        ))}
+      </div>
+
+      {tab === "affiliates" && <AdminAffiliates affiliates={affiliates} reload={load} />}
+      {tab === "sales" && <AdminSales rows={overview.sales.rows} />}
+      {tab === "signups" && <AdminSignups rows={overview.signups.rows} />}
+    </main>
+  );
+}
+
+const cellTh = { padding: "8px 10px", fontWeight: 600, textAlign: "left" };
+const cellTd = { padding: "8px 10px" };
+function AdminTable({ headers, children }) {
+  return (
+    <div style={{ overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+        <thead><tr style={{ borderBottom: "2px solid var(--border, #e2e4ea)" }}>{headers.map((h) => <th key={h} style={cellTh}>{h}</th>)}</tr></thead>
+        <tbody>{children}</tbody>
+      </table>
+    </div>
+  );
+}
+
+function AdminAffiliates({ affiliates, reload }) {
+  const [openCode, setOpenCode] = useState(null);   // expanded statement
+  const [editCode, setEditCode] = useState(null);   // inline rate editor
+  const [busy, setBusy] = useState(false);
+  const [copied, setCopied] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const refLink = (code) => `${window.location.origin}/?ref=${code}`;
+  async function copyLink(code) {
+    try { await navigator.clipboard.writeText(refLink(code)); setCopied(code); setTimeout(() => setCopied(""), 1500); }
+    catch { window.prompt("Copy the referral link:", refLink(code)); }
+  }
+
+  async function run(fn) {
+    setBusy(true); setMsg("");
+    try { await fn(); reload(); }
+    catch { setMsg("That didn't work — please try again."); }
+    finally { setBusy(false); }
+  }
+
+  return (
+    <>
+      {msg && <p style={{ color: "#c00", marginBottom: 12 }}>{msg}</p>}
+      {affiliates.length === 0 ? <p style={{ color: "var(--muted, #666)", marginBottom: 24 }}>No affiliates yet — add your first one below.</p> : (
+        <AdminTable headers={["Code", "Name", "Rate", "Cap", "Earned", "Paid", "Owed", ""]}>
+          {affiliates.map((a) => (
+            <Fragment key={a.code}>
+              <tr style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+                <td style={{ ...cellTd, fontWeight: 600 }}>{a.code}</td>
+                <td style={cellTd}>{a.name}<div style={{ color: "var(--muted, #888)", fontSize: "0.8rem" }}>{a.email}</div></td>
+                <td style={cellTd}>
+                  {editCode === a.code
+                    ? <RateEditor affiliate={a} busy={busy} onSave={(patch) => run(async () => { await adminAffiliates("update", { code: a.code, ...patch }); setEditCode(null); })} onCancel={() => setEditCode(null)} />
+                    : <>{(a.rate_bps / 100).toFixed(a.rate_bps % 100 ? 1 : 0)}% <button onClick={() => setEditCode(a.code)} style={{ background: "none", border: "none", color: "var(--accent, #2D6BFF)", cursor: "pointer", fontSize: "0.85rem", padding: 0 }}>Edit</button></>}
+                </td>
+                <td style={cellTd}>{a.max_months ? `${a.max_months} mo` : "Lifetime"}</td>
+                <td style={cellTd}>{fmtGBP(a.total_earned)}</td>
+                <td style={cellTd}>{fmtGBP(a.total_paid)}</td>
+                <td style={{ ...cellTd, fontWeight: 600, color: a.balance_owed > 0 ? "#e67e22" : "inherit" }}>{fmtGBP(a.balance_owed)}</td>
+                <td style={{ ...cellTd, whiteSpace: "nowrap" }}>
+                  <button onClick={() => copyLink(a.code)} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem", marginRight: 6 }}>{copied === a.code ? "Copied!" : "Copy link"}</button>
+                  <button onClick={() => setOpenCode(openCode === a.code ? null : a.code)} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem" }}>{openCode === a.code ? "Hide" : "Statement"}</button>
+                </td>
+              </tr>
+              {openCode === a.code && (
+                <tr><td colSpan={8} style={{ padding: "0 10px 20px" }}>
+                  <AdminStatement code={a.code} busy={busy}
+                    onMarkPaid={(ids) => run(() => adminAffiliates("mark-paid", { affiliate_code: a.code, commission_ids: ids, notes: "Paid via admin dashboard" }))} />
+                </td></tr>
+              )}
+            </Fragment>
+          ))}
+        </AdminTable>
+      )}
+      <AdminCreateAffiliate onCreate={(fields) => run(() => adminAffiliates("create", fields))} busy={busy} />
+    </>
+  );
+}
+
+function RateEditor({ affiliate, busy, onSave, onCancel }) {
+  const [rate, setRate] = useState(String(affiliate.rate_bps / 100));
+  const [cap, setCap] = useState(affiliate.max_months == null ? "" : String(affiliate.max_months));
+  return (
+    <span style={{ display: "inline-flex", gap: 6, alignItems: "center" }}>
+      <input value={rate} onChange={(e) => setRate(e.target.value)} style={{ ...adminInput, width: 56, padding: "4px 8px", fontSize: "0.85rem" }} aria-label="Rate %" />%
+      <input value={cap} onChange={(e) => setCap(e.target.value)} placeholder="Cap" style={{ ...adminInput, width: 52, padding: "4px 8px", fontSize: "0.85rem" }} aria-label="Cap (months, blank = lifetime)" />
+      <button disabled={busy || !(Number(rate) >= 0 && Number(rate) <= 100)} style={{ ...adminBtn, padding: "4px 10px", fontSize: "0.8rem" }}
+        onClick={() => onSave({ rate_bps: Math.round(Number(rate) * 100), max_months: cap.trim() === "" ? null : Number(cap) })}>Save</button>
+      <button onClick={onCancel} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem" }}>✕</button>
+    </span>
+  );
+}
+
+function AdminStatement({ code, busy, onMarkPaid }) {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState("");
+  useEffect(() => { adminAffiliates("detail", { code }).then(setData).catch(() => setError("Couldn't load the statement.")); }, [code]);
+  if (error) return <p style={{ color: "#c00" }}>{error}</p>;
+  if (!data) return <p>Loading…</p>;
+  const unpaid = data.commissions.filter((c) => !c.paid_at);
+  const fmtType = (t) => ({ one_off: "One-off", subscription_first: "Sub (first)", subscription_renewal: "Sub (renewal)" }[t] || t);
+  return (
+    <div style={{ background: "var(--surface-alt, #f5f6fa)", borderRadius: 8, padding: 16 }}>
+      {data.commissions.length === 0 ? <p style={{ color: "var(--muted, #666)" }}>No commissions yet.</p> : (
+        <AdminTable headers={["Date", "Type", "Sale", "Commission", "Status"]}>
+          {data.commissions.map((c) => (
+            <tr key={c.id} style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+              <td style={cellTd}>{c.created_at.slice(0, 10)}</td>
+              <td style={cellTd}>{fmtType(c.type)}</td>
+              <td style={cellTd}>{fmtGBP(c.gross_pence)}</td>
+              <td style={{ ...cellTd, fontWeight: 600 }}>{fmtGBP(c.commission_pence)}</td>
+              <td style={{ ...cellTd, color: c.paid_at ? "#27ae60" : "#e67e22" }}>{c.paid_at ? "Paid" : "Pending"}</td>
+            </tr>
+          ))}
+        </AdminTable>
+      )}
+      {unpaid.length > 0 && (
+        <button disabled={busy} style={{ ...adminBtn, marginTop: 12 }} onClick={() => onMarkPaid(unpaid.map((c) => c.id))}>
+          Mark {unpaid.length} unpaid commission{unpaid.length === 1 ? "" : "s"} as paid ({fmtGBP(unpaid.reduce((s, c) => s + c.commission_pence, 0))})
+        </button>
+      )}
+    </div>
+  );
+}
+
+function AdminCreateAffiliate({ onCreate, busy }) {
+  const [f, setF] = useState({ name: "", email: "", code: "", rate: "20", cap: "" });
+  const set = (k) => (e) => setF({ ...f, [k]: e.target.value });
+  const valid = f.name.trim() && f.email.includes("@") && f.code.trim() && Number(f.rate) >= 0 && Number(f.rate) <= 100;
+  return (
+    <div style={{ marginTop: 32, borderTop: "1px solid var(--border, #eef0f5)", paddingTop: 20 }}>
+      <h2 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: 12 }}>Add affiliate</h2>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center" }}>
+        <input value={f.name} onChange={set("name")} placeholder="Name" style={{ ...adminInput, width: 160 }} />
+        <input value={f.email} onChange={set("email")} placeholder="Email" type="email" style={{ ...adminInput, width: 200 }} />
+        <input value={f.code} onChange={set("code")} placeholder="CODE" style={{ ...adminInput, width: 110, textTransform: "uppercase" }} />
+        <label style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+          <input value={f.rate} onChange={set("rate")} style={{ ...adminInput, width: 60 }} aria-label="Commission rate %" />%
+        </label>
+        <input value={f.cap} onChange={set("cap")} placeholder="Cap (months)" style={{ ...adminInput, width: 110 }} aria-label="Cap in months, blank = lifetime" />
+        <button disabled={busy || !valid} style={adminBtn}
+          onClick={() => onCreate({ name: f.name.trim(), email: f.email.trim(), code: f.code.trim().toUpperCase(), rate_bps: Math.round(Number(f.rate) * 100), max_months: f.cap.trim() === "" ? null : Number(f.cap) })}>
+          Create
+        </button>
+      </div>
+      <p style={{ color: "var(--muted, #888)", fontSize: "0.8rem", marginTop: 8 }}>Leave the cap blank for lifetime commission. Their referral link will be {typeof window !== "undefined" ? window.location.origin : ""}/?ref=CODE.</p>
+    </div>
+  );
+}
+
+function AdminSales({ rows }) {
+  if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No sales recorded yet. Sales appear here automatically once the Stripe webhook receives a payment.</p>;
+  return (
+    <AdminTable headers={["Date", "Email", "Type", "Tier", "Amount", "Ref"]}>
+      {rows.map((s) => (
+        <tr key={s.id} style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+          <td style={cellTd}>{s.created_at.slice(0, 10)}</td>
+          <td style={cellTd}>{s.email || "—"}</td>
+          <td style={cellTd}>{s.type === "one_off" ? "One-off" : "Subscription"}</td>
+          <td style={cellTd}>{s.tier || "—"}</td>
+          <td style={{ ...cellTd, fontWeight: 600 }}>{fmtGBP(s.amount_pence)}</td>
+          <td style={cellTd}>{s.affiliate_code || "—"}</td>
+        </tr>
+      ))}
+    </AdminTable>
+  );
+}
+
+function AdminSignups({ rows }) {
+  if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No signups yet.</p>;
+  const sorted = [...rows].sort((a, b) => (b.signed_up || "").localeCompare(a.signed_up || ""));
+  return (
+    <AdminTable headers={["Date", "Email", "Areas"]}>
+      {sorted.map((r) => (
+        <tr key={r.email} style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+          <td style={cellTd}>{(r.signed_up || "").slice(0, 10)}</td>
+          <td style={cellTd}>{r.email}</td>
+          <td style={cellTd}>{(r.areas || []).map((a) => a.postcode || a.council || a.county).filter(Boolean).join(", ") || "—"}</td>
+        </tr>
+      ))}
+    </AdminTable>
   );
 }
 
