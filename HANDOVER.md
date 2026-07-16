@@ -126,11 +126,18 @@ Currently in the database:
 > across serverless invocations — subscription metering (Starter 5 / Plus 10) would
 > reset and signups would be lost. `GET /api/health` reports the live state.
 
-**Admin readout endpoint:**
+**Admin backend (`/admin` dashboard):**
 
 | Variable | What |
 |---|---|
-| `ADMIN_TOKEN` | Any secret string — protects `/api/admin?token=...` |
+| `ADMIN_USERS` | Named admin logins for the `/admin` dashboard, comma-separated `user:password` pairs, e.g. `mario:REPLACE_ME,paul:REPLACE_ME`. Usernames are case-insensitive. A login mints a 30-day session token stored in KV. |
+| `ADMIN_TOKEN` | Legacy: any secret string — still accepted as a `token=` value by all admin endpoints, so old bookmarks/scripts keep working. Optional once `ADMIN_USERS` is set. |
+
+The `/admin` dashboard shows sales, revenue, signups and the affiliate book;
+from it you can create affiliates, edit their commission % and cap, copy their
+referral link (`/?ref=CODE`), view their statement and mark commissions paid.
+Sales/revenue rows are written by the Stripe webhook (`/api/webhook`), so they
+populate from the moment the webhook is registered.
 
 ---
 

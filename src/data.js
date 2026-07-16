@@ -49,6 +49,37 @@ export const affiliateRef = {
   set(code) { try { if (code) sessionStorage.setItem("fahp_ref", code.toUpperCase()); } catch { /* ignore */ } },
 };
 
+// ── Admin backend (Mario + Paul) ─────────────────────────────────────────────
+export const adminSession = {
+  get() { try { return JSON.parse(sessionStorage.getItem("fahp_admin") || "null"); } catch { return null; } },
+  set(s) { try { sessionStorage.setItem("fahp_admin", JSON.stringify(s)); } catch { /* ignore */ } },
+  clear() { try { sessionStorage.removeItem("fahp_admin"); } catch { /* ignore */ } },
+};
+
+export async function adminLogin(username, password) {
+  return asJson(await fetch("/api/admin?action=login", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  }));
+}
+
+function adminToken() { return adminSession.get()?.token || ""; }
+
+export async function adminOverview() {
+  return asJson(await fetch(`/api/admin?action=overview&token=${encodeURIComponent(adminToken())}`));
+}
+
+export async function adminAffiliates(action, opts = {}) {
+  const t = encodeURIComponent(adminToken());
+  if (action === "list")   return asJson(await fetch(`/api/affiliate/admin?action=list&token=${t}`));
+  if (action === "detail") return asJson(await fetch(`/api/affiliate/admin?action=detail&code=${encodeURIComponent(opts.code)}&token=${t}`));
+  // create / update / mark-paid are POSTs with a JSON body
+  return asJson(await fetch(`/api/affiliate/admin?action=${action}&token=${t}`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(opts),
+  }));
+}
+
 export async function getResult(params) {
   const qs = new URLSearchParams(params).toString();
   return asJson(await fetch(`/api/result?${qs}`));

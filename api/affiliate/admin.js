@@ -1,22 +1,19 @@
 // /api/affiliate/admin?token=ADMIN_TOKEN&action=...
 // All admin-only affiliate operations, dispatched by ?action=
 //   GET  ?action=list             → list all affiliates with totals
+//   GET  ?action=detail&code=X    → one affiliate's full statement (commissions + payouts)
 //   POST ?action=create           → create affiliate { name, email, code, rate_bps, max_months, notes }
+//   POST ?action=update           → edit affiliate { code, rate_bps?, max_months?, name?, email?, notes? }
 //   POST ?action=mark-paid        → mark commissions paid { affiliate_code, commission_ids, notes }
+// token = admin session token (from /api/admin?action=login) or legacy ADMIN_TOKEN.
 import { sendJson, readBody, getQuery } from "../_lib/http.js";
-import { createAffiliate, getAffiliate, listAffiliates, affiliateSummary, markCommissionsPaid, savePayoutRecord } from "../_lib/affiliate.js";
-
-function checkAdmin(q, res) {
-  if (!process.env.ADMIN_TOKEN || q.token !== process.env.ADMIN_TOKEN) {
-    sendJson(res, 401, { error: "unauthorized" });
-    return false;
-  }
-  return true;
-}
+import { createAffiliate, getAffiliate, updateAffiliate, listAffiliates, affiliateSummary, markCommissionsPaid, savePayoutRecord } from "../_lib/affiliate.js";
+import { verifyAdminToken } from "../_lib/adminAuth.js";
 
 export default async function handler(req, res) {
   const q = getQuery(req);
-  if (!checkAdmin(q, res)) return;
+  const who = await verifyAdminToken(q.token);
+  if (!who) return sendJson(res, 401, { error: "unauthorized" });
 
   const action = q.action;
 
@@ -55,6 +52,36 @@ export default async function handler(req, res) {
     }
   }
 
+  if (action === "detail") {
+    if (req.method !== "GET") return sendJson(res, 405, { error: "method_not_allowed" });
+    try {
+      if (!q.code) return sendJson(res, 400, { error: "missing_code" });
+      const affiliate = await getAffiliate(q.code);
+      if (!affiliate) return sendJson(res, 404, { error: "not_found" });
+      const summary = await affiliateSummary(affiliate.code);
+      return sendJson(res, 200, { affiliate, ...summary });
+    } catch (e) {
+      return sendJson(res, 500, { error: "detail_failed", detail: String(e.message || e) });
+    }
+  }
+
+  if (action === "update") {
+    if (req.method !== "POST") return sendJson(res, 405, { error: "method_not_allowed" });
+    try {
+      const body = await readBody(req);
+      const { code, ...patch } = body;
+      if (!code) return sendJson(res, 400, { error: "missing_code" });
+      if (patch.rate_bps != null && !(Number(patch.rate_bps) >= 0 && Number(patch.rate_bps) <= 10000)) {
+        return sendJson(res, 400, { error: "invalid_rate", hint: "rate_bps must be 0–10000 (basis points, 2000 = 20%)" });
+      }
+      const row = await updateAffiliate(code, patch);
+      if (!row) return sendJson(res, 404, { error: "not_found" });
+      return sendJson(res, 200, { ok: true, affiliate: row });
+    } catch (e) {
+      return sendJson(res, 500, { error: "update_failed", detail: String(e.message || e) });
+    }
+  }
+
   if (action === "mark-paid") {
     if (req.method !== "POST") return sendJson(res, 405, { error: "method_not_allowed" });
     try {
@@ -72,5 +99,5 @@ export default async function handler(req, res) {
     }
   }
 
-  return sendJson(res, 400, { error: "unknown_action", valid: ["list", "create", "mark-paid"] });
+  return sendJson(res, 400, { error: "unknown_action", valid: ["list", "detail", "create", "update", "mark-paid"] });
 }
