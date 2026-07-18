@@ -104,6 +104,19 @@ export const PLAN_ALLOWANCE = {
 // Back-compat shim while we migrate any callers expecting SUBSCRIPTION shape
 export const SUBSCRIPTION = PRICING.postcode;
 
+// ── flat one-off: download a single postcode's list, regardless of count ────
+// Distinct from the results-scaled `postcode` tier above — this is a fixed
+// price for buyers who just want the one postcode they searched.
+export const SINGLE_POSTCODE_PRICE = {
+  key: "single_postcode",
+  amount: 2699,
+  currency: "gbp",
+  label: "£26.99",
+  name: "This postcode",
+  blurb: "Download this postcode's list once",
+  description: "All providers covering this postcode — names, commissioners, contracts and verified direct contacts. One-time download, no subscription.",
+};
+
 // ── postcode → admin district + region (postcodes.io) ────────────────────────
 export async function resolvePostcode(raw) {
   const clean = String(raw || "").trim().toUpperCase().replace(/\s+/g, "");
@@ -470,6 +483,7 @@ export function previewOf(m) {
     price: priceForCount(m.total),   // results-based one-off price for this area
     bands: PRICE_BANDS.map(({ amount, label, range }) => ({ amount, label, range })),
     pricing: PRICING,                // legacy flat tiers (back-compat)
+    singlePostcode: SINGLE_POSTCODE_PRICE,
     monthly: MONTHLY_PLANS,
     subscription: SUBSCRIPTION,
     lha: m.lha,

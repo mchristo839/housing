@@ -4,7 +4,7 @@
 //   tier "monthly_starter"/"monthly_full" → recurring monthly subscription
 //   addTemplates                       → £12 add-on (one-off purchases only)
 // The searched scope is kept in metadata so /result can load it after payment.
-import { MONTHLY_PLANS, priceForCount, resolvePostcode, matchResolved, matchByCouncil, matchByCounty } from "./_lib/match.js";
+import { MONTHLY_PLANS, SINGLE_POSTCODE_PRICE, priceForCount, resolvePostcode, matchResolved, matchByCouncil, matchByCounty } from "./_lib/match.js";
 import { getStripe } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
 import { getAffiliate } from "./_lib/affiliate.js";
@@ -64,6 +64,43 @@ export default async function handler(req, res) {
         allow_promotion_codes: true,
         metadata,
         subscription_data: { metadata },
+        success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${origin}/?cancelled=1`,
+      });
+      return sendJson(res, 200, { url: session.url });
+    }
+
+    // ── flat one-off: just this one postcode, fixed price ────────────────────
+    if (tierKey === "single_postcode") {
+      if (!pc) return sendJson(res, 400, { error: "postcode_required" });
+      let spm;
+      try {
+        spm = matchResolved(await resolvePostcode(pc));
+      } catch (e) {
+        return sendJson(res, 404, { error: "area_not_found" });
+      }
+      if (!spm || !spm.total) return sendJson(res, 400, { error: "nothing_to_unlock" });
+      metadata.count = String(spm.total);
+      metadata.price = SINGLE_POSTCODE_PRICE.label;
+
+      const line_items = [{
+        quantity: 1,
+        price_data: {
+          currency: SINGLE_POSTCODE_PRICE.currency,
+          unit_amount: SINGLE_POSTCODE_PRICE.amount,
+          product_data: {
+            name: `Find a Housing Provider — ${pc} (${spm.total} providers)`,
+            description: SINGLE_POSTCODE_PRICE.description,
+          },
+        },
+      }];
+
+      const session = await stripe.checkout.sessions.create({
+        mode: "payment",
+        line_items,
+        allow_promotion_codes: true,
+        metadata,
+        payment_intent_data: { metadata },
         success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${origin}/?cancelled=1`,
       });
