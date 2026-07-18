@@ -528,12 +528,13 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
 
 /* ── Subscribe gate (preview → buy a tier / unlock by email) ──────────────── */
 function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emailBusy, onDev, onBack, addTemplates, setAddTemplates }) {
-  const { council, countyName, region, total, tiers, pricing, monthly, postcode, _scope } = preview;
+  const { council, countyName, region, total, tiers, pricing, monthly, singlePostcode, postcode, _scope } = preview;
   const [email, setEmail] = useState("");
   const [showEmail, setShowEmail] = useState(false);
   const P = { ...(pricing || {}), monthly: monthly || {} };
   const scope = _scope || {};
   const isCounty = !!scope.county;
+  const SP = singlePostcode || { label: "£26.99", blurb: "Download this postcode's list once" };
   const scopeLabel = scope.county || scope.council || scope.postcode || council;
   return (
     <main className="paywall">
@@ -582,6 +583,18 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 </div>
                 <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
+
+              {scope.postcode ? (
+                <div className="paywall-monthly paywall-plans">
+                  <div className="pm-divider"><span>Or just this once</span></div>
+                  <button className="pm-card pm-card-wide" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
+                    <span className="pm-name">{SP.name || "This postcode"}</span>
+                    <span className="pm-price"><b>{SP.label}</b></span>
+                    <span className="pm-blurb">{SP.blurb}</span>
+                  </button>
+                  <p className="paywall-fine">One-time download for {scope.postcode} only — no subscription. Secure billing via Stripe.</p>
+                </div>
+              ) : null}
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
 
