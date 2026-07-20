@@ -560,17 +560,27 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 <li><b className="tnum">{tiers.national}</b> UK-wide providers</li>
               </ul>
 
+              {scope.postcode ? (
+                <div className="paywall-monthly paywall-plans">
+                  <button className="pm-card pm-card-wide pm-hero" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
+                    <span className="pm-flag">Introductory offer</span>
+                    <span className="pm-name">{SP.name || "This postcode"}</span>
+                    <span className="pm-price"><b>{SP.label}</b></span>
+                    <span className="pm-blurb">{SP.blurb} — one-time download for {scope.postcode}, no subscription</span>
+                  </button>
+                </div>
+              ) : null}
+
               {/* Subscription-only — choose a plan to unlock. */}
               <div className="paywall-monthly paywall-plans">
-                <div className="pm-divider"><span>Choose a plan to unlock</span></div>
+                <div className="pm-divider"><span>{scope.postcode ? "Or subscribe for ongoing access" : "Choose a plan to unlock"}</span></div>
                 <div className="pm-grid pm-grid-3">
                   <button className="pm-card" onClick={() => onSubscribe("monthly_starter")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_starter?.name || "Starter"}</span>
                     <span className="pm-price"><b>{P.monthly?.monthly_starter?.label || "£49"}</b>/mo</span>
                     <span className="pm-blurb">{P.monthly?.monthly_starter?.blurb || "5 area unlocks every month"}</span>
                   </button>
-                  <button className="pm-card featured" onClick={() => onSubscribe("monthly_plus")} disabled={busy}>
-                    <span className="pm-flag">Most popular</span>
+                  <button className="pm-card" onClick={() => onSubscribe("monthly_plus")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_plus?.name || "Plus"}</span>
                     <span className="pm-price"><b>{P.monthly?.monthly_plus?.label || "£99"}</b>/mo</span>
                     <span className="pm-blurb">{P.monthly?.monthly_plus?.blurb || "10 area unlocks every month"}</span>
@@ -583,18 +593,6 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 </div>
                 <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
-
-              {scope.postcode ? (
-                <div className="paywall-monthly paywall-plans">
-                  <div className="pm-divider"><span>Or just this once</span></div>
-                  <button className="pm-card pm-card-wide" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
-                    <span className="pm-name">{SP.name || "This postcode"}</span>
-                    <span className="pm-price"><b>{SP.label}</b></span>
-                    <span className="pm-blurb">{SP.blurb}</span>
-                  </button>
-                  <p className="paywall-fine">One-time download for {scope.postcode} only — no subscription. Secure billing via Stripe.</p>
-                </div>
-              ) : null}
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
 

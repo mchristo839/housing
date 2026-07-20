@@ -640,6 +640,16 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .pm-card-wide .pm-name { flex: 0 0 auto; }
 .pm-card-wide .pm-blurb { flex: 1; }
 @media (max-width: 560px) { .pm-card-wide { flex-direction: column; align-items: flex-start; gap: 4px; } }
+.pm-hero {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+  box-shadow: 0 10px 30px -12px rgba(45,107,255,.45);
+}
+.pm-hero:hover { border-color: var(--accent-hover); background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 14px 34px -12px rgba(45,107,255,.55); }
+.pm-hero .pm-name, .pm-hero .pm-blurb { color: rgba(255,255,255,.85); }
+.pm-hero .pm-price, .pm-hero .pm-price b { color: #fff; }
+.pm-hero .pm-flag { position: static; background: rgba(255,255,255,.2); color: #fff; align-self: flex-start; margin-bottom: 2px; }
+.pm-card-wide.pm-hero { align-items: flex-start; }
+@media (min-width: 561px) { .pm-card-wide.pm-hero { align-items: center; } .pm-card-wide.pm-hero .pm-flag { position: absolute; top: -10px; left: 14px; margin-bottom: 0; } }
 .email-unlock { display: flex; gap: var(--s8); margin-top: var(--s16); }
 .email-unlock input { flex: 1; border: 1px solid var(--border); border-radius: var(--r); padding: var(--s12) var(--s16); font: inherit; font-size: .95rem; }
 .email-unlock input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
