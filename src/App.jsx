@@ -280,7 +280,7 @@ function Header({ route, navigate }) {
       <div className="wrap">
         <button className="brand" onClick={() => go("/")} aria-label="Find a Housing Provider — home">
           <span className="mark" aria-hidden="true">F</span>
-          Find a Housing Provider
+          <span className="brand-text">Find a Housing Provider</span>
         </button>
         <nav className="nav">
           <button className={route === "/" ? "active" : ""} onClick={() => go("/")}>Search</button>
@@ -374,6 +374,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
       <section className="hero">
         <div className="wrap">
           <span className="hero-eyebrow"><span className="dot" /> Online directory · England · Updated monthly</span>
+          <span className="hero-promo">New <b>£26.99</b> — download one postcode's list, no subscription</span>
           <h1 className="display">The directory of <span className="mark">supported living</span> &amp; social housing providers.</h1>
           <p className="lead">Search any postcode, borough or county and see every commissioned provider operating there — the commissioners behind them, the care they deliver, and verified contact details. England-wide, refreshed every month.</p>
 
@@ -459,10 +460,22 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
         <div className="wrap">
           <div className="sec-head" style={{ textAlign: "center", margin: "0 auto" }}>
             <span className="eyebrow">Pricing</span>
-            <h2>Simple monthly plans.</h2>
-            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Subscribe to unlock provider listings across the areas you search. Search the directory free — you only pay to reveal the names and verified contacts. Cancel anytime.</p>
+            <h2>Buy once, or subscribe.</h2>
+            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Search the directory free — you only pay to reveal the names and verified contacts. Just need one postcode? Buy that list once from £26.99. Searching regularly? Subscribe to unlock as many areas as you like. Cancel anytime.</p>
           </div>
           <div className="prices">
+            <div className="price-card hero">
+              <span className="ribbon">Introductory offer</span>
+              <span className="tag">One-off · This postcode</span>
+              <div className="amt">£26.99</div>
+              <div className="per">just this postcode, once</div>
+              <ul>
+                <li>Every provider covering one postcode</li>
+                <li>Names, commissioners &amp; verified contacts</li>
+                <li>No subscription — pay once, download once</li>
+              </ul>
+              <button className="btn btn-out-hero" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search a postcode</button>
+            </div>
             <div className="price-card">
               <span className="tag">Monthly · Starter</span>
               <div className="amt">£49<span className="amt-per">/mo</span></div>
@@ -562,7 +575,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
 
               {scope.postcode ? (
                 <div className="paywall-monthly paywall-plans">
-                  <button className="pm-card pm-card-wide pm-hero" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
+                  <button className="pm-card pm-hero" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
                     <span className="pm-flag">Introductory offer</span>
                     <span className="pm-name">{SP.name || "This postcode"}</span>
                     <span className="pm-price"><b>{SP.label}</b></span>
