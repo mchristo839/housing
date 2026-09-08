@@ -1,6 +1,6 @@
 // POST /api/portal  { email }  → Stripe billing portal URL so subscribers can
 // manage or cancel their subscription. Stripe-managed; no custom account system.
-import { getStripe, activeSubscriptionForEmail } from "./_lib/billing.js";
+import { getStripe, bestActiveSubscriptionForEmail } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
 
 export default async function handler(req, res) {
@@ -10,8 +10,10 @@ export default async function handler(req, res) {
 
   try {
     const { email } = await readBody(req);
-    const { active, customerId } = await activeSubscriptionForEmail(stripe, email);
-    if (!active || !customerId) return sendJson(res, 404, { error: "no_subscription" });
+    // Open the portal on the customer that holds their best plan.
+    const { best } = await bestActiveSubscriptionForEmail(stripe, email);
+    const customerId = best ? (typeof best.customer === "string" ? best.customer : best.customer?.id) : null;
+    if (!customerId) return sendJson(res, 404, { error: "no_subscription" });
     const session = await stripe.billingPortal.sessions.create({
       customer: customerId,
       return_url: originOf(req),

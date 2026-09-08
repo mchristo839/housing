@@ -22,20 +22,38 @@ export async function activeSubscriptionForEmail(stripe, email) {
   return { active: false, email: clean };
 }
 
+// Plan rank, highest allowance first. A customer can end up with more than one
+// active subscription (each Checkout creates a new Customer), so access is
+// always judged by their BEST plan, and metering keyed to that plan's customer.
+const PLAN_RANK = { monthly_full: 3, monthly_plus: 2, monthly_starter: 1 };
+const rankOf = (sub) => PLAN_RANK[sub.metadata?.tier] || 1;
+
+// All Stripe customers + active subscriptions for an email, best plan first.
+export async function bestActiveSubscriptionForEmail(stripe, email) {
+  const clean = String(email || "").trim().toLowerCase();
+  if (!clean) return { customers: [], subscriptions: [], best: null };
+  const customers = (await stripe.customers.list({ email: clean, limit: 20 })).data;
+  const subscriptions = [];
+  for (const c of customers) {
+    const subs = await stripe.subscriptions.list({ customer: c.id, status: "all", limit: 20 });
+    for (const s of subs.data) if (ACTIVE_SUB.has(s.status)) subscriptions.push(s);
+  }
+  subscriptions.sort((a, b) => rankOf(b) - rankOf(a) || b.created - a.created);
+  return { customers, subscriptions, best: subscriptions[0] || null };
+}
+
 // Does this email have access — either a completed one-off payment OR an
 // active monthly subscription? Returns { active, subscription, purchases }.
 // An active subscriber unlocks any area they search.
 export async function purchasesForEmail(stripe, email) {
   const clean = String(email || "").trim().toLowerCase();
   if (!clean) return { active: false, purchases: [] };
-  const customers = await stripe.customers.list({ email: clean, limit: 20 });
+  const { customers, best } = await bestActiveSubscriptionForEmail(stripe, clean);
   const purchases = [];
-  let subscription = false, customerId = null, tier = null;
-  for (const c of customers.data) {
-    // Active monthly plan? Capture which plan + the customer id for metering.
-    const subs = await stripe.subscriptions.list({ customer: c.id, status: "all", limit: 20 });
-    const activeSub = subs.data.find((s) => ACTIVE_SUB.has(s.status));
-    if (activeSub) { subscription = true; customerId = activeSub.customer; tier = activeSub.metadata?.tier || "monthly_starter"; }
+  const subscription = !!best;
+  const customerId = best ? (typeof best.customer === "string" ? best.customer : best.customer?.id) : null;
+  const tier = best ? (best.metadata?.tier || "monthly_starter") : null;
+  for (const c of customers) {
     // One-off purchases?
     const intents = await stripe.paymentIntents.list({ customer: c.id, limit: 100 });
     for (const pi of intents.data) {
