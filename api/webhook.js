@@ -9,8 +9,8 @@
 // For each attributed payment, records a commission row and checks max_months cap.
 import { getStripe } from "./_lib/billing.js";
 import { getAffiliate, saveCommission, getRenewalCount, incrementRenewalCount } from "./_lib/affiliate.js";
-import { recordSale } from "./_lib/db.js";
-import { notifySale } from "./_lib/alerts.js";
+import { recordSale, claimOnce } from "./_lib/db.js";
+import { notifySale, sendCustomerReceipt } from "./_lib/alerts.js";
 
 const areaOf = (md = {}) => md.postcode || md.council || md.county || "";
 
@@ -102,6 +102,17 @@ async function handleCheckoutSession(stripe, session) {
         affiliate_code: affiliate_code || null,
       });
       if (sale.fresh) await notifySale(sale, { area: areaOf(md) });
+      // Customer receipt — once per payment, with Stripe's receipt link if available.
+      if (await claimOnce(`receipt:${sale.stripe_id}`)) {
+        let receiptUrl = null;
+        try {
+          if (session.payment_intent) {
+            const pi = await stripe.paymentIntents.retrieve(session.payment_intent, { expand: ["latest_charge"] });
+            receiptUrl = pi.latest_charge?.receipt_url || null;
+          }
+        } catch (e) { console.error("receipt url lookup failed:", e); }
+        await sendCustomerReceipt(sale, { area: areaOf(md), receiptUrl });
+      }
     } catch (e) { console.error("recordSale failed:", e); }
   }
 
@@ -144,7 +155,11 @@ async function handleInvoice(stripe, invoice) {
       tier: md.tier || null,
       affiliate_code: affiliate_code || null,
     });
-    if (sale.fresh) await notifySale(sale, { area: areaOf(md), renewal: invoice.billing_reason === "subscription_cycle" });
+    const renewal = invoice.billing_reason === "subscription_cycle";
+    if (sale.fresh) await notifySale(sale, { area: areaOf(md), renewal });
+    if (await claimOnce(`receipt:${sale.stripe_id}`)) {
+      await sendCustomerReceipt(sale, { area: areaOf(md), renewal, invoiceUrl: invoice.hosted_invoice_url || null, invoicePdf: invoice.invoice_pdf || null });
+    }
   } catch (e) { console.error("recordSale failed:", e); }
 
   if (!affiliate_code) return;
