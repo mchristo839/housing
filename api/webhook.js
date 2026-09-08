@@ -10,6 +10,9 @@
 import { getStripe } from "./_lib/billing.js";
 import { getAffiliate, saveCommission, getRenewalCount, incrementRenewalCount } from "./_lib/affiliate.js";
 import { recordSale } from "./_lib/db.js";
+import { notifySale } from "./_lib/alerts.js";
+
+const areaOf = (md = {}) => md.postcode || md.council || md.county || "";
 
 function readRawBody(req) {
   return new Promise((resolve, reject) => {
@@ -90,7 +93,7 @@ async function handleCheckoutSession(stripe, session) {
   // recorded from invoice.payment_succeeded to avoid double-counting).
   if (session.mode !== "subscription") {
     try {
-      await recordSale({
+      const sale = await recordSale({
         stripe_id: session.payment_intent || session.id,
         email: session.customer_details?.email || session.customer_email || null,
         amount_pence: session.amount_total || 0,
@@ -98,6 +101,7 @@ async function handleCheckoutSession(stripe, session) {
         tier: md.tier || null,
         affiliate_code: affiliate_code || null,
       });
+      if (sale.fresh) await notifySale(sale, { area: areaOf(md) });
     } catch (e) { console.error("recordSale failed:", e); }
   }
 
@@ -132,7 +136,7 @@ async function handleInvoice(stripe, invoice) {
   const affiliate_code = md.affiliate_code;
 
   try {
-    await recordSale({
+    const sale = await recordSale({
       stripe_id: invoice.id,
       email: invoice.customer_email || null,
       amount_pence: invoice.amount_paid || 0,
@@ -140,6 +144,7 @@ async function handleInvoice(stripe, invoice) {
       tier: md.tier || null,
       affiliate_code: affiliate_code || null,
     });
+    if (sale.fresh) await notifySale(sale, { area: areaOf(md), renewal: invoice.billing_reason === "subscription_cycle" });
   } catch (e) { console.error("recordSale failed:", e); }
 
   if (!affiliate_code) return;

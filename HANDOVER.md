@@ -133,6 +133,12 @@ Currently in the database:
 | `ADMIN_USERS` | Named admin logins for the `/admin` dashboard, comma-separated `user:password` pairs, e.g. `mario:REPLACE_ME,paul:REPLACE_ME`. Usernames are case-insensitive. A login mints a 30-day session token stored in KV. |
 | `ADMIN_TOKEN` | Legacy: any secret string — still accepted as a `token=` value by all admin endpoints, so old bookmarks/scripts keep working. Optional once `ADMIN_USERS` is set. |
 
+**Sale alerts:**
+
+| Variable | What |
+|---|---|
+| `SALE_ALERT_EMAILS` | Comma-separated addresses that get an email on every sale and renewal (needs `BREVO_API_KEY`). Defaults to `hello@findahousingprovider.co.uk` if unset. |
+
 The `/admin` dashboard shows sales, revenue, signups and the affiliate book;
 from it you can create affiliates, edit their commission % and cap, copy their
 referral link (`/?ref=CODE`), view their statement and mark commissions paid.

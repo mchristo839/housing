@@ -7,6 +7,7 @@ import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, fullResu
 import { getStripe, sessionIsActive, purchasesForEmail } from "./_lib/billing.js";
 import { sendJson, getQuery } from "./_lib/http.js";
 import { savePurchase, recordSale, meterUnlock, areaKeyOf } from "./_lib/db.js";
+import { notifySale } from "./_lib/alerts.js";
 
 async function listFor(q) {
   // q can be { postcode } | { council } | { county }
@@ -45,11 +46,13 @@ export default async function handler(req, res) {
         const stripe_id = session.mode === "subscription"
           ? (typeof session.invoice === "string" ? session.invoice : session.invoice?.id) || session.id
           : (typeof session.payment_intent === "string" ? session.payment_intent : session.payment_intent?.id) || session.id;
-        await recordSale({
+        const sale = await recordSale({
           stripe_id, email, amount_pence: session.amount_total || 0,
           type: session.mode === "subscription" ? "subscription" : "one_off",
           tier, affiliate_code: session.metadata?.affiliate_code || null,
         });
+        // Whichever of webhook / result lands first sends the one alert.
+        if (sale.fresh) await notifySale(sale, { area: scope.postcode || scope.council || scope.county || "" });
       } catch {}
       const data = await listFor(scope);
       // Count this first unlock against a capped subscription's monthly allowance.

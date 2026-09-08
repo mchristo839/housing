@@ -4,26 +4,7 @@
 //   GET  ?action=portal&token=TOKEN     → return portal dashboard data
 import { sendJson, readBody, getQuery, originOf } from "../_lib/http.js";
 import { getAffiliateByEmail, createToken, verifyToken, getAffiliate, affiliateSummary } from "../_lib/affiliate.js";
-
-async function sendEmail({ to, subject, html }) {
-  const apiKey = process.env.BREVO_API_KEY;
-  if (!apiKey) return { ok: false, error: "BREVO_API_KEY not set" };
-  const res = await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST",
-    headers: { "api-key": apiKey, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      sender: { name: "Find a Housing Provider", email: process.env.AFFILIATE_FROM_EMAIL || "hello@findahousingprovider.co.uk" },
-      to: [{ email: to }],
-      subject,
-      htmlContent: html,
-    }),
-  });
-  if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    return { ok: false, status: res.status, body };
-  }
-  return { ok: true };
-}
+import { sendEmail } from "../_lib/email.js";
 
 export default async function handler(req, res) {
   const q = getQuery(req);
