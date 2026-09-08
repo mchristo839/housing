@@ -145,13 +145,13 @@ export async function getPurchasesByEmail(email) {
 // ── Sales ledger (written by the Stripe webhook for every successful payment) ──
 //   sale:<id>     → { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at }
 //   sales_index   → set of sale ids
-export async function recordSale({ stripe_id, email = null, amount_pence = 0, type, tier = null, affiliate_code = null }) {
+export async function recordSale({ stripe_id, email = null, amount_pence = 0, type, tier = null, affiliate_code = null, created_at = null }) {
   const kv = await getKv();
   // Idempotent per Stripe object — webhooks can be delivered more than once.
   const id = `sale_${stripe_id}`;
   const existing = await kv.get(`sale:${id}`);
   if (existing) return existing;
-  const row = { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at: new Date().toISOString() };
+  const row = { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at: created_at || new Date().toISOString() };
   await kv.set(`sale:${id}`, row);
   await kv.sadd("sales_index", id);
   return row;

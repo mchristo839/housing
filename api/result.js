@@ -6,7 +6,7 @@
 import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, fullResultOf, PLAN_ALLOWANCE } from "./_lib/match.js";
 import { getStripe, sessionIsActive, purchasesForEmail } from "./_lib/billing.js";
 import { sendJson, getQuery } from "./_lib/http.js";
-import { savePurchase, meterUnlock, areaKeyOf } from "./_lib/db.js";
+import { savePurchase, recordSale, meterUnlock, areaKeyOf } from "./_lib/db.js";
 
 async function listFor(q) {
   // q can be { postcode } | { council } | { county }
@@ -39,6 +39,18 @@ export default async function handler(req, res) {
       }
       // Record the purchase in the DB (best-effort; failure here doesn't block delivery)
       try { await savePurchase(q.session_id, { email, tier, scope, addTemplates }); } catch {}
+      // Also write the sales ledger here so admin sees the sale even if the
+      // Stripe webhook is late or not registered. Same keys as the webhook.
+      try {
+        const stripe_id = session.mode === "subscription"
+          ? (typeof session.invoice === "string" ? session.invoice : session.invoice?.id) || session.id
+          : (typeof session.payment_intent === "string" ? session.payment_intent : session.payment_intent?.id) || session.id;
+        await recordSale({
+          stripe_id, email, amount_pence: session.amount_total || 0,
+          type: session.mode === "subscription" ? "subscription" : "one_off",
+          tier, affiliate_code: session.metadata?.affiliate_code || null,
+        });
+      } catch {}
       const data = await listFor(scope);
       // Count this first unlock against a capped subscription's monthly allowance.
       if (session.mode === "subscription") {

@@ -149,8 +149,15 @@ export async function generateReport(result) {
     import("pdfmake/build/vfs_fonts"),
   ]);
   const pdfMake = pdfMakeMod.default || pdfMakeMod;
-  const vfs = vfsMod.default?.pdfMake?.vfs || vfsMod.pdfMake?.vfs || vfsMod.default?.vfs || vfsMod.vfs;
-  if (vfs) pdfMake.vfs = vfs;
+  // pdfmake 0.2 wrapped the fonts as { pdfMake: { vfs } }; 0.3 exports the
+  // fonts object directly. Accept both, then register via the 0.3 API.
+  const looksLikeVfs = (o) => o && typeof o === "object" && "Roboto-Regular.ttf" in o;
+  const vfs = vfsMod.default?.pdfMake?.vfs || vfsMod.pdfMake?.vfs || vfsMod.default?.vfs || vfsMod.vfs
+    || (looksLikeVfs(vfsMod.default) ? vfsMod.default : null)
+    || (looksLikeVfs(vfsMod) ? vfsMod : null);
+  if (!vfs) throw new Error("pdf_fonts_missing");
+  if (typeof pdfMake.addVirtualFileSystem === "function") pdfMake.addVirtualFileSystem(vfs);
+  else pdfMake.vfs = vfs;
 
   const council = result.council;
   const region = result.region || "the region";
@@ -191,5 +198,22 @@ export async function generateReport(result) {
   };
 
   const safe = (result.postcode || "report").replace(/\s+/g, "");
-  pdfMake.createPdf(doc).download(`housing-providers-${safe}.pdf`);
+  const filename = `housing-providers-${safe}.pdf`;
+  // Build the blob ourselves and hand it to an <a download> so the save works
+  // the same in every browser, then resolve once the file has been produced.
+  // pdfmake 0.3 returns a Promise from getBlob(); 0.2 took a callback.
+  const pdf = pdfMake.createPdf(doc);
+  const blob = await new Promise((resolve, reject) => {
+    try {
+      const r = pdf.getBlob(resolve);
+      if (r && typeof r.then === "function") r.then(resolve, reject);
+    } catch (e) { reject(e); }
+  });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename; a.rel = "noopener";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60_000);
 }

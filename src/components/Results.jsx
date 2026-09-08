@@ -10,10 +10,15 @@ export default function Results({ result, onNewSearch, postcode }) {
   const [verifiedOnly, setVerifiedOnly] = useState(false);
   const [active, setActive] = useState(null);        // provider for modal
   const [pdfBusy, setPdfBusy] = useState(false);
+  const [pdfError, setPdfError] = useState("");
 
   async function downloadPdf() {
-    setPdfBusy(true);
-    try { await generateReport(result); } catch (e) { console.error(e); }
+    setPdfBusy(true); setPdfError("");
+    try { await generateReport(result); }
+    catch (e) {
+      console.error(e);
+      setPdfError("Sorry — the PDF couldn't be generated. Please try again, or email hello@findahousingprovider.co.uk and we'll send it to you.");
+    }
     setPdfBusy(false);
   }
 
@@ -80,6 +85,7 @@ export default function Results({ result, onNewSearch, postcode }) {
             </button>
             <button className="btn btn-secondary" onClick={onNewSearch}>New search</button>
           </div>
+          {pdfError ? <p className="searcherror" role="alert">{pdfError}</p> : null}
         </div>
 
         <div className="trust-banner" role="note">

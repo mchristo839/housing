@@ -47,7 +47,12 @@ export default async function handler(req, res) {
 
   let event;
   try {
-    if (secret && sig) {
+    if (secret) {
+      if (!sig) {
+        res.statusCode = 400;
+        res.end("Missing stripe-signature header");
+        return;
+      }
       event = stripe.webhooks.constructEvent(rawBody, sig, secret);
     } else {
       // No webhook secret set — parse the raw body directly (dev / initial setup only).

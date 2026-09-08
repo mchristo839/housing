@@ -97,6 +97,7 @@ export default async function handler(req, res) {
 
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
+        customer_creation: "always",
         line_items,
         allow_promotion_codes: true,
         metadata,
@@ -151,6 +152,7 @@ export default async function handler(req, res) {
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
+      customer_creation: "always",
       line_items,
       allow_promotion_codes: true,
       metadata,
