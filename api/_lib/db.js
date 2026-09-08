@@ -150,11 +150,12 @@ export async function recordSale({ stripe_id, email = null, amount_pence = 0, ty
   // Idempotent per Stripe object — webhooks can be delivered more than once.
   const id = `sale_${stripe_id}`;
   const existing = await kv.get(`sale:${id}`);
-  if (existing) return existing;
+  // `fresh` tells callers whether this call created the row (so alerts fire once).
+  if (existing) return { ...existing, fresh: false };
   const row = { id, stripe_id, email, amount_pence, type, tier, affiliate_code, created_at: created_at || new Date().toISOString() };
   await kv.set(`sale:${id}`, row);
   await kv.sadd("sales_index", id);
-  return row;
+  return { ...row, fresh: true };
 }
 export async function listSales() {
   const kv = await getKv();
