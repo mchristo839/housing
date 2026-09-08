@@ -168,6 +168,16 @@ export async function listSales() {
   return rows.sort((a, b) => b.created_at.localeCompare(a.created_at));
 }
 
+// ── One-shot flags (e.g. "receipt already emailed for this payment") ─────────
+// Returns true the first time a key is claimed, false afterwards.
+export async function claimOnce(key) {
+  const kv = await getKv();
+  const k = `once:${key}`;
+  if (await kv.get(k)) return false;
+  await kv.set(k, new Date().toISOString());
+  return true;
+}
+
 // ── Monthly unlock metering (enforces capped subscription allowances) ─────────
 // Tracks the DISTINCT areas a subscriber unlocks in a calendar month so we can
 // enforce plan allowances (Starter 5 / Plus 10 / Unlimited ∞). Re-opening an
