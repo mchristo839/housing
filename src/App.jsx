@@ -1286,7 +1286,7 @@ function AdminCreateAffiliate({ onCreate, busy }) {
 }
 
 function AdminSales({ rows }) {
-  if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No sales recorded yet. Sales appear here automatically once the Stripe webhook receives a payment.</p>;
+  if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No sales yet. This list is synced from Stripe every time you open the dashboard.</p>;
   return (
     <AdminTable headers={["Date", "Email", "Type", "Tier", "Amount", "Ref"]}>
       {rows.map((s) => (

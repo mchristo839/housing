@@ -48,7 +48,26 @@ export async function purchasesForEmail(stripe, email) {
       }
     }
   }
+  // Guest one-off purchases: Checkout in payment mode doesn't create a Customer
+  // unless asked to, so older purchases only exist as a Checkout Session.
+  if (purchases.length === 0) {
+    try {
+      const sessions = await stripe.checkout.sessions.list({ customer_details: { email: clean }, limit: 100 });
+      for (const s of sessions.data) {
+        if (s.mode === "payment" && s.payment_status === "paid" && s.metadata?.tier) {
+          purchases.push({ tier: s.metadata.tier, postcode: s.metadata.postcode, createdAt: s.created });
+        }
+      }
+    } catch { /* lookup is best-effort */ }
+  }
   return { active: subscription || purchases.length > 0, subscription, customerId, tier, email: clean, purchases };
+}
+
+// Paid Checkout Sessions, newest first — the source of truth for the sales
+// ledger when the webhook hasn't delivered (or isn't registered yet).
+export async function listPaidSessions(stripe, limit = 100) {
+  const sessions = await stripe.checkout.sessions.list({ limit, expand: ["data.invoice"] });
+  return sessions.data.filter((s) => s.payment_status === "paid" && s.status === "complete");
 }
 
 // Verify a one-off payment checkout session. Returns the tier + postcode + email
