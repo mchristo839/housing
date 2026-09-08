@@ -5,7 +5,7 @@
 //   addTemplates                       → £12 add-on (one-off purchases only)
 // The searched scope is kept in metadata so /result can load it after payment.
 import { MONTHLY_PLANS, SINGLE_POSTCODE_PRICE, priceForCount, resolvePostcode, matchResolved, matchByCouncil, matchByCounty } from "./_lib/match.js";
-import { getStripe } from "./_lib/billing.js";
+import { getStripe, bestActiveSubscriptionForEmail } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
 import { getAffiliate } from "./_lib/affiliate.js";
 
@@ -47,6 +47,23 @@ export default async function handler(req, res) {
     // ── recurring monthly subscription ──────────────────────────────────────
     const plan = MONTHLY_PLANS[tierKey];
     if (plan) {
+      // Already subscribed? Send them to Stripe's upgrade flow on their existing
+      // subscription instead of selling a second one alongside it.
+      const knownEmail = String(body.email || "").trim().toLowerCase();
+      if (knownEmail) {
+        try {
+          const { best } = await bestActiveSubscriptionForEmail(stripe, knownEmail);
+          if (best) {
+            const customerId = typeof best.customer === "string" ? best.customer : best.customer?.id;
+            const portal = await stripe.billingPortal.sessions.create({
+              customer: customerId,
+              return_url: `${origin}/`,
+              flow_data: { type: "subscription_update", subscription_update: { subscription: best.id } },
+            });
+            return sendJson(res, 200, { url: portal.url, upgrade: true });
+          }
+        } catch (e) { console.error("upgrade lookup failed, falling back to checkout:", e); }
+      }
       const session = await stripe.checkout.sessions.create({
         mode: "subscription",
         line_items: [{

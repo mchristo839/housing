@@ -23,7 +23,9 @@ export async function startCheckout(scope, opts = {}) {
   // scope = { postcode } | { council } | { county }
   // opts  = { tier, addTemplates, ref }
   const body = { ...scope, tier: opts.tier || (scope.county ? "county" : "postcode"),
-                 addTemplates: !!opts.addTemplates, ref: opts.ref || affiliateRef.get() || undefined };
+                 addTemplates: !!opts.addTemplates, ref: opts.ref || affiliateRef.get() || undefined,
+                 // Lets the server route existing subscribers to an upgrade instead of a 2nd subscription.
+                 email: savedEmail.get() || undefined };
   const res = await fetch("/api/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
