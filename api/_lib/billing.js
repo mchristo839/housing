@@ -60,7 +60,7 @@ export async function purchasesForEmail(stripe, email) {
       if (pi.status === "succeeded" && pi.metadata?.tier) {
         purchases.push({
           tier: pi.metadata.tier,
-          postcode: pi.metadata.postcode,
+          postcode: pi.metadata.postcode, council: pi.metadata.council, county: pi.metadata.county,
           createdAt: pi.created,
         });
       }
@@ -73,7 +73,7 @@ export async function purchasesForEmail(stripe, email) {
       const sessions = await stripe.checkout.sessions.list({ customer_details: { email: clean }, limit: 100 });
       for (const s of sessions.data) {
         if (s.mode === "payment" && s.payment_status === "paid" && s.metadata?.tier) {
-          purchases.push({ tier: s.metadata.tier, postcode: s.metadata.postcode, createdAt: s.created });
+          purchases.push({ tier: s.metadata.tier, postcode: s.metadata.postcode, council: s.metadata.council, county: s.metadata.county, createdAt: s.created });
         }
       }
     } catch { /* lookup is best-effort */ }
