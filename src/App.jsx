@@ -164,6 +164,7 @@ export default function App() {
           } catch (e) {
             // Subscriber hit their monthly area allowance — show the paywall with a note.
             if (e.code === "monthly_limit") setNotice("You've used all your area unlocks for this month. Pick a bigger plan below to upgrade your existing subscription (prorated), or your allowance resets next month.");
+            else if (e.code === "area_not_purchased") setNotice("Your one-off purchase covers a different area. Buy this area below, or subscribe to unlock any area you search.");
             /* fall through to subscribe gate */
           }
         }
@@ -206,6 +207,8 @@ export default function App() {
         ? "No active purchase found for that email. Buy below, or check the email you used."
         : e.code === "monthly_limit"
         ? "You've used all your area unlocks for this month. Pick Plus or Unlimited below to upgrade your existing subscription (prorated) — or your allowance resets next month."
+        : e.code === "area_not_purchased"
+        ? "That email's one-off purchase covers a different area. Buy this area below, or subscribe to unlock any area."
         : "Couldn't verify that email. Please try again.");
     }
     setEmailBusy(false);

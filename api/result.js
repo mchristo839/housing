@@ -9,6 +9,22 @@ import { sendJson, getQuery } from "./_lib/http.js";
 import { savePurchase, recordSale, meterUnlock, areaKeyOf } from "./_lib/db.js";
 import { notifySale } from "./_lib/alerts.js";
 
+// One-off buyers may only re-open the area they paid for: the same postcode,
+// or any postcode in the same council, or the council/county they bought.
+const normPc = (s) => String(s || "").toUpperCase().replace(/\s+/g, "");
+const same = (a, b) => !!a && !!b && String(a).trim().toLowerCase() === String(b).trim().toLowerCase();
+export async function purchaseCoversArea(purchases, q, data) {
+  for (const p of purchases || []) {
+    if (p.postcode && q.postcode && normPc(p.postcode) === normPc(q.postcode)) return true;
+    if (p.council && (same(p.council, data.council) || same(p.council, q.council))) return true;
+    if (p.county && (same(p.county, data.countyName) || same(p.county, q.county))) return true;
+    if (p.postcode && data.council) {
+      try { if (same(matchResolved(await resolvePostcode(p.postcode)).council, data.council)) return true; } catch {}
+    }
+  }
+  return false;
+}
+
 async function listFor(q) {
   // q can be { postcode } | { council } | { county }
   if (q.postcode) return fullResultOf(matchResolved(await resolvePostcode(q.postcode)));
@@ -70,6 +86,11 @@ export default async function handler(req, res) {
       const info = await purchasesForEmail(stripe, q.email);
       if (!info.active) return sendJson(res, 402, { error: "no_purchase", email: info.email });
       const data = await listFor(q);
+      // Subscribers can open any area; one-off buyers only the area they bought.
+      if (!info.subscription && !(await purchaseCoversArea(info.purchases, q, data))) {
+        const purchased = info.purchases.map((p) => p.postcode || p.council || p.county).filter(Boolean);
+        return sendJson(res, 402, { error: "area_not_purchased", email: info.email, purchased });
+      }
       // Enforce the monthly allowance for capped subscribers (Starter 5 / Plus 10).
       if (info.subscription) {
         const allowance = PLAN_ALLOWANCE[info.tier] ?? Infinity;
