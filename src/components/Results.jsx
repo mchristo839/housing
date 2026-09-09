@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { SECTORS, formatEmployees } from "../data.js";
+import { SECTORS, formatEmployees, savedEmail, logPdfDownload } from "../data.js";
 import { areaContractsFor } from "../message.js";
 import { generateReport } from "../pdf.js";
 
@@ -14,7 +14,10 @@ export default function Results({ result, onNewSearch, postcode }) {
 
   async function downloadPdf() {
     setPdfBusy(true); setPdfError("");
-    try { await generateReport(result); }
+    try {
+      await generateReport(result);
+      logPdfDownload(result.email || savedEmail.get(), result.postcode || result.council || result.countyName);
+    }
     catch (e) {
       console.error(e);
       setPdfError("Sorry — the PDF couldn't be generated. Please try again, or email hello@findahousingprovider.co.uk and we'll send it to you.");

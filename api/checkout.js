@@ -9,6 +9,23 @@ import { getStripe, bestActiveSubscriptionForEmail } from "./_lib/billing.js";
 import { sendJson, readBody, originOf } from "./_lib/http.js";
 import { getAffiliate } from "./_lib/affiliate.js";
 
+// Ask Stripe to record the buyer's acceptance of our Terms at checkout (useful
+// evidence in a dispute). Stripe only allows this once a Terms URL is set in
+// the dashboard (Settings → Public details), so fall back gracefully until then.
+async function createCheckoutSession(stripe, params) {
+  try {
+    return await stripe.checkout.sessions.create({
+      ...params,
+      consent_collection: { terms_of_service: "required" },
+      custom_text: { terms_of_service_acceptance: { message: "I agree to the [Terms & Conditions](https://www.findahousingprovider.co.uk/terms), including the fair-use limits and the ban on bulk export or scraping." } },
+    });
+  } catch (e) {
+    if (!/terms/i.test(String(e.message || e))) throw e;
+    console.error("Terms consent unavailable (set a Terms of Service URL in Stripe → Settings → Public details):", e.message);
+    return stripe.checkout.sessions.create(params);
+  }
+}
+
 const TEMPLATES_ADD_ON = {
   amount: 1200,
   currency: "gbp",
@@ -64,7 +81,7 @@ export default async function handler(req, res) {
           }
         } catch (e) { console.error("upgrade lookup failed, falling back to checkout:", e); }
       }
-      const session = await stripe.checkout.sessions.create({
+      const session = await createCheckoutSession(stripe, {
         mode: "subscription",
         line_items: [{
           quantity: 1,
@@ -112,7 +129,7 @@ export default async function handler(req, res) {
         },
       }];
 
-      const session = await stripe.checkout.sessions.create({
+      const session = await createCheckoutSession(stripe, {
         mode: "payment",
         customer_creation: "always",
         line_items,
@@ -167,7 +184,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const session = await stripe.checkout.sessions.create({
+    const session = await createCheckoutSession(stripe, {
       mode: "payment",
       customer_creation: "always",
       line_items,

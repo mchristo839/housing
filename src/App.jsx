@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates } from "./data.js";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -165,6 +165,10 @@ export default function App() {
             // Subscriber hit their monthly area allowance — show the paywall with a note.
             if (e.code === "monthly_limit") setNotice("You've used all your area unlocks for this month. Pick a bigger plan below to upgrade your existing subscription (prorated), or your allowance resets next month.");
             else if (e.code === "area_not_purchased") setNotice("Your one-off purchase covers a different area. Buy this area below, or subscribe to unlock any area you search.");
+            else if (e.code === "fair_use_limit") setNotice(e.scope === "month"
+              ? "You've reached this month's fair-use limit for new areas. Areas you've already opened still work. Need more? Email hello@findahousingprovider.co.uk."
+              : "You've reached today's fair-use limit for new areas — it resets tomorrow, and areas you've already opened still work. Need more? Email hello@findahousingprovider.co.uk.");
+            else if (e.code === "account_blocked") setNotice("This account has been suspended. Please contact hello@findahousingprovider.co.uk.");
             /* fall through to subscribe gate */
           }
         }
@@ -209,6 +213,10 @@ export default function App() {
         ? "You've used all your area unlocks for this month. Pick Plus or Unlimited below to upgrade your existing subscription (prorated) — or your allowance resets next month."
         : e.code === "area_not_purchased"
         ? "That email's one-off purchase covers a different area. Buy this area below, or subscribe to unlock any area."
+        : e.code === "fair_use_limit"
+        ? (e.scope === "month" ? "You've reached this month's fair-use limit for new areas. Areas you've already opened still work — email hello@findahousingprovider.co.uk if you need more." : "You've reached today's fair-use limit for new areas — it resets tomorrow. Areas you've already opened still work.")
+        : e.code === "account_blocked"
+        ? "This account has been suspended. Please contact hello@findahousingprovider.co.uk."
         : "Couldn't verify that email. Please try again.");
     }
     setEmailBusy(false);
@@ -507,8 +515,8 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
               <div className="amt">£199<span className="amt-per">/mo</span></div>
               <div className="per">unlimited unlocks</div>
               <ul>
-                <li>Unlock as many areas as you like</li>
-                <li>Best for active sourcing</li>
+                <li>Unlock as many areas as you need</li>
+                <li>Best for active sourcing (fair use applies)</li>
                 <li>Cancel anytime</li>
               </ul>
               <button className="btn btn-out" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Go unlimited</button>
@@ -607,7 +615,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                     <span className="pm-blurb">{P.monthly?.monthly_full?.blurb || "Unlimited area unlocks"}</span>
                   </button>
                 </div>
-                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you like. Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
+                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you need (fair use: up to 30 new areas a day). Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
@@ -858,6 +866,13 @@ function Terms() {
             use it to build or train a competing product or database. You must not use the data to send unlawful
             communications, and you are responsible for complying with UK GDPR, PECR and any marketing rules when
             you contact providers.</p>
+          <p><b>Fair use.</b> All plans, including Unlimited, are subject to fair-use limits designed to allow
+            genuine property research while preventing bulk extraction: currently up to 30 new areas per day and
+            150 new areas per calendar month. Re-opening an area you have already unlocked does not count. We may
+            suspend accounts that exceed these limits or show automated or systematic access patterns, and we keep
+            a record of every area unlocked and every report downloaded, including the date, time and IP address,
+            which we may rely on in any dispute. Each downloaded report is marked with the licensee&rsquo;s email
+            address. If you have a legitimate need for higher limits, contact us.</p>
 
           <h2>5. Data accuracy</h2>
           <p>Provider information is compiled from public sources and refreshed monthly. While we verify contact
@@ -1090,7 +1105,7 @@ function AdminLogin({ onLogin }) {
 function AdminDashboard({ session, onLogout }) {
   const [overview, setOverview] = useState(null);
   const [affiliates, setAffiliates] = useState(null);
-  const [tab, setTab] = useState("affiliates"); // affiliates | sales | signups
+  const [tab, setTab] = useState("affiliates"); // affiliates | sales | customers | signups
   const [error, setError] = useState("");
 
   const load = () => {
@@ -1133,13 +1148,14 @@ function AdminDashboard({ session, onLogout }) {
       </div>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["signups", "Signups"]].map(([k, label]) => (
+        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["customers", "Customers"], ["signups", "Signups"]].map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={tab === k ? adminBtn : adminBtnGhost}>{label}</button>
         ))}
       </div>
 
       {tab === "affiliates" && <AdminAffiliates affiliates={affiliates} reload={load} />}
       {tab === "sales" && <AdminSales rows={overview.sales.rows} />}
+      {tab === "customers" && <AdminCustomers />}
       {tab === "signups" && <AdminSignups rows={overview.signups.rows} />}
     </main>
   );
@@ -1303,6 +1319,103 @@ function AdminSales({ rows }) {
         </tr>
       ))}
     </AdminTable>
+  );
+}
+
+// Customers: who has unlocked what, fair-use standing, block / limit controls.
+function AdminCustomers() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState("");
+  const [open, setOpen] = useState(null);      // email whose history is expanded
+  const [history, setHistory] = useState({}); // email → rows
+  const [busy, setBusy] = useState(false);
+
+  const load = () => adminCustomers("list").then(setData).catch(() => setError("Couldn't load customers."));
+  useEffect(() => { load(); }, []);
+
+  async function run(fn) {
+    setBusy(true); setError("");
+    try { await fn(); await load(); } catch { setError("That didn't work — please try again."); }
+    finally { setBusy(false); }
+  }
+  async function toggleHistory(email) {
+    if (open === email) { setOpen(null); return; }
+    setOpen(email);
+    if (!history[email]) {
+      try { const r = await adminCustomers("customer", { email }); setHistory((h) => ({ ...h, [email]: r.history })); }
+      catch { setHistory((h) => ({ ...h, [email]: [] })); }
+    }
+  }
+  function setLimits(c) {
+    const daily = window.prompt(`Daily limit for ${c.email} (new areas per day):`, String(c.limits.daily));
+    if (daily == null) return;
+    const monthly = window.prompt(`Monthly limit for ${c.email} (new areas per month):`, String(c.limits.monthly));
+    if (monthly == null) return;
+    run(() => adminCustomers("fair-use", { email: c.email, daily: Number(daily), monthly: Number(monthly) }));
+  }
+
+  if (error && !data) return <p style={{ color: "#c00" }}>{error}</p>;
+  if (!data) return <p>Loading…</p>;
+  const { customers, defaults } = data;
+  const fmtWhen = (iso) => iso ? iso.slice(0, 16).replace("T", " ") : "—";
+  const usageStyle = (n, limit) => ({ ...cellTd, fontWeight: n >= limit ? 700 : 400, color: n >= limit ? "#c00" : n >= limit * 0.6 ? "#e67e22" : "inherit" });
+
+  return (
+    <>
+      <p style={{ color: "var(--muted, #666)", fontSize: "0.85rem", marginBottom: 12 }}>
+        Fair-use defaults: {defaults.daily} new areas/day, {defaults.monthly}/month, every plan. Accounts are stopped automatically at the cap; you get an email at {Math.round(defaults.daily * 2 / 3)}/day. Block cuts access instantly regardless of their Stripe status.
+      </p>
+      {error && <p style={{ color: "#c00", marginBottom: 12 }}>{error}</p>}
+      {customers.length === 0 ? <p style={{ color: "var(--muted, #666)" }}>No unlocks recorded yet.</p> : (
+        <AdminTable headers={["Customer", "Plan", "Today", "Month", "Total", "PDFs", "Last seen", ""]}>
+          {customers.map((c) => (
+            <Fragment key={c.email}>
+              <tr style={{ borderBottom: "1px solid var(--border, #eef0f5)", opacity: c.blocked ? 0.6 : 1 }}>
+                <td style={cellTd}>
+                  {c.email}
+                  {c.blocked && <span style={{ marginLeft: 8, fontSize: "0.72rem", fontWeight: 700, color: "#fff", background: "#c00", borderRadius: 100, padding: "2px 8px" }}>BLOCKED</span>}
+                  {c.override && <div style={{ color: "var(--muted, #888)", fontSize: "0.75rem" }}>custom limits {c.limits.daily}/day · {c.limits.monthly}/mo</div>}
+                  {c.last_ip && <div style={{ color: "var(--muted, #888)", fontSize: "0.75rem" }}>{c.last_ip}</div>}
+                </td>
+                <td style={cellTd}>{c.tier || "—"}</td>
+                <td style={usageStyle(c.today, c.limits.daily)}>{c.today}/{c.limits.daily}</td>
+                <td style={usageStyle(c.this_month, c.limits.monthly)}>{c.this_month}/{c.limits.monthly}</td>
+                <td style={cellTd}>{c.unlocks} <span style={{ color: "var(--muted, #888)" }}>({c.distinct_areas} areas)</span></td>
+                <td style={cellTd}>{c.pdfs}</td>
+                <td style={cellTd}>{fmtWhen(c.last_seen)}</td>
+                <td style={{ ...cellTd, whiteSpace: "nowrap" }}>
+                  <button onClick={() => toggleHistory(c.email)} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem", marginRight: 6 }}>{open === c.email ? "Hide" : "History"}</button>
+                  <button disabled={busy} onClick={() => setLimits(c)} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem", marginRight: 6 }}>Limits</button>
+                  {c.override && <button disabled={busy} onClick={() => run(() => adminCustomers("fair-use", { email: c.email, reset: true }))} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem", marginRight: 6 }}>Reset</button>}
+                  {c.blocked
+                    ? <button disabled={busy} onClick={() => run(() => adminCustomers("unblock", { email: c.email }))} style={{ ...adminBtn, padding: "4px 10px", fontSize: "0.8rem" }}>Unblock</button>
+                    : <button disabled={busy} onClick={() => { if (window.confirm(`Block ${c.email}? They lose access immediately.`)) run(() => adminCustomers("block", { email: c.email, reason: window.prompt("Reason (optional):") || "" })); }} style={{ ...adminBtnGhost, padding: "4px 10px", fontSize: "0.8rem", color: "#c00", borderColor: "#c00" }}>Block</button>}
+                </td>
+              </tr>
+              {open === c.email && (
+                <tr><td colSpan={8} style={{ padding: "0 10px 20px" }}>
+                  <div style={{ background: "var(--surface-alt, #f5f6fa)", borderRadius: 8, padding: 16 }}>
+                    {!history[c.email] ? <p>Loading…</p> : history[c.email].length === 0 ? <p style={{ color: "var(--muted, #666)" }}>No activity.</p> : (
+                      <AdminTable headers={["When (UTC)", "Event", "Area", "Plan", "IP"]}>
+                        {history[c.email].slice(0, 200).map((r) => (
+                          <tr key={r.id} style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+                            <td style={cellTd}>{fmtWhen(r.at)}</td>
+                            <td style={cellTd}>{r.kind === "pdf" ? "PDF download" : "Unlock"}</td>
+                            <td style={cellTd}>{r.area || "—"}</td>
+                            <td style={cellTd}>{r.tier || "—"}</td>
+                            <td style={{ ...cellTd, color: "var(--muted, #888)" }}>{r.ip || "—"}</td>
+                          </tr>
+                        ))}
+                      </AdminTable>
+                    )}
+                  </div>
+                </td></tr>
+              )}
+            </Fragment>
+          ))}
+        </AdminTable>
+      )}
+    </>
   );
 }
 

@@ -7,7 +7,7 @@
 // the ADMIN_USERS env var, e.g. "mario:pass1,paul:pass2") or the legacy
 // ADMIN_TOKEN env var.
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
-import { listSignups, listSales, recordSale } from "./_lib/db.js";
+import { listSignups, listSales, recordSale, listCustomers, listUnlocks, setBlocked, setFairUseOverride, fairUseStatus } from "./_lib/db.js";
 import { getStripe, listPaidSessions } from "./_lib/billing.js";
 import { verifyCredentials, createAdminSession, verifyAdminToken } from "./_lib/adminAuth.js";
 
@@ -70,6 +70,30 @@ export default async function handler(req, res) {
         sales: { count: sales.length, revenue_pence, rows: sales, sync },
       });
     }
+    // ── Customers: usage, block list, fair-use overrides ─────────────────────
+    if (q.action === "customers") {
+      return sendJson(res, 200, { customers: await listCustomers(), defaults: (await fairUseStatus("_")).limits });
+    }
+    if (q.action === "customer") {
+      if (!q.email) return sendJson(res, 400, { error: "missing_email" });
+      const [history, fair] = await Promise.all([listUnlocks(q.email), fairUseStatus(q.email)]);
+      return sendJson(res, 200, { email: String(q.email).toLowerCase(), history, fair });
+    }
+    if (q.action === "block" || q.action === "unblock") {
+      if (req.method !== "POST") return sendJson(res, 405, { error: "method_not_allowed" });
+      const { email, reason = "" } = await readBody(req);
+      if (!email) return sendJson(res, 400, { error: "missing_email" });
+      await setBlocked(email, q.action === "block", `${reason} (by ${who})`.trim());
+      return sendJson(res, 200, { ok: true, email: String(email).toLowerCase(), blocked: q.action === "block" });
+    }
+    if (q.action === "fair-use") {
+      if (req.method !== "POST") return sendJson(res, 405, { error: "method_not_allowed" });
+      const { email, daily, monthly, reset } = await readBody(req);
+      if (!email) return sendJson(res, 400, { error: "missing_email" });
+      const override = await setFairUseOverride(email, reset ? null : { daily, monthly });
+      return sendJson(res, 200, { ok: true, email: String(email).toLowerCase(), override });
+    }
+
     // Legacy readouts
     if (q.q === "signups") {
       const rows = await listSignups();

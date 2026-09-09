@@ -1,13 +1,18 @@
-// GET /api/result  → full provider list, for verified one-off purchases.
-// Unlock paths:
+// /api/result  → full provider list, for verified purchases.
+// Unlock paths (GET):
 //   ?session_id=...            just paid via Checkout → verify session paid + load scope
 //   ?email=...&postcode=...    returning customer → has any past purchase + load postcode
 //   ?dev=1&postcode=...        local only, when ALLOW_DEV_UNLOCK=1
+// Audit (POST): { event: "pdf", email, area }  → logs a PDF download
+//
+// Every unlock is written to the audit log, counted against fair-use caps
+// (distinct areas per day / month, even on Unlimited), and refused outright for
+// blocked accounts.
 import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, fullResultOf, PLAN_ALLOWANCE } from "./_lib/match.js";
 import { getStripe, sessionIsActive, purchasesForEmail } from "./_lib/billing.js";
-import { sendJson, getQuery } from "./_lib/http.js";
-import { savePurchase, recordSale, meterUnlock, areaKeyOf } from "./_lib/db.js";
-import { notifySale } from "./_lib/alerts.js";
+import { sendJson, getQuery, readBody } from "./_lib/http.js";
+import { savePurchase, recordSale, meterUnlock, areaKeyOf, claimOnce, recordUnlock, fairUseStatus, isBlocked, FAIR_USE } from "./_lib/db.js";
+import { notifySale, notifyFairUse } from "./_lib/alerts.js";
 
 // One-off buyers may only re-open the area they paid for: the same postcode,
 // or any postcode in the same council, or the council/county they bought.
@@ -33,8 +38,47 @@ async function listFor(q) {
   const e = new Error("missing"); e.code = "notfound"; throw e;
 }
 
+const clientOf = (req) => ({
+  ip: String(req.headers["x-forwarded-for"] || req.socket?.remoteAddress || "").split(",")[0].trim() || null,
+  ua: req.headers["user-agent"] || null,
+});
+const areaLabel = (data, q) => data.postcode || q.postcode || data.council || q.council || data.countyName || q.county || "";
+
+// Fair use: distinct areas per day / month, on every plan including Unlimited.
+// Re-opening an area already counted today is always allowed. Returns null if
+// OK, or the 402 payload to send.
+export async function fairUseCheck(email, areaKey) {
+  const s = await fairUseStatus(email);
+  if (s.dayAreas.includes(areaKey)) return null;
+  if (s.day >= s.limits.daily) return { error: "fair_use_limit", scope: "day", used: s.day, limit: s.limits.daily };
+  if (s.month >= s.limits.monthly && !s.monthAreas.includes(areaKey)) return { error: "fair_use_limit", scope: "month", used: s.month, limit: s.limits.monthly };
+  return null;
+}
+
+// Log the unlock, then alert the owner once per day if usage looks like scraping.
+async function logUnlock(req, { email, data, q, tier }) {
+  const areaKey = areaKeyOf({ council: data.council, county: data.countyName, postcode: data.postcode || q.postcode });
+  const { ip, ua } = clientOf(req);
+  await recordUnlock({ email, kind: "unlock", area: areaLabel(data, q), areaKey, tier, ip, ua });
+  const s = await fairUseStatus(email);
+  if (s.day >= FAIR_USE.flagAt && await claimOnce(`fairflag:${email}:${new Date().toISOString().slice(0, 10)}`)) {
+    await notifyFairUse(email, { day: s.day, month: s.month, limits: s.limits, area: areaLabel(data, q), tier, ip });
+  }
+}
+
 export default async function handler(req, res) {
   try {
+    // ── audit events from the client (PDF downloads) ──────────────────────────
+    if (req.method === "POST") {
+      const body = await readBody(req);
+      if (body.event === "pdf" && body.email) {
+        const { ip, ua } = clientOf(req);
+        await recordUnlock({ email: body.email, kind: "pdf", area: String(body.area || "").slice(0, 80), ip, ua });
+        return sendJson(res, 200, { ok: true });
+      }
+      return sendJson(res, 400, { error: "unknown_event" });
+    }
+
     const q = getQuery(req);
 
     // dev-only unlock for local preview
@@ -50,6 +94,7 @@ export default async function handler(req, res) {
       const session = await stripe.checkout.sessions.retrieve(q.session_id);
       const { active, email, tier, postcode, council, county, addTemplates, customerId } = await sessionIsActive(stripe, session);
       if (!active) return sendJson(res, 402, { error: "not_paid" });
+      if (email && await isBlocked(email)) return sendJson(res, 403, { error: "account_blocked" });
       const scope = { postcode: postcode || q.postcode, council: council || q.council, county: county || q.county };
       if (!scope.postcode && !scope.council && !scope.county) {
         return sendJson(res, 200, { paid: true, email, tier, needPostcode: true });
@@ -78,11 +123,13 @@ export default async function handler(req, res) {
           try { await meterUnlock(customerId, allowance, areaKeyOf({ council: data.council, county: data.countyName, postcode: data.postcode })); } catch {}
         }
       }
+      if (email) { try { await logUnlock(req, { email, data, q: scope, tier }); } catch {} }
       return sendJson(res, 200, { ...data, subscribed: true, paid: true, email, tier, addTemplates });
     }
 
     // 2) returning customer — verify a past purchase / active plan, then load the scope
     if (q.email && (q.postcode || q.council || q.county)) {
+      if (await isBlocked(q.email)) return sendJson(res, 403, { error: "account_blocked" });
       const info = await purchasesForEmail(stripe, q.email);
       if (!info.active) return sendJson(res, 402, { error: "no_purchase", email: info.email });
       const data = await listFor(q);
@@ -91,17 +138,21 @@ export default async function handler(req, res) {
         const purchased = info.purchases.map((p) => p.postcode || p.council || p.county).filter(Boolean);
         return sendJson(res, 402, { error: "area_not_purchased", email: info.email, purchased });
       }
-      // Enforce the monthly allowance for capped subscribers (Starter 5 / Plus 10).
       if (info.subscription) {
+        const areaKey = areaKeyOf({ council: data.council, county: data.countyName, postcode: data.postcode || q.postcode });
+        // Fair use applies to every plan, Unlimited included.
+        const fair = await fairUseCheck(info.email, areaKey);
+        if (fair) return sendJson(res, 402, { ...fair, tier: info.tier });
+        // Enforce the monthly allowance for capped subscribers (Starter 5 / Plus 10).
         const allowance = PLAN_ALLOWANCE[info.tier] ?? Infinity;
         if (allowance !== Infinity) {
-          const areaKey = areaKeyOf({ council: data.council, county: data.countyName, postcode: data.postcode || q.postcode });
           const meter = await meterUnlock(info.customerId || info.email, allowance, areaKey);
           if (!meter.allowed) {
             return sendJson(res, 402, { error: "monthly_limit", tier: info.tier, used: meter.count, allowance: meter.allowance });
           }
         }
       }
+      try { await logUnlock(req, { email: info.email, data, q, tier: info.tier }); } catch {}
       return sendJson(res, 200, { ...data, subscribed: true, paid: true, email: info.email, purchases: info.purchases, tier: info.tier });
     }
 
