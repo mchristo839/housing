@@ -58,6 +58,20 @@ export async function sendCustomerReceipt(sale, { area = "", renewal = false, re
   }
 }
 
+// Owner alert when an account is unlocking areas unusually fast.
+export async function notifyFairUse(email, { day, month, limits, area, tier, ip }) {
+  const to = process.env.SALE_ALERT_EMAILS || FROM_EMAIL;
+  const subject = `Heavy usage: ${email} has unlocked ${day} areas today`;
+  const rows = [["Customer", email], ["Plan", tier || "—"], ["Areas today", `${day} (cap ${limits.daily})`], ["Areas this month", `${month} (cap ${limits.monthly})`], ["Latest area", area || "—"], ["IP", ip || "—"]];
+  const html = `
+    <h2 style="font-family:sans-serif;margin:0 0 12px">${esc(subject)}</h2>
+    <table style="font-family:sans-serif;border-collapse:collapse">
+      ${rows.map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${esc(k)}</td><td style="padding:4px 0"><b>${esc(v)}</b></td></tr>`).join("")}
+    </table>
+    <p style="font-family:sans-serif;color:#666;font-size:13px;margin-top:16px">They will be stopped automatically at the daily cap. To cut them off now or raise their limit: <a href="https://www.findahousingprovider.co.uk/admin">findahousingprovider.co.uk/admin</a> → Customers.</p>`;
+  try { return await sendEmail({ to, subject, html }); } catch (e) { console.error("fair-use alert failed:", e); return { ok: false }; }
+}
+
 // sale: a row from recordSale(); extra: { area, renewal }
 export async function notifySale(sale, extra = {}) {
   const to = process.env.SALE_ALERT_EMAILS || FROM_EMAIL;

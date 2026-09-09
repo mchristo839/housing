@@ -178,6 +178,99 @@ export async function claimOnce(key) {
   return true;
 }
 
+// ── Unlock audit log, fair-use counters, block list ──────────────────────────
+//   unlock:<id>                    → { id, email, kind: unlock|pdf, area, areaKey, tier, ip, ua, at }
+//   unlocks_by_email:<email>       → set of unlock ids
+//   customers_index                → set of emails that have ever unlocked
+//   fair_day:<email>:<YYYY-MM-DD>  → set of distinct areaKeys unlocked that day
+//   fair_month:<email>:<YYYY-MM>   → set of distinct areaKeys unlocked that month
+//   blocked:<email>                → { at, reason }      blocked_index → set of emails
+//   fair_override:<email>          → { daily, monthly }  (null = defaults)
+export const FAIR_USE = { daily: 30, monthly: 150, flagAt: 20 };
+const dayKey = (d = new Date()) => d.toISOString().slice(0, 10);
+const monthKey = (d = new Date()) => d.toISOString().slice(0, 7);
+const lc = (e) => String(e || "").trim().toLowerCase();
+
+export async function recordUnlock({ email, kind = "unlock", area = "", areaKey = "", tier = null, ip = null, ua = null }) {
+  const kv = await getKv();
+  const e = lc(email);
+  if (!e) return null;
+  const id = `${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const row = { id, email: e, kind, area, areaKey, tier, ip, ua: ua ? String(ua).slice(0, 160) : null, at: new Date().toISOString() };
+  await kv.set(`unlock:${id}`, row);
+  await kv.sadd(`unlocks_by_email:${e}`, id);
+  await kv.sadd("customers_index", e);
+  if (kind === "unlock" && areaKey) {
+    await kv.sadd(`fair_day:${e}:${dayKey()}`, areaKey);
+    await kv.sadd(`fair_month:${e}:${monthKey()}`, areaKey);
+  }
+  return row;
+}
+
+export async function fairUseStatus(email) {
+  const kv = await getKv();
+  const e = lc(email);
+  const [day, month, override] = await Promise.all([
+    kv.smembers(`fair_day:${e}:${dayKey()}`),
+    kv.smembers(`fair_month:${e}:${monthKey()}`),
+    kv.get(`fair_override:${e}`),
+  ]);
+  const limits = { daily: override?.daily ?? FAIR_USE.daily, monthly: override?.monthly ?? FAIR_USE.monthly };
+  return { day: day.length, month: month.length, dayAreas: day, monthAreas: month, limits, override: override || null };
+}
+
+export async function setFairUseOverride(email, override) {
+  const kv = await getKv();
+  const e = lc(email);
+  if (!override) { await kv.del(`fair_override:${e}`); return null; }
+  const row = { daily: Number(override.daily) || FAIR_USE.daily, monthly: Number(override.monthly) || FAIR_USE.monthly };
+  await kv.set(`fair_override:${e}`, row);
+  return row;
+}
+
+export async function listUnlocks(email) {
+  const kv = await getKv();
+  const ids = await kv.smembers(`unlocks_by_email:${lc(email)}`);
+  const rows = [];
+  for (const id of ids) { const r = await kv.get(`unlock:${id}`); if (r) rows.push(r); }
+  return rows.sort((a, b) => b.at.localeCompare(a.at));
+}
+
+export async function setBlocked(email, blocked, reason = "") {
+  const kv = await getKv();
+  const e = lc(email);
+  if (blocked) { await kv.set(`blocked:${e}`, { at: new Date().toISOString(), reason }); await kv.sadd("blocked_index", e); }
+  else { await kv.del(`blocked:${e}`); }
+  return blocked;
+}
+export async function isBlocked(email) {
+  const kv = await getKv();
+  return !!(await kv.get(`blocked:${lc(email)}`));
+}
+
+// Per-customer summary for the admin Customers tab.
+export async function listCustomers() {
+  const kv = await getKv();
+  const emails = await kv.smembers("customers_index");
+  const out = [];
+  for (const e of emails) {
+    const rows = await listUnlocks(e);
+    const unlocks = rows.filter((r) => r.kind === "unlock");
+    const pdfs = rows.filter((r) => r.kind === "pdf");
+    const [blocked, fair] = await Promise.all([kv.get(`blocked:${e}`), fairUseStatus(e)]);
+    out.push({
+      email: e,
+      unlocks: unlocks.length, pdfs: pdfs.length,
+      distinct_areas: new Set(unlocks.map((r) => r.areaKey).filter(Boolean)).size,
+      today: fair.day, this_month: fair.month, limits: fair.limits, override: fair.override,
+      last_seen: rows[0]?.at || null, last_ip: rows.find((r) => r.ip)?.ip || null,
+      tier: rows.find((r) => r.tier)?.tier || null,
+      blocked: blocked ? { at: blocked.at, reason: blocked.reason } : null,
+    });
+  }
+  return out.sort((a, b) => String(b.last_seen).localeCompare(String(a.last_seen)));
+}
+
 // ── Monthly unlock metering (enforces capped subscription allowances) ─────────
 // Tracks the DISTINCT areas a subscriber unlocks in a calendar month so we can
 // enforce plan allowances (Starter 5 / Plus 10 / Unlimited ∞). Re-opening an

@@ -82,6 +82,24 @@ export async function adminAffiliates(action, opts = {}) {
   }));
 }
 
+// Audit: tell the server a PDF was downloaded (best-effort, never blocks the UI).
+export async function logPdfDownload(email, area) {
+  if (!email) return;
+  try {
+    await fetch("/api/result", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ event: "pdf", email, area }) });
+  } catch { /* ignore */ }
+}
+
+// Admin: customers, usage, block list, fair-use limits.
+export async function adminCustomers(action, opts = {}) {
+  const t = encodeURIComponent(adminToken());
+  if (action === "list")     return asJson(await fetch(`/api/admin?action=customers&token=${t}`));
+  if (action === "customer") return asJson(await fetch(`/api/admin?action=customer&email=${encodeURIComponent(opts.email)}&token=${t}`));
+  return asJson(await fetch(`/api/admin?action=${action}&token=${t}`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(opts),
+  }));
+}
+
 export async function getResult(params) {
   const qs = new URLSearchParams(params).toString();
   return asJson(await fetch(`/api/result?${qs}`));

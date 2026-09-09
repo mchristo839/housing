@@ -164,11 +164,15 @@ export async function generateReport(result) {
   const nLocal = (result.local || []).length, nReg = (result.regional || []).length, nNat = (result.national || []).length;
   const total = nLocal + nReg + nNat;
   const dateStr = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+  // Watermark: every copy names its licensee, so a leaked list is traceable.
+  const licensee = result.email ? `Licensed to ${result.email}` : "Preview copy — not licensed";
+  const watermark = `${licensee}  ·  ${dateStr}  ·  For the licensee's own business use only. Not for resale, redistribution or bulk export.`;
 
   const content = [
     { text: "Find a Housing Provider", color: ACCENT, bold: true, fontSize: 11 },
     { text: `Provider report — ${council}`, style: "h1", margin: [0, 2, 0, 2] },
-    { text: `${(result.postcode || "").toUpperCase()}  ·  ${result.region || "England"}  ·  ${total} providers  ·  ${dateStr}`, fontSize: 9, color: MUTED, margin: [0, 0, 0, 6] },
+    { text: `${(result.postcode || "").toUpperCase()}  ·  ${result.region || "England"}  ·  ${total} providers  ·  ${dateStr}`, fontSize: 9, color: MUTED, margin: [0, 0, 0, 2] },
+    { text: watermark, fontSize: 7.5, color: MUTED, margin: [0, 0, 0, 6] },
     { text: `This report lists care and housing providers covering ${council}, broken down by the level at which they hold contracts: Local (a contract with ${council}), Regional (active across ${region}) and National (UK-wide). Within each level they are grouped by type — housing associations, asylum & homelessness, and supported living by who they support.`, fontSize: 9.5, color: SLATE, margin: [0, 0, 0, 4], lineHeight: 1.35 },
     { text: `Local ${nLocal}  ·  Regional ${nReg}  ·  National ${nNat}`, fontSize: 9, bold: true, color: ACCENT, margin: [0, 2, 0, 0] },
     ...lhaBlock(result.lha),
@@ -189,11 +193,16 @@ export async function generateReport(result) {
     styles: { h1: { fontSize: 19, bold: true, color: SLATE }, h2: { fontSize: 13, bold: true, color: SLATE } },
     defaultStyle: { fontSize: 9.5, color: SLATE, lineHeight: 1.2 },
     footer: (page, count) => ({
-      columns: [
-        { text: "findahousingprovider.co.uk — independent directory. Verify provider status before any agreement.", fontSize: 7, color: MUTED, margin: [40, 0, 0, 0] },
-        { text: `${page} / ${count}`, alignment: "right", fontSize: 7, color: MUTED, margin: [0, 0, 40, 0] },
+      stack: [
+        {
+          columns: [
+            { text: "findahousingprovider.co.uk — independent directory. Verify provider status before any agreement.", fontSize: 7, color: MUTED, margin: [40, 0, 0, 0] },
+            { text: `${page} / ${count}`, alignment: "right", fontSize: 7, color: MUTED, margin: [0, 0, 40, 0] },
+          ],
+        },
+        { text: licensee + "  ·  " + dateStr, fontSize: 6.5, color: MUTED, margin: [40, 2, 40, 0] },
       ],
-      margin: [0, 16, 0, 0],
+      margin: [0, 12, 0, 0],
     }),
   };
 
