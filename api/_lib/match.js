@@ -121,11 +121,23 @@ export const SINGLE_POSTCODE_PRICE = {
 export async function resolvePostcode(raw) {
   const clean = String(raw || "").trim().toUpperCase().replace(/\s+/g, "");
   if (!clean) { const e = new Error("empty"); e.code = "notfound"; throw e; }
+  const notfound = () => { const e = new Error("notfound"); e.code = "notfound"; throw e; };
+  // Outward code only (e.g. "M1", "SW1A"): the first half fixes the area, so
+  // look up the outcode's centre and reverse-geocode to a real postcode there.
+  if (/^[A-Z]{1,2}\d[A-Z\d]?$/.test(clean)) {
+    const o = await fetch(`https://api.postcodes.io/outcodes/${encodeURIComponent(clean)}`);
+    const oj = await o.json().catch(() => ({}));
+    if (!o.ok || oj.status !== 200 || !oj.result) notfound();
+    const { longitude, latitude } = oj.result;
+    const r = await fetch(`https://api.postcodes.io/postcodes?lon=${longitude}&lat=${latitude}&limit=1&radius=2000`);
+    const rj = await r.json().catch(() => ({}));
+    const hit = rj.result && rj.result[0];
+    if (!r.ok || !hit) notfound();
+    return { ...hit, postcode: clean, outcode: clean, partial: true };
+  }
   const res = await fetch(`https://api.postcodes.io/postcodes/${encodeURIComponent(clean)}`);
   const json = await res.json().catch(() => ({}));
-  if (!res.ok || json.status !== 200 || !json.result) {
-    const e = new Error("notfound"); e.code = "notfound"; throw e;
-  }
+  if (!res.ok || json.status !== 200 || !json.result) notfound();
   return json.result;
 }
 

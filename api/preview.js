@@ -4,7 +4,7 @@
 //   Free sample: 3 full provider entries for the area, the rest as anonymised
 //   stubs, plus pricing. One per business email AND one per mobile, ever;
 //   a small daily cap per IP stops throwaway identities.
-import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, previewOf, priceForCount, SINGLE_POSTCODE_PRICE, MONTHLY_PLANS } from "./_lib/match.js";
+import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, previewOf, SINGLE_POSTCODE_PRICE, MONTHLY_PLANS } from "./_lib/match.js";
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
 import { claimSample } from "./_lib/db.js";
 import { notifyLead } from "./_lib/alerts.js";
@@ -91,7 +91,6 @@ export default async function handler(req, res) {
         area, council: m.council, countyName: m.countyName, region: m.region, postcode: m.postcode, total: m.total,
         visible, hidden,
         pricing: {
-          oneOff: priceForCount(m.total),
           singlePostcode: pc ? SINGLE_POSTCODE_PRICE : null,
           monthly: MONTHLY_PLANS,
         },
