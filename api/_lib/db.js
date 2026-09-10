@@ -271,6 +271,36 @@ export async function listCustomers() {
   return out.sort((a, b) => String(b.last_seen).localeCompare(String(a.last_seen)));
 }
 
+// ── Free sample leads (one per email AND one per phone, ever) ────────────────
+//   sample:<id>              → { id, name, email, phone, area, scope, ip, ua, at }
+//   samples_index            → set of ids
+//   sample_email:<email>     → id      sample_phone:<phoneKey> → id
+//   sample_ip:<ip>:<day>     → set of ids (daily cap per IP against throwaway identities)
+export const SAMPLE_IP_DAILY = 3;
+export async function claimSample({ name, email, phone, phoneKey, area, scope, ip, ua }) {
+  const kv = await getKv();
+  const e = lc(email);
+  const [byEmail, byPhone] = await Promise.all([kv.get(`sample_email:${e}`), kv.get(`sample_phone:${phoneKey}`)]);
+  if (byEmail || byPhone) return { ok: false, reason: "already_used" };
+  const ipKey = ip ? `sample_ip:${ip}:${dayKey()}` : null;
+  if (ipKey && (await kv.smembers(ipKey)).length >= SAMPLE_IP_DAILY) return { ok: false, reason: "ip_limit" };
+  const id = `${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const row = { id, name: String(name).slice(0, 80), email: e, phone, area, scope, ip, ua: ua ? String(ua).slice(0, 160) : null, at: new Date().toISOString() };
+  await kv.set(`sample:${id}`, row);
+  await kv.sadd("samples_index", id);
+  await kv.set(`sample_email:${e}`, id);
+  await kv.set(`sample_phone:${phoneKey}`, id);
+  if (ipKey) await kv.sadd(ipKey, id);
+  return { ok: true, row };
+}
+export async function listSamples() {
+  const kv = await getKv();
+  const ids = await kv.smembers("samples_index");
+  const rows = [];
+  for (const id of ids) { const r = await kv.get(`sample:${id}`); if (r) rows.push(r); }
+  return rows.sort((a, b) => b.at.localeCompare(a.at));
+}
+
 // ── Monthly unlock metering (enforces capped subscription allowances) ─────────
 // Tracks the DISTINCT areas a subscriber unlocks in a calendar month so we can
 // enforce plan allowances (Starter 5 / Plus 10 / Unlimited ∞). Re-opening an

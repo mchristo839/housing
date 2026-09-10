@@ -82,6 +82,14 @@ export async function adminAffiliates(action, opts = {}) {
   }));
 }
 
+// Free sample: 3 full providers + anonymised rest, in exchange for lead details.
+export async function requestSample(scope, { name, email, phone }) {
+  return asJson(await fetch("/api/preview", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...scope, name, email, phone }),
+  }));
+}
+
 // Audit: tell the server a PDF was downloaded (best-effort, never blocks the UI).
 export async function logPdfDownload(email, area) {
   if (!email) return;

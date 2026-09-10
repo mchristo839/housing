@@ -7,7 +7,7 @@
 // the ADMIN_USERS env var, e.g. "mario:pass1,paul:pass2") or the legacy
 // ADMIN_TOKEN env var.
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
-import { listSignups, listSales, recordSale, listCustomers, listUnlocks, setBlocked, setFairUseOverride, fairUseStatus } from "./_lib/db.js";
+import { listSignups, listSales, recordSale, listCustomers, listUnlocks, setBlocked, setFairUseOverride, fairUseStatus, listSamples } from "./_lib/db.js";
 import { getStripe, listPaidSessions } from "./_lib/billing.js";
 import { verifyCredentials, createAdminSession, verifyAdminToken } from "./_lib/adminAuth.js";
 
@@ -62,12 +62,13 @@ export default async function handler(req, res) {
     if (q.action === "overview") {
       let sync = null;
       try { sync = await syncSalesFromStripe(); } catch (e) { sync = { error: String(e.message || e) }; }
-      const [signups, sales] = await Promise.all([listSignups(), listSales()]);
+      const [signups, sales, leads] = await Promise.all([listSignups(), listSales(), listSamples()]);
       const revenue_pence = sales.reduce((s, r) => s + (r.amount_pence || 0), 0);
       return sendJson(res, 200, {
         username: who,
         signups: { count: signups.length, rows: signups },
         sales: { count: sales.length, revenue_pence, rows: sales, sync },
+        leads: { count: leads.length, rows: leads },
       });
     }
     // ── Customers: usage, block list, fair-use overrides ─────────────────────

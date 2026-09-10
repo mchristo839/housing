@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, requestSample, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -618,6 +618,8 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you need (fair use: up to 30 new areas a day). Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
 
+              <FreeSample scope={_scope} scopeLabel={scopeLabel} total={total} council={council} />
+
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
 
               {showEmail ? (
@@ -641,6 +643,66 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
         </div>
       </div>
     </main>
+  );
+}
+
+/* ── Free sample: 3 providers in full, the rest hidden, for lead details ─── */
+function FreeSample({ scope, scopeLabel, total, council }) {
+  const [f, setF] = useState({ name: "", email: "", phone: "" });
+  const [busy, setBusy] = useState(false);
+  const [done, setDone] = useState(null);   // sample payload after download
+  const [err, setErr] = useState("");
+  const set = (k) => (e) => setF({ ...f, [k]: e.target.value });
+  const n = Math.min(3, total);
+
+  async function submit(e) {
+    e?.preventDefault();
+    setErr("");
+    if (f.name.trim().length < 2) { setErr("Please enter your name."); return; }
+    if (!f.email.includes("@")) { setErr("Please enter your business email address."); return; }
+    if (f.phone.replace(/\D/g, "").length < 10) { setErr("Please enter your mobile number."); return; }
+    setBusy(true);
+    try {
+      const sample = await requestSample(scope || {}, { name: f.name.trim(), email: f.email.trim(), phone: f.phone.trim() });
+      const { generateSamplePdf } = await import("./pdf.js");
+      await generateSamplePdf(sample);
+      setDone(sample);
+    } catch (e2) {
+      setErr({
+        business_email_required: "Please use your business email address — personal addresses like Gmail, Hotmail or Yahoo aren't accepted for the free sample.",
+        invalid_mobile: "That doesn't look like a UK mobile number. Please check and try again.",
+        invalid_name: "Please enter your name.",
+        already_used: "You've already had your free sample. Unlock the full list above to see every provider.",
+        ip_limit: "Free samples are limited to a few per day. Unlock the full list above to see every provider.",
+        nothing_to_sample: "There are no providers to sample for this area.",
+      }[e2.code] || "Couldn't create your sample right now. Please try again in a moment.");
+    }
+    setBusy(false);
+  }
+
+  if (done) {
+    return (
+      <div className="notify-card notify-done">
+        <b>✓ Your free sample has downloaded</b>
+        <p>{n} of the {total} providers covering <b>{council}</b>, with full contact details — the rest are listed with their details hidden. To see every provider, pick an option above. If the download didn't start, <button className="clear" style={{ display: "inline", padding: 0 }} onClick={async () => { const { generateSamplePdf } = await import("./pdf.js"); await generateSamplePdf(done); }}>download it again</button>.</p>
+      </div>
+    );
+  }
+  return (
+    <form className="notify-card sample-card" onSubmit={submit}>
+      <b>Not ready to buy? See {n} of the {total} providers free</b>
+      <p className="notify-sub">Get a sample PDF for <b>{scopeLabel}</b> with {n} providers shown in full — names, contracts, what they support and verified contact details — and the other {Math.max(0, total - n)} listed with their details hidden. One free sample per business.</p>
+      <div className="sample-fields">
+        <input value={f.name} onChange={set("name")} placeholder="Your name" autoComplete="name" required />
+        <input type="email" value={f.email} onChange={set("email")} placeholder="Business email (no Gmail/Hotmail)" autoComplete="email" required />
+        <input type="tel" value={f.phone} onChange={set("phone")} placeholder="UK mobile, e.g. 07700 900123" autoComplete="tel" required />
+        <button type="submit" className="btn btn-secondary" disabled={busy}>
+          {busy ? <span className="spinner" /> : "Download free sample"}
+        </button>
+      </div>
+      <p className="notify-consent">By requesting a sample you agree we may contact you by email or phone about the directory. Unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.</p>
+      {err ? <p className="searcherror">{err}</p> : null}
+    </form>
   );
 }
 
@@ -1148,7 +1210,7 @@ function AdminDashboard({ session, onLogout }) {
       </div>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["customers", "Customers"], ["signups", "Signups"]].map(([k, label]) => (
+        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["customers", "Customers"], ["leads", `Leads${overview.leads?.count ? ` (${overview.leads.count})` : ""}`], ["signups", "Signups"]].map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={tab === k ? adminBtn : adminBtnGhost}>{label}</button>
         ))}
       </div>
@@ -1156,6 +1218,7 @@ function AdminDashboard({ session, onLogout }) {
       {tab === "affiliates" && <AdminAffiliates affiliates={affiliates} reload={load} />}
       {tab === "sales" && <AdminSales rows={overview.sales.rows} />}
       {tab === "customers" && <AdminCustomers />}
+      {tab === "leads" && <AdminLeads rows={overview.leads?.rows || []} />}
       {tab === "signups" && <AdminSignups rows={overview.signups.rows} />}
     </main>
   );
@@ -1416,6 +1479,25 @@ function AdminCustomers() {
         </AdminTable>
       )}
     </>
+  );
+}
+
+// Free-sample leads: everyone who traded their details for a 3-provider sample.
+function AdminLeads({ rows }) {
+  if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No free-sample leads yet. Each one downloaded a 3-provider sample and saw the prices — worth a follow-up call.</p>;
+  return (
+    <AdminTable headers={["When", "Name", "Business email", "Mobile", "Area searched", "IP"]}>
+      {rows.map((r) => (
+        <tr key={r.id} style={{ borderBottom: "1px solid var(--border, #eef0f5)" }}>
+          <td style={cellTd}>{r.at.slice(0, 16).replace("T", " ")}</td>
+          <td style={cellTd}>{r.name}</td>
+          <td style={cellTd}><a href={`mailto:${r.email}`}>{r.email}</a></td>
+          <td style={cellTd}><a href={`tel:${r.phone}`}>{r.phone}</a></td>
+          <td style={cellTd}>{r.area}</td>
+          <td style={{ ...cellTd, color: "var(--muted, #888)" }}>{r.ip || "—"}</td>
+        </tr>
+      ))}
+    </AdminTable>
   );
 }
 
