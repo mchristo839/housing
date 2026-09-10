@@ -71,6 +71,17 @@ export default function App() {
     if (ref) affiliateRef.set(ref);
   }, []);
 
+  // Deep link from emails: /?postcode=M1, /?council=Redbridge, /?county=Kent
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const pc = q.get("postcode"), cl = q.get("council"), ct = q.get("county");
+    if (!pc && !cl && !ct) return;
+    if (pc) { setSearchMode("postcode"); setPostcode(pc); search(pc); }
+    else if (cl) { setSearchMode("borough"); setBorough(cl); search(cl); }
+    else { setSearchMode("county"); setCounty(ct); search(ct); }
+    window.history.replaceState({}, "", "/");
+  }, []);
+
   useEffect(() => {
     const onPop = () => { setRoute(window.location.pathname); };
     window.addEventListener("popstate", onPop);
@@ -604,7 +615,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
           ) : (
             <>
               <h1 className="paywall-count"><b className="tnum">{total}</b> {total === 1 ? "provider" : "providers"} cover {council}</h1>
-              <p className="sub">Subscribe to unlock every provider here — and every other area you search — with names, contracts and verified direct contacts.</p>
+              <p className="sub">See 3 of them free — no card needed. Then get every provider here, with names, contracts and verified direct contacts, as a one-off or on a plan.</p>
 
               <ul className="paywall-tiers">
                 <li><b className="tnum">{tiers.local}</b> hold a contract with {council}</li>
@@ -613,20 +624,23 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 <li><b className="tnum">{tiers.national}</b> UK-wide providers</li>
               </ul>
 
+              <FreeSample scope={_scope} scopeLabel={scopeLabel} total={total} council={council} />
+
               {scope.postcode ? (
                 <div className="paywall-monthly paywall-plans">
-                  <button className="pm-card pm-hero" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
-                    <span className="pm-flag">Introductory offer</span>
+                  <div className="pm-divider"><span>Or get every provider now</span></div>
+                  <button className="pm-card pm-oneoff" onClick={() => onSubscribe("single_postcode")} disabled={busy}>
+                    <span className="pm-flag">One-off · no subscription</span>
                     <span className="pm-name">{SP.name || "This postcode"}</span>
                     <span className="pm-price"><b>{SP.label}</b></span>
-                    <span className="pm-blurb">{SP.blurb} — one-time download for {scope.postcode}, no subscription</span>
+                    <span className="pm-blurb">All {total} providers covering {scope.postcode} — pay once, download once</span>
                   </button>
                 </div>
               ) : null}
 
-              {/* Subscription-only — choose a plan to unlock. */}
+              {/* Subscriptions */}
               <div className="paywall-monthly paywall-plans">
-                <div className="pm-divider"><span>{scope.postcode ? "Or subscribe for ongoing access" : "Choose a plan to unlock"}</span></div>
+                <div className="pm-divider"><span>{scope.postcode ? "Or subscribe for ongoing access" : "Or get every provider now"}</span></div>
                 <div className="pm-grid">
                   <button className="pm-card" onClick={() => onSubscribe("monthly_starter")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_starter?.name || "Starter"}</span>
@@ -641,8 +655,6 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                 </div>
                 <p className="paywall-fine">Starter unlocks 5 areas a month, Unlimited as many as you need (fair use: up to 30 new areas a day). Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
-
-              <FreeSample scope={_scope} scopeLabel={scopeLabel} total={total} council={council} />
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
 
@@ -708,20 +720,21 @@ function FreeSample({ scope, scopeLabel, total, council }) {
     return (
       <div className="notify-card notify-done">
         <b>✓ Your free sample has downloaded</b>
-        <p>{n} of the {total} providers covering <b>{council}</b>, with full contact details. To see every provider, pick an option above. If the download didn't start, <button className="clear" style={{ display: "inline", padding: 0 }} onClick={async () => { const { generateSamplePdf } = await import("./pdf.js"); await generateSamplePdf(done); }}>download it again</button>.</p>
+        <p>{n} of the {total} providers covering <b>{council}</b>, with full contact details. We've also emailed you a link to come back and get the full list. To see every provider now, pick an option below. If the download didn't start, <button className="clear" style={{ display: "inline", padding: 0 }} onClick={async () => { const { generateSamplePdf } = await import("./pdf.js"); await generateSamplePdf(done); }}>download it again</button>.</p>
       </div>
     );
   }
   return (
-    <form className="notify-card sample-card" onSubmit={submit}>
-      <b>Not ready to buy? See {n} of the {total} providers free</b>
-      <p className="notify-sub">Get a sample PDF for <b>{scopeLabel}</b> with {n} providers shown in full — names, contracts, what they support and verified contact details. One free sample per business.</p>
+    <form className="notify-card sample-card sample-lead" onSubmit={submit}>
+      <span className="pm-flag">Free · no card needed</span>
+      <b>Get {n} of the {total} providers free</b>
+      <p className="notify-sub">A sample PDF for <b>{scopeLabel}</b> with {n} providers in full — names, contracts, what they support and verified contact details. One free sample per business.</p>
       <div className="sample-fields">
         <input value={f.name} onChange={set("name")} placeholder="Your name" autoComplete="name" required />
         <input type="email" value={f.email} onChange={set("email")} placeholder="Email (you@yourcompany.co.uk)" autoComplete="email" required />
         <input type="tel" value={f.phone} onChange={set("phone")} placeholder="UK mobile, e.g. 07700 900123" autoComplete="tel" required />
-        <button type="submit" className="btn btn-secondary" disabled={busy}>
-          {busy ? <span className="spinner" /> : "Download free sample"}
+        <button type="submit" className="btn btn-blue" disabled={busy}>
+          {busy ? <span className="spinner" /> : "Get my free sample"}
         </button>
       </div>
       <p className="notify-consent">By requesting a sample you agree to be added to our marketing list and that we may contact you by phone, WhatsApp or email. Unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.</p>

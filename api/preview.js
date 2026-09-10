@@ -7,7 +7,7 @@
 import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, previewOf, SINGLE_POSTCODE_PRICE, OFFERED_PLANS } from "./_lib/match.js";
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
 import { claimSample } from "./_lib/db.js";
-import { notifyLead } from "./_lib/alerts.js";
+import { notifyLead, sendSampleFollowUp } from "./_lib/alerts.js";
 
 const SAMPLE_SIZE = 3;
 
@@ -83,17 +83,16 @@ export default async function handler(req, res) {
 
       const claim = await claimSample({ name, email, phone: "+" + phoneKey, phoneKey, area, scope: { postcode: pc, council, county }, ip, ua: req.headers["user-agent"] });
       if (!claim.ok) return sendJson(res, claim.reason === "ip_limit" ? 429 : 409, { error: claim.reason });
+      const pricing = { singlePostcode: pc ? SINGLE_POSTCODE_PRICE : null, monthly: OFFERED_PLANS };
       try { await notifyLead(claim.row); } catch {}
+      try { await sendSampleFollowUp({ name, email }, { area, council: m.council, total: m.total, scope: { postcode: pc, council, county }, pricing }); } catch {}
 
       const { visible, hidden } = pickSample(m);
       return sendJson(res, 200, {
         ok: true,
         area, council: m.council, countyName: m.countyName, region: m.region, postcode: m.postcode, total: m.total,
         visible, hidden,
-        pricing: {
-          singlePostcode: pc ? SINGLE_POSTCODE_PRICE : null,
-          monthly: OFFERED_PLANS,
-        },
+        pricing,
         lead: { name, email },
       });
     }
