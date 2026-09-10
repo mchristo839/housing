@@ -857,6 +857,29 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .v2home .sec-head{ max-width:64ch; }
 .v2home .sec-head p.lead{ margin-top:16px; }
 
+/* free sample promo */
+.v2home .sample-hero{ display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
+.v2home .sample-steps{ list-style:none; counter-reset:step; margin:32px 0 28px; padding:0; display:grid; gap:14px; }
+.v2home .sample-steps li{ counter-increment:step; position:relative; padding-left:44px; }
+.v2home .sample-steps li::before{ content:counter(step); position:absolute; left:0; top:0; width:30px; height:30px; border-radius:50%;
+  background:var(--blue); color:#fff; font-weight:900; font-size:.85rem; display:grid; place-items:center; }
+.v2home .sample-steps b{ display:block; font-weight:800; }
+.v2home .sample-steps span{ color:var(--muted); font-size:.95rem; }
+.v2home .sample-preview{ background:#fff; border:1px solid var(--line-2); border-radius:16px; padding:18px 20px 12px;
+  box-shadow:0 30px 60px -36px rgba(45,107,255,.45); font-size:.84rem; position:relative; overflow:hidden; }
+.v2home .sp-head{ display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); padding-bottom:10px; margin-bottom:6px; }
+.v2home .sp-title{ font-weight:800; color:var(--ink); }
+.v2home .sp-tag{ font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--blue); background:var(--blue-soft); padding:3px 9px; border-radius:999px; }
+.v2home .sp-row{ display:grid; gap:2px; padding:9px 0; border-bottom:1px solid var(--line); }
+.v2home .sp-row b{ font-weight:800; color:var(--ink); }
+.v2home .sp-row span{ color:var(--muted); }
+.v2home .sp-row em{ font-style:normal; color:var(--blue); font-weight:600; }
+.v2home .sp-lock{ margin:10px -20px 0; padding:8px 20px; background:var(--blue-deep); color:#fff; font-weight:700; font-size:.8rem; }
+.v2home .sp-redacted{ filter:blur(3px); user-select:none; opacity:.55; }
+.v2home .sp-redacted b, .v2home .sp-redacted span, .v2home .sp-redacted em{ color:var(--muted); text-decoration:line-through; }
+@media (prefers-reduced-motion: reduce){ .v2home .sample-preview{ box-shadow:none; } }
+@media(max-width:860px){ .v2home .sample-hero{ grid-template-columns:1fr; gap:28px; } }
+
 /* listing fields */
 .v2home .fields{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:44px; }
 .v2home .field{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; transition:transform .2s var(--ease), box-shadow .2s, border-color .2s; }

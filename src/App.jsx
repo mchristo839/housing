@@ -385,7 +385,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
       <section className="hero">
         <div className="wrap">
           <span className="hero-eyebrow"><span className="dot" /> Online directory · England · Updated monthly</span>
-          <span className="hero-promo">New <b>£26.99</b> — download one postcode's list, no subscription</span>
+          <span className="hero-promo"><b>Free</b> — see 3 providers in your area now, no card needed</span>
           <h1 className="display">The directory of <span className="mark">supported living</span> &amp; social housing providers.</h1>
           <p className="lead">Search any postcode, borough or county and see every commissioned provider operating there — the commissioners behind them, the care they deliver, and verified contact details. England-wide, refreshed every month.</p>
 
@@ -413,7 +413,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
             </div>
             {error ? <p className="searcherror">{error}</p> : (
               <p className="hint">
-                Free to search — see how many providers are listed before you pay. Try{" "}
+                Free to search — then get 3 providers in full, free, before you pay a penny. Try{" "}
                 {examples[searchMode].map((ex, i) => (
                   <span key={ex}><span className="ex" onClick={() => onSearch(ex)}>{ex}</span>{i < examples[searchMode].length - 1 ? " · " : ""}</span>
                 ))}
@@ -432,6 +432,45 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="stat"><b className="tnum">Monthly</b><span>data refresh</span></div>
         </div>
       </div>
+
+      {/* ────── Free sample ────── */}
+      <section className="pad alt" id="free-sample">
+        <div className="wrap">
+          <div className="sample-hero">
+            <div>
+              <div className="sec-head">
+                <span className="eyebrow">Try it free</span>
+                <h2>See 3 providers in your area free &mdash; before you pay a penny.</h2>
+                <p className="lead">Search any postcode, borough or county. Tell us your business email and mobile, and download a sample report on the spot: 3 providers in full &mdash; names, contracts, what they support and verified contact details &mdash; with the rest redacted. No card, no subscription. One free sample per business.</p>
+              </div>
+              <ol className="sample-steps">
+                <li><b>Search your area</b><span>See how many providers cover it.</span></li>
+                <li><b>Enter your business details</b><span>Name, business email and UK mobile.</span></li>
+                <li><b>Download your sample PDF</b><span>3 providers in full, the rest redacted.</span></li>
+                <li><b>Unlock the rest when you&rsquo;re ready</b><span>From &pound;26.99 one-off, or subscribe.</span></li>
+              </ol>
+              <button className="btn btn-blue" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Get my free sample &rarr;</button>
+            </div>
+
+            <div className="sample-preview" aria-hidden="true">
+              <div className="sp-head"><span className="sp-title">Provider report &mdash; free sample</span><span className="sp-tag">3 of 34 shown</span></div>
+              {[
+                ["Supported-living provider", "Contract with your council · Learning disabilities, Autism", "01xx xxx xxxx · enquiries@provider.co.uk · provider.co.uk"],
+                ["Housing association", "County-wide · General needs & supported housing", "01xx xxx xxxx · lettings@association.org.uk"],
+                ["Regional care operator", "Active across the region · Mental health, Step-down", "07xxx xxx xxx · referrals@operator.com"],
+              ].map(([n, d, c]) => (
+                <div className="sp-row" key={n}><b>{n}</b><span>{d}</span><em>{c}</em></div>
+              ))}
+              <div className="sp-lock">
+                <span>31 more providers &mdash; unlock to reveal</span>
+              </div>
+              {[1, 2, 3, 4].map((i) => (
+                <div className="sp-row sp-redacted" key={i}><b>Provider name hidden</b><span>Supported living · Older people, Physical disabilities</span><em>Contact details hidden</em></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ────── What's in every listing ────── */}
       <section className="pad" id="listing">
@@ -472,7 +511,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="sec-head" style={{ textAlign: "center", margin: "0 auto" }}>
             <span className="eyebrow">Pricing</span>
             <h2>Buy once, or subscribe.</h2>
-            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Search the directory free — you only pay to reveal the names and verified contacts. Just need one postcode? Buy that list once from £26.99. Searching regularly? Subscribe to unlock as many areas as you like. Cancel anytime.</p>
+            <p className="lead" style={{ marginLeft: "auto", marginRight: "auto" }}>Search the directory free and try 3 providers free first — you only pay to reveal the rest. Just need one postcode? Buy that list once from £26.99. Searching regularly? Subscribe to unlock as many areas as you like. Cancel anytime.</p>
           </div>
           <div className="prices">
             <div className="price-card hero">
@@ -531,6 +570,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="sec-head"><span className="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
           <div className="faq">
             <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
+            <details><summary>Can I try it before I pay?</summary><p>Yes. Search your area, enter your name, business email and UK mobile, and download a free sample report: 3 providers in full &mdash; names, contracts, what they support and verified contact details &mdash; with the remaining providers listed but redacted. No card needed. One free sample per business; after that you unlock the full list from &pound;26.99 or subscribe.</p></details>
             <details><summary>How much does it cost?</summary><p>Searching the directory is free — you see how many providers cover an area before paying anything. To unlock the names and verified contacts you subscribe: Starter £49/month (5 area unlocks), Plus £99/month (10 unlocks), or Unlimited £199/month. Re-opening an area you've already unlocked that month doesn't count against your allowance. Cancel anytime.</p></details>
             <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
             <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
@@ -541,9 +581,9 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
       {/* ────── Closing CTA ────── */}
       <section className="closing">
         <div className="wrap">
-          <h2>Search the directory free.</h2>
-          <p>Enter any postcode, borough or county and see how many providers are listed before you pay a penny.</p>
-          <button className="btn btn-blue btn-lg" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Search the directory →</button>
+          <h2>Find providers in your area &mdash; free, right now.</h2>
+          <p>Enter any postcode, borough or county, see how many providers are listed, and download 3 of them in full without paying a penny.</p>
+          <button className="btn btn-blue btn-lg" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Get my free sample &rarr;</button>
         </div>
       </section>
     </main>
