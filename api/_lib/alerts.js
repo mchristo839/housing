@@ -69,7 +69,11 @@ export async function notifyLead(lead) {
       ${rows.map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${esc(k)}</td><td style="padding:4px 0"><b>${esc(v)}</b></td></tr>`).join("")}
     </table>
     <p style="font-family:sans-serif;color:#666;font-size:13px;margin-top:16px">They downloaded a 3-provider sample and saw the prices. All leads: <a href="https://www.findahousingprovider.co.uk/admin">findahousingprovider.co.uk/admin</a> → Leads.</p>`;
-  try { return await sendEmail({ to, subject, html }); } catch (e) { console.error("lead alert failed:", e); return { ok: false }; }
+  try {
+    const r = await sendEmail({ to, subject, html });
+    if (!r.ok) console.error("lead alert not sent:", r);
+    return r;
+  } catch (e) { console.error("lead alert failed:", e); return { ok: false }; }
 }
 
 // Owner alert when an account is unlocking areas unusually fast.
@@ -83,7 +87,11 @@ export async function notifyFairUse(email, { day, month, limits, area, tier, ip 
       ${rows.map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${esc(k)}</td><td style="padding:4px 0"><b>${esc(v)}</b></td></tr>`).join("")}
     </table>
     <p style="font-family:sans-serif;color:#666;font-size:13px;margin-top:16px">They will be stopped automatically at the daily cap. To cut them off now or raise their limit: <a href="https://www.findahousingprovider.co.uk/admin">findahousingprovider.co.uk/admin</a> → Customers.</p>`;
-  try { return await sendEmail({ to, subject, html }); } catch (e) { console.error("fair-use alert failed:", e); return { ok: false }; }
+  try {
+    const r = await sendEmail({ to, subject, html });
+    if (!r.ok) console.error("fair-use alert not sent:", r);
+    return r;
+  } catch (e) { console.error("fair-use alert failed:", e); return { ok: false }; }
 }
 
 // sale: a row from recordSale(); extra: { area, renewal }
