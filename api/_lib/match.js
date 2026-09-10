@@ -499,7 +499,7 @@ export function previewOf(m) {
     bands: PRICE_BANDS.map(({ amount, label, range }) => ({ amount, label, range })),
     pricing: PRICING,                // legacy flat tiers (back-compat)
     singlePostcode: SINGLE_POSTCODE_PRICE,
-    monthly: MONTHLY_PLANS,
+    monthly: OFFERED_PLANS,
     subscription: SUBSCRIPTION,
     lha: m.lha,
   };
