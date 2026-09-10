@@ -327,14 +327,19 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .upsell-body span { font-size: .85rem; color: var(--muted); line-height: 1.45; }
 
 /* Notification signup — follows the burgundy system (green is reserved for Verified badges) */
+.clear { display: block; margin-top: var(--s12); background: none; border: 0; padding: 0;
+  color: var(--accent); font: inherit; font-size: .88rem; font-weight: 600; text-align: left; cursor: pointer; }
+.clear:hover { color: var(--accent-hover); text-decoration: underline; }
+.clear:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
 .notify-card { margin-top: 24px; padding: 18px 20px; background: var(--surface-alt); border: 1px solid var(--border); border-radius: 12px; }
 .notify-card > b { display: block; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
 .notify-card p b { color: var(--text); font-weight: 700; }
 .notify-card .notify-sub { font-size: .9rem; color: var(--muted); line-height: 1.5; margin-bottom: 12px; }
-.notify-input { display: flex; gap: 8px; }
-.notify-input input { flex: 1; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; }
+.notify-input { display: flex; flex-wrap: wrap; gap: 8px; }
+.notify-input input { flex: 1 1 180px; min-width: 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; }
 .notify-input input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
-.notify-input button { white-space: nowrap; }
+.notify-input button { white-space: nowrap; flex: 0 0 auto; }
 .notify-consent { font-size: .76rem; color: var(--muted); margin: 8px 0 0; line-height: 1.5; }
 .notify-consent a { color: var(--accent); text-decoration: underline; }
 .notify-done b { color: var(--accent); }
@@ -351,7 +356,7 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .sample-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .sample-fields input { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; min-width: 0; }
 .sample-fields input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
-.sample-fields button { white-space: nowrap; }
+.sample-fields button { white-space: nowrap; min-width: 0; }
 @media (max-width: 560px) { .sample-fields { grid-template-columns: 1fr; } }
 .notify-done p { color: var(--muted); font-size: .92rem; margin: 0; }
 
@@ -672,8 +677,9 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .pm-hero .pm-price { font-size: 1.4rem; }
 .pm-hero .pm-price b { font-size: 2rem; color: #fff; }
 .pm-hero .pm-blurb { color: rgba(255,255,255,.9); font-size: .88rem; }
-.email-unlock { display: flex; gap: var(--s8); margin-top: var(--s16); }
-.email-unlock input { flex: 1; border: 1px solid var(--border); border-radius: var(--r); padding: var(--s12) var(--s16); font: inherit; font-size: .95rem; }
+.email-unlock { display: flex; flex-wrap: wrap; gap: var(--s8); margin-top: var(--s16); }
+.email-unlock input { flex: 1 1 180px; min-width: 0; border: 1px solid var(--border); border-radius: var(--r); padding: var(--s12) var(--s16); font: inherit; font-size: .95rem; }
+.email-unlock button { flex: 0 0 auto; white-space: nowrap; }
 .email-unlock input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
 .lha-teaser { margin-top: var(--s24); background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: var(--s32); }
 .lha-teaser h3 { margin: 0 0 2px; font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; }

@@ -6,20 +6,19 @@ import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
 import { TEMPLATES } from "./message.js";
 
 // Owner-only developer-unlock visibility.
-// Sticky: once you visit any URL with ?dev=1 the flag is set in localStorage
-// and the button stays available on that browser until you clear it.
+// Only for the current page load, and only with ?dev=1 in the URL — never
+// stored, so it can never surface on a customer's browser later.
 // Pair with ALLOW_DEV_UNLOCK=1 on the server for the unlock to actually work.
-function showDevUnlock() {
+const DEV_UNLOCK = (() => {
   if (import.meta.env.DEV) return true;
   if (typeof window === "undefined") return false;
   try {
-    if (new URLSearchParams(window.location.search).has("dev")) {
-      window.localStorage.setItem("fhp_dev", "1");
-      return true;
-    }
-    return window.localStorage.getItem("fhp_dev") === "1";
+    // Clear the old sticky flag: it used to persist on a real customer's phone.
+    window.localStorage.removeItem("fhp_dev");
+    return new URLSearchParams(window.location.search).has("dev");
   } catch { return false; }
-}
+})();
+function showDevUnlock() { return DEV_UNLOCK; }
 
 const HOME_META = {
   title: "Find a Housing Provider — Connect with Supported Living & Social Housing providers in your area",
