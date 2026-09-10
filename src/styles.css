@@ -824,7 +824,13 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
   background:var(--blue); padding:8px 16px; border-radius:999px; margin:0 0 26px; margin-left:10px;
   font-size:.78rem; font-weight:700; letter-spacing:.01em; }
 .v2home .hero-promo b{ font-weight:900; }
-@media(max-width:560px){ .v2home .hero-promo{ margin-left:0; margin-top:10px; display:flex; width:fit-content; } }
+@media(max-width:560px){
+  .v2home .hero-eyebrow{ font-size:.72rem; padding:6px 12px; gap:8px; margin-bottom:10px; white-space:nowrap; }
+  .v2home .hero-eyebrow .long{ display:none; }
+  .v2home .hero-promo .long{ display:none; }
+  .v2home .hero-promo{ margin:0 0 22px; display:inline-flex; width:fit-content; max-width:100%; box-sizing:border-box;
+    padding:8px 13px; font-size:.72rem; letter-spacing:0; white-space:nowrap; gap:5px; }
+}
 .v2home .hero .lead{ max-width:56ch; margin-top:24px; }
 
 /* search */

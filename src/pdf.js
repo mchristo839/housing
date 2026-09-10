@@ -217,7 +217,6 @@ export async function generateSamplePdf(sample) {
 
   const priceLines = [];
   if (pricing.singlePostcode) priceLines.push({ text: [{ text: `${pricing.singlePostcode.label}  `, bold: true, color: ACCENT }, `one-off — every provider covering ${areaLabel} (this list, in full)`] });
-  if (pricing.oneOff) priceLines.push({ text: [{ text: `${pricing.oneOff.label}  `, bold: true, color: ACCENT }, `one-off — all ${total} providers in ${council}${pricing.singlePostcode ? " (council-wide)" : ""}`] });
   for (const k of ["monthly_starter", "monthly_plus", "monthly_full"]) {
     const p = pricing.monthly?.[k];
     if (p) priceLines.push({ text: [{ text: `${p.label}/month  `, bold: true, color: ACCENT }, `${p.name} — ${p.blurb.toLowerCase()}`] });
@@ -228,7 +227,7 @@ export async function generateSamplePdf(sample) {
     { text: `Free sample — ${council}`, style: "h1", margin: [0, 2, 0, 2] },
     { text: `${areaLabel}  ·  ${region || "England"}  ·  ${total} providers  ·  ${dateStr}`, fontSize: 9, color: MUTED, margin: [0, 0, 0, 2] },
     { text: `${licensee}  ·  ${dateStr}  ·  Sample only — not for redistribution.`, fontSize: 7.5, color: MUTED, margin: [0, 0, 0, 8] },
-    { text: `We hold ${total} supported-living and social-housing providers covering ${council}. Here are ${visible.length} of them in full — names, contract level, what they support and verified contact details — so you can see exactly what you get. The remaining ${hidden.length} are listed below with their details hidden.`, fontSize: 9.5, color: SLATE, lineHeight: 1.35, margin: [0, 0, 0, 6] },
+    { text: `We hold ${total} supported-living and social-housing providers covering ${council}. Here are ${visible.length} of them in full — names, contract level, what they support and verified contact details — so you can see exactly what you get. The remaining ${hidden.length} are listed below by type and coverage — unlock the full list to get their names and contacts.`, fontSize: 9.5, color: SLATE, lineHeight: 1.35, margin: [0, 0, 0, 6] },
 
     { text: `${visible.length} of ${total} providers — full details`, style: "h2", margin: [0, 14, 0, 4] },
     ...visible.map((p) => ({

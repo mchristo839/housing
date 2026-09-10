@@ -366,12 +366,12 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
   useEffect(() => { inputRef.current?.focus(); }, [searchMode]);
 
   const placeholders = {
-    postcode: "e.g. M1 1AE or SW1A 1AA",
+    postcode: "e.g. M1 or SW1A 1AA",
     borough:  "e.g. Camden, Brighton, Manchester",
     county:   "e.g. Kent, Greater Manchester, Devon",
   };
   const examples = {
-    postcode: ["M1 1AE", "LS1 4AW", "SW1A 1AA", "DE1 1AA"],
+    postcode: ["M1", "LS1", "SW1A 1AA", "DE1 1AA"],
     borough:  ["Camden", "Brighton and Hove", "Manchester", "Leeds"],
     county:   ["Kent", "Hertfordshire", "Greater Manchester", "West Yorkshire"],
   };
@@ -384,8 +384,8 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
     <main className="v2home" id="top">
       <section className="hero">
         <div className="wrap">
-          <span className="hero-eyebrow"><span className="dot" /> Online directory · England · Updated monthly</span>
-          <span className="hero-promo"><b>Free</b> — see 3 providers in your area now, no card needed</span>
+          <span className="hero-eyebrow"><span className="dot" /> Online directory · England<span className="long"> · Updated monthly</span></span>
+          <span className="hero-promo"><b>Free</b> — <span className="long">see </span>3 providers in your area, no card needed</span>
           <h1 className="display">The directory of <span className="mark">supported living</span> &amp; social housing providers.</h1>
           <p className="lead">Search any postcode, borough or county and see every commissioned provider operating there — the commissioners behind them, the care they deliver, and verified contact details. England-wide, refreshed every month.</p>
 
@@ -441,12 +441,12 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
               <div className="sec-head">
                 <span className="eyebrow">Try it free</span>
                 <h2>See 3 providers in your area free &mdash; before you pay a penny.</h2>
-                <p className="lead">Search any postcode, borough or county. Tell us your business email and mobile, and download a sample report on the spot: 3 providers in full &mdash; names, contracts, what they support and verified contact details &mdash; with the rest redacted. No card, no subscription. One free sample per business.</p>
+                <p className="lead">Search any postcode, borough or county, tell us your name, email and mobile, and download a sample report on the spot: 3 providers in full &mdash; names, contracts, what they support and verified contact details &mdash; plus a count of how many more cover your area. No card, no subscription. One free sample per business.</p>
               </div>
               <ol className="sample-steps">
                 <li><b>Search your area</b><span>See how many providers cover it.</span></li>
-                <li><b>Enter your business details</b><span>Name, business email and UK mobile.</span></li>
-                <li><b>Download your sample PDF</b><span>3 providers in full, the rest redacted.</span></li>
+                <li><b>Enter your details</b><span>Name, email and UK mobile.</span></li>
+                <li><b>Download your sample PDF</b><span>3 providers in full, plus the prices to get them all.</span></li>
                 <li><b>Unlock the rest when you&rsquo;re ready</b><span>From &pound;26.99 one-off, or subscribe.</span></li>
               </ol>
               <button className="btn btn-blue" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Get my free sample &rarr;</button>
@@ -570,7 +570,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="sec-head"><span className="eyebrow">FAQ</span><h2>Straight answers.</h2></div>
           <div className="faq">
             <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
-            <details><summary>Can I try it before I pay?</summary><p>Yes. Search your area, enter your name, business email and UK mobile, and download a free sample report: 3 providers in full &mdash; names, contracts, what they support and verified contact details &mdash; with the remaining providers listed but redacted. No card needed. One free sample per business; after that you unlock the full list from &pound;26.99 or subscribe.</p></details>
+            <details><summary>Can I try it before I pay?</summary><p>Yes. Search your area, enter your name, email and UK mobile, and download a free sample report: 3 providers in full &mdash; names, contracts, what they support and verified contact details. No card needed. One free sample per business. By requesting one you join our marketing list and we may contact you by phone, WhatsApp or email; you can unsubscribe at any time. After that you unlock the full list from &pound;26.99 or subscribe.</p></details>
             <details><summary>How much does it cost?</summary><p>Searching the directory is free — you see how many providers cover an area before paying anything. To unlock the names and verified contacts you subscribe: Starter £49/month (5 area unlocks), Plus £99/month (10 unlocks), or Unlimited £199/month. Re-opening an area you've already unlocked that month doesn't count against your allowance. Cancel anytime.</p></details>
             <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
             <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
@@ -699,7 +699,7 @@ function FreeSample({ scope, scopeLabel, total, council }) {
     e?.preventDefault();
     setErr("");
     if (f.name.trim().length < 2) { setErr("Please enter your name."); return; }
-    if (!f.email.includes("@")) { setErr("Please enter your business email address."); return; }
+    if (!f.email.includes("@")) { setErr("Please enter your email address."); return; }
     if (f.phone.replace(/\D/g, "").length < 10) { setErr("Please enter your mobile number."); return; }
     setBusy(true);
     try {
@@ -724,23 +724,23 @@ function FreeSample({ scope, scopeLabel, total, council }) {
     return (
       <div className="notify-card notify-done">
         <b>✓ Your free sample has downloaded</b>
-        <p>{n} of the {total} providers covering <b>{council}</b>, with full contact details — the rest are listed with their details hidden. To see every provider, pick an option above. If the download didn't start, <button className="clear" style={{ display: "inline", padding: 0 }} onClick={async () => { const { generateSamplePdf } = await import("./pdf.js"); await generateSamplePdf(done); }}>download it again</button>.</p>
+        <p>{n} of the {total} providers covering <b>{council}</b>, with full contact details. To see every provider, pick an option above. If the download didn't start, <button className="clear" style={{ display: "inline", padding: 0 }} onClick={async () => { const { generateSamplePdf } = await import("./pdf.js"); await generateSamplePdf(done); }}>download it again</button>.</p>
       </div>
     );
   }
   return (
     <form className="notify-card sample-card" onSubmit={submit}>
       <b>Not ready to buy? See {n} of the {total} providers free</b>
-      <p className="notify-sub">Get a sample PDF for <b>{scopeLabel}</b> with {n} providers shown in full — names, contracts, what they support and verified contact details — and the other {Math.max(0, total - n)} listed with their details hidden. One free sample per business.</p>
+      <p className="notify-sub">Get a sample PDF for <b>{scopeLabel}</b> with {n} providers shown in full — names, contracts, what they support and verified contact details. One free sample per business.</p>
       <div className="sample-fields">
         <input value={f.name} onChange={set("name")} placeholder="Your name" autoComplete="name" required />
-        <input type="email" value={f.email} onChange={set("email")} placeholder="Business email (no Gmail/Hotmail)" autoComplete="email" required />
+        <input type="email" value={f.email} onChange={set("email")} placeholder="Email (you@yourcompany.co.uk)" autoComplete="email" required />
         <input type="tel" value={f.phone} onChange={set("phone")} placeholder="UK mobile, e.g. 07700 900123" autoComplete="tel" required />
         <button type="submit" className="btn btn-secondary" disabled={busy}>
           {busy ? <span className="spinner" /> : "Download free sample"}
         </button>
       </div>
-      <p className="notify-consent">By requesting a sample you agree we may contact you by email or phone about the directory. Unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.</p>
+      <p className="notify-consent">By requesting a sample you agree to be added to our marketing list and that we may contact you by phone, WhatsApp or email. Unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.</p>
       {err ? <p className="searcherror">{err}</p> : null}
     </form>
   );
