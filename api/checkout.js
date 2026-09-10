@@ -63,6 +63,7 @@ export default async function handler(req, res) {
 
     // ── recurring monthly subscription ──────────────────────────────────────
     const plan = MONTHLY_PLANS[tierKey];
+    if (plan && plan.retired) return res.status(400).json({ error: "plan_unavailable" });
     if (plan) {
       // Already subscribed? Send them to Stripe's upgrade flow on their existing
       // subscription instead of selling a second one alongside it.

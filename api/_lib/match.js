@@ -78,6 +78,7 @@ export const MONTHLY_PLANS = {
     interval: "month",
     label: "£99",
     name: "Plus",
+    retired: true, // no longer sold — kept so existing subscribers keep working
     blurb: "10 area unlocks every month",
     description: "Unlock up to 10 areas every month — postcode, borough or county. Cancel anytime.",
     searches: 10,
@@ -94,6 +95,8 @@ export const MONTHLY_PLANS = {
     searches: Infinity,
   },
 };
+// Plans customers can currently buy.
+export const OFFERED_PLANS = Object.fromEntries(Object.entries(MONTHLY_PLANS).filter(([, p]) => !p.retired));
 // Monthly allowance (distinct area unlocks per calendar month) by plan key.
 export const PLAN_ALLOWANCE = {
   monthly_starter: 5,

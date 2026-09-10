@@ -217,7 +217,7 @@ export async function generateSamplePdf(sample) {
 
   const priceLines = [];
   if (pricing.singlePostcode) priceLines.push({ text: [{ text: `${pricing.singlePostcode.label}  `, bold: true, color: ACCENT }, `one-off — every provider covering ${areaLabel} (this list, in full)`] });
-  for (const k of ["monthly_starter", "monthly_plus", "monthly_full"]) {
+  for (const k of ["monthly_starter", "monthly_full"]) {
     const p = pricing.monthly?.[k];
     if (p) priceLines.push({ text: [{ text: `${p.label}/month  `, bold: true, color: ACCENT }, `${p.name} — ${p.blurb.toLowerCase()}`] });
   }

@@ -210,7 +210,7 @@ export default function App() {
       setNotice(e.code === "no_purchase"
         ? "No active purchase found for that email. Buy below, or check the email you used."
         : e.code === "monthly_limit"
-        ? "You've used all your area unlocks for this month. Pick Plus or Unlimited below to upgrade your existing subscription (prorated) — or your allowance resets next month."
+        ? "You've used all your area unlocks for this month. Pick Unlimited below to upgrade your existing subscription (prorated) — or your allowance resets next month."
         : e.code === "area_not_purchased"
         ? "That email's one-off purchase covers a different area. Buy this area below, or subscribe to unlock any area."
         : e.code === "fair_use_limit"
@@ -539,17 +539,6 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
             </div>
             <div className="price-card feat">
               <span className="ribbon">Most popular</span>
-              <span className="tag">Monthly · Plus</span>
-              <div className="amt">£99<span className="amt-per">/mo</span></div>
-              <div className="per">10 area unlocks a month</div>
-              <ul>
-                <li>Unlock up to 10 areas / month</li>
-                <li>Postcode, borough or county</li>
-                <li>Cancel anytime</li>
-              </ul>
-              <button className="btn btn-blue" onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); inputRef.current?.focus(); }}>Start monthly</button>
-            </div>
-            <div className="price-card">
               <span className="tag">Monthly · Unlimited</span>
               <div className="amt">£199<span className="amt-per">/mo</span></div>
               <div className="per">unlimited unlocks</div>
@@ -571,7 +560,7 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
           <div className="faq">
             <details><summary>What is the directory?</summary><p>A searchable, England-wide directory of the supported-living and social-housing providers commissioned in each area — with the commissioners behind them, the care they deliver, and verified contact details. Search by postcode, borough or county.</p></details>
             <details><summary>Can I try it before I pay?</summary><p>Yes. Search your area, enter your name, email and UK mobile, and download a free sample report: 3 providers in full &mdash; names, contracts, what they support and verified contact details. No card needed. One free sample per business. By requesting one you join our marketing list and we may contact you by phone, WhatsApp or email; you can unsubscribe at any time. After that you unlock the full list from &pound;26.99 or subscribe.</p></details>
-            <details><summary>How much does it cost?</summary><p>Searching the directory is free — you see how many providers cover an area before paying anything. To unlock the names and verified contacts you subscribe: Starter £49/month (5 area unlocks), Plus £99/month (10 unlocks), or Unlimited £199/month. Re-opening an area you've already unlocked that month doesn't count against your allowance. Cancel anytime.</p></details>
+            <details><summary>How much does it cost?</summary><p>Searching the directory is free — you see how many providers cover an area before paying anything. To unlock the names and verified contacts you subscribe: Starter £49/month (5 area unlocks) or Unlimited £199/month. Re-opening an area you've already unlocked that month doesn't count against your allowance. Cancel anytime.</p></details>
             <details><summary>How current is the data?</summary><p>The directory is refreshed monthly and contacts are verified against live websites and Companies House before listing.</p></details>
             <details><summary>Do you broker deals between me and a provider?</summary><p>No — we&rsquo;re a directory and research tool, not a broker. We show you who&rsquo;s active and how to reach them; any agreement is between you and the provider.</p></details>
           </div>
@@ -638,16 +627,11 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
               {/* Subscription-only — choose a plan to unlock. */}
               <div className="paywall-monthly paywall-plans">
                 <div className="pm-divider"><span>{scope.postcode ? "Or subscribe for ongoing access" : "Choose a plan to unlock"}</span></div>
-                <div className="pm-grid pm-grid-3">
+                <div className="pm-grid">
                   <button className="pm-card" onClick={() => onSubscribe("monthly_starter")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_starter?.name || "Starter"}</span>
                     <span className="pm-price"><b>{P.monthly?.monthly_starter?.label || "£49"}</b>/mo</span>
                     <span className="pm-blurb">{P.monthly?.monthly_starter?.blurb || "5 area unlocks every month"}</span>
-                  </button>
-                  <button className="pm-card" onClick={() => onSubscribe("monthly_plus")} disabled={busy}>
-                    <span className="pm-name">{P.monthly?.monthly_plus?.name || "Plus"}</span>
-                    <span className="pm-price"><b>{P.monthly?.monthly_plus?.label || "£99"}</b>/mo</span>
-                    <span className="pm-blurb">{P.monthly?.monthly_plus?.blurb || "10 area unlocks every month"}</span>
                   </button>
                   <button className="pm-card" onClick={() => onSubscribe("monthly_full")} disabled={busy}>
                     <span className="pm-name">{P.monthly?.monthly_full?.name || "Unlimited"}</span>
@@ -655,7 +639,7 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
                     <span className="pm-blurb">{P.monthly?.monthly_full?.blurb || "Unlimited area unlocks"}</span>
                   </button>
                 </div>
-                <p className="paywall-fine">Starter unlocks 5 areas a month, Plus 10, Unlimited as many as you need (fair use: up to 30 new areas a day). Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
+                <p className="paywall-fine">Starter unlocks 5 areas a month, Unlimited as many as you need (fair use: up to 30 new areas a day). Re-opening an area you've already unlocked this month doesn't count. Cancel anytime. Secure billing via Stripe. By subscribing you agree to our <a href="/terms" onClick={(e) => { e.preventDefault(); window.history.pushState({}, "", "/terms"); window.dispatchEvent(new PopStateEvent("popstate")); }}>Terms &amp; Conditions</a>.</p>
               </div>
 
               <FreeSample scope={_scope} scopeLabel={scopeLabel} total={total} council={council} />
@@ -940,7 +924,7 @@ function Terms() {
           <ul>
             <li>Searching the directory and seeing provider counts is free.</li>
             <li>To unlock provider names and contact details you take a monthly subscription:
-              <b> Starter</b> (£49/month, unlock up to 5 areas per month), <b>Plus</b> (£99/month, up to 10 areas)
+              <b> Starter</b> (£49/month, unlock up to 5 areas per month)
               or <b>Unlimited</b> (£199/month, no limit). An &ldquo;area&rdquo; is one postcode, borough or county you
               unlock. Re-opening an area you have already unlocked in the same monthly billing period does not
               count again toward your allowance.</li>
