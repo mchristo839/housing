@@ -328,7 +328,8 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 
 /* Notification signup — follows the burgundy system (green is reserved for Verified badges) */
 .notify-card { margin-top: 24px; padding: 18px 20px; background: var(--surface-alt); border: 1px solid var(--border); border-radius: 12px; }
-.notify-card b { display: block; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+.notify-card > b { display: block; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+.notify-card p b { color: var(--text); font-weight: 700; }
 .notify-card .notify-sub { font-size: .9rem; color: var(--muted); line-height: 1.5; margin-bottom: 12px; }
 .notify-input { display: flex; gap: 8px; }
 .notify-input input { flex: 1; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; }
@@ -337,6 +338,12 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .notify-consent { font-size: .76rem; color: var(--muted); margin: 8px 0 0; line-height: 1.5; }
 .notify-consent a { color: var(--accent); text-decoration: underline; }
 .notify-done b { color: var(--accent); }
+.sample-card { border-color: var(--accent); background: var(--accent-soft); }
+.sample-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.sample-fields input { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; min-width: 0; }
+.sample-fields input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.sample-fields button { white-space: nowrap; }
+@media (max-width: 560px) { .sample-fields { grid-template-columns: 1fr; } }
 .notify-done p { color: var(--muted); font-size: .92rem; margin: 0; }
 
 /* ── Hero bullets + built-for line ─────────────────────────────────────── */

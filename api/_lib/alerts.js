@@ -58,6 +58,20 @@ export async function sendCustomerReceipt(sale, { area = "", renewal = false, re
   }
 }
 
+// Owner alert for a new free-sample lead (name, business email, mobile, area).
+export async function notifyLead(lead) {
+  const to = process.env.SALE_ALERT_EMAILS || FROM_EMAIL;
+  const subject = `New lead: ${lead.name} (${lead.email}) — sample for ${lead.area}`;
+  const rows = [["Name", lead.name], ["Business email", lead.email], ["Mobile", lead.phone], ["Area searched", lead.area], ["When", new Date(lead.at).toUTCString()], ["IP", lead.ip || "—"]];
+  const html = `
+    <h2 style="font-family:sans-serif;margin:0 0 12px">New free-sample lead</h2>
+    <table style="font-family:sans-serif;border-collapse:collapse">
+      ${rows.map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${esc(k)}</td><td style="padding:4px 0"><b>${esc(v)}</b></td></tr>`).join("")}
+    </table>
+    <p style="font-family:sans-serif;color:#666;font-size:13px;margin-top:16px">They downloaded a 3-provider sample and saw the prices. All leads: <a href="https://www.findahousingprovider.co.uk/admin">findahousingprovider.co.uk/admin</a> → Leads.</p>`;
+  try { return await sendEmail({ to, subject, html }); } catch (e) { console.error("lead alert failed:", e); return { ok: false }; }
+}
+
 // Owner alert when an account is unlocking areas unusually fast.
 export async function notifyFairUse(email, { day, month, limits, area, tier, ip }) {
   const to = process.env.SALE_ALERT_EMAILS || FROM_EMAIL;
