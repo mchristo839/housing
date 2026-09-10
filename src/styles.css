@@ -339,6 +339,15 @@ h1.display .em { color: var(--accent); font-style: normal; font-weight: 900; }
 .notify-consent a { color: var(--accent); text-decoration: underline; }
 .notify-done b { color: var(--accent); }
 .sample-card { border-color: var(--accent); background: var(--accent-soft); }
+.sample-lead { position: relative; margin-top: 20px; padding: 22px 20px 18px; border-width: 2px; background: #fff;
+  box-shadow: 0 10px 30px -14px rgba(45,107,255,.4); }
+.sample-lead .pm-flag { top: -11px; left: 16px; right: auto; }
+.sample-lead > b { font-size: 1.2rem; letter-spacing: -.01em; color: var(--text); }
+.sample-lead .sample-fields button { background: var(--accent); color: #fff; border-color: var(--accent); }
+.sample-lead .sample-fields button:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.sample-lead .sample-fields button:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+.pm-oneoff { border-color: var(--accent); }
+.pm-oneoff .pm-price b { font-size: 1.8rem; }
 .sample-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .sample-fields input { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; background: #fff; min-width: 0; }
 .sample-fields input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }

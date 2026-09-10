@@ -58,6 +58,37 @@ export async function sendCustomerReceipt(sale, { area = "", renewal = false, re
   }
 }
 
+// Customer follow-up after a free sample: recap + link to buy the full list.
+export async function sendSampleFollowUp(lead, { area, council, total, scope = {}, pricing = {} }) {
+  if (!lead.email) return { ok: false, error: "no email" };
+  const site = "https://www.findahousingprovider.co.uk";
+  const qs = scope.postcode ? `postcode=${encodeURIComponent(scope.postcode)}` : scope.council ? `council=${encodeURIComponent(scope.council)}` : `county=${encodeURIComponent(scope.county || area)}`;
+  const link = `${site}/?${qs}`;
+  const first = String(lead.name || "").trim().split(/\s+/)[0] || "there";
+  const sp = pricing.singlePostcode;
+  const plans = Object.values(pricing.monthly || {});
+  const options = [
+    sp && `<li><b>${esc(sp.label)} one-off</b> — every provider covering ${esc(area)}, pay once and download once. No subscription.</li>`,
+    plans.length && `<li><b>Subscribe from ${esc(plans[0].label)}/month</b> — ${plans.map((p) => `${esc(p.name)} ${esc(p.label)}/mo (${esc(p.blurb.toLowerCase())})`).join(", ")}. Cancel anytime.</li>`,
+  ].filter(Boolean).join("");
+  const subject = `Your free sample for ${area} — get all ${total} providers`;
+  const html = `
+    <div style="font-family:sans-serif;max-width:560px;color:#1a1a1a">
+      <h2 style="margin:0 0 12px">Thanks, ${esc(first)} — here's how to get the rest</h2>
+      <p style="margin:0 0 16px;line-height:1.5">Your free sample shows 3 of the <b>${esc(String(total))}</b> supported-living and social-housing providers covering <b>${esc(council || area)}</b>, with names, contracts and verified contacts.</p>
+      <p style="margin:0 0 8px;line-height:1.5">To get all ${esc(String(total))}:</p>
+      <ul style="margin:0 0 20px;padding-left:20px;line-height:1.6">${options}</ul>
+      <p style="margin:0 0 24px"><a href="${esc(link)}" style="display:inline-block;background:#2D6BFF;color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:8px">Get the full list for ${esc(area)} →</a></p>
+      <p style="margin:0 0 16px;line-height:1.5;color:#666;font-size:13px">Or search any postcode, borough or county at <a href="${esc(site)}">findahousingprovider.co.uk</a>. Reply to this email if you have any questions.</p>
+      <p style="color:#666;font-size:13px;margin:0">Find a Housing Provider · <a href="mailto:${esc(FROM_EMAIL)}">${esc(FROM_EMAIL)}</a></p>
+    </div>`;
+  try {
+    const r = await sendEmail({ to: lead.email, subject, html });
+    if (!r.ok) console.error("sample follow-up not sent:", r);
+    return r;
+  } catch (e) { console.error("sample follow-up failed:", e); return { ok: false, error: String(e.message || e) }; }
+}
+
 // Owner alert for a new free-sample lead (name, business email, mobile, area).
 export async function notifyLead(lead) {
   const to = process.env.SALE_ALERT_EMAILS || FROM_EMAIL;
