@@ -5,20 +5,21 @@ import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
 import { TEMPLATES } from "./message.js";
 
-// Owner-only developer-unlock visibility.
-// Only for the current page load, and only with ?dev=1 in the URL — never
-// stored, so it can never surface on a customer's browser later.
-// Pair with ALLOW_DEV_UNLOCK=1 on the server for the unlock to actually work.
-const DEV_UNLOCK = (() => {
-  if (import.meta.env.DEV) return true;
-  if (typeof window === "undefined") return false;
+// Owner-only developer unlock. The secret comes from ?dev=<key> in the URL and
+// is held for this page load only — never stored, so it cannot surface on a
+// customer's browser later. The button is only a shortcut to the request: the
+// server checks the key against DEV_UNLOCK_KEY and refuses anything else.
+const DEV_KEY = (() => {
+  if (typeof window === "undefined") return import.meta.env.DEV ? "1" : "";
   try {
     // Clear the old sticky flag: it used to persist on a real customer's phone.
     window.localStorage.removeItem("fhp_dev");
-    return new URLSearchParams(window.location.search).has("dev");
-  } catch { return false; }
+    const k = new URLSearchParams(window.location.search).get("dev");
+    if (k) return k;
+  } catch { /* storage blocked — fall through */ }
+  return import.meta.env.DEV ? "1" : "";
 })();
-function showDevUnlock() { return DEV_UNLOCK; }
+function showDevUnlock() { return !!DEV_KEY; }
 
 const HOME_META = {
   title: "Find a Housing Provider — Connect with Supported Living & Social Housing providers in your area",
@@ -240,8 +241,8 @@ export default function App() {
   }
 
   async function devUnlock() {
-    try { setUnlocked(await getResult({ dev: "1", postcode: preview.postcode })); }
-    catch { setNotice("Dev unlock failed (set ALLOW_DEV_UNLOCK=1)."); }
+    try { setUnlocked(await getResult({ dev: DEV_KEY, postcode: preview.postcode })); }
+    catch { setNotice("Dev unlock refused — check the key in ?dev= matches DEV_UNLOCK_KEY."); }
   }
 
   const isHome = route === "/" || (!guide && !["/about", "/result", "/privacy", "/terms", "/affiliate", "/affiliate/portal", "/admin"].includes(route));

@@ -13,6 +13,21 @@ import { getStripe, sessionIsActive, purchasesForEmail } from "./_lib/billing.js
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
 import { savePurchase, recordSale, meterUnlock, areaKeyOf, claimOnce, recordUnlock, fairUseStatus, isBlocked, FAIR_USE } from "./_lib/db.js";
 import { notifySale, notifyFairUse } from "./_lib/alerts.js";
+import { timingSafeEqual } from "node:crypto";
+
+// The owner's testing unlock. Only ever true for an exact match against a
+// DEV_UNLOCK_KEY of at least 24 characters, compared in constant time so the
+// key can't be recovered by timing. Local development uses ALLOW_DEV_UNLOCK=1,
+// an env var that is never set in production.
+function devKeyMatches(supplied) {
+  const key = process.env.DEV_UNLOCK_KEY || "";
+  if (key.length >= 24) {
+    const a = Buffer.from(supplied), b = Buffer.from(key);
+    if (a.length !== b.length) return false;
+    try { return timingSafeEqual(a, b); } catch { return false; }
+  }
+  return process.env.ALLOW_DEV_UNLOCK === "1" && supplied === "1";
+}
 
 // One-off buyers may only re-open the area they paid for: the same postcode,
 // or any postcode in the same council, or the council/county they bought.
@@ -81,9 +96,16 @@ export default async function handler(req, res) {
 
     const q = getQuery(req);
 
-    // dev-only unlock for local preview
-    if (q.dev === "1" && process.env.ALLOW_DEV_UNLOCK === "1" && (q.postcode || q.council || q.county)) {
-      return sendJson(res, 200, { ...(await listFor(q)), subscribed: true, dev: true });
+    // Owner-only unlock, for testing the live site without paying.
+    // Requires the exact DEV_UNLOCK_KEY secret in ?dev=. Without that env var
+    // set there is no way in, and a wrong key is indistinguishable from an
+    // ordinary unauthenticated request.
+    if (q.dev != null && (q.postcode || q.council || q.county)) {
+      if (devKeyMatches(String(q.dev))) {
+        console.warn("dev unlock used:", { area: q.postcode || q.council || q.county, ip: String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || null, at: new Date().toISOString() });
+        return sendJson(res, 200, { ...(await listFor(q)), subscribed: true, dev: true });
+      }
+      return sendJson(res, 403, { error: "forbidden" });
     }
 
     const stripe = getStripe();
