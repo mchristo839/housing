@@ -138,6 +138,7 @@ Currently in the database:
 | Variable | What |
 |---|---|
 | `SALE_ALERT_EMAILS` | Comma-separated addresses that get an email on every sale and renewal (needs `BREVO_API_KEY`). Defaults to `hello@findahousingprovider.co.uk` if unset. |
+| `DEV_UNLOCK_KEY` | Owner-only testing unlock. Set it to a random secret of at least 24 characters, then open `https://www.findahousingprovider.co.uk/?dev=YOUR_KEY`, search an area, and a "Developer: unlock without paying" button appears. Leave it unset and there is no way in at all. A wrong or missing key is refused with 403, a key under 24 characters is ignored, and every successful use is written to the runtime logs. The key is never stored in the browser, so the button disappears on the next visit without it. |
 
 The `/admin` dashboard shows sales, revenue, signups and the affiliate book;
 from it you can create affiliates, edit their commission % and cap, copy their
