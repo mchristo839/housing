@@ -114,7 +114,7 @@ export async function getResult(params) {
 }
 
 export async function unlockByEmail(email, scope) {
-  return getResult({ email, ...scope });
+  return getResult({ email, token: savedToken.get(), ...scope });
 }
 
 // Notification signup — saves email + areas to /api/notify-signup
@@ -133,6 +133,35 @@ export async function openPortal(email) {
 }
 
 // remember the subscriber's email so future searches unlock automatically
+// The token proving this browser owns the saved address. Minted at checkout, or
+// by entering the code we email. Without it the saved address unlocks nothing.
+export const savedToken = {
+  get() { try { return window.localStorage.getItem("fahp_token") || ""; } catch { return ""; } },
+  set(v) { try { v ? window.localStorage.setItem("fahp_token", v) : window.localStorage.removeItem("fahp_token"); } catch {} },
+  clear() { this.set(""); },
+};
+
+// Ask for a six-digit code to be emailed. Always resolves: the server replies
+// the same way whether or not the address is a customer.
+export async function requestUnlockCode(email) {
+  const res = await fetch("/api/result", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ event: "request_code", email }),
+  });
+  return asJson(res);
+}
+
+// Exchange a correct code for the token.
+export async function verifyUnlockCode(email, code) {
+  const res = await fetch("/api/result", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ event: "verify_code", email, code }),
+  });
+  const out = await asJson(res);
+  if (out.token) savedToken.set(out.token);
+  return out;
+}
+
 export const savedEmail = {
   get() { try { return localStorage.getItem("fahp_email") || ""; } catch { return ""; } },
   set(e) { try { if (e) localStorage.setItem("fahp_email", e); } catch { /* ignore */ } },
