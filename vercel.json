@@ -5,9 +5,18 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "functions": {
-    "api/*.js": { "includeFiles": "api/_data/**" }
+    "api/*.js": {
+      "includeFiles": "api/_data/**"
+    },
+    "api/admin.js": {
+      "includeFiles": "api/_data/**",
+      "maxDuration": 60
+    }
   },
   "rewrites": [
-    { "source": "/((?!api/|assets/|.*\\.[a-zA-Z0-9]+$).*)", "destination": "/" }
+    {
+      "source": "/((?!api/|assets/|.*\\.[a-zA-Z0-9]+$).*)",
+      "destination": "/"
+    }
   ]
 }

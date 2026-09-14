@@ -11,6 +11,7 @@ import { getStripe } from "./_lib/billing.js";
 import { getAffiliate, saveCommission, getRenewalCount, incrementRenewalCount } from "./_lib/affiliate.js";
 import { recordSale, claimOnce } from "./_lib/db.js";
 import { notifySale, sendCustomerReceipt } from "./_lib/alerts.js";
+import { syncPurchase, syncCancellation, syncPaymentFailed } from "./_lib/brevo.js";
 
 const areaOf = (md = {}) => md.postcode || md.council || md.county || "";
 
@@ -72,6 +73,16 @@ export default async function handler(req, res) {
       await handleCheckoutSession(stripe, event.data.object);
     } else if (event.type === "invoice.payment_succeeded") {
       await handleInvoice(stripe, event.data.object);
+    } else if (event.type === "customer.subscription.deleted") {
+      // Needs this event type enabled on the Stripe webhook. Moves the contact
+      // to the Cancelled list so a win-back automation can pick them up.
+      const sub = event.data.object;
+      const email = await emailForCustomer(stripe, sub.customer);
+      if (email) { try { await syncCancellation(email); } catch (e) { console.error("brevo syncCancellation:", e); } }
+    } else if (event.type === "invoice.payment_failed") {
+      const inv = event.data.object;
+      const email = inv.customer_email || (await emailForCustomer(stripe, inv.customer));
+      if (email) { try { await syncPaymentFailed(email, { amount_pence: inv.amount_due || 0 }); } catch (e) { console.error("brevo syncPaymentFailed:", e); } }
     }
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
@@ -102,6 +113,7 @@ async function handleCheckoutSession(stripe, session) {
         affiliate_code: affiliate_code || null,
       });
       if (sale.fresh) await notifySale(sale, { area: areaOf(md) });
+      if (sale.fresh) { try { await syncPurchase(sale, { area: areaOf(md) }); } catch (e) { console.error("brevo syncPurchase:", e); } }
       // Customer receipt — once per payment, with Stripe's receipt link if available.
       if (await claimOnce(`receipt:${sale.stripe_id}`)) {
         let receiptUrl = null;
@@ -157,6 +169,7 @@ async function handleInvoice(stripe, invoice) {
     });
     const renewal = invoice.billing_reason === "subscription_cycle";
     if (sale.fresh) await notifySale(sale, { area: areaOf(md), renewal });
+    if (sale.fresh) { try { await syncPurchase(sale, { area: areaOf(md), renewal }); } catch (e) { console.error("brevo syncPurchase:", e); } }
     if (await claimOnce(`receipt:${sale.stripe_id}`)) {
       await sendCustomerReceipt(sale, { area: areaOf(md), renewal, invoiceUrl: invoice.hosted_invoice_url || null, invoicePdf: invoice.invoice_pdf || null });
     }
@@ -187,4 +200,13 @@ async function handleInvoice(stripe, invoice) {
     type,
     month_num: new_count,
   });
+}
+
+
+async function emailForCustomer(stripe, customerId) {
+  if (!customerId) return null;
+  try {
+    const c = await stripe.customers.retrieve(typeof customerId === "string" ? customerId : customerId.id);
+    return c && !c.deleted ? (c.email || null) : null;
+  } catch { return null; }
 }
