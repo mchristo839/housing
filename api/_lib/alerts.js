@@ -59,7 +59,27 @@ export async function sendCustomerReceipt(sale, { area = "", renewal = false, re
 }
 
 // Customer follow-up after a free sample: recap + link to buy the full list.
-export async function sendSampleFollowUp(lead, { area, council, total, scope = {}, pricing = {} }) {
+function providerRows(list) {
+  // The three providers themselves, in the email. The browser download can fail
+  // silently - a blocked download, a closed tab, a phone - and the lead's one
+  // free sample is already spent by then, so the email has to carry the goods.
+  return (list || []).map((p) => {
+    const supports = (p.client_groups || []).join(", ") || (p.sector || []).slice(0, 2).join(", ");
+    const contacts = [
+      p.phone && `<a href="tel:${esc(String(p.phone).replace(/\s/g, ""))}" style="color:#2D6BFF;text-decoration:none">${esc(p.phone)}</a>`,
+      p.email && `<a href="mailto:${esc(p.email)}" style="color:#2D6BFF;text-decoration:none">${esc(p.email)}</a>`,
+      p.website && `<a href="${esc(p.website)}" style="color:#2D6BFF;text-decoration:none">${esc(String(p.website).replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`,
+    ].filter(Boolean).join("<br>");
+    return `
+      <tr><td style="padding:14px 0;border-bottom:1px solid #eee">
+        <div style="font-weight:700;font-size:15px">${esc(p.name)}</div>
+        ${supports ? `<div style="color:#666;font-size:13px;margin-top:2px">${esc(supports)}</div>` : ""}
+        ${contacts ? `<div style="font-size:13px;margin-top:6px;line-height:1.7">${contacts}</div>` : ""}
+      </td></tr>`;
+  }).join("");
+}
+
+export async function sendSampleFollowUp(lead, { area, council, total, scope = {}, pricing = {}, visible = [] }) {
   if (!lead.email) return { ok: false, error: "no email" };
   const site = "https://www.findahousingprovider.co.uk";
   const qs = scope.postcode ? `postcode=${encodeURIComponent(scope.postcode)}` : scope.council ? `council=${encodeURIComponent(scope.council)}` : `county=${encodeURIComponent(scope.county || area)}`;
@@ -75,7 +95,8 @@ export async function sendSampleFollowUp(lead, { area, council, total, scope = {
   const html = `
     <div style="font-family:sans-serif;max-width:560px;color:#1a1a1a">
       <h2 style="margin:0 0 12px">Thanks, ${esc(first)} — here's how to get the rest</h2>
-      <p style="margin:0 0 16px;line-height:1.5">Your free sample shows 3 of the <b>${esc(String(total))}</b> supported-living and social-housing providers covering <b>${esc(council || area)}</b>, with names, contracts and verified contacts.</p>
+      <p style="margin:0 0 16px;line-height:1.5">Here are ${esc(String((visible || []).length))} of the <b>${esc(String(total))}</b> supported-living and social-housing providers covering <b>${esc(council || area)}</b>, free. The same three are in the PDF your browser downloaded.</p>
+      ${(visible || []).length ? `<table style="border-collapse:collapse;width:100%;margin:0 0 20px">${providerRows(visible)}</table>` : ""}
       <p style="margin:0 0 8px;line-height:1.5">To get all ${esc(String(total))}:</p>
       <ul style="margin:0 0 20px;padding-left:20px;line-height:1.6">${options}</ul>
       <p style="margin:0 0 24px"><a href="${esc(link)}" style="display:inline-block;background:#2D6BFF;color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:8px">Get the full list for ${esc(area)} →</a></p>
