@@ -35,12 +35,17 @@ def clean(raw):
     # Keep digits and a leading +; drop extensions and everything after.
     s = re.split(r"(?i)\b(ext|extension|x)\b", s)[0]
     digits = re.sub(r"[^\d+]", "", s)
+    # "+44 (0) 20 3475 9350" keeps the bracketed trunk zero once the brackets
+    # are stripped, so drop it rather than ending up with a leading 00.
+    rest = None
     if digits.startswith("+44"):
-        digits = "0" + digits[3:]
+        rest = digits[3:]
     elif digits.startswith("0044"):
-        digits = "0" + digits[4:]
-    elif digits.startswith("44") and len(digits) == 12:
-        digits = "0" + digits[2:]
+        rest = digits[4:]
+    elif digits.startswith("44") and len(digits) in (12, 13):
+        rest = digits[2:]
+    if rest is not None:
+        digits = "0" + rest.lstrip("0")
     if not digits.startswith("0") or not digits[1:].isdigit():
         return None
     n = len(digits)
