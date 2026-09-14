@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, notifySignup, requestSample, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, savedToken, requestUnlockCode, verifyUnlockCode, notifySignup, requestSample, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -60,6 +60,7 @@ export default function App() {
   const [unlocked, setUnlocked] = useState(null);     // full provider list
   const [checkoutBusy, setCheckoutBusy] = useState(false);
   const [emailBusy, setEmailBusy] = useState(false);
+  const [codeSent, setCodeSent] = useState(false);
   const [addTemplates, setAddTemplates] = useState(false);
   const [notice, setNotice] = useState("");
 
@@ -108,6 +109,7 @@ export default function App() {
     getResult({ session_id: sid })
       .then((full) => {
         if (full.email) savedEmail.set(full.email);
+        if (full.token) savedToken.set(full.token);   // just paid: no need to prove the address
         if (full.needPostcode) { setStatus("idle"); setNotice("subscribed-no-postcode"); navigate("/"); return; }
         setUnlocked(full); setStatus("idle");
       })
@@ -216,8 +218,20 @@ export default function App() {
     try {
       const scope = preview._scope || { postcode: preview.postcode };
       const full = await unlockByEmail(email, scope);
-      savedEmail.set(full.email); setUnlocked(full);
+      savedEmail.set(full.email); setUnlocked(full); setCodeSent(false);
     } catch (e) {
+      // This browser has not proved it owns the address. Email a code.
+      if (e.code === "verification_required") {
+        try {
+          await requestUnlockCode(email);
+          setCodeSent(true);
+          setNotice("");
+        } catch {
+          setNotice("Couldn't send your code just now. Please try again in a moment.");
+        }
+        setEmailBusy(false);
+        return;
+      }
       setNotice(e.code === "no_purchase"
         ? "No active purchase found for that email. Buy below, or check the email you used."
         : e.code === "monthly_limit"
@@ -229,6 +243,27 @@ export default function App() {
         : e.code === "account_blocked"
         ? "This account has been suspended. Please contact hello@findahousingprovider.co.uk."
         : "Couldn't verify that email. Please try again.");
+    }
+    setEmailBusy(false);
+  }
+
+  // Step 2: exchange the emailed code for a token, then open the area.
+  async function submitUnlockCode(email, code) {
+    if (!preview) return;
+    setEmailBusy(true); setNotice("");
+    try {
+      await verifyUnlockCode(email, code);
+      const scope = preview._scope || { postcode: preview.postcode };
+      const full = await unlockByEmail(email, scope);
+      savedEmail.set(full.email); setUnlocked(full); setCodeSent(false);
+    } catch (e) {
+      setNotice(e.code === "code_expired"
+        ? "That code has expired. Enter your email again and we'll send a new one."
+        : e.code === "bad_code"
+        ? "That code wasn't right. Check the email and try again."
+        : e.code === "no_purchase"
+        ? "No active purchase found for that email. Buy below, or check the email you used."
+        : "Couldn't verify that code. Please try again.");
     }
     setEmailBusy(false);
   }
@@ -257,7 +292,7 @@ export default function App() {
         <Verifying status={status} notice={notice} navigate={navigate} />
       ) : isHome && preview ? (
         <SubscribeGate preview={preview} onSubscribe={subscribe} busy={checkoutBusy} notice={notice}
-                 onEmailUnlock={emailUnlock} emailBusy={emailBusy} onDev={devUnlock} onBack={() => setPreview(null)}
+                 onEmailUnlock={emailUnlock} emailBusy={emailBusy} codeSent={codeSent} onSubmitCode={submitUnlockCode} onDev={devUnlock} onBack={() => setPreview(null)}
                  addTemplates={addTemplates} setAddTemplates={setAddTemplates} />
       ) : isHome ? (
         <Home searchMode={searchMode} setSearchMode={setSearchMode}
@@ -591,9 +626,10 @@ function Home({ searchMode, setSearchMode, postcode, setPostcode, borough, setBo
 }
 
 /* ── Subscribe gate (preview → buy a tier / unlock by email) ──────────────── */
-function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emailBusy, onDev, onBack, addTemplates, setAddTemplates }) {
+function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emailBusy, codeSent, onSubmitCode, onDev, onBack, addTemplates, setAddTemplates }) {
   const { council, countyName, region, total, tiers, pricing, monthly, singlePostcode, postcode, _scope } = preview;
   const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
   const [showEmail, setShowEmail] = useState(false);
   const P = { ...(pricing || {}), monthly: monthly || {} };
   const scope = _scope || {};
@@ -658,13 +694,27 @@ function SubscribeGate({ preview, onSubscribe, busy, notice, onEmailUnlock, emai
 
               <NotifySignup scope={_scope} scopeLabel={scopeLabel} />
 
-              {showEmail ? (
+              {showEmail && codeSent ? (
+                <>
+                  <p className="unlock-hint">We've emailed a 6-digit code to <b>{email}</b>. It expires in 10 minutes.</p>
+                  <div className="email-unlock">
+                    <input type="text" inputMode="numeric" autoComplete="one-time-code" maxLength={6}
+                      value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
+                      placeholder="6-digit code" aria-label="6-digit code"
+                      onKeyDown={(e) => e.key === "Enter" && onSubmitCode(email, code)} />
+                    <button className="btn btn-secondary" onClick={() => onSubmitCode(email, code)} disabled={emailBusy || code.length !== 6}>
+                      {emailBusy ? <span className="spinner" /> : "Unlock"}
+                    </button>
+                  </div>
+                  <button className="clear" onClick={() => { setCode(""); onEmailUnlock(email); }} disabled={emailBusy}>Send the code again</button>
+                </>
+              ) : showEmail ? (
                 <div className="email-unlock">
                   <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email on your purchase"
                     onKeyDown={(e) => e.key === "Enter" && onEmailUnlock(email)} />
                   <button className="btn btn-secondary" onClick={() => onEmailUnlock(email)} disabled={emailBusy}>
-                    {emailBusy ? <span className="spinner" /> : "Unlock"}
+                    {emailBusy ? <span className="spinner" /> : "Send code"}
                   </button>
                 </div>
               ) : (

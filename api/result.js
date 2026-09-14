@@ -14,6 +14,7 @@ import { sendJson, getQuery, readBody } from "./_lib/http.js";
 import { savePurchase, recordSale, meterUnlock, areaKeyOf, claimOnce, recordUnlock, fairUseStatus, isBlocked, FAIR_USE } from "./_lib/db.js";
 import { notifySale, notifyFairUse } from "./_lib/alerts.js";
 import { timingSafeEqual } from "node:crypto";
+import { sendCode, checkCode, verifyToken, issueToken } from "./_lib/unlockauth.js";
 
 // The owner's testing unlock. Only ever true for an exact match against a
 // DEV_UNLOCK_KEY of at least 24 characters, compared in constant time so the
@@ -86,6 +87,29 @@ export default async function handler(req, res) {
     // ── audit events from the client (PDF downloads) ──────────────────────────
     if (req.method === "POST") {
       const body = await readBody(req);
+      // Step 1 of signing back in: email a six-digit code. The reply is always
+      // the same whether or not the address is a customer, so this cannot be
+      // used to find out who has bought.
+      if (body.event === "request_code") {
+        const email = String(body.email || "").trim().toLowerCase();
+        const stripeForCode = getStripe();
+        let hasPurchase = false;
+        if (stripeForCode && email.includes("@")) {
+          try { hasPurchase = !!(await purchasesForEmail(stripeForCode, email)).active; } catch { hasPurchase = false; }
+        }
+        const out = await sendCode(email, { hasPurchase });
+        if (!out.sent) console.warn("unlock code not sent:", email, out.reason);
+        return sendJson(res, 200, { ok: true });
+      }
+
+      // Step 2: a correct code mints the token the unlock then requires.
+      if (body.event === "verify_code") {
+        const email = String(body.email || "").trim().toLowerCase();
+        const out = await checkCode(email, body.code);
+        if (!out.ok) return sendJson(res, 400, { error: out.error });
+        return sendJson(res, 200, { ok: true, token: out.token, email });
+      }
+
       if (body.event === "pdf" && body.email) {
         const { ip, ua } = clientOf(req);
         await recordUnlock({ email: body.email, kind: "pdf", area: String(body.area || "").slice(0, 80), ip, ua });
@@ -123,6 +147,10 @@ export default async function handler(req, res) {
       }
       // Record the purchase in the DB (best-effort; failure here doesn't block delivery)
       try { await savePurchase(q.session_id, { email, tier, scope, addTemplates }); } catch {}
+      // Stripe has just confirmed this address paid, so hand back the token now.
+      // A buyer who has only this second paid should not be asked to prove the
+      // address again; the code flow is for coming back on another day.
+      const freshToken = email ? issueToken(email) : null;
       // Also write the sales ledger here so admin sees the sale even if the
       // Stripe webhook is late or not registered. Same keys as the webhook.
       try {
@@ -146,11 +174,16 @@ export default async function handler(req, res) {
         }
       }
       if (email) { try { await logUnlock(req, { email, data, q: scope, tier }); } catch {} }
-      return sendJson(res, 200, { ...data, subscribed: true, paid: true, email, tier, addTemplates });
+      return sendJson(res, 200, { ...data, subscribed: true, paid: true, email, tier, addTemplates, token: freshToken });
     }
 
     // 2) returning customer — verify a past purchase / active plan, then load the scope
     if (q.email && (q.postcode || q.council || q.county)) {
+      // Knowing an address is not proof of owning it. Without a token minted by
+      // a code we emailed, this goes no further.
+      if (!verifyToken(q.token, q.email)) {
+        return sendJson(res, 401, { error: "verification_required", email: String(q.email).trim().toLowerCase() });
+      }
       if (await isBlocked(q.email)) return sendJson(res, 403, { error: "account_blocked" });
       const info = await purchasesForEmail(stripe, q.email);
       if (!info.active) return sendJson(res, 402, { error: "no_purchase", email: info.email });

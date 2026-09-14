@@ -358,6 +358,22 @@ const METRO_COUNTIES = {
   "wiltshire": { region: "South West", councils: ["Wiltshire","Swindon"] },
 };
 
+// Area names are echoed back to the user and printed in the report, so a
+// search for "harrow" must still read "Harrow". Title-case the query, keeping
+// the small words lower: "East Riding of Yorkshire", "Kingston upon Thames".
+const SMALL_WORDS = new Set(["of", "and", "the", "upon", "on", "in", "under", "le", "cum"]);
+export function properArea(raw) {
+  const s = String(raw || "").trim().replace(/\s+/g, " ");
+  if (!s) return s;
+  return s.split(" ").map((word, i) => {
+    const lower = word.toLowerCase();
+    if (i > 0 && SMALL_WORDS.has(lower)) return lower;
+    // Keep hyphenated and apostrophed parts capitalised: Stoke-on-Trent, King's Lynn
+    return lower.replace(/(^|[-'\u2019])([a-z])/g, (m, sep, ch) =>
+      sep + (SMALL_WORDS.has(lower.split(/[-'\u2019]/).find((x) => x.startsWith(ch)) || "") && sep === "-" ? ch : ch.toUpperCase()));
+  }).join(" ");
+}
+
 // ── Borough / Council direct lookup (no postcode needed) ───────────────────
 // User types a council/borough name e.g. "Camden" or "Brighton and Hove" and
 // we return everyone who holds a contract there, plus the relevant
@@ -411,7 +427,7 @@ export function matchByCouncil(councilQuery) {
     return { ...p, tier, contracts_list: relevant(p.contracts_list) };
   });
   return {
-    council: councilQuery, countyName, region: regionKey, postcode: "",
+    council: properArea(councilQuery), countyName: properArea(countyName), region: regionKey, postcode: "",
     local: hyd(local, "local"), county: hyd(countyIds, "county"),
     regional: hyd(regional, "regional"), national: hyd(national, "national"),
     total: local.length + countyIds.length + regional.length + national.length,
@@ -451,7 +467,7 @@ export function matchByCounty(countyQuery) {
       return { ...p, tier, contracts_list: relevant(p.contracts_list) };
     });
     return {
-      council: "", countyName: countyQuery, region: regionKey, postcode: "",
+      council: "", countyName: properArea(countyQuery), region: regionKey, postcode: "",
       local: hyd(local, "local"), county: [],
       regional: hyd(regional, "regional"), national: hyd(national, "national"),
       total: local.length + regional.length + national.length,
@@ -501,7 +517,7 @@ export function matchByCounty(countyQuery) {
     return { ...p, tier, contracts_list: relevant(p.contracts_list) };
   });
   return {
-    council: "", countyName: countyQuery, region: regionKey, postcode: "",
+    council: "", countyName: properArea(countyQuery), region: regionKey, postcode: "",
     local: hyd(local, "local"), county: hyd(countyIds, "county"),
     regional: hyd(regional, "regional"), national: hyd(national, "national"),
     total: local.length + countyIds.length + regional.length + national.length,
