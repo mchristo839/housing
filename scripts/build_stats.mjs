@@ -28,8 +28,11 @@ const NOT_A_COUNCIL = [
 ];
 const isCouncil = (name) => !NOT_A_COUNCIL.some((re) => re.test(name));
 
+// A council with an empty list is still searchable but holds no local contract,
+// so it is not somewhere we cover.
 const groups = new Map();
-for (const key of Object.keys(db.c)) {
+for (const [key, ids] of Object.entries(db.c)) {
+  if (!ids.length) continue;
   const k = norm(key);
   if (!groups.has(k)) groups.set(k, []);
   groups.get(k).push(key);
