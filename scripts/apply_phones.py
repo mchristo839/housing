@@ -32,8 +32,20 @@ def clean(raw):
     s = str(raw).strip()
     if s.lower() in ("null", "none", "n/a", ""):
         return None
+    if "://" in s or "@" in s:          # a URL or email pasted into the field
+        return None
+    # Some records hold two numbers ("0132 263 2652, 0330 333 0013"). Take the
+    # first that validates rather than discarding a good number.
+    parts = [x for x in re.split(r"\s*(?:/|,|;|\bor\b)\s*", s, flags=re.I) if x.strip()]
+    if len(parts) > 1:
+        for part in parts:
+            got = clean(part)
+            if got:
+                return got
+        return None
     # Keep digits and a leading +; drop extensions and everything after.
     s = re.split(r"(?i)\b(ext|extension|x)\b", s)[0]
+    s = re.sub(r"^\+\s*(?=0)", "", s)   # "+020 7330 9170" is a stray plus, not a country code
     digits = re.sub(r"[^\d+]", "", s)
     # "+44 (0) 20 3475 9350" keeps the bracketed trunk zero once the brackets
     # are stripped, so drop it rather than ending up with a leading 00.
@@ -143,6 +155,33 @@ def main():
         print("already had a phone  : %d (left alone)" % already)
     if unknown:
         print("unknown provider ids : %d %s" % (len(unknown), unknown[:5]))
+
+    # Put every phone value already in the dataset through the same validator,
+    # so the whole file reads one way: "+44 1706 692181" and "(01325) 310009"
+    # both become plain 0-form. clean() returns a well-formed number unchanged,
+    # so the ones that are already right are untouched. Anything that is not a
+    # UK number at all (a US number, a URL pasted into the field) is cleared.
+    fixed_existing, cleared = [], []
+    for p in providers:
+        cur = p.get("phone")
+        if not cur:
+            continue
+        better = clean(cur)
+        if better and better != cur:
+            fixed_existing.append((p["name"], cur, better))
+            p["phone"] = better
+        elif better is None:
+            # Never delete. Some of these hold two numbers in one field, or a
+            # suffix the validator does not understand; others are genuinely not
+            # UK numbers. Either way, a human should look rather than lose data.
+            cleared.append((p["name"], cur))
+    if fixed_existing or cleared:
+        print("malformed existing values reformatted: %d" % len(fixed_existing))
+        for n, a, b in fixed_existing:
+            print("     - %s: %r -> %r" % (n, a, b))
+        print("existing values left for review, not a clean UK number: %d" % len(cleared))
+        for n, a in cleared:
+            print("     - %s: %r" % (n, a))
 
     still = sum(1 for p in providers if not p.get("phone"))
     print("providers still without a phone: %d of %d" % (still, len(providers)))
