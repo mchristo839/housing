@@ -1,8 +1,13 @@
-"""Merge scraped telephone numbers into providers.json.
+"""Merge scraped telephone numbers and corrected websites into providers.json.
 
-Reads /tmp/claude-0/phones/out-*.json, validates every number against UK
-numbering rules, normalises the spacing, and writes it onto the matching
-provider. A provider that already has a phone number is never overwritten.
+Reads /tmp/claude-0/phones/out-*.json and tav-out-*.json, validates every
+number against UK numbering rules, normalises the spacing, and writes it onto
+the matching provider. A provider that already has a phone number is never
+overwritten.
+
+Where a lookup also returned the organisation's real website, that replaces the
+stored one only when the stored URL points at a different domain: a jobs board,
+a news article, a PDF on someone else's site. A same-domain tidy-up is ignored.
 
 Dry run by default; pass --apply to write.
 """
@@ -59,25 +64,52 @@ def clean(raw):
         return "%s %s %s" % (digits[:4], digits[4:7], digits[7:])
     return "%s %s" % (digits[:5], digits[5:])        # 01234 567890 / 01234 56789
 
+def host_label(url):
+    """Registrable-ish label of a URL's host, for comparing two URLs' owners."""
+    u = str(url or "").strip().lower()
+    if not u:
+        return ""
+    h = re.sub(r"^\w+://", "", u).split("/")[0].split("?")[0]
+    h = re.sub(r"^www\.", "", h)
+    parts = [p for p in h.split(".") if p]
+    if not parts:
+        return ""
+    # drop the public suffix: co.uk, org.uk, com, ...
+    if len(parts) >= 3 and parts[-2] in ("co", "org", "gov", "ac", "net", "plc", "ltd"):
+        return parts[-3]
+    return parts[-2] if len(parts) >= 2 else parts[0]
+
 def main():
     rows = []
-    for f in sorted(IN_DIR.glob("out-*.json")):
+    for f in sorted(list(IN_DIR.glob("out-*.json")) + list(IN_DIR.glob("tav-out-*.json"))):
         try:
             rows.extend(json.loads(f.read_text()))
         except Exception as e:
             print("could not read %s: %s" % (f.name, e))
-    print("lookup rows read     : %d from %d files" % (len(rows), len(list(IN_DIR.glob("out-*.json")))))
+    n_files = len(list(IN_DIR.glob("out-*.json"))) + len(list(IN_DIR.glob("tav-out-*.json")))
+    print("lookup rows read     : %d from %d files" % (len(rows), n_files))
 
     providers = json.loads((ROOT / "api/_data/providers.json").read_text())
     by_id = {p["id"]: p for p in providers}
 
     applied, rejected, already, unknown, blank = 0, [], 0, [], 0
+    sites_fixed, sites_same = 0, 0
     for r in rows:
         pid = r.get("id")
         p = by_id.get(pid)
         if p is None:
             unknown.append(pid)
             continue
+        # Correct a website that points at someone else's domain entirely.
+        found_site = r.get("website")
+        if found_site:
+            if host_label(found_site) and host_label(found_site) != host_label(p.get("website")):
+                p["website"] = found_site.rstrip("/")
+                p["website_unverified"] = True
+                sites_fixed += 1
+            else:
+                sites_same += 1
+
         raw = r.get("phone")
         if not raw or str(raw).lower() == "null":
             blank += 1
@@ -97,6 +129,7 @@ def main():
         applied += 1
 
     print("numbers applied      : %d" % applied)
+    print("websites corrected   : %d (%d already on the right domain)" % (sites_fixed, sites_same))
     print("no number found      : %d" % blank)
     print("failed validation    : %d" % len(rejected))
     for name, raw in rejected[:15]:
