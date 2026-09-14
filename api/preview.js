@@ -8,6 +8,7 @@ import { resolvePostcode, matchResolved, matchByCouncil, matchByCounty, previewO
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
 import { claimSample } from "./_lib/db.js";
 import { notifyLead, sendSampleFollowUp } from "./_lib/alerts.js";
+import { syncLead } from "./_lib/brevo.js";
 
 const SAMPLE_SIZE = 3;
 
@@ -86,6 +87,7 @@ export default async function handler(req, res) {
       const pricing = { singlePostcode: pc ? SINGLE_POSTCODE_PRICE : null, monthly: OFFERED_PLANS };
       const { visible, hidden } = pickSample(m);
       try { await notifyLead(claim.row); } catch {}
+      try { await syncLead(claim.row); } catch (e) { console.error("brevo syncLead:", e); }
       // Send the three providers themselves, not just a link back. The lead's
       // one free sample is spent the moment they are recorded above, so if the
       // browser download fails they would otherwise be left with nothing and no

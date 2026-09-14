@@ -138,6 +138,7 @@ Currently in the database:
 | Variable | What |
 |---|---|
 | `SALE_ALERT_EMAILS` | Comma-separated addresses that get an email on every sale and renewal (needs `BREVO_API_KEY`). Defaults to `hello@findahousingprovider.co.uk` if unset. |
+| `BREVO_CRM` | Set to `off` to stop the site writing contacts and events to Brevo. Emails still send. Unset means on. |
 | `DEV_UNLOCK_KEY` | Owner-only testing unlock. Set it to a random secret of at least 24 characters, then open `https://www.findahousingprovider.co.uk/?dev=YOUR_KEY`, search an area, and a "Developer: unlock without paying" button appears. Leave it unset and there is no way in at all. A wrong or missing key is refused with 403, a key under 24 characters is ignored, and every successful use is written to the runtime logs. The key is never stored in the browser, so the button disappears on the next visit without it. |
 
 The `/admin` dashboard shows sales, revenue, signups and the affiliate book;
@@ -312,3 +313,30 @@ session leaves off:
 ---
 
 *Generated 2026-06-11. Latest live state: 1,919 providers.*
+
+
+## Brevo as the customer record
+
+Every lead, alert signup and buyer is written to Brevo as a contact, placed in
+a list, and has an event fired for anything an automation might act on. This
+sends nothing by itself: Brevo only emails when an automation you have built
+in its UI is switched on. Brevo has no API for creating automations, so they
+are built by hand from the events below.
+
+Lists: Leads (free sample) · Alert signups · One-off buyers · Subscribers · Cancelled.
+A purchase removes someone from Leads. A subscription supersedes a one-off.
+A cancellation moves them to Cancelled. Blocking an account in admin
+blacklists them in Brevo and removes them from every list.
+
+Contact attributes: SOURCE, STATUS, PLAN, AREA, LAST_AREA, FIRST_SEEN,
+LAST_PURCHASE, LAST_UNLOCK, PURCHASES, plus Brevo's own FIRSTNAME and SMS.
+
+Events: `sample_taken`, `alert_signup`, `purchased`, `unlocked_area`,
+`subscription_cancelled`, `payment_failed`.
+
+The admin dashboard's Brevo tab shows setup status and a one-click backfill
+of everything already held on our side. It is batched and safe to re-run.
+
+For `subscription_cancelled` and `payment_failed` to arrive, the Stripe
+webhook must also send `customer.subscription.deleted` and
+`invoice.payment_failed`. Add them under Developers → Webhooks in Stripe.

@@ -243,6 +243,13 @@ export async function setBlocked(email, blocked, reason = "") {
   else { await kv.del(`blocked:${e}`); }
   return blocked;
 }
+export async function listBlocked() {
+  const kv = await getKv();
+  const emails = await kv.smembers("blocked_index");
+  const out = [];
+  for (const e of emails) { const row = await kv.get(`blocked:${e}`); if (row) out.push({ email: e, ...row }); }
+  return out;
+}
 export async function isBlocked(email) {
   const kv = await getKv();
   return !!(await kv.get(`blocked:${lc(email)}`));

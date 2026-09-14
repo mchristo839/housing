@@ -15,6 +15,7 @@ import { savePurchase, recordSale, meterUnlock, areaKeyOf, claimOnce, recordUnlo
 import { notifySale, notifyFairUse } from "./_lib/alerts.js";
 import { timingSafeEqual } from "node:crypto";
 import { sendCode, checkCode, verifyToken, issueToken } from "./_lib/unlockauth.js";
+import { syncPurchase, syncUnlock } from "./_lib/brevo.js";
 
 // The owner's testing unlock. Only ever true for an exact match against a
 // DEV_UNLOCK_KEY of at least 24 characters, compared in constant time so the
@@ -76,6 +77,7 @@ async function logUnlock(req, { email, data, q, tier }) {
   const areaKey = areaKeyOf({ council: data.council, county: data.countyName, postcode: data.postcode || q.postcode });
   const { ip, ua } = clientOf(req);
   await recordUnlock({ email, kind: "unlock", area: areaLabel(data, q), areaKey, tier, ip, ua });
+  try { await syncUnlock(email, areaLabel(data, q)); } catch (e) { console.error("brevo syncUnlock:", e); }
   const s = await fairUseStatus(email);
   if (s.day >= FAIR_USE.flagAt && await claimOnce(`fairflag:${email}:${new Date().toISOString().slice(0, 10)}`)) {
     await notifyFairUse(email, { day: s.day, month: s.month, limits: s.limits, area: areaLabel(data, q), tier, ip });
@@ -162,6 +164,7 @@ export default async function handler(req, res) {
           type: session.mode === "subscription" ? "subscription" : "one_off",
           tier, affiliate_code: session.metadata?.affiliate_code || null,
         });
+        if (sale.fresh) { try { await syncPurchase(sale, { area: [scope.postcode, scope.council, scope.county].find(Boolean) || "" }); } catch (e) { console.error("brevo syncPurchase:", e); } }
         // Whichever of webhook / result lands first sends the one alert.
         if (sale.fresh) await notifySale(sale, { area: scope.postcode || scope.council || scope.county || "" });
       } catch {}

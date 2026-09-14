@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useRef, useMemo } from "react";
-import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, savedToken, requestUnlockCode, verifyUnlockCode, notifySignup, requestSample, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers } from "./data.js";
+import { getStats, getPreview, startCheckout, getResult, unlockByEmail, openPortal, savedEmail, savedToken, requestUnlockCode, verifyUnlockCode, notifySignup, requestSample, affiliateRef, requestAffiliateLink, getAffiliatePortal, adminSession, adminLogin, adminOverview, adminAffiliates, adminCustomers, adminBrevo } from "./data.js";
 import Results from "./components/Results.jsx";
 import GuidePage from "./components/GuidePage.jsx";
 import { GUIDES, GUIDE_BY_SLUG } from "./content/guides.js";
@@ -1297,7 +1297,7 @@ function AdminDashboard({ session, onLogout }) {
       </div>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["customers", "Customers"], ["leads", `Leads${overview.leads?.count ? ` (${overview.leads.count})` : ""}`], ["signups", "Signups"]].map(([k, label]) => (
+        {[["affiliates", "Affiliates"], ["sales", "Sales"], ["customers", "Customers"], ["leads", `Leads${overview.leads?.count ? ` (${overview.leads.count})` : ""}`], ["signups", "Signups"], ["brevo", "Brevo"]].map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={tab === k ? adminBtn : adminBtnGhost}>{label}</button>
         ))}
       </div>
@@ -1307,6 +1307,7 @@ function AdminDashboard({ session, onLogout }) {
       {tab === "customers" && <AdminCustomers />}
       {tab === "leads" && <AdminLeads rows={overview.leads?.rows || []} />}
       {tab === "signups" && <AdminSignups rows={overview.signups.rows} />}
+      {tab === "brevo" && <AdminBrevo />}
     </main>
   );
 }
@@ -1570,6 +1571,67 @@ function AdminCustomers() {
 }
 
 // Free-sample leads: everyone who traded their details for a 3-provider sample.
+// Brevo as the customer record: setup status, counts, and the one-click backfill.
+function AdminBrevo() {
+  const [status, setStatus] = useState(null);
+  const [run, setRun] = useState(null);      // { stage, processed, total, errors, done }
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState("");
+  useEffect(() => { adminBrevo("brevo-status").then(setStatus).catch((e) => setErr(String(e.message || e))); }, []);
+
+  async function syncAll() {
+    setBusy(true); setErr(""); const errors = [];
+    try {
+      for (const stage of ["leads", "signups", "sales", "blocked"]) {
+        let cursor = 0, total = 0;
+        do {
+          const r = await adminBrevo("brevo-sync", { stage, cursor, batch: 25 });
+          total = r.total; cursor = r.next_cursor; errors.push(...(r.errors || []));
+          setRun({ stage, processed: r.processed, total, errors, done: false });
+          if (r.done) break;
+        } while (true);
+      }
+      setRun((x) => ({ ...(x || {}), done: true, errors }));
+      setStatus(await adminBrevo("brevo-status"));
+    } catch (e) { setErr(String(e.message || e)); }
+    setBusy(false);
+  }
+
+  const box = { background: "var(--surface, #fff)", border: "1px solid var(--border, #eef0f5)", borderRadius: 12, padding: 16, marginBottom: 14 };
+  if (err) return <p style={{ color: "#c00" }}>{err}</p>;
+  if (!status) return <p style={{ color: "var(--muted, #666)" }}>Checking Brevo…</p>;
+  if (!status.enabled) return <p style={{ color: "#c00" }}>Brevo is not configured: set BREVO_API_KEY (or BREVO_CRM is off).</p>;
+  const c = status.counts || {};
+  return (
+    <div>
+      <div style={box}>
+        <b style={{ display: "block", marginBottom: 6 }}>Setup {status.setup?.ok ? "✓" : "— problem"}</b>
+        <p style={{ margin: 0, fontSize: ".9rem", color: "var(--muted, #666)" }}>
+          Lists: {Object.values(status.lists || {}).join(" · ")}<br />
+          Events an automation can start from: {Object.values(status.events || {}).join(", ")}
+        </p>
+        {status.setup?.problems?.length ? <pre style={{ color: "#c00", fontSize: ".8rem" }}>{status.setup.problems.join("\n")}</pre> : null}
+      </div>
+      <div style={box}>
+        <b style={{ display: "block", marginBottom: 6 }}>Backfill everything we already hold</b>
+        <p style={{ margin: "0 0 10px", fontSize: ".9rem", color: "var(--muted, #666)" }}>
+          {c.leads} leads · {c.signups} alert signups · {c.sales} sales · {c.blocked} blocked. Creates or updates each as a Brevo contact in the right list. Sends nothing. Safe to run again.
+        </p>
+        <button className="btn btn-blue" onClick={syncAll} disabled={busy}>{busy ? <span className="spinner" /> : "Sync to Brevo"}</button>
+        {run ? (
+          <p style={{ margin: "10px 0 0", fontSize: ".9rem" }}>
+            {run.done ? "Done." : `Syncing ${run.stage}…`} {run.processed}/{run.total}
+            {run.errors?.length ? <span style={{ color: "#c00" }}> · {run.errors.length} failed</span> : null}
+          </p>
+        ) : null}
+        {run?.done && run.errors?.length ? (
+          <pre style={{ fontSize: ".78rem", color: "#c00", whiteSpace: "pre-wrap" }}>{run.errors.slice(0, 20).map((e) => `${e.email}: ${e.error}`).join("\n")}</pre>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
 function AdminLeads({ rows }) {
   if (!rows.length) return <p style={{ color: "var(--muted, #666)" }}>No free-sample leads yet. Each one downloaded a 3-provider sample and saw the prices — worth a follow-up call.</p>;
   return (

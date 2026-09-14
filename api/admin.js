@@ -7,7 +7,8 @@
 // the ADMIN_USERS env var, e.g. "mario:pass1,paul:pass2") or the legacy
 // ADMIN_TOKEN env var.
 import { sendJson, getQuery, readBody } from "./_lib/http.js";
-import { listSignups, listSales, recordSale, listCustomers, listUnlocks, setBlocked, setFairUseOverride, fairUseStatus, listSamples } from "./_lib/db.js";
+import { ensureSetup, syncLead, syncSignup, syncPurchase, syncBlocked, enabled as brevoEnabled, LISTS as BREVO_LISTS, EVENTS as BREVO_EVENTS } from "./_lib/brevo.js";
+import { listSignups, listSales, recordSale, listCustomers, listUnlocks, setBlocked, setFairUseOverride, fairUseStatus, listSamples, listBlocked } from "./_lib/db.js";
 import { getStripe, listPaidSessions } from "./_lib/billing.js";
 import { verifyCredentials, createAdminSession, verifyAdminToken } from "./_lib/adminAuth.js";
 
@@ -36,6 +37,18 @@ async function syncSalesFromStripe() {
     synced++;
   }
   return { synced };
+}
+
+// The latest sale per email is what decides their plan and list.
+function dedupeSalesByEmail(sales) {
+  const latest = new Map();
+  for (const s of sales) {
+    if (!s.email) continue;
+    const e = String(s.email).toLowerCase();
+    const cur = latest.get(e);
+    if (!cur || String(s.created_at) > String(cur.created_at)) latest.set(e, s);
+  }
+  return [...latest.values()];
 }
 
 export default async function handler(req, res) {
@@ -71,6 +84,44 @@ export default async function handler(req, res) {
         leads: { count: leads.length, rows: leads },
       });
     }
+    // ── Brevo: the customer record ───────────────────────────────────────────
+    if (q.action === "brevo-status") {
+      if (!brevoEnabled()) return sendJson(res, 200, { enabled: false });
+      const setup = await ensureSetup({ force: q.force === "1" });
+      const [leads, signups, sales, blocked] = await Promise.all([listSamples(), listSignups(), listSales(), listBlocked()]);
+      return sendJson(res, 200, {
+        enabled: true, setup, lists: BREVO_LISTS, events: BREVO_EVENTS,
+        counts: { leads: leads.length, signups: signups.length, sales: sales.length, blocked: blocked.length },
+      });
+    }
+    // Backfill everything already on our side into Brevo. Batched, because a
+    // serverless call has seconds, not minutes: the admin page loops until done.
+    if (q.action === "brevo-sync") {
+      if (!brevoEnabled()) return sendJson(res, 400, { error: "brevo_disabled" });
+      const stage = String(q.stage || "leads");
+      const cursor = Math.max(0, parseInt(q.cursor || "0", 10) || 0);
+      const batch = Math.min(50, Math.max(1, parseInt(q.batch || "25", 10) || 25));
+      let rows;
+      if (stage === "leads") rows = await listSamples();
+      else if (stage === "signups") rows = await listSignups();
+      else if (stage === "sales") rows = dedupeSalesByEmail(await listSales());
+      else if (stage === "blocked") rows = await listBlocked();
+      else return sendJson(res, 400, { error: "bad_stage" });
+      const slice = rows.slice(cursor, cursor + batch);
+      const errors = [];
+      for (const r of slice) {
+        try {
+          const out = stage === "leads" ? await syncLead(r)
+                    : stage === "signups" ? await syncSignup(r)
+                    : stage === "sales" ? await syncPurchase(r)
+                    : await syncBlocked(r.email || r);
+          if (out && out.ok === false && !out.skipped) errors.push({ email: r.email || r, error: out.error || out.skipped || "failed" });
+        } catch (e) { errors.push({ email: r.email || r, error: String(e.message || e) }); }
+      }
+      const next = cursor + slice.length;
+      return sendJson(res, 200, { stage, total: rows.length, processed: next, done: next >= rows.length, next_cursor: next, errors });
+    }
+
     // ── Customers: usage, block list, fair-use overrides ─────────────────────
     if (q.action === "customers") {
       return sendJson(res, 200, { customers: await listCustomers(), defaults: (await fairUseStatus("_")).limits });
@@ -85,6 +136,8 @@ export default async function handler(req, res) {
       const { email, reason = "" } = await readBody(req);
       if (!email) return sendJson(res, 400, { error: "missing_email" });
       await setBlocked(email, q.action === "block", `${reason} (by ${who})`.trim());
+      // Mirror it in Brevo straight away so no automation can email them.
+      if (q.action === "block") { try { await syncBlocked(email); } catch (e) { console.error("brevo syncBlocked:", e); } }
       return sendJson(res, 200, { ok: true, email: String(email).toLowerCase(), blocked: q.action === "block" });
     }
     if (q.action === "fair-use") {

@@ -99,6 +99,13 @@ export async function logPdfDownload(email, area) {
 }
 
 // Admin: customers, usage, block list, fair-use limits.
+// Brevo: status of the customer record, and the batched backfill.
+export async function adminBrevo(action, opts = {}) {
+  const t = encodeURIComponent(adminToken());
+  const qs = Object.entries(opts).map(([k, v]) => `&${k}=${encodeURIComponent(v)}`).join("");
+  return asJson(await fetch(`/api/admin?action=${action}&token=${t}${qs}`));
+}
+
 export async function adminCustomers(action, opts = {}) {
   const t = encodeURIComponent(adminToken());
   if (action === "list")     return asJson(await fetch(`/api/admin?action=customers&token=${t}`));
