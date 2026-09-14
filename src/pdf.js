@@ -282,8 +282,9 @@ export async function generateReport(result) {
 
   const council = result.council;
   const region = result.region || "the region";
-  const nLocal = (result.local || []).length, nReg = (result.regional || []).length, nNat = (result.national || []).length;
-  const total = nLocal + nReg + nNat;
+  const countyName = result.countyName || "";
+  const nLocal = (result.local || []).length, nCounty = (result.county || []).length, nReg = (result.regional || []).length, nNat = (result.national || []).length;
+  const total = nLocal + nCounty + nReg + nNat;
   const dateStr = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
   // Watermark: every copy names its licensee, so a leaked list is traceable.
   const licensee = result.email ? `Licensed to ${result.email}` : "Preview copy — not licensed";
@@ -294,12 +295,14 @@ export async function generateReport(result) {
     { text: `Provider report — ${council}`, style: "h1", margin: [0, 2, 0, 2] },
     { text: `${(result.postcode || "").toUpperCase()}  ·  ${result.region || "England"}  ·  ${total} providers  ·  ${dateStr}`, fontSize: 9, color: MUTED, margin: [0, 0, 0, 2] },
     { text: watermark, fontSize: 7.5, color: MUTED, margin: [0, 0, 0, 6] },
-    { text: `This report lists care and housing providers covering ${council}, broken down by the level at which they hold contracts: Local (a contract with ${council}), Regional (active across ${region}) and National (UK-wide). Within each level they are grouped by type — housing associations, asylum & homelessness, and supported living by who they support.`, fontSize: 9.5, color: SLATE, margin: [0, 0, 0, 4], lineHeight: 1.35 },
-    { text: `Local ${nLocal}  ·  Regional ${nReg}  ·  National ${nNat}`, fontSize: 9, bold: true, color: ACCENT, margin: [0, 2, 0, 0] },
+    { text: `This report lists care and housing providers covering ${council}, broken down by the level at which they hold contracts: Local (a contract with ${council}), ${nCounty ? `County (county-wide across ${countyName}), ` : ""}Regional (active across ${region}) and National (UK-wide). Within each level they are grouped by type — housing associations, asylum & homelessness, and supported living by who they support.`, fontSize: 9.5, color: SLATE, margin: [0, 0, 0, 4], lineHeight: 1.35 },
+    { text: `Local ${nLocal}  ·  ${nCounty ? `County ${nCounty}  ·  ` : ""}Regional ${nReg}  ·  National ${nNat}`, fontSize: 9, bold: true, color: ACCENT, margin: [0, 2, 0, 0] },
     ...lhaBlock(result.lha),
     ...templatesBlock(),
     ...tierBlock(`Local contracts — a contract with ${council}`,
       `Providers that hold a contract directly with ${council}. The most relevant to approach about property in your area.`, result.local, council),
+    ...tierBlock(`County contracts — county-wide across ${countyName || "the county"}`,
+      `Providers that hold a contract with ${countyName || "the county council"}, covering ${council} as part of the county. Often the largest group in two-tier areas.`, result.county || [], council),
     ...tierBlock(`Regional contracts — active across ${region}`,
       `Providers operating across ${region} that may take on property in ${council} even without a current contract there.`, result.regional, council),
     ...tierBlock(`National contracts — UK-wide providers`,
