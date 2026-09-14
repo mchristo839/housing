@@ -251,21 +251,61 @@ export function matchResolved(api) {
 // Two passes: exact match wins outright; only fall back to substring fuzz
 // if nothing matched exactly (otherwise iteration order picks a wrong
 // fuzzy hit before reaching the exact one).
-function resolveCouncilDbKey(q) {
-  let matchedKey = null, dbKeyHit = null;
-  const findIn = (map, exactOnly) => {
-    for (const [normKey, dbKeys] of Object.entries(map)) {
-      const hit = exactOnly ? normKey === q : (normKey.includes(q) || q.includes(normKey));
-      if (hit) {
-        for (const k of dbKeys) if (db.c[k]) { matchedKey = normKey; dbKeyHit = k; return; }
-      }
-    }
+// One council is often stored under several spellings — "ESSEX COUNTY COUNCIL"
+// and "Essex County Council", or three variants of Doncaster. Index every
+// db.c key under its normalised name so a lookup returns ALL of them; reading
+// only the first hid 169 providers across 31 councils.
+//
+// The curated alias maps are indexed through normCouncilKey too. Their keys
+// were written with words this normaliser drops ("isle of wight"), so an exact
+// comparison against a normalised query ("isle wight") could never match and
+// councils like the Isle of Wight and East Riding of Yorkshire were unfindable.
+// "London Borough of Tower Hamlets" and "Tower Hamlets Council" are the same
+// place, but normCouncilKey keeps the ornamental prefix ("london tower hamlets"
+// vs "tower hamlets") and they would index apart. Strip those prefixes to get
+// every form a council may be written in, and index/query under all of them.
+const ORNAMENTAL = /^(london|royal) /;
+function councilKey(raw) {
+  let k = normCouncilKey(raw);
+  // Strip to one canonical form, so "London Borough of Tower Hamlets",
+  // "Tower Hamlets" and "LONDON BOROUGH OF TOWER HAMLETS" share a bucket.
+  // Indexing the unstripped form too would let a query exact-match the narrow
+  // "london tower hamlets" entry and miss the rest. "City of London" keeps its
+  // name: the pattern needs a word after the prefix.
+  while (ORNAMENTAL.test(k) && k.split(" ").length > 1) k = k.replace(ORNAMENTAL, "");
+  return k;
+}
+
+const COUNCIL_INDEX = (() => {
+  const idx = new Map();
+  const add = (normKey, dbKey) => {
+    if (!normKey || !db.c[dbKey]) return;
+    const cur = idx.get(normKey);
+    if (cur) { if (!cur.includes(dbKey)) cur.push(dbKey); }
+    else idx.set(normKey, [dbKey]);
   };
-  findIn(COUNCIL_MAP, true);
-  if (!dbKeyHit) findIn(COUNCIL_NORM_MAP, true);
-  if (!dbKeyHit) findIn(COUNCIL_MAP, false);
-  if (!dbKeyHit) findIn(COUNCIL_NORM_MAP, false);
-  return { matchedKey, dbKeyHit };
+  for (const k of Object.keys(db.c)) add(councilKey(k), k);
+  for (const map of [COUNCIL_MAP, COUNCIL_NORM_MAP]) {
+    for (const [alias, dbKeys] of Object.entries(map || {})) {
+      for (const k of (Array.isArray(dbKeys) ? dbKeys : [dbKeys])) add(councilKey(alias), k);
+    }
+  }
+  return idx;
+})();
+
+function resolveCouncilDbKey(rawQuery) {
+  const q = councilKey(rawQuery);
+  const exact = COUNCIL_INDEX.get(q);
+  if (exact) return { matchedKey: q, dbKeys: exact };
+  // Partial input ("Kingston" for "Royal Borough of Kingston upon Thames").
+  // Prefer the candidate closest in length to what was typed, so a short query
+  // doesn't land on an arbitrary long key just because it sorted first.
+  let best = null;
+  for (const key of COUNCIL_INDEX.keys()) {
+    if (!(key.includes(q) || q.includes(key))) continue;
+    if (!best || Math.abs(key.length - q.length) < Math.abs(best.length - q.length)) best = key;
+  }
+  return best ? { matchedKey: best, dbKeys: COUNCIL_INDEX.get(best) } : { matchedKey: null, dbKeys: [] };
 }
 
 // Metropolitan "counties" are groupings of unitary councils, not admin
@@ -326,12 +366,13 @@ export function matchByCouncil(councilQuery) {
   const q = normCouncilKey(councilQuery);
   if (!q) { const e = new Error("empty"); e.code = "notfound"; throw e; }
 
-  const { matchedKey, dbKeyHit } = resolveCouncilDbKey(q);
-  if (!dbKeyHit) { const e = new Error("notfound"); e.code = "notfound"; throw e; }
+  const { matchedKey, dbKeys } = resolveCouncilDbKey(q);
+  if (!dbKeys.length) { const e = new Error("notfound"); e.code = "notfound"; throw e; }
 
   const used = new Set();
   const take = (ids) => { const out=[]; for (const id of ids||[]) if (!used.has(id)) { used.add(id); out.push(id); } return out; };
-  const local = take(db.c[dbKeyHit] || []);
+  // Union every stored spelling of this council.
+  const local = take(dbKeys.flatMap((k) => db.c[k] || []));
 
   // Derive region + county from this council's OWN contract entries.
   // (The previous approach — "which county list shares any provider with this
