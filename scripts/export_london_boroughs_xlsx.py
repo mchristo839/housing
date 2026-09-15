@@ -24,13 +24,14 @@ ROOT = Path(__file__).resolve().parent.parent
 DUMP = ROOT / "data/london_boroughs.json"
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "London_Providers_by_Borough.xlsx"
 
-# The five service categories we break every provider down by, plus a catch-all.
+# The six service categories we break every provider down by, plus a catch-all.
 # Each becomes a tick column, pre-filled from the provider's own categories and
 # contract titles and editable afterwards.
 CATEGORIES = [
     "Children's services",
     "Care leavers / young people",
     "Adults with learning difficulties",
+    "Mental health",
     "Homelessness / asylum",
     "Victims of domestic violence",
     "Other services",
@@ -51,7 +52,7 @@ COLUMNS = [
 FIRST_TICK = 4
 CONTRACTS_COL = len(COLUMNS) - 3
 HEADER_FILL = PatternFill("solid", fgColor="1F3864")
-CAT_FILL = PatternFill("solid", fgColor="2E7D4F")     # the five categories + other
+CAT_FILL = PatternFill("solid", fgColor="2E7D4F")     # the six categories + other
 HEADER_FONT = Font(color="FFFFFF", bold=True, size=10)
 TITLE_FONT = Font(bold=True, size=13)
 TICK_ALIGN = Alignment(horizontal="center", vertical="center")
@@ -80,7 +81,7 @@ def borough_contracts(provider, borough):
     return lines
 
 
-# Signals that place a provider in one of the five categories. Matched against
+# Signals that place a provider in one of the six categories. Matched against
 # the provider's sectors, client groups and primary category, and against the
 # titles of the contracts that put it in the borough.
 # Matched on word boundaries, not raw substrings: "refugee" must not tick the
@@ -93,6 +94,8 @@ CATEGORY_TERMS = {
         r"young pe|young person|care leaver|16\+|semi.?independent",
     "Adults with learning difficulties":
         r"learning disab|learing disab|\bautism\b|\bautistic\b",
+    "Mental health":
+        r"mental health|\bmental\b",
     "Homelessness / asylum":
         r"homeless|rough sleep|housing first|asylum|refugee|\bnrpf\b|no recourse|"
         r"dispersal|temporary accommodation|emergency|nightly purchased|"
@@ -100,15 +103,15 @@ CATEGORY_TERMS = {
     "Victims of domestic violence":
         r"domestic violence|domestic abuse|\bvawg\b|\brefuges?\b",
 }
-# Services that are real but sit outside the five — these tick "Other services".
+# Services that are real but sit outside the six — these tick "Other services".
 OTHER_TERMS = (
-    r"mental health|\bolder\b|physical disab|substance misuse|sensory|\bhiv\b|"
+    r"\bolder\b|physical disab|substance misuse|sensory|\bhiv\b|"
     r"homecare|extra care|floating support|outreach"
 )
 
 
 def categorise(p, contracts):
-    """Which of the five categories this provider's services fall into, plus the
+    """Which of the six categories this provider's services fall into, plus the
     catch-all. Reads the provider's own categories and the contract titles."""
     haystack = " ".join([
         p.get("primary_cat", ""),
@@ -118,7 +121,7 @@ def categorise(p, contracts):
     ]).lower()
 
     hits = {c: bool(re.search(pattern, haystack)) for c, pattern in CATEGORY_TERMS.items()}
-    # "Other services" covers anything outside the five, and carries a provider
+    # "Other services" covers anything outside the six, and carries a provider
     # whose services we could not place at all so no row is left blank.
     hits["Other services"] = bool(re.search(OTHER_TERMS, haystack)) or not any(hits.values())
     return hits
@@ -233,7 +236,7 @@ def main():
     b = r + 5
     ws.cell(row=b, column=1, value="Service categories").font = Font(bold=True, size=12)
     ws.cell(row=b + 1, column=1,
-            value="Every provider is ticked against the five categories plus a catch-all. "
+            value="Every provider is ticked against the six categories plus a catch-all. "
                   "A provider can sit in more than one.")
     for i, (name, width) in enumerate([("Category", 34), ("Providers", 12)], start=1):
         c = ws.cell(row=b + 2, column=i, value=name)
