@@ -450,8 +450,14 @@ export function matchByCounty(countyQuery) {
     const local = [];
     const memberKeys = [];
     for (const name of metro.councils) {
-      const { matchedKey, dbKeyHit } = resolveCouncilDbKey(normCouncilKey(name));
-      if (dbKeyHit) { memberKeys.push(matchedKey); local.push(...take(db.c[dbKeyHit] || [])); }
+      // resolveCouncilDbKey returns EVERY db spelling of the council, so union
+      // them all: reading a non-existent `dbKeyHit` left the Local tier of every
+      // metropolitan county empty (a "Greater London" search returned only the
+      // regional and national operators).
+      const { matchedKey, dbKeys } = resolveCouncilDbKey(normCouncilKey(name));
+      if (!dbKeys.length) continue;
+      memberKeys.push(matchedKey);
+      for (const k of dbKeys) local.push(...take(db.c[k] || []));
     }
     const regionKey = metro.region;
     const regional = regionKey ? take(db.r[regionKey] || []) : [];
