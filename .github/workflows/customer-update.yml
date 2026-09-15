@@ -1,0 +1,65 @@
+name: Customer update drafts
+
+# Once a month, works out what has been added since the last run and drafts one
+# email per customer covering only the areas that customer has unlocked. The
+# drafts land in a PR for approval — this workflow never sends anything.
+on:
+  schedule:
+    - cron: "0 8 1 * *"        # 08:00 UTC on the 1st
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Report on everything added on or after this date (YYYY-MM-DD)"
+        required: false
+      min_new:
+        description: "Skip a customer below this many new providers in their areas"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Draft the updates
+        env:
+          # Customer areas come from the admin API. Without these the area
+          # report is still produced, just with no per-customer drafts.
+          SITE_URL: ${{ secrets.SITE_URL }}
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          ARGS="--min-new ${{ inputs.min_new || '3' }}"
+          if [ -n "${{ inputs.since }}" ]; then ARGS="$ARGS --since ${{ inputs.since }}"; fi
+          python3 scripts/pipeline/whats_new.py $ARGS
+
+      - name: Open a PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="data/customer-update-$DATE"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/updates/
+          if git diff --cached --quiet; then echo "nothing new to tell anyone"; exit 0; fi
+          git commit -m "Customer update drafts — $DATE"
+          git push -u origin "$BRANCH"
+          BODY=$(cat "data/updates/$DATE/summary.md")
+          gh pr create --draft --base main --head "$BRANCH" \
+            --title "Customer update drafts — $DATE" \
+            --body "$BODY
+
+          ---
+          Nothing has been sent. Review the drafts in \`data/updates/$DATE/emails/\`,
+          edit any wording, merge this PR, then run the **Send customer update**
+          workflow for this date."
