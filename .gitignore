@@ -40,3 +40,6 @@ desktop.ini
 data/verification/*.log
 data/verification/run_log.txt
 .vercel
+
+# Regenerable intermediate for the borough Excel export
+data/london_boroughs.json
