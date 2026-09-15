@@ -1,0 +1,40 @@
+name: Send customer update
+
+# The only step that puts mail in front of real customers, so it never runs on a
+# schedule — someone has to start it, and it dry-runs unless `send` is ticked.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Which run to send (the folder under data/updates/, YYYY-MM-DD)"
+        required: true
+      send:
+        description: "Actually send. Leave off for a dry run."
+        type: boolean
+        required: false
+        default: false
+      only:
+        description: "Send to this one address only (for a test)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Send
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          AFFILIATE_FROM_EMAIL: ${{ secrets.AFFILIATE_FROM_EMAIL }}
+        run: |
+          ARGS="--date ${{ inputs.date }}"
+          if [ "${{ inputs.send }}" = "true" ]; then ARGS="$ARGS --send"; fi
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          python3 scripts/pipeline/send.py $ARGS
