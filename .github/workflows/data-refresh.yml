@@ -1,0 +1,128 @@
+name: Data refresh
+
+# Pulls the procurement portals every other Monday, folds anything new into the
+# dataset and opens a PR. Nothing reaches customers until that PR is merged, so
+# a bad scrape is a review comment rather than a support ticket.
+on:
+  schedule:
+    - cron: "0 6 * * 1"        # every Monday 06:00 UTC; the job exits on odd weeks
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to ask the portals for"
+        required: false
+        default: "60"
+      force:
+        description: "Run even on an off week"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Fortnightly, without needing two schedules: run on even ISO weeks only.
+      - name: Is this a run week?
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          week=$(date -u +%V)
+          if [ $((10#$week % 2)) -eq 0 ]; then echo "run=true" >> "$GITHUB_OUTPUT";
+          else echo "run=false" >> "$GITHUB_OUTPUT"; echo "odd week — skipping"; fi
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -m pip install --quiet requests openpyxl
+          npm ci --omit=dev || npm install --omit=dev
+
+      - name: Harvest the portals
+        if: steps.gate.outputs.run == 'true'
+        run: python3 scripts/pipeline/harvest.py --days "${{ inputs.days || '60' }}"
+
+      - name: Ingest the candidates
+        if: steps.gate.outputs.run == 'true'
+        run: python3 scripts/pipeline/ingest.py
+
+      - name: Rebuild the public stats
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/build_stats.mjs
+
+      - name: Check the site still builds
+        if: steps.gate.outputs.run == 'true'
+        run: npm run build
+
+      - name: Summarise what changed
+        if: steps.gate.outputs.run == 'true'
+        id: summary
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import glob, json, os
+          files = sorted(glob.glob("data/harvest/summary_*.json"))
+          s = json.load(open(files[-1])) if files else {}
+          stats = json.load(open("public/stats.json"))
+          print("candidates=%d" % s.get("candidates", 0))
+          print("providers=%d" % stats.get("providers", 0))
+          print("councils=%d" % stats.get("councils", 0))
+          body = [
+              "Automated fortnightly refresh of the provider dataset.",
+              "",
+              "| | |",
+              "|---|---|",
+              "| Candidate awards found | %d |" % s.get("candidates", 0),
+              "| Distinct new suppliers | %d |" % s.get("distinct_suppliers", 0),
+              "| Councils touched | %d |" % s.get("councils", 0),
+              "| Providers now | %d |" % stats.get("providers", 0),
+              "| Councils covered now | %d |" % stats.get("councils", 0),
+              "",
+              "New records come straight from award notices, so they carry the "
+              "`Listed` tier rather than `Verified`, and most have no contact "
+              "details until an enrichment pass runs.",
+              "",
+              "**Review before merging**: skim the new suppliers in the diff for "
+              "anything that is not an accommodation provider. The harvest filter "
+              "is deliberately strict but the portals mislabel things.",
+          ]
+          print("body<<EOF"); print("\n".join(body)); print("EOF")
+          PY
+
+      - name: Open a PR
+        if: steps.gate.outputs.run == 'true' && steps.summary.outputs.candidates != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="data/refresh-$DATE"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add api/_data/ data/harvest/ data/provider_ledger.json public/stats.json data/scraped/raw/
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -m "Fortnightly data refresh — $DATE
+
+          ${{ steps.summary.outputs.candidates }} candidate awards ingested.
+          Providers now ${{ steps.summary.outputs.providers }}, councils covered ${{ steps.summary.outputs.councils }}."
+          git push -u origin "$BRANCH"
+          gh pr create --draft --base main --head "$BRANCH" \
+            --title "Data refresh — $DATE" \
+            --body "${{ steps.summary.outputs.body }}"

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-15",
+  "portal_files": [
+    "bidstats_london_2026-06-07.json",
+    "bidstats_london_via_search_2026-06-07.json",
+    "careplace_2026-06-07.json",
+    "contractsfinder_2026-06-06.json",
+    "fts_2026-06-06.json"
+  ],
+  "award_rows_read": 120,
+  "candidates": 19,
+  "distinct_suppliers": 19,
+  "councils": 7,
+  "breakdown": {
+    "dropped: awarding body is not a council": 35,
+    "dropped: not a housing award": 45,
+    "candidate": 19,
+    "duplicate row": 7,
+    "already held": 14
+  }
+}

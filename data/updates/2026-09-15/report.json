@@ -1,0 +1,68 @@
+{
+  "generated": "2026-09-15",
+  "since": "2026-09-15",
+  "new_providers": 19,
+  "councils_affected": 7,
+  "by_council": {
+    "Birmingham City Council": [
+      "KPJ Property Services",
+      "Kwik Let Properties",
+      "Sell It Rent It Ltd"
+    ],
+    "Coventry City Council": [
+      "Phoenix Lodge Coventry Limited"
+    ],
+    "DERBY CITY COUNCIL": [
+      "Safe Families for Children"
+    ],
+    "EAST RIDING OF YORKSHIRE COUNCIL": [
+      "Queen Alexandra College"
+    ],
+    "Kirklees Council": [
+      "Active",
+      "Amethyst",
+      "Care Angels (Batley)",
+      "Choices",
+      "Compass Care Homes",
+      "Connections Care"
+    ],
+    "Liverpool City Council": [
+      "Perk UK Ltd"
+    ],
+    "Suffolk Coastal District Council and Waveney District Council": [
+      "Brandon Lodge Hotel",
+      "Micari Property Solutions",
+      "NR19 Cottage Ltd",
+      "Spixworth Motel",
+      "Tudor House",
+      "Valbri Motel Ltd"
+    ]
+  },
+  "by_region": {
+    "Yorkshire & The Humber": 7,
+    "West Midlands": 4,
+    "North West": 1,
+    "East Midlands": 1
+  },
+  "provider_names": [
+    "Active",
+    "Amethyst",
+    "Brandon Lodge Hotel",
+    "Care Angels (Batley)",
+    "Choices",
+    "Compass Care Homes",
+    "Connections Care",
+    "KPJ Property Services",
+    "Kwik Let Properties",
+    "Micari Property Solutions",
+    "NR19 Cottage Ltd",
+    "Perk UK Ltd",
+    "Phoenix Lodge Coventry Limited",
+    "Queen Alexandra College",
+    "Safe Families for Children",
+    "Sell It Rent It Ltd",
+    "Spixworth Motel",
+    "Tudor House",
+    "Valbri Motel Ltd"
+  ]
+}
